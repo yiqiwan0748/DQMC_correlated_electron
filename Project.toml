@@ -1,22 +1,20 @@
 name = "AltermagnetDQMCTrial"
-uuid = "e20557c0-0683-4a0e-b1b3-312d5db99c1f"
+uuid = "8535f843-1e55-4b03-9d63-15693c843fb2"
 version = "0.1.0"
 authors = ["Yingqing Wang"]
 
 [deps]
 Checkerboard = "b297549e-c8cb-44e5-9c33-b7e2667db6fc"
-DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
-ITensorMPS = "0d1a4710-d33b-49a5-8f18-73bdf49b47e2"
-ITensors = "9136182c-28ba-11e9-034c-db9fb085ebd5"
+JDQMCFramework = "72315111-4c7c-4639-8a62-af4b2dda42e0"
+JDQMCMeasurements = "387dbc25-93e3-4e71-ad28-7b91e77c6da4"
+LatticeUtilities = "33fcf0eb-3ae3-43db-bfbc-1d92a3639bd1"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
-Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
-TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
 
 [compat]
 Checkerboard = "1.2.8"
 FFTW = "1.10.0"
-ITensorMPS = "0.4.1"
-ITensors = "0.9.30"
+JDQMCFramework = "1.2.6"
+JDQMCMeasurements = "1.9.2"
+LatticeUtilities = "2.0.7"
