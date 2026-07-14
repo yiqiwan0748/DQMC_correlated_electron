@@ -1,0 +1,40 @@
+milestone=4
+model=finite-temperature free fermions for the validated two-orbital real-space Hamiltonian
+kinetic_convention=K_mu=K-mu*I; positive mu lowers every one-particle energy
+green_convention=G_ij=<c_i c_j^dagger>=(I+exp(-beta*K_mu))^-1
+density_convention=C_ij=<c_j^dagger c_i>; for this real-symmetric model C=I-G numerically
+index_convention=site=x+L*(y-1); p=2*(site-1)+orbital; orbital 1:d_xz; orbital 2:d_yz
+matrix_spin_convention=K_mu,G,C,B,and B_inv describe one spin sector
+spin_degeneracy=2 for every reported orbital and total filling
+orbital_normalization=n_x=2*sum_site C_(site,x),(site,x)/L^2 and likewise for n_y
+total_filling_normalization=n=2*tr(C)/L^2=n_x+n_y; physical range 0<=n<=4
+slice_propagators=B=exp(-dtau*K_mu); B_inv=exp(+dtau*K_mu)
+implementation=symmetric eigendecomposition; no direct inverse is used to construct G
+fermi_stability=logistic branches use exp(-abs(beta*(epsilon-mu))) to avoid overflow
+partition_convention=log(Z_one_spin)=sum_a log(1+exp(-beta*lambda_a)); log(Z_two_spin)=2*log(Z_one_spin)
+partition_stability=log1p softplus form; the determinant and Z are not explicitly formed in the primary implementation
+free_weight_sign=each one-spin factor 1+exp(-beta*lambda_a) is positive, hence the two-spin free-fermion weight is positive
+interacting_sign_scope=this free result does not imply that the interacting doped model is sign-problem free
+validation_lattice_sizes=2,4,6
+validation_betas=1.0,2.0,4.0,8.0
+validation_chemical_potentials=-5.5,-3.837,-1.897,0.0,9.5
+validation_dtau=0.1; Ltau=beta/dtau
+green_identity_tolerance=2.0e-12
+propagator_inverse_tolerance=2.0e-11
+propagator_product_tolerance=5.0e-11
+density_comparison_tolerance=1.0e-11
+propagator_inverse_error=max(maxabs(B*B_inv-I),maxabs(B_inv*B-I))
+propagator_product_error=maxabs(B^Ltau-exp(-beta*K_mu))/max(1,maxabs(exp(-beta*K_mu)))
+direct_inverse_scope=G is compared with inv(I+B^Ltau) only for beta=1,mu=0 safe validation points
+maximum_direct_safe_G_error=3.497202527569243e-15
+maximum_direct_safe_log_determinant_error=2.5579538487363607e-13
+representative_log_Z_one_spin_L4_beta4_mu-1.897=68.59795869754251
+representative_log_Z_two_spin_L4_beta4_mu-1.897=137.19591739508502
+representative_lower_vHs_filling_L6_beta8_mu-3.837=0.43904205432005905
+representative_upper_vHs_filling_L6_beta8_mu-1.897=1.68308852224878
+maximum_G_symmetry_error=0.0
+maximum_G_plus_C_identity_error=7.993605777301127e-15
+maximum_propagator_inverse_error=1.554312234475219e-14
+maximum_propagator_product_error=5.488048255565996e-14
+maximum_filling_mismatch=4.884981308350689e-15
+maximum_orbital_filling_mismatch=4.884981308350689e-15

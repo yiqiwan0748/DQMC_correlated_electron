@@ -8,3 +8,5 @@ logs/
 *.err 
 *.jld2 
 *.h5 
+!results/free_fermion/
+!results/free_fermion/**

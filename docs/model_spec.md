@@ -227,3 +227,90 @@ conventions in the adjacent `metadata.txt`. The Float64 acceptance threshold
 for Fourier and spectral mismatches is `1e-10`; symmetry is checked at a
 machine-precision-scale absolute tolerance. The default finite-grid spectrum
 must stay inside the validated global interval `[-4.9,8.9]`.
+
+## Finite-Temperature Free Fermions
+
+Milestone 4 shifts the validated one-spin real-space hopping matrix by the
+chemical potential,
+
+```math
+K_\mu=K-\mu I.
+```
+
+Thus positive `mu` lowers every one-particle energy. If
+`K_mu = Q*diagm(lambda)*Q^T`, the DQMC equal-time Green matrix is
+
+```math
+G_{ij}=\langle c_i c_j^\dagger\rangle
+=Q\,\mathrm{diag}\!\left(\frac{1}{1+e^{-\beta\lambda_a}}\right)Q^T.
+```
+
+The one-particle density matrix has the deliberately different operator and
+index order
+
+```math
+C_{ij}=\langle c_j^\dagger c_i\rangle
+=Q\,\mathrm{diag}\!\left(\frac{1}{1+e^{\beta\lambda_a}}\right)Q^T.
+```
+
+Consequently `C = I-G` for this real-symmetric model. Both matrices describe
+one spin sector. Their diagonal entries are one-spin occupations; the public
+density summaries multiply their traces by the spin degeneracy two:
+
+```math
+n_x=\frac{2}{L^2}\sum_r C_{r x,r x},\qquad
+n_y=\frac{2}{L^2}\sum_r C_{r y,r y},\qquad
+n=\frac{2\,\mathrm{tr}(C)}{L^2}=n_x+n_y.
+```
+
+Here `x` and `y` label orbitals `d_xz` and `d_yz`, not lattice
+coordinates. The physical filling range is `0 <= n <= 4`, and `beta = 0`
+gives `n = 2` for every finite chemical potential.
+
+The Milestone 4 public API is:
+
+- `shifted_kinetic_matrix(K, mu)` constructs `K_mu` without mutating `K`;
+- `dense_slice_propagators(K_mu, dtau)` returns
+  `B = exp(-dtau*K_mu)` and `B_inv = exp(+dtau*K_mu)`;
+- `free_equal_time_greens(K_mu, beta)` returns `G`;
+- `free_density_matrix(K_mu, beta)` returns `C`;
+- `orbital_resolved_density(C, L)` returns `(n_x, n_y)`, including spin;
+- `total_filling_per_physical_site(C, L)` returns `n`, including spin; and
+- `free_grand_log_partition(K_mu, beta; spin_degeneracy=1)` returns the
+  one-spin grand `log Z` by default and the physical two-spin value when the
+  keyword is two.
+
+All primary matrix functions use a symmetric eigendecomposition. The Green
+matrix is never constructed through a direct inverse. Positive- and
+negative-argument logistic branches evaluate Fermi factors using only
+`exp(-abs(x))`, avoiding overflow and retaining small occupations without
+subtractive cancellation. The grand partition function uses
+
+```math
+\log Z_\sigma=\sum_a\log(1+e^{-\beta\lambda_a})
+```
+
+through the stable softplus identity
+`max(x,0) + log1p(exp(-abs(x)))`. Dense slice exponentials are spectral and
+raise `OverflowError` if both forward and inverse exponentials cannot be
+represented in the working floating-point type.
+
+Every one-spin free determinant factor is
+`1+exp(-beta*lambda_a) > 0`; therefore the two-spin free-fermion weight is
+positive. This statement is only about the noninteracting model. It does not
+imply that the interacting doped model is sign-problem free.
+
+The validation grid uses `L=2,4,6`, `beta=1,2,4,8`,
+`mu=-5.5,-3.837,-1.897,0,9.5`, and `dtau=0.1`. Tests additionally cover
+all `L=2:6` in real-space versus finite-grid momentum comparisons, limiting
+fillings, monotonicity, both Milestone 2 van Hove chemical potentials, and
+safe direct-definition checks. Float64 tolerances are separated by purpose:
+`2e-12` for symmetry and Green identities, `2e-11` for slice inverses,
+`5e-11` for accumulated propagators, and `1e-11` for density comparisons.
+The accumulated-propagator error is relative to
+`max(1,maxabs(exp(-beta*K_mu)))`.
+
+`scripts/validate_free_fermion.jl` writes the full grid to
+`results/free_fermion/validation_summary.csv` and all chemical-potential,
+Green-function, density, spin, normalization, stability, partition-function,
+and error conventions to the adjacent `metadata.txt`.

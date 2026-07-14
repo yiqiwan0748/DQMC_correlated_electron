@@ -18,9 +18,17 @@ export ModelParameters,
        realspace_kinetic_matrix,
        allowed_momenta,
        fourier_block,
-       realspace_band_energies
+       realspace_band_energies,
+       shifted_kinetic_matrix,
+       dense_slice_propagators,
+       free_equal_time_greens,
+       free_density_matrix,
+       orbital_resolved_density,
+       total_filling_per_physical_site,
+       free_grand_log_partition
 
 include("noninteracting.jl")
 include("realspace_kinetic.jl")
+include("free_fermion.jl")
 
 end

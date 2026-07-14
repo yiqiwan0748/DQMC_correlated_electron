@@ -44,12 +44,32 @@ Status: implemented.
 - Generate reproducible validation errors, spectral bounds, and convention
   metadata in `results/realspace_kinetic/`.
 
+## Milestone 4: Finite-Temperature Free Fermions
+
+Status: implemented.
+
+- Apply the chemical-potential convention `K_mu = K - mu*I` to the validated
+  real-space hopping matrix without changing its hopping or indexing rules.
+- Construct dense forward and inverse slice propagators from a symmetric
+  eigendecomposition.
+- Evaluate the equal-time DQMC Green matrix and complementary density matrix
+  with branch-stable spectral Fermi functions rather than a direct inverse.
+- Report spin-degenerate orbital fillings and total filling per physical site.
+- Evaluate one- and two-spin grand `log Z` with a stable softplus expression
+  and record positivity of the noninteracting free weight.
+- Match finite-lattice real-space fillings to direct occupations of both Bloch
+  bands for `L=2,3,4,5,6`, including spin degeneracy.
+- Test Green identities and spectra, propagator inverses and products, filling
+  limits and monotonicity, C4-related orbital densities, and finite-temperature
+  crossover near both Milestone 2 van Hove chemical potentials.
+- Generate the concise `L=2,4,6` validation grid and complete convention
+  metadata in `results/free_fermion/`.
+
 ## Deferred Work
 
-The following capabilities are intentionally outside Milestone 3 and remain
+The following capabilities are intentionally outside Milestone 4 and remain
 unimplemented:
 
-- matrix exponentials and `U=0` Green functions;
 - DQMC evolution, sweeps, and stabilization;
 - Hubbard-Stratonovich fields and interactions;
 - interacting observables and measurements;
