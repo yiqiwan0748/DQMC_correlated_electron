@@ -1,4 +1,6 @@
-results/ 
+results/*
+!results/noninteracting/
+!results/noninteracting/**
 logs/ 
 *.out 
 *.err 

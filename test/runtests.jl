@@ -135,3 +135,110 @@ const TEST_RTOL = 1.0e-12
         end
     end
 end
+
+@testset "Milestone 2 noninteracting analysis" begin
+    @testset "Band path and high-symmetry ticks" begin
+        path = band_path(points_per_segment=8)
+        @test path.tick_labels == ["Γ", "X", "M", "Γ"]
+        @test path.tick_indices == [1, 9, 17, 25]
+        @test isapprox(
+            path.tick_positions,
+            [0.0, pi, 2pi, 2pi + sqrt(2) * pi];
+            atol=TEST_ATOL,
+            rtol=TEST_RTOL,
+        )
+        @test (path.kx[1], path.ky[1]) == (0.0, 0.0)
+        @test isapprox(
+            [path.kx[9], path.ky[9]],
+            [pi, 0.0];
+            atol=TEST_ATOL,
+            rtol=TEST_RTOL,
+        )
+        @test isapprox(
+            [path.kx[17], path.ky[17]],
+            [pi, pi];
+            atol=TEST_ATOL,
+            rtol=TEST_RTOL,
+        )
+        @test (path.kx[end], path.ky[end]) == (0.0, 0.0)
+        @test all(diff(path.coordinate) .> 0)
+
+        expected_endpoint_energies = (
+            [8.9, 8.9],
+            [-4.9, -1.9],
+            [-2.1, -2.1],
+            [8.9, 8.9],
+        )
+        for (index, expected) in zip(path.tick_indices, expected_endpoint_energies)
+            actual = [path.lower_energy[index], path.upper_energy[index]]
+            @test isapprox(actual, expected; atol=TEST_ATOL, rtol=TEST_RTOL)
+        end
+    end
+
+    @testset "Grid DOS and filling" begin
+        samples = sample_band_energies(64)
+        spectrum = sorted_band_energies(samples)
+        dos = density_of_states(samples; bins=400, smoothing_width=0.08)
+        @test samples.Nk == 64
+        @test size(samples.energies) == (2, 64^2)
+        @test length(spectrum) == 2 * 64^2
+        @test issorted(spectrum)
+
+        # Normalization is explicitly restored after the truncated Gaussian
+        # convolution; 2e-12 covers only Float64 summation roundoff.
+        @test isapprox(
+            sum(dos.density) * dos.bin_width,
+            2.0;
+            atol=2.0e-12,
+            rtol=0.0,
+        )
+
+        energy_min, energy_max = extrema(samples.energies)
+        chemical_potentials = collect(range(
+            energy_min - 1,
+            energy_max + 1;
+            length=401,
+        ))
+        fillings = zero_temperature_filling(
+            samples,
+            chemical_potentials;
+            sorted_energies=spectrum,
+        )
+        @test all(diff(fillings) .>= 0)
+        @test first(fillings) == 0.0
+        @test last(fillings) == 4.0
+        @test zero_temperature_filling(
+            samples,
+            energy_min - 1;
+            sorted_energies=spectrum,
+        ) == 0.0
+        @test zero_temperature_filling(
+            samples,
+            energy_max + 1;
+            sorted_energies=spectrum,
+        ) == 4.0
+
+        peaks = estimate_van_hove_peaks(
+            dos,
+            samples;
+            sorted_energies=spectrum,
+        )
+        @test length(peaks) == 2
+        @test peaks[1].energy < peaks[2].energy
+        @test all(0 <= peak.filling <= 4 for peak in peaks)
+        @test all(peak.delta_c == (peak.filling - 2) / 4 for peak in peaks)
+        @test infer_doping_convention(peaks).convention == :delta_c
+    end
+
+    @testset "Deterministic fixed-input output" begin
+        first_samples = sample_band_energies(24)
+        second_samples = sample_band_energies(24)
+        @test first_samples.k_values == second_samples.k_values
+        @test first_samples.energies == second_samples.energies
+        first_dos = density_of_states(first_samples; bins=120, smoothing_width=0.05)
+        second_dos = density_of_states(second_samples; bins=120, smoothing_width=0.05)
+        @test first_dos.energy == second_dos.energy
+        @test first_dos.counts == second_dos.counts
+        @test first_dos.density == second_dos.density
+    end
+end

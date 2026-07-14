@@ -10,6 +10,7 @@ JDQMCFramework = "72315111-4c7c-4639-8a62-af4b2dda42e0"
 JDQMCMeasurements = "387dbc25-93e3-4e71-ad28-7b91e77c6da4"
 LatticeUtilities = "33fcf0eb-3ae3-43db-bfbc-1d92a3639bd1"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
 [compat]
@@ -18,3 +19,4 @@ FFTW = "1.10.0"
 JDQMCFramework = "1.2.6"
 JDQMCMeasurements = "1.9.2"
 LatticeUtilities = "2.0.7"
+Plots = "1.41.6"

@@ -1,0 +1,21 @@
+milestone=2
+model=two-orbital noninteracting Bloch Hamiltonian
+orbital_basis=(d_xz,d_yz)
+hoppings=t1:-1.0,t2:-1.75,t3:-0.85,t4:-0.65
+momentum_units=radians; lattice_spacing=1
+band_path=Gamma(0,0)-X(pi,0)-M(pi,pi)-Gamma(0,0)
+band_points_per_segment=160
+momentum_grid=k_j=-pi+2pi*j/Nk, j=0,...,Nk-1 (periodic)
+convergence_Nk=200,400,800
+primary_Nk=800
+energy_bins=1600
+smoothing_width=0.05 (Gaussian sigma in energy units)
+smoothing_kernel=truncated at 4 sigma; DOS renormalized after convolution
+DOS=per spin; integral approaches 2 states per physical site
+filling=total electrons per physical site including spin; 0<=n<=4; half filling n=2
+occupied_state_rule=band_energy<=chemical_potential
+vhs_method=two highest separated local DOS maxima after excluding 5 percent of each energy edge; quadratic bin interpolation
+doping_candidates=delta_a:n-2; delta_b:(n-2)/2; delta_c:(n-2)/4
+journal_values=delta_vH:-0.145; delta_vH_2:-0.396
+journal_doping_convention=delta_c (inferred numerically, not independently defined)
+inference_rms_error=0.007213051220541591
