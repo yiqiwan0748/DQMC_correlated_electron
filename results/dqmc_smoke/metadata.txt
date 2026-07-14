@@ -1,0 +1,79 @@
+Milestone 5 two-orbital DQMC deterministic smoke validation
+
+Purpose
+-------
+These deliberately tiny runs validate software behavior. They are not a
+parameter scan and support no physical conclusion.
+
+Hamiltonian and chemical potential
+----------------------------------
+H = sum_sigma c_sigma^dagger K c_sigma
+    + U sum_(r,a) (n_up,r,a - 1/2)(n_down,r,a - 1/2)
+    - mu sum_(sigma,r,a) n_sigma,r,a.
+K is the validated dense real-space hopping matrix and K_mu = K - mu*I, so a
+positive mu lowers every one-particle energy. The interaction is centered at
+one half exactly as in reference/square_hubbard.jl.
+
+Orbital and index conventions
+-----------------------------
+Orbital 1 is d_xz and orbital 2 is d_yz. For x,y in 1:L,
+site = x + L*(y-1) and p = 2*(site-1) + orbital. One spin sector has
+Nsp = 2*L^2 rows. The HS field has shape Nsp by Ltau.
+
+Imaginary-time grid
+-------------------
+Ltau = beta/dtau must be integral within
+64*eps(T)*max(1,abs(beta/dtau)), with zero relative tolerance.
+
+Discrete Hubbard-Stratonovich convention
+-----------------------------------------
+exp[-dtau*U*(n_up-1/2)*(n_down-1/2)]
+  = (1/2)*exp(-dtau*U/4) * sum_(s=+1,-1)
+      exp[alpha*s*(n_up-n_down)],
+alpha = acosh(exp(dtau*U/2)).
+The spin-up potential is V_up = -alpha*s/dtau and the spin-down potential is
+V_down = +alpha*s/dtau. Therefore exp(-dtau*V_up) = exp(+alpha*s) and
+exp(-dtau*V_down) = exp(-alpha*s). The field-independent factor
+(1/2)*exp(-dtau*U/4) for every site-orbital and time slice is omitted from
+Metropolis ratios because it cancels between configurations.
+
+Propagator and Green conventions
+--------------------------------
+Dense exact kinetic exponentials are used, checkerboard = false, and the
+asymmetric convention is
+B_sigma,l = exp(-dtau*V_sigma,l) * exp(-dtau*K_mu).
+The full product is B_sigma,Ltau * ... * B_sigma,1. The equal-time convention
+is G_sigma[i,j] = <c_sigma,i c_sigma,j^dagger> and
+G_sigma(0,0) = inv(I + B_sigma,Ltau*...*B_sigma,1).
+
+Determinants, signs, and updates
+-------------------------------
+JDQMCFramework stores log(abs(det(G_sigma))) and sign(det(G_sigma)). The
+fermion configuration weight is det(G_up^-1)*det(G_down^-1). Updates sample
+its absolute value with probability min(1,abs(R_up*R_down)); the observable
+sign is sign(det(G_up^-1)*det(G_down^-1)). Reported densities and double
+occupancies are sign reweighted. A free positive weight does not imply that
+the interacting two-orbital model is sign-problem free.
+
+Stabilization and errors
+------------------------
+The JDQMCFramework stabilization period is 5 slices for all three runs.
+maximum_greens_recompute_error is the largest elementwise correction reported
+by periodic stabilization or the final full Green recomputation. Runtime
+starts after state construction and covers burn-in, measurement-separation
+sweeps, measurements, and the final recomputation. Acceptance includes both
+burn-in and measurement-separation sweeps.
+
+Smoke cases and seeds
+---------------------
+u0_integration:             L=2, beta=1, dtau=0.1, U=0, mu=0, seed=5101
+interacting_mu0:            L=2, beta=1, dtau=0.1, U=2, mu=0, seed=5102
+interacting_first_vhs:      L=2, beta=1, dtau=0.1, U=2, mu=-1.897, seed=5103
+Each case uses 20 burn-in sweeps, 50 measurements, and one full sweep between
+measurements. Fixed seeds reproduce all sampled values; wall-clock runtime is
+machine- and load-dependent.
+
+Scope
+-----
+No spin structure factor, altermagnetic susceptibility, transport observable,
+production jackknife analysis, or parameter scan is included.

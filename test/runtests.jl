@@ -245,3 +245,4 @@ end
 
 include("realspace_kinetic_tests.jl")
 include("free_fermion_tests.jl")
+include("two_orbital_dqmc_tests.jl")

@@ -314,3 +314,124 @@ The accumulated-propagator error is relative to
 `results/free_fermion/validation_summary.csv` and all chemical-potential,
 Green-function, density, spin, normalization, stability, partition-function,
 and error conventions to the adjacent `metadata.txt`.
+
+## Correctness-First Two-Orbital DQMC Kernel
+
+Milestone 5 adds a minimal interacting kernel for
+
+```math
+H=\sum_\sigma c_\sigma^\dagger Kc_\sigma
++U\sum_{r,a}(n_{\uparrow,r,a}-\tfrac12)(n_{\downarrow,r,a}-\tfrac12)
+-\mu\sum_{\sigma,r,a}n_{\sigma,r,a}.
+```
+
+The local interaction is particle-hole centered exactly as in the frozen
+reference. This convention does not assert particle-hole symmetry for the
+validated two-orbital hopping matrix. In particular, `mu = 0` is not used as
+a blanket sign-problem-free assumption.
+
+`DQMCParameters{T}` stores `L`, `beta`, `dtau`, `U`, `mu`, the stabilization
+period, burn-in and measurement counts, sweeps between measurements, and the
+random seed. `validate_dqmc_parameters` derives
+
+```math
+N_{sp}=2L^2,\qquad L_\tau=\beta/\Delta\tau.
+```
+
+The ratio `beta/dtau` must differ from its nearest integer by at most
+`64*eps(T)*max(1,abs(beta/dtau))`, with zero relative tolerance. Repulsive
+real-field simulations require finite `U >= 0`; all other real inputs and
+integer counts are checked before allocations.
+
+There is one Ising field `s[p,l]` for every site-orbital and time slice, so its
+shape is exactly `Nsp x Ltau`. The frozen-reference identity is
+
+```math
+e^{-\Delta\tau U(n_\uparrow-1/2)(n_\downarrow-1/2)}
+=\frac12e^{-\Delta\tau U/4}\sum_{s=\pm1}
+e^{\alpha s(n_\uparrow-n_\downarrow)},\qquad
+\alpha=\operatorname{acosh}(e^{\Delta\tau U/2}).
+```
+
+Consequently,
+
+```math
+V_\uparrow=-\alpha s/\Delta\tau,\qquad
+V_\downarrow=+\alpha s/\Delta\tau,
+```
+
+and the corresponding diagonal exponentials are `exp(+alpha*s)` and
+`exp(-alpha*s)`. Flipping a field gives
+`DeltaV_up = +2*alpha*s/dtau` and
+`DeltaV_down = -2*alpha*s/dtau`. The factor
+`(1/2)*exp(-dtau*U/4)` per site-orbital and slice is independent of the field
+configuration and is omitted from every Metropolis ratio.
+
+The validated hopping and chemical-potential convention remains
+`K_mu = K - mu*I`. With dense exponentials, no checkerboard approximation,
+and the asymmetric convention, each framework propagator represents
+
+```math
+B_{\sigma,l}=e^{-\Delta\tau V_{\sigma,l}}e^{-\Delta\tau K_\mu}.
+```
+
+The ordered product and equal-time Green matrix are
+
+```math
+B_\sigma(\beta,0)=B_{\sigma,L_\tau}\cdots B_{\sigma,1},\qquad
+G_\sigma(0,0)=[I+B_\sigma(\beta,0)]^{-1},
+```
+
+where `G_sigma[i,j] = <c_sigma,i c_sigma,j^dagger>`. At cyclic slice `l`,
+direct validation uses
+`B_l*...*B_1*B_Ltau*...*B_(l+1)`. Direct products and inverses are tests only;
+the simulation uses JDQMCFramework public routines for stable Green
+calculation, propagation, local determinant ratios, rank-1 updates, and
+periodic stabilization.
+
+For a proposed flip, the framework ratios obey
+
+```math
+R_\sigma=\frac{\det G_\sigma}{\det G'_\sigma}
+=\frac{\det G_\sigma'^{-1}}{\det G_\sigma^{-1}}
+=1+\Delta_\sigma(1-G_{\sigma,ii}).
+```
+
+Sampling uses `min(1,abs(R_up*R_down))`. The stored determinant data are
+`log(abs(det(G_sigma)))` and `sign(det(G_sigma))`; the measured configuration
+sign is that of `det(G_up^-1)*det(G_down^-1)`. The kernel maintains separate
+up- and down-spin Green matrices and synchronized framework calculators.
+
+`measure_basic_observables` uses `n_sigma,p = 1-G_sigma[p,p]` and returns only
+the configuration sign, total and orbital densities per physical site, and
+orbital-resolved double occupancy. `run_dqmc_smoke` sign reweights those
+observables, reports acceptance over burn-in and measurement-separation
+sweeps, and records the largest framework stabilization or explicit final
+recomputation correction. Fixed seeds reproduce the sampled results; elapsed
+wall-clock runtime is intentionally not part of exact determinism checks.
+
+The Milestone 5 public API is:
+
+- `DQMCParameters` and `validate_dqmc_parameters`;
+- `hubbard_stratonovich_alpha` and `initialize_hs_fields`;
+- `build_slice_propagators` and `initialize_dqmc_state`;
+- `local_hs_flip_ratio` and `attempt_local_hs_flip!`;
+- `sweep_time_slice!` and `sweep_all_time_slices!`;
+- `recompute_equal_time_greens!` and `measure_basic_observables`; and
+- `run_dqmc_smoke`.
+
+The scalar HS identity uses an `8eps(Float64)` comparison because it contains
+only a few elementary operations. The independent matrix thresholds are
+`1e-11` for the spectral `U=0` comparison, `2e-11` for cyclic direct products,
+`5e-11` per spin and `1e-10` for total direct determinant ratios, `2e-10` for
+accepted rank-1 updates, and `1e-9` after complete sweeps. These deliberately
+looser successive bounds cover dense product, determinant, inverse, update,
+and propagation roundoff while remaining many orders below the model scale.
+
+The validation script runs only `L=2`, `beta=1`, and `dtau=0.1`: a free case,
+an interacting `mu=0` case, and an interacting `mu=-1.897` case. Each uses 20
+burn-in sweeps and 50 measurements. These are software smoke tests, not
+physical estimates. A positive free-fermion weight does not imply an
+interacting sign-problem-free model. Spin structure factors, altermagnetic
+susceptibilities, transport, production jackknife analysis, and parameter
+scans remain outside this milestone.

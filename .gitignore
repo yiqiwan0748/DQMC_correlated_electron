@@ -10,3 +10,5 @@ logs/
 *.h5 
 !results/free_fermion/
 !results/free_fermion/**
+!results/dqmc_smoke/
+!results/dqmc_smoke/**

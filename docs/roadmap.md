@@ -65,15 +65,34 @@ Status: implemented.
 - Generate the concise `L=2,4,6` validation grid and complete convention
   metadata in `results/free_fermion/`.
 
+## Milestone 5: Correctness-First Two-Orbital DQMC Kernel
+
+Status: implemented.
+
+- Add the particle-hole-centered discrete Ising HS transformation with one
+  field per site-orbital and time slice.
+- Use dense exact asymmetric propagators with `K_mu = K - mu*I` and separate
+  up- and down-spin Green matrices.
+- Use JDQMCFramework public routines for stabilized equal-time Green
+  calculation, propagation, determinant ratios, rank-1 updates, and periodic
+  recomputation.
+- Validate the scalar HS identity, the `U=0` free limit, explicit cyclic
+  products, full determinant ratios, accepted updates, and seeded sweeps.
+- Measure only sign, total and orbital density, orbital double occupancy,
+  acceptance, numerical recomputation error, and runtime.
+- Generate three tiny deterministic-seed smoke cases in
+  `results/dqmc_smoke/`, with runtime explicitly treated as machine dependent.
+
 ## Deferred Work
 
-The following capabilities are intentionally outside Milestone 4 and remain
+The following capabilities are intentionally outside Milestone 5 and remain
 unimplemented:
 
-- DQMC evolution, sweeps, and stabilization;
-- Hubbard-Stratonovich fields and interactions;
-- interacting observables and measurements;
-- sparse storage, checkerboard decomposition, and performance optimization.
+- spin structure factors and altermagnetic correlation functions;
+- altermagnetic susceptibility and transport observables;
+- production parameter scans, error analysis, and jackknife workflows;
+- sparse storage, checkerboard decomposition, and performance optimization;
+- production-scale checkpointing, restart, and data-management machinery.
 
 Each later milestone should introduce its own correctness tests before adding
 the next layer of the simulation.

@@ -25,10 +25,25 @@ export ModelParameters,
        free_density_matrix,
        orbital_resolved_density,
        total_filling_per_physical_site,
-       free_grand_log_partition
+       free_grand_log_partition,
+       DQMCParameters,
+       DQMCState,
+       validate_dqmc_parameters,
+       hubbard_stratonovich_alpha,
+       initialize_hs_fields,
+       build_slice_propagators,
+       initialize_dqmc_state,
+       local_hs_flip_ratio,
+       attempt_local_hs_flip!,
+       sweep_time_slice!,
+       sweep_all_time_slices!,
+       recompute_equal_time_greens!,
+       measure_basic_observables,
+       run_dqmc_smoke
 
 include("noninteracting.jl")
 include("realspace_kinetic.jl")
 include("free_fermion.jl")
+include("two_orbital_dqmc.jl")
 
 end
