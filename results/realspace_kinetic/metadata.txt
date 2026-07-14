@@ -1,0 +1,18 @@
+milestone=3
+model=finite-size real-space kinetic matrix for the validated two-orbital noninteracting model
+coordinate_convention=x,y in 1,...,L; phase coordinates are (x-1,y-1); lattice spacing=1
+orbital_convention=orbital 1:d_xz; orbital 2:d_yz
+linear_index_convention=site=x+L*(y-1); p=2*(site-1)+orbital (orbital-fast, 1-based)
+spin_sector_dimension=2*L^2
+hoppings=t1:-1.0,t2:-1.75,t3:-0.85,t4:-0.65
+positive_displacement_block_(+1,0)=[-t1 0; 0 -t2]
+positive_displacement_block_(0,+1)=[-t2 0; 0 -t1]
+positive_displacement_block_(+1,+1)=[-t3 +t4; +t4 -t3]
+positive_displacement_block_(+1,-1)=[-t3 -t4; -t4 -t3]
+periodic_boundary_convention=destination coordinates wrap independently into 1,...,L; every positive-displacement block and its transpose are accumulated with +=
+duplicate_bond_convention=coincident periodic bonds, including L=2 aliases, retain every contribution
+allowed_momenta=kx,ky=2*pi*n/L, n=0,...,L-1
+fourier_transform_convention=H_ab(k)=L^-2 sum_(r,r') exp(-i*k.r) K_(r,a),(r',b) exp(+i*k.r')
+chemical_potential=absent; no diagonal chemical-potential shift is included
+validation_lattice_sizes=2,3,4,5,6
+maximum_allowed_fourier_and_spectrum_error=1.0e-10

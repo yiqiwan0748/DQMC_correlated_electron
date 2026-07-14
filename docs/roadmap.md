@@ -28,15 +28,32 @@ Status: implemented.
 - Test path geometry, Milestone 1 endpoint energies, DOS normalization, filling
   limits and monotonicity, and deterministic fixed-input output.
 
+## Milestone 3: Finite-Size Real-Space Kinetic Matrix
+
+Status: implemented.
+
+- Define checked orbital-fast forward and inverse indexing on an `L x L`
+  periodic lattice.
+- Assemble the dense one-spin `2L^2 x 2L^2` kinetic matrix from the four
+  positive-displacement orbital blocks and their reverse hoppings.
+- Accumulate coincident periodic bonds exactly, including the `L=2` aliases.
+- Project the real-space matrix onto every allowed finite-lattice momentum and
+  reproduce the validated Bloch Hamiltonian element by element.
+- Match the complete real-space spectrum to the union of the two Bloch bands
+  for `L=2,3,4,5,6`.
+- Generate reproducible validation errors, spectral bounds, and convention
+  metadata in `results/realspace_kinetic/`.
+
 ## Deferred Work
 
-The following capabilities are intentionally outside Milestone 2 and remain
+The following capabilities are intentionally outside Milestone 3 and remain
 unimplemented:
 
-- a real-space kinetic matrix;
-- DQMC evolution and stabilization;
+- matrix exponentials and `U=0` Green functions;
+- DQMC evolution, sweeps, and stabilization;
 - Hubbard-Stratonovich fields and interactions;
-- interacting observables and measurements.
+- interacting observables and measurements;
+- sparse storage, checkerboard decomposition, and performance optimization.
 
 Each later milestone should introduce its own correctness tests before adding
 the next layer of the simulation.

@@ -242,3 +242,5 @@ end
         @test first_dos.density == second_dos.density
     end
 end
+
+include("realspace_kinetic_tests.jl")

@@ -146,3 +146,84 @@ differs from the approximate journal value by about `0.010`.
 DOS and filling curve, convergence summary, metadata, and two PNG figures to
 `results/noninteracting/`. `metadata.txt` records all numerical and physical
 conventions used by the outputs.
+
+## Finite-Size Real-Space Kinetic Matrix
+
+Milestone 3 represents one spin sector on an `L x L` periodic square lattice.
+Coordinates are one-based, `x,y = 1,...,L`, and the orbital basis remains
+`(d_xz,d_yz)`. The orbital-fast linear index is
+
+```math
+\mathrm{site}=x+L(y-1),\qquad
+p=2(\mathrm{site}-1)+\mathrm{orbital}.
+```
+
+Thus the dense real-space matrix has dimension `Nsp = 2L^2`. Integer
+coordinates are wrapped independently into `1:L` with periodic boundary
+conditions. The public forward and inverse index functions validate their
+coordinates, orbital, index, and lattice size before returning an `Int` index
+or the tuple `(x,y,orbital)`.
+
+For each source cell, the four stored positive-displacement blocks are
+
+```math
+T_x = \begin{pmatrix}-t_1&0\\0&-t_2\end{pmatrix},\quad
+T_y = \begin{pmatrix}-t_2&0\\0&-t_1\end{pmatrix},
+```
+
+```math
+T_+ = \begin{pmatrix}-t_3&+t_4\\+t_4&-t_3\end{pmatrix},\quad
+T_- = \begin{pmatrix}-t_3&-t_4\\-t_4&-t_3\end{pmatrix},
+```
+
+at displacements `(+1,0)`, `(0,+1)`, `(+1,+1)`, and `(+1,-1)`, respectively.
+The block is added from the source to the wrapped destination and its transpose
+is added for the reverse hopping. Every entry is accumulated with `+=`. This
+is physically necessary when distinct directed bonds alias to one matrix entry
+on a small torus; in particular, it retains the doubled nearest-neighbor and
+quadrupled diagonal contributions at `L=2`. The opposite signs of `T_+` and
+`T_-` make the isolated interorbital `t4` matrix cancel at `L=2`, as required
+because every allowed component there is zero or `pi`.
+
+## Finite-Lattice Fourier Convention
+
+The allowed components are
+
+```math
+k_n=\frac{2\pi n}{L},\qquad n=0,\ldots,L-1.
+```
+
+Using cell phase coordinates `r=(x-1,y-1)`, the projected block is
+
+```math
+H_{\alpha\beta}(k)=\frac{1}{L^2}\sum_{r,r'}
+e^{-ik\cdot r}K_{r\alpha,r'\beta}e^{+ik\cdot r'}.
+```
+
+A common one-cell shift of all phase coordinates cancels. With the hopping
+blocks above, this projection reproduces the validated `bloch_hamiltonian`
+element by element, including
+`epsilon_xy = -4*t4*sin(kx)*sin(ky)`.
+
+The Milestone 3 public API is:
+
+- `periodic_coordinate(coordinate, L)` wraps an integer into `1:L`;
+- `single_particle_index(x, y, orbital, L)` and
+  `single_particle_coordinates(p, L)` implement the checked index map;
+- `realspace_kinetic_matrix(L, parameters=DEFAULT_PARAMETERS)` builds the
+  dense matrix;
+- `allowed_momenta(L)` returns the finite periodic grid;
+- `fourier_block(K, L, kx, ky)` performs the normalized projection; and
+- `realspace_band_energies(K)` returns the complete sorted Hermitian spectrum.
+
+No chemical-potential shift is included. Sparse storage, checkerboard
+decomposition, matrix exponentials, Green functions, Hubbard-Stratonovich
+fields, and all DQMC machinery remain outside this milestone.
+
+`scripts/validate_realspace_kinetic.jl` checks `L=2,3,4,5,6`, writes the
+symmetry, Fourier-block, and complete-spectrum errors to
+`results/realspace_kinetic/validation_summary.csv`, and records these
+conventions in the adjacent `metadata.txt`. The Float64 acceptance threshold
+for Fourier and spectral mismatches is `1e-10`; symmetry is checked at a
+machine-precision-scale absolute tolerance. The default finite-grid spectrum
+must stay inside the validated global interval `[-4.9,8.9]`.

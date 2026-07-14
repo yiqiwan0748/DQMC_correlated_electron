@@ -1,6 +1,8 @@
 results/*
 !results/noninteracting/
 !results/noninteracting/**
+!results/realspace_kinetic/
+!results/realspace_kinetic/**
 logs/ 
 *.out 
 *.err 
