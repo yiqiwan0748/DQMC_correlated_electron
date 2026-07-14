@@ -1,0 +1,6 @@
+results/ 
+logs/ 
+*.out 
+*.err 
+*.jld2 
+*.h5 
