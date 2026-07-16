@@ -120,6 +120,18 @@ For `Nk = 800`, 1600 energy bins, and Gaussian width `0.05`:
 | 1 | -3.8369423191 | 0.42288125 | -0.3942796875 | -0.396 |
 | 2 | -1.8970820299 | 1.46021875 | -0.1349453125 | -0.145 |
 
+Here `peak` is an energy-order index, not the ordinal used in the journal's
+labels. To avoid the resulting ambiguity, subsequent code and documentation
+use these names:
+
+- **lower-energy vHs**: `mu_vH = -3.8369423191`, energy-order peak 1,
+  corresponding to the journal's *second vHs* label `delta_vH,2 = -0.396`;
+- **upper-energy vHs**: `mu_vH = -1.8970820299`, energy-order peak 2,
+  corresponding to the journal's *first vHs* label `delta_vH = -0.145`.
+
+The Milestone 5 smoke name `interacting_first_vhs` uses the journal ordinal
+and therefore denotes the upper-energy vHs. New Milestone 6 names are explicit.
+
 Numerical RMS matching gives `0.00721` for `delta_c`, much less than for
 `delta_a` or `delta_b`. The journal convention is therefore inferred to be
 `delta = (n-2)/4`. This is an inference from the reported numbers, not an

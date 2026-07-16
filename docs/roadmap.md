@@ -83,14 +83,66 @@ Status: implemented.
 - Generate three tiny deterministic-seed smoke cases in
   `results/dqmc_smoke/`, with runtime explicitly treated as machine dependent.
 
+## Milestone 6: DQMC Sign Feasibility Before Correlation Measurements
+
+Status: Milestone 6A tooling implemented; feasibility chains have not been
+executed and no average-sign result is claimed.
+
+### Milestone 6A: Sign And Filling Diagnostics
+
+- Reuse the validated Milestone 5 state construction and update kernel without
+  changing `src/two_orbital_dqmc.jl`.
+- Keep three independently selectable phases: exact `U=0` controls, an
+  interacting chemical-potential calibration scan, and fixed-chemical-
+  potential sign diagnostics. The fixed values are the noninteracting
+  lower- and upper-energy van Hove anchors; they are not claimed to be
+  interacting filling calibrations.
+- Record the raw per-configuration total-density estimator returned by
+  `measure_basic_observables` and form
+  `signed_filling_sum = sum(configuration_sign * raw_total_density)` with
+  exactly one sign factor. The reweighted filling is a ratio to the measured
+  sign sum and is omitted when that denominator is not usable.
+- Estimate the average-sign standard error from contiguous block means and
+  separately report early-versus-late block stability, the number of blocks,
+  and whether the configured precision is reached. Retain and report a final
+  short block rather than silently discarding measurements.
+- Define the average-sign gate, and only that gate, by the strict condition
+  `average_sign - 2*SE > 0.1` under the default configuration.
+- Define numerical validity separately: configuration signs and measured
+  densities must be finite, acceptance must be finite and in `[0,1]`, derived
+  results must be finite when defined, and the maximum Green recomputation
+  correction must not exceed `1e-8`.
+- Define sampling sufficiency separately: at least eight blocks, early/late
+  block drift at most two combined standard errors, and average-sign standard
+  error at most `0.05`.
+- Define filling resolution separately: the absolute average sign must exceed
+  `1e-8` and its configured signal-to-noise ratio must be at least five.
+  A zero standard error with nonzero average sign has the exact limiting SNR
+  `+Inf`; this is a statistical limit, not a non-finite simulation result.
+- Report `correlation_measurement_ready` only as the conjunction of the
+  average-sign gate, numerical validity, sampling sufficiency, and filling
+  resolution. Passing the average-sign gate alone never authorizes correlation
+  measurements.
+- Make `scripts/run_dqmc_sign_feasibility.jl` dry-run by default. It prints the
+  complete selected case/seed table before any possible chain construction,
+  requires `--run`, refuses output replacement without `--overwrite`, and can
+  run a selected chain without writing through `--no-write` for benchmarking.
+
+### Milestone 6B: Correlation Measurements
+
+This submilestone remains unimplemented. It may be specified only after actual
+Milestone 6A data pass all four diagnostic domains for the intended parameter
+region. Its observables, estimators, correctness tests, and data products must
+be approved separately.
+
 ## Deferred Work
 
-The following capabilities are intentionally outside Milestone 5 and remain
+The following capabilities are intentionally outside Milestone 6A and remain
 unimplemented:
 
 - spin structure factors and altermagnetic correlation functions;
 - altermagnetic susceptibility and transport observables;
-- production parameter scans, error analysis, and jackknife workflows;
+- production correlation-estimator and multi-observable jackknife workflows;
 - sparse storage, checkerboard decomposition, and performance optimization;
 - production-scale checkpointing, restart, and data-management machinery.
 

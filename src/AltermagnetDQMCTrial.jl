@@ -39,11 +39,17 @@ export ModelParameters,
        sweep_all_time_slices!,
        recompute_equal_time_greens!,
        measure_basic_observables,
-       run_dqmc_smoke
+       run_dqmc_smoke,
+       SignFeasibilityCriteria,
+       DEFAULT_SIGN_FEASIBILITY_CRITERIA,
+       average_sign_gate_passes,
+       summarize_sign_feasibility,
+       run_dqmc_sign_feasibility
 
 include("noninteracting.jl")
 include("realspace_kinetic.jl")
 include("free_fermion.jl")
 include("two_orbital_dqmc.jl")
+include("dqmc_sign_feasibility.jl")
 
 end
