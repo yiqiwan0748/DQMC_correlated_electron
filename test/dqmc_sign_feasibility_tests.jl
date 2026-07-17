@@ -1,7 +1,12 @@
 using AltermagnetDQMCTrial
 using Test
 
+module SignFeasibilityRunner
+include(joinpath(@__DIR__, "..", "scripts", "run_dqmc_sign_feasibility.jl"))
+end
+
 @testset "Milestone 6A DQMC sign feasibility" begin
+    default_criteria = SignFeasibilityCriteria()
     criteria = SignFeasibilityCriteria(
         average_sign_threshold=0.2,
         maximum_average_sign_standard_error=0.1,
@@ -14,8 +19,19 @@ using Test
     )
 
     @testset "Criteria and strict average-sign gate" begin
-        @test !average_sign_gate_passes(1 // 2, 1 // 10, 3 // 10)
-        @test average_sign_gate_passes(1 // 2, 1 // 10, 299 // 1000)
+        @test default_criteria.average_sign_threshold ==
+              DEFAULT_SIGN_FEASIBILITY_CRITERIA.average_sign_threshold == 0.2
+        @test default_criteria.maximum_average_sign_standard_error ==
+              DEFAULT_SIGN_FEASIBILITY_CRITERIA.maximum_average_sign_standard_error ==
+              0.02
+        @test default_criteria.minimum_sign_signal_to_noise ==
+              DEFAULT_SIGN_FEASIBILITY_CRITERIA.minimum_sign_signal_to_noise == 5.0
+        @test default_criteria.maximum_greens_recompute_error ==
+              DEFAULT_SIGN_FEASIBILITY_CRITERIA.maximum_greens_recompute_error ==
+              1.0e-8
+
+        @test !average_sign_gate_passes(2 // 5, 1 // 10, 1 // 5)
+        @test average_sign_gate_passes(401 // 1000, 1 // 10, 1 // 5)
         @test !average_sign_gate_passes(0.8, Inf, 0.1)
         @test average_sign_gate_passes(0.8, -0.1, 0.1)
 
@@ -31,6 +47,39 @@ using Test
         @test_throws ArgumentError SignFeasibilityCriteria(
             maximum_greens_recompute_error=NaN,
         )
+    end
+
+    @testset "Target-only runner configuration and dry-run" begin
+        chains = SignFeasibilityRunner.FEASIBILITY_CHAINS
+        u0_controls = filter(chain -> chain.phase == :u0_control, chains)
+        calibration = filter(chain -> chain.phase == :mu_calibration, chains)
+        fixed_mu = filter(chain -> chain.phase == :fixed_mu_diagnostics, chains)
+
+        @test SignFeasibilityRunner.TARGET_MU == -1.897
+        @test length(chains) == 10
+        @test length(u0_controls) == 1
+        @test only(u0_controls).U == 0.0
+        @test only(u0_controls).mu == -1.897
+        @test [chain.mu for chain in calibration] ==
+              [-2.497, -2.197, -1.897, -1.597, -1.297]
+        @test !isempty(fixed_mu)
+        @test all(chain -> chain.mu == -1.897, fixed_mu)
+        @test all(chain -> chain.mu == -1.897,
+                  filter(chain -> chain.phase != :mu_calibration, chains))
+        @test all(chain -> !occursin("lower_energy_vhs", chain.case), chains)
+        @test all(chain -> chain.mu != -3.8369423191, chains)
+
+        options = SignFeasibilityRunner.parse_runner_options(String[])
+        @test !options.run_requested
+        pipe = Pipe()
+        redirect_stdout(pipe) do
+            @test isnothing(SignFeasibilityRunner.main(String[]))
+        end
+        close(pipe.in)
+        output = read(pipe, String)
+        @test occursin("mode=dry-run", output)
+        @test occursin("dqmc_chains_constructed=0", output)
+        @test occursin("outputs_written=false", output)
     end
 
     @testset "Raw density and exactly-once sign weighting" begin

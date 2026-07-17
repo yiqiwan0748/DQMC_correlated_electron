@@ -85,18 +85,19 @@ Status: implemented.
 
 ## Milestone 6: DQMC Sign Feasibility Before Correlation Measurements
 
-Status: Milestone 6A tooling implemented; feasibility chains have not been
-executed and no average-sign result is claimed.
-
 ### Milestone 6A: Sign And Filling Diagnostics
+
+Status: IN PROGRESS (Phase 1A). Feasibility chains have not been executed and
+no average-sign result is claimed.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing `src/two_orbital_dqmc.jl`.
 - Keep three independently selectable phases: exact `U=0` controls, an
   interacting chemical-potential calibration scan, and fixed-chemical-
-  potential sign diagnostics. The fixed values are the noninteracting
-  lower- and upper-energy van Hove anchors; they are not claimed to be
-  interacting filling calibrations.
+  potential sign diagnostics. Phase 1A restricts the configured study to
+  `mu/t = -1.897`, near the upper-energy van Hove anchor, with calibration
+  candidates centered on that meeting target. It is not claimed to be an
+  interacting filling calibration.
 - Record the raw per-configuration total-density estimator returned by
   `measure_basic_observables` and form
   `signed_filling_sum = sum(configuration_sign * raw_total_density)` with
@@ -107,14 +108,14 @@ executed and no average-sign result is claimed.
   and whether the configured precision is reached. Retain and report a final
   short block rather than silently discarding measurements.
 - Define the average-sign gate, and only that gate, by the strict condition
-  `average_sign - 2*SE > 0.1` under the default configuration.
+  `average_sign - 2*SE > 0.2` under the default configuration.
 - Define numerical validity separately: configuration signs and measured
   densities must be finite, acceptance must be finite and in `[0,1]`, derived
   results must be finite when defined, and the maximum Green recomputation
   correction must not exceed `1e-8`.
 - Define sampling sufficiency separately: at least eight blocks, early/late
   block drift at most two combined standard errors, and average-sign standard
-  error at most `0.05`.
+  error at most `0.02`.
 - Define filling resolution separately: the absolute average sign must exceed
   `1e-8` and its configured signal-to-noise ratio must be at least five.
   A zero standard error with nonzero average sign has the exact limiting SNR

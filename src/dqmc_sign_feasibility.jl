@@ -18,8 +18,8 @@ struct SignFeasibilityCriteria{T<:AbstractFloat}
 end
 
 function SignFeasibilityCriteria(;
-    average_sign_threshold::Real=0.1,
-    maximum_average_sign_standard_error::Real=0.05,
+    average_sign_threshold::Real=0.2,
+    maximum_average_sign_standard_error::Real=0.02,
     minimum_block_count::Integer=8,
     maximum_block_drift_zscore::Real=2.0,
     minimum_sign_signal_to_noise::Real=5.0,
