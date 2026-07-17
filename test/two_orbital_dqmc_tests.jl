@@ -6,6 +6,10 @@ const DQMC_RATIO_MAX = Ref(0.0)
 const DQMC_ACCEPTED_UPDATE_MAX = Ref(0.0)
 const DQMC_SWEEP_RECOMPUTE_MAX = Ref(0.0)
 
+# This tolerance covers stabilized dense propagation and one-body trace
+# accumulation while remaining negligible on the order-one energy scale.
+const DQMC_THERMODYNAMIC_ATOL = 1.0e-10
+
 function _dense_dqmc_propagator(propagator)
     return Diagonal(propagator.expmΔτV) * propagator.expmΔτK
 end
@@ -205,6 +209,80 @@ end
                 rtol=0.0,
             )
         end
+    end
+
+    @testset "Deterministic U=0 thermodynamic benchmark" begin
+        L = 4
+        beta = 4.0
+        mu = -1.897
+        dtau = 0.1
+        parameters = DQMCParameters(
+            L=L,
+            beta=beta,
+            dtau=dtau,
+            U=0.0,
+            mu=mu,
+            stabilization_period=5,
+            burnin_sweeps=0,
+            measurement_sweeps=1,
+            seed=6197,
+        )
+        dimensions = validate_dqmc_parameters(parameters)
+        fixed_fields = [
+            isodd(index + time_slice) ? Int8(1) : Int8(-1)
+            for index in 1:dimensions.Nsp, time_slice in 1:dimensions.Ltau
+        ]
+        state = initialize_dqmc_state(parameters; hs_fields=fixed_fields)
+
+        exact = finite_lattice_free_thermodynamics(L, beta, mu)
+        measured = measure_thermodynamic_observables(state)
+        @test measure_basic_observables(state).configuration_sign == 1.0
+        @test propertynames(measured) == propertynames(exact)
+        for name in propertynames(exact)
+            @test isapprox(
+                getproperty(measured, name),
+                getproperty(exact, name);
+                atol=DQMC_THERMODYNAMIC_ATOL,
+                rtol=0.0,
+            )
+        end
+
+        @test measured.shifted_interaction_energy_per_cell == 0.0
+        @test measured.internal_energy_per_cell ==
+              measured.kinetic_energy_per_cell
+        @test measured.grand_energy_per_cell ==
+              measured.internal_energy_per_cell - mu * measured.density
+
+        dimension = dimensions.Nsp
+        identity_matrix = Matrix{Float64}(I, dimension, dimension)
+        density_up = identity_matrix - state.greens_up
+        density_down = identity_matrix - state.greens_down
+        bare_kinetic_energy = (
+            tr(state.kinetic * density_up) +
+            tr(state.kinetic * density_down)
+        ) / L^2
+        shifted_kinetic_energy = (
+            tr(state.kinetic_mu * density_up) +
+            tr(state.kinetic_mu * density_down)
+        ) / L^2
+        @test isapprox(
+            measured.internal_energy_per_cell,
+            bare_kinetic_energy;
+            atol=DQMC_THERMODYNAMIC_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            measured.grand_energy_per_cell,
+            shifted_kinetic_energy;
+            atol=DQMC_THERMODYNAMIC_ATOL,
+            rtol=0.0,
+        )
+        @test !isapprox(
+            measured.internal_energy_per_cell,
+            shifted_kinetic_energy;
+            atol=DQMC_THERMODYNAMIC_ATOL,
+            rtol=0.0,
+        )
     end
 
     @testset "Direct cyclic products" begin

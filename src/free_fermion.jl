@@ -47,6 +47,81 @@ function _fermi_green_and_density(x::T) where {T<:AbstractFloat}
     end
 end
 
+"""
+    finite_lattice_free_thermodynamics(
+        L,
+        beta,
+        mu;
+        parameters=DEFAULT_PARAMETERS,
+    )
+
+Return the exact finite-`L` thermodynamic observables of the noninteracting
+two-orbital model on the periodic momentum grid returned by
+[`allowed_momenta`](@ref). The density includes both spins and is normalized
+per physical cell, so its range is zero to four and
+`doping = (density - 2) / 4`.
+
+This routine is an independent Bloch-momentum-grid oracle: it evaluates
+[`band_energies`](@ref) directly and does not use a real-space density matrix
+or a DQMC measurement. Fermi occupations are evaluated with a branch-stable
+logistic expression. At `U = 0`, the shifted-interaction contribution is zero,
+the internal energy is the kinetic energy, and the grand-canonical energy is
+the finite-grid sum of `(E_nu(k) - mu) f_nu(k)`.
+"""
+function finite_lattice_free_thermodynamics(
+    L::Integer,
+    beta::Real,
+    mu::Real;
+    parameters::ModelParameters=DEFAULT_PARAMETERS,
+)
+    momenta = allowed_momenta(L)
+    _checked_nonnegative_finite(beta, "beta")
+    isfinite(mu) || throw(ArgumentError("mu must be finite"))
+
+    T = promote_type(
+        typeof(float(beta)),
+        typeof(float(mu)),
+        typeof(float(parameters.t1)),
+        eltype(momenta),
+    )
+    floating_beta = convert(T, beta)
+    floating_mu = convert(T, mu)
+    occupation_sum = zero(T)
+    kinetic_energy_sum = zero(T)
+    grand_energy_sum = zero(T)
+
+    for ky in momenta, kx in momenta
+        for energy in band_energies(kx, ky, parameters)
+            floating_energy = convert(T, energy)
+            scaled_energy = floating_beta * (floating_energy - floating_mu)
+            _, occupation = _fermi_green_and_density(scaled_energy)
+            occupation_sum += occupation
+            kinetic_energy_sum += floating_energy * occupation
+            grand_energy_sum += (floating_energy - floating_mu) * occupation
+        end
+    end
+
+    spin_degeneracy = convert(T, 2)
+    number_of_cells = convert(T, Int(L)^2)
+    density = spin_degeneracy * occupation_sum / number_of_cells
+    kinetic_energy_per_cell =
+        spin_degeneracy * kinetic_energy_sum / number_of_cells
+    shifted_interaction_energy_per_cell = zero(T)
+    internal_energy_per_cell = kinetic_energy_per_cell
+    grand_energy_per_cell =
+        spin_degeneracy * grand_energy_sum / number_of_cells
+
+    return (
+        density=density,
+        doping=(density - convert(T, 2)) / convert(T, 4),
+        kinetic_energy_per_cell=kinetic_energy_per_cell,
+        shifted_interaction_energy_per_cell=
+            shifted_interaction_energy_per_cell,
+        internal_energy_per_cell=internal_energy_per_cell,
+        grand_energy_per_cell=grand_energy_per_cell,
+    )
+end
+
 function _free_correlation_matrix(
     kinetic_mu::AbstractMatrix{<:Real},
     beta::Real,

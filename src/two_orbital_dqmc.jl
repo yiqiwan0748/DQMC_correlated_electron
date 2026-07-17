@@ -539,6 +539,65 @@ function measure_basic_observables(state::DQMCState{T}) where {T}
 end
 
 """
+    measure_thermodynamic_observables(state)
+
+Measure density and energy observables for the current auxiliary-field
+configuration. The equal-time convention is
+`G_sigma[i,j] = <c_sigma,i c_sigma,j^dagger>`, so the one-body density matrix
+is `C_sigma = I - G_sigma`. The kinetic energy contracts `C_sigma` with the
+bare `state.kinetic`; the chemical-potential shift is included only in
+`grand_energy_per_cell`.
+
+The shifted interaction estimator retains the constants in
+`U*(n_up - 1/2)*(n_down - 1/2)`. All densities and energies are normalized per
+physical unit cell.
+"""
+function measure_thermodynamic_observables(state::DQMCState{T}) where {T}
+    number_of_sites = state.parameters.L^2
+    dimension = size(state.kinetic, 1)
+    kinetic_energy = zero(T)
+    shifted_interaction_sum = zero(T)
+    particle_number = zero(T)
+
+    for index in 1:dimension
+        occupation_up = one(T) - state.greens_up[index, index]
+        occupation_down = one(T) - state.greens_down[index, index]
+        particle_number += occupation_up + occupation_down
+        shifted_interaction_sum +=
+            (occupation_up - one(T) / 2) *
+            (occupation_down - one(T) / 2)
+
+        for column in 1:dimension
+            correlation_up = (index == column ? one(T) : zero(T)) -
+                             state.greens_up[column, index]
+            correlation_down = (index == column ? one(T) : zero(T)) -
+                               state.greens_down[column, index]
+            kinetic_energy += state.kinetic[index, column] *
+                              (correlation_up + correlation_down)
+        end
+    end
+
+    density = particle_number / number_of_sites
+    doping = (density - convert(T, 2)) / convert(T, 4)
+    kinetic_energy_per_cell = kinetic_energy / number_of_sites
+    shifted_interaction_energy_per_cell =
+        state.parameters.U * shifted_interaction_sum / number_of_sites
+    internal_energy_per_cell =
+        kinetic_energy_per_cell + shifted_interaction_energy_per_cell
+    grand_energy_per_cell =
+        internal_energy_per_cell - state.parameters.mu * density
+    return (
+        density=density,
+        doping=doping,
+        kinetic_energy_per_cell=kinetic_energy_per_cell,
+        shifted_interaction_energy_per_cell=
+            shifted_interaction_energy_per_cell,
+        internal_energy_per_cell=internal_energy_per_cell,
+        grand_energy_per_cell=grand_energy_per_cell,
+    )
+end
+
+"""
     run_dqmc_smoke(parameters; case_name="smoke")
 
 Run the small burn-in and measurement workload. Interacting observables are

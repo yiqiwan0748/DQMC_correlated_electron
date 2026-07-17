@@ -91,7 +91,22 @@ Status: IN PROGRESS (Phase 1A). Feasibility chains have not been executed and
 no average-sign result is claimed.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
-  changing `src/two_orbital_dqmc.jl`.
+  changing its HS-update, propagation, acceptance, or sampling behavior.
+  Measurement-only thermodynamic additions to `src/two_orbital_dqmc.jl` do
+  not alter that kernel.
+- Before constructing or sweeping any `U > 0` calibration or sign chain,
+  require the deterministic `U = 0`, `L = 4`, `beta*t = 4`,
+  `mu/t = -1.897`, `dtau*t = 0.1` density-and-energy benchmark to pass. It
+  uses fixed auxiliary fields with no burn-in, sweeps, or Monte Carlo
+  sampling and compares DQMC estimators with an independent finite-lattice
+  Bloch momentum-grid oracle.
+- Validate the consistently named `density`, `doping`,
+  `kinetic_energy_per_cell`, `shifted_interaction_energy_per_cell`,
+  `internal_energy_per_cell`, and `grand_energy_per_cell`. Internal kinetic
+  energy uses the bare `K`, grand energy subtracts `mu*density`, and the
+  particle-hole-centered interaction constants are retained. The target
+  finite-grid density is `1.820507020579327`, not the dense-momentum-grid
+  value near `1.48466`.
 - Keep three independently selectable phases: exact `U=0` controls, an
   interacting chemical-potential calibration scan, and fixed-chemical-
   potential sign diagnostics. Phase 1A restricts the configured study to
