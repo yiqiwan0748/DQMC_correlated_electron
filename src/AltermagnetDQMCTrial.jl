@@ -45,6 +45,7 @@ export ModelParameters,
        SignFeasibilityCriteria,
        DEFAULT_SIGN_FEASIBILITY_CRITERIA,
        average_sign_gate_passes,
+       summarize_sign_reweighted_thermodynamics,
        summarize_sign_feasibility,
        run_dqmc_sign_feasibility
 

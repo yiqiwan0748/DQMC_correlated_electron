@@ -5,6 +5,51 @@ module SignFeasibilityRunner
 include(joinpath(@__DIR__, "..", "scripts", "run_dqmc_sign_feasibility.jl"))
 end
 
+function _synthetic_thermodynamic_observation(
+    density,
+    kinetic_energy_per_cell,
+    shifted_interaction_energy_per_cell,
+    mu,
+)
+    internal_energy_per_cell =
+        kinetic_energy_per_cell + shifted_interaction_energy_per_cell
+    return (
+        density=density,
+        doping=(density - 2) / 4,
+        kinetic_energy_per_cell=kinetic_energy_per_cell,
+        shifted_interaction_energy_per_cell=
+            shifted_interaction_energy_per_cell,
+        internal_energy_per_cell=internal_energy_per_cell,
+        grand_energy_per_cell=internal_energy_per_cell - mu * density,
+    )
+end
+
+function _independent_ratio_jackknife(signs, values, block_size)
+    measurement_count = length(signs)
+    ranges = [
+        first_index:min(first_index + block_size - 1, measurement_count)
+        for first_index in 1:block_size:measurement_count
+    ]
+    sign_sum = sum(signs)
+    signed_sum = sum(signs[index] * values[index] for index in eachindex(signs))
+    leave_one_out = [
+        begin
+            block_sign_sum = sum(signs[index] for index in range)
+            block_signed_sum = sum(
+                signs[index] * values[index] for index in range
+            )
+            (signed_sum - block_signed_sum) / (sign_sum - block_sign_sum)
+        end
+        for range in ranges
+    ]
+    center = sum(leave_one_out) / length(leave_one_out)
+    standard_error = sqrt(
+        (length(leave_one_out) - 1) / length(leave_one_out) *
+        sum((estimate - center)^2 for estimate in leave_one_out),
+    )
+    return (estimate=signed_sum / sign_sum, standard_error=standard_error)
+end
+
 @testset "Milestone 6A DQMC sign feasibility" begin
     default_criteria = SignFeasibilityCriteria()
     criteria = SignFeasibilityCriteria(
@@ -138,6 +183,252 @@ end
         @test synthetic.signed_filling_sum == 1.25 - 2.0 + 3.25
         @test synthetic.total_density ==
               synthetic.signed_filling_sum / synthetic.configuration_sign_sum
+    end
+
+
+    @testset "General sign-reweighted thermodynamics" begin
+        thermodynamic_names = (
+            :density,
+            :doping,
+            :kinetic_energy_per_cell,
+            :shifted_interaction_energy_per_cell,
+            :internal_energy_per_cell,
+            :grand_energy_per_cell,
+        )
+        mu = -1.897
+        densities = [1.2, 1.7, 2.1, 2.6, 1.4, 2.8, 2.3, 1.9]
+        kinetic_energies = [-2.4, -2.1, -1.8, -1.5, -2.2, -1.3, -1.6, -2.0]
+        interaction_energies = [0.4, 0.2, -0.1, 0.3, 0.5, -0.2, 0.1, 0.25]
+        raw_observations = [
+            _synthetic_thermodynamic_observation(
+                densities[index],
+                kinetic_energies[index],
+                interaction_energies[index],
+                mu,
+            )
+            for index in eachindex(densities)
+        ]
+
+        @testset "Mixed signs, total ratios, and independent jackknife" begin
+            signs = [1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0]
+            summary = summarize_sign_reweighted_thermodynamics(
+                signs,
+                raw_observations;
+                block_size=2,
+            )
+            @test summary.measurement_count == 8
+            @test summary.block_count == 4
+            @test summary.minimum_block_length == 2
+            @test summary.maximum_block_length == 2
+            @test summary.configuration_sign_sum == sum(signs) == 4.0
+            @test summary.average_sign == 0.5
+            @test summary.sign_denominator_usable
+            @test summary.leave_one_out_denominators_usable
+            @test summary.leave_one_out_denominator_failure_count == 0
+            @test summary.minimum_absolute_leave_one_out_average_sign == 1 / 3
+            @test summary.denominator_guard_passed
+            @test summary.configuration_signs_valid
+            @test summary.raw_observables_finite
+            @test summary.finite_results
+
+            for name in thermodynamic_names
+                values = getproperty.(raw_observations, name)
+                independent = _independent_ratio_jackknife(signs, values, 2)
+                @test isapprox(
+                    getproperty(summary, name),
+                    independent.estimate;
+                    atol=2.0e-14,
+                    rtol=0.0,
+                )
+                error_name = Symbol(name, "_standard_error")
+                @test isapprox(
+                    getproperty(summary, error_name),
+                    independent.standard_error;
+                    atol=2.0e-14,
+                    rtol=0.0,
+                )
+                @test getproperty(summary, Symbol(name, "_jackknife_valid"))
+            end
+
+            @test isapprox(
+                summary.doping,
+                (summary.density - 2) / 4;
+                atol=2.0e-14,
+                rtol=0.0,
+            )
+            @test isapprox(
+                summary.internal_energy_per_cell,
+                summary.kinetic_energy_per_cell +
+                summary.shifted_interaction_energy_per_cell;
+                atol=2.0e-14,
+                rtol=0.0,
+            )
+            @test isapprox(
+                summary.grand_energy_per_cell,
+                summary.internal_energy_per_cell - mu * summary.density;
+                atol=2.0e-14,
+                rtol=0.0,
+            )
+
+            compatibility_criteria = SignFeasibilityCriteria(
+                average_sign_threshold=-0.9,
+                maximum_average_sign_standard_error=1.0,
+                minimum_block_count=4,
+                maximum_block_drift_zscore=10.0,
+                minimum_sign_signal_to_noise=0.0,
+                minimum_absolute_average_sign=0.0,
+            )
+            legacy = summarize_sign_feasibility(
+                signs,
+                densities;
+                block_size=2,
+                criteria=compatibility_criteria,
+            )
+            @test legacy.total_density == summary.density
+            @test legacy.total_density_standard_error ==
+                  summary.density_standard_error
+            @test legacy.filling_jackknife_valid == summary.density_jackknife_valid
+            @test legacy.configuration_sign_sum == summary.configuration_sign_sum
+            @test legacy.raw_filling_sum == sum(densities)
+            @test legacy.signed_filling_sum ==
+                  sum(signs[index] * densities[index] for index in eachindex(signs))
+            @test propertynames(legacy) == (
+                :measurement_count,
+                :requested_block_size,
+                :block_count,
+                :minimum_block_length,
+                :maximum_block_length,
+                :configuration_sign_sum,
+                :raw_filling_sum,
+                :signed_filling_sum,
+                :average_sign,
+                :average_sign_standard_error,
+                :average_sign_lower_2se,
+                :configured_average_sign_threshold,
+                :average_sign_gate_passed,
+                :block_count_sufficient,
+                :block_stability_evaluable,
+                :block_drift_zscore,
+                :block_stable,
+                :average_sign_precision_sufficient,
+                :sampling_sufficient,
+                :sign_denominator_usable,
+                :sign_signal_to_noise,
+                :sign_signal_to_noise_sufficient,
+                :filling_resolution_sufficient,
+                :total_density,
+                :total_density_standard_error,
+                :filling_jackknife_valid,
+                :configuration_signs_finite,
+                :configuration_signs_valid,
+                :raw_fillings_finite,
+                :acceptance_rate,
+                :acceptance_valid,
+                :maximum_greens_recompute_error,
+                :correction_guard_passed,
+                :finite_results,
+                :numerical_valid,
+                :correlation_measurement_ready,
+            )
+        end
+
+        @testset "All-positive signs and final short block" begin
+            signs = ones(7)
+            observations = raw_observations[1:7]
+            summary = summarize_sign_reweighted_thermodynamics(
+                signs,
+                observations;
+                block_size=3,
+            )
+            @test summary.block_count == 3
+            @test summary.minimum_block_length == 1
+            @test summary.maximum_block_length == 3
+            @test summary.average_sign == 1.0
+            @test summary.average_sign_standard_error == 0.0
+            @test summary.denominator_guard_passed
+            for name in thermodynamic_names
+                values = getproperty.(observations, name)
+                @test isapprox(
+                    getproperty(summary, name),
+                    sum(values) / length(values);
+                    atol=2.0e-14,
+                    rtol=0.0,
+                )
+                @test getproperty(summary, Symbol(name, "_jackknife_valid"))
+            end
+        end
+
+        @testset "Full and leave-one-out denominator guards" begin
+            zero_total = summarize_sign_reweighted_thermodynamics(
+                [1.0, -1.0, 1.0, -1.0],
+                raw_observations[1:4];
+                block_size=2,
+            )
+            @test zero_total.configuration_sign_sum == 0.0
+            @test !zero_total.sign_denominator_usable
+            @test !zero_total.denominator_guard_passed
+            for name in thermodynamic_names
+                @test ismissing(getproperty(zero_total, name))
+                @test ismissing(getproperty(
+                    zero_total,
+                    Symbol(name, "_standard_error"),
+                ))
+                @test !getproperty(zero_total, Symbol(name, "_jackknife_valid"))
+            end
+
+            zero_leave_one_out = summarize_sign_reweighted_thermodynamics(
+                [1.0, 1.0, -1.0, -1.0, 1.0, 1.0],
+                raw_observations[1:6];
+                block_size=2,
+            )
+            @test zero_leave_one_out.configuration_sign_sum == 2.0
+            @test zero_leave_one_out.sign_denominator_usable
+            @test !zero_leave_one_out.leave_one_out_denominators_usable
+            @test zero_leave_one_out.leave_one_out_denominator_failure_count == 2
+            @test zero_leave_one_out.minimum_absolute_leave_one_out_average_sign ==
+                  0.0
+            @test !zero_leave_one_out.denominator_guard_passed
+            for name in thermodynamic_names
+                @test isfinite(getproperty(zero_leave_one_out, name))
+                @test ismissing(getproperty(
+                    zero_leave_one_out,
+                    Symbol(name, "_standard_error"),
+                ))
+                @test !getproperty(
+                    zero_leave_one_out,
+                    Symbol(name, "_jackknife_valid"),
+                )
+            end
+        end
+
+        @testset "Input validation" begin
+            @test_throws ArgumentError summarize_sign_reweighted_thermodynamics(
+                Float64[],
+                NamedTuple[];
+                block_size=1,
+            )
+            @test_throws DimensionMismatch summarize_sign_reweighted_thermodynamics(
+                [1.0],
+                raw_observations[1:2];
+                block_size=1,
+            )
+            @test_throws ArgumentError summarize_sign_reweighted_thermodynamics(
+                [1.0],
+                raw_observations[1:1];
+                block_size=0,
+            )
+            @test_throws ArgumentError summarize_sign_reweighted_thermodynamics(
+                [1.0],
+                [(density=1.0,)];
+                block_size=1,
+            )
+            @test_throws ArgumentError summarize_sign_reweighted_thermodynamics(
+                [1.0],
+                raw_observations[1:1];
+                block_size=1,
+                minimum_absolute_average_sign=1.0,
+            )
+        end
     end
 
     @testset "Independent diagnostic domains and combined readiness" begin

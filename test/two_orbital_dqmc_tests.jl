@@ -10,6 +10,11 @@ const DQMC_SWEEP_RECOMPUTE_MAX = Ref(0.0)
 # accumulation while remaining negligible on the order-one energy scale.
 const DQMC_THERMODYNAMIC_ATOL = 1.0e-10
 
+# This tighter tolerance covers stabilized L=2 Green construction followed by
+# independent scalar contractions, while remaining negligible on the model's
+# order-one density and energy scales.
+const DQMC_U2_FIXED_FIELD_ATOL = 1.0e-11
+
 function _dense_dqmc_propagator(propagator)
     return Diagonal(propagator.expmΔτV) * propagator.expmΔτK
 end
@@ -281,6 +286,123 @@ end
             measured.internal_energy_per_cell,
             shifted_kinetic_energy;
             atol=DQMC_THERMODYNAMIC_ATOL,
+            rtol=0.0,
+        )
+    end
+
+    @testset "Deterministic fixed-field U>0 thermodynamic estimators" begin
+        L = 2
+        beta = 1.0
+        dtau = 0.1
+        U = 2.0
+        mu = -1.897
+        parameters = DQMCParameters(
+            L=L,
+            beta=beta,
+            dtau=dtau,
+            U=U,
+            mu=mu,
+            stabilization_period=5,
+            burnin_sweeps=0,
+            measurement_sweeps=1,
+            seed=6292,
+        )
+        dimensions = validate_dqmc_parameters(parameters)
+        @test dimensions.Ltau == 10
+        fixed_fields = Int8[
+             1 -1  1  1 -1 -1  1 -1  1  1;
+            -1  1  1 -1  1 -1 -1  1 -1  1;
+             1  1 -1  1 -1  1 -1 -1  1 -1;
+            -1 -1  1 -1 -1  1  1 -1  1  1;
+             1 -1 -1  1 -1  1  1  1 -1 -1;
+            -1  1 -1 -1  1  1 -1  1  1 -1;
+             1  1  1 -1  1 -1  1 -1 -1  1;
+            -1 -1 -1  1  1 -1 -1  1  1 -1
+        ]
+        @test size(fixed_fields) == (dimensions.Nsp, dimensions.Ltau)
+        @test sort!(unique(fixed_fields)) == Int8[-1, 1]
+        state = initialize_dqmc_state(parameters; hs_fields=fixed_fields)
+        measured = measure_thermodynamic_observables(state)
+
+        number_of_cells = L^2
+        particle_number = 0.0
+        kinetic_energy = 0.0
+        shifted_interaction_sum = 0.0
+        double_occupancy_x_sum = 0.0
+        double_occupancy_y_sum = 0.0
+        for index in 1:dimensions.Nsp
+            occupation_up = 1.0 - state.greens_up[index, index]
+            occupation_down = 1.0 - state.greens_down[index, index]
+            particle_number += occupation_up + occupation_down
+            shifted_interaction_sum +=
+                (occupation_up - 0.5) * (occupation_down - 0.5)
+            if isodd(index)
+                double_occupancy_x_sum += occupation_up * occupation_down
+            else
+                double_occupancy_y_sum += occupation_up * occupation_down
+            end
+
+            for column in 1:dimensions.Nsp
+                delta = index == column ? 1.0 : 0.0
+                kinetic_energy += state.kinetic[index, column] * (
+                    delta - state.greens_up[column, index] +
+                    delta - state.greens_down[column, index]
+                )
+            end
+        end
+
+        density = particle_number / number_of_cells
+        doping = (density - 2.0) / 4.0
+        kinetic_energy_per_cell = kinetic_energy / number_of_cells
+        shifted_interaction_energy_per_cell =
+            U * shifted_interaction_sum / number_of_cells
+        internal_energy_per_cell =
+            kinetic_energy_per_cell + shifted_interaction_energy_per_cell
+        grand_energy_per_cell = internal_energy_per_cell - mu * density
+        direct = (
+            density=density,
+            doping=doping,
+            kinetic_energy_per_cell=kinetic_energy_per_cell,
+            shifted_interaction_energy_per_cell=
+                shifted_interaction_energy_per_cell,
+            internal_energy_per_cell=internal_energy_per_cell,
+            grand_energy_per_cell=grand_energy_per_cell,
+        )
+        @test propertynames(measured) == propertynames(direct)
+        for name in propertynames(direct)
+            @test isapprox(
+                getproperty(measured, name),
+                getproperty(direct, name);
+                atol=DQMC_U2_FIXED_FIELD_ATOL,
+                rtol=0.0,
+            )
+        end
+
+        double_occupancy_x = double_occupancy_x_sum / number_of_cells
+        double_occupancy_y = double_occupancy_y_sum / number_of_cells
+        centered_interaction_from_doubles = U * (
+            double_occupancy_x + double_occupancy_y - density / 2 + 0.5
+        )
+        unshifted_interaction_from_doubles = U * (
+            double_occupancy_x + double_occupancy_y - density / 2
+        )
+        @test isapprox(
+            shifted_interaction_energy_per_cell,
+            centered_interaction_from_doubles;
+            atol=DQMC_U2_FIXED_FIELD_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            measured.shifted_interaction_energy_per_cell,
+            centered_interaction_from_doubles;
+            atol=DQMC_U2_FIXED_FIELD_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            measured.shifted_interaction_energy_per_cell -
+            unshifted_interaction_from_doubles,
+            U / 2;
+            atol=DQMC_U2_FIXED_FIELD_ATOL,
             rtol=0.0,
         )
     end
