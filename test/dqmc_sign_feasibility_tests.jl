@@ -50,6 +50,43 @@ function _independent_ratio_jackknife(signs, values, block_size)
     return (estimate=signed_sum / sign_sum, standard_error=standard_error)
 end
 
+function _strict_pilot_summary(;
+    signs=ones(16),
+    raw_total_densities=collect(range(1.1, 1.8; length=length(signs))),
+    block_size=2,
+    maximum_greens_recompute_error=0.0,
+    acceptance_rate=0.5,
+    attempted_updates=100,
+    accepted_updates=50,
+    rejected_updates=50,
+    runtime_seconds=1.0,
+)
+    diagnostics = summarize_sign_feasibility(
+        signs,
+        raw_total_densities;
+        block_size=block_size,
+        maximum_greens_recompute_error=maximum_greens_recompute_error,
+        acceptance_rate=acceptance_rate,
+    )
+    return merge(
+        diagnostics,
+        (
+            attempted_updates=attempted_updates,
+            accepted_updates=accepted_updates,
+            rejected_updates=rejected_updates,
+            runtime_seconds=runtime_seconds,
+        ),
+    )
+end
+
+function _repeated_sign_blocks(positive_count, block_length, block_count)
+    block = vcat(
+        ones(positive_count),
+        -ones(block_length - positive_count),
+    )
+    return repeat(block, block_count)
+end
+
 @testset "Milestone 6A DQMC sign feasibility" begin
     default_criteria = SignFeasibilityCriteria()
     criteria = SignFeasibilityCriteria(
@@ -116,6 +153,8 @@ end
 
         options = SignFeasibilityRunner.parse_runner_options(String[])
         @test !options.run_requested
+        @test !options.require_single
+        @test !options.strict_pilot
         pipe = Pipe()
         redirect_stdout(pipe) do
             @test isnothing(SignFeasibilityRunner.main(String[]))
@@ -125,6 +164,250 @@ end
         @test occursin("mode=dry-run", output)
         @test occursin("dqmc_chains_constructed=0", output)
         @test occursin("outputs_written=false", output)
+
+        one_chain_arguments = [
+            "--phase=fixed-mu-diagnostics",
+            "--case=fixed_target_L4_beta4",
+            "--seed=6211",
+            "--require-single",
+            "--strict-pilot",
+        ]
+        one_chain_options = SignFeasibilityRunner.parse_runner_options(
+            one_chain_arguments,
+        )
+        selected = SignFeasibilityRunner.selected_chains(one_chain_options)
+        @test length(selected) == 1
+        @test only(selected).seed == 6211
+        one_chain_pipe = Pipe()
+        redirect_stdout(one_chain_pipe) do
+            @test isnothing(SignFeasibilityRunner.main(one_chain_arguments))
+        end
+        close(one_chain_pipe.in)
+        one_chain_output = read(one_chain_pipe, String)
+        @test occursin("mode=dry-run", one_chain_output)
+        @test occursin("selected_chain_count=1", one_chain_output)
+        @test occursin("single_chain_guard_passed=true", one_chain_output)
+        @test occursin("dqmc_chains_constructed=0", one_chain_output)
+        @test occursin("outputs_written=false", one_chain_output)
+
+        run_one_options = SignFeasibilityRunner.parse_runner_options(
+            [one_chain_arguments; "--run"],
+        )
+        redirect_stdout(devnull) do
+            @test isnothing(SignFeasibilityRunner.validate_chain_selection(
+                run_one_options,
+                selected,
+            ))
+        end
+
+        multiple_options = SignFeasibilityRunner.parse_runner_options(
+            ["--run", "--require-single"],
+        )
+        redirect_stdout(devnull) do
+            @test_throws ErrorException SignFeasibilityRunner.validate_chain_selection(
+                multiple_options,
+                chains,
+            )
+        end
+
+        zero_options = SignFeasibilityRunner.parse_runner_options([
+            "--run",
+            "--require-single",
+            "--case=not_a_configured_case",
+        ])
+        @test_throws ErrorException SignFeasibilityRunner.selected_chains(
+            zero_options,
+        )
+
+        unguarded_strict_options =
+            SignFeasibilityRunner.parse_runner_options([
+                "--strict-pilot",
+            ])
+        @test_throws ErrorException SignFeasibilityRunner.validate_chain_selection(
+            unguarded_strict_options,
+            chains,
+        )
+    end
+
+    @testset "Runner diagnostics output and overwrite refusal" begin
+        chain = SignFeasibilityRunner.FEASIBILITY_CHAINS[7]
+        diagnostics = _strict_pilot_summary()
+        assessment = AltermagnetDQMCTrial.classify_strict_sign_pilot(
+            diagnostics,
+        )
+        summary = merge(
+            (
+                target_filling=chain.target_filling,
+                phase=String(chain.phase),
+                case=chain.case,
+                seed=chain.seed,
+            ),
+            diagnostics,
+            assessment,
+        )
+        base_summary = merge(
+            (
+                target_filling=chain.target_filling,
+                phase=String(chain.phase),
+                case=chain.case,
+                seed=chain.seed,
+            ),
+            diagnostics,
+        )
+
+        mktempdir() do directory
+            options = SignFeasibilityRunner.parse_runner_options([
+                "--output-dir=$directory",
+                "--require-single",
+                "--strict-pilot",
+            ])
+            summary_path = joinpath(
+                directory,
+                SignFeasibilityRunner.SUMMARY_FILENAME,
+            )
+            metadata_path = joinpath(
+                directory,
+                SignFeasibilityRunner.METADATA_FILENAME,
+            )
+            SignFeasibilityRunner.write_summary(summary_path, [summary])
+            SignFeasibilityRunner.write_metadata(
+                metadata_path,
+                [chain],
+                DEFAULT_SIGN_FEASIBILITY_CRITERIA,
+                [summary],
+                options,
+            )
+
+            csv_header = first(readlines(summary_path))
+            metadata = read(metadata_path, String)
+            for field in (
+                "full_sign_denominator_usable",
+                "leave_one_out_denominators_usable",
+                "leave_one_out_denominator_failure_count",
+                "minimum_absolute_leave_one_out_average_sign",
+                "filling_jackknife_valid",
+                "filling_jackknife_standard_error",
+                "acceptance_rate",
+                "attempted_updates",
+                "accepted_updates",
+                "rejected_updates",
+                "block_drift_zscore",
+                "maximum_greens_recompute_error",
+                "runtime_seconds",
+                "strict_pilot_status",
+            )
+                @test occursin(field, csv_header)
+                @test occursin(field, metadata)
+            end
+            @test occursin("require_single=true", metadata)
+            @test occursin("strict_pilot=true", metadata)
+            @test occursin(
+                "completed strict-pilot classification is recorded",
+                metadata,
+            )
+            @test !occursin(
+                "No average-sign conclusion is encoded",
+                metadata,
+            )
+
+            nonpilot_summary_path = joinpath(directory, "nonpilot.csv")
+            nonpilot_metadata_path = joinpath(directory, "nonpilot_metadata.txt")
+            nonpilot_options = SignFeasibilityRunner.parse_runner_options([
+                "--output-dir=$directory",
+            ])
+            SignFeasibilityRunner.write_summary(
+                nonpilot_summary_path,
+                [base_summary],
+            )
+            SignFeasibilityRunner.write_metadata(
+                nonpilot_metadata_path,
+                [chain],
+                DEFAULT_SIGN_FEASIBILITY_CRITERIA,
+                [base_summary],
+                nonpilot_options,
+            )
+            nonpilot_csv_header = first(readlines(nonpilot_summary_path))
+            nonpilot_metadata = read(nonpilot_metadata_path, String)
+            @test !occursin("strict_pilot_status", nonpilot_csv_header)
+            @test !occursin("strict_pilot_status", nonpilot_metadata)
+            @test !occursin("strict_pilot=false", nonpilot_metadata)
+            @test occursin(
+                "No average-sign conclusion is encoded",
+                nonpilot_metadata,
+            )
+
+            collision_options =
+                SignFeasibilityRunner.parse_runner_options([
+                    "--output-dir=$directory",
+                ])
+            @test_throws ErrorException SignFeasibilityRunner.check_output_collisions(
+                collision_options,
+            )
+            overwrite_options =
+                SignFeasibilityRunner.parse_runner_options([
+                    "--output-dir=$directory",
+                    "--overwrite",
+                ])
+            @test isnothing(SignFeasibilityRunner.check_output_collisions(
+                overwrite_options,
+            ))
+            no_write_options =
+                SignFeasibilityRunner.parse_runner_options([
+                    "--output-dir=$directory",
+                    "--no-write",
+                ])
+            @test isnothing(SignFeasibilityRunner.check_output_collisions(
+                no_write_options,
+            ))
+            @test_throws ErrorException SignFeasibilityRunner.parse_runner_options([
+                "--overwrite",
+                "--no-write",
+            ])
+
+            failing_options = SignFeasibilityRunner.parse_runner_options([
+                "--output-dir=$(joinpath(directory, "failing"))",
+                "--require-single",
+                "--strict-pilot",
+            ])
+            failure_pipe = Pipe()
+            redirect_stdout(failure_pipe) do
+                @test_throws ErrorException SignFeasibilityRunner.finish_completed_run(
+                    failing_options,
+                    [chain],
+                    DEFAULT_SIGN_FEASIBILITY_CRITERIA,
+                    [base_summary];
+                    summary_writer=(path, summaries) ->
+                        error("synthetic summary write failure"),
+                )
+            end
+            close(failure_pipe.in)
+            failure_output = read(failure_pipe, String)
+            @test occursin("outputs_complete=false", failure_output)
+            @test occursin("status=INCONCLUSIVE", failure_output)
+            @test occursin("failed_gates=output", failure_output)
+            @test !occursin("status=PASS", failure_output)
+
+            no_write_strict_options =
+                SignFeasibilityRunner.parse_runner_options([
+                    "--no-write",
+                    "--require-single",
+                    "--strict-pilot",
+                ])
+            no_write_pipe = Pipe()
+            redirect_stdout(no_write_pipe) do
+                @test_throws ErrorException SignFeasibilityRunner.finish_completed_run(
+                    no_write_strict_options,
+                    [chain],
+                    DEFAULT_SIGN_FEASIBILITY_CRITERIA,
+                    [base_summary],
+                )
+            end
+            close(no_write_pipe.in)
+            no_write_output = read(no_write_pipe, String)
+            @test occursin("outputs_written=false", no_write_output)
+            @test occursin("status=INCONCLUSIVE", no_write_output)
+            @test occursin("failed_gates=output", no_write_output)
+        end
     end
 
     @testset "Raw density and exactly-once sign weighting" begin
@@ -313,11 +596,17 @@ end
                 :average_sign_precision_sufficient,
                 :sampling_sufficient,
                 :sign_denominator_usable,
+                :full_sign_denominator_usable,
+                :leave_one_out_denominators_usable,
+                :leave_one_out_denominator_failure_count,
+                :minimum_absolute_leave_one_out_average_sign,
+                :denominator_guard_passed,
                 :sign_signal_to_noise,
                 :sign_signal_to_noise_sufficient,
                 :filling_resolution_sufficient,
                 :total_density,
                 :total_density_standard_error,
+                :filling_jackknife_standard_error,
                 :filling_jackknife_valid,
                 :configuration_signs_finite,
                 :configuration_signs_valid,
@@ -488,6 +777,223 @@ end
         @test ismissing(zero_denominator.total_density)
         @test zero_denominator.numerical_valid
         @test !zero_denominator.correlation_measurement_ready
+    end
+
+    @testset "Strict single-pilot classification" begin
+        pass_summary = _strict_pilot_summary()
+        pass_assessment =
+            AltermagnetDQMCTrial.classify_strict_sign_pilot(pass_summary)
+        @test pass_assessment.strict_pilot_status == :PASS
+        @test pass_assessment.strict_pilot_passed
+        @test pass_assessment.strict_pilot_prerequisite_gates_passed
+        @test pass_assessment.strict_pilot_sign_threshold_passed
+        @test pass_assessment.strict_pilot_sign_precision_passed
+        @test pass_assessment.strict_pilot_sign_signal_to_noise_passed
+        @test pass_assessment.strict_pilot_sign_signal_to_noise_consistent
+        @test pass_assessment.strict_pilot_acceptance_consistency_passed
+        @test pass_assessment.strict_pilot_runtime_passed
+        @test pass_assessment.strict_pilot_output_gate_passed
+        @test pass_summary.average_sign == 1.0
+        @test pass_summary.average_sign_standard_error == 0.0
+        @test pass_summary.sign_signal_to_noise == Inf
+        @test pass_summary.full_sign_denominator_usable
+        @test pass_summary.leave_one_out_denominators_usable
+        @test pass_summary.leave_one_out_denominator_failure_count == 0
+        @test pass_summary.minimum_absolute_leave_one_out_average_sign == 1.0
+        @test pass_summary.denominator_guard_passed
+        @test pass_summary.filling_jackknife_valid
+        @test isfinite(pass_summary.filling_jackknife_standard_error)
+
+        definitive_signs = _repeated_sign_blocks(6, 10, 8)
+        definitive_summary = _strict_pilot_summary(
+            signs=definitive_signs,
+            block_size=10,
+        )
+        definitive_assessment =
+            AltermagnetDQMCTrial.classify_strict_sign_pilot(
+                definitive_summary,
+        )
+        @test definitive_summary.average_sign == 0.2
+        # Identical 0.2 block means can differ at the final Float64 summation
+        # bit; 2e-16 is a roundoff-only tolerance at this scale.
+        @test isapprox(
+            definitive_summary.average_sign_standard_error,
+            0.0;
+            atol=2.0e-16,
+            rtol=0.0,
+        )
+        @test definitive_assessment.strict_pilot_prerequisite_gates_passed
+        @test !definitive_assessment.strict_pilot_sign_threshold_passed
+        @test definitive_assessment.strict_pilot_status ==
+              :DEFINITIVE_SIGN_FAIL
+        @test definitive_assessment.strict_pilot_failed_gates ==
+              "sign_threshold"
+
+        precision_failure = merge(
+            pass_summary,
+            (
+                average_sign_standard_error=0.03,
+                average_sign_lower_2se=0.94,
+                sign_signal_to_noise=1.0 / 0.03,
+            ),
+        )
+        loo_failure = merge(
+            pass_summary,
+            (
+                leave_one_out_denominators_usable=false,
+                leave_one_out_denominator_failure_count=1,
+                minimum_absolute_leave_one_out_average_sign=0.0,
+                denominator_guard_passed=false,
+            ),
+        )
+        green_failure = merge(
+            pass_summary,
+            (
+                maximum_greens_recompute_error=nextfloat(1.0e-8),
+                correction_guard_passed=false,
+            ),
+        )
+        drift_failure = merge(
+            pass_summary,
+            (
+                block_drift_zscore=Inf,
+                block_stable=false,
+                sampling_sufficient=false,
+            ),
+        )
+        jackknife_failure = merge(
+            pass_summary,
+            (
+                total_density_standard_error=missing,
+                filling_jackknife_standard_error=missing,
+                filling_jackknife_valid=false,
+            ),
+        )
+        update_failure = merge(
+            pass_summary,
+            (
+                attempted_updates=100,
+                accepted_updates=0,
+                rejected_updates=100,
+            ),
+        )
+        missing_acceptance = merge(
+            pass_summary,
+            (acceptance_rate=missing,),
+        )
+        nonfinite_acceptance = merge(
+            pass_summary,
+            (acceptance_rate=NaN,),
+        )
+        inconsistent_acceptance = merge(
+            pass_summary,
+            (acceptance_rate=0.9,),
+        )
+        forged_infinite_sign_snr = merge(
+            pass_summary,
+            (
+                average_sign_standard_error=0.01,
+                average_sign_lower_2se=0.98,
+                sign_signal_to_noise=Inf,
+            ),
+        )
+        raw_filling_failure = merge(
+            pass_summary,
+            (
+                raw_filling_sum=NaN,
+                raw_fillings_finite=false,
+            ),
+        )
+        missing_filling = merge(
+            pass_summary,
+            (total_density=missing,),
+        )
+        nonfinite_filling = merge(
+            pass_summary,
+            (total_density=Inf,),
+        )
+        block_count_failure = merge(
+            pass_summary,
+            (
+                block_count=7,
+                block_count_sufficient=false,
+                sampling_sufficient=false,
+            ),
+        )
+        runtime_failure = merge(
+            pass_summary,
+            (runtime_seconds=Inf,),
+        )
+
+        inconclusive_cases = (
+            (precision_failure, "sign_precision"),
+            (loo_failure, "denominators"),
+            (green_failure, "greens_correction"),
+            (drift_failure, "block_drift"),
+            (jackknife_failure, "filling_jackknife"),
+            (update_failure, "update_counts"),
+            (missing_acceptance, "acceptance"),
+            (nonfinite_acceptance, "acceptance"),
+            (inconsistent_acceptance, "acceptance_consistency"),
+            (
+                forged_infinite_sign_snr,
+                "sign_signal_to_noise_consistency",
+            ),
+            (raw_filling_failure, "raw_filling"),
+            (missing_filling, "reweighted_filling"),
+            (nonfinite_filling, "reweighted_filling"),
+            (block_count_failure, "block_count"),
+            (runtime_failure, "runtime"),
+        )
+        for (summary, failed_gate) in inconclusive_cases
+            assessment = AltermagnetDQMCTrial.classify_strict_sign_pilot(
+                summary,
+            )
+            @test assessment.strict_pilot_status == :INCONCLUSIVE
+            @test !assessment.strict_pilot_passed
+            @test occursin(failed_gate, assessment.strict_pilot_failed_gates)
+        end
+
+        procedural_failure =
+            AltermagnetDQMCTrial.classify_strict_sign_pilot(
+                pass_summary;
+                procedural_gate_passed=false,
+            )
+        @test procedural_failure.strict_pilot_status == :INCONCLUSIVE
+        @test occursin(
+            "procedural",
+            procedural_failure.strict_pilot_failed_gates,
+        )
+
+        output_failure = AltermagnetDQMCTrial.classify_strict_sign_pilot(
+            pass_summary;
+            output_gate_passed=false,
+        )
+        @test output_failure.strict_pilot_status == :INCONCLUSIVE
+        @test !output_failure.strict_pilot_output_gate_passed
+        @test occursin("output", output_failure.strict_pilot_failed_gates)
+
+        loo_signs = vcat(
+            [1.0, 1.0],
+            [-1.0, -1.0],
+            [1.0, 1.0],
+            [-1.0, -1.0],
+            [1.0, 1.0],
+            [-1.0, -1.0],
+            [1.0, 1.0],
+            [1.0, -1.0],
+        )
+        loo_summary = _strict_pilot_summary(
+            signs=loo_signs,
+            block_size=2,
+        )
+        @test loo_summary.full_sign_denominator_usable
+        @test !loo_summary.leave_one_out_denominators_usable
+        @test loo_summary.leave_one_out_denominator_failure_count > 0
+        @test loo_summary.minimum_absolute_leave_one_out_average_sign == 0.0
+        @test AltermagnetDQMCTrial.classify_strict_sign_pilot(
+            loo_summary,
+        ).strict_pilot_status == :INCONCLUSIVE
     end
 
     @testset "Statistical and numerical edge cases" begin

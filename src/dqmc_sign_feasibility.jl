@@ -585,6 +585,12 @@ function summarize_sign_feasibility(
         average_sign_precision_sufficient
 
     sign_denominator_usable = ratio_statistics.sign_denominator_usable
+    leave_one_out_denominators_usable =
+        ratio_statistics.jackknife.leave_one_out_denominators_usable
+    leave_one_out_denominator_failure_count =
+        ratio_statistics.jackknife.leave_one_out_denominator_failure_count
+    minimum_absolute_leave_one_out_average_sign =
+        ratio_statistics.jackknife.minimum_absolute_leave_one_out_average_sign
     total_density = only(ratio_statistics.estimates)
     sign_signal_to_noise = if ismissing(average_sign_standard_error) ||
                               !isfinite(average_sign_standard_error) ||
@@ -656,11 +662,22 @@ function summarize_sign_feasibility(
         average_sign_precision_sufficient=average_sign_precision_sufficient,
         sampling_sufficient=sampling_sufficient,
         sign_denominator_usable=sign_denominator_usable,
+        full_sign_denominator_usable=sign_denominator_usable,
+        leave_one_out_denominators_usable=
+            leave_one_out_denominators_usable,
+        leave_one_out_denominator_failure_count=
+            leave_one_out_denominator_failure_count,
+        minimum_absolute_leave_one_out_average_sign=
+            minimum_absolute_leave_one_out_average_sign,
+        denominator_guard_passed=sign_denominator_usable &&
+            leave_one_out_denominators_usable,
         sign_signal_to_noise=sign_signal_to_noise,
         sign_signal_to_noise_sufficient=sign_signal_to_noise_sufficient,
         filling_resolution_sufficient=filling_resolution_sufficient,
         total_density=total_density,
         total_density_standard_error=filling_jackknife.standard_error,
+        filling_jackknife_standard_error=
+            filling_jackknife.standard_error,
         filling_jackknife_valid=filling_jackknife.valid,
         configuration_signs_finite=configuration_signs_finite,
         configuration_signs_valid=configuration_signs_valid,
@@ -672,6 +689,264 @@ function summarize_sign_feasibility(
         finite_results=finite_results,
         numerical_valid=numerical_valid,
         correlation_measurement_ready=correlation_measurement_ready,
+    )
+end
+
+_strict_summary_value(summary, name::Symbol) =
+    hasproperty(summary, name) ? getproperty(summary, name) : missing
+
+_strict_finite_real(value) =
+    !ismissing(value) && value isa Real && isfinite(value)
+
+_strict_finite_nonnegative(value) =
+    _strict_finite_real(value) && value >= 0
+
+"""
+    classify_strict_sign_pilot(summary;
+                               output_gate_passed=true,
+                               procedural_gate_passed=true)
+
+Classify one completed sign-and-filling chain as `:PASS`,
+`:DEFINITIVE_SIGN_FAIL`, or `:INCONCLUSIVE`.  A sign-threshold failure is
+definitive only when every other fixed pilot gate passes; any invalid,
+imprecise, or procedurally unusable diagnostic is inconclusive instead.
+"""
+function classify_strict_sign_pilot(
+    summary;
+    output_gate_passed::Bool=true,
+    procedural_gate_passed::Bool=true,
+)
+    criteria = DEFAULT_SIGN_FEASIBILITY_CRITERIA
+    average_sign = _strict_summary_value(summary, :average_sign)
+    sign_standard_error =
+        _strict_summary_value(summary, :average_sign_standard_error)
+    average_sign_valid = _strict_finite_real(average_sign) &&
+        -1 <= average_sign <= 1
+    sign_standard_error_valid =
+        _strict_finite_nonnegative(sign_standard_error)
+    sign_precision_passed = sign_standard_error_valid &&
+        sign_standard_error <= criteria.maximum_average_sign_standard_error
+    sign_threshold_passed = average_sign_valid &&
+        sign_standard_error_valid &&
+        average_sign - 2 * sign_standard_error >
+            criteria.average_sign_threshold
+
+    sign_signal_to_noise = if !average_sign_valid ||
+                              !sign_standard_error_valid
+        missing
+    elseif iszero(sign_standard_error)
+        iszero(average_sign) ? zero(average_sign) : Inf
+    else
+        abs(average_sign) / sign_standard_error
+    end
+    reported_sign_signal_to_noise =
+        _strict_summary_value(summary, :sign_signal_to_noise)
+    sign_signal_to_noise_consistent =
+        !ismissing(sign_signal_to_noise) &&
+        !ismissing(reported_sign_signal_to_noise) &&
+        reported_sign_signal_to_noise isa Real &&
+        !isnan(reported_sign_signal_to_noise) &&
+        reported_sign_signal_to_noise == sign_signal_to_noise
+    sign_signal_to_noise_passed =
+        !ismissing(sign_signal_to_noise) &&
+        sign_signal_to_noise isa Real &&
+        !isnan(sign_signal_to_noise) &&
+        sign_signal_to_noise >= criteria.minimum_sign_signal_to_noise &&
+        sign_signal_to_noise_consistent
+
+    full_denominator_usable =
+        _strict_summary_value(summary, :full_sign_denominator_usable) === true
+    leave_one_out_denominators_usable =
+        _strict_summary_value(
+            summary,
+            :leave_one_out_denominators_usable,
+        ) === true
+    leave_one_out_failure_count = _strict_summary_value(
+        summary,
+        :leave_one_out_denominator_failure_count,
+    )
+    minimum_leave_one_out_sign = _strict_summary_value(
+        summary,
+        :minimum_absolute_leave_one_out_average_sign,
+    )
+    denominators_passed = full_denominator_usable &&
+        _strict_summary_value(summary, :sign_denominator_usable) === true &&
+        leave_one_out_denominators_usable &&
+        _strict_summary_value(summary, :denominator_guard_passed) === true &&
+        leave_one_out_failure_count isa Integer &&
+        leave_one_out_failure_count == 0 &&
+        average_sign_valid &&
+        abs(average_sign) > criteria.minimum_absolute_average_sign &&
+        _strict_finite_real(minimum_leave_one_out_sign) &&
+        minimum_leave_one_out_sign > criteria.minimum_absolute_average_sign
+
+    measurement_count = _strict_summary_value(summary, :measurement_count)
+    block_count = _strict_summary_value(summary, :block_count)
+    minimum_block_length =
+        _strict_summary_value(summary, :minimum_block_length)
+    maximum_block_length =
+        _strict_summary_value(summary, :maximum_block_length)
+    block_count_passed = measurement_count isa Integer &&
+        measurement_count > 0 &&
+        block_count isa Integer &&
+        block_count >= criteria.minimum_block_count &&
+        minimum_block_length isa Integer &&
+        minimum_block_length > 0 &&
+        maximum_block_length isa Integer &&
+        maximum_block_length >= minimum_block_length
+
+    block_drift_zscore =
+        _strict_summary_value(summary, :block_drift_zscore)
+    drift_passed =
+        _strict_summary_value(summary, :block_stability_evaluable) === true &&
+        _strict_finite_nonnegative(block_drift_zscore) &&
+        block_drift_zscore <= criteria.maximum_block_drift_zscore &&
+        _strict_summary_value(summary, :block_stable) === true
+
+    greens_correction =
+        _strict_summary_value(summary, :maximum_greens_recompute_error)
+    greens_passed = _strict_finite_nonnegative(greens_correction) &&
+        greens_correction <= criteria.maximum_greens_recompute_error
+
+    attempted_updates = _strict_summary_value(summary, :attempted_updates)
+    accepted_updates = _strict_summary_value(summary, :accepted_updates)
+    rejected_updates = _strict_summary_value(summary, :rejected_updates)
+    update_counts_consistent = attempted_updates isa Integer &&
+        accepted_updates isa Integer &&
+        rejected_updates isa Integer &&
+        attempted_updates > 0 &&
+        accepted_updates >= 0 &&
+        rejected_updates >= 0 &&
+        accepted_updates + rejected_updates == attempted_updates
+    update_counts_passed = update_counts_consistent &&
+        accepted_updates > 0 &&
+        rejected_updates > 0
+
+    acceptance_rate = _strict_summary_value(summary, :acceptance_rate)
+    acceptance_passed = _strict_finite_real(acceptance_rate) &&
+        0 < acceptance_rate < 1
+    acceptance_consistency_passed = update_counts_consistent &&
+        _strict_finite_real(acceptance_rate) &&
+        acceptance_rate == accepted_updates / attempted_updates
+
+    raw_filling_sum = _strict_summary_value(summary, :raw_filling_sum)
+    signed_filling_sum = _strict_summary_value(summary, :signed_filling_sum)
+    raw_filling_passed =
+        _strict_summary_value(summary, :raw_fillings_finite) === true &&
+        _strict_finite_real(raw_filling_sum) &&
+        _strict_finite_real(signed_filling_sum)
+
+    total_density = _strict_summary_value(summary, :total_density)
+    reweighted_filling_passed = _strict_finite_real(total_density)
+    filling_jackknife_standard_error = _strict_summary_value(
+        summary,
+        :filling_jackknife_standard_error,
+    )
+    total_density_standard_error =
+        _strict_summary_value(summary, :total_density_standard_error)
+    filling_jackknife_passed =
+        _strict_summary_value(summary, :filling_jackknife_valid) === true &&
+        _strict_finite_nonnegative(filling_jackknife_standard_error) &&
+        _strict_finite_nonnegative(total_density_standard_error) &&
+        filling_jackknife_standard_error == total_density_standard_error
+
+    runtime_seconds = _strict_summary_value(summary, :runtime_seconds)
+    runtime_passed = _strict_finite_nonnegative(runtime_seconds)
+
+    average_sign_lower_2se =
+        _strict_summary_value(summary, :average_sign_lower_2se)
+    average_sign_lower_2se_consistent = average_sign_valid &&
+        sign_standard_error_valid &&
+        _strict_finite_real(average_sign_lower_2se) &&
+        average_sign_lower_2se == average_sign - 2 * sign_standard_error
+
+    required_diagnostics_passed =
+        _strict_summary_value(summary, :configuration_signs_finite) === true &&
+        _strict_summary_value(summary, :configuration_signs_valid) === true &&
+        _strict_summary_value(summary, :acceptance_valid) === true &&
+        _strict_summary_value(summary, :correction_guard_passed) === true &&
+        _strict_summary_value(summary, :finite_results) === true &&
+        _strict_summary_value(summary, :numerical_valid) === true &&
+        isequal(
+            _strict_summary_value(
+                summary,
+                :configured_average_sign_threshold,
+            ),
+            criteria.average_sign_threshold,
+        ) &&
+        _strict_finite_real(
+            _strict_summary_value(summary, :configuration_sign_sum),
+        ) &&
+        average_sign_lower_2se_consistent
+
+    prerequisite_gates = (
+        average_sign=average_sign_valid,
+        sign_standard_error=sign_standard_error_valid,
+        sign_precision=sign_precision_passed,
+        sign_signal_to_noise=sign_signal_to_noise_passed,
+        sign_signal_to_noise_consistency=sign_signal_to_noise_consistent,
+        denominators=denominators_passed,
+        block_count=block_count_passed,
+        block_drift=drift_passed,
+        greens_correction=greens_passed,
+        update_counts=update_counts_passed,
+        acceptance=acceptance_passed,
+        acceptance_consistency=acceptance_consistency_passed,
+        raw_filling=raw_filling_passed,
+        reweighted_filling=reweighted_filling_passed,
+        filling_jackknife=filling_jackknife_passed,
+        runtime=runtime_passed,
+        required_diagnostics=required_diagnostics_passed,
+        output=output_gate_passed,
+        procedural=procedural_gate_passed,
+    )
+    prerequisite_gates_passed = all(Tuple(prerequisite_gates))
+    classification = if !prerequisite_gates_passed
+        :INCONCLUSIVE
+    elseif sign_threshold_passed
+        :PASS
+    else
+        :DEFINITIVE_SIGN_FAIL
+    end
+    failed_gates = [
+        string(name)
+        for name in propertynames(prerequisite_gates)
+        if !getproperty(prerequisite_gates, name)
+    ]
+    if prerequisite_gates_passed && !sign_threshold_passed
+        push!(failed_gates, "sign_threshold")
+    end
+
+    return (
+        strict_pilot_status=classification,
+        strict_pilot_passed=classification == :PASS,
+        strict_pilot_prerequisite_gates_passed=prerequisite_gates_passed,
+        strict_pilot_sign_threshold_passed=sign_threshold_passed,
+        strict_pilot_average_sign_valid=average_sign_valid,
+        strict_pilot_sign_standard_error_valid=sign_standard_error_valid,
+        strict_pilot_sign_precision_passed=sign_precision_passed,
+        strict_pilot_sign_signal_to_noise_passed=
+            sign_signal_to_noise_passed,
+        strict_pilot_sign_signal_to_noise_consistent=
+            sign_signal_to_noise_consistent,
+        strict_pilot_denominators_passed=denominators_passed,
+        strict_pilot_block_count_passed=block_count_passed,
+        strict_pilot_drift_passed=drift_passed,
+        strict_pilot_greens_passed=greens_passed,
+        strict_pilot_update_counts_passed=update_counts_passed,
+        strict_pilot_acceptance_passed=acceptance_passed,
+        strict_pilot_acceptance_consistency_passed=
+            acceptance_consistency_passed,
+        strict_pilot_raw_filling_passed=raw_filling_passed,
+        strict_pilot_reweighted_filling_passed=
+            reweighted_filling_passed,
+        strict_pilot_filling_jackknife_passed=filling_jackknife_passed,
+        strict_pilot_runtime_passed=runtime_passed,
+        strict_pilot_required_diagnostics_passed=
+            required_diagnostics_passed,
+        strict_pilot_output_gate_passed=output_gate_passed,
+        strict_pilot_procedural_gate_passed=procedural_gate_passed,
+        strict_pilot_failed_gates=join(failed_gates, ";"),
     )
 end
 
@@ -714,7 +989,10 @@ function run_dqmc_sign_feasibility(
     end
     recompute_equal_time_greens!(state)
     runtime_seconds = (time_ns() - start_time) / 1.0e9
-    acceptance_rate = state.accepted_updates / state.attempted_updates
+    attempted_updates = state.attempted_updates
+    accepted_updates = state.accepted_updates
+    rejected_updates = attempted_updates - accepted_updates
+    acceptance_rate = accepted_updates / attempted_updates
     diagnostics = summarize_sign_feasibility(
         configuration_signs,
         raw_total_densities;
@@ -761,6 +1039,9 @@ function run_dqmc_sign_feasibility(
             sweeps_between_measurements=parameters.sweeps_between_measurements,
             seed=parameters.seed,
             runtime_seconds=runtime_seconds,
+            attempted_updates=attempted_updates,
+            accepted_updates=accepted_updates,
+            rejected_updates=rejected_updates,
         ),
         diagnostics,
         (

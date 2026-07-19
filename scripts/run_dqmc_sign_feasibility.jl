@@ -143,6 +143,8 @@ function parse_runner_options(arguments)
     run_requested = false
     overwrite = false
     no_write = false
+    require_single = false
+    strict_pilot = false
     help_requested = false
     selected_phases = Symbol[]
     selected_case = nothing
@@ -155,6 +157,10 @@ function parse_runner_options(arguments)
             overwrite = true
         elseif argument == "--no-write"
             no_write = true
+        elseif argument == "--require-single"
+            require_single = true
+        elseif argument == "--strict-pilot"
+            strict_pilot = true
         elseif argument == "--help" || argument == "-h"
             help_requested = true
         elseif startswith(argument, "--phase=")
@@ -175,12 +181,28 @@ function parse_runner_options(arguments)
         run_requested=run_requested,
         overwrite=overwrite,
         no_write=no_write,
+        require_single=require_single,
+        strict_pilot=strict_pilot,
         help_requested=help_requested,
         phases=phases,
         selected_case=selected_case,
         selected_seed=selected_seed,
         output_directory=output_directory,
     )
+end
+
+function validate_chain_selection(options, chains)
+    if options.require_single
+        single_chain_guard_passed = length(chains) == 1
+        println("single_chain_guard_passed=", single_chain_guard_passed)
+        single_chain_guard_passed || error(
+            "--require-single matched $(length(chains)) chains; expected exactly 1",
+        )
+    end
+    if options.strict_pilot && !options.require_single
+        error("--strict-pilot requires --require-single")
+    end
+    return nothing
 end
 
 function selected_chains(options)
@@ -204,6 +226,8 @@ function print_usage(io::IO=stdout)
     println(io, "  --seed=INTEGER                exact seed selector")
     println(io, "  --output-dir=PATH             output directory used only with --run")
     println(io, "  --no-write                    run but write no CSV or metadata")
+    println(io, "  --require-single              require exactly one selected chain")
+    println(io, "  --strict-pilot                apply strict gates (requires --require-single)")
     println(io, "  --overwrite                   allow replacement of existing output files")
     println(io, "  --help                        show this message")
 end
@@ -259,11 +283,57 @@ function write_summary(path, summaries)
     end
 end
 
-function write_metadata(path, chains, criteria)
+function print_diagnostic_table(
+    summaries;
+    io::IO=stdout,
+    include_strict_pilot::Bool=false,
+)
+    base_columns = (
+        :phase,
+        :case,
+        :seed,
+        :runtime_seconds,
+        :average_sign,
+        :average_sign_standard_error,
+        :sign_signal_to_noise,
+        :full_sign_denominator_usable,
+        :leave_one_out_denominators_usable,
+        :leave_one_out_denominator_failure_count,
+        :minimum_absolute_leave_one_out_average_sign,
+        :raw_filling_sum,
+        :signed_filling_sum,
+        :total_density,
+        :filling_jackknife_valid,
+        :filling_jackknife_standard_error,
+        :acceptance_rate,
+        :attempted_updates,
+        :accepted_updates,
+        :rejected_updates,
+        :block_stability_evaluable,
+        :block_drift_zscore,
+        :maximum_greens_recompute_error,
+    )
+    columns = include_strict_pilot ?
+        (base_columns..., :strict_pilot_status) : base_columns
+    println(io, join(string.(columns), '\t'))
+    for summary in summaries
+        values = (
+            hasproperty(summary, column) ? getproperty(summary, column) : missing
+            for column in columns
+        )
+        println(io, join(table_value.(values), '\t'))
+    end
+end
+
+function write_metadata(path, chains, criteria, summaries, options)
     open(path, "w") do io
         println(io, "Milestone 6A DQMC sign-feasibility diagnostics")
         println(io)
-        println(io, "No average-sign conclusion is encoded in this configuration file.")
+        if options.strict_pilot
+            println(io, "The completed strict-pilot classification is recorded below.")
+        else
+            println(io, "No average-sign conclusion is encoded in this configuration file.")
+        end
         println(io, "Each CSV row must be interpreted through all diagnostic flags.")
         println(io, "average_sign_gate=average_sign - 2*SE > threshold (strict)")
         println(io, "average_sign_threshold=$(criteria.average_sign_threshold)")
@@ -274,10 +344,22 @@ function write_metadata(path, chains, criteria)
         println(io, "minimum_absolute_average_sign=$(criteria.minimum_absolute_average_sign)")
         println(io, "maximum_greens_recompute_error=$(criteria.maximum_greens_recompute_error)")
         println(io, "u0_filling_tolerance=$(criteria.u0_filling_tolerance)")
+        if options.require_single || options.strict_pilot
+            println(io, "require_single=$(options.require_single)")
+            println(io, "strict_pilot=$(options.strict_pilot)")
+        end
         println(io)
         println(io, "Selected chain table")
         println(io, "--------------------")
         print_chain_table(chains; io=io)
+        println(io)
+        println(io, "Completed chain diagnostics")
+        println(io, "---------------------------")
+        print_diagnostic_table(
+            summaries;
+            io=io,
+            include_strict_pilot=options.strict_pilot,
+        )
     end
 end
 
@@ -318,8 +400,96 @@ function run_selected_chains(chains, criteria)
             "CHAIN_COMPLETE phase=$(chain.phase) case=$(chain.case) " *
             "seed=$(chain.seed) runtime_seconds=$(summary.runtime_seconds)",
         )
-        return merge((target_filling=chain.target_filling,), summary)
+        return merge(
+            (target_filling=chain.target_filling,),
+            summary,
+        )
     end
+end
+
+function assess_strict_pilot_summaries(
+    summaries;
+    output_gate_passed::Bool,
+    procedural_gate_passed::Bool=true,
+)
+    return map(summaries) do summary
+        assessment = AltermagnetDQMCTrial.classify_strict_sign_pilot(
+            summary;
+            output_gate_passed=output_gate_passed,
+            procedural_gate_passed=procedural_gate_passed,
+        )
+        merge(summary, assessment)
+    end
+end
+
+function print_strict_pilot_results(summaries)
+    for summary in summaries
+        println(
+            "STRICT_PILOT_RESULT phase=$(summary.phase) case=$(summary.case) " *
+            "seed=$(summary.seed) status=$(summary.strict_pilot_status) " *
+            "failed_gates=$(summary.strict_pilot_failed_gates)",
+        )
+    end
+    return nothing
+end
+
+function enforce_strict_pilot_results(summaries)
+    all(summary -> summary.strict_pilot_status == :PASS, summaries) || error(
+        "strict pilot did not pass",
+    )
+    return nothing
+end
+
+function finish_completed_run(
+    options,
+    chains,
+    criteria,
+    base_summaries;
+    create_output_directory=mkpath,
+    summary_writer=write_summary,
+    metadata_writer=write_metadata,
+)
+    if options.no_write
+        println("outputs_written=false")
+        if options.strict_pilot
+            summaries = assess_strict_pilot_summaries(
+                base_summaries;
+                output_gate_passed=false,
+            )
+            print_strict_pilot_results(summaries)
+            enforce_strict_pilot_results(summaries)
+        end
+        return base_summaries
+    end
+
+    summaries = options.strict_pilot ? assess_strict_pilot_summaries(
+        base_summaries;
+        output_gate_passed=true,
+    ) : base_summaries
+    summary_path = joinpath(options.output_directory, SUMMARY_FILENAME)
+    metadata_path = joinpath(options.output_directory, METADATA_FILENAME)
+    try
+        create_output_directory(options.output_directory)
+        summary_writer(summary_path, summaries)
+        metadata_writer(metadata_path, chains, criteria, summaries, options)
+    catch
+        if options.strict_pilot
+            incomplete = assess_strict_pilot_summaries(
+                base_summaries;
+                output_gate_passed=false,
+            )
+            println("outputs_complete=false")
+            print_strict_pilot_results(incomplete)
+        end
+        rethrow()
+    end
+    println("Wrote ", summary_path)
+    println("Wrote ", metadata_path)
+    if options.strict_pilot
+        print_strict_pilot_results(summaries)
+        enforce_strict_pilot_results(summaries)
+    end
+    return summaries
 end
 
 function main(arguments=ARGS)
@@ -332,6 +502,7 @@ function main(arguments=ARGS)
     println("mode=", options.run_requested ? "run" : "dry-run")
     println("selected_chain_count=", length(chains))
     print_chain_table(chains)
+    validate_chain_selection(options, chains)
 
     if !options.run_requested
         println("dqmc_chains_constructed=0")
@@ -342,17 +513,7 @@ function main(arguments=ARGS)
     check_output_collisions(options)
     criteria = DEFAULT_SIGN_FEASIBILITY_CRITERIA
     summaries = run_selected_chains(chains, criteria)
-    if options.no_write
-        println("outputs_written=false")
-        return nothing
-    end
-    mkpath(options.output_directory)
-    summary_path = joinpath(options.output_directory, SUMMARY_FILENAME)
-    metadata_path = joinpath(options.output_directory, METADATA_FILENAME)
-    write_summary(summary_path, summaries)
-    write_metadata(metadata_path, chains, criteria)
-    println("Wrote ", summary_path)
-    println("Wrote ", metadata_path)
+    finish_completed_run(options, chains, criteria, summaries)
     return nothing
 end
 
