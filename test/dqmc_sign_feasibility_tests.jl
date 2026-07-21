@@ -138,12 +138,43 @@ end
         fixed_mu = filter(chain -> chain.phase == :fixed_mu_diagnostics, chains)
 
         @test SignFeasibilityRunner.TARGET_MU == -1.897
-        @test length(chains) == 10
+        @test length(chains) == 11
         @test length(u0_controls) == 1
         @test only(u0_controls).U == 0.0
         @test only(u0_controls).mu == -1.897
         @test [chain.mu for chain in calibration] ==
-              [-2.497, -2.197, -1.897, -1.597, -1.297]
+              [-2.55, -2.497, -2.197, -1.897, -1.597, -1.297]
+        lower_bracket = only(filter(
+            chain -> chain.case == "calibrate_target_mu_m2p55",
+            calibration,
+        ))
+        @test lower_bracket.phase == :mu_calibration
+        @test lower_bracket.case == "calibrate_target_mu_m2p55"
+        @test lower_bracket.L == 4
+        @test lower_bracket.beta == 4.0
+        @test lower_bracket.dtau == 0.1
+        @test round(Int, lower_bracket.beta / lower_bracket.dtau) == 40
+        @test lower_bracket.U == 2.0
+        @test lower_bracket.mu == -2.55
+        @test lower_bracket.seed == 6116
+        @test lower_bracket.burnin_sweeps == 200
+        @test lower_bracket.measurement_sweeps == 800
+        @test lower_bracket.sweeps_between_measurements == 2
+        @test lower_bracket.block_size == 100
+        @test lower_bracket.stabilization_period == 5
+        @test lower_bracket.target_filling == 1.46021875
+
+        lower_bracket_options = SignFeasibilityRunner.parse_runner_options([
+            "--phase=mu-calibration",
+            "--case=calibrate_target_mu_m2p55",
+            "--seed=6116",
+            "--require-single",
+            "--strict-pilot",
+        ])
+        lower_bracket_selection =
+            SignFeasibilityRunner.selected_chains(lower_bracket_options)
+        @test length(lower_bracket_selection) == 1
+        @test only(lower_bracket_selection) == lower_bracket
         @test !isempty(fixed_mu)
         @test all(chain -> chain.mu == -1.897, fixed_mu)
         @test all(chain -> chain.mu == -1.897,
