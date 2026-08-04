@@ -138,12 +138,14 @@ end
         fixed_mu = filter(chain -> chain.phase == :fixed_mu_diagnostics, chains)
 
         @test SignFeasibilityRunner.TARGET_MU == -1.897
-        @test length(chains) == 12
+        @test length(chains) == 14
         @test length(u0_controls) == 1
+        @test length(calibration) == 9
         @test only(u0_controls).U == 0.0
         @test only(u0_controls).mu == -1.897
         @test [chain.mu for chain in calibration] ==
-              [-2.55, -2.5202, -2.497, -2.197, -1.897, -1.597, -1.297]
+              [-2.55, -2.5202, -2.5202, -2.5202, -2.497, -2.197,
+               -1.897, -1.597, -1.297]
         lower_bracket = only(filter(
             chain -> chain.case == "calibrate_target_mu_m2p55",
             calibration,
@@ -176,10 +178,12 @@ end
         @test length(lower_bracket_selection) == 1
         @test only(lower_bracket_selection) == lower_bracket
 
-        candidate = only(filter(
+        candidate_chains = filter(
             chain -> chain.case == "calibrate_target_mu_m2p5202",
             calibration,
-        ))
+        )
+        @test [chain.seed for chain in candidate_chains] == [6117, 6118, 6119]
+        candidate = only(filter(chain -> chain.seed == 6117, candidate_chains))
         @test candidate.phase == :mu_calibration
         @test candidate.case == "calibrate_target_mu_m2p5202"
         @test candidate.L == 4
@@ -234,6 +238,83 @@ end
             target_filling=1.46021875,
             strict_pilot=true,
         )
+
+        candidate_case_options = SignFeasibilityRunner.parse_runner_options([
+            "--phase=mu-calibration",
+            "--case=calibrate_target_mu_m2p5202",
+            "--require-single",
+            "--strict-pilot",
+        ])
+        candidate_case_selection =
+            SignFeasibilityRunner.selected_chains(candidate_case_options)
+        @test candidate_case_selection == collect(candidate_chains)
+        @test length(candidate_case_selection) == 3
+        redirect_stdout(devnull) do
+            @test_throws ErrorException SignFeasibilityRunner.validate_chain_selection(
+                candidate_case_options,
+                candidate_case_selection,
+            )
+        end
+
+        for (seed, result_identifier) in (
+            (6118, "calibrate_target_mu_m2p5202_seed6118_strict_pilot"),
+            (6119, "calibrate_target_mu_m2p5202_seed6119_strict_pilot"),
+        )
+            confirmation = only(filter(chain -> chain.seed == seed, candidate_chains))
+            @test confirmation.phase == :mu_calibration
+            @test confirmation.case == "calibrate_target_mu_m2p5202"
+            @test confirmation.L == 4
+            @test confirmation.beta == 4.0
+            @test confirmation.dtau == 0.1
+            @test round(Int, confirmation.beta / confirmation.dtau) == 40
+            @test confirmation.U == 2.0
+            @test confirmation.mu == -2.5202
+            @test confirmation.seed == seed
+            @test confirmation.burnin_sweeps == 200
+            @test confirmation.measurement_sweeps == 800
+            @test confirmation.sweeps_between_measurements == 2
+            @test confirmation.block_size == 100
+            @test confirmation.stabilization_period == 5
+            @test confirmation.target_filling == 1.46021875
+
+            confirmation_options = SignFeasibilityRunner.parse_runner_options([
+                "--phase=mu-calibration",
+                "--case=calibrate_target_mu_m2p5202",
+                "--seed=$seed",
+                "--require-single",
+                "--strict-pilot",
+            ])
+            confirmation_selection =
+                SignFeasibilityRunner.selected_chains(confirmation_options)
+            @test confirmation_options.phases == [:mu_calibration]
+            @test confirmation_options.selected_case ==
+                  "calibrate_target_mu_m2p5202"
+            @test confirmation_options.selected_seed == seed
+            @test confirmation_options.require_single
+            @test confirmation_options.strict_pilot
+            @test length(confirmation_selection) == 1
+            @test only(confirmation_selection) == confirmation
+
+            confirmation_prospective_metadata = (
+                result_identifier=
+                    "$(confirmation.case)_seed$(confirmation.seed)_strict_pilot",
+                phase=confirmation.phase,
+                case=confirmation.case,
+                seed=confirmation.seed,
+                mu=confirmation.mu,
+                target_filling=confirmation.target_filling,
+                strict_pilot=confirmation_options.strict_pilot,
+            )
+            @test confirmation_prospective_metadata == (
+                result_identifier=result_identifier,
+                phase=:mu_calibration,
+                case="calibrate_target_mu_m2p5202",
+                seed=seed,
+                mu=-2.5202,
+                target_filling=1.46021875,
+                strict_pilot=true,
+            )
+        end
         @test !isempty(fixed_mu)
         @test all(chain -> chain.mu == -1.897, fixed_mu)
         @test all(chain -> chain.mu == -1.897,

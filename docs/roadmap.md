@@ -87,8 +87,9 @@ Status: implemented.
 
 ### Milestone 6A: Sign And Filling Diagnostics
 
-Status: IN PROGRESS (Phase 1A). Feasibility chains have not been executed and
-no average-sign result is claimed.
+Status: Milestone 6A tooling implemented. Selected fixed-density calibration
+strict pilots have been executed; the fixed-mu sign-feasibility campaign and
+correlation measurements remain pending.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing its HS-update, propagation, acceptance, or sampling behavior.
@@ -143,6 +144,138 @@ no average-sign result is claimed.
   complete selected case/seed table before any possible chain construction,
   requires `--run`, refuses output replacement without `--overwrite`, and can
   run a selected chain without writing through `--no-write` for benchmarking.
+
+#### Registered Three-Seed Confirmation Rule
+
+This fixed operational protocol applies only to:
+
+- `L=4`
+- `beta=4.0`
+- `U=2.0`
+- `dtau=0.1`
+- `Ltau=40`
+- `mu=-2.5202`
+- target filling `n_target=1.46021875`
+
+The existing strict-pilot calibration evidence is:
+
+- `mu=-2.550`, `seed=6116`: `n=1.4393897420342978`,
+  `SE=0.0013312914577584202`, `BELOW_TARGET`.
+- `mu=-2.5202`, `seed=6117`: `n=1.4605219571679755`,
+  `SE=0.001094369279004781`, `TARGET_COMPATIBLE`.
+- `mu=-2.497`, `seed=6111`: `n=1.4764400882679722`,
+  `SE=0.0010445205002070845`, `ABOVE_TARGET`.
+
+The endpoints bracket the target. The value `mu=-2.5202` remains provisional,
+not final or confirmed.
+
+Seed 6117 is the previously observed pilot. Seeds 6118 and 6119 are the
+prospectively registered independent confirmations. All three use:
+
+- `burnin_sweeps=200`
+- `measurement_sweeps=800`
+- `sweeps_between_measurements=2`
+- `block_size=100`
+- `stabilization_period=5`
+
+A chain is valid only if its exact registered workload completes, its CSV and
+metadata agree and parse successfully, its sign, denominator, uncertainty, and
+block-jackknife diagnostics are valid, its block-jackknife standard error
+`s_i` is positive and finite, and every strict-pilot gate passes.
+
+A missing, incomplete, inconsistent, or invalid chain may not be discarded,
+replaced, or automatically rerun.
+
+For each valid seed `i`, use the unrounded stored filling estimate `n_i` and
+standard error `s_i`. Individual compatibility is:
+
+`abs(n_i - n_target) <= 2*s_i`
+
+For any seed set `S`, define:
+
+- `w_i = 1/s_i^2`
+- `n_pool(S) = sum(w_i*n_i for i in S) / sum(w_i for i in S)`
+- `SE_pool(S) = 1/sqrt(sum(w_i for i in S))`
+
+Require:
+
+`abs(n_pool(S) - n_target) <= 2*SE_pool(S)`
+
+for both:
+
+- `S_confirm = {6118, 6119}`
+- `S_all = {6117, 6118, 6119}`
+
+For all three seeds define:
+
+`Q = sum(w_i*(n_i - n_pool(S_all))^2 for i in S_all)`
+
+Require:
+
+`Q <= 5.991464547`
+
+Use unrounded stored values throughout. All `<=` boundaries are inclusive.
+Apply classifications in exactly this order:
+
+1. Any missing, incomplete, inconsistent, or invalid chain:
+   `NOT_ADJUDICABLE`.
+2. All chains valid but `Q > 5.991464547`:
+   `INCONCLUSIVE_HETEROGENEITY`.
+3. All chains valid, all three individual conditions pass, both pooled
+   conditions pass, and `Q <= 5.991464547`:
+   `CONFIRMED_AT_REGISTERED_PRECISION`.
+4. Otherwise: `NOT_CONFIRMED_AT_REGISTERED_PRECISION`.
+
+Only the 6118+6119 confirmation pool is fully prospective; seed 6117 was
+observed before this rule was registered.
+
+This is a fixed operational rule. The inverse-variance pool is a fixed-effect
+calculation; passing `Q` does not prove homogeneity, and the combined
+`+/-2SE` requirements are not one exact 95% hypothesis test.
+
+Seed 6119 remains required even if seed 6118 is unfavorable.
+
+No classification automatically authorizes another seed, longer sampling,
+exclusion or replacement of a chain, a rerun, or a change in `mu`. Do not
+extrapolate the result to another lattice size, `beta`, `U`, or `dtau`.
+
+The future seed-6118 selector is:
+
+```text
+--phase=mu-calibration
+--case=calibrate_target_mu_m2p5202
+--seed=6118
+--require-single
+--strict-pilot
+```
+
+Its identifier is:
+
+`calibrate_target_mu_m2p5202_seed6118_strict_pilot`
+
+Its future output directory is:
+
+`results/dqmc_sign_feasibility/calibrate_target_mu_m2p5202_seed6118_strict_pilot`
+
+The future seed-6119 selector is:
+
+```text
+--phase=mu-calibration
+--case=calibrate_target_mu_m2p5202
+--seed=6119
+--require-single
+--strict-pilot
+```
+
+Its identifier is:
+
+`calibrate_target_mu_m2p5202_seed6119_strict_pilot`
+
+Its future output directory is:
+
+`results/dqmc_sign_feasibility/calibrate_target_mu_m2p5202_seed6119_strict_pilot`
+
+Both output directories are prospective and currently absent.
 
 ### Milestone 6B: Correlation Measurements
 
