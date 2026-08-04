@@ -1,0 +1,78 @@
+artifact=Professor Moreo exact noninteracting L=100 reference
+generator=scripts/generate_moreo_L100_noninteracting.jl
+generation_mode=deterministic_regeneration
+calculation=exact finite-grid free fermions; no sampling
+U=0.0
+L_values=4,100
+beta_t=4.0
+mu_over_t=-1.897
+t1=-1.0
+t2=-1.75
+t3=-0.85
+t4=-0.65
+orbital_basis=(d_xz,d_yz)
+lattice=square; lattice_spacing=1
+momentum_units=radians
+energy_units=t
+boundary_conditions=periodic in x and y
+allowed_momenta=k_alpha=2*pi*n_alpha/L, n_alpha=0,...,L-1
+spin_degeneracy=2
+density_normalization=electrons per L^2 unit cells; 0<=n<=4
+band_energy_convention=bare eigenvalues of H0(k); mu is not absorbed
+fermi_function=f_beta(x)=1/(1+exp(beta*x)), x=epsilon-mu
+density_formula=n=(2/L^2)*sum_(k,nu) f_beta(epsilon_nu(k)-mu)
+kinetic_formula=<H0>/L^2=(2/L^2)*sum_(k,nu) epsilon_nu(k)*f_beta
+grand_energy_formula=<H-mu*N>/L^2=(2/L^2)*sum_(k,nu) (epsilon_nu(k)-mu)*f_beta
+grand_energy_interpretation=expectation of H-mu*N; not the grand potential
+finite_l_api=finite_lattice_free_thermodynamics
+band_api=band_energies and band_path
+band_path=Gamma(0,0)-X(pi,0)-M(pi,pi)-Gamma(0,0)
+band_path_coordinate=standard cumulative Euclidean path distance
+band_points_per_segment=400
+band_path_lattice_size_dependence=none
+visualization_mesh=601x601 inclusive grid on [-pi,pi]^2
+visualization_mesh_role=smooth contour rendering only; not used for thermodynamics
+continuous_fermi_contour_lattice_size_dependence=none
+L100_thermodynamic_grid=100x100 discrete periodic allowed momenta
+dqmc_state_constructed=false
+metropolis_sampling_performed=false
+validation_tolerance=1.0e-12 (absolute)
+L4_observables_finite=true
+L100_observables_finite=true
+L4_density_in_range=true
+L100_density_in_range=true
+L4_all_band_energies_finite=true
+L100_all_band_energies_finite=true
+L4_all_occupations_finite=true
+L100_all_occupations_finite=true
+L4_all_occupations_in_range=true
+L100_all_occupations_in_range=true
+L4_minimum_occupation=1.752628685472285e-19
+L4_maximum_occupation=0.99999392911443175
+L100_minimum_occupation=1.752628685472285e-19
+L100_maximum_occupation=0.99999392911443175
+L4_identity_error=1.1102230246251565e-15
+L100_identity_error=4.7961634663806763e-14
+L4_formula_density_error=0
+L4_formula_kinetic_error=0
+L4_formula_grand_energy_error=0
+L100_formula_density_error=0
+L100_formula_kinetic_error=0
+L100_formula_grand_energy_error=4.4408920985006262e-16
+L4_reference_source=test/free_fermion_tests.jl
+L4_density_reference=1.820507020579327
+L4_kinetic_reference=-5.4025146214956781
+L4_grand_energy_reference=-1.9490128034566949
+L4_density_reference_error=2.2204460492503131e-16
+L4_kinetic_reference_error=1.7763568394002505e-15
+L4_grand_energy_reference_error=0
+high_symmetry_max_abs_error=2.2204460492503131e-16
+band_path_high_symmetry_max_abs_error=2.2204460492503131e-16
+high_symmetry_Gamma=epsilon_minus:8.9000000000000004,epsilon_plus:8.9000000000000004,error:0
+high_symmetry_X=epsilon_minus:-4.9000000000000004,epsilon_plus:-1.9000000000000001,error:2.2204460492503131e-16
+high_symmetry_M=epsilon_minus:-2.1000000000000001,epsilon_plus:-2.1000000000000001,error:0
+output_bands=bands_Gamma_X_M_Gamma_L100.png
+output_fermi_surface=fermi_surface_L100.png
+output_combined=bands_and_fermi_surface_L100.png
+output_comparison=finite_size_comparison_L4_L100.csv
+output_band_path=band_path.csv

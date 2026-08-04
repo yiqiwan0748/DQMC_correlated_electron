@@ -120,6 +120,18 @@ For `Nk = 800`, 1600 energy bins, and Gaussian width `0.05`:
 | 1 | -3.8369423191 | 0.42288125 | -0.3942796875 | -0.396 |
 | 2 | -1.8970820299 | 1.46021875 | -0.1349453125 | -0.145 |
 
+Here `peak` is an energy-order index, not the ordinal used in the journal's
+labels. To avoid the resulting ambiguity, subsequent code and documentation
+use these names:
+
+- **lower-energy vHs**: `mu_vH = -3.8369423191`, energy-order peak 1,
+  corresponding to the journal's *second vHs* label `delta_vH,2 = -0.396`;
+- **upper-energy vHs**: `mu_vH = -1.8970820299`, energy-order peak 2,
+  corresponding to the journal's *first vHs* label `delta_vH = -0.145`.
+
+The Milestone 5 smoke name `interacting_first_vhs` uses the journal ordinal
+and therefore denotes the upper-energy vHs. New Milestone 6 names are explicit.
+
 Numerical RMS matching gives `0.00721` for `delta_c`, much less than for
 `delta_a` or `delta_b`. The journal convention is therefore inferred to be
 `delta = (n-2)/4`. This is an inference from the reported numbers, not an
@@ -275,7 +287,9 @@ The Milestone 4 public API is:
 - `free_equal_time_greens(K_mu, beta)` returns `G`;
 - `free_density_matrix(K_mu, beta)` returns `C`;
 - `orbital_resolved_density(C, L)` returns `(n_x, n_y)`, including spin;
-- `total_filling_per_physical_site(C, L)` returns `n`, including spin; and
+- `total_filling_per_physical_site(C, L)` returns `n`, including spin;
+- `finite_lattice_free_thermodynamics(L, beta, mu)` returns the independent
+  finite-grid density, doping, and energy reference; and
 - `free_grand_log_partition(K_mu, beta; spin_degeneracy=1)` returns the
   one-spin grand `log Z` by default and the physical two-spin value when the
   keyword is two.
@@ -314,6 +328,61 @@ The accumulated-propagator error is relative to
 `results/free_fermion/validation_summary.csv` and all chemical-potential,
 Green-function, density, spin, normalization, stability, partition-function,
 and error conventions to the adjacent `metadata.txt`.
+
+### Deterministic finite-lattice thermodynamic reference
+
+Before any interacting Milestone 6 chain is run, the DQMC density and energy
+estimators are checked at `U = 0` against an independent finite-lattice Bloch
+momentum-grid oracle. For the momenta returned by `allowed_momenta(L)` and the
+two energies returned by `band_energies`, define the branch-stable occupation
+
+```math
+f_{\nu\mathbf{k}}=
+\frac{1}{1+\exp[\beta(E_\nu(\mathbf{k})-\mu)]}.
+```
+
+The implementation evaluates the logistic function in separate positive- and
+negative-argument branches so that only `exp(-abs(x))` is formed. It does not
+call the real-space free density-matrix or any DQMC measurement routine.
+`finite_lattice_free_thermodynamics` returns the independent reference. With
+spin degeneracy two, its consistently named observables are
+
+```math
+\begin{aligned}
+\mathtt{density}
+  &=\frac{2}{L^2}\sum_{\mathbf{k},\nu}f_{\nu\mathbf{k}},\\
+\mathtt{doping}
+  &=\frac{\mathtt{density}-2}{4},\\
+\mathtt{kinetic\_energy\_per\_cell}
+  &=\frac{2}{L^2}\sum_{\mathbf{k},\nu}
+    E_\nu(\mathbf{k})f_{\nu\mathbf{k}},\\
+\mathtt{shifted\_interaction\_energy\_per\_cell}
+  &=0,\\
+\mathtt{internal\_energy\_per\_cell}
+  &=\mathtt{kinetic\_energy\_per\_cell},\\
+\mathtt{grand\_energy\_per\_cell}
+  &=\frac{2}{L^2}\sum_{\mathbf{k},\nu}
+    [E_\nu(\mathbf{k})-\mu]f_{\nu\mathbf{k}}\\
+  &=\mathtt{internal\_energy\_per\_cell}
+    -\mu\,\mathtt{density}.
+\end{aligned}
+```
+
+Here the internal energy is `⟨H_0⟩/L^2`, whereas the grand-canonical energy is
+`⟨H_0-mu*N⟩/L^2`; neither quantity is the grand potential. At `L = 4`,
+`beta*t = 4`, and `mu/t = -1.897`, the finite-grid reference is
+
+| observable | reference value |
+|---|---:|
+| `density` | `1.820507020579327` |
+| `doping` | `-0.0448732448551683` |
+| `kinetic_energy_per_cell` | `-5.402514621495678 t` |
+| `shifted_interaction_energy_per_cell` | `0` |
+| `internal_energy_per_cell` | `-5.402514621495678 t` |
+| `grand_energy_per_cell` | `-1.949012803456695 t` |
+
+This `L = 4` density must not be compared with the dense-momentum-grid value
+near `1.48466`; the difference is caused by finite-size momentum sampling.
 
 ## Correctness-First Two-Orbital DQMC Kernel
 
@@ -410,6 +479,40 @@ sweeps, and records the largest framework stabilization or explicit final
 recomputation correction. Fixed seeds reproduce the sampled results; elapsed
 wall-clock runtime is intentionally not part of exact determinism checks.
 
+For thermodynamic measurements, let `C_sigma = I-G_sigma`. The per-cell DQMC
+estimators use the same names as the finite-lattice oracle and are
+
+```math
+\begin{aligned}
+\mathtt{density}
+  &=\frac{\mathrm{tr}(C_\uparrow)+\mathrm{tr}(C_\downarrow)}{L^2},\\
+\mathtt{doping}
+  &=\frac{\mathtt{density}-2}{4},\\
+\mathtt{kinetic\_energy\_per\_cell}
+  &=\frac{\mathrm{tr}(K C_\uparrow)+\mathrm{tr}(K C_\downarrow)}{L^2},\\
+\mathtt{shifted\_interaction\_energy\_per\_cell}
+  &=\frac{U}{L^2}\sum_p
+    (C_{\uparrow,pp}-\tfrac12)(C_{\downarrow,pp}-\tfrac12),\\
+\mathtt{internal\_energy\_per\_cell}
+  &=\mathtt{kinetic\_energy\_per\_cell}
+    +\mathtt{shifted\_interaction\_energy\_per\_cell},\\
+\mathtt{grand\_energy\_per\_cell}
+  &=\mathtt{internal\_energy\_per\_cell}
+    -\mu\,\mathtt{density}.
+\end{aligned}
+```
+
+The kinetic trace uses the bare `state.kinetic = K`. The shifted
+`state.kinetic_mu = K-mu*I` is used to construct propagators but must not be
+used for the internal kinetic energy. The shifted-interaction estimator keeps
+both `-1/2` terms and therefore retains the centered-interaction constants;
+the field-independent factor omitted from Metropolis ratios is not a license
+to drop them from the physical energy. `measure_thermodynamic_observables`
+returns these fields. The deterministic benchmark constructs one `U = 0`
+state with fixed auxiliary fields and performs no burn-in, sweeps, or Monte
+Carlo sampling. Adding these measurement-only estimators does not change the
+validated HS update, propagation, acceptance, or stabilization kernel.
+
 The Milestone 5 public API is:
 
 - `DQMCParameters` and `validate_dqmc_parameters`;
@@ -417,7 +520,8 @@ The Milestone 5 public API is:
 - `build_slice_propagators` and `initialize_dqmc_state`;
 - `local_hs_flip_ratio` and `attempt_local_hs_flip!`;
 - `sweep_time_slice!` and `sweep_all_time_slices!`;
-- `recompute_equal_time_greens!` and `measure_basic_observables`; and
+- `recompute_equal_time_greens!` and `measure_basic_observables`;
+- `measure_thermodynamic_observables`; and
 - `run_dqmc_smoke`.
 
 The scalar HS identity uses an `8eps(Float64)` comparison because it contains

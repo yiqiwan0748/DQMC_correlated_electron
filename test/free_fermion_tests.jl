@@ -1,11 +1,15 @@
 const FREE_GREEN_IDENTITY_ATOL = 2.0e-12
 const FREE_PROPAGATOR_ATOL = 2.0e-11
 const FREE_DENSITY_ATOL = 1.0e-11
+const FREE_THERMODYNAMICS_ATOL = 5.0e-13
 
 # The Green tolerance covers symmetric-eigensolver reconstruction and dense
 # multiplication roundoff. The propagator tolerance is looser because powers
 # of dense slice matrices accumulate roundoff. The density tolerance enforces
 # the requested 1e-11 real-space/momentum-space agreement independently.
+# The thermodynamics tolerance covers Float64 trigonometric evaluation, the
+# analytic two-band eigenvalues, and summation over the 32 finite-L levels.
+# Its zero relative tolerance keeps the supplied benchmark an absolute target.
 
 free_maximum_abs(matrix) = maximum(abs, matrix)
 
@@ -187,6 +191,117 @@ end
                 ) < FREE_DENSITY_ATOL
             end
         end
+    end
+
+    @testset "Independent finite-L thermodynamic oracle" begin
+        L = 4
+        beta = 4.0
+        mu = -1.897
+        thermodynamics = finite_lattice_free_thermodynamics(L, beta, mu)
+
+        @test propertynames(thermodynamics) == (
+            :density,
+            :doping,
+            :kinetic_energy_per_cell,
+            :shifted_interaction_energy_per_cell,
+            :internal_energy_per_cell,
+            :grand_energy_per_cell,
+        )
+        @test isapprox(
+            thermodynamics.density,
+            1.820507020579327;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.doping,
+            -0.0448732448551683;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.kinetic_energy_per_cell,
+            -5.402514621495678;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.shifted_interaction_energy_per_cell,
+            0.0;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.internal_energy_per_cell,
+            -5.402514621495678;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.grand_energy_per_cell,
+            -1.949012803456695;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+
+        kinetic = realspace_kinetic_matrix(L)
+        kinetic_mu = shifted_kinetic_matrix(kinetic, mu)
+        density_matrix = free_density_matrix(kinetic_mu, beta)
+        realspace_density = 2 * tr(density_matrix) / L^2
+        realspace_kinetic_energy =
+            2 * tr(kinetic * density_matrix) / L^2
+        realspace_grand_energy =
+            2 * tr(kinetic_mu * density_matrix) / L^2
+        @test isapprox(
+            thermodynamics.density,
+            realspace_density;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.kinetic_energy_per_cell,
+            realspace_kinetic_energy;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.grand_energy_per_cell,
+            realspace_grand_energy;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+
+        @test isapprox(
+            thermodynamics.doping,
+            (thermodynamics.density - 2) / 4;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.internal_energy_per_cell,
+            thermodynamics.kinetic_energy_per_cell +
+            thermodynamics.shifted_interaction_energy_per_cell;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+        @test isapprox(
+            thermodynamics.grand_energy_per_cell,
+            thermodynamics.internal_energy_per_cell -
+            mu * thermodynamics.density;
+            atol=FREE_THERMODYNAMICS_ATOL,
+            rtol=0.0,
+        )
+
+        @test_throws ArgumentError finite_lattice_free_thermodynamics(
+            L,
+            -beta,
+            mu,
+        )
+        @test_throws ArgumentError finite_lattice_free_thermodynamics(
+            L,
+            beta,
+            Inf,
+        )
     end
 
     @testset "Filling limits, monotonicity, and van Hove crossover" begin
