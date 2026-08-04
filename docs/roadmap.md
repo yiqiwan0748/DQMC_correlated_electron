@@ -89,7 +89,8 @@ Status: implemented.
 
 Status: Milestone 6A tooling implemented. The registered three-seed
 fixed-density calibration confirms `mu=-2.5202` at registered precision. The
-fixed-mu sign-feasibility campaign and correlation measurements remain pending.
+first fixed-density sign/temperature batch and resource-only size benchmarks
+are registered but have no results yet; correlation production remains gated.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing its HS-update, propagation, acceptance, or sampling behavior.
@@ -299,21 +300,67 @@ above nor authorizes correlation measurements.
 See the [full confirmation provenance](provenance/fixed_density_mu_m2p5202_confirmation.md)
 and its [SHA-256 artifact manifest](provenance/fixed_density_mu_m2p5202_artifacts.sha256).
 
+#### Registered Finite-`U` Response Batch
+
+The [finite-`U` response registration](provenance/finite_u_response_registration.md)
+authorizes only the initial `L=4`, `beta=4` fixed-density pair, the three-point
+`L=4`, `beta=6` calibration discovery scan, and resource-only `beta=4`
+benchmarks through `L=12`. It registers exact workloads, fresh seeds, immutable
+output rules, and sequential stopping gates. Reserved later temperature and
+size seeds are not authorized by this checkpoint, and registration alone does
+not imply that any chain completed or passed.
+
 ### Milestone 6B: Correlation Measurements
 
-This submilestone remains unimplemented. It may be specified only after actual
-Milestone 6A data pass all four diagnostic domains for the intended parameter
-region. Its observables, estimators, correctness tests, and data products must
-be approved separately.
+The altermagnetic measurement interface is implemented and deterministically
+validated. For orbital basis `(d_xz,d_yz)`, define
+
+`O_i = ((n_ix_up-n_ix_down) - (n_iy_up-n_iy_down))/2`
+
+and report `Delta_alm=sum(O_i)/L^2`, `m_x`, `m_y`, and
+`m_FM=(m_x+m_y)/2`. On an unbiased finite lattice the linear estimator is a
+symmetry check, not ordering evidence. The companion observables are
+`S_alm(0)=sum_ij <O_i O_j>/L^2` and
+`m_alm_squared=S_alm(0)/L^2`, evaluated with the complete equal-time Wick
+contraction including contact terms. Raw numerators are sign weighted exactly
+once and share the block-jackknife sign denominator.
+
+`measure_altermagnetic_observables` returns raw conditional estimators and the
+configuration sign separately. `summarize_sign_reweighted_altermagnetism`
+applies each sign exactly once and uses a common full and leave-one-block-out
+denominator for all six fields. Product states, spin/orbital transformations,
+an independent Wick oracle, contact terms, denominator failures, and
+jackknife errors are covered by deterministic tests.
+
+Production correlation measurement at a parameter point remains gated on both
+registered strict sign chains passing all validity, density, and numerical
+criteria. No symmetry-breaking source field is registered.
+
+### Milestone 6C: Unequal-Time And Spectral Measurements
+
+The stabilized, spin- and orbital-resolved imaginary-time
+`G_ab,sigma(r,tau)` measurement and finite-lattice momentum transform are
+implemented. They preserve the sampling state, return raw configuration data
+with the sign separate, and use a documented no-leading-minus convention.
+Channel summaries retain block/full sign numerators and denominators, guarded
+ratio estimates, jackknife errors, and real/imaginary covariance across tau.
+Exact finite-`L` `U=0` values, endpoint discontinuity, spin/orbital symmetry,
+Fourier inversion, stabilization, state preservation, and denominator failures
+are covered by deterministic tests.
+
+Interacting `A(k,omega)` and DOS are not currently available. Analytic
+continuation, covariance-aware DEAC post-processing, real-frequency
+reconstruction, positivity and sum-rule validation, and interacting-VHS claims
+remain a separate later submilestone; no continuation package is added here.
 
 ## Deferred Work
 
-The following capabilities are intentionally outside Milestone 6A and remain
-unimplemented:
+The following capabilities remain deferred beyond the presently registered
+implementation boundary:
 
-- spin structure factors and altermagnetic correlation functions;
 - altermagnetic susceptibility and transport observables;
-- production correlation-estimator and multi-observable jackknife workflows;
+- production correlation sampling and broad multi-observable workflows;
+- analytic continuation and interacting spectral/DOS production;
 - sparse storage, checkerboard decomposition, and performance optimization;
 - production-scale checkpointing, restart, and data-management machinery.
 
