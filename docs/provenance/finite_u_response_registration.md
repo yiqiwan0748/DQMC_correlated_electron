@@ -43,11 +43,28 @@ exact workload, satisfy `abs(n-n_target) <= 2*SE_n`, and receive strict-pilot
 classification `PASS`. A missing, invalid, failed, or inconclusive chain may
 not be replaced or automatically rerun.
 
+#### Recorded Outcome
+
+Both registered chains completed and independently received strict-pilot
+classification `PASS`, with average sign `1.0` and sign standard error `0.0`.
+Neither production density satisfied the separately registered
+`abs(n-n_target) <= 2*SE_n` condition. The exact two-chain gate therefore
+returned `NOT_ADJUDICABLE`, `advance=false`, with reasons
+`chain_1_density_not_target_compatible` and
+`chain_2_density_not_target_compatible`.
+
+This does not establish a fixed-density sign-feasibility point, a lowest
+temperature, a sign limit, or an interacting van-Hove location. The chains are
+immutable and may not be replaced or rerun. The full calculation is recorded
+in the [pair outcome](fixed_density_mu_m2p5202_L4_beta4_pair_outcome.md) and
+its [SHA-256 artifact manifest](fixed_density_mu_m2p5202_L4_beta4_pair_artifacts.sha256).
+
 ### `L=4`, `beta=6` Calibration Discovery
 
-This scan is registered in advance but remains execution-gated: do not run it
-unless both registered `L=4`, `beta=4` chains complete and pass every strict
-and density criterion. Registration is not permission to bypass that gate.
+This scan was registered in advance but is execution-gated on both registered
+`L=4`, `beta=4` chains passing every strict and density criterion. That
+prerequisite was not met, so the registered `beta=6` discovery scan remains
+blocked and must not be executed under this registration.
 
 | Case | Seed | `mu` | Burn-in | Measurements | Between | Block |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -95,7 +112,8 @@ registration and are permitted only after `L=12` passes.
 The reserved `L=4` temperature ladder is `beta=4,6,8,10,12,16`, corresponding
 to `T=0.25,1/6,0.125,0.1,1/12,0.0625`. The reserved two-seed production pairs
 are `(6311,6312)`, `(6313,6314)`, `(6315,6316)`, `(6317,6318)`, `(6319,6320)`,
-and `(6321,6322)`. Only the first pair is authorized now.
+and `(6321,6322)`. The first pair completed with the recorded
+`NOT_ADJUDICABLE` outcome; no later production pair is authorized.
 
 Advance to the next temperature only when both chains at the current
 temperature pass all strict, density, denominator, sampling, and numerical

@@ -89,8 +89,11 @@ Status: implemented.
 
 Status: Milestone 6A tooling implemented. The registered three-seed
 fixed-density calibration confirms `mu=-2.5202` at registered precision. The
-first fixed-density sign/temperature batch and resource-only size benchmarks
-are registered but have no results yet; correlation production remains gated.
+first fixed-density sign/temperature pair completed, but its production
+densities did not satisfy the registered two-standard-error compatibility
+gate. Its classification is `NOT_ADJUDICABLE`; the dependent temperature and
+correlation campaigns remain blocked. The separately authorized resource-only
+size benchmarks remain pending.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing its HS-update, propagation, acceptance, or sampling behavior.
@@ -303,12 +306,19 @@ and its [SHA-256 artifact manifest](provenance/fixed_density_mu_m2p5202_artifact
 #### Registered Finite-`U` Response Batch
 
 The [finite-`U` response registration](provenance/finite_u_response_registration.md)
-authorizes only the initial `L=4`, `beta=4` fixed-density pair, the three-point
-`L=4`, `beta=6` calibration discovery scan, and resource-only `beta=4`
-benchmarks through `L=12`. It registers exact workloads, fresh seeds, immutable
-output rules, and sequential stopping gates. Reserved later temperature and
-size seeds are not authorized by this checkpoint, and registration alone does
-not imply that any chain completed or passed.
+authorized the initial `L=4`, `beta=4` fixed-density pair, a conditionally
+gated three-point `L=4`, `beta=6` calibration discovery scan, and resource-only
+`beta=4` benchmarks through `L=12`. The initial pair has now completed. Both
+chains received strict-pilot `PASS`, but neither density satisfied
+`abs(n-n_target) <= 2*SE_n`, so the registered pair gate returned
+`NOT_ADJUDICABLE` with no advance. This is neither a sign-limit result nor a
+qualified fixed-density temperature point, and it does not establish an
+interacting van-Hove location. The `beta=6` scan and correlation production
+remain blocked; the immutable seed-6311 and seed-6312 chains may not be rerun
+or replaced. See the [pair outcome](provenance/fixed_density_mu_m2p5202_L4_beta4_pair_outcome.md)
+and its [SHA-256 artifact manifest](provenance/fixed_density_mu_m2p5202_L4_beta4_pair_artifacts.sha256).
+The independent resource-only benchmarks remain authorized and make no
+filling, sign, or physics claim.
 
 ### Milestone 6B: Correlation Measurements
 
