@@ -87,9 +87,9 @@ Status: implemented.
 
 ### Milestone 6A: Sign And Filling Diagnostics
 
-Status: Milestone 6A tooling implemented. Selected fixed-density calibration
-strict pilots have been executed; the fixed-mu sign-feasibility campaign and
-correlation measurements remain pending.
+Status: Milestone 6A tooling implemented. The registered three-seed
+fixed-density calibration confirms `mu=-2.5202` at registered precision. The
+fixed-mu sign-feasibility campaign and correlation measurements remain pending.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing its HS-update, propagation, acceptance, or sampling behavior.
@@ -166,8 +166,9 @@ The existing strict-pilot calibration evidence is:
 - `mu=-2.497`, `seed=6111`: `n=1.4764400882679722`,
   `SE=0.0010445205002070845`, `ABOVE_TARGET`.
 
-The endpoints bracket the target. The value `mu=-2.5202` remains provisional,
-not final or confirmed.
+The endpoints bracketed the target. At registration, the value `mu=-2.5202`
+remained provisional; the completed three-seed adjudication below now confirms
+it at the registered precision and only for the registered scope.
 
 Seed 6117 is the previously observed pilot. Seeds 6118 and 6119 are the
 prospectively registered independent confirmations. All three use:
@@ -239,7 +240,7 @@ No classification automatically authorizes another seed, longer sampling,
 exclusion or replacement of a chain, a rerun, or a change in `mu`. Do not
 extrapolate the result to another lattice size, `beta`, `U`, or `dtau`.
 
-The future seed-6118 selector is:
+The registered seed-6118 selector was:
 
 ```text
 --phase=mu-calibration
@@ -253,11 +254,11 @@ Its identifier is:
 
 `calibrate_target_mu_m2p5202_seed6118_strict_pilot`
 
-Its future output directory is:
+Its output directory is:
 
 `results/dqmc_sign_feasibility/calibrate_target_mu_m2p5202_seed6118_strict_pilot`
 
-The future seed-6119 selector is:
+The registered seed-6119 selector was:
 
 ```text
 --phase=mu-calibration
@@ -271,11 +272,32 @@ Its identifier is:
 
 `calibrate_target_mu_m2p5202_seed6119_strict_pilot`
 
-Its future output directory is:
+Its output directory is:
 
 `results/dqmc_sign_feasibility/calibrate_target_mu_m2p5202_seed6119_strict_pilot`
 
-Both output directories are prospective and currently absent.
+Both confirmation chains completed at their registered output directories.
+
+#### Registered Confirmation Outcome
+
+The stored CSV/metadata pairs for seeds 6117, 6118, and 6119 agree, contain the
+exact registered workloads, have positive finite block-jackknife standard
+errors, and pass every strict-pilot gate. Using the unrounded stored values:
+
+- all three individual compatibility conditions pass;
+- the prospective confirmation pool has
+  `n_pool=1.4596055452386897` and `SE_pool=0.0008287269978258003`;
+- the all-seed pool has `n_pool=1.4599395349665640` and
+  `SE_pool=0.0006606707522167680`; and
+- `Q=0.4958851219864424 <= 5.991464547`.
+
+The registered classification is therefore
+`CONFIRMED_AT_REGISTERED_PRECISION`. Only the seed-6118 and seed-6119 pool is
+fully prospective. This confirmation neither changes the fixed-effect caveats
+above nor authorizes correlation measurements.
+
+See the [full confirmation provenance](provenance/fixed_density_mu_m2p5202_confirmation.md)
+and its [SHA-256 artifact manifest](provenance/fixed_density_mu_m2p5202_artifacts.sha256).
 
 ### Milestone 6B: Correlation Measurements
 
