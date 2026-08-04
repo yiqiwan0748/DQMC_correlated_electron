@@ -138,14 +138,15 @@ end
         fixed_mu = filter(chain -> chain.phase == :fixed_mu_diagnostics, chains)
 
         @test SignFeasibilityRunner.TARGET_MU == -1.897
-        @test length(chains) == 14
+        @test SignFeasibilityRunner.CONFIRMED_FIXED_DENSITY_MU == -2.5202
+        @test length(chains) == 19
         @test length(u0_controls) == 1
-        @test length(calibration) == 9
+        @test length(calibration) == 12
         @test only(u0_controls).U == 0.0
         @test only(u0_controls).mu == -1.897
         @test [chain.mu for chain in calibration] ==
               [-2.55, -2.5202, -2.5202, -2.5202, -2.497, -2.197,
-               -1.897, -1.597, -1.297]
+               -1.897, -1.597, -1.297, -2.5802, -2.5202, -2.4602]
         lower_bracket = only(filter(
             chain -> chain.case == "calibrate_target_mu_m2p55",
             calibration,
@@ -315,10 +316,236 @@ end
                 strict_pilot=true,
             )
         end
-        @test !isempty(fixed_mu)
-        @test all(chain -> chain.mu == -1.897, fixed_mu)
-        @test all(chain -> chain.mu == -1.897,
-                  filter(chain -> chain.phase != :mu_calibration, chains))
+        legacy_fixed_mu = filter(
+            chain -> startswith(chain.case, "fixed_target_"),
+            fixed_mu,
+        )
+        @test length(legacy_fixed_mu) == 4
+        @test [chain.case for chain in legacy_fixed_mu] == [
+            "fixed_target_L4_beta4",
+            "fixed_target_L4_beta4",
+            "fixed_target_L6_beta4",
+            "fixed_target_L6_beta4",
+        ]
+        @test [chain.seed for chain in legacy_fixed_mu] ==
+              [6211, 6212, 6231, 6232]
+        @test all(
+            chain -> chain.mu == SignFeasibilityRunner.TARGET_MU,
+            legacy_fixed_mu,
+        )
+
+        registered_fixed = filter(
+            chain ->
+                chain.case == "fixed_density_mu_m2p5202_L4_beta4",
+            fixed_mu,
+        )
+        @test [chain.seed for chain in registered_fixed] == [6311, 6312]
+        for chain in registered_fixed
+            @test chain.phase == :fixed_mu_diagnostics
+            @test chain.L == 4
+            @test chain.beta == 4.0
+            @test chain.dtau == 0.1
+            @test round(Int, chain.beta / chain.dtau) == 40
+            @test chain.U == 2.0
+            @test chain.mu ==
+                  SignFeasibilityRunner.CONFIRMED_FIXED_DENSITY_MU
+            @test chain.burnin_sweeps == 400
+            @test chain.measurement_sweeps == 1600
+            @test chain.sweeps_between_measurements == 2
+            @test chain.block_size == 100
+            @test chain.stabilization_period == 5
+            @test chain.target_filling ==
+                  SignFeasibilityRunner.TARGET_FILLING
+
+            fixed_options = SignFeasibilityRunner.parse_runner_options([
+                "--phase=fixed-mu-diagnostics",
+                "--case=fixed_density_mu_m2p5202_L4_beta4",
+                string("--seed=", chain.seed),
+                "--require-single",
+                "--strict-pilot",
+            ])
+            fixed_selection =
+                SignFeasibilityRunner.selected_chains(fixed_options)
+            @test only(fixed_selection) == chain
+            redirect_stdout(devnull) do
+                @test isnothing(
+                    SignFeasibilityRunner.validate_chain_selection(
+                        fixed_options,
+                        fixed_selection,
+                    ),
+                )
+            end
+        end
+
+        unseeded_fixed_options =
+            SignFeasibilityRunner.parse_runner_options([
+                "--phase=fixed-mu-diagnostics",
+                "--case=fixed_density_mu_m2p5202_L4_beta4",
+                "--require-single",
+                "--strict-pilot",
+            ])
+        unseeded_fixed_selection =
+            SignFeasibilityRunner.selected_chains(unseeded_fixed_options)
+        @test length(unseeded_fixed_selection) == 2
+        redirect_stdout(devnull) do
+            @test_throws ErrorException SignFeasibilityRunner.validate_chain_selection(
+                unseeded_fixed_options,
+                unseeded_fixed_selection,
+            )
+        end
+
+        beta6_calibration = filter(
+            chain ->
+                startswith(chain.case, "calibrate_L4_beta6_mu_"),
+            calibration,
+        )
+        @test [
+            (chain.case, chain.mu, chain.seed)
+            for chain in beta6_calibration
+        ] == [
+            ("calibrate_L4_beta6_mu_m2p5802", -2.5802, 6511),
+            ("calibrate_L4_beta6_mu_m2p5202", -2.5202, 6512),
+            ("calibrate_L4_beta6_mu_m2p4602", -2.4602, 6513),
+        ]
+        for chain in beta6_calibration
+            @test chain.phase == :mu_calibration
+            @test chain.L == 4
+            @test chain.beta == 6.0
+            @test chain.dtau == 0.1
+            @test round(Int, chain.beta / chain.dtau) == 60
+            @test chain.U == 2.0
+            @test chain.burnin_sweeps == 200
+            @test chain.measurement_sweeps == 800
+            @test chain.sweeps_between_measurements == 2
+            @test chain.block_size == 100
+            @test chain.stabilization_period == 5
+            @test chain.target_filling ==
+                  SignFeasibilityRunner.TARGET_FILLING
+
+            calibration_options =
+                SignFeasibilityRunner.parse_runner_options([
+                    "--phase=mu-calibration",
+                    string("--case=", chain.case),
+                    string("--seed=", chain.seed),
+                    "--require-single",
+                    "--strict-pilot",
+                ])
+            calibration_selection =
+                SignFeasibilityRunner.selected_chains(calibration_options)
+            @test only(calibration_selection) == chain
+            redirect_stdout(devnull) do
+                @test isnothing(
+                    SignFeasibilityRunner.validate_chain_selection(
+                        calibration_options,
+                        calibration_selection,
+                    ),
+                )
+            end
+        end
+
+        @testset "Finite-U response execution immutability" begin
+            chain = first(registered_fixed)
+            expected_output =
+                SignFeasibilityRunner.finite_u_response_output_directory(chain)
+            @test expected_output == joinpath(
+                SignFeasibilityRunner.DEFAULT_OUTPUT_DIRECTORY,
+                "fixed_density_mu_m2p5202_L4_beta4_seed6311_strict_pilot",
+            )
+            arguments = [
+                "--run",
+                "--phase=fixed-mu-diagnostics",
+                "--case=fixed_density_mu_m2p5202_L4_beta4",
+                "--seed=6311",
+                "--require-single",
+                "--strict-pilot",
+                "--output-dir=$expected_output",
+            ]
+            options = SignFeasibilityRunner.parse_runner_options(arguments)
+            selection = SignFeasibilityRunner.selected_chains(options)
+            @test only(selection) == chain
+            @test isnothing(
+                SignFeasibilityRunner.validate_finite_u_response_execution(
+                    options,
+                    selection;
+                    path_exists=_ -> false,
+                ),
+            )
+            @test_throws ErrorException (
+                SignFeasibilityRunner.validate_finite_u_response_execution(
+                    options,
+                    selection;
+                    path_exists=_ -> true,
+                )
+            )
+
+            for forbidden in ("--overwrite", "--no-write")
+                forbidden_options = SignFeasibilityRunner.parse_runner_options(
+                    [arguments; forbidden],
+                )
+                @test_throws ErrorException (
+                    SignFeasibilityRunner.validate_finite_u_response_execution(
+                        forbidden_options,
+                        selection;
+                        path_exists=_ -> false,
+                    )
+                )
+            end
+
+            for omitted in (
+                "--phase=fixed-mu-diagnostics",
+                "--case=fixed_density_mu_m2p5202_L4_beta4",
+                "--seed=6311",
+                "--require-single",
+                "--strict-pilot",
+            )
+                incomplete_arguments = filter(!=(omitted), arguments)
+                incomplete_options = SignFeasibilityRunner.parse_runner_options(
+                    incomplete_arguments,
+                )
+                incomplete_selection =
+                    SignFeasibilityRunner.selected_chains(incomplete_options)
+                @test_throws ErrorException (
+                    SignFeasibilityRunner.validate_finite_u_response_execution(
+                        incomplete_options,
+                        incomplete_selection;
+                        path_exists=_ -> false,
+                    )
+                )
+            end
+
+            wrong_output_options = SignFeasibilityRunner.parse_runner_options([
+                arguments[1:6];
+                "--output-dir=$(SignFeasibilityRunner.DEFAULT_OUTPUT_DIRECTORY)"
+            ])
+            @test_throws ErrorException (
+                SignFeasibilityRunner.validate_finite_u_response_execution(
+                    wrong_output_options,
+                    selection;
+                    path_exists=_ -> false,
+                )
+            )
+
+            legacy_chain = first(legacy_fixed_mu)
+            legacy_options = SignFeasibilityRunner.parse_runner_options([
+                "--run",
+                "--case=$(legacy_chain.case)",
+                "--seed=$(legacy_chain.seed)",
+            ])
+            @test isnothing(
+                SignFeasibilityRunner.validate_finite_u_response_execution(
+                    legacy_options,
+                    [legacy_chain];
+                    path_exists=_ -> true,
+                ),
+            )
+        end
+
+        @test isempty(filter(
+            chain ->
+                startswith(chain.case, "fixed_density_mu_m2p5202_") &&
+                chain.L > 4,
+            chains,
+        ))
         @test all(chain -> !occursin("lower_energy_vhs", chain.case), chains)
         @test all(chain -> chain.mu != -3.8369423191, chains)
 

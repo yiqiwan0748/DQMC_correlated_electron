@@ -13,7 +13,12 @@ const SUMMARY_FILENAME = "sign_feasibility.csv"
 const METADATA_FILENAME = "metadata.txt"
 
 const TARGET_MU = -1.897
+const CONFIRMED_FIXED_DENSITY_MU = -2.5202
 const TARGET_FILLING = 1.46021875
+const FINITE_U_RESPONSE_CASE_PREFIXES = (
+    "fixed_density_mu_m2p5202_L4_beta4",
+    "calibrate_L4_beta6_mu_",
+)
 const ALL_PHASES = (
     :u0_control,
     :mu_calibration,
@@ -160,6 +165,46 @@ const FEASIBILITY_CHAINS = (
         burnin_sweeps=400, measurement_sweeps=1600,
         sweeps_between_measurements=2, block_size=100,
     ),
+    feasibility_chain(
+        phase=:fixed_mu_diagnostics,
+        case_name="fixed_density_mu_m2p5202_L4_beta4",
+        L=4, beta=4.0, U=2.0, mu=CONFIRMED_FIXED_DENSITY_MU, seed=6311,
+        burnin_sweeps=400, measurement_sweeps=1600,
+        sweeps_between_measurements=2, block_size=100,
+        target_filling=TARGET_FILLING,
+    ),
+    feasibility_chain(
+        phase=:fixed_mu_diagnostics,
+        case_name="fixed_density_mu_m2p5202_L4_beta4",
+        L=4, beta=4.0, U=2.0, mu=CONFIRMED_FIXED_DENSITY_MU, seed=6312,
+        burnin_sweeps=400, measurement_sweeps=1600,
+        sweeps_between_measurements=2, block_size=100,
+        target_filling=TARGET_FILLING,
+    ),
+    feasibility_chain(
+        phase=:mu_calibration,
+        case_name="calibrate_L4_beta6_mu_m2p5802",
+        L=4, beta=6.0, U=2.0, mu=-2.5802, seed=6511,
+        burnin_sweeps=200, measurement_sweeps=800,
+        sweeps_between_measurements=2, block_size=100,
+        target_filling=TARGET_FILLING,
+    ),
+    feasibility_chain(
+        phase=:mu_calibration,
+        case_name="calibrate_L4_beta6_mu_m2p5202",
+        L=4, beta=6.0, U=2.0, mu=CONFIRMED_FIXED_DENSITY_MU, seed=6512,
+        burnin_sweeps=200, measurement_sweeps=800,
+        sweeps_between_measurements=2, block_size=100,
+        target_filling=TARGET_FILLING,
+    ),
+    feasibility_chain(
+        phase=:mu_calibration,
+        case_name="calibrate_L4_beta6_mu_m2p4602",
+        L=4, beta=6.0, U=2.0, mu=-2.4602, seed=6513,
+        burnin_sweeps=200, measurement_sweeps=800,
+        sweeps_between_measurements=2, block_size=100,
+        target_filling=TARGET_FILLING,
+    ),
 )
 
 function phase_symbol(value::AbstractString)
@@ -246,6 +291,70 @@ function selected_chains(options)
     ]
     isempty(selected) && error("the phase/case/seed selection matched no chains")
     return selected
+end
+
+function is_finite_u_response_chain(chain)
+    return any(
+        prefix -> startswith(chain.case, prefix),
+        FINITE_U_RESPONSE_CASE_PREFIXES,
+    )
+end
+
+function finite_u_response_output_directory(chain)
+    is_finite_u_response_chain(chain) || throw(ArgumentError(
+        "the chain is not part of the registered finite-U response batch",
+    ))
+    return joinpath(
+        DEFAULT_OUTPUT_DIRECTORY,
+        "$(chain.case)_seed$(chain.seed)_strict_pilot",
+    )
+end
+
+function validate_finite_u_response_execution(
+    options,
+    chains;
+    path_exists=path -> ispath(path) || islink(path),
+)
+    options.run_requested || return nothing
+    registered = filter(is_finite_u_response_chain, chains)
+    isempty(registered) && return nothing
+    length(registered) == length(chains) || error(
+        "a finite-U response execution may not mix registered and legacy chains",
+    )
+    length(chains) == 1 || error(
+        "a finite-U response execution requires exactly one selected chain",
+    )
+    chain = only(chains)
+    options.require_single || error(
+        "a finite-U response execution requires --require-single",
+    )
+    options.strict_pilot || error(
+        "a finite-U response execution requires --strict-pilot",
+    )
+    options.overwrite && error(
+        "--overwrite is forbidden for registered finite-U response chains",
+    )
+    options.no_write && error(
+        "--no-write is forbidden for registered finite-U response chains",
+    )
+    options.selected_case == chain.case || error(
+        "a finite-U response execution requires the exact --case selector",
+    )
+    options.selected_seed == chain.seed || error(
+        "a finite-U response execution requires the exact --seed selector",
+    )
+    length(options.phases) == 1 && only(options.phases) == chain.phase || error(
+        "a finite-U response execution requires the exact --phase selector",
+    )
+    expected_output = finite_u_response_output_directory(chain)
+    normpath(options.output_directory) == normpath(expected_output) || error(
+        "registered finite-U response output must be exactly $expected_output",
+    )
+    path_exists(expected_output) && error(
+        "refusing registered finite-U response execution because the immutable " *
+        "output path already exists: $expected_output",
+    )
+    return nothing
 end
 
 function print_usage(io::IO=stdout)
@@ -535,6 +644,7 @@ function main(arguments=ARGS)
     println("selected_chain_count=", length(chains))
     print_chain_table(chains)
     validate_chain_selection(options, chains)
+    validate_finite_u_response_execution(options, chains)
 
     if !options.run_requested
         println("dqmc_chains_constructed=0")

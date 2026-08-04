@@ -47,12 +47,24 @@ export ModelParameters,
        average_sign_gate_passes,
        summarize_sign_reweighted_thermodynamics,
        summarize_sign_feasibility,
-       run_dqmc_sign_feasibility
+       run_dqmc_sign_feasibility,
+       measure_altermagnetic_observables,
+       summarize_sign_reweighted_altermagnetism,
+       assess_three_point_fixed_density_calibration,
+       assess_two_chain_gate,
+       assess_resource_gate,
+       UnequalTimeGreensSnapshot,
+       measure_unequal_time_greens,
+       fourier_transform_unequal_time_greens,
+       summarize_sign_reweighted_unequal_time_channel
 
 include("noninteracting.jl")
 include("realspace_kinetic.jl")
 include("free_fermion.jl")
 include("two_orbital_dqmc.jl")
 include("dqmc_sign_feasibility.jl")
+include("altermagnetic_observables.jl")
+include("finite_u_campaign_gates.jl")
+include("unequal_time_greens.jl")
 
 end
