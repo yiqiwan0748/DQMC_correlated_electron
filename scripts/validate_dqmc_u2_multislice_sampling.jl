@@ -210,21 +210,25 @@ function exact_auxiliary_field_average(parameters, dimensions)
     )
     absolute_denominator = sum(scaled_abs_weights)
     signed_denominator = sum(configuration_signs .* scaled_abs_weights)
-    positive_absolute_weight = sum(
+    positive_absolute_weight = mapreduce(
+        identity,
+        +,
         (
             scaled_abs_weights[index]
             for index in eachindex(configuration_signs)
             if configuration_signs[index] == 1.0
         );
-        init=0.0,
+        init=zero(eltype(scaled_abs_weights)),
     )
-    negative_absolute_weight = sum(
+    negative_absolute_weight = mapreduce(
+        identity,
+        +,
         (
             scaled_abs_weights[index]
             for index in eachindex(configuration_signs)
             if configuration_signs[index] == -1.0
         );
-        init=0.0,
+        init=zero(eltype(scaled_abs_weights)),
     )
     require_condition(
         isfinite(absolute_denominator) && absolute_denominator > 0.0,
