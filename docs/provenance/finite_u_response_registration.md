@@ -107,6 +107,21 @@ A lattice is resource-feasible only if:
 Stop at the first resource failure. `L=14` and `L=16` benchmarks require a later
 registration and are permitted only after `L=12` passes.
 
+#### Recorded Resource Outcome
+
+All five registered benchmarks completed in increasing `L` and independently
+returned `RESOURCE_FEASIBLE`. The largest resource-feasible size demonstrated
+within this registration is `L=12`. The result does not establish a resource
+ceiling beyond the tested range: `L=14` and `L=16` were not authorized or run
+by this registration. Full metrics and artifact validation are recorded in the
+[resource outcome](resource_benchmarks_L4_L12_outcome.md) and its
+[SHA-256 manifest](resource_benchmarks_L4_L12_artifacts.sha256).
+
+These benchmarks remain short, unequilibrated timing diagnostics. They do not
+measure or qualify density, sign, altermagnetic correlations, spectra, or an
+interacting van-Hove location, and they do not override the initial
+fixed-density pair's `NOT_ADJUDICABLE` stopping gate.
+
 ## Decision Rules For Later Batches
 
 The reserved `L=4` temperature ladder is `beta=4,6,8,10,12,16`, corresponding
