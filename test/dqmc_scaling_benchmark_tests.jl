@@ -13,16 +13,21 @@ end
     @test DQMCScalingBenchmark.TIMED_SWEEPS == 10
     @test DQMCScalingBenchmark.PROJECTED_COMPLETE_SWEEPS_PER_CHAIN == 3600
     @test DQMCScalingBenchmark.PROJECTED_CHAIN_COUNT == 2
-    @test length(benchmarks) == 5
+    @test length(benchmarks) == 7
     @test [case.case for case in benchmarks] == [
         "resource_L4_beta4",
         "resource_L6_beta4",
         "resource_L8_beta4",
         "resource_L10_beta4",
         "resource_L12_beta4",
+        "resource_L14_beta4",
+        "resource_L16_beta4",
     ]
-    @test [case.L for case in benchmarks] == [4, 6, 8, 10, 12]
-    @test [case.seed for case in benchmarks] == [6704, 6706, 6708, 6710, 6712]
+    @test [case.L for case in benchmarks] == [4, 6, 8, 10, 12, 14, 16]
+    @test [case.seed for case in benchmarks] ==
+          [6704, 6706, 6708, 6710, 6712, 6714, 6716]
+    @test all(case.execution_authorized for case in benchmarks[1:6])
+    @test !benchmarks[7].execution_authorized
 
     for case in benchmarks
         @test case.beta == 4.0
@@ -57,7 +62,7 @@ end
         dry_run_output,
     )
     @test occursin("mode=dry-run", dry_run_output)
-    @test occursin("selected_benchmark_count=5", dry_run_output)
+    @test occursin("selected_benchmark_count=7", dry_run_output)
     @test occursin("dqmc_states_constructed=0", dry_run_output)
     @test occursin("benchmark_sweeps_executed=0", dry_run_output)
     @test occursin("outputs_written=false", dry_run_output)
@@ -121,8 +126,30 @@ end
         )
     end
 
+    extension_options = DQMCScalingBenchmark.parse_benchmark_options([
+        "--case=resource_L16_beta4",
+        "--require-single",
+    ])
+    extension = DQMCScalingBenchmark.selected_benchmarks(extension_options)
+    @test length(extension) == 1
+    @test only(extension).L == 16
+    @test only(extension).seed == 6716
+    @test !only(extension).execution_authorized
+    blocked_extension_run =
+        DQMCScalingBenchmark.parse_benchmark_options([
+            "--run",
+            "--case=resource_L16_beta4",
+            "--require-single",
+        ])
+    redirect_stdout(devnull) do
+        @test_throws ErrorException DQMCScalingBenchmark.validate_benchmark_selection(
+            blocked_extension_run,
+            extension,
+        )
+    end
+
     missing_options = DQMCScalingBenchmark.parse_benchmark_options([
-        "--case=resource_L14_beta4",
+        "--case=resource_L18_beta4",
     ])
     @test_throws ErrorException DQMCScalingBenchmark.selected_benchmarks(
         missing_options,

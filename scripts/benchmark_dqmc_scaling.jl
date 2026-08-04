@@ -10,7 +10,12 @@ const TIMED_SWEEPS = 10
 const PROJECTED_COMPLETE_SWEEPS_PER_CHAIN = 3600
 const PROJECTED_CHAIN_COUNT = 2
 
-function resource_benchmark_case(; case_name, L, seed)
+function resource_benchmark_case(;
+    case_name,
+    L,
+    seed,
+    execution_authorized=true,
+)
     return (
         case=case_name,
         L=L,
@@ -23,6 +28,7 @@ function resource_benchmark_case(; case_name, L, seed)
         target_filling=TARGET_FILLING,
         warmup_sweeps=WARMUP_SWEEPS,
         timed_sweeps=TIMED_SWEEPS,
+        execution_authorized=execution_authorized,
         projected_complete_sweeps_per_chain=
             PROJECTED_COMPLETE_SWEEPS_PER_CHAIN,
         projected_chain_count=PROJECTED_CHAIN_COUNT,
@@ -54,6 +60,17 @@ const RESOURCE_BENCHMARKS = (
         case_name="resource_L12_beta4",
         L=12,
         seed=6712,
+    ),
+    resource_benchmark_case(
+        case_name="resource_L14_beta4",
+        L=14,
+        seed=6714,
+    ),
+    resource_benchmark_case(
+        case_name="resource_L16_beta4",
+        L=16,
+        seed=6716,
+        execution_authorized=false,
     ),
 )
 
@@ -108,6 +125,14 @@ function validate_benchmark_selection(options, cases)
         options.require_single || error("--run requires --require-single")
         isnothing(options.selected_case) &&
             error("--run requires an exact --case selector")
+        only(cases).execution_authorized || error(
+            string(
+                "real execution of ",
+                only(cases).case,
+                " is not authorized; record an L=14 RESOURCE_FEASIBLE ",
+                "checkpoint and activate L=16 in a later reviewed commit",
+            ),
+        )
     end
     return nothing
 end
@@ -143,6 +168,7 @@ function print_benchmark_table(cases; io::IO=stdout)
         :seed,
         :warmup_sweeps,
         :timed_complete_sweeps,
+        :execution_authorized,
         :projected_complete_sweeps_per_chain,
         :projected_chain_count,
         :target_filling,
@@ -160,6 +186,7 @@ function print_benchmark_table(cases; io::IO=stdout)
             case.seed,
             case.warmup_sweeps,
             case.timed_sweeps,
+            case.execution_authorized,
             case.projected_complete_sweeps_per_chain,
             case.projected_chain_count,
             case.target_filling,

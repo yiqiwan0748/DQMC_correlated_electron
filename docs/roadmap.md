@@ -93,8 +93,8 @@ first fixed-density sign/temperature pair completed, but its production
 densities did not satisfy the registered two-standard-error compatibility
 gate. Its classification is `NOT_ADJUDICABLE`; the dependent temperature and
 correlation campaigns remain blocked. The separately authorized resource-only
-benchmarks through `L=12` all pass their registered gates; conditional `L=14`
-and `L=16` benchmarks still require a later registration.
+benchmarks through `L=12` all pass their registered gates. The conditional
+resource-only `L=14` and `L=16` extension is registered but has no results yet.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing its HS-update, propagation, acceptance, or sampling behavior.
@@ -329,12 +329,20 @@ Every immediately preceding deterministic `U=0` oracle passed, every timed
 attempt exited successfully with zero reported swaps, all peak resident-memory
 values were below 5.5 GiB, all projected two-chain times were below 24 hours,
 and all Green-function corrections were below `1e-8`. The largest
-resource-feasible size demonstrated within the currently registered ladder is
-therefore `L=12`; this is not yet a ceiling because `L=14` and `L=16` were not
-authorized or run. See the [resource outcome](provenance/resource_benchmarks_L4_L12_outcome.md)
+resource-feasible size demonstrated so far is therefore `L=12`; this is not
+yet a ceiling. The later `L=14` and `L=16` extension is registered but remains
+unrun. See the [resource outcome](provenance/resource_benchmarks_L4_L12_outcome.md)
 and its [SHA-256 artifact manifest](provenance/resource_benchmarks_L4_L12_artifacts.sha256).
 These short timing runs make no fixed-density, sign, or interacting-physics
 claim, and they do not unblock the scientific size ladder.
+
+The [conditional resource extension](provenance/resource_benchmarks_L14_L16_registration.md)
+prospectively registers only `resource_L14_beta4` with seed 6714 and
+`resource_L16_beta4` with seed 6716. `L=14` is executable first. `L=16` is
+registered with `execution_authorized=false` and must be rejected by the
+runner until a checksummed `L=14` `RESOURCE_FEASIBLE` outcome and later
+reviewed activation commit exist. No larger size, scientific calibration,
+sign chain, or correlation production is authorized by that extension.
 
 ### Milestone 6B: Correlation Measurements
 
