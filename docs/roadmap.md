@@ -93,7 +93,8 @@ first fixed-density sign/temperature pair completed, but its production
 densities did not satisfy the registered two-standard-error compatibility
 gate. Its classification is `NOT_ADJUDICABLE`; the dependent temperature and
 correlation campaigns remain blocked. The separately authorized resource-only
-size benchmarks remain pending.
+benchmarks through `L=12` all pass their registered gates; conditional `L=14`
+and `L=16` benchmarks still require a later registration.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing its HS-update, propagation, acceptance, or sampling behavior.
@@ -319,6 +320,21 @@ or replaced. See the [pair outcome](provenance/fixed_density_mu_m2p5202_L4_beta4
 and its [SHA-256 artifact manifest](provenance/fixed_density_mu_m2p5202_L4_beta4_pair_artifacts.sha256).
 The independent resource-only benchmarks remain authorized and make no
 filling, sign, or physics claim.
+
+#### Registered Resource-Benchmark Outcome
+
+The five registered `beta=4`, `U=2` resource-only cases at
+`L=4,6,8,10,12` completed in order and each returned `RESOURCE_FEASIBLE`.
+Every immediately preceding deterministic `U=0` oracle passed, every timed
+attempt exited successfully with zero reported swaps, all peak resident-memory
+values were below 5.5 GiB, all projected two-chain times were below 24 hours,
+and all Green-function corrections were below `1e-8`. The largest
+resource-feasible size demonstrated within the currently registered ladder is
+therefore `L=12`; this is not yet a ceiling because `L=14` and `L=16` were not
+authorized or run. See the [resource outcome](provenance/resource_benchmarks_L4_L12_outcome.md)
+and its [SHA-256 artifact manifest](provenance/resource_benchmarks_L4_L12_artifacts.sha256).
+These short timing runs make no fixed-density, sign, or interacting-physics
+claim, and they do not unblock the scientific size ladder.
 
 ### Milestone 6B: Correlation Measurements
 
