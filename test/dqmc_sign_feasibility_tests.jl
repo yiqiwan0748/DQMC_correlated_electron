@@ -138,12 +138,12 @@ end
         fixed_mu = filter(chain -> chain.phase == :fixed_mu_diagnostics, chains)
 
         @test SignFeasibilityRunner.TARGET_MU == -1.897
-        @test length(chains) == 11
+        @test length(chains) == 12
         @test length(u0_controls) == 1
         @test only(u0_controls).U == 0.0
         @test only(u0_controls).mu == -1.897
         @test [chain.mu for chain in calibration] ==
-              [-2.55, -2.497, -2.197, -1.897, -1.597, -1.297]
+              [-2.55, -2.5202, -2.497, -2.197, -1.897, -1.597, -1.297]
         lower_bracket = only(filter(
             chain -> chain.case == "calibrate_target_mu_m2p55",
             calibration,
@@ -175,6 +175,65 @@ end
             SignFeasibilityRunner.selected_chains(lower_bracket_options)
         @test length(lower_bracket_selection) == 1
         @test only(lower_bracket_selection) == lower_bracket
+
+        candidate = only(filter(
+            chain -> chain.case == "calibrate_target_mu_m2p5202",
+            calibration,
+        ))
+        @test candidate.phase == :mu_calibration
+        @test candidate.case == "calibrate_target_mu_m2p5202"
+        @test candidate.L == 4
+        @test candidate.beta == 4.0
+        @test candidate.dtau == 0.1
+        @test round(Int, candidate.beta / candidate.dtau) == 40
+        @test candidate.U == 2.0
+        @test candidate.mu == -2.5202
+        @test candidate.seed == 6117
+        @test candidate.burnin_sweeps == 200
+        @test candidate.measurement_sweeps == 800
+        @test candidate.sweeps_between_measurements == 2
+        @test candidate.block_size == 100
+        @test candidate.stabilization_period == 5
+        @test candidate.target_filling == 1.46021875
+
+        candidate_options = SignFeasibilityRunner.parse_runner_options([
+            "--phase=mu-calibration",
+            "--case=calibrate_target_mu_m2p5202",
+            "--seed=6117",
+            "--require-single",
+            "--strict-pilot",
+        ])
+        candidate_selection =
+            SignFeasibilityRunner.selected_chains(candidate_options)
+        @test candidate_options.phases == [:mu_calibration]
+        @test candidate_options.selected_case ==
+              "calibrate_target_mu_m2p5202"
+        @test candidate_options.selected_seed == 6117
+        @test candidate_options.require_single
+        @test candidate_options.strict_pilot
+        @test length(candidate_selection) == 1
+        @test only(candidate_selection) == candidate
+
+        candidate_prospective_metadata = (
+            result_identifier=
+                "$(candidate.case)_seed$(candidate.seed)_strict_pilot",
+            phase=candidate.phase,
+            case=candidate.case,
+            seed=candidate.seed,
+            mu=candidate.mu,
+            target_filling=candidate.target_filling,
+            strict_pilot=candidate_options.strict_pilot,
+        )
+        @test candidate_prospective_metadata == (
+            result_identifier=
+                "calibrate_target_mu_m2p5202_seed6117_strict_pilot",
+            phase=:mu_calibration,
+            case="calibrate_target_mu_m2p5202",
+            seed=6117,
+            mu=-2.5202,
+            target_filling=1.46021875,
+            strict_pilot=true,
+        )
         @test !isempty(fixed_mu)
         @test all(chain -> chain.mu == -1.897, fixed_mu)
         @test all(chain -> chain.mu == -1.897,

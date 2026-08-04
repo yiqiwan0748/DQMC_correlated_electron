@@ -70,6 +70,14 @@ const FEASIBILITY_CHAINS = (
     ),
     feasibility_chain(
         phase=:mu_calibration,
+        case_name="calibrate_target_mu_m2p5202",
+        L=4, beta=4.0, U=2.0, mu=-2.5202, seed=6117,
+        burnin_sweeps=200, measurement_sweeps=800,
+        sweeps_between_measurements=2, block_size=100,
+        target_filling=TARGET_FILLING,
+    ),
+    feasibility_chain(
+        phase=:mu_calibration,
         case_name="calibrate_target_mu_m2p497",
         L=4, beta=4.0, U=2.0, mu=-2.497, seed=6111,
         burnin_sweeps=200, measurement_sweeps=800,
