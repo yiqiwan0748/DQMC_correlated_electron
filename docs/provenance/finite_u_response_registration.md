@@ -104,8 +104,10 @@ A lattice is resource-feasible only if:
 - there is no swap, out-of-memory event, or numerical failure; and
 - the maximum Green-function recomputation correction is at most `1e-8`.
 
-Stop at the first resource failure. `L=14` and `L=16` benchmarks require a later
-registration and are permitted only after `L=12` passes.
+Under this initial registration, `L=14` and `L=16` required a later
+registration and were permitted only after `L=12` passed. That later
+registration is now the separate
+[conditional resource extension](resource_benchmarks_L14_L16_registration.md).
 
 #### Recorded Resource Outcome
 
@@ -113,7 +115,9 @@ All five registered benchmarks completed in increasing `L` and independently
 returned `RESOURCE_FEASIBLE`. The largest resource-feasible size demonstrated
 within this registration is `L=12`. The result does not establish a resource
 ceiling beyond the tested range: `L=14` and `L=16` were not authorized or run
-by this registration. Full metrics and artifact validation are recorded in the
+by this initial registration. They are now prospectively covered only by the
+separate [conditional resource extension](resource_benchmarks_L14_L16_registration.md).
+Full metrics and artifact validation through `L=12` are recorded in the
 [resource outcome](resource_benchmarks_L4_L12_outcome.md) and its
 [SHA-256 manifest](resource_benchmarks_L4_L12_artifacts.sha256).
 
