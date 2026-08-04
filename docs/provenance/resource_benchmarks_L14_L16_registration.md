@@ -15,10 +15,10 @@ case completed or passed.
 
 ## Authorized Cases
 
-| Case | `L` | Seed | `beta` | `U` | `dtau` | `Ltau` | `mu` | Warm-up | Timed | Executable now |
+| Case | `L` | Seed | `beta` | `U` | `dtau` | `Ltau` | `mu` | Warm-up | Timed | Recorded state |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| `resource_L14_beta4` | 14 | 6714 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | yes |
-| `resource_L16_beta4` | 16 | 6716 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | no |
+| `resource_L14_beta4` | 14 | 6714 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | completed, feasible |
+| `resource_L16_beta4` | 16 | 6716 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | blocked pending activation |
 
 Both cases must be executed with stabilization period 5, one Julia thread, one
 BLAS thread, and no visible GPU. The protected execution handoff must set
@@ -69,6 +69,22 @@ The resource gate is unchanged:
 GNU-time peak RSS in kilobytes is converted to bytes by multiplying by 1024.
 A zero `Swaps` count establishes zero swap use; a nonzero count must not be
 misrepresented as a byte value.
+
+## Recorded `L=14` Outcome
+
+The registered `L=14` attempt completed from Git commit
+`6c77ee781dc56e5a33ec2b4fc126483a32a2b2e6` and returned
+`RESOURCE_FEASIBLE`. Its projected two-chain time is
+`14424.377793839998` seconds, peak RSS is `558632960` bytes, the GNU-time
+swap count is zero, and the maximum Green-function correction is
+`1.0183698177269884e-11`.
+
+The full metrics and interpretation are recorded in the
+[L=14 outcome](resource_benchmark_L14_outcome.md) and its
+[SHA-256 manifest](resource_benchmark_L14_artifacts.sha256). This completion
+satisfies the registered resource prerequisite for a later `L=16` activation,
+but the current runner still has `execution_authorized=false`; `L=16` must not
+run until the separate reviewed activation commit is merged.
 
 ## Boundary
 
