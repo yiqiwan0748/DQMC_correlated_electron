@@ -11,16 +11,17 @@ That result satisfied the prerequisite for this prospective extension. This
 record registered only the two resource timing cases below and authorized real
 execution of `L=14` first. The checksummed `L=14` outcome subsequently returned
 `RESOURCE_FEASIBLE` and was merged as commit
-`85053d8bc6197c2207d35978df7f4265fc93a70e`, so this separate reviewed
-activation now authorizes the reserved `L=16` case. Activation does not imply
-that `L=16` completed or passed.
+`85053d8bc6197c2207d35978df7f4265fc93a70e`. The separate reviewed activation
+merged as commit `5ca19b43b20c52e8a91a256ef17b6fc90b5e7243`, authorizing the
+reserved `L=16` case. The protected attempt then completed with the outcome
+recorded below.
 
 ## Authorized Cases
 
 | Case | `L` | Seed | `beta` | `U` | `dtau` | `Ltau` | `mu` | Warm-up | Timed | Recorded state |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | `resource_L14_beta4` | 14 | 6714 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | completed, feasible |
-| `resource_L16_beta4` | 16 | 6716 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | activated, not run |
+| `resource_L16_beta4` | 16 | 6716 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | completed, feasible |
 
 Both cases must be executed with stabilization period 5, one Julia thread, one
 BLAS thread, and no visible GPU. The protected execution handoff must set
@@ -43,9 +44,9 @@ rerun.
 The required `L=14` first step completed with a checksummed
 `RESOURCE_FEASIBLE` outcome. Its outcome checkpoint is merged, and this
 separate reviewed code-and-document activation sets the registered `L=16`
-execution flag to true. The `L=16` case may now proceed only through its
-protected dry run, immediate deterministic oracle, canonical immutable output
-directory, and exact registered execution command.
+execution flag to true. The `L=16` case then completed through its protected
+dry run, immediate deterministic oracle, canonical immutable output directory,
+and exact registered execution command without a retry.
 
 Immediately before each interacting attempt, the deterministic
 `L=4`, `beta=4`, `U=0`, `mu=-1.897` density-and-energy oracle must pass its
@@ -83,10 +84,22 @@ swap count is zero, and the maximum Green-function correction is
 The full metrics and interpretation are recorded in the
 [L=14 outcome](resource_benchmark_L14_outcome.md) and its
 [SHA-256 manifest](resource_benchmark_L14_artifacts.sha256). This completion
-satisfies the registered resource prerequisite, and this separate reviewed
-activation sets `execution_authorized=true` for `L=16`. The case remains
-unrun until its protected execution branch is created from the merged
-activation.
+satisfied the registered resource prerequisite for the separately reviewed
+`L=16` activation.
+
+## Recorded `L=16` Outcome
+
+The registered `L=16` attempt completed from Git commit
+`5ca19b43b20c52e8a91a256ef17b6fc90b5e7243` and returned
+`RESOURCE_FEASIBLE`. Its projected two-chain time is `29964.55830336`
+seconds, peak RSS is `645808128` bytes, the GNU-time swap count is zero, and
+the maximum Green-function correction is `1.606504165807543e-11`.
+
+The full metrics and interpretation are recorded in the
+[L=16 outcome](resource_benchmark_L16_outcome.md) and its
+[SHA-256 manifest](resource_benchmark_L16_artifacts.sha256). The completed
+registered ladder now demonstrates resource feasibility through `L=16` under
+the stated laptop and workload conditions.
 
 ## Boundary
 
@@ -96,6 +109,6 @@ interacting van-Hove claim. They do not override the
 `NOT_ADJUDICABLE` fixed-density `L=4`, `beta=4` pair and do not authorize any
 scientific size chain or correlation production.
 
-No `L>=18` resource case is registered. A completed `L=16` pass would establish
-resource feasibility through the largest size in this registered extension,
-not a ceiling beyond it.
+No `L>=18` resource case is registered. The completed `L=16` pass establishes
+resource feasibility through the largest tested size in this registered
+extension, not a ceiling beyond it.

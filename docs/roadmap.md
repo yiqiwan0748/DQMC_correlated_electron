@@ -94,8 +94,8 @@ densities did not satisfy the registered two-standard-error compatibility
 gate. Its classification is `NOT_ADJUDICABLE`; the dependent temperature and
 correlation campaigns remain blocked. The separately authorized resource-only
 benchmarks through `L=12` all pass their registered gates. The conditional
-resource-only `L=14` case also passes; the registered `L=16` case is now
-code-authorized but remains unrun pending its protected execution branch.
+resource-only `L=14` and `L=16` cases also pass. `L=16` is now the largest
+tested resource-feasible size, not a demonstrated ceiling.
 
 - Reuse the validated Milestone 5 state construction and update kernel without
   changing its HS-update, propagation, acceptance, or sampling behavior.
@@ -330,9 +330,11 @@ Every immediately preceding deterministic `U=0` oracle passed, every timed
 attempt exited successfully with zero reported swaps, all peak resident-memory
 values were below 5.5 GiB, all projected two-chain times were below 24 hours,
 and all Green-function corrections were below `1e-8`. The later `L=14` case
-also returned `RESOURCE_FEASIBLE`, so `L=14` is now the largest demonstrated
-resource-feasible size; this is not yet a ceiling. Only `L=16` remains unrun,
-and its separate reviewed activation is now recorded. See the [initial resource outcome](provenance/resource_benchmarks_L4_L12_outcome.md)
+also returned `RESOURCE_FEASIBLE`. The final registered `L=16` case returned
+`RESOURCE_FEASIBLE` with a projected two-chain time of `29964.55830336`
+seconds, peak RSS of `645808128` bytes, zero swaps, and maximum correction
+`1.606504165807543e-11`. `L=16` is therefore the largest tested
+resource-feasible size; this is not a ceiling. See the [initial resource outcome](provenance/resource_benchmarks_L4_L12_outcome.md)
 and its [SHA-256 artifact manifest](provenance/resource_benchmarks_L4_L12_artifacts.sha256).
 These short timing runs make no fixed-density, sign, or interacting-physics
 claim, and they do not unblock the scientific size ladder.
@@ -342,9 +344,11 @@ prospectively registers only `resource_L14_beta4` with seed 6714 and
 `resource_L16_beta4` with seed 6716. The `L=14` case completed and returned
 `RESOURCE_FEASIBLE`; see its [outcome](provenance/resource_benchmark_L14_outcome.md)
 and [SHA-256 manifest](provenance/resource_benchmark_L14_artifacts.sha256).
-`L=16` is now registered with `execution_authorized=true`; this authorizes only
-its protected resource attempt from the merged activation. No larger size,
-scientific calibration, sign chain, or correlation production is authorized.
+The `L=16` case also completed and returned `RESOURCE_FEASIBLE`; see its
+[outcome](provenance/resource_benchmark_L16_outcome.md) and
+[SHA-256 manifest](provenance/resource_benchmark_L16_artifacts.sha256). No
+larger size, scientific calibration, sign chain, or correlation production is
+authorized.
 
 ### Milestone 6B: Correlation Measurements
 
