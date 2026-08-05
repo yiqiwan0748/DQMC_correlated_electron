@@ -26,8 +26,7 @@ end
     @test [case.L for case in benchmarks] == [4, 6, 8, 10, 12, 14, 16]
     @test [case.seed for case in benchmarks] ==
           [6704, 6706, 6708, 6710, 6712, 6714, 6716]
-    @test all(case.execution_authorized for case in benchmarks[1:6])
-    @test !benchmarks[7].execution_authorized
+    @test all(case.execution_authorized for case in benchmarks)
 
     for case in benchmarks
         @test case.beta == 4.0
@@ -134,17 +133,19 @@ end
     @test length(extension) == 1
     @test only(extension).L == 16
     @test only(extension).seed == 6716
-    @test !only(extension).execution_authorized
-    blocked_extension_run =
+    @test only(extension).execution_authorized
+    extension_run =
         DQMCScalingBenchmark.parse_benchmark_options([
             "--run",
             "--case=resource_L16_beta4",
             "--require-single",
         ])
     redirect_stdout(devnull) do
-        @test_throws ErrorException DQMCScalingBenchmark.validate_benchmark_selection(
-            blocked_extension_run,
-            extension,
+        @test isnothing(
+            DQMCScalingBenchmark.validate_benchmark_selection(
+                extension_run,
+                extension,
+            ),
         )
     end
 
