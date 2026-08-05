@@ -70,7 +70,7 @@ const RESOURCE_BENCHMARKS = (
         case_name="resource_L16_beta4",
         L=16,
         seed=6716,
-        execution_authorized=false,
+        execution_authorized=true,
     ),
 )
 
@@ -129,8 +129,7 @@ function validate_benchmark_selection(options, cases)
             string(
                 "real execution of ",
                 only(cases).case,
-                " is not authorized; record an L=14 RESOURCE_FEASIBLE ",
-                "checkpoint and activate L=16 in a later reviewed commit",
+                " is not authorized by the current resource registration",
             ),
         )
     end

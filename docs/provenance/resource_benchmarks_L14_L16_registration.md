@@ -7,18 +7,20 @@ The registered resource-only cases through `L=12` all returned
 `docs/provenance/resource_benchmarks_L4_L12_outcome.md` and merged to GitHub
 `main` as commit `ddec4ba101d935ae52a8c6626ea158449cf07bc1`.
 
-That result satisfies the prerequisite for this prospective extension. This
-record registers only the two resource timing cases below and authorizes real
-execution of `L=14` first. `L=16` is prospectively reserved but code-gated
-until a later reviewed activation. Registration does not imply that either
-case completed or passed.
+That result satisfied the prerequisite for this prospective extension. This
+record registered only the two resource timing cases below and authorized real
+execution of `L=14` first. The checksummed `L=14` outcome subsequently returned
+`RESOURCE_FEASIBLE` and was merged as commit
+`85053d8bc6197c2207d35978df7f4265fc93a70e`, so this separate reviewed
+activation now authorizes the reserved `L=16` case. Activation does not imply
+that `L=16` completed or passed.
 
 ## Authorized Cases
 
 | Case | `L` | Seed | `beta` | `U` | `dtau` | `Ltau` | `mu` | Warm-up | Timed | Recorded state |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | `resource_L14_beta4` | 14 | 6714 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | completed, feasible |
-| `resource_L16_beta4` | 16 | 6716 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | blocked pending activation |
+| `resource_L16_beta4` | 16 | 6716 | 4.0 | 2.0 | 0.1 | 40 | -2.5202 | 1 | 10 | activated, not run |
 
 Both cases must be executed with stabilization period 5, one Julia thread, one
 BLAS thread, and no visible GPU. The protected execution handoff must set
@@ -38,13 +40,12 @@ rerun.
 
 ## Sequential Gate
 
-Run `L=14` first. The runner registers `L=16` with
-`execution_authorized=false` and must reject a real `L=16` invocation. If the
-complete `L=14` record returns `RESOURCE_FEASIBLE`, first create and merge its
-checksummed outcome checkpoint, then use a separate reviewed code-and-document
-commit to set the `L=16` execution flag to true. Stop on an infeasible,
-invalid, interrupted, or otherwise not-adjudicable `L=14` result; do not skip
-to `L=16`.
+The required `L=14` first step completed with a checksummed
+`RESOURCE_FEASIBLE` outcome. Its outcome checkpoint is merged, and this
+separate reviewed code-and-document activation sets the registered `L=16`
+execution flag to true. The `L=16` case may now proceed only through its
+protected dry run, immediate deterministic oracle, canonical immutable output
+directory, and exact registered execution command.
 
 Immediately before each interacting attempt, the deterministic
 `L=4`, `beta=4`, `U=0`, `mu=-1.897` density-and-energy oracle must pass its
@@ -82,9 +83,10 @@ swap count is zero, and the maximum Green-function correction is
 The full metrics and interpretation are recorded in the
 [L=14 outcome](resource_benchmark_L14_outcome.md) and its
 [SHA-256 manifest](resource_benchmark_L14_artifacts.sha256). This completion
-satisfies the registered resource prerequisite for a later `L=16` activation,
-but the current runner still has `execution_authorized=false`; `L=16` must not
-run until the separate reviewed activation commit is merged.
+satisfies the registered resource prerequisite, and this separate reviewed
+activation sets `execution_authorized=true` for `L=16`. The case remains
+unrun until its protected execution branch is created from the merged
+activation.
 
 ## Boundary
 
