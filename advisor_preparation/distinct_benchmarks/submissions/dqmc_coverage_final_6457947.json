@@ -1,0 +1,25 @@
+{
+  "job_id": "6457947",
+  "dependency": "afterany:6457944",
+  "distinct_ids": [
+    "X06"
+  ],
+  "source_release": "../source_releases/dqmc-coverage-pilot-v2-freeze.json",
+  "pilot_job": "6457823",
+  "pilot_raw_audit": "PASS",
+  "pilot_quality_failures": [],
+  "measured_seconds_per_replicate": 3.5692657232284546,
+  "fixed_replicates": [
+    1,
+    400
+  ],
+  "pilot_seeds_excluded": true,
+  "estimated_minutes_after_start": [
+    25,
+    75
+  ],
+  "wall_cap_minutes": 120,
+  "cpus": 1,
+  "memory_mb": 3500,
+  "postprocess_required": "summarize_coverage.py --mode final --inputs results/distinct_X06_final01/shard_1_400.toml --output NEW_summary.json"
+}

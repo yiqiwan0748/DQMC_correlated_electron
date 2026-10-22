@@ -1,0 +1,19 @@
+{
+  "job_id": "6457944",
+  "dependency": "afterany:6457908",
+  "distinct_ids": [
+    "P11",
+    "P12",
+    "P15"
+  ],
+  "source_release": "../source_releases/tenpy-tranche-freeze.json",
+  "pilot_job": "6457724",
+  "pilot_status": "PILOT_PARTIAL, diagnostic metrics and resource receipts inspected; no distinct PASS",
+  "estimated_minutes_after_start": [
+    3,
+    8
+  ],
+  "wall_cap_minutes": 20,
+  "cpus": 1,
+  "memory_mb": 3500
+}

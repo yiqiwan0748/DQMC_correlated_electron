@@ -78,6 +78,8 @@ regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
 verified repair. Original failures, exact permutation proofs, source versions
-and raw receipts remain visible. Separate TeNPy/ITensor DMRG and repeated-campaign
-DQMC coverage pilots are queued; neither pilot counts as a completed distinct
-question. Each result identifies the actual method and functions exercised.
+and raw receipts remain visible. TeNPy/ITensor DMRG and repeated-campaign DQMC coverage pilots completed
+with successful diagnostic/resource audits; neither pilot adds a distinct PASS.
+Full DMRG and the fixed 400-repetition coverage study are submitted in sequence.
+Three further thermal-ensemble/response questions are also executing. Each result
+identifies the actual method and functions exercised.
