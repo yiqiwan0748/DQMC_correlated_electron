@@ -1,0 +1,26 @@
+{
+  "schema": "spectral_v8_rollup_static_and_receipt_review_v1",
+  "status": "PASS",
+  "tool_sha256": "76f5625e2ccf510d30bae1002df62dc32c88d2bb813a811e32dacf70c5b42e2e",
+  "ledger_sha256": "25b6733504af033cdbb6d0a942f86bcc8eacbe33c48451602c1af7b5b1f22c23",
+  "counts": {
+    "PASS": 35,
+    "FAIL": 0,
+    "UNRESOLVED": 0,
+    "NOT_RUN": 65
+  },
+  "unique_catalogue_ids": 100,
+  "original32pass_and_all97other_rows_unchanged": true,
+  "verified_input_manifest_files": 75,
+  "verified_base_file_closure": 97,
+  "verified_analysis_receipts": 9,
+  "spectral_replay_sha256": "d55b83e6b809a952e41de8ea4ac8e6afebac0be6f3f32c9856914a33f01032af",
+  "complete_grid_negative_checks": [
+    "P08_missing_grid_rejected",
+    "P09_missing_grid_rejected",
+    "P10_missing_grid_rejected",
+    "P09_incomplete_zero_or_nonzero_weight_sector_rejected"
+  ],
+  "scientific_simulations": 0,
+  "old_frozen_reporter_sha256": "c3f0b8434510421061fbfc89f89d0320f76bf04160039d9224a79565b47581ba"
+}

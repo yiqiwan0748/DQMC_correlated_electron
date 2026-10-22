@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/full32_public_replay_v7/README.md)
-records **32 PASS and 68 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/spectral_v8/README.md)
+records **35 PASS and 65 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -123,3 +123,21 @@ using analysis code checked out from the exact published commit, with all 53
 input hashes verified. This validates this energy-interval procedure for the
 specified fixture; it does not certify entropy intervals, other regimes or the
 historical ten-site calculation's systematic errors.
+
+## Independent real-time, spectral and thermal-response additions
+
+P08, P09 and P10 passed on ISAAC job6458468. The actual user ED/thermal-ED
+Hamiltonian and state routines, with declared new measurement adapters, agree
+with independent QuSpin calculations for a charge-density quench (25 times),
+all eight spin/momentum spectral channels with complete addition/removal sectors,
+and 108 imaginary-time spin-response points. Quench observables agree within
+8.89e-15, spectral poles/residues within 1.16e-14/1.00e-15, and spin responses
+within 2.84e-15. Complete grids, cross-spin fermionic anticommutators, moment
+sum rules, conservation, KMS and endpoint checks passed an independent audit;
+the frozen comparison replay is byte-identical to its ISAAC receipt.
+
+[Raw data and independent audit](results/spectral_dynamics_6458468/) and the
+[updated ledger](reporting/reports/spectral_v8/README.md) retain source hashes
+and all previous results. This is a four-site fixture with additive measurement
+adapters; it does not test native DQMC dynamics. The job used one CPU3500MB and
+completed in3m10s; target process peak RSS was about562MiB.

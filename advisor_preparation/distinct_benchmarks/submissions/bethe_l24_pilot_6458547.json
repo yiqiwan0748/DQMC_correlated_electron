@@ -1,0 +1,23 @@
+{
+  "job_id": "6458547",
+  "dependency": "afterany:6458532",
+  "status": "SUBMITTED_PILOT_ONLY",
+  "scientific_completions": 0,
+  "catalogue_ids": [
+    "A18",
+    "A19",
+    "A20"
+  ],
+  "source_freeze": "../source_releases/bethe-l24-pilot-v2-freeze.json",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 45,
+  "target_command_timeout_seconds": 2400,
+  "unmeasured_runtime_estimate_minutes": [
+    15,
+    40
+  ],
+  "checkpoint_EDT": "2026-10-22 16:15",
+  "L32_queued": false,
+  "unrelated_jobs_changed": false
+}

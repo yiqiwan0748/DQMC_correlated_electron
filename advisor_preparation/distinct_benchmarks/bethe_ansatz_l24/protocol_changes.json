@@ -1,0 +1,83 @@
+{
+  "release": "bethe_l24_pilot_v2",
+  "status": "FROZEN_NOT_RUN",
+  "predecessor_manifest_sha256": "0293c9e608dfb0ab827782533f6ab8173d2e16bf694b5a8ca37c441898e510c9",
+  "manifest_changes": [
+    {
+      "field": "L",
+      "before": [
+        8,
+        12
+      ],
+      "after": [
+        24
+      ]
+    },
+    {
+      "field": "arms.coarse.chi_max",
+      "before": 128,
+      "after": 256
+    },
+    {
+      "field": "arms.coarse.cutoff",
+      "before": 1e-11,
+      "after": 1e-12
+    },
+    {
+      "field": "arms.coarse.nsweeps",
+      "before": 12,
+      "after": 18
+    },
+    {
+      "field": "arms.refined.chi_max",
+      "before": 256,
+      "after": 512
+    },
+    {
+      "field": "arms.refined.nsweeps",
+      "before": 18,
+      "after": 24
+    },
+    {
+      "field": "predecessor_manifest_sha256",
+      "before": null,
+      "after": "0293c9e608dfb0ab827782533f6ab8173d2e16bf694b5a8ca37c441898e510c9"
+    },
+    {
+      "field": "release",
+      "before": null,
+      "after": "bethe_l24_pilot_v2"
+    },
+    {
+      "field": "resources.estimated_after_start_minutes",
+      "before": null,
+      "after": [
+        15,
+        40
+      ]
+    },
+    {
+      "field": "resources.runtime_status",
+      "before": "UNMEASURED; 12 finite-chain DMRG solves; pilot can establish runtime/quality only",
+      "after": "L24 UNMEASURED; 6 finite-chain DMRG solves. Preliminary 15-40 minute engineering range from prior L8/L12 pilot, not a measured L24 prediction. Scheduler wait separate; pilot can establish runtime/quality only."
+    },
+    {
+      "field": "resources.target_command_cap_seconds",
+      "before": null,
+      "after": 2400
+    },
+    {
+      "field": "resources.wall_cap_minutes",
+      "before": 15,
+      "after": 45
+    }
+  ],
+  "executable_changes": {
+    "pilot_target.jl": "BYTE_IDENTICAL to frozen v1; L is read from manifest and evenL initialization is generic",
+    "oracle_lieb_wu.py": "BYTE_IDENTICAL to frozen v1",
+    "summarize_pilot.py": "Only planning_limit prose changed; AST identical after replacing this one string; all arithmetic/gates identical",
+    "pilot.sbatch": "Job name/output prefix changed; wall cap15->45minutes; target cap780->2400seconds. No submission."
+  },
+  "all_quality_gates_and_per_arm_thresholds_unchanged": true,
+  "full_programme_or_L32_execution_included": false
+}

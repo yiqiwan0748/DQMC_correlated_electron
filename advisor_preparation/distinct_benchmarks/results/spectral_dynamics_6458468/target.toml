@@ -1,0 +1,2395 @@
+thermal_source_sha256 = "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+attribution = "Additive real-time, fermion-operator/Lehmann, and two-particle imaginary-time adapters around actual user ED/thermal APIs; native DQMC dynamics is not tested"
+adapter_sha256 = "2a4c97171ddbbfa718f69b217a159873f924fae91436796ce6ffc9a28bc58ef9"
+schema = "spectral_dynamics_v1"
+manifest_sha256 = "2db20b0e6b71e932bc8db1ae071007b328f3fca117e0590acbdde425aa8109a2"
+ed_source_sha256 = "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+julia_version = "1.12.1"
+status = "COMPLETED"
+elapsed_seconds = 11.95054292678833
+
+[P08]
+Hamiltonian_eigen_residual = 4.856143649413051e-14
+initial_energy = 8.0
+
+    [[P08.rows]]
+    time = 0.0
+    Ndown = 1.9999999999999991
+    density = [3.6193513884240334e-30, 1.9999999999999991, 3.31642066376515e-30, 1.9999999999999991]
+    imbalance = 0.9999999999999996
+    energy = 7.999999999999998
+    norm = 0.9999999999999996
+    Nup = 1.9999999999999991
+    double_occupancy_total = 1.9999999999999991
+    [[P08.rows]]
+    time = 0.25
+    Ndown = 2.0
+    density = [0.21195762165251636, 1.788042378347484, 0.21195762165251597, 1.7880423783474835]
+    imbalance = 0.7880423783474838
+    energy = 8.000000000000004
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.626153166341688
+    [[P08.rows]]
+    time = 0.5
+    Ndown = 1.9999999999999998
+    density = [0.5323413245782576, 1.4676586754217433, 0.5323413245782564, 1.4676586754217424]
+    imbalance = 0.46765867542174294
+    energy = 8.0
+    norm = 0.9999999999999999
+    Nup = 1.9999999999999998
+    double_occupancy_total = 1.3527293850220925
+    [[P08.rows]]
+    time = 0.75
+    Ndown = 1.9999999999999991
+    density = [0.6596013793154575, 1.3403986206845429, 0.6596013793154564, 1.340398620684542]
+    imbalance = 0.34039862068454274
+    energy = 8.0
+    norm = 0.9999999999999996
+    Nup = 1.9999999999999991
+    double_occupancy_total = 1.4907580731306278
+    [[P08.rows]]
+    time = 1.0
+    Ndown = 2.0
+    density = [0.7884348675667258, 1.2115651324332743, 0.7884348675667252, 1.2115651324332748]
+    imbalance = 0.21156513243327454
+    energy = 8.000000000000002
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.5280838318652363
+    [[P08.rows]]
+    time = 1.25
+    Ndown = 1.9999999999999991
+    density = [0.9698460874430531, 1.0301539125569459, 0.969846087443053, 1.0301539125569465]
+    imbalance = 0.030153912556946577
+    energy = 7.999999999999999
+    norm = 0.9999999999999996
+    Nup = 1.9999999999999991
+    double_occupancy_total = 1.616600482260372
+    [[P08.rows]]
+    time = 1.5
+    Ndown = 1.9999999999999996
+    density = [0.9782768153788168, 1.0217231846211827, 0.9782768153788164, 1.0217231846211834]
+    imbalance = 0.021723184621183222
+    energy = 8.0
+    norm = 0.9999999999999998
+    Nup = 1.9999999999999996
+    double_occupancy_total = 1.7684261067801734
+    [[P08.rows]]
+    time = 1.75
+    Ndown = 1.9999999999999998
+    density = [0.8872387694528048, 1.1127612305471954, 0.8872387694528037, 1.1127612305471957]
+    imbalance = 0.11276123054719567
+    energy = 8.0
+    norm = 0.9999999999999999
+    Nup = 1.9999999999999998
+    double_occupancy_total = 1.7656323426175398
+    [[P08.rows]]
+    time = 2.0
+    Ndown = 1.9999999999999996
+    density = [0.8918102936446874, 1.1081897063553128, 0.8918102936446861, 1.1081897063553123]
+    imbalance = 0.10818970635531289
+    energy = 7.999999999999998
+    norm = 0.9999999999999998
+    Nup = 1.9999999999999996
+    double_occupancy_total = 1.5037671145333946
+    [[P08.rows]]
+    time = 2.25
+    Ndown = 2.0
+    density = [0.8174157537025073, 1.1825842462974934, 0.8174157537025067, 1.1825842462974925]
+    imbalance = 0.18258424629749295
+    energy = 8.000000000000004
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.261385024239293
+    [[P08.rows]]
+    time = 2.5
+    Ndown = 1.9999999999999998
+    density = [0.5339405870015603, 1.4660594129984394, 0.5339405870015602, 1.4660594129984394]
+    imbalance = 0.46605941299843956
+    energy = 8.0
+    norm = 0.9999999999999999
+    Nup = 1.9999999999999998
+    double_occupancy_total = 1.5418491203053433
+    [[P08.rows]]
+    time = 2.75
+    Ndown = 1.9999999999999998
+    density = [0.36828186184775763, 1.6317181381522419, 0.3682818618477577, 1.6317181381522419]
+    imbalance = 0.6317181381522421
+    energy = 7.999999999999998
+    norm = 0.9999999999999999
+    Nup = 1.9999999999999998
+    double_occupancy_total = 1.834980787267471
+    [[P08.rows]]
+    time = 3.0
+    Ndown = 2.0
+    density = [0.5027116837139913, 1.4972883162860093, 0.5027116837139907, 1.4972883162860084]
+    imbalance = 0.49728831628600895
+    energy = 8.000000000000002
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.6111266046320538
+    [[P08.rows]]
+    time = 3.25
+    Ndown = 2.0
+    density = [0.6829678387995117, 1.317032161200489, 0.6829678387995108, 1.3170321612004878]
+    imbalance = 0.31703216120048855
+    energy = 8.0
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.6410473083751698
+    [[P08.rows]]
+    time = 3.5
+    Ndown = 1.9999999999999993
+    density = [0.7556726319089873, 1.2443273680910127, 0.755672631908987, 1.2443273680910119]
+    imbalance = 0.24432736809101258
+    energy = 7.999999999999998
+    norm = 0.9999999999999997
+    Nup = 1.9999999999999993
+    double_occupancy_total = 1.673527832219543
+    [[P08.rows]]
+    time = 3.75
+    Ndown = 2.0
+    density = [0.805530302979057, 1.194469697020942, 0.8055303029790579, 1.1944696970209425]
+    imbalance = 0.1944696970209424
+    energy = 8.000000000000002
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.3498090517377577
+    [[P08.rows]]
+    time = 4.0
+    Ndown = 1.9999999999999996
+    density = [0.8488315970490041, 1.1511684029509945, 0.8488315970490052, 1.1511684029509954]
+    imbalance = 0.15116840295099515
+    energy = 8.0
+    norm = 0.9999999999999998
+    Nup = 1.9999999999999996
+    double_occupancy_total = 1.3997088095246977
+    [[P08.rows]]
+    time = 4.25
+    Ndown = 1.9999999999999991
+    density = [0.8489257548783163, 1.1510742451216829, 0.8489257548783165, 1.151074245121683]
+    imbalance = 0.1510742451216833
+    energy = 8.0
+    norm = 0.9999999999999996
+    Nup = 1.9999999999999991
+    double_occupancy_total = 1.7158510420139619
+    [[P08.rows]]
+    time = 4.5
+    Ndown = 1.9999999999999996
+    density = [0.8892159957450629, 1.1107840042549366, 0.8892159957450627, 1.1107840042549366]
+    imbalance = 0.1107840042549369
+    energy = 7.999999999999998
+    norm = 0.9999999999999998
+    Nup = 1.9999999999999996
+    double_occupancy_total = 1.8309912569999538
+    [[P08.rows]]
+    time = 4.75
+    Ndown = 1.9999999999999993
+    density = [1.0192550088695567, 0.9807449911304429, 1.0192550088695567, 0.9807449911304424]
+    imbalance = -0.019255008869557
+    energy = 7.999999999999999
+    norm = 0.9999999999999997
+    Nup = 1.9999999999999993
+    double_occupancy_total = 1.6459896843438118
+    [[P08.rows]]
+    time = 5.0
+    Ndown = 1.9999999999999996
+    density = [1.1151919954745442, 0.8848080045254549, 1.1151919954745453, 0.8848080045254552]
+    imbalance = -0.11519199547454484
+    energy = 8.000000000000002
+    norm = 0.9999999999999998
+    Nup = 1.9999999999999996
+    double_occupancy_total = 1.4468132462301053
+    [[P08.rows]]
+    time = 5.25
+    Ndown = 2.0
+    density = [1.085939648097209, 0.9140603519027897, 1.0859396480972103, 0.9140603519027903]
+    imbalance = -0.08593964809720983
+    energy = 8.000000000000002
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.5158081811455628
+    [[P08.rows]]
+    time = 5.5
+    Ndown = 1.9999999999999996
+    density = [1.0413736020931552, 0.958626397906844, 1.0413736020931557, 0.9586263979068443]
+    imbalance = -0.041373602093155604
+    energy = 8.000000000000002
+    norm = 0.9999999999999998
+    Nup = 1.9999999999999996
+    double_occupancy_total = 1.5119562944391185
+    [[P08.rows]]
+    time = 5.75
+    Ndown = 2.0
+    density = [1.1231154535692485, 0.8768845464307524, 1.1231154535692478, 0.8768845464307515]
+    imbalance = -0.12311545356924808
+    energy = 8.000000000000004
+    norm = 1.0
+    Nup = 2.0
+    double_occupancy_total = 1.4732282019735592
+    [[P08.rows]]
+    time = 6.0
+    Ndown = 1.9999999999999996
+    density = [1.2708047281334471, 0.7291952718665541, 1.2708047281334458, 0.729195271866553]
+    imbalance = -0.27080472813344647
+    energy = 8.000000000000002
+    norm = 0.9999999999999998
+    Nup = 1.9999999999999996
+    double_occupancy_total = 1.8521655765243743
+
+[diagnostics]
+N_commutator = 0.0
+H_hermiticity = 0.0
+
+[P09.ground]
+dense_ground_overlap_error = 0.0
+gap_same_sector = 0.2963246316389778
+Ndown = 2.0
+energy = -2.1027484834620633
+norm = 1.0
+Lanczos_iterations = 21
+dense_ground_energy_error = 2.1316282072803006e-14
+residual = 4.856143649413051e-14
+Nup = 2.0
+
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.9065062467777868
+removal_eigen_residual = 4.3202305470907144e-14
+addition_norm = 0.09349375322221334
+sum_weight = 1.0000000000000002
+anticommutator_matrix_error = 0.0
+spin = "up"
+first_moment = -1.9999999999999911
+addition_eigen_residual = 4.307024486724277e-14
+momentum_index = 0
+first_moment_expected = -2.0
+second_moment_direct = 7.999999999999938
+second_moment = 7.9999999999999165
+first_moment_direct = -1.9999999999999938
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 6.657939817746674e-31
+    omega = 1.350590526885033
+    span = 2.1316282072803006e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.7333369499485123e-33
+    omega = 2.1027484834620616
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 1.1376275588500963e-29
+    omega = 2.6386468683243076
+    span = 1.3322676295501878e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.09127248938010177
+    omega = 4.1027484834620624
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 8.412702738326495e-31
+    omega = 4.912372595037889
+    span = 9.769962616701378e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 2.0343184228550883e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.382403926058546e-31
+    omega = 7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.0022212638421115647
+    omega = 8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 7.50540917858782e-32
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 4.8148248609680896e-33
+    omega = 10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 3.910841493321331e-32
+    omega = 10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 6.546025232384547e-31
+    omega = -10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.1428290219790248e-31
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 7.455619014824044e-5
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.210567340668902e-31
+    omega = -8.102748483462063
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 5.294381417120511e-31
+    omega = -7.293124371886236
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 4.461994495156348e-30
+    omega = -6.1027484834620624
+    span = 5.329070518200751e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 2.9815321469058798e-30
+    omega = -4.912372595037889
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.7582392241294392e-29
+    omega = -4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 0.9064316905876386
+    omega = -2.6386468683243076
+    span = 1.1546319456101628e-14
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 4.254379247151404e-29
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 6.718606610994872e-31
+    omega = -1.3505905268850447
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.49999999999999994
+removal_eigen_residual = 4.3202305470907144e-14
+addition_norm = 0.5
+sum_weight = 1.0000000000000002
+anticommutator_matrix_error = 0.0
+spin = "up"
+first_moment = -4.884981308350689e-15
+addition_eigen_residual = 4.307024486724277e-14
+momentum_index = 1
+first_moment_expected = -2.220446049250313e-16
+second_moment_direct = 3.9999999999999614
+second_moment = 3.999999999999969
+first_moment_direct = 4.440892098500626e-16
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 0.453014959914435
+    omega = 1.350590526885033
+    span = 2.1316282072803006e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.0963187752975743e-29
+    omega = 2.1027484834620616
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 1.534413664523831e-29
+    omega = 2.6386468683243076
+    span = 1.3322676295501878e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 6.070185119171685e-30
+    omega = 4.1027484834620624
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 0.04563279868862645
+    omega = 4.912372595037889
+    span = 9.769962616701378e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.738115663623023e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.0013437482433421644
+    omega = 7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 4.0856798210852346e-31
+    omega = 8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 2.2769607694071906e-31
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 2.442079169483015e-31
+    omega = 10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 8.493153596526062e-6
+    omega = 10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 8.493153596525726e-6
+    omega = -10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.7126332030463495e-31
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 2.105282170458297e-31
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 2.3353104281910477e-31
+    omega = -8.102748483462063
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 0.001343748243342147
+    omega = -7.293124371886236
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.889445615345404e-31
+    omega = -6.1027484834620624
+    span = 5.329070518200751e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.045632798688626436
+    omega = -4.912372595037889
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 4.678372724408254e-30
+    omega = -4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 1.3640428923777979e-30
+    omega = -2.6386468683243076
+    span = 1.1546319456101628e-14
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 5.116040304270253e-30
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 0.45301495991443486
+    omega = -1.3505905268850447
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.09349375322221347
+removal_eigen_residual = 4.3202305470907144e-14
+addition_norm = 0.9065062467777866
+sum_weight = 1.0000000000000004
+anticommutator_matrix_error = 0.0
+spin = "up"
+first_moment = 1.9999999999999907
+addition_eigen_residual = 4.307024486724277e-14
+momentum_index = 2
+first_moment_expected = 2.0
+second_moment_direct = 7.999999999999938
+second_moment = 7.999999999999922
+first_moment_direct = 1.999999999999993
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 9.783199719876726e-30
+    omega = 1.350590526885033
+    span = 2.1316282072803006e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.35247274786627e-28
+    omega = 2.1027484834620616
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 0.9064316905876387
+    omega = 2.6386468683243076
+    span = 1.3322676295501878e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.1773407522315433e-29
+    omega = 4.1027484834620624
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 1.2771907495022951e-30
+    omega = 4.912372595037889
+    span = 9.769962616701378e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.877474757034822e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 2.996948523423878e-31
+    omega = 7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 6.590615553747549e-31
+    omega = 8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 7.455619014824183e-5
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 4.780464552212095e-33
+    omega = 10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 3.1877538741029314e-31
+    omega = 10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 6.945397599636662e-32
+    omega = -10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.4564845204428471e-33
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 1.9971921477389517e-31
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.0022212638421115548
+    omega = -8.102748483462063
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 2.2553533345064528e-32
+    omega = -7.293124371886236
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.791190079918582e-30
+    omega = -6.1027484834620624
+    span = 5.329070518200751e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.8245605792613289e-31
+    omega = -4.912372595037889
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.09127248938010192
+    omega = -4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 9.252532687662055e-30
+    omega = -2.6386468683243076
+    span = 1.1546319456101628e-14
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 5.8259380817713885e-33
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 7.892031760855529e-31
+    omega = -1.3505905268850447
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.49999999999999994
+removal_eigen_residual = 4.3202305470907144e-14
+addition_norm = 0.5000000000000001
+sum_weight = 1.0
+anticommutator_matrix_error = 0.0
+spin = "up"
+first_moment = -4.9960036108132044e-15
+addition_eigen_residual = 4.307024486724277e-14
+momentum_index = 3
+first_moment_expected = 4.440892098500626e-16
+second_moment_direct = 3.999999999999961
+second_moment = 3.999999999999969
+first_moment_direct = 4.440892098500626e-16
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 0.45301495991443497
+    omega = 1.350590526885033
+    span = 2.1316282072803006e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.1218180877612613e-29
+    omega = 2.1027484834620616
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 1.493178300708285e-29
+    omega = 2.6386468683243076
+    span = 1.3322676295501878e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 6.137279703609276e-30
+    omega = 4.1027484834620624
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 0.04563279868862645
+    omega = 4.912372595037889
+    span = 9.769962616701378e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.726454759662866e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.001343748243342165
+    omega = 7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 4.04617568773376e-31
+    omega = 8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 2.2203564846354345e-31
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 2.415236520883118e-31
+    omega = 10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 8.493153596526104e-6
+    omega = 10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 8.493153596525674e-6
+    omega = -10.854906440039091
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.72009618158085e-31
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 2.1084118066179265e-31
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 2.270099643980311e-31
+    omega = -8.102748483462063
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 0.0013437482433421466
+    omega = -7.293124371886236
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 4.0326866549592045e-31
+    omega = -6.1027484834620624
+    span = 5.329070518200751e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.04563279868862644
+    omega = -4.912372595037889
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 4.637807824954598e-30
+    omega = -4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 1.4571736422510732e-30
+    omega = -2.6386468683243076
+    span = 1.1546319456101628e-14
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 5.0615364868440945e-30
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 0.45301495991443474
+    omega = -1.3505905268850447
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.9065062467777866
+removal_eigen_residual = 2.8360289934884672e-14
+addition_norm = 0.09349375322221358
+sum_weight = 0.9999999999999984
+anticommutator_matrix_error = 0.0
+spin = "down"
+first_moment = -1.9999999999999973
+addition_eigen_residual = 4.9144890632289266e-14
+momentum_index = 0
+first_moment_expected = -2.0
+second_moment_direct = 7.999999999999939
+second_moment = 7.999999999999913
+first_moment_direct = -1.999999999999992
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 1.0805068841120014e-30
+    omega = 1.350590526885045
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.567051997706727e-32
+    omega = 2.1027484834620633
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 5.311329600631119e-30
+    omega = 2.6386468683243063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.0912724893801007
+    omega = 4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 3.8838784740999095e-31
+    omega = 4.912372595037887
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.8957048813225087e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 4.81196605870689e-32
+    omega = 7.293124371886239
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.002221263842111531
+    omega = 8.102748483462065
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 3.7671490638768144e-31
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 9.647211597732045e-35
+    omega = 10.102748483462063
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 1.1197477067288913e-32
+    omega = 10.854906440039091
+    span = 0.0
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 4.79078082931863e-31
+    omega = -10.854906440039091
+    span = 0.0
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.1780415852921924e-31
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 7.455619014824846e-5
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.0146039688275007e-31
+    omega = -8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 1.123689844583809e-31
+    omega = -7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 7.111857667657384e-30
+    omega = -6.102748483462063
+    span = 4.440892098500626e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.77910787878309e-30
+    omega = -4.912372595037894
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.264614953439484e-29
+    omega = -4.102748483462066
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 0.906431690587638
+    omega = -2.6386468683243103
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.7286003723336886e-29
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 4.3279497710269964e-30
+    omega = -1.3505905268850278
+    span = 3.1086244689504383e-15
+    multiplicity = 2
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.5000000000000002
+removal_eigen_residual = 2.8360289934884672e-14
+addition_norm = 0.5
+sum_weight = 1.0
+anticommutator_matrix_error = 0.0
+spin = "down"
+first_moment = 7.105427357601002e-15
+addition_eigen_residual = 4.9144890632289266e-14
+momentum_index = 1
+first_moment_expected = -2.220446049250313e-16
+second_moment_direct = 3.9999999999999583
+second_moment = 3.9999999999999627
+first_moment_direct = -4.440892098500626e-16
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 0.45301495991443486
+    omega = 1.350590526885045
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.3739015780337324e-29
+    omega = 2.1027484834620633
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 4.3742683861895094e-30
+    omega = 2.6386468683243063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 5.002001177438224e-30
+    omega = 4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 0.045632798688626366
+    omega = 4.912372595037887
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.4862316392594735e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.0013437482433421508
+    omega = 7.293124371886239
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.8125287881914386e-31
+    omega = 8.102748483462065
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 2.240129240011746e-31
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 5.358307158915101e-31
+    omega = 10.102748483462063
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 8.493153596525321e-6
+    omega = 10.854906440039091
+    span = 0.0
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 8.493153596525911e-6
+    omega = -10.854906440039091
+    span = 0.0
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.4991312618658214e-31
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 2.226555571643931e-31
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.4583984196672356e-31
+    omega = -8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 0.0013437482433421868
+    omega = -7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 5.731078979044212e-31
+    omega = -6.102748483462063
+    span = 4.440892098500626e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.04563279868862633
+    omega = -4.912372595037894
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 4.5940892152170076e-30
+    omega = -4.102748483462066
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 1.9407596049590176e-30
+    omega = -2.6386468683243103
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.417641639777054e-30
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 0.4530149599144352
+    omega = -1.3505905268850278
+    span = 3.1086244689504383e-15
+    multiplicity = 2
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.09349375322221345
+removal_eigen_residual = 2.8360289934884672e-14
+addition_norm = 0.9065062467777867
+sum_weight = 1.0000000000000004
+anticommutator_matrix_error = 0.0
+spin = "down"
+first_moment = 1.9999999999999918
+addition_eigen_residual = 4.9144890632289266e-14
+momentum_index = 2
+first_moment_expected = 2.0
+second_moment_direct = 7.999999999999938
+second_moment = 7.999999999999925
+first_moment_direct = 1.999999999999993
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 1.1426788334416793e-29
+    omega = 1.350590526885045
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 2.961309882489814e-30
+    omega = 2.1027484834620633
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 0.9064316905876388
+    omega = 2.6386468683243063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.782642484501376e-29
+    omega = 4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 1.9472007122958475e-30
+    omega = 4.912372595037887
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 5.263841292583101e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.5688714696607423e-31
+    omega = 7.293124371886239
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.9623952487973529e-31
+    omega = 8.102748483462065
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 7.455619014824361e-5
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 2.05508692593966e-31
+    omega = 10.102748483462063
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 9.022215700511002e-31
+    omega = 10.854906440039091
+    span = 0.0
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 9.756166251438511e-33
+    omega = -10.854906440039091
+    span = 0.0
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 6.208816648435423e-33
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 3.5420287043805637e-31
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.0022212638421115426
+    omega = -8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 8.301513229938292e-32
+    omega = -7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.4609991710663892e-30
+    omega = -6.102748483462063
+    span = 4.440892098500626e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 7.11894199638184e-31
+    omega = -4.912372595037894
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.09127248938010185
+    omega = -4.102748483462066
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 1.3064104529412378e-29
+    omega = -2.6386468683243103
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 1.6948890310294241e-31
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 2.228366364091067e-30
+    omega = -1.3505905268850278
+    span = 3.1086244689504383e-15
+    multiplicity = 2
+[[P09.rows]]
+removal_dimension = 24
+occupation = 0.5000000000000001
+removal_eigen_residual = 2.8360289934884672e-14
+addition_norm = 0.5
+sum_weight = 1.0
+anticommutator_matrix_error = 0.0
+spin = "down"
+first_moment = 7.216449660063518e-15
+addition_eigen_residual = 4.9144890632289266e-14
+momentum_index = 3
+first_moment_expected = 4.440892098500626e-16
+second_moment_direct = 3.999999999999958
+second_moment = 3.9999999999999623
+first_moment_direct = -3.3306690738754696e-16
+addition_dimension = 24
+
+    [[P09.rows.addition]]
+    weight = 0.45301495991443497
+    omega = 1.350590526885045
+    span = 4.3076653355456074e-14
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.3992210482548454e-29
+    omega = 2.1027484834620633
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 4.383416553425349e-30
+    omega = 2.6386468683243063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 5.0166743562020244e-30
+    omega = 4.102748483462064
+    span = 6.217248937900877e-15
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 0.04563279868862637
+    omega = 4.912372595037887
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 1.4900478934243615e-30
+    omega = 6.102748483462063
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 0.0013437482433421512
+    omega = 7.293124371886239
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 3.7564360785611604e-31
+    omega = 8.102748483462065
+    span = 1.0658141036401503e-14
+    multiplicity = 4
+    [[P09.rows.addition]]
+    weight = 2.2242779337897777e-31
+    omega = 9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.addition]]
+    weight = 5.311722627350295e-31
+    omega = 10.102748483462063
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.addition]]
+    weight = 8.49315359652534e-6
+    omega = 10.854906440039091
+    span = 0.0
+    multiplicity = 2
+
+    [[P09.rows.removal]]
+    weight = 8.493153596525847e-6
+    omega = -10.854906440039091
+    span = 0.0
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.579730007931546e-31
+    omega = -10.102748483462062
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 2.2195214134486104e-31
+    omega = -9.566850098599817
+    span = 3.552713678800501e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.7034429124351303e-31
+    omega = -8.102748483462065
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 0.0013437482433421876
+    omega = -7.293124371886235
+    span = 1.7763568394002505e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 5.611911593537512e-31
+    omega = -6.102748483462063
+    span = 4.440892098500626e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 0.045632798688626325
+    omega = -4.912372595037894
+    span = 2.6645352591003757e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 4.57560028775089e-30
+    omega = -4.102748483462066
+    span = 7.105427357601002e-15
+    multiplicity = 4
+    [[P09.rows.removal]]
+    weight = 2.3714456887726132e-30
+    omega = -2.6386468683243103
+    span = 6.217248937900877e-15
+    multiplicity = 2
+    [[P09.rows.removal]]
+    weight = 3.400423323845689e-30
+    omega = -2.1027484834620678
+    span = 0.0
+    multiplicity = 1
+    [[P09.rows.removal]]
+    weight = 0.4530149599144351
+    omega = -1.3505905268850278
+    span = 3.1086244689504383e-15
+    multiplicity = 2
+
+[P09.operator_checks]
+cross_spin_mixed_anticommutator = 0.0
+cross_spin_annihilation_anticommutator = 0.0
+
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.0
+value = 0.15767927096121834
+tau = 0.0
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.125
+value = 0.15767927096121834
+tau = 0.0625
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.25
+value = 0.15767927096121834
+tau = 0.125
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.375
+value = 0.15767927096121834
+tau = 0.1875
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.5
+value = 0.15767927096121834
+tau = 0.25
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.625
+value = 0.15767927096121834
+tau = 0.3125
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.75
+value = 0.15767927096121834
+tau = 0.375
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 0.875
+value = 0.15767927096121834
+tau = 0.4375
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.15767927096121814
+spin_mean_abs = 9.156087346640085e-17
+tau_fraction = 1.0
+value = 0.15767927096121834
+tau = 0.5
+unconnected_value = 0.15767927096121834
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.0
+value = 0.17312702730879034
+tau = 0.0
+unconnected_value = 0.17312702730879034
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.125
+value = 0.1676854053923123
+tau = 0.0625
+unconnected_value = 0.1676854053923123
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.25
+value = 0.16393567326961278
+tau = 0.125
+unconnected_value = 0.16393567326961278
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.375
+value = 0.1617385131297179
+tau = 0.1875
+unconnected_value = 0.1617385131297179
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.5
+value = 0.1610146960659154
+tau = 0.25
+unconnected_value = 0.1610146960659154
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.625
+value = 0.1617385131297179
+tau = 0.3125
+unconnected_value = 0.1617385131297179
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.75
+value = 0.16393567326961278
+tau = 0.375
+unconnected_value = 0.16393567326961278
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 0.875
+value = 0.16768540539231228
+tau = 0.4375
+unconnected_value = 0.16768540539231228
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.3791730657289528e-17
+tau_fraction = 1.0
+value = 0.17312702730879032
+tau = 0.5
+unconnected_value = 0.17312702730879032
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.0
+value = 0.18958892615825892
+tau = 0.0
+unconnected_value = 0.18958892615825892
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.125
+value = 0.1789193393919918
+tau = 0.0625
+unconnected_value = 0.1789193393919918
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.25
+value = 0.1718183290493804
+tau = 0.125
+unconnected_value = 0.1718183290493804
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.375
+value = 0.1677538642982252
+tau = 0.1875
+unconnected_value = 0.1677538642982252
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.5
+value = 0.1664305919864107
+tau = 0.25
+unconnected_value = 0.1664305919864107
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.625
+value = 0.16775386429822514
+tau = 0.3125
+unconnected_value = 0.16775386429822514
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.75
+value = 0.17181832904938044
+tau = 0.375
+unconnected_value = 0.17181832904938044
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 0.875
+value = 0.1789193393919918
+tau = 0.4375
+unconnected_value = 0.1789193393919918
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.18958892615825892
+spin_mean_abs = 7.227562732331494e-17
+tau_fraction = 1.0
+value = 0.18958892615825892
+tau = 0.5
+unconnected_value = 0.18958892615825892
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.0
+value = 0.17312702730879034
+tau = 0.0
+unconnected_value = 0.17312702730879034
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.125
+value = 0.1676854053923123
+tau = 0.0625
+unconnected_value = 0.1676854053923123
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.25
+value = 0.16393567326961275
+tau = 0.125
+unconnected_value = 0.16393567326961275
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.375
+value = 0.1617385131297179
+tau = 0.1875
+unconnected_value = 0.1617385131297179
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.5
+value = 0.1610146960659154
+tau = 0.25
+unconnected_value = 0.1610146960659154
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.625
+value = 0.16173851312971788
+tau = 0.3125
+unconnected_value = 0.16173851312971788
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.75
+value = 0.16393567326961275
+tau = 0.375
+unconnected_value = 0.16393567326961275
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 0.875
+value = 0.16768540539231228
+tau = 0.4375
+unconnected_value = 0.16768540539231228
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 0.5
+equal_time_direct = 0.17312702730879023
+spin_mean_abs = 2.1814572233128454e-17
+tau_fraction = 1.0
+value = 0.17312702730879037
+tau = 0.5
+unconnected_value = 0.17312702730879037
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.0
+value = 0.11258674750424098
+tau = 0.0
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.125
+value = 0.11258674750424098
+tau = 0.25
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.25
+value = 0.11258674750424098
+tau = 0.5
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.375
+value = 0.11258674750424098
+tau = 0.75
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.5
+value = 0.11258674750424098
+tau = 1.0
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.625
+value = 0.11258674750424098
+tau = 1.25
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.75
+value = 0.11258674750424098
+tau = 1.5
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 0.875
+value = 0.11258674750424098
+tau = 1.75
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.1125867475042409
+spin_mean_abs = 4.3226125335513214e-17
+tau_fraction = 1.0
+value = 0.11258674750424098
+tau = 2.0
+unconnected_value = 0.11258674750424098
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.0
+value = 0.17951756285557396
+tau = 0.0
+unconnected_value = 0.17951756285557396
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.125
+value = 0.14428193723056
+tau = 0.25
+unconnected_value = 0.14428193723056
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.25
+value = 0.1234092349862543
+tau = 0.5
+unconnected_value = 0.1234092349862543
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.375
+value = 0.1121557975823806
+tau = 0.75
+unconnected_value = 0.1121557975823806
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.5
+value = 0.10858481526533285
+tau = 1.0
+unconnected_value = 0.10858481526533285
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.625
+value = 0.1121557975823806
+tau = 1.25
+unconnected_value = 0.1121557975823806
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.75
+value = 0.12340923498625428
+tau = 1.5
+unconnected_value = 0.12340923498625428
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 0.875
+value = 0.14428193723056004
+tau = 1.75
+unconnected_value = 0.14428193723056004
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 8.112949657174204e-17
+tau_fraction = 1.0
+value = 0.17951756285557394
+tau = 2.0
+unconnected_value = 0.17951756285557394
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.0
+value = 0.32369863120920517
+tau = 0.0
+unconnected_value = 0.32369863120920517
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.125
+value = 0.26189997728798786
+tau = 0.25
+unconnected_value = 0.26189997728798786
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.25
+value = 0.2330637100482291
+tau = 0.5
+unconnected_value = 0.2330637100482291
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.375
+value = 0.21967370257437588
+tau = 0.75
+unconnected_value = 0.21967370257437588
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.5
+value = 0.21571709621427054
+tau = 1.0
+unconnected_value = 0.21571709621427054
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.625
+value = 0.2196737025743758
+tau = 1.25
+unconnected_value = 0.2196737025743758
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.75
+value = 0.23306371004822912
+tau = 1.5
+unconnected_value = 0.23306371004822912
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 0.875
+value = 0.26189997728798786
+tau = 1.75
+unconnected_value = 0.26189997728798786
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.32369863120920594
+spin_mean_abs = 1.9280789831612873e-16
+tau_fraction = 1.0
+value = 0.32369863120920517
+tau = 2.0
+unconnected_value = 0.32369863120920517
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.0
+value = 0.17951756285557394
+tau = 0.0
+unconnected_value = 0.17951756285557394
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.125
+value = 0.14428193723056
+tau = 0.25
+unconnected_value = 0.14428193723056
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.25
+value = 0.12340923498625427
+tau = 0.5
+unconnected_value = 0.12340923498625427
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.375
+value = 0.11215579758238058
+tau = 0.75
+unconnected_value = 0.11215579758238058
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.5
+value = 0.10858481526533285
+tau = 1.0
+unconnected_value = 0.10858481526533285
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.625
+value = 0.1121557975823806
+tau = 1.25
+unconnected_value = 0.1121557975823806
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.75
+value = 0.12340923498625428
+tau = 1.5
+unconnected_value = 0.12340923498625428
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 0.875
+value = 0.14428193723056004
+tau = 1.75
+unconnected_value = 0.14428193723056004
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 2.0
+equal_time_direct = 0.17951756285557385
+spin_mean_abs = 5.913778713441452e-17
+tau_fraction = 1.0
+value = 0.17951756285557394
+tau = 2.0
+unconnected_value = 0.17951756285557394
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.0
+value = 0.05665338446730216
+tau = 0.0
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.125
+value = 0.05665338446730216
+tau = 0.75
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.25
+value = 0.05665338446730216
+tau = 1.5
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.375
+value = 0.05665338446730216
+tau = 2.25
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.5
+value = 0.05665338446730216
+tau = 3.0
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.625
+value = 0.05665338446730216
+tau = 3.75
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.75
+value = 0.05665338446730216
+tau = 4.5
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 0.875
+value = 0.05665338446730216
+tau = 5.25
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.056653384467302184
+spin_mean_abs = 8.140974141078395e-17
+tau_fraction = 1.0
+value = 0.05665338446730216
+tau = 6.0
+unconnected_value = 0.05665338446730216
+momentum_index = 0
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.0
+value = 0.15443977713591875
+tau = 0.0
+unconnected_value = 0.15443977713591875
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.125
+value = 0.06258176460064782
+tau = 0.75
+unconnected_value = 0.06258176460064782
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.25
+value = 0.02741664956414553
+tau = 1.5
+unconnected_value = 0.02741664956414553
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.375
+value = 0.013789160784073929
+tau = 2.25
+unconnected_value = 0.013789160784073929
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.5
+value = 0.010215413588801474
+tau = 3.0
+unconnected_value = 0.010215413588801474
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.625
+value = 0.013789160784073929
+tau = 3.75
+unconnected_value = 0.013789160784073929
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.75
+value = 0.027416649564145527
+tau = 4.5
+unconnected_value = 0.027416649564145527
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 0.875
+value = 0.06258176460064782
+tau = 5.25
+unconnected_value = 0.06258176460064782
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 8.850619822191135e-17
+tau_fraction = 1.0
+value = 0.1544397771359187
+tau = 6.0
+unconnected_value = 0.1544397771359187
+momentum_index = 1
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.0
+value = 0.47342387256976687
+tau = 0.0
+unconnected_value = 0.47342387256976687
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.125
+value = 0.3343191910008198
+tau = 0.75
+unconnected_value = 0.3343191910008198
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.25
+value = 0.28815624295627124
+tau = 1.5
+unconnected_value = 0.28815624295627124
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.375
+value = 0.26603420081771206
+tau = 2.25
+unconnected_value = 0.26603420081771206
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.5
+value = 0.25919129875586167
+tau = 3.0
+unconnected_value = 0.25919129875586167
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.625
+value = 0.26603420081771206
+tau = 3.75
+unconnected_value = 0.26603420081771206
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.75
+value = 0.28815624295627135
+tau = 4.5
+unconnected_value = 0.28815624295627135
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 0.875
+value = 0.33431919100081986
+tau = 5.25
+unconnected_value = 0.33431919100081986
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.47342387256976676
+spin_mean_abs = 6.334576404499425e-16
+tau_fraction = 1.0
+value = 0.47342387256976687
+tau = 6.0
+unconnected_value = 0.47342387256976687
+momentum_index = 2
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.0
+value = 0.15443977713591875
+tau = 0.0
+unconnected_value = 0.15443977713591875
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.125
+value = 0.06258176460064784
+tau = 0.75
+unconnected_value = 0.06258176460064784
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.25
+value = 0.027416649564145527
+tau = 1.5
+unconnected_value = 0.027416649564145527
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.375
+value = 0.01378916078407393
+tau = 2.25
+unconnected_value = 0.01378916078407393
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.5
+value = 0.010215413588801474
+tau = 3.0
+unconnected_value = 0.010215413588801474
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.625
+value = 0.013789160784073929
+tau = 3.75
+unconnected_value = 0.013789160784073929
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.75
+value = 0.027416649564145527
+tau = 4.5
+unconnected_value = 0.027416649564145527
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 0.875
+value = 0.06258176460064782
+tau = 5.25
+unconnected_value = 0.06258176460064782
+momentum_index = 3
+[[P10.rows]]
+spectral_weight_min = 0.0
+beta = 6.0
+equal_time_direct = 0.15443977713591875
+spin_mean_abs = 7.774772721723557e-17
+tau_fraction = 1.0
+value = 0.1544397771359187
+tau = 6.0
+unconnected_value = 0.1544397771359187
+momentum_index = 3
+
+[[P10.thermal]]
+beta = 0.5
+trace = 0.9999999999999997
+spin_mean_abs_max = 1.3514580080031813e-16
+local_moment_sum = 0.693522251737058
+mu_physical = 1.3
+mu_centered = -0.7
+rho_expm_error = 1.1405290106469147e-15
+double_occupancy_total = 0.4305412684468286
+Nmean = 3.6351715438418895
+[[P10.thermal]]
+beta = 2.0
+trace = 0.9999999999999999
+spin_mean_abs_max = 1.5907996700848426e-16
+local_moment_sum = 0.7953205044245939
+mu_physical = 1.3
+mu_centered = -0.7
+rho_expm_error = 1.429274783858089e-15
+double_occupancy_total = 0.2527452822276921
+Nmean = 3.686772582153758
+[[P10.thermal]]
+beta = 6.0
+trace = 0.9999999999999994
+spin_mean_abs_max = 4.3985058334980227e-16
+local_moment_sum = 0.8389568113089052
+mu_physical = 1.3
+mu_centered = -0.7
+rho_expm_error = 1.9624439289957474e-15
+double_occupancy_total = 0.29621145921402736
+Nmean = 3.9482501636636758

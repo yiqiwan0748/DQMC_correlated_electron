@@ -1,0 +1,33 @@
+{
+  "release": "bethe_l24_pilot_v2",
+  "status": "FROZEN_NOT_RUN",
+  "scientific_physics_executed": false,
+  "job_submitted": false,
+  "L32_queued": false,
+  "predecessor_unchanged": true,
+  "python_AST": "PASS",
+  "julia_syntax": "PASS; Meta.parseall with Julia 1.12.6 syntax checker only; execution remains pinned to1.12.1",
+  "shell_syntax": "PASS; bash -n",
+  "manifest_and_source_hashes": "PASS",
+  "identity_checks": {
+    "all_scientific_gates_identical_to_v1": true,
+    "all_per_arm_quality_thresholds_identical_to_v1": true,
+    "all_oracle_settings_identical_to_v1": true,
+    "all_seeds_and_source_environment_versions_identical_to_v1": true,
+    "Julia_target_byte_identical": true,
+    "oracle_byte_identical": true,
+    "summary_AST_identical_except_one_planning_sentence": true
+  },
+  "independent_review": {
+    "reviewer": "validation_design",
+    "status": "No blocking issue",
+    "checked": "Exact byte/AST/gate identity, correct predecessor SHA, even-L QN initialization and N\u00b11 sectors, generic schedule/loop, six cases, OBC physical-H/P-H conventions and D/L normalization. No edits or numerical physics."
+  },
+  "source_hashes": {
+    "source_sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+    "project_sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "manifest_sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+  },
+  "scientific_completion_policy": "Pilot always adds0; A18/A19/A20 remain NOT_RUN in canonical catalogue; no controlled thermodynamic extrapolation executed",
+  "resources": "One CPU,3500M,45min wall and2400s target cap; L24 runtime/memory unmeasured; root owns live-queue check/staging/submission"
+}

@@ -1,0 +1,18 @@
+{
+  "job_id": "6458532",
+  "status": "SUBMITTED_ELIGIBILITY_ONLY",
+  "P21_scientific_status": "NOT_RUN_AS_DEFINED",
+  "source_freeze": "../source_releases/alf-measurement-proof-v2-submission-freeze.json",
+  "archive_sha256": "755ce801cb4b60d08607121f6d1077421dca21c008fdb8b1373c58d99fc569d6",
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "estimated_minutes_after_start": [
+    2,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 15:25",
+  "running_user_jobs_before_submission": 0,
+  "result_root": "results/p21_adapter_proof_v2_attempt01",
+  "native_tree_unchanged": true
+}

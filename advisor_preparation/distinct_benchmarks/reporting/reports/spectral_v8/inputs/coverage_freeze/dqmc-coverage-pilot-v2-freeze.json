@@ -1,0 +1,24 @@
+{
+  "release": "dqmc-coverage-pilot-v2",
+  "files": {
+    "dqmc_coverage/PROTOCOL.md": "5cb51b55a93f6a6b779324f27e0caac9da8477f285560d6611a096f44ef30c41",
+    "dqmc_coverage/README.md": "d4ace035dd85c38eab377fc654b423ae370e019bedda25ca5f257a66f06c5e5d",
+    "dqmc_coverage/final_shard.sbatch": "856951967f6b98e9832c1fe0e07e9bc674e9f5d29aaf58f5043392a555f81dd2",
+    "dqmc_coverage/freeze_history/README.md": "68ecc1113bfa1d1ef7539a4609810eb947c6c3b8833110502def1255d1af5ab3",
+    "dqmc_coverage/freeze_history/initial_before_review.json": "00ec53e5a66b9c486961a637f8fa2d8dc58a51dc8e047b5d81bd5c56bda3cd97",
+    "dqmc_coverage/freeze_history/run_coverage_initial.jl": "ee622572c2b285dfea9d03495e9a38e5158478ca2d2b1674f3daa60d4ad658de",
+    "dqmc_coverage/freeze_history/summarize_coverage_initial.py": "a5cac4bc69f120c7cfe55530dc67d6c9bee3fbf19317c2804c7986f035cffd3b",
+    "dqmc_coverage/frozen_inputs.json": "373a206026cb15cc23a6e51caca7e6ee6255d34e49f8be8d80730e163c4f123d",
+    "dqmc_coverage/manifest.toml": "ba4282ba512f9889a5f5dc55ca39a4f67ddf78b837026d2646d8df7c7215ef81",
+    "dqmc_coverage/pilot.sbatch": "982036f8606996093f7a0b7d5e6433e9260461e49be5a4282d4af80a916d7faf",
+    "dqmc_coverage/run_coverage.jl": "de708356be7aa79d45ff3329211c4af88c092f373b1f479ce722f28af7308404",
+    "dqmc_coverage/seeds.toml": "8bf488cab02f71ab147d86c595f941b984e7490e615146e38398fec221e9a0ce",
+    "dqmc_coverage/source_hashes.toml": "4fd440f02054443affbef55689081ca4d7284b47ad96fe20716e373a20215493",
+    "dqmc_coverage/summarize_coverage.py": "81d75e70684b3e93e2a112423ffa81a026b07ac5186bf8b2e3f4886ced8fa015"
+  },
+  "archive_sha256": "70750c7ef0d9409b63f48cc5678d3c160d1b092e041c28ed58ca749c426dcf1d",
+  "distinct_ids": [
+    "X06"
+  ],
+  "pilot_completion_not_a_scientific_pass": true
+}

@@ -71,9 +71,9 @@ questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
 The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has completed
-32 questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/full32_public_replay_v7/README.md)
-records **32 PASS and 68 NOT_RUN**. These checks found a missing fermionic
+35 questions on ISAAC. Its latest
+[independently audited ledger](distinct_benchmarks/reporting/reports/spectral_v8/README.md)
+records **35 PASS and 65 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
@@ -94,3 +94,8 @@ checks: cooling-to-ground entropy, fixed-total-number versus matched-mean grand
 ensembles, and fixed-chemical-potential energy response. These four-site fixtures
 do not certify the thermal bias in the historical ten-site calculation. Each
 result identifies the actual method and functions exercised.
+
+Three further QuSpin comparisons passed for real-time charge-density evolution,
+addition/removal spectra and imaginary-time spin response. Complete physical
+grids and independent moment/conservation checks passed, with explicit credit
+to the existing user ED APIs and newly added measurement adapters.

@@ -1,0 +1,121 @@
+{
+  "schema": "thermal_bridges_v1",
+  "manifest_sha256": "efe81aa56cf15f729ff569399c8158b6164ac0182873ece2db0fa334a4d9f772",
+  "rows": [
+    {
+      "id": "X02",
+      "status": "PASS",
+      "max_abs_errors": {
+        "ground_Ephysical": 1.7763568394002505e-15,
+        "ground_S2": 3.3306690738754696e-16,
+        "ground_purity": 1.6653345369377348e-16,
+        "ground_Nmean": 2.220446049250313e-15,
+        "ground_Nup_mean": 1.1102230246251565e-15,
+        "ground_Ndown_mean": 1.1102230246251565e-15,
+        "ground_global_grand_gap": 0.0,
+        "ground_mu_minus": 1.7319479184152442e-14,
+        "ground_mu_plus": 2.6645352591003757e-15,
+        "mu_physical": 0.0,
+        "mu_centered": 0.0,
+        "S2": 2.1094237467877974e-15,
+        "purity": 8.326672684688674e-16,
+        "delta_S2": 2.4424906541753444e-15,
+        "Nmean": 3.9968028886505635e-15,
+        "weight_N_ground": 6.661338147750939e-16,
+        "weight_fixed_Nup_Ndown": 1.4432899320127035e-15,
+        "ground_weight": 2.4424906541753444e-15,
+        "excited_weight": 2.4424906541753444e-15,
+        "entropy_bias_bound": 7.438494264988549e-15
+      },
+      "eligibility_reasons": [],
+      "details": {
+        "certified_beta_values_QuSpin": [
+          64.0,
+          128.0
+        ],
+        "scope": "L4 fixture only; not a bound for the historical L10 CV calculation."
+      }
+    },
+    {
+      "id": "X03",
+      "status": "PASS",
+      "max_abs_errors": {
+        "mu_physical": 0.0,
+        "mu_centered": 0.0,
+        "Nmean_GCE": 8.43769498715119e-15,
+        "Nmean_canonical": 1.7763568394002505e-15,
+        "Nvariance_canonical": 3.552713678800501e-15,
+        "compressibility": 1.5631940186722204e-13,
+        "canonical_weight_Nup2_Ndown1": 1.071365218763276e-14,
+        "Ecanonical_per_site": 1.6653345369377348e-15,
+        "EGCE_per_site": 1.1102230246251565e-15,
+        "delta_energy_per_site": 1.2212453270876722e-15,
+        "purity_canonical": 2.3869795029440866e-15,
+        "purity_GCE": 1.582067810090848e-15,
+        "delta_purity": 3.969047313034935e-15,
+        "S2_canonical": 1.2434497875801753e-14,
+        "S2_GCE": 7.771561172376096e-15
+      },
+      "eligibility_reasons": [],
+      "details": {
+        "ensemble_bias_QuSpin": [
+          {
+            "beta": 0.5,
+            "delta_energy_per_site": 0.1255140879705973,
+            "delta_purity": -0.02027533393390296
+          },
+          {
+            "beta": 1.0,
+            "delta_energy_per_site": 0.06893529159231837,
+            "delta_purity": -0.017424166909372096
+          },
+          {
+            "beta": 2.0,
+            "delta_energy_per_site": 0.024146200944439533,
+            "delta_purity": -0.006500736494453069
+          },
+          {
+            "beta": 4.0,
+            "delta_energy_per_site": 0.005115877042862316,
+            "delta_purity": 0.0028262766756310953
+          },
+          {
+            "beta": 8.0,
+            "delta_energy_per_site": 0.002102042863336928,
+            "delta_purity": 0.008521648761545153
+          }
+        ],
+        "scope": "Each ensemble is checked against its own oracle; their difference is a result, not an error to force to zero."
+      }
+    },
+    {
+      "id": "P07",
+      "status": "PASS",
+      "max_abs_errors": {
+        "mu_physical": 0.0,
+        "mu_centered": 0.0,
+        "Ephysical": 4.884981308350689e-15,
+        "Nmean": 7.549516567451064e-15,
+        "Gphysical": 4.440892098500626e-15,
+        "E2": 6.217248937900877e-15,
+        "N2": 1.4210854715202004e-14,
+        "G2": 6.394884621840902e-14,
+        "EN": 3.552713678800501e-15,
+        "EG": 2.842170943040401e-14,
+        "var_E": 3.108624468950438e-14,
+        "var_N": 3.375077994860476e-14,
+        "var_G": 1.0658141036401503e-13,
+        "cov_EN": 3.197442310920451e-14,
+        "cov_EG": 3.375077994860476e-14,
+        "C_mu": 2.1600499167107046e-12,
+        "beta2_var_grand": 1.7053025658242404e-12,
+        "C_mu_finite_difference": 9.473866136033848e-12
+      },
+      "eligibility_reasons": [],
+      "details": {
+        "scope": "Fixed-physical-mu d<Ephysical>/dT; neither fixed-N Cv nor grand-generator variance alone."
+      }
+    }
+  ],
+  "distinct_ideas_passed": 3
+}

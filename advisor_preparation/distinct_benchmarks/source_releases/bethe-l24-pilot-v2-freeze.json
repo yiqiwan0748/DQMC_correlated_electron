@@ -1,0 +1,33 @@
+{
+  "release": "bethe-l24-pilot-v2",
+  "status": "PILOT_ONLY_ZERO_CATALOGUE_COMPLETIONS",
+  "distinct_ids": [
+    "A18",
+    "A19",
+    "A20"
+  ],
+  "files": {
+    "bethe_ansatz_l24/README.md": "c959b350a065dfbb45d75a10792dde262139c34ef57e675dde9af84d13dd2036",
+    "bethe_ansatz_l24/SHA256SUMS": "58b5ec269447d6e62585282066eeba1a840b532cb24d833ab69067f4310f97fc",
+    "bethe_ansatz_l24/oracle_lieb_wu.py": "c9ed6807fe3391e34159afe0c2bcbb3b3ed8d68d64b38708aaa45f9c5f72ad26",
+    "bethe_ansatz_l24/pilot.sbatch": "b8c756dbb82e4dd6f31d3e4bdacf69515147eee861ac063a4d5c21a08ae0872c",
+    "bethe_ansatz_l24/pilot.toml": "cb0566e9228aa8ea08a66488ea870a9e20d4a143b8e97215b07f3e5e3f3b5fe3",
+    "bethe_ansatz_l24/pilot_target.jl": "e3f5d54d6fe9ae60dcd40d8beffb167e1a077c51ff6bb10cc2f9f43f87a439d2",
+    "bethe_ansatz_l24/protocol_changes.diff": "abb505c3658f4bd93717e9d87024d41e9431e38157061006a4ec557f1fbecdc0",
+    "bethe_ansatz_l24/protocol_changes.json": "a94f1c5fad4f7436207a3e3298c596573686ab0a03bd510a5c8cd2a72419c731",
+    "bethe_ansatz_l24/static_review.json": "4fbe505da6184cfbf25f7d3c46e4932d3e4ba9dda7eabe025652998a03c6fe7a",
+    "bethe_ansatz_l24/summarize_pilot.py": "6d13ce236a21c1e716e20df60c05a19e131a149b6346c57ad5db87326dbf5b89"
+  },
+  "archive_sha256": "d3e0e0673cf9f795781fc3bd884e4f4755e8916ff1c82bb9180c846c1f1670d1",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 45,
+  "target_timeout_seconds": 2400,
+  "unmeasured_runtime_estimate_minutes": [
+    15,
+    40
+  ],
+  "checkpoint_EDT": "2026-10-22 16:15",
+  "intended_dependency": "afterany:6458532",
+  "L32_submission_allowed": false
+}
