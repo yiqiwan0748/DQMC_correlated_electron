@@ -1,0 +1,29 @@
+{
+  "job_id": 6458258,
+  "scope": "Selected scientific text/JSON/log build receipts only; no binary/systemlib/symlink/source checkout",
+  "remote_sha256": {
+    "probe_linkage.txt": "e9726f793cc746e564c78e0f3ec55df373947f77069a8185738ead3f702ea70c",
+    "status.txt": "5c5f89c0ff5d4710b377b07d4549475e0f5c8a645733b9b8142911eddc3935aa",
+    "probe_sha256.txt": "7c73e978b71ea306fa2a24539d8b5d205c0473d9259a60179aa88102414033c8",
+    "alf_build/source_status_before_build.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "alf_build/checkout.log": "71619fc4ffda1471d85564eeae34c9511a20b55953f2d8bf7860581cb99436b0",
+    "alf_build/configure.log": "ac32017cb4eef914650915ef1dd24a480f252627cb5c2d2366496e05d57b764a",
+    "alf_build/effective_build.txt": "f5af9047d864a268de329fe0f719598282902f854eef81d198983289e83462c5",
+    "alf_build/download.log": "4a8715e1e83658c19d93c916f380208353759a8bea9531988b4069606553802b",
+    "alf_build/status.txt": "da67752a7753450797755646a326959a7947ab7398ea2741a5759bec49b370da",
+    "alf_build/build.log": "60e01f86e0e13830e5629e5ee8b9e104a99b04ff41556d565e0de43deb76f709",
+    "alf_build/source_status_after_build.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "alf_build/environment_inventory.txt": "2470f24532f893750a3e0cf69a7e183c5a19fc1c4adbf11cf9d9e6f0a73c03d4",
+    "alf_build/linkage.txt": "e917b0c09d36e55c0348f876b7136fa7f8640b5042c151c9053056031bfdbdb6",
+    "alf_build/source_git_tree.txt": "56c3fdd18c251bd59b11602580f61fa1f17cdbabfe2a74ad83711b7286b25d37",
+    "alf_build/binary_sha256.txt": "8a176c31df39dbd91a4b66b5b8f780d41af89bb88cda8281e66e8352707b38ec",
+    "alf_linkage.txt": "87d6aed0e7724dae928faabe71cac28446c55441e08b29de14a3b4c6238d4ab7",
+    "linker_environment.txt": "6caf0f1d7c6d9af9e542a8ccee78d7715fe02420c9e195a59ccb8fd47bec1eb6",
+    "openblas_metadata.json": "d787933992a6e54dd3b468d4e093de1673bdf37e1b88ee908a8dbf0d59ee2bfc",
+    "openblas_metadata.log": "fa9be1e39095ea043e6f137e1473dbeb5508bf90e3295fbbbed054c854ff8165",
+    "probe_compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "linker_inventory.txt": "56ce0cd589a669c724fde416966a93836d5aa12e1f52d19cc299fed15d9f63f1",
+    "probe_run.log": "b3fda3128cd5da08bc40a1265cf8b0effede0c382b338ccceede0f153d8394cd",
+    "logs/alf_build_6458258.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
