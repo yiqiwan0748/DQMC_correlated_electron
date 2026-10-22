@@ -1,5 +1,19 @@
 # Reproduce the ISAAC validation and timing
 
+The later [distinct-question campaign](../distinct_benchmarks/README.md) has a
+separate frozen source/receipt history. Its verified noncontiguous ED-entropy
+repair changes only `analysis/compute_s2_ed.jl`; the three archives below retain
+their original bytes. To reconstruct the new working source, first restore the
+original corrected archive below, copy `source/renyi_corrected` to a new
+`source/renyi_disjoint_corrected`, and replace that new tree's
+`analysis/compute_s2_ed.jl` with
+`distinct_benchmarks/packages/p16_diagnosis/compute_s2_ed_v2.jl`. Verify SHA256
+`f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28` and the
+single-file source change recorded in the raw source-release receipt. Preserve
+both trees: the original and repaired stages use their own frozen hashes. See
+the [reporting instructions](../distinct_benchmarks/reporting/README.md) for
+explicit selection of repaired-source results and preservation of failures.
+
 This guide restores the exact original package, its original external-comparison consumer, and the separately corrected package. It also stages the independent QuSpin exporter and the later timing script. It does not claim a run passed: use each result's status, source hashes and retained diagnostics. Historical advisor-facing values have a separate [reproduction note](../research_record/REPRODUCE.md).
 
 ## Published layout and frozen inputs

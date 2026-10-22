@@ -64,6 +64,18 @@ def apply_single_file_patch(original,patch):
  if not hunks:raise ValueError('No patch hunks')
  return ''.join(out+source[position:])
 
+def supplementary_release(audit,stem):
+ definition=audit.input(stem+'_freeze',BASE/'source_releases'/(stem+'-freeze.json'))
+ archive=audit.input(stem+'_archive',BASE/'source_releases'/(stem+'-source.tar.gz'));issues=[]
+ if not isinstance(definition,dict) or archive is None:return {},['Missing supplementary frozen release: '+stem]
+ if sha(archive)!=definition.get('archive_sha256'):issues.append('Supplementary archive SHA mismatch: '+stem)
+ try:
+  with tarfile.open(archive) as tar:
+   for name,digest in definition['files'].items():
+    if hashlib.sha256(tar.extractfile('distinct_benchmarks/'+name).read()).hexdigest()!=digest:issues.append('Supplementary archived source mismatch: '+name)
+ except (tarfile.TarError,KeyError,AttributeError) as ex:issues.append('Unreadable supplementary source release: '+str(ex))
+ return definition,issues
+
 class Audit:
  def __init__(self,out):self.out=out;self.inputs={};self.warnings=[];self.parse_errors={}
  def input(self,role,path,required=False):
@@ -120,7 +132,11 @@ def audit_journal(row):
  issues=[];metrics=[];bad=False;cid=row['id']
  def add(name,e,tol,n=1):
   nonlocal bad
-  v=metric_entry(name,e,tol,n);metrics.append(v)
+  v=metric_entry(name,e,tol,n);previous=next((m for m in metrics if m['metric']==name),None)
+  if previous:
+   previous['maximum_error']=max(previous['maximum_error'],e) if finite(previous['maximum_error']) and finite(e) else None
+   previous['components']+=n;previous['within_tolerance']&=v['within_tolerance']
+  else:metrics.append(v)
   if not finite(e):issues.append('Missing/nonfinite journal metric: '+name)
   else:bad|=not v['within_tolerance']
  if row.get('status') not in ('PASS','FAIL'):return row.get('status','UNRESOLVED'),metrics,issues,0,0
@@ -168,7 +184,7 @@ def main():
  ap.add_argument('--package-ed-patch',type=Path,help='Reviewed sparse P16 unified patch; applied only in memory for provenance verification.')
  ap.add_argument('--package-oracle-dir',type=Path,help='Immutable independent oracle directory; defaults to the original attempt oracle.')
  ap.add_argument('--package-predecessor',type=Path,action='append',default=[],help='Additional earlier package receipt; retained as history, never selected automatically.')
- ap.add_argument('--renyi-source-root',type=Path,default=BASE.parent/'validated_package'/'HubbardRenyiDQMC');a=ap.parse_args()
+ ap.add_argument('--renyi-source-root',type=Path,default=BASE.parent/'validation_source'/'ed_before_disjoint_repair');a=ap.parse_args()
  out=a.output_dir.resolve();out.mkdir(parents=True,exist_ok=False);audit=Audit(out)
  audit.input('reporting_tool',Path(__file__),True)
  catalogue=audit.input('catalogue',a.catalogue,True);freeze=audit.input('frozen_release',a.freeze,True);archive=audit.input('frozen_archive',a.source_archive,True)
@@ -233,6 +249,32 @@ def main():
     if value!=freeze['files'].get(name):family_issues.append('Package provenance mismatch: '+name)
    if meta.get('user_solver_source_sha256')!=package_ed_sha:family_issues.append('Package target ED source mismatch.')
    if package_amendment and not (package_amendment['reviewed_sparse_patch_verified'] and package_amendment['exact_source_transformation_verified']):family_issues.append('Selected package source is not the independently reviewed exact sparse patch transformation.')
+   if package_amendment:
+    production,extra=supplementary_release(audit,'p16-production-retest');family_issues+=extra
+    diagnosis,extra=supplementary_release(audit,'p16-diagnosis');family_issues+=extra
+    package_dir=Path(path).parent
+    release=audit.input('package_source_release',package_dir/'source_release_receipt.json')
+    subsets=audit.input('production_subsets',package_dir/'production_subsets.toml')
+    comparison=audit.input('production_subsets_comparison',package_dir/'production_subsets_comparison.json')
+    proof=audit.input('p16_independent_proof',BASE/'results'/'p16_diagnosis_attempt01'/'permutation_proof.json')
+    try:
+     old,new=release['old_hashes'],release['new_hashes'];changed=sorted(k for k in set(old)|set(new) if old.get(k)!=new.get(k))
+     one_path=set(old)==set(new) and changed==release['changed_paths']==['analysis/compute_s2_ed.jl'] and old[changed[0]]==expected_renyi[changed[0]] and new[changed[0]]==package_ed_sha
+     pp=release['patch_receipt'];one_path&=pp['original_sha256']==expected_renyi['analysis/compute_s2_ed.jl'] and pp['candidate_sha256']==package_ed_sha and pp['patch_sha256']==package_amendment['patch_sha256']
+     proof_sha=audit.inputs['p16_independent_proof']['sha256']
+     provenance=subsets['source_sha256']==comparison['actual_source_sha256']==package_ed_sha and subsets['driver_sha256']==production['files']['packages/p16_diagnosis/recheck_production_subsets.jl'] and proof['source_sha256']==diagnosis['files']['packages/p16_diagnosis/verify_quspin_regrouping.py'] and release['proof_sha256']==comparison['proof_sha256']==proof_sha and comparison['production_result_sha256']==audit.inputs['production_subsets']['sha256']
+     expected_subsets={tuple(i for i in range(4) if bits&(1<<i)) for bits in range(16)}
+     maps=[{tuple(r['sites']):r for r in rows} for rows in [subsets['rows'],comparison['rows'],proof['all_subset_purities']]]
+     grid=all(len(rows)==16 and set(m)==expected_subsets for rows,m in zip([subsets['rows'],comparison['rows'],proof['all_subset_purities']],maps))
+     errors=[]
+     for sites in expected_subsets:
+      observed=maps[0][sites]['purity'];reference=maps[2][sites]['quspin_purity'];assert finite(observed) and finite(reference)
+      assert maps[1][sites]['purity']==observed and maps[1][sites]['quspin_purity']==reference
+      errors.append(abs(observed-reference))
+     all16=grid and max(errors)<=1e-8 and proof['status']=='PASS' and proof['formula_permutation_checks']==4096 and comparison['status']=='PASS'
+     package_amendment['supplementary_audit']={'only_ED_source_path_changed':one_path,'source_tree_paths_compared':len(old),'producer_and_proof_provenance_verified':provenance,'all_16_spatial_subsets_verified':all16,'maximum_actual_source_quspin_purity_error':max(errors),'subset_purities_are_additional_ideas':False}
+     if not(one_path and provenance and all16):family_issues.append('Repaired package source-release/all-subset supplementary audit failed.')
+    except (ValueError,TypeError,KeyError,AssertionError) as ex:family_issues.append(f'Incomplete repaired-source supplementary audit: {type(ex).__name__}: {ex}')
    for receipt_manifest in (meta.get('manifest_sha256'),oracle.get('manifest_sha256')):
     if receipt_manifest!=freeze['files'].get('packages/manifest.toml'):family_issues.append('Package target/oracle manifest differs from frozen protocol.')
    package_dir=Path(path).parent;oracle_dir=a.package_oracle_dir or a.result_dir/'oracle'
@@ -285,6 +327,11 @@ def main():
   maxima='; '.join(f"{m['metric']}: {m['maximum_error']:.6g}" if finite(m.get('maximum_error')) else f"{m['metric']}: nonfinite/unavailable" for m in r['metrics']) or 'No completed numeric comparison'
   lines.append(f"| {r['id']} | {r['status']} | {r['scope'].get('method','Completion not established')} | {maxima} |")
  lines+=['','The complete 100-row ledger and all explanations are in [ledger_100.csv](ledger_100.csv) and [ledger_100.json](ledger_100.json). Fixture and scalar-component totals are descriptive evidence, not pass-count multipliers. Existing user analysis functions and new observable adapters are explicitly identified in the JSON; only J20/J21 exercise the original production band/real-space builders.','','## Provenance','',f"- Frozen release: `{freeze['release']}`",f"- Frozen archive SHA256: `{freeze['archive_sha256']}`",f"- Catalogue SHA256: `{audit.inputs['catalogue']['sha256']}`",f"- Reporting tool SHA256: `{summary['tool_sha256']}`"]
+ if journal_amendment:lines+=['',f"The selected journal rerun uses driver `{journal_driver_sha}`. Its exact serialization-only transformation from frozen v1 is verified: **{journal_amendment['serialization_only_transformation_verified']}**. Physics and acceptance gates are unchanged."]
+ if package_amendment:lines+=['',f"The selected full package suite uses ED source `{package_ed_sha}`. The reviewed sparse regrouping patch and exact source transformation are verified: **{package_amendment['reviewed_sparse_patch_verified'] and package_amendment['exact_source_transformation_verified']}**. The original failure remains historical evidence below."]
+ if history:
+  lines+=['','Earlier immutable outcomes, retained without adding to current pass counts:','','| Historical input | Receipt state | Earlier reported failures |','|---|---|---|']
+  for h in history:lines.append(f"| {h['input_role']} | {h['status']} | {', '.join(k for k,v in h['reported_statuses'].items() if v=='FAIL') or 'None decoded; see preserved input/parse error'} |")
  issues=release_issues+audit.warnings+[f"{family}: {x}" for family,v in all_family_issues.items() for x in v]
  if issues:lines+=['','Audit notes:','']+['- '+x for x in issues]
  (out/'README.md').write_text('\n'.join(lines)+'\n');print(json.dumps({'counts':counts,'output_dir':str(out),'warnings':len(issues)},indent=2))

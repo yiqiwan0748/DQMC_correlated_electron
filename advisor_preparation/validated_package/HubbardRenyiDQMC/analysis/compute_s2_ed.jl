@@ -379,7 +379,18 @@ function subsystem_sign(upA, upB, dnA)
     return isodd(crossings) ? -1.0 : 1.0
 end
 
+# Sign from regrouping a single species into sorted A then sorted B.
+# An occupied B mode originally before an occupied A mode contributes one swap.
+function within_species_partition_sign(mask, sitesA, sitesB)
+    crossings = count(occupied(mask, i) && occupied(mask, j) && i < j
+                      for i in sitesB for j in sitesA)
+    return isodd(crossings) ? -1.0 : 1.0
+end
+
 function renyi2_entropy_sites(psi, space::HubbardEDSpace, sitesA)
+    sitesA = sort(Int.(collect(sitesA)))
+    length(unique(sitesA)) == length(sitesA) || error("Duplicate subsystem sites")
+    all(site -> 0 <= site < space.L, sitesA) || error("Subsystem site out of range")
     sitesB = [site for site in 0:(space.L - 1) if !(site in sitesA)]
     nA = length(sitesA)
     nB = length(sitesB)
@@ -390,9 +401,12 @@ function renyi2_entropy_sites(psi, space::HubbardEDSpace, sitesA)
     # Compress arbitrary site sets into dense subsystem/environment bit labels.
     # This lets large contiguous regions use the smaller pure-state complement
     # without allocating rhoA for the larger side.
+    down_partition_signs = [within_species_partition_sign(mask, sitesA, sitesB)
+                            for mask in space.dn_masks]
     for iu in eachindex(space.up_masks)
         upA = compressed_bits(space.up_masks[iu], sitesA)
         upB = compressed_bits(space.up_masks[iu], sitesB)
+        up_partition_sign = within_species_partition_sign(space.up_masks[iu], sitesA, sitesB)
         for idn in eachindex(space.dn_masks)
             coefficient = psi[(iu - 1) * ndn + idn]
             iszero(coefficient) && continue
@@ -402,6 +416,7 @@ function renyi2_entropy_sites(psi, space::HubbardEDSpace, sitesA)
             a_index = Int(upA | (dnA << nA)) + 1
             b_index = Int(upB | (dnB << nB)) + 1
             signed_coefficient =
+                up_partition_sign * down_partition_signs[idn] *
                 subsystem_sign(upA, upB, dnA) * coefficient
 
             entries = get!(groups, b_index, Tuple{Int, Float64}[])

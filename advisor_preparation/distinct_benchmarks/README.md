@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/tranche01_journal02_v3/README.md)
-records **24 PASS, 1 FAIL and 75 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/tranche01_repaired_v4/README.md)
+records **25 PASS and 75 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -43,8 +43,13 @@ scientific success: each family's process and comparison status is retained.
 The [original results](results/tranche01_attempt01/) and
 [complete log](logs/distinct_tranche01_6457635.log) retain all successes and
 failures. P16 exposes a disagreement for the noncontiguous union of two regions;
-the individual one-site purities agree. Fermionic regrouping and reference
-conventions are being checked before any production repair is made.
+the individual one-site purities agree. Independent permutation and QuSpin checks identified missing within-spin
+regrouping signs. The actual minimal production repair passed all seven package
+questions and all 16 spatial subsets on ISAAC job 6457716 (maximum subset
+purity disagreement 5.61e-15). The sparse contraction, Hamiltonian and Lanczos
+solver remain intact; the working package includes the verified repair. The
+[prior ledger](reporting/reports/tranche01_journal02_v3/README.md) preserves
+its original FAIL, and the latest ledger retains it as hashed historical evidence.
 
 The first journal attempt completed J20's calculation but failed to serialize
 a coordinate represented as Julia's irrational pi type. Its partial output is

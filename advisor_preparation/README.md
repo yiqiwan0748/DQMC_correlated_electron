@@ -70,14 +70,14 @@ questions. It is a broader research programme, with unsupported and unexecuted
 questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
-The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has executed
+The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has completed
 25 questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/tranche01_journal02_v3/README.md)
-records **24 PASS, 1 FAIL and 75 NOT_RUN**. The failure concerns ED spatial
-entropy for a noncontiguous union of regions. An independent fermion-permutation
-proof identifies missing within-spin regrouping signs; a minimally patched
-production-source regression is queued before the failure can be marked resolved.
-The original failure and all source versions remain visible. Separate TeNPy/ITensor
-DMRG and repeated-campaign DQMC coverage pilots are queued; neither pilot counts
-as a completed distinct question. These staged checks keep the method exercised
-by each result explicit rather than inferring DQMC/DMRG coverage from ED alone.
+[independently audited ledger](distinct_benchmarks/reporting/reports/tranche01_repaired_v4/README.md)
+records **25 PASS and 75 NOT_RUN**. These checks found a missing fermionic
+regrouping sign in ED entropy for noncontiguous regions. The minimal production
+repair passed all seven original QuSpin questions and all 16 four-site subsets;
+only the ED entropy source file changed. The working package includes the
+verified repair. Original failures, exact permutation proofs, source versions
+and raw receipts remain visible. Separate TeNPy/ITensor DMRG and repeated-campaign
+DQMC coverage pilots are queued; neither pilot counts as a completed distinct
+question. Each result identifies the actual method and functions exercised.
