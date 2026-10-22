@@ -1,0 +1,16 @@
+{
+  "job_id": "6458253",
+  "dependency": "afterany:6458231",
+  "ids": [
+    "A18",
+    "A19",
+    "A20"
+  ],
+  "status": "PILOT_ONLY_NOT_A_THERMODYNAMIC_COMPLETION",
+  "source_release": "../source_releases/bethe-pilot-v1-freeze.json",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_cap_minutes": 15,
+  "target_cap_seconds": 780,
+  "check_point_EDT": "2026-10-22 15:10"
+}

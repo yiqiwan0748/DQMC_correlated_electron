@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-22T18:40:30.444088+00:00",
+  "status": "PREPARED_NOT_RUN",
+  "source_inventory_job": "6458092",
+  "compiler_module": "gcc/10.2.0",
+  "openblas_module": "openblas/0.3.12",
+  "files": {
+    "check_openblas.py": "b04fb94dbf2395982fc96c0d91254fed007f9b72d1ba712d5d70207c6ca75d6b",
+    "lp64_probe.f90": "30fd2044762d26796595d77683e99cfa6ecb5d61268f7e5e8c1e0730b67971b7",
+    "prepare_and_build.sh": "bf77d9467c81503948faf9cfb81a6852340e303980c3f96cf001687e25118cbc",
+    "probe_and_build_candidate.sbatch": "e072c3ca658641f459ec40c462046367e5c7be3c72e2635e587882905109696f",
+    "README.md": "d0f69f7b03c020492b8126d05a3f49a23374435603ca204d8d5b6bb75d1a3bcf"
+  },
+  "scientific_samples": 0,
+  "setup_submissions_by_agent": 0
+}

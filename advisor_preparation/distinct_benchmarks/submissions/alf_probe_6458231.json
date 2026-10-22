@@ -1,0 +1,10 @@
+{
+  "job_id": "6458231",
+  "status": "LP64_SETUP_PROBE_PASS_NO_ALF_SCIENCE",
+  "elapsed_seconds": 5,
+  "maxrss_kib": 4404,
+  "cpu": 1,
+  "memory_mb": 3500,
+  "source_release": "../source_releases/alf-setup-v2-freeze.json",
+  "result": "../results/alf_linker_probe01"
+}
