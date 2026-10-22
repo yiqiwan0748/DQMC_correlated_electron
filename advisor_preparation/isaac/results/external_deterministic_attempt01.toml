@@ -1,0 +1,2382 @@
+created_utc = "2026-10-22T16:47:13.948"
+oracle_sha256 = "12eb9b383888a45219b0edd0fbef85aab0fb7b1a4e2a7c701bcbf788238c2571"
+finished_utc = "2026-10-22T16:49:00.184"
+unresolved_count = 24
+manifest_sha256 = "f87b5942223f255c2282852686f112bcd32260d71bfd77e61878c4ed5793c52e"
+mc_measurements_per_seed = 4096
+julia_threads = 1
+oracle_file = "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/quspin_attempt02/oracle_values.toml"
+julia_version = "1.12.1"
+slurm_job_id = "6456512"
+host = "il1227"
+pass_count = 76
+source_root = "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/renyi"
+run_monte_carlo = false
+fail_count = 0
+blas_threads = 1
+
+[source_hashes]
+"src/HubbardRenyiDQMC.jl" = "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721"
+"Project.toml" = "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+"analysis/compute_s2_ed.jl" = "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd"
+"analysis/compute_s2_itensor_dmrg.jl" = "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+"analysis/audit_u4_l4_thermal_ed.jl" = "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+"src/dqmc_kernel.jl" = "4cd70c95f78a7a1f85e9648a6addbb58242791c2b16093ed6f33012ddbf8ac31"
+"Manifest.toml" = "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+"src/grover_rank1_update.jl" = "e74e95d537333a91f98c68139cc032cf8286beafad55dd242f07ec1c12aeed33"
+
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -5.656854249492379
+id = "QG-01"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 1.5577731132507324
+    status = "PASS"
+    reference = -5.656854249492379
+    value = -5.656854249492372
+    absolute_error = 7.105427357601002e-15
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 89.48607182502747
+    status = "PASS"
+    reference = -5.656854249492379
+    value = -5.6568542494923815
+    absolute_error = 2.6645352591003757e-15
+    norm = 1.0000000000000004
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 1.0
+id = "QG-02"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.0695500373840332
+    status = "PASS"
+    reference = 1.0
+    value = 1.0
+    absolute_error = 0.0
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 2.193450927734375e-5
+    status = "PASS"
+    reference = 1.0
+    value = 1.000000000000004
+    absolute_error = 3.9968028886505635e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.06250000000000003
+id = "QG-03"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.019596099853515625
+    status = "PASS"
+    reference = -0.06250000000000003
+    value = -0.0625
+    absolute_error = 2.7755575615628914e-17
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 0.04742908477783203
+    status = "PASS"
+    reference = -0.06250000000000003
+    value = -0.06250000000000308
+    absolute_error = 3.0531133177191805e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -1.7347234759768117e-18
+id = "QG-04"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 6.508827209472656e-5
+    status = "PASS"
+    reference = -1.7347234759768117e-18
+    value = -1.3877787807814457e-17
+    absolute_error = 1.2143064331837645e-17
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 1.7881393432617188e-5
+    status = "PASS"
+    reference = -1.7347234759768117e-18
+    value = -5.736730535055301e-15
+    absolute_error = 5.734995811579324e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.35355339059327384
+id = "QG-05"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.026896953582763672
+    status = "PASS"
+    reference = 0.35355339059327384
+    value = 0.35355339059327373
+    absolute_error = 1.1102230246251565e-16
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 2.5033950805664062e-5
+    status = "PASS"
+    reference = 0.35355339059327384
+    value = 0.3535533905932792
+    absolute_error = 5.384581669432009e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 5.898059818321144e-17
+id = "QG-06"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.910064697265625e-5
+    status = "PASS"
+    reference = 5.898059818321144e-17
+    value = -1.3877787807814457e-17
+    absolute_error = 7.28583859910259e-17
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 1.7881393432617188e-5
+    status = "PASS"
+    reference = 5.898059818321144e-17
+    value = 6.094083571106523e-15
+    absolute_error = 6.035102972923312e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.3862943611198906
+id = "QG-07"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.26111292839050293
+    status = "PASS"
+    reference = 1.3862943611198906
+    value = 1.3862943611198908
+    absolute_error = 2.220446049250313e-16
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 0.11952686309814453
+    status = "PASS"
+    reference = 1.3862943611198906
+    value = 1.3862943611198906
+    absolute_error = 0.0
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.1507282898071234
+id = "QG-08"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 4.1961669921875e-5
+    status = "PASS"
+    reference = 1.1507282898071234
+    value = 1.1507282898071236
+    absolute_error = 2.220446049250313e-16
+    residual = 8.86094306339787e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.4210854715202004e-14
+    method = "DMRG"
+    runtime_seconds = 0.012784004211425781
+    status = "PASS"
+    reference = 1.1507282898071234
+    value = 1.1507282898070599
+    absolute_error = 6.350475700855895e-14
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -2.8284271247461894
+id = "QG-09"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.0004229545593261719
+    status = "PASS"
+    reference = -2.8284271247461894
+    value = -2.8284271247461925
+    absolute_error = 3.1086244689504383e-15
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 0.4396510124206543
+    status = "PASS"
+    reference = -2.8284271247461894
+    value = -2.8284271247461286
+    absolute_error = 6.084022174945858e-14
+    norm = 1.0000000000000004
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 0.45308183932197266
+id = "QG-10"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.8133392333984375e-5
+    status = "PASS"
+    reference = 0.45308183932197266
+    value = 0.45308183932197277
+    absolute_error = 1.1102230246251565e-16
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 7.867813110351562e-6
+    status = "PASS"
+    reference = 0.45308183932197266
+    value = 0.45308183934256396
+    absolute_error = 2.0591306437722778e-11
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.1208529813029707
+id = "QG-11"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 6.29425048828125e-5
+    status = "PASS"
+    reference = -0.1208529813029707
+    value = -0.1208529813029704
+    absolute_error = 3.0531133177191805e-16
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 1.5020370483398438e-5
+    status = "PASS"
+    reference = -0.1208529813029707
+    value = -0.12085298121949603
+    absolute_error = 8.347467161939903e-11
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = 0.04834119252118836
+id = "QG-12"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 5.0067901611328125e-5
+    status = "PASS"
+    reference = 0.04834119252118836
+    value = 0.04834119252118836
+    absolute_error = 0.0
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 0.04834119252118836
+    value = 0.04834119251992245
+    absolute_error = 1.265910987147123e-12
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.2334119252118833
+id = "QG-13"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.910064697265625e-5
+    status = "PASS"
+    reference = 0.2334119252118833
+    value = 0.23341192521188234
+    absolute_error = 9.71445146547012e-16
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 1.4066696166992188e-5
+    status = "PASS"
+    reference = 0.2334119252118833
+    value = 0.2334119254783809
+    absolute_error = 2.664976017641152e-10
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 4.440892098500626e-16
+id = "QG-14"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.47955322265625e-5
+    status = "PASS"
+    reference = 4.440892098500626e-16
+    value = 3.4710424621159404e-15
+    absolute_error = 3.0269532522658777e-15
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 4.440892098500626e-16
+    value = -2.3018850414849845e-7
+    absolute_error = 2.3018850459258766e-7
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.1246076534656944
+id = "QG-15"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.3126602172851562e-5
+    status = "PASS"
+    reference = 1.1246076534656944
+    value = 1.124607653465694
+    absolute_error = 4.440892098500626e-16
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 0.00032520294189453125
+    status = "PASS"
+    reference = 1.1246076534656944
+    value = 1.1246076534820726
+    absolute_error = 1.6378232103875234e-11
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 0.8803580896857056
+id = "QG-16"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.6941299438476562e-5
+    status = "PASS"
+    reference = 0.8803580896857056
+    value = 0.88035808968571
+    absolute_error = 4.440892098500626e-15
+    residual = 7.63673286097371e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 2.5757174171303632e-14
+    method = "DMRG"
+    runtime_seconds = 0.0007250308990478516
+    status = "PASS"
+    reference = 0.8803580896857056
+    value = 0.8803580917884634
+    absolute_error = 2.102757745703343e-9
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -3.9235131037784536
+id = "QG-17"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.00037407875061035156
+    status = "PASS"
+    reference = -3.9235131037784536
+    value = -3.9235131037784488
+    absolute_error = 4.884981308350689e-15
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 0.2618539333343506
+    status = "PASS"
+    reference = -3.9235131037784536
+    value = -3.923513103778455
+    absolute_error = 1.3322676295501878e-15
+    norm = 1.0000000000000002
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 0.7323875699760852
+id = "QG-18"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.9087066650390625e-5
+    status = "PASS"
+    reference = 0.7323875699760852
+    value = 0.732387569976085
+    absolute_error = 2.220446049250313e-16
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.0967254638671875e-5
+    status = "PASS"
+    reference = 0.7323875699760852
+    value = 0.7323875699761133
+    absolute_error = 2.808864252301646e-14
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.08751736351006414
+id = "QG-19"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 5.984306335449219e-5
+    status = "PASS"
+    reference = -0.08751736351006414
+    value = -0.08751736351006438
+    absolute_error = 2.3592239273284576e-16
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.7881393432617188e-5
+    status = "PASS"
+    reference = -0.08751736351006414
+    value = -0.0875173635100624
+    absolute_error = 1.7486012637846216e-15
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = 0.016583173267139085
+id = "QG-20"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 5.507469177246094e-5
+    status = "PASS"
+    reference = 0.016583173267139085
+    value = 0.016583173267139217
+    absolute_error = 1.3183898417423734e-16
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 0.016583173267139085
+    value = 0.016583173267141402
+    absolute_error = 2.3175905639050143e-15
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.3367680152331639
+id = "QG-21"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.695487976074219e-5
+    status = "PASS"
+    reference = 0.3367680152331639
+    value = 0.3367680152331638
+    absolute_error = 1.1102230246251565e-16
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.5974044799804688e-5
+    status = "PASS"
+    reference = 0.3367680152331639
+    value = 0.3367680152331703
+    absolute_error = 6.38378239159465e-15
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = -1.0581813203458523e-16
+id = "QG-22"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.886222839355469e-5
+    status = "PASS"
+    reference = -1.0581813203458523e-16
+    value = 6.366435156834882e-16
+    absolute_error = 7.424616477180734e-16
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.0967254638671875e-5
+    status = "PASS"
+    reference = -1.0581813203458523e-16
+    value = -3.7851666245813915e-15
+    absolute_error = 3.679348492546806e-15
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.317126186476352
+id = "QG-23"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.09808349609375e-5
+    status = "PASS"
+    reference = 1.317126186476352
+    value = 1.3171261864763508
+    absolute_error = 1.1102230246251565e-15
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 0.0003218650817871094
+    status = "PASS"
+    reference = 1.317126186476352
+    value = 1.3171261864763641
+    absolute_error = 1.2212453270876722e-14
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.0800715216708625
+id = "QG-24"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.981590270996094e-5
+    status = "PASS"
+    reference = 1.0800715216708625
+    value = 1.0800715216708594
+    absolute_error = 3.1086244689504383e-15
+    residual = 1.6586505334395093e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 0.0007770061492919922
+    status = "PASS"
+    reference = 1.0800715216708625
+    value = 1.0800715216708265
+    absolute_error = 3.597122599785507e-14
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -2.102748483462074
+id = "QG-25"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.0004858970642089844
+    status = "PASS"
+    reference = -2.102748483462074
+    value = -2.1027484834620633
+    absolute_error = 1.0658141036401503e-14
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 0.36464691162109375
+    status = "PASS"
+    reference = -2.102748483462074
+    value = -2.102748483462074
+    absolute_error = 0.0
+    norm = 1.0000000000000002
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 0.2873253726900547
+id = "QG-26"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.193450927734375e-5
+    status = "PASS"
+    reference = 0.2873253726900547
+    value = 0.2873253726900546
+    absolute_error = 1.1102230246251565e-16
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 7.867813110351562e-6
+    status = "PASS"
+    reference = 0.2873253726900547
+    value = 0.28732537269011155
+    absolute_error = 5.684341886080802e-14
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.13717202264035178
+id = "QG-27"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 5.602836608886719e-5
+    status = "PASS"
+    reference = -0.13717202264035178
+    value = -0.13717202264035155
+    absolute_error = 2.220446049250313e-16
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 1.4066696166992188e-5
+    status = "PASS"
+    reference = -0.13717202264035178
+    value = -0.1371720226405927
+    absolute_error = 2.4091839634365897e-13
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = 0.06025971686695959
+id = "QG-28"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 5.1975250244140625e-5
+    status = "PASS"
+    reference = 0.06025971686695959
+    value = 0.06025971686695967
+    absolute_error = 7.632783294297951e-17
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 8.821487426757812e-6
+    status = "PASS"
+    reference = 0.06025971686695959
+    value = 0.06025971686695532
+    absolute_error = 4.274358644806853e-15
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.20325312338889412
+id = "QG-29"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.2901763916015625e-5
+    status = "PASS"
+    reference = 0.20325312338889412
+    value = 0.20325312338889362
+    absolute_error = 4.996003610813204e-16
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 1.2159347534179688e-5
+    status = "PASS"
+    reference = 0.20325312338889412
+    value = 0.20325312339003979
+    absolute_error = 1.1456668946863147e-12
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 6.938893903907228e-18
+id = "QG-30"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.2901763916015625e-5
+    status = "PASS"
+    reference = 6.938893903907228e-18
+    value = -2.1671433683262428e-15
+    absolute_error = 2.17408226223015e-15
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 9.059906005859375e-6
+    status = "PASS"
+    reference = 6.938893903907228e-18
+    value = -2.759550072544613e-10
+    absolute_error = 2.759550141933552e-10
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 0.9755730083599206
+id = "QG-31"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.09808349609375e-5
+    status = "PASS"
+    reference = 0.9755730083599206
+    value = 0.9755730083599201
+    absolute_error = 4.440892098500626e-16
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 0.0003190040588378906
+    status = "PASS"
+    reference = 0.9755730083599206
+    value = 0.9755730083599735
+    absolute_error = 5.295763827461997e-14
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 0.7521220360016653
+id = "QG-32"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 4.1961669921875e-5
+    status = "PASS"
+    reference = 0.7521220360016653
+    value = 0.7521220360016677
+    absolute_error = 2.4424906541753444e-15
+    residual = 2.0430565126387644e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = 8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 0.00080108642578125
+    status = "PASS"
+    reference = 0.7521220360016653
+    value = 0.7521220359966642
+    absolute_error = 5.00111063672648e-12
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -2.72056623273045
+id = "QG-33"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.0004668235778808594
+    status = "PASS"
+    reference = -2.72056623273045
+    value = -2.720566232730434
+    absolute_error = 1.5987211554602254e-14
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 0.28505587577819824
+    status = "PASS"
+    reference = -2.72056623273045
+    value = -2.720566232730448
+    absolute_error = 1.7763568394002505e-15
+    norm = 1.0000000000000004
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 0.4774461302183907
+id = "QG-34"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.5987625122070312e-5
+    status = "PASS"
+    reference = 0.4774461302183907
+    value = 0.47744613021839083
+    absolute_error = 1.1102230246251565e-16
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 9.059906005859375e-6
+    status = "PASS"
+    reference = 0.4774461302183907
+    value = 0.4774461302183916
+    absolute_error = 8.881784197001252e-16
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.11461777722692881
+id = "QG-35"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 6.29425048828125e-5
+    status = "PASS"
+    reference = -0.11461777722692881
+    value = -0.1146177772269288
+    absolute_error = 1.3877787807814457e-17
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 1.0967254638671875e-5
+    status = "PASS"
+    reference = -0.11461777722692881
+    value = -0.11461777722692783
+    absolute_error = 9.853229343548264e-16
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = 0.0389163207311566
+id = "QG-36"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 6.008148193359375e-5
+    status = "PASS"
+    reference = 0.0389163207311566
+    value = 0.03891632073115659
+    absolute_error = 6.938893903907228e-18
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 0.0389163207311566
+    value = 0.03891632073115886
+    absolute_error = 2.2620794126737565e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.2893969221002505
+id = "QG-37"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.1948089599609375e-5
+    status = "PASS"
+    reference = 0.2893969221002505
+    value = 0.289396922100251
+    absolute_error = 4.996003610813204e-16
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 0.2893969221002505
+    value = 0.28939692210026036
+    absolute_error = 9.880984919163893e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 7.806255641895632e-17
+id = "QG-38"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.409385681152344e-5
+    status = "PASS"
+    reference = 7.806255641895632e-17
+    value = -5.117434254131581e-16
+    absolute_error = 5.898059818321144e-16
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 9.059906005859375e-6
+    status = "PASS"
+    reference = 7.806255641895632e-17
+    value = -2.463307335887066e-16
+    absolute_error = 3.2439329000766293e-16
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.144868909347278
+id = "QG-39"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 1.9073486328125e-5
+    status = "PASS"
+    reference = 1.144868909347278
+    value = 1.1448689093472795
+    absolute_error = 1.5543122344752192e-15
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 0.000308990478515625
+    status = "PASS"
+    reference = 1.144868909347278
+    value = 1.1448689093472715
+    absolute_error = 6.439293542825908e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 0.9167090793055535
+id = "QG-40"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.9087066650390625e-5
+    status = "PASS"
+    reference = 0.9167090793055535
+    value = 0.9167090793055531
+    absolute_error = 3.3306690738754696e-16
+    residual = 2.0328244973519877e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -8.881784197001252e-16
+    method = "DMRG"
+    runtime_seconds = 0.0007610321044921875
+    status = "PASS"
+    reference = 0.9167090793055535
+    value = 0.9167090793055248
+    absolute_error = 2.864375403532904e-14
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -1.3202349582719286
+id = "QG-41"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.01577305793762207
+    status = "PASS"
+    reference = -1.3202349582719286
+    value = -1.3202349582719108
+    absolute_error = 1.7763568394002505e-14
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 0.36960506439208984
+    status = "PASS"
+    reference = -1.3202349582719286
+    value = -1.3202349582719282
+    absolute_error = 4.440892098500626e-16
+    norm = 1.0000000000000002
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 0.12999189163010474
+id = "QG-42"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.7179718017578125e-5
+    status = "PASS"
+    reference = 0.12999189163010474
+    value = 0.12999189163010458
+    absolute_error = 1.6653345369377348e-16
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 8.821487426757812e-6
+    status = "PASS"
+    reference = 0.12999189163010474
+    value = 0.1299918916310539
+    absolute_error = 9.49157419327662e-13
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.15319618871535992
+id = "QG-43"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 5.316734313964844e-5
+    status = "PASS"
+    reference = -0.15319618871535992
+    value = -0.15319618871535934
+    absolute_error = 5.828670879282072e-16
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 1.1920928955078125e-5
+    status = "PASS"
+    reference = -0.15319618871535992
+    value = -0.15319618871529925
+    absolute_error = 6.06736882957648e-14
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = 0.0726413638844816
+id = "QG-44"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 4.8160552978515625e-5
+    status = "PASS"
+    reference = 0.0726413638844816
+    value = 0.07264136388448096
+    absolute_error = 6.38378239159465e-16
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 7.867813110351562e-6
+    status = "PASS"
+    reference = 0.0726413638844816
+    value = 0.0726413638844045
+    absolute_error = 7.710498906021712e-14
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.14751063070704856
+id = "QG-45"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.8848648071289062e-5
+    status = "PASS"
+    reference = 0.14751063070704856
+    value = 0.14751063070704837
+    absolute_error = 1.942890293094024e-16
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 6.9141387939453125e-6
+    status = "PASS"
+    reference = 0.14751063070704856
+    value = 0.14751063070763903
+    absolute_error = 5.904721156468895e-13
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 9.367506770274758e-17
+id = "QG-46"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.4809112548828125e-5
+    status = "PASS"
+    reference = 9.367506770274758e-17
+    value = -2.4959186559305734e-15
+    absolute_error = 2.589593723633321e-15
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 9.059906005859375e-6
+    status = "PASS"
+    reference = 9.367506770274758e-17
+    value = -5.3147796333228294e-11
+    absolute_error = 5.3147890008295997e-11
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 0.8227354383521042
+id = "QG-47"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 2.002716064453125e-5
+    status = "PASS"
+    reference = 0.8227354383521042
+    value = 0.8227354383521043
+    absolute_error = 1.1102230246251565e-16
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 0.00031495094299316406
+    status = "PASS"
+    reference = 0.8227354383521042
+    value = 0.8227354383530483
+    absolute_error = 9.441336601412331e-13
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 0.6335802076108993
+id = "QG-48"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 3.2901763916015625e-5
+    status = "PASS"
+    reference = 0.6335802076108993
+    value = 0.6335802076109014
+    absolute_error = 2.1094237467877974e-15
+    residual = 2.9762739907055635e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.3322676295501878e-15
+    method = "DMRG"
+    runtime_seconds = 0.0007848739624023438
+    status = "PASS"
+    reference = 0.6335802076108993
+    value = 0.6335802076109022
+    absolute_error = 2.886579864025407e-15
+    norm = 1.0000000000000002
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -5.409456845100601
+id = "QG-49"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.0027959346771240234
+    status = "PASS"
+    reference = -5.409456845100601
+    value = -5.409456845100594
+    absolute_error = 6.217248937900877e-15
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 2.5977139472961426
+    status = "PASS"
+    reference = -5.409456845100601
+    value = -5.409456845100598
+    absolute_error = 2.6645352591003757e-15
+    norm = 1.0000000000000004
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 1.0848982972841679
+id = "QG-50"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 7.295608520507812e-5
+    status = "PASS"
+    reference = 1.0848982972841679
+    value = 1.0848982972842443
+    absolute_error = 7.638334409421077e-14
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 1.0848982972841679
+    value = 1.0848982972841656
+    absolute_error = 2.220446049250313e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.07996850269661551
+id = "QG-51"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.0003390312194824219
+    status = "PASS"
+    reference = -0.07996850269661551
+    value = -0.07996850269657321
+    absolute_error = 4.2299497238218464e-14
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = -0.07996850269661551
+    value = -0.07996850269659973
+    absolute_error = 1.5779044737485037e-14
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = 0.013729377962939084
+id = "QG-52"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.00034117698669433594
+    status = "PASS"
+    reference = 0.013729377962939084
+    value = 0.013729377962876496
+    absolute_error = 6.258708828976722e-14
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 1.0967254638671875e-5
+    status = "PASS"
+    reference = 0.013729377962939084
+    value = 0.013729377962938914
+    absolute_error = 1.700029006457271e-16
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.3158022266528722
+id = "QG-53"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.00012803077697753906
+    status = "PASS"
+    reference = 0.3158022266528722
+    value = 0.3158022266527991
+    absolute_error = 7.310818617156656e-14
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 8.821487426757812e-6
+    status = "PASS"
+    reference = 0.3158022266528722
+    value = 0.31580222665284124
+    absolute_error = 3.097522238704187e-14
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = -1.0096090630185017e-15
+id = "QG-54"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.00015401840209960938
+    status = "PASS"
+    reference = -1.0096090630185017e-15
+    value = 1.2604525170996361e-13
+    absolute_error = 1.2705486077298211e-13
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = -1.0096090630185017e-15
+    value = -7.742938235022478e-15
+    absolute_error = 6.733329172003977e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.3125031849575899
+id = "QG-55"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 6.4849853515625e-5
+    status = "PASS"
+    reference = 1.3125031849575899
+    value = 1.312503184957645
+    absolute_error = 5.5067062021407764e-14
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 0.00032401084899902344
+    status = "PASS"
+    reference = 1.3125031849575899
+    value = 1.3125031849575834
+    absolute_error = 6.439293542825908e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.5350209048924224
+id = "QG-56"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 8.106231689453125e-5
+    status = "PASS"
+    reference = 1.5350209048924224
+    value = 1.5350209048927999
+    absolute_error = 3.774758283725532e-13
+    residual = 6.4032913773009736e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -7.105427357601002e-15
+    method = "DMRG"
+    runtime_seconds = 0.0015358924865722656
+    status = "PASS"
+    reference = 1.5350209048924224
+    value = 1.53502090489242
+    absolute_error = 2.4424906541753444e-15
+    norm = 1.0000000000000004
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -3.407849058619119
+id = "QG-57"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.006078958511352539
+    status = "PASS"
+    reference = -3.407849058619119
+    value = -3.4078490586191177
+    absolute_error = 1.3322676295501878e-15
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.9600269794464111
+    status = "PASS"
+    reference = -3.407849058619119
+    value = -3.4078490586191172
+    absolute_error = 1.7763568394002505e-15
+    norm = 1.0
+    tolerance = 1.0e-7
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PASS"
+reference = 0.5322836848505054
+id = "QG-58"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 7.009506225585938e-5
+    status = "PASS"
+    reference = 0.5322836848505054
+    value = 0.5322836848504943
+    absolute_error = 1.1102230246251565e-14
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 8.821487426757812e-6
+    status = "PASS"
+    reference = 0.5322836848505054
+    value = 0.5322836848505047
+    absolute_error = 6.661338147750939e-16
+    norm = 1.0
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = -0.11943718270639628
+id = "QG-59"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.0003399848937988281
+    status = "PASS"
+    reference = -0.11943718270639628
+    value = -0.11943718270637624
+    absolute_error = 2.0039525594484076e-14
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 9.059906005859375e-6
+    status = "PASS"
+    reference = -0.11943718270639628
+    value = -0.11943718270639593
+    absolute_error = 3.469446951953614e-16
+    norm = 1.0
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PASS"
+reference = 0.044693613367362425
+id = "QG-60"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.00036215782165527344
+    status = "PASS"
+    reference = 0.044693613367362425
+    value = 0.04469361336732378
+    absolute_error = 3.8642700150859355e-14
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 0.044693613367362425
+    value = 0.044693613367362564
+    absolute_error = 1.3877787807814457e-16
+    norm = 1.0
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.23070765825088077
+id = "QG-61"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.00012683868408203125
+    status = "PASS"
+    reference = 0.23070765825088077
+    value = 0.2307076582509005
+    absolute_error = 1.9734214262712158e-14
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.0013580322265625e-5
+    status = "PASS"
+    reference = 0.23070765825088077
+    value = 0.23070765825087997
+    absolute_error = 8.049116928532385e-16
+    norm = 1.0
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PASS"
+reference = -2.931682674400804e-16
+id = "QG-62"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 0.00014400482177734375
+    status = "PASS"
+    reference = -2.931682674400804e-16
+    value = -6.96360981708834e-14
+    absolute_error = 6.934292990344332e-14
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 1.1920928955078125e-5
+    status = "PASS"
+    reference = -2.931682674400804e-16
+    value = -2.310714553727111e-13
+    absolute_error = 2.3077828710527104e-13
+    norm = 1.0
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.038309329055801
+id = "QG-63"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 7.009506225585938e-5
+    status = "PASS"
+    reference = 1.038309329055801
+    value = 1.0383093290558525
+    absolute_error = 5.1514348342607263e-14
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 0.0003190040588378906
+    status = "PASS"
+    reference = 1.038309329055801
+    value = 1.0383093290558005
+    absolute_error = 4.440892098500626e-16
+    norm = 1.0
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PASS"
+reference = 1.1711548317789462
+id = "QG-64"
+
+    [[cases.arms]]
+    method = "ED"
+    runtime_seconds = 8.392333984375e-5
+    status = "PASS"
+    reference = 1.1711548317789462
+    value = 1.1711548317790583
+    absolute_error = 1.1213252548714081e-13
+    residual = 5.784851955676328e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    variance = -1.7763568394002505e-15
+    method = "DMRG"
+    runtime_seconds = 0.0014939308166503906
+    status = "PASS"
+    reference = 1.1711548317789462
+    value = 1.1711548317789462
+    absolute_error = 0.0
+    norm = 1.0
+    tolerance = 2.0e-5
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "energy_uncentered"
+status = "UNRESOLVED"
+reference = -1.46507267276697
+id = "QT-01"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 1.7493000030517578
+    status = "PASS"
+    reference = -1.46507267276697
+    value = -1.4650726727669694
+    absolute_error = 6.661338147750939e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "double_occupancy_total"
+status = "UNRESOLVED"
+reference = 0.6926872549442714
+id = "QT-02"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 5.984306335449219e-5
+    status = "PASS"
+    reference = 0.6926872549442714
+    value = 0.6926872549442724
+    absolute_error = 9.992007221626409e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "UNRESOLVED"
+reference = -0.022834733212279704
+id = "QT-03"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 0.0002841949462890625
+    status = "PASS"
+    reference = -0.022834733212279704
+    value = -0.022834733212279273
+    absolute_error = 4.3021142204224816e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "UNRESOLVED"
+reference = 0.0024342559444026943
+id = "QT-04"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 0.0002491474151611328
+    status = "PASS"
+    reference = 0.0024342559444026943
+    value = 0.0024342559444023365
+    absolute_error = 3.5778671692021646e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "UNRESOLVED"
+reference = 0.17815294891596983
+id = "QT-05"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 0.0001590251922607422
+    status = "PASS"
+    reference = 0.17815294891596983
+    value = 0.17815294891596953
+    absolute_error = 3.0531133177191805e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "UNRESOLVED"
+reference = -1.478851763270228e-16
+id = "QT-06"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 0.00014400482177734375
+    status = "PASS"
+    reference = -1.478851763270228e-16
+    value = 4.0679265511656126e-16
+    absolute_error = 5.546778314435841e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "UNRESOLVED"
+reference = 1.2960505178489796
+id = "QT-07"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 0.3030240535736084
+    status = "PASS"
+    reference = 1.2960505178489796
+    value = 1.296050517848981
+    absolute_error = 1.3322676295501878e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "UNRESOLVED"
+reference = 2.149837107651421
+id = "QT-08"
+
+    [[cases.arms]]
+    trace_error = 0.0
+    method = "thermal_ED"
+    runtime_seconds = 9.202957153320312e-5
+    status = "PASS"
+    reference = 2.149837107651421
+    value = 2.1498371076514236
+    absolute_error = 2.6645352591003757e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "energy_uncentered"
+status = "UNRESOLVED"
+reference = -1.5240809976046146
+id = "QT-09"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.08502984046936035
+    status = "PASS"
+    reference = -1.5240809976046146
+    value = -1.524080997604587
+    absolute_error = 2.7533531010703882e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "double_occupancy_total"
+status = "UNRESOLVED"
+reference = 0.3426713815251188
+id = "QT-10"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 6.508827209472656e-5
+    status = "PASS"
+    reference = 0.3426713815251188
+    value = 0.3426713815251208
+    absolute_error = 1.9984014443252818e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "UNRESOLVED"
+reference = -0.0591609293875773
+id = "QT-11"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00025010108947753906
+    status = "PASS"
+    reference = -0.0591609293875773
+    value = -0.05916092938757495
+    absolute_error = 2.345346139520643e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "UNRESOLVED"
+reference = 0.025836097065578476
+id = "QT-12"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.0002429485321044922
+    status = "PASS"
+    reference = 0.025836097065578476
+    value = 0.02583609706557734
+    absolute_error = 1.1345091532888318e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "UNRESOLVED"
+reference = 0.18092290773156872
+id = "QT-13"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00015592575073242188
+    status = "PASS"
+    reference = 0.18092290773156872
+    value = 0.18092290773156824
+    absolute_error = 4.718447854656915e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "UNRESOLVED"
+reference = -1.734723475976807e-18
+id = "QT-14"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.0001289844512939453
+    status = "PASS"
+    reference = -1.734723475976807e-18
+    value = 1.3787451743989786e-15
+    absolute_error = 1.3804798978749554e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "UNRESOLVED"
+reference = 1.027165790919237
+id = "QT-15"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 6.794929504394531e-5
+    status = "PASS"
+    reference = 1.027165790919237
+    value = 1.027165790919238
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "UNRESOLVED"
+reference = 1.4960164756554908
+id = "QT-16"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 8.392333984375e-5
+    status = "PASS"
+    reference = 1.4960164756554908
+    value = 1.4960164756555023
+    absolute_error = 1.1546319456101628e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -3.769101312457857
+id = "FREE-01"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 3.1006948947906494
+    status = "PASS"
+    reference = -3.769101312457857
+    value = -3.7691013124578574
+    absolute_error = 4.440892098500626e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.11778441601430803
+id = "FREE-02"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 5.602836608886719e-5
+    status = "PASS"
+    reference = 0.11778441601430803
+    value = 0.11778441601430836
+    absolute_error = 3.3306690738754696e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "PASS"
+reference = 4.918198989620925
+id = "FREE-03"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.144942045211792
+    status = "PASS"
+    reference = 4.918198989620925
+    value = 4.918198989620926
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -10.16954435236974
+id = "FREE-04"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0004189014434814453
+    status = "PASS"
+    reference = -10.16954435236974
+    value = -10.169544352369737
+    absolute_error = 3.552713678800501e-15
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.3177982610115544
+id = "FREE-05"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 3.4809112548828125e-5
+    status = "PASS"
+    reference = 0.3177982610115544
+    value = 0.3177982610115542
+    absolute_error = 2.220446049250313e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "PASS"
+reference = 1.7742691012167604
+id = "FREE-06"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 5.91278076171875e-5
+    status = "PASS"
+    reference = 1.7742691012167604
+    value = 1.7742691012167617
+    absolute_error = 1.3322676295501878e-15
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -6.902486944126328
+id = "FREE-07"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.03875613212585449
+    status = "PASS"
+    reference = -6.902486944126328
+    value = -6.902486944126329
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.28760362267193035
+id = "FREE-08"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 3.314018249511719e-5
+    status = "PASS"
+    reference = 0.28760362267193035
+    value = 0.28760362267193024
+    absolute_error = 1.1102230246251565e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "PASS"
+reference = 2.1274539926274887
+id = "FREE-09"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 5.602836608886719e-5
+    status = "PASS"
+    reference = 2.1274539926274887
+    value = 2.1274539926274882
+    absolute_error = 4.440892098500626e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "PASS"
+reference = -4.845232736524328
+id = "FREE-10"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.00026607513427734375
+    status = "PASS"
+    reference = -4.845232736524328
+    value = -4.845232736524326
+    absolute_error = 1.7763568394002505e-15
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "PASS"
+reference = 0.20188469735518033
+id = "FREE-11"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 3.0040740966796875e-5
+    status = "PASS"
+    reference = 0.20188469735518033
+    value = 0.20188469735518025
+    absolute_error = 8.326672684688674e-17
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "PASS"
+reference = 3.0300361893759726
+id = "FREE-12"
+
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 4.792213439941406e-5
+    status = "PASS"
+    reference = 3.0300361893759726
+    value = 3.0300361893759735
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-9
+[[cases]]
+family = "analytic_atom"
+observable = "energy_centered"
+status = "UNRESOLVED"
+reference = -0.9242343145200196
+id = "ATOM-01"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.06569981575012207
+    status = "PASS"
+    reference = -0.9242343145200196
+    value = -0.9242343145200199
+    absolute_error = 3.3306690738754696e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_atom"
+observable = "density_total"
+status = "UNRESOLVED"
+reference = 4.0
+id = "ATOM-02"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 4.506111145019531e-5
+    status = "PASS"
+    reference = 4.0
+    value = 3.9999999999999942
+    absolute_error = 5.773159728050814e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_atom"
+observable = "double_occupancy_total"
+status = "UNRESOLVED"
+reference = 0.5378828427399902
+id = "ATOM-03"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 4.1961669921875e-5
+    status = "PASS"
+    reference = 0.5378828427399902
+    value = 0.5378828427399898
+    absolute_error = 4.440892098500626e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_atom"
+observable = "S2"
+status = "UNRESOLVED"
+reference = 2.385485089106837
+id = "ATOM-04"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 9.894371032714844e-5
+    status = "PASS"
+    reference = 2.385485089106837
+    value = 2.3854850891068384
+    absolute_error = 1.3322676295501878e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_atom"
+observable = "energy_centered"
+status = "UNRESOLVED"
+reference = -1.830793928648644
+id = "ATOM-05"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 0.00580286979675293
+    status = "PASS"
+    reference = -1.830793928648644
+    value = -1.830793928648643
+    absolute_error = 1.1102230246251565e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_atom"
+observable = "density_total"
+status = "UNRESOLVED"
+reference = 4.161481159434526
+id = "ATOM-06"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 4.792213439941406e-5
+    status = "PASS"
+    reference = 4.161481159434526
+    value = 4.161481159434518
+    absolute_error = 7.993605777301127e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_atom"
+observable = "double_occupancy_total"
+status = "UNRESOLVED"
+reference = 0.6230420975551021
+id = "ATOM-07"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 5.793571472167969e-5
+    status = "PASS"
+    reference = 0.6230420975551021
+    value = 0.6230420975551025
+    absolute_error = 4.440892098500626e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+[[cases]]
+family = "analytic_atom"
+observable = "S2"
+status = "UNRESOLVED"
+reference = 2.3868119588046195
+id = "ATOM-08"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 8.20159912109375e-5
+    status = "PASS"
+    reference = 2.3868119588046195
+    value = 2.3868119588046204
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    runtime_seconds = 0.0
+    status = "UNRESOLVED"
+    reason = "Monte Carlo arm was explicitly disabled"
+
+[dmrg_controls]
+nsweeps = 16
+cutoff = 1.0e-12
+seed = 817291
+eigsolve_tolerance = 1.0e-12
+maxdim_schedule = [16, 32, 64, 128]

@@ -1,0 +1,55 @@
+pdf = "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/matched_timing_scaling_20261022.pdf"
+uncertainty = "No error bars plotted; paired-bootstrap timing-jitter intervals and all raw repeats remain in source TOML."
+input_path = "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/matched_timing_full_20261022.toml"
+benchmark_runner_sha256 = "56ce5e3c395df4aeb1fe0b7654e315a81e280c74b2f65bb0b0ab65a010d06c49"
+registered_sizes = [8, 16, 32, 64, 128]
+julia_version = "1.12.1"
+png = "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/matched_timing_scaling_20261022.png"
+scope = "Completed passing matched node-loop timings only; all registered sizes remain in ticks and caption. This figure adds no simulation data or CV certification."
+created_utc = "2026-10-22T17:30:14.747"
+input_sha256 = "26216f983e52299fdcd98f1b8dc48b22830f18aaa7df89c4ca9a01e837b6fa2d"
+plots_version = "1.41.2"
+plot_script_sha256 = "6744b1d530b4485689472deb91274e80b23728649e932218666215447f09d2fd"
+
+[retained_statuses]
+32 = "PASS"
+64 = "PASS"
+16 = "PASS"
+128 = "PASS"
+8 = "PASS"
+
+[[plotted_rows]]
+paired_repeats = 7
+nA = 4
+optimized_median_seconds = 0.016631163
+L = 8
+direct_median_seconds = 0.024227236
+node_loop_speedup = 1.456737330997237
+[[plotted_rows]]
+paired_repeats = 7
+nA = 8
+optimized_median_seconds = 0.04513553
+L = 16
+direct_median_seconds = 0.104514271
+node_loop_speedup = 2.3155653871794573
+[[plotted_rows]]
+paired_repeats = 7
+nA = 16
+optimized_median_seconds = 0.225903674
+L = 32
+direct_median_seconds = 0.567533148
+node_loop_speedup = 2.512279406310143
+[[plotted_rows]]
+paired_repeats = 7
+nA = 32
+optimized_median_seconds = 1.223319739
+L = 64
+direct_median_seconds = 3.116521921
+node_loop_speedup = 2.547593913221407
+[[plotted_rows]]
+paired_repeats = 7
+nA = 64
+optimized_median_seconds = 8.758641974
+L = 128
+direct_median_seconds = 23.410449674
+node_loop_speedup = 2.672840121047743

@@ -39,6 +39,8 @@
     "No historical timing repeated",
     "No large ED or MPS vector revalidated",
     "No full external large-L raw production corpus recovered",
+    "Original deterministic local-proposal sampler has a proven isolated-atom odd-time-slice reducibility defect; see ../external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+    "Historical scalar arithmetic integrity does not certify corrected-sampler scientific validation",
     "No personal contribution or appointment dates inferred"
   ]
 }

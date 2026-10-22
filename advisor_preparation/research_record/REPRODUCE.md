@@ -1,5 +1,7 @@
 # Reproduction and verification
 
+This note concerns the preserved historical research record. For the October external benchmark campaign, original-versus-corrected solver archives, independent QuSpin references and fresh matched timing, use the [ISAAC reproduction guide](../isaac/ISAAC_REPRODUCE.md). It retains the original atomic sampling failure and separates corrected results from historical values.
+
 ## Check this record without a simulation
 
 From this directory:

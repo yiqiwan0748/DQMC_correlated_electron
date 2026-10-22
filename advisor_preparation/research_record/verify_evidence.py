@@ -87,6 +87,8 @@ def main():
         'saved_DMRG_max_energy_error': dmrg_summary['max_final_energy_error'],
         'limits': ['No historical timing repeated', 'No large ED or MPS vector revalidated',
                    'No full external large-L raw production corpus recovered',
+                   'Original deterministic local-proposal sampler has a proven isolated-atom odd-time-slice reducibility defect; see ../external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md',
+                   'Historical scalar arithmetic integrity does not certify corrected-sampler scientific validation',
                    'No personal contribution or appointment dates inferred']}
     (ROOT / 'verification.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report, indent=2))

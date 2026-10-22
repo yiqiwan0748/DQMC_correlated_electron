@@ -2,6 +2,8 @@
 
 Numerical evidence for advisor conversations, assembled 22 October 2026. This record preserves the calculation settings, source code, benchmark tables and limits behind each claim. Historical numerical runs are distinguished from checks performed while assembling this record.
 
+**Reliability result and scope:** External testing on 22 October exposed a reducible deterministic DQMC proposal schedule for isolated Hubbard atoms with five time slices. A per-local idle proposal corrects this atomic transition graph. All eight corrected atomic and sixteen corrected thermal DQMC comparisons now pass their registered criteria; the combined finite-system batch contains **100 passing cases and 188 passing solver arms**. The [diagnosis](../external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md) and [independent final audit](../external_oracles/final_campaign_independent_audit.json) preserve the original failure, proof, initial unresolved results and corrected receipts. These matched finite fixtures bound the reliability claim; they do not certify every temperature, size or sign-problem regime.
+
 ## Rényi entropy of the 1D Hubbard chain
 
 The Julia workflow evaluates `S₂ = −log Tr(ρ_A²)` with a two-replica, adjacent-ratio λ-grid DQMC estimator. At half filling, `t=1`, `U=2`, periodic `L=10`, `β=40`, `Δτ=0.05`, and 16 λ intervals:
@@ -13,7 +15,9 @@ The Julia workflow evaluates `S₂ = −log Tr(ρ_A²)` with a two-replica, adja
 
 DQMC uses a finite-temperature grand-canonical ensemble; ED and DMRG use fixed-particle ground states. The DMRG table reports no uncertainty. Agreement is a cross-method consistency check, with those limits retained.
 
-The optimized Grover determinant update has a documented **3.8236×** speedup on one matched L=10 workload, with unchanged historical bin values. This August 2026 timing differs from the **4.59× Green-function speedup** in the supplied CV, for which a source has not yet been identified. The CV claim should be supported separately.
+Fresh ISAAC timing on 22 October 2026 measures **3.035× faster matched Rényi node-loop execution** on a 64-site chain with a 48-site subsystem: `6.4488 → 2.1247 s` for twelve two-replica rounds. This was a post-primary cut-size exploration; its full-system cut gave 2.862×. Both follow-ups and their scope remain public in the [48-site](../isaac/results/matched_timing_cut48_report_20261022/README.md) and [full-system](../isaac/results/matched_timing_cut64_report_20261022/README.md) reports.
+
+The original registered half-chain grid separately reached **2.673× at `L=128,nA=64`**, with all five sizes and 35 paired repetitions passing the recorded checks; the [complete primary record](../isaac/results/matched_timing_report_20261022/README.md) remains alongside the follow-ups. Each ratio compares optimized Grover determinant/inverse caching with direct recomputation on the same host and corrected proposal policy. These are finite-temperature λ-node timings; complete entropy-campaign performance needs separate measurement. An earlier L10 workload documented a historical 3.8236× speedup.
 
 [Benchmark table](source_snapshot/HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_Ninc16_summary.csv) · [Scientific account](source_snapshot/HubbardRenyiDQMC/docs/dqmc_renyi_ee.md) · [Reproduction](REPRODUCE.md) · [Evidence ledger](EVIDENCE_LEDGER.md)
 

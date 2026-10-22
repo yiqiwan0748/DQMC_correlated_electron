@@ -2,6 +2,12 @@
 
 Status date: 22 October 2026. Historical runs are reported from their saved data and audit records. The assembler did not rerun their simulations, reconstruct large ED vectors, or certify every solver. SHA-256 integrity and the listed scalar arithmetic are independently checked by `verify_evidence.py`.
 
+## Current solver limitation — atomic proposal reducibility
+
+New external ISAAC job `6456805` tested four isolated Hubbard atoms with `t=0,U=4,β=0.5,μ_centered=0.3,Δτ=0.1`, giving five time slices. Its energy, density and double-occupancy arms remained unresolved. Independent exact enumeration shows the original forward/reverse local Metropolis schedule has a 30-state communicating class and two separate fixed alternating temporal patterns. The observed seeds split between the predicted trapped and untrapped plateaus. Original energy-bin classic Rhat is 2.2973; retrospective split-Rhat is 2.2269. Within-chain blocking alone missed the inaccessible classes. The original entropy arm's precision PASS is not evidence that this affected kernel sampled correctly.
+
+A per-local proposal idle probability of 1/2 preserves the target and restores irreducibility/aperiodicity for the strictly positive atomic field support. The first corrected atomic run, job `6457036`, passes seven comparisons and leaves energy unresolved through precision; the registered extension resolves that energy case. The final corrected batch passes all eight atomic and sixteen thermal DQMC comparisons. See the [full diagnosis, separate actual-run receipts, original-data hashes and reproduction code](../external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md). No original stochastic PASS enters the corrected summary. The defect is proven in the isolated odd-time-slice regime; it does not by itself invalidate R1/R2's nonzero-hopping, even-time-slice calculations. Their historical values and uncertainty limits remain recorded, with broader solver reliability explicitly unproven.
+
 ## R1 — Five subsystem entropy benchmarks
 
 - **Quantity and setup:** Second Rényi entropy `−log Tr(ρ_A²)`, natural logarithm. Periodic half-filled 1D Hubbard chain, `L=10,t=1,U=2,μ=0,β=40,Δτ=0.05,n_stab=10,Ninc=16`; four root seeds `[1234,11234,21234,31234]`, 500 burn-in sweeps, 4,000 measurements and 40 bins per node. Contiguous `A=1:nA`.
@@ -61,6 +67,49 @@ Status date: 22 October 2026. Historical runs are reported from their saved data
 - **File:** `evidence/AltermagnetDQMCTrial/results/isaac_20261014/moreo_configurations/solve003_terminal_validation_20261015.json` records an accepted ISAAC job, sector dimension 8,015,616, source manifest and fresh native original-H/full-S² actions.
 - **Result:** `E=−65.59824971805813`, `||Hψ−Eψ||=1.1365542933084897e−10`, full-S² residual `3.987806681587894e−14`.
 - **Limit:** This is an excited singlet: an earlier X state with S=3 lies lower. Sector minimum and global ground state are explicitly uncertified. The receipt audits small records of fresh native operations; large remote vectors were not revalidated locally. No altermagnetic phase is proved.
+
+## R7 — Fresh matched Rényi sampling-update timing, 22 October 2026
+
+### Registered half-chain grid
+
+- **Actual execution:** ISAAC job `6456993`, host `clr1450`, Intel Xeon Gold 6248R at 3.00 GHz, Julia 1.12.1, one Julia/BLAS thread. The frozen benchmark runner has SHA-256 `56ce5e3c395df4aeb1fe0b7654e315a81e280c74b2f65bb0b0ab65a010d06c49`. [Raw receipt](../isaac/results/matched_timing_full_20261022.toml) SHA-256: `26216f983e52299fdcd98f1b8dc48b22830f18aaa7df89c4ca9a01e837b6fa2d`.
+- **Matched workload:** Periodic nearest-neighbor chain, `t=1,U=2,μ_centered=0,β=2,Δτ=0.05,λ=0.5,n_stab=5,nA=L/2`. Each repetition performs twelve two-replica rounds, with the same ratio measurements and boundary-state snapshots. Seven repetitions alternate direct/optimized execution order and start from clones of identical warmed fields and RNG states. Both use the corrected 50% idle decision before every local proposal.
+- **Comparison:** Existing direct fused production updates rebuild Grover matrices/refactor determinants and copy candidate state. The optimized path caches Grover determinants/inverses, uses rank-one updates and removes redundant candidate matrix work. The ordinary equal-/unequal-time Green-function update is not isolated by this comparison.
+
+| L | nA | Direct median node-loop time (s) | Optimized median (s) | Recomputed speedup | Paired repetitions |
+|---:|---:|---:|---:|---:|---:|
+| 8 | 4 | 0.024227236 | 0.016631163 | 1.456737× | 7 |
+| 16 | 8 | 0.104514271 | 0.045135530 | 2.315565× | 7 |
+| 32 | 16 | 0.567533148 | 0.225903674 | 2.512279× | 7 |
+| 64 | 32 | 3.116521921 | 1.223319739 | 2.547594× | 7 |
+| 128 | 64 | 23.410449674 | 8.758641974 | **2.672840×** | 7 |
+
+- **Correctness:** All 35 pairs passed exact saved-field, acceptance-rate, determinant-sign and next-RNG-draw checks. Maximum recorded Green/logdet/measurement differences were zero; maximum reported stabilization correction was `9.72×10⁻¹³`. This establishes matched recorded trajectories for this benchmark, not independent physical accuracy at all sizes.
+- **Allocation result:** At L128, median cumulative allocated bytes in the timed loop fell from `61,581,153,376` to `40,970,176` (1,503.07× less cumulative allocation). This measures allocation churn, not peak resident memory or a 1,503× runtime improvement.
+- **Headline rule and limits:** L128 is the largest completed size in the full preregistered half-chain grid; all five sizes passed. The primary statistic is the ratio of median node-loop elapsed times. Compilation, initialization, common warm-up, deep copies and explicit pre-run GC are excluded; allocation-triggered GC, shared measurements and snapshots inside the loop are included. This is one finite-temperature λ node, not the full λ-grid campaign, a low-temperature limit or a hardware-independent speedup. Recorded bootstrap intervals describe repeat-to-repeat timing jitter only.
+- **Audit/reproduce:** [Full report and raw-repeat tables](../isaac/results/matched_timing_report_20261022/README.md), [independent arithmetic/source/replay audit](../external_oracles/independent_primary_timing_audit.json), and [ISAAC reproduction guide](../isaac/ISAAC_REPRODUCE.md). All five source hashes match the frozen corrected archive. No new timing was run by the independent arithmetic audit.
+
+### Post-primary exploration: two larger cuts at L=64
+
+The two additional cuts were designed after observing the half-chain campaign. They are separate exploratory workloads, with both outcomes retained. They do not enlarge the original preregistered grid or establish a global maximum speedup. The same matched baseline, physics, seven repetitions, twelve two-replica rounds, one-thread controls and exclusion rules apply.
+
+| L | nA | Direct median (s) | Optimized median (s) | Recomputed node speedup | Report and raw receipt |
+|---:|---:|---:|---:|---:|---|
+| 64 | 48 | 6.448795337 | 2.124673908 | **3.035193×** | [Report](../isaac/results/matched_timing_cut48_report_20261022/README.md), [receipt](../isaac/results/matched_timing_cut48_20261022.toml) |
+| 64 | 64 | 9.577303071 | 3.346926583 | **2.861522×** | [Report](../isaac/results/matched_timing_cut64_report_20261022/README.md), [receipt](../isaac/results/matched_timing_cut64_20261022.toml) |
+
+- **Actual execution and provenance:** Both ran in job `6457169` on `il1348`, Intel Xeon Gold 6348 at 2.60 GHz. Explorer runner SHA-256 `aefc720f6626f020b455b0eb80d398b96a910b627b17cb1968984ac3bd4c4e8d`; C48 receipt SHA-256 `422bad66e000e1aadb122da9fd04e0f6a2b0d5d449c72a53c6b07f28aa9b1911`; C64 receipt SHA-256 `00145bb4e312426df3fb956c06624ca6a27c3b81cc7eec92ded172b1b22328ec`. All five package/environment hashes match the frozen corrected archive.
+- **Correctness:** All fourteen paired repetitions passed the same recorded replay gates. Maximum Green/logdet/measurement differences were zero; maximum reported stabilization correction was `1.05×10⁻¹²`. The [independent raw/source/replay audit](../external_oracles/independent_large_cut_timing_audit.json) recomputes both medians and ratios.
+- **Scope:** C48 is a finite-temperature subsystem. C64 covers the entire system and pertains to thermal Rényi purity, not pure-ground-state bipartite entanglement. Both time one λ=0.5 node, not a final entropy. The primary campaign used a different CPU (Xeon 6248R); compare each optimized time with its own same-host direct baseline. Differences between campaigns cannot isolate subsystem-size effects.
+- **CV interpretation and dates:** A workload-scoped statement of approximately 3.0× faster sampling on a 64-site chain with a 48-site subsystem is supported by the measured median ratio. Keep the post-primary disclosure and the lower full-system result in its public evidence record. The benchmark was performed on 22 October 2026; this measurement date does not change separately supplied research-appointment dates or establish when the implementation was completed.
+
+## R8 — Completed initial external comparison batch, 22 October 2026
+
+The [final summary](../isaac/results/summary/summary.json) contains **100 PASS, 0 FAIL, 0 UNRESOLVED cases**, totaling **188 passing method arms**: 64 ED, 64 DMRG, 24 thermal ED and 36 DQMC arms. The cases comprise 64 canonical QuSpin ground-state observable/model comparisons, 16 finite-time-step QuSpin thermal comparisons, 12 analytical free-fermion comparisons and eight analytical atomic comparisons. These repeat defined parameter families; the separate catalogue of 100 distinct research ideas is largely unexecuted.
+
+All 24 interacting DQMC arms use the corrected source. Twenty pass at 4,096 measurements per chain; the registered 16,384-measurement extensions resolve `ATOM-05,QT-09,QT-15,QT-16`. The [independent final audit](../external_oracles/final_campaign_independent_audit.json) recomputes raw-bin paired jackknife means/SEs, split-Rhat, blocking, effective-bin and CI criteria across all 28 corrected inspections, checks source/consumer hashes against the frozen archive, and independently composes the 100-case/188-arm counts. It also checks deterministic-arm arithmetic and available residual/variance/norm gates. Original stochastic results are diagnostic history and are excluded from the corrected summary.
+
+The result validates these small matched external targets and registered numerical tolerances. It does not certify arbitrary system sizes, low temperatures, continuum or thermodynamic limits, determinant-zero/sign-problem supports, unsupported observables or rigorous finite-MCMC interval coverage. The discovered defect and all earlier unresolved/failing execution history remain preserved.
 
 ## Attribution and timeline to confirm
 
