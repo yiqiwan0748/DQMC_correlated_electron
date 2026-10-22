@@ -1,0 +1,11 @@
+{
+  "job_id": "6458092",
+  "mode": "inventory-only",
+  "status": "COMPLETED_NO_INSTALL_NO_SCIENCE",
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_cap_minutes": 2,
+  "source_release": "../source_releases/alf-preparation-v1-freeze.json",
+  "result": "../results/alf_inventory_attempt01",
+  "science_id_P21_status_unchanged": "NOT_RUN"
+}

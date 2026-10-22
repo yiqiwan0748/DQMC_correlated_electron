@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/tranche01_repaired_v4/README.md)
-records **25 PASS and 75 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/thermal_tenpy_v6_attempt02/README.md)
+records **31 PASS and 69 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -71,3 +71,35 @@ source hashes and produces exactly 100 catalogue rows. Error metrics stay
 separate: for example the full entanglement-level distribution uses L1 error,
 whereas component comparisons use maximum absolute error. Unrun questions
 remain visible rather than being counted from related parameter checks.
+
+## Thermal and ensemble-reference additions
+
+[Three additional questions](thermal_bridges/README.md) passed on ISAAC job
+6457908, with independent provenance/arithmetic audit and the same frozen
+acceptance gates: P07 fixed-physical-mu energy response, X02 thermal-to-ground
+entropy contamination, and X03 canonical versus matched-mean grand-canonical
+finite-size differences. The largest cross-backend discrepancy is 9.48e-12.
+The cooling bound certifies beta=64 and 128 only for the four-site fixture; it
+is not a thermal-bias certificate for the historical ten-site CV comparison.
+Raw values, all tested temperatures, exact source closure and rerun comparator
+are in the [updated 100-row ledger](reporting/reports/thermal_bridges_v5/README.md).
+The original 25-question tranche and all original failures remain immutable.
+
+## Independent full DMRG additions
+
+ISAAC job 6457944 completed the full frozen TeNPy/ITensor protocol for P11,
+P12 and P15: both open eight-site fixtures and both coarse/refined convergence
+arms. Symmetry-resolved Schmidt probabilities agree within 8.93e-10,
+doped site densities within 8.74e-12, and every registered charge-parity string
+within 5.86e-10. Independent same-sector sparse ED energies/residuals/gaps,
+MPS norms, particle/spin sectors, energy variances and refinement stability
+passed the registered gates. The complete run used about 65 seconds for the
+TeNPy oracle and 191 seconds for the user-ITensor adapter, about 1.1 GiB peak RSS.
+These are finite-fixture results, with optimizer credit retained for the
+independent libraries. They do not certify all DMRG model/size regimes.
+
+The [latest immutable audit](reporting/reports/thermal_tenpy_v6_attempt02/README.md)
+replays frozen comparators and preserves all source hashes and earlier reports.
+One cross-platform Fourier-error replay difference of 8.85e-18 is recorded as
+machine roundoff; scientific acceptance gates remain unchanged. The earlier
+strict receipt-equality audit is preserved rather than rewritten.

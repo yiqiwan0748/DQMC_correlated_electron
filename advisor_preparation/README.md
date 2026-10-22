@@ -71,15 +71,22 @@ questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
 The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has completed
-25 questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/tranche01_repaired_v4/README.md)
-records **25 PASS and 75 NOT_RUN**. These checks found a missing fermionic
+31 questions on ISAAC. Its latest
+[independently audited ledger](distinct_benchmarks/reporting/reports/thermal_tenpy_v6_attempt02/README.md)
+records **31 PASS and 69 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
 verified repair. Original failures, exact permutation proofs, source versions
 and raw receipts remain visible. TeNPy/ITensor DMRG and repeated-campaign DQMC coverage pilots completed
 with successful diagnostic/resource audits; neither pilot adds a distinct PASS.
-Full DMRG and the fixed 400-repetition coverage study are submitted in sequence.
-Three further thermal-ensemble/response questions are also executing. Each result
-identifies the actual method and functions exercised.
+The full independent TeNPy/ITensor DMRG comparison passed all three registered
+questions: symmetry-resolved entanglement, doped density profiles and nonlocal
+charge-parity strings. Both convergence arms and both eight-site fixtures passed
+their energy, variance, sector and observable gates. The fixed 400-repetition
+DQMC interval-coverage study is running; no coverage pass is claimed yet.
+Three further thermal-ensemble/response questions passed independent QuSpin
+checks: cooling-to-ground entropy, fixed-total-number versus matched-mean grand
+ensembles, and fixed-chemical-potential energy response. These four-site fixtures
+do not certify the thermal bias in the historical ten-site calculation. Each
+result identifies the actual method and functions exercised.
