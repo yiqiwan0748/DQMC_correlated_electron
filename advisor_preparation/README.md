@@ -20,7 +20,7 @@ the ledger retains that distinction and unresolved systematic errors.
 
 [Measured timing report](isaac/results/matched_timing_report_20261022/README.md):
 the same two-replica Rényi sampling node, with direct determinant recomputation
-or optimized cached rank-one Grover updates. OnISAAC, seven matched repeats at
+or optimized cached rank-one Grover updates. On ISAAC, seven matched repeats at
 each of five half-chain sizes gave 1.46–2.67x faster node-loop execution. The
 128-site case took 23.4104 s direct and 8.75864 s optimized. All 35 paired trajectory
 and measurement checks passed. Compilation, initialization and a complete lambda
@@ -69,3 +69,15 @@ analytical, journal-result, independent-package and externally calibrated error
 questions. It is a broader research programme, with unsupported and unexecuted
 questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
+
+The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has executed
+25 questions on ISAAC. Its latest
+[independently audited ledger](distinct_benchmarks/reporting/reports/tranche01_journal02_v3/README.md)
+records **24 PASS, 1 FAIL and 75 NOT_RUN**. The failure concerns ED spatial
+entropy for a noncontiguous union of regions. An independent fermion-permutation
+proof identifies missing within-spin regrouping signs; a minimally patched
+production-source regression is queued before the failure can be marked resolved.
+The original failure and all source versions remain visible. Separate TeNPy/ITensor
+DMRG and repeated-campaign DQMC coverage pilots are queued; neither pilot counts
+as a completed distinct question. These staged checks keep the method exercised
+by each result explicit rather than inferring DQMC/DMRG coverage from ED alone.

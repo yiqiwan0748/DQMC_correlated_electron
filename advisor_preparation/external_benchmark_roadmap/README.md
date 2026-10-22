@@ -1,5 +1,7 @@
 # 100 distinct external scientific benchmark ideas
 
+Execution progress is recorded separately in the [distinct scientific benchmark campaign](../distinct_benchmarks/README.md) and its audited 100-row ledgers. The catalogue below preserves its original question definitions and planning statuses.
+
 [CSV catalogue](benchmark_ideas_100.csv) · [Structured JSON](benchmark_ideas_100.json)
 
 This is a longer research programme: 25 analytical questions, 25 independent-package questions, 25 external-reference error/limit questions, and 25 published journal targets. Each row defines a scientific question, model/geometry, state or ensemble, observable normalization, independent oracle, proposed acceptance rule, resource tier, required adapter, execution status and relation to the initial ISAAC batch. Internal metadata, file-format checks and repeated U/beta/size arms are not counted as separate ideas.

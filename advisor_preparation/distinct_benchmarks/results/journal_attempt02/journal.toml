@@ -1,0 +1,4187 @@
+created_utc = "2026-10-22T18:03:02.897"
+finished_utc = "2026-10-22T18:03:09.695"
+julia_threads = 1
+julia_version = "1.12.1"
+host = "clr1244"
+slurm_job_id = "6457686"
+reference_url = "https://arxiv.org/pdf/0804.1113v1"
+reference_version = "0804.1113v1; APS final PDF unavailable during preparation; preprint parameters explicitly pinned"
+reference_doi = "10.1103/PhysRevB.77.220503"
+blas_threads = 1
+driver_sha256 = "73f8e35d2c196f725ac959e54f710d1728dc0a904b3410cbb82a0ecacbb9faa0"
+
+[source_hashes]
+"src/noninteracting.jl" = "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568"
+"src/realspace_kinetic.jl" = "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6"
+
+[parameters]
+t3 = -0.85
+t2 = 1.3
+t1 = -1.0
+t4 = -0.85
+mu = 1.45
+
+[[benchmarks]]
+runtime_seconds = 1.7590460777282715
+status = "PASS"
+scope = "Author-preprint-v1 Fig3 four-pocket topology and Eqs2-4; actual production band/grid/realspace code, not interacting DQMC"
+maximum_contour_radius_error = 1.7763568394002505e-15
+id = "J20"
+last_mesh_filling_change = 0.0001068115234375
+realspace_Fourier_block_error = 5.333535978150284e-15
+
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.93408203125
+    published_topology_matches = true
+    Nk = 128
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.93408203125
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 1137
+        center = [-3.141592653589793, 3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 629
+        center = [-3.264380005124372e-17, -6.547520814875897e-17]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 613
+        center = [-1.0038748569970826e-17, 3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 613
+        center = [-3.141592653589793, -3.598796657159351e-17]
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.933837890625
+    published_topology_matches = true
+    Nk = 256
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.933837890625
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 4533
+        center = [3.141592653589793, -3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 2521
+        center = [-1.781405540440109e-17, -1.592731050874437e-16]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 2443
+        center = [-1.1199727289405054e-16, -3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 2443
+        center = [-3.141592653589793, -1.1826551119043163e-16]
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.933868408203125
+    published_topology_matches = true
+    Nk = 512
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.933868408203125
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 18097
+        center = [3.141592653589793, 3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 10081
+        center = [8.501903403942372e-17, -6.499940470764022e-17]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 9755
+        center = [1.3772049314672681e-16, 3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 9755
+        center = [-3.141592653589793, 2.2711571091085136e-16]
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.9339752197265625
+    published_topology_matches = true
+    Nk = 1024
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.9339752197265625
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 72353
+        center = [-3.141592653589793, -3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 40305
+        center = [-7.697118983105271e-17, 2.0723496920141802e-16]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 39021
+        center = [-3.455352642137973e-17, -3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 39021
+        center = [3.141592653589793, -8.611920894180741e-17]
+
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 0.0
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 0.39269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531756
+    error = 0.0
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 0.7853981633974483
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 1.1780972450961724
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 1.5707963267948966
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 1.9634954084936207
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531756
+    error = 0.0
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 2.356194490192345
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 2.748893571891069
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 3.141592653589793
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 3.5342917352885173
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531758
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 3.9269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 4.319689898685965
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 4.71238898038469
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566256
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 5.105088062083414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531758
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 5.497787143782138
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 5.890486225480862
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9581921787462746
+    error = 0.0
+    published_equation_radius = 0.9581921787462746
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 0.0
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9296152949814884
+    error = 0.0
+    published_equation_radius = 0.9296152949814884
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 0.39269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9063492881770543
+    error = 0.0
+    published_equation_radius = 0.9063492881770543
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 0.7853981633974483
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9296152949814884
+    error = 0.0
+    published_equation_radius = 0.9296152949814884
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 1.1780972450961724
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9581921787462746
+    error = 0.0
+    published_equation_radius = 0.9581921787462746
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 1.5707963267948966
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9296152949814884
+    error = 0.0
+    published_equation_radius = 0.9296152949814884
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 1.9634954084936207
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9063492881770541
+    error = 0.0
+    published_equation_radius = 0.9063492881770541
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 2.356194490192345
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9296152949814886
+    error = 4.440892098500626e-16
+    published_equation_radius = 0.9296152949814882
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 2.748893571891069
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9581921787462739
+    error = 0.0
+    published_equation_radius = 0.9581921787462739
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 3.141592653589793
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.929615294981488
+    error = 0.0
+    published_equation_radius = 0.929615294981488
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 3.5342917352885173
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9063492881770541
+    error = 0.0
+    published_equation_radius = 0.9063492881770541
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 3.9269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9296152949814884
+    error = 0.0
+    published_equation_radius = 0.9296152949814884
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 4.319689898685965
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9581921787462739
+    error = 0.0
+    published_equation_radius = 0.9581921787462739
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 4.71238898038469
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9296152949814882
+    error = 0.0
+    published_equation_radius = 0.9296152949814882
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 5.105088062083414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9063492881770545
+    error = 0.0
+    published_equation_radius = 0.9063492881770545
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 5.497787143782138
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9296152949814886
+    error = 0.0
+    published_equation_radius = 0.9296152949814886
+    center = [3.141592653589793, 3.141592653589793]
+    band = 1
+    angle = 5.890486225480862
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.8127555613686599
+    error = 0.0
+    published_equation_radius = 0.8127555613686599
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 0.0
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191798
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.7400374562191796
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 0.39269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032331
+    error = 0.0
+    published_equation_radius = 0.6554723742032331
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 0.7853981633974483
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098613
+    error = 0.0
+    published_equation_radius = 0.6161852994098613
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 1.1780972450961724
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6068849106766947
+    error = 0.0
+    published_equation_radius = 0.6068849106766947
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 1.5707963267948966
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098616
+    error = 0.0
+    published_equation_radius = 0.6161852994098616
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 1.9634954084936207
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032325
+    error = 0.0
+    published_equation_radius = 0.6554723742032325
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 2.356194490192345
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191805
+    error = 0.0
+    published_equation_radius = 0.7400374562191805
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 2.748893571891069
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.8127555613686603
+    error = 0.0
+    published_equation_radius = 0.8127555613686603
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 3.141592653589793
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191807
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.7400374562191809
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 3.5342917352885173
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032329
+    error = 0.0
+    published_equation_radius = 0.6554723742032329
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 3.9269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098618
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.6161852994098616
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 4.319689898685965
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6068849106766947
+    error = 0.0
+    published_equation_radius = 0.6068849106766947
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 4.71238898038469
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098616
+    error = 1.3322676295501878e-15
+    published_equation_radius = 0.6161852994098629
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 5.105088062083414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032331
+    error = 0.0
+    published_equation_radius = 0.6554723742032331
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 5.497787143782138
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191807
+    error = 1.7763568394002505e-15
+    published_equation_radius = 0.7400374562191789
+    center = [3.141592653589793, 0.0]
+    band = 2
+    angle = 5.890486225480862
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6068849106766947
+    error = 0.0
+    published_equation_radius = 0.6068849106766947
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 0.0
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098613
+    error = 0.0
+    published_equation_radius = 0.6161852994098613
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 0.39269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032331
+    error = 0.0
+    published_equation_radius = 0.6554723742032331
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 0.7853981633974483
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191805
+    error = 8.881784197001252e-16
+    published_equation_radius = 0.7400374562191796
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 1.1780972450961724
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.8127555613686599
+    error = 0.0
+    published_equation_radius = 0.8127555613686599
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 1.5707963267948966
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191805
+    error = 6.661338147750939e-16
+    published_equation_radius = 0.7400374562191798
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 1.9634954084936207
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032331
+    error = 0.0
+    published_equation_radius = 0.6554723742032331
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 2.356194490192345
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098613
+    error = 0.0
+    published_equation_radius = 0.6161852994098613
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 2.748893571891069
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6068849106766947
+    error = 0.0
+    published_equation_radius = 0.6068849106766947
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 3.141592653589793
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098613
+    error = 0.0
+    published_equation_radius = 0.6161852994098613
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 3.5342917352885173
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032325
+    error = 0.0
+    published_equation_radius = 0.6554723742032325
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 3.9269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191805
+    error = 1.5543122344752192e-15
+    published_equation_radius = 0.7400374562191789
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 4.319689898685965
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.8127555613686603
+    error = 0.0
+    published_equation_radius = 0.8127555613686603
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 4.71238898038469
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7400374562191805
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.7400374562191803
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 5.105088062083414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6554723742032331
+    error = 0.0
+    published_equation_radius = 0.6554723742032331
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 5.497787143782138
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6161852994098613
+    error = 0.0
+    published_equation_radius = 0.6161852994098613
+    center = [0.0, 3.141592653589793]
+    band = 2
+    angle = 5.890486225480862
+[[benchmarks]]
+all_registered_orbital_transfers = true
+minimum_band_splitting = 1.8991954224298344
+runtime_seconds = 0.011610984802246094
+status = "PASS"
+scope = "Orbital-resolved band residues derived independently from published two-band projector, not a digitized figure or interacting spectral function"
+id = "J21"
+maximum_weight_error = 3.3306690738754696e-16
+maximum_weight_sum_error = 4.440892098500626e-16
+
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.127882432737086, 0.872117567262914]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.12788243273708605, 0.872117567262914]
+    kx = 0.25132741228718347
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.872117567262914, 0.127882432737086]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.872117567262914, 0.12788243273708605]
+    kx = 0.25132741228718347
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.14404174352775564, 0.8559582564722444]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.14404174352775562, 0.8559582564722443]
+    kx = 0.2719441140763665
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8559582564722444, 0.14404174352775564]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8559582564722443, 0.14404174352775562]
+    kx = 0.2719441140763665
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.16024371400398502, 0.8397562859960149]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.16024371400398502, 0.839756285996015]
+    kx = 0.2925608158655495
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8397562859960149, 0.16024371400398502]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.839756285996015, 0.16024371400398502]
+    kx = 0.2925608158655495
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.17638979060333632, 0.8236102093966636]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.17638979060333637, 0.8236102093966636]
+    kx = 0.3131775176547325
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8236102093966636, 0.17638979060333632]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.8236102093966636, 0.17638979060333637]
+    kx = 0.3131775176547325
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.19240090170368543, 0.8075990982963148]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.1924009017036854, 0.8075990982963146]
+    kx = 0.3337942194439155
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8075990982963148, 0.19240090170368543]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8075990982963146, 0.1924009017036854]
+    kx = 0.3337942194439155
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.20821509860381118, 0.7917849013961891]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.2082150986038111, 0.7917849013961888]
+    kx = 0.3544109212330986
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7917849013961891, 0.20821509860381118]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7917849013961888, 0.2082150986038111]
+    kx = 0.3544109212330986
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2237851545840108, 0.7762148454159894]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.22378515458401071, 0.7762148454159893]
+    kx = 0.3750276230222816
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7762148454159894, 0.2237851545840108]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7762148454159893, 0.22378515458401071]
+    kx = 0.3750276230222816
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2390762656398967, 0.7609237343601032]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2390762656398967, 0.7609237343601033]
+    kx = 0.3956443248114646
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7609237343601032, 0.2390762656398967]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7609237343601033, 0.2390762656398967]
+    kx = 0.3956443248114646
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2540639391140154, 0.7459360608859843]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.2540639391140156, 0.7459360608859844]
+    kx = 0.4162610266006476
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7459360608859843, 0.2540639391140154]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.7459360608859844, 0.2540639391140156]
+    kx = 0.4162610266006476
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2687321137540477, 0.7312678862459522]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.26873211375404776, 0.7312678862459523]
+    kx = 0.43687772838983063
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7312678862459522, 0.2687321137540477]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7312678862459523, 0.26873211375404776]
+    kx = 0.43687772838983063
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.28307152497188554, 0.7169284750281145]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.28307152497188554, 0.7169284750281144]
+    kx = 0.45749443017901364
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7169284750281145, 0.28307152497188554]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7169284750281144, 0.28307152497188554]
+    kx = 0.45749443017901364
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2970783097478001, 0.7029216902522]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.29707830974780014, 0.7029216902521999]
+    kx = 0.47811113196819666
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7029216902522, 0.2970783097478001]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7029216902521999, 0.29707830974780014]
+    kx = 0.47811113196819666
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.31075283414201776, 0.6892471658579823]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.3107528341420177, 0.6892471658579823]
+    kx = 0.49872783375737967
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6892471658579823, 0.31075283414201776]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.6892471658579823, 0.3107528341420177]
+    kx = 0.49872783375737967
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.32409872047374805, 0.6759012795262518]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.32409872047374805, 0.675901279526252]
+    kx = 0.5193445355465627
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6759012795262518, 0.32409872047374805]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.675901279526252, 0.32409872047374805]
+    kx = 0.5193445355465627
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3371220490791607, 0.6628779509208393]
+    error = 0.0
+    published_projector_weights = [0.3371220490791607, 0.6628779509208393]
+    kx = 0.5399612373357457
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6628779509208393, 0.3371220490791607]
+    error = 0.0
+    published_projector_weights = [0.6628779509208393, 0.3371220490791607]
+    kx = 0.5399612373357457
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3498307097863667, 0.6501692902136335]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3498307097863667, 0.6501692902136333]
+    kx = 0.5605779391249287
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6501692902136335, 0.3498307097863667]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6501692902136333, 0.3498307097863667]
+    kx = 0.5605779391249287
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.36223387985841715, 0.6377661201415828]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3622338798584172, 0.6377661201415827]
+    kx = 0.5811946409141118
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6377661201415828, 0.36223387985841715]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6377661201415827, 0.3622338798584172]
+    kx = 0.5811946409141118
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.37434160747777107, 0.6256583925222285]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.3743416074777712, 0.6256583925222288]
+    kx = 0.6018113427032947
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6256583925222285, 0.37434160747777107]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.6256583925222288, 0.3743416074777712]
+    kx = 0.6018113427032947
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.38616448243563095, 0.6138355175643688]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.38616448243563106, 0.6138355175643689]
+    kx = 0.6224280444924778
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6138355175643688, 0.38616448243563095]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6138355175643689, 0.38616448243563106]
+    kx = 0.6224280444924778
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.39771337827391484, 0.6022866217260853]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.39771337827391484, 0.6022866217260852]
+    kx = 0.6430447462816609
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6022866217260853, 0.39771337827391484]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6022866217260852, 0.39771337827391484]
+    kx = 0.6430447462816609
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4089992525500784, 0.5910007474499219]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.4089992525500783, 0.5910007474499217]
+    kx = 0.6636614480708438
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5910007474499219, 0.4089992525500784]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.5910007474499217, 0.4089992525500783]
+    kx = 0.6636614480708438
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4200329940766826, 0.5799670059233176]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4200329940766825, 0.5799670059233175]
+    kx = 0.6842781498600269
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5799670059233176, 0.4200329940766826]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5799670059233175, 0.4200329940766825]
+    kx = 0.6842781498600269
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.43082530789906004, 0.5691746921009401]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.43082530789905993, 0.5691746921009401]
+    kx = 0.7048948516492098
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5691746921009401, 0.43082530789906004]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5691746921009401, 0.43082530789905993]
+    kx = 0.7048948516492098
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.44138663041613896, 0.558613369583861]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.44138663041613896, 0.5586133695838611]
+    kx = 0.7255115534383929
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.558613369583861, 0.44138663041613896]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5586133695838611, 0.44138663041613896]
+    kx = 0.7255115534383929
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.45172706843861565, 0.5482729315613842]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.45172706843861565, 0.5482729315613843]
+    kx = 0.7461282552275759
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5482729315613842, 0.45172706843861565]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5482729315613843, 0.45172706843861565]
+    kx = 0.7461282552275759
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.46185635714074247, 0.5381436428592576]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.46185635714074247, 0.5381436428592575]
+    kx = 0.7667449570167589
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5381436428592576, 0.46185635714074247]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5381436428592575, 0.46185635714074247]
+    kx = 0.7667449570167589
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.47178383282546965, 0.5282161671745303]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.4717838328254697, 0.5282161671745303]
+    kx = 0.7873616588059419
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5282161671745303, 0.47178383282546965]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.5282161671745303, 0.4717838328254697]
+    kx = 0.7873616588059419
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4815184172158292, 0.518481582784171]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.48151841721582916, 0.5184815827841708]
+    kx = 0.807978360595125
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.518481582784171, 0.4815184172158292]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.5184815827841708, 0.48151841721582916]
+    kx = 0.807978360595125
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.49106861063465557, 0.5089313893653443]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.4910686106346556, 0.5089313893653443]
+    kx = 0.828595062384308
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5089313893653443, 0.49106861063465557]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.5089313893653443, 0.4910686106346556]
+    kx = 0.828595062384308
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5004424919636378, 0.49955750803636234]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5004424919636377, 0.4995575080363623]
+    kx = 0.849211764173491
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.49955750803636234, 0.5004424919636378]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4995575080363623, 0.5004424919636377]
+    kx = 0.849211764173491
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5096477237018789, 0.4903522762981212]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5096477237018789, 0.4903522762981211]
+    kx = 0.869828465962674
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4903522762981212, 0.5096477237018789]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4903522762981211, 0.5096477237018789]
+    kx = 0.869828465962674
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5186915607912755, 0.48130843920872474]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5186915607912754, 0.48130843920872457]
+    kx = 0.890445167751857
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.48130843920872474, 0.5186915607912755]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.48130843920872457, 0.5186915607912754]
+    kx = 0.890445167751857
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.527580862155943, 0.4724191378440571]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5275808621559429, 0.47241913784405704]
+    kx = 0.9110618695410401
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4724191378440571, 0.527580862155943]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.47241913784405704, 0.5275808621559429]
+    kx = 0.9110618695410401
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5363221041280786, 0.46367789587192143]
+    error = 0.0
+    published_projector_weights = [0.5363221041280786, 0.46367789587192143]
+    kx = 0.931678571330223
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.46367789587192143, 0.5363221041280786]
+    error = 0.0
+    published_projector_weights = [0.46367789587192143, 0.5363221041280786]
+    kx = 0.931678571330223
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5449213951132866, 0.4550786048867136]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5449213951132866, 0.4550786048867134]
+    kx = 0.9522952731194061
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4550786048867136, 0.5449213951132866]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.4550786048867134, 0.5449213951132866]
+    kx = 0.9522952731194061
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5533844909929906, 0.4466155090070093]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5533844909929906, 0.44661550900700947]
+    kx = 0.972911974908589
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4466155090070093, 0.5533844909929906]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.44661550900700947, 0.5533844909929906]
+    kx = 0.972911974908589
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5617168108770112, 0.4382831891229888]
+    error = 0.0
+    published_projector_weights = [0.5617168108770112, 0.4382831891229888]
+    kx = 0.9935286766977721
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4382831891229888, 0.5617168108770112]
+    error = 0.0
+    published_projector_weights = [0.4382831891229888, 0.5617168108770112]
+    kx = 0.9935286766977721
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5699234529113419, 0.43007654708865795]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.569923452911342, 0.43007654708865795]
+    kx = 1.0141453784869552
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.43007654708865795, 0.5699234529113419]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.43007654708865795, 0.569923452911342]
+    kx = 1.0141453784869552
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5780092099191924, 0.4219907900808078]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5780092099191922, 0.42199079008080775]
+    kx = 1.0347620802761381
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4219907900808078, 0.5780092099191924]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.42199079008080775, 0.5780092099191922]
+    kx = 1.0347620802761381
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5859785847111911, 0.4140214152888089]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5859785847111912, 0.41402141528880876]
+    kx = 1.055378782065321
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4140214152888089, 0.5859785847111911]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.41402141528880876, 0.5859785847111912]
+    kx = 1.055378782065321
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5938358049462692, 0.4061641950537308]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5938358049462691, 0.40616419505373086]
+    kx = 1.0759954838545043
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4061641950537308, 0.5938358049462692]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.40616419505373086, 0.5938358049462691]
+    kx = 1.0759954838545043
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6015848374605668, 0.3984151625394333]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6015848374605668, 0.3984151625394332]
+    kx = 1.0966121856436872
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3984151625394333, 0.6015848374605668]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3984151625394332, 0.6015848374605668]
+    kx = 1.0966121856436872
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6092294020097373, 0.39077059799026287]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6092294020097372, 0.39077059799026276]
+    kx = 1.1172288874328702
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.39077059799026287, 0.6092294020097373]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.39077059799026276, 0.6092294020097372]
+    kx = 1.1172288874328702
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6167729843917584, 0.3832270156082415]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.6167729843917584, 0.3832270156082416]
+    kx = 1.1378455892220531
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3832270156082415, 0.6167729843917584]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.3832270156082416, 0.6167729843917584]
+    kx = 1.1378455892220531
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6242188489341475, 0.37578115106585247]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.6242188489341474, 0.37578115106585264]
+    kx = 1.1584622910112363
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.37578115106585247, 0.6242188489341475]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.37578115106585264, 0.6242188489341474]
+    kx = 1.1584622910112363
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.631570050342266, 0.36842994965773396]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.631570050342266, 0.368429949657734]
+    kx = 1.1790789928004193
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.36842994965773396, 0.631570050342266]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.368429949657734, 0.631570050342266]
+    kx = 1.1790789928004193
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6388294449150649, 0.36117055508493534]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6388294449150648, 0.36117055508493523]
+    kx = 1.1996956945896022
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.36117055508493534, 0.6388294449150649]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.36117055508493523, 0.6388294449150648]
+    kx = 1.1996956945896022
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6459997011417609, 0.35400029885823897]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.645999701141761, 0.354000298858239]
+    kx = 1.2203123963787854
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.35400029885823897, 0.6459997011417609]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.354000298858239, 0.645999701141761]
+    kx = 1.2203123963787854
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6530833096981428, 0.3469166903018571]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.653083309698143, 0.34691669030185707]
+    kx = 1.2409290981679684
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3469166903018571, 0.6530833096981428]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.34691669030185707, 0.653083309698143]
+    kx = 1.2409290981679684
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6600825928648331, 0.3399174071351668]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6600825928648331, 0.33991740713516694]
+    kx = 1.2615457999571513
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3399174071351668, 0.6600825928648331]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.33991740713516694, 0.6600825928648331]
+    kx = 1.2615457999571513
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.666999713392272, 0.33300028660772785]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.666999713392272, 0.33300028660772796]
+    kx = 1.2821625017463343
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.33300028660772785, 0.666999713392272]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.33300028660772796, 0.666999713392272]
+    kx = 1.2821625017463343
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6738366828386845, 0.32616331716131525]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.6738366828386847, 0.3261633171613153]
+    kx = 1.3027792035355175
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.32616331716131525, 0.6738366828386845]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.3261633171613153, 0.6738366828386847]
+    kx = 1.3027792035355175
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6805953694080512, 0.3194046305919487]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6805953694080513, 0.31940463059194873]
+    kx = 1.3233959053247004
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3194046305919487, 0.6805953694080512]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.31940463059194873, 0.6805953694080513]
+    kx = 1.3233959053247004
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6872775053153256, 0.3127224946846744]
+    error = 0.0
+    published_projector_weights = [0.6872775053153256, 0.3127224946846744]
+    kx = 1.3440126071138834
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3127224946846744, 0.6872775053153256]
+    error = 0.0
+    published_projector_weights = [0.3127224946846744, 0.6872775053153256]
+    kx = 1.3440126071138834
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6938846937059312, 0.3061153062940688]
+    error = 0.0
+    published_projector_weights = [0.6938846937059312, 0.3061153062940688]
+    kx = 1.3646293089030663
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3061153062940688, 0.6938846937059312]
+    error = 0.0
+    published_projector_weights = [0.3061153062940688, 0.6938846937059312]
+    kx = 1.3646293089030663
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7004184151560566, 0.2995815848439435]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.7004184151560566, 0.2995815848439434]
+    kx = 1.3852460106922495
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2995815848439435, 0.7004184151560566]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.2995815848439434, 0.7004184151560566]
+    kx = 1.3852460106922495
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7068800337795255, 0.2931199662204744]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7068800337795255, 0.29311996622047454]
+    kx = 1.4058627124814325
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2931199662204744, 0.7068800337795255]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.29311996622047454, 0.7068800337795255]
+    kx = 1.4058627124814325
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7132708029661209, 0.2867291970338792]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7132708029661208, 0.2867291970338792]
+    kx = 1.4264794142706154
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2867291970338792, 0.7132708029661209]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2867291970338792, 0.7132708029661208]
+    kx = 1.4264794142706154
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7195918707752303, 0.28040812922476965]
+    error = 0.0
+    published_projector_weights = [0.7195918707752303, 0.28040812922476965]
+    kx = 1.4470961160597986
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.28040812922476965, 0.7195918707752303]
+    error = 0.0
+    published_projector_weights = [0.28040812922476965, 0.7195918707752303]
+    kx = 1.4470961160597986
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7258442850076134, 0.2741557149923865]
+    error = 0.0
+    published_projector_weights = [0.7258442850076134, 0.2741557149923865]
+    kx = 1.4677128178489816
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2741557149923865, 0.7258442850076134]
+    error = 0.0
+    published_projector_weights = [0.2741557149923865, 0.7258442850076134]
+    kx = 1.4677128178489816
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7320289979769783, 0.26797100202302176]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7320289979769782, 0.2679710020230218]
+    kx = 1.4883295196381645
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.26797100202302176, 0.7320289979769783]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2679710020230218, 0.7320289979769782]
+    kx = 1.4883295196381645
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7381468710019403, 0.26185312899805946]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7381468710019404, 0.26185312899805957]
+    kx = 1.5089462214273475
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.26185312899805946, 0.7381468710019403]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.26185312899805957, 0.7381468710019404]
+    kx = 1.5089462214273475
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7441986786378252, 0.2558013213621749]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7441986786378251, 0.2558013213621749]
+    kx = 1.5295629232165306
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2558013213621749, 0.7441986786378252]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2558013213621749, 0.7441986786378251]
+    kx = 1.5295629232165306
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7501851126666818, 0.24981488733331816]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7501851126666819, 0.2498148873333182]
+    kx = 1.5501796250057136
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.24981488733331816, 0.7501851126666818]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2498148873333182, 0.7501851126666819]
+    kx = 1.5501796250057136
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7561067858628241, 0.2438932141371757]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7561067858628242, 0.2438932141371758]
+    kx = 1.5707963267948966
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2438932141371757, 0.7561067858628241]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2438932141371758, 0.7561067858628242]
+    kx = 1.5707963267948966
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7619642355501811, 0.23803576444981892]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.7619642355501811, 0.2380357644498189]
+    kx = 1.5914130285840797
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.23803576444981892, 0.7619642355501811]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.2380357644498189, 0.7619642355501811]
+    kx = 1.5914130285840797
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7677579269667659, 0.23224207303323405]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.7677579269667659, 0.23224207303323408]
+    kx = 1.6120297303732627
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.23224207303323405, 0.7677579269667659]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.23224207303323408, 0.7677579269667659]
+    kx = 1.6120297303732627
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7734882564506362, 0.22651174354936363]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7734882564506363, 0.22651174354936365]
+    kx = 1.6326464321624456
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.22651174354936363, 0.7734882564506362]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.22651174354936365, 0.7734882564506363]
+    kx = 1.6326464321624456
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7791555544608196, 0.22084444553918053]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7791555544608195, 0.22084444553918048]
+    kx = 1.6532631339516286
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.22084444553918053, 0.7791555544608196]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.22084444553918048, 0.7791555544608195]
+    kx = 1.6532631339516286
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.784760088445839, 0.2152399115541613]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7847600884458388, 0.21523991155416122]
+    kx = 1.6738798357408118
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2152399115541613, 0.784760088445839]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.21523991155416122, 0.7847600884458388]
+    kx = 1.6738798357408118
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7903020655716742, 0.2096979344283261]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7903020655716739, 0.20969793442832602]
+    kx = 1.6944965375299947
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2096979344283261, 0.7903020655716742]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.20969793442832602, 0.7903020655716739]
+    kx = 1.6944965375299947
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7957816353202338, 0.20421836467976617]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.7957816353202338, 0.20421836467976623]
+    kx = 1.7151132393191777
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.20421836467976617, 0.7957816353202338]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.20421836467976623, 0.7957816353202338]
+    kx = 1.7151132393191777
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8011988919687046, 0.19880110803129547]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8011988919687045, 0.19880110803129547]
+    kx = 1.7357299411083607
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.19880110803129547, 0.8011988919687046]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.19880110803129547, 0.8011988919687045]
+    kx = 1.7357299411083607
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8065538769594685, 0.19344612304053166]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8065538769594683, 0.19344612304053166]
+    kx = 1.7563466428975438
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.19344612304053166, 0.8065538769594685]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.19344612304053166, 0.8065538769594683]
+    kx = 1.7563466428975438
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8118465811696515, 0.18815341883034883]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.8118465811696511, 0.1881534188303488]
+    kx = 1.7769633446867268
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.18815341883034883, 0.8118465811696515]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.1881534188303488, 0.8118465811696511]
+    kx = 1.7769633446867268
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8170769470887647, 0.18292305291123537]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.8170769470887647, 0.1829230529112354]
+    kx = 1.7975800464759097
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.18292305291123537, 0.8170769470887647]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.1829230529112354, 0.8170769470887647]
+    kx = 1.7975800464759097
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8222448709123429, 0.17775512908765706]
+    error = 0.0
+    published_projector_weights = [0.8222448709123429, 0.17775512908765706]
+    kx = 1.818196748265093
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.17775512908765706, 0.8222448709123429]
+    error = 0.0
+    published_projector_weights = [0.17775512908765706, 0.8222448709123429]
+    kx = 1.818196748265093
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.82735020455895, 0.1726497954410501]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8273502045589499, 0.17264979544105008]
+    kx = 1.8388134500542759
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.1726497954410501, 0.82735020455895]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.17264979544105008, 0.8273502045589499]
+    kx = 1.8388134500542759
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.832392757617429, 0.16760724238257083]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8323927576174293, 0.1676072423825708]
+    kx = 1.8594301518434588
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.16760724238257083, 0.832392757617429]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.1676072423825708, 0.8323927576174293]
+    kx = 1.8594301518434588
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8373722992308016, 0.1626277007691984]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8373722992308017, 0.16262770076919836]
+    kx = 1.8800468536326418
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.1626277007691984, 0.8373722992308016]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.16262770076919836, 0.8373722992308017]
+    kx = 1.8800468536326418
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8422885599227692, 0.15771144007723062]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8422885599227694, 0.1577114400772306]
+    kx = 1.900663555421825
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.15771144007723062, 0.8422885599227692]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.1577114400772306, 0.8422885599227694]
+    kx = 1.900663555421825
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8471412333723645, 0.15285876662763573]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8471412333723642, 0.1528587666276357]
+    kx = 1.921280257211008
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.15285876662763573, 0.8471412333723645]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.1528587666276357, 0.8471412333723642]
+    kx = 1.921280257211008
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8519299781418815, 0.14807002185811854]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8519299781418814, 0.14807002185811852]
+    kx = 1.9418969590001909
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.14807002185811854, 0.8519299781418815]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.14807002185811852, 0.8519299781418814]
+    kx = 1.9418969590001909
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8566544193628609, 0.14334558063713926]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8566544193628608, 0.1433455806371392]
+    kx = 1.962513660789374
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.14334558063713926, 0.8566544193628609]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.1433455806371392, 0.8566544193628608]
+    kx = 1.962513660789374
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.861314150384518, 0.1386858496154821]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8613141503845179, 0.13868584961548214]
+    kx = 1.983130362578557
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.1386858496154821, 0.861314150384518]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.13868584961548214, 0.8613141503845179]
+    kx = 1.983130362578557
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8659087343886895, 0.13409126561131018]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8659087343886898, 0.13409126561131024]
+    kx = 2.00374706436774
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.13409126561131018, 0.8659087343886895]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.13409126561131024, 0.8659087343886898]
+    kx = 2.00374706436774
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8704377059750285, 0.1295622940249714]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8704377059750286, 0.12956229402497138]
+    kx = 2.024363766156923
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.1295622940249714, 0.8704377059750285]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.12956229402497138, 0.8704377059750286]
+    kx = 2.024363766156923
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8749005727198705, 0.12509942728012982]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.8749005727198702, 0.12509942728012974]
+    kx = 2.044980467946106
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.12509942728012982, 0.8749005727198705]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.12509942728012974, 0.8749005727198702]
+    kx = 2.044980467946106
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8792968167119051, 0.12070318328809503]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.879296816711905, 0.12070318328809504]
+    kx = 2.065597169735289
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.12070318328809503, 0.8792968167119051]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.12070318328809504, 0.879296816711905]
+    kx = 2.065597169735289
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.883625896067493, 0.11637410393250702]
+    error = 0.0
+    published_projector_weights = [0.883625896067493, 0.11637410393250702]
+    kx = 2.086213871524472
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.11637410393250702, 0.883625896067493]
+    error = 0.0
+    published_projector_weights = [0.11637410393250702, 0.883625896067493]
+    kx = 2.086213871524472
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8878872464281918, 0.11211275357180814]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.887887246428192, 0.11211275357180811]
+    kx = 2.106830573313655
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.11211275357180814, 0.8878872464281918]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.11211275357180811, 0.887887246428192]
+    kx = 2.106830573313655
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8920802824428029, 0.10791971755719701]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.892080282442803, 0.10791971755719698]
+    kx = 2.127447275102838
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.10791971755719701, 0.8920802824428029]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.10791971755719698, 0.892080282442803]
+    kx = 2.127447275102838
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8962043992359855, 0.10379560076401435]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8962043992359856, 0.10379560076401434]
+    kx = 2.148063976892021
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.10379560076401435, 0.8962043992359855]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.10379560076401434, 0.8962043992359856]
+    kx = 2.148063976892021
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9002589738652462, 0.0997410261347537]
+    error = 1.3877787807814457e-17
+    published_projector_weights = [0.9002589738652462, 0.09974102613475372]
+    kx = 2.1686806786812043
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.0997410261347537, 0.9002589738652462]
+    error = 1.3877787807814457e-17
+    published_projector_weights = [0.09974102613475372, 0.9002589738652462]
+    kx = 2.1686806786812043
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9042433667678718, 0.09575663323212817]
+    error = 1.3877787807814457e-17
+    published_projector_weights = [0.9042433667678718, 0.09575663323212819]
+    kx = 2.189297380470387
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.09575663323212817, 0.9042433667678718]
+    error = 1.3877787807814457e-17
+    published_projector_weights = [0.09575663323212819, 0.9042433667678718]
+    kx = 2.189297380470387
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9081569231991485, 0.09184307680085134]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9081569231991486, 0.09184307680085135]
+    kx = 2.20991408225957
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.09184307680085134, 0.9081569231991485]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.09184307680085135, 0.9081569231991486]
+    kx = 2.20991408225957
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9119989746629856, 0.08800102533701425]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9119989746629857, 0.08800102533701426]
+    kx = 2.2305307840487534
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.08800102533701425, 0.9119989746629856]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.08800102533701426, 0.9119989746629857]
+    kx = 2.2305307840487534
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9157688403358484, 0.08423115966415172]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.9157688403358484, 0.08423115966415168]
+    kx = 2.251147485837936
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.08423115966415172, 0.9157688403358484]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.08423115966415168, 0.9157688403358484]
+    kx = 2.251147485837936
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9194658284847008, 0.08053417151529921]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.9194658284847008, 0.08053417151529924]
+    kx = 2.2717641876271193
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.08053417151529921, 0.9194658284847008]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.08053417151529924, 0.9194658284847008]
+    kx = 2.2717641876271193
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.923089237879454, 0.07691076212054594]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.923089237879454, 0.07691076212054598]
+    kx = 2.292380889416302
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.07691076212054594, 0.923089237879454]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.07691076212054598, 0.923089237879454]
+    kx = 2.292380889416302
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9266383592002232, 0.07336164079977676]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.9266383592002232, 0.0733616407997768]
+    kx = 2.312997591205485
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.07336164079977676, 0.9266383592002232]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.0733616407997768, 0.9266383592002232]
+    kx = 2.312997591205485
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9301124764395083, 0.06988752356049138]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9301124764395086, 0.06988752356049138]
+    kx = 2.3336142929946684
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.06988752356049138, 0.9301124764395083]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.06988752356049138, 0.9301124764395086]
+    kx = 2.3336142929946684
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9335108682992349, 0.06648913170076523]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9335108682992348, 0.0664891317007652]
+    kx = 2.354230994783851
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.06648913170076523, 0.9335108682992349]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.0664891317007652, 0.9335108682992348]
+    kx = 2.354230994783851
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9368328095824068, 0.06316719041759314]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9368328095824069, 0.06316719041759311]
+    kx = 2.3748476965730343
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.06316719041759314, 0.9368328095824068]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.06316719041759311, 0.9368328095824069]
+    kx = 2.3748476965730343
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9400775725789721, 0.05992242742102825]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.9400775725789717, 0.05992242742102827]
+    kx = 2.3954643983622175
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.05992242742102825, 0.9400775725789721]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.05992242742102827, 0.9400775725789717]
+    kx = 2.3954643983622175
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9432444284453155, 0.0567555715546847]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.9432444284453152, 0.05675557155468475]
+    kx = 2.4160811001514
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.0567555715546847, 0.9432444284453155]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.05675557155468475, 0.9432444284453152]
+    kx = 2.4160811001514
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.946332648576666, 0.05366735142333417]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9463326485766659, 0.053667351423334175]
+    kx = 2.4366978019405834
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.05366735142333417, 0.946332648576666]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.053667351423334175, 0.9463326485766659]
+    kx = 2.4366978019405834
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9493415059715301, 0.05065849402846993]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.9493415059715301, 0.05065849402846989]
+    kx = 2.4573145037297666
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.05065849402846993, 0.9493415059715301]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.05065849402846989, 0.9493415059715301]
+    kx = 2.4573145037297666
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9522702765871445, 0.047729723412855335]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9522702765871447, 0.04772972341285536]
+    kx = 2.4779312055189493
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.047729723412855335, 0.9522702765871445]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.04772972341285536, 0.9522702765871447]
+    kx = 2.4779312055189493
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9551182406847946, 0.04488175931520549]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9551182406847945, 0.044881759315205494]
+    kx = 2.4985479073081325
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.04488175931520549, 0.9551182406847946]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.044881759315205494, 0.9551182406847945]
+    kx = 2.4985479073081325
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9578846841637216, 0.04211531583627846]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9578846841637215, 0.04211531583627848]
+    kx = 2.5191646090973157
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.04211531583627846, 0.9578846841637216]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.04211531583627848, 0.9578846841637215]
+    kx = 2.5191646090973157
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9605688998822328, 0.039431100117767404]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9605688998822326, 0.039431100117767404]
+    kx = 2.5397813108864984
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.039431100117767404, 0.9605688998822328]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.039431100117767404, 0.9605688998822326]
+    kx = 2.5397813108864984
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9631701889645048, 0.03682981103549521]
+    error = 0.0
+    published_projector_weights = [0.9631701889645048, 0.03682981103549521]
+    kx = 2.5603980126756816
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.03682981103549521, 0.9631701889645048]
+    error = 0.0
+    published_projector_weights = [0.03682981103549521, 0.9631701889645048]
+    kx = 2.5603980126756816
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9656878620914848, 0.034312137908515034]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9656878620914849, 0.03431213790851506]
+    kx = 2.5810147144648643
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.034312137908515034, 0.9656878620914848]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.03431213790851506, 0.9656878620914849]
+    kx = 2.5810147144648643
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9681212407741925, 0.031878759225807296]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9681212407741927, 0.031878759225807296]
+    kx = 2.6016314162540475
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.031878759225807296, 0.9681212407741925]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.031878759225807296, 0.9681212407741927]
+    kx = 2.6016314162540475
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9704696586076487, 0.02953034139235119]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9704696586076488, 0.029530341392351223]
+    kx = 2.6222481180432307
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.02953034139235119, 0.9704696586076487]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.029530341392351223, 0.9704696586076488]
+    kx = 2.6222481180432307
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9727324625035845, 0.027267537496415608]
+    error = 2.42861286636753e-17
+    published_projector_weights = [0.9727324625035845, 0.027267537496415584]
+    kx = 2.6428648198324134
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.027267537496415608, 0.9727324625035845]
+    error = 2.42861286636753e-17
+    published_projector_weights = [0.027267537496415584, 0.9727324625035845]
+    kx = 2.6428648198324134
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9749090139000197, 0.02509098609998036]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9749090139000196, 0.02509098609998034]
+    kx = 2.6634815216215966
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.02509098609998036, 0.9749090139000197]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.02509098609998034, 0.9749090139000196]
+    kx = 2.6634815216215966
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9769986899457496, 0.023001310054250327]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9769986899457497, 0.023001310054250323]
+    kx = 2.6840982234107797
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.023001310054250327, 0.9769986899457496]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.023001310054250323, 0.9769986899457497]
+    kx = 2.6840982234107797
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9790008846577354, 0.020999115342264903]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9790008846577352, 0.020999115342264896]
+    kx = 2.7047149251999625
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.020999115342264903, 0.9790008846577354]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.020999115342264896, 0.9790008846577352]
+    kx = 2.7047149251999625
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9809150100493612, 0.019084989950638828]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9809150100493611, 0.019084989950638842]
+    kx = 2.7253316269891457
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.019084989950638828, 0.9809150100493612]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.019084989950638842, 0.9809150100493611]
+    kx = 2.7253316269891457
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9827404972275096, 0.017259502772490432]
+    error = 1.0408340855860843e-17
+    published_projector_weights = [0.9827404972275096, 0.017259502772490443]
+    kx = 2.745948328778329
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.017259502772490432, 0.9827404972275096]
+    error = 1.0408340855860843e-17
+    published_projector_weights = [0.017259502772490443, 0.9827404972275096]
+    kx = 2.745948328778329
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9844767974563784, 0.015523202543621491]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9844767974563785, 0.015523202543621495]
+    kx = 2.7665650305675116
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.015523202543621491, 0.9844767974563784]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.015523202543621495, 0.9844767974563785]
+    kx = 2.7665650305675116
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9861233831859866, 0.013876616814013585]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9861233831859864, 0.013876616814013587]
+    kx = 2.7871817323566948
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.013876616814013585, 0.9861233831859866]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.013876616814013587, 0.9861233831859864]
+    kx = 2.7871817323566948
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9876797490433069, 0.012320250956693111]
+    error = 3.469446951953614e-17
+    published_projector_weights = [0.9876797490433069, 0.012320250956693146]
+    kx = 2.8077984341458775
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.012320250956693111, 0.9876797490433069]
+    error = 3.469446951953614e-17
+    published_projector_weights = [0.012320250956693146, 0.9876797490433069]
+    kx = 2.8077984341458775
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9891454127840072, 0.010854587215992813]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9891454127840071, 0.010854587215992861]
+    kx = 2.8284151359350607
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.010854587215992813, 0.9891454127840072]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.010854587215992861, 0.9891454127840071]
+    kx = 2.8284151359350607
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9905199162027941, 0.00948008379720572]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9905199162027942, 0.009480083797205718]
+    kx = 2.849031837724244
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.00948008379720572, 0.9905199162027941]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.009480083797205718, 0.9905199162027942]
+    kx = 2.849031837724244
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9918028260004191, 0.008197173999580967]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.991802826000419, 0.00819717399958092]
+    kx = 2.8696485395134266
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.008197173999580967, 0.9918028260004191]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.00819717399958092, 0.991802826000419]
+    kx = 2.8696485395134266
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9929937346054433, 0.007006265394556675]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9929937346054434, 0.007006265394556677]
+    kx = 2.8902652413026098
+    ky = 0.8482300164692442
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.007006265394556675, 0.9929937346054433]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.007006265394556677, 0.9929937346054434]
+    kx = 2.8902652413026098
+    ky = 0.8482300164692442
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.048902195567933, 0.9510978044320672]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.048902195567933016, 0.951097804432067]
+    kx = 0.25132741228718347
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9510978044320672, 0.048902195567933]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.951097804432067, 0.048902195567933016]
+    kx = 0.25132741228718347
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.056403596029571776, 0.9435964039704283]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.05640359602957179, 0.9435964039704282]
+    kx = 0.2719441140763665
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9435964039704283, 0.056403596029571776]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9435964039704282, 0.05640359602957179]
+    kx = 0.2719441140763665
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.06425694822844191, 0.9357430517715583]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.06425694822844191, 0.9357430517715581]
+    kx = 0.2925608158655495
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9357430517715583, 0.06425694822844191]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9357430517715581, 0.06425694822844191]
+    kx = 0.2925608158655495
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.07242322448349099, 0.9275767755165092]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.07242322448349098, 0.927576775516509]
+    kx = 0.3131775176547325
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9275767755165092, 0.07242322448349099]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.927576775516509, 0.07242322448349098]
+    kx = 0.3131775176547325
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.08086465798348304, 0.919135342016517]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.08086465798348302, 0.9191353420165169]
+    kx = 0.3337942194439155
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.919135342016517, 0.08086465798348304]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9191353420165169, 0.08086465798348302]
+    kx = 0.3337942194439155
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.08954507360738585, 0.9104549263926145]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.08954507360738578, 0.9104549263926143]
+    kx = 0.3544109212330986
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9104549263926145, 0.08954507360738585]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9104549263926143, 0.08954507360738578]
+    kx = 0.3544109212330986
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.09843014636537856, 0.9015698536346216]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.0984301463653785, 0.9015698536346215]
+    kx = 0.3750276230222816
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9015698536346216, 0.09843014636537856]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9015698536346215, 0.0984301463653785]
+    kx = 0.3750276230222816
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.10748759163804575, 0.8925124083619542]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.10748759163804572, 0.8925124083619542]
+    kx = 0.3956443248114646
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8925124083619542, 0.10748759163804575]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.8925124083619542, 0.10748759163804572]
+    kx = 0.3956443248114646
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.11668729305759776, 0.8833127069424022]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.11668729305759773, 0.8833127069424023]
+    kx = 0.4162610266006476
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8833127069424022, 0.11668729305759776]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8833127069424023, 0.11668729305759773]
+    kx = 0.4162610266006476
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.12600137494635477, 0.8739986250536452]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.12600137494635483, 0.8739986250536451]
+    kx = 0.43687772838983063
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8739986250536452, 0.12600137494635477]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8739986250536451, 0.12600137494635483]
+    kx = 0.43687772838983063
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.135404226778065, 0.8645957732219349]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.13540422677806502, 0.8645957732219349]
+    kx = 0.45749443017901364
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8645957732219349, 0.135404226778065]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.8645957732219349, 0.13540422677806502]
+    kx = 0.45749443017901364
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.14487248724695037, 0.8551275127530494]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.1448724872469504, 0.8551275127530495]
+    kx = 0.47811113196819666
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8551275127530494, 0.14487248724695037]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8551275127530495, 0.1448724872469504]
+    kx = 0.47811113196819666
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.15438499531262115, 0.8456150046873788]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.15438499531262118, 0.8456150046873788]
+    kx = 0.49872783375737967
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8456150046873788, 0.15438499531262115]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.8456150046873788, 0.15438499531262118]
+    kx = 0.49872783375737967
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.16392271512750548, 0.8360772848724947]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.1639227151275055, 0.8360772848724944]
+    kx = 0.5193445355465627
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8360772848724947, 0.16392271512750548]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8360772848724944, 0.1639227151275055]
+    kx = 0.5193445355465627
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.17346864112927157, 0.8265313588707283]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.17346864112927157, 0.8265313588707284]
+    kx = 0.5399612373357457
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8265313588707283, 0.17346864112927157]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8265313588707284, 0.17346864112927157]
+    kx = 0.5399612373357457
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.1830076888635582, 0.8169923111364417]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.18300768886355823, 0.8169923111364418]
+    kx = 0.5605779391249287
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8169923111364417, 0.1830076888635582]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8169923111364418, 0.18300768886355823]
+    kx = 0.5605779391249287
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.19252657634823778, 0.8074734236517624]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.19252657634823772, 0.8074734236517622]
+    kx = 0.5811946409141118
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8074734236517624, 0.19252657634823778]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8074734236517622, 0.19252657634823772]
+    kx = 0.5811946409141118
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.20201370004219515, 0.7979862999578051]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.2020137000421951, 0.7979862999578049]
+    kx = 0.6018113427032947
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7979862999578051, 0.20201370004219515]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7979862999578049, 0.2020137000421951]
+    kx = 0.6018113427032947
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.21145900876984217, 0.7885409912301581]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.21145900876984208, 0.788540991230158]
+    kx = 0.6224280444924778
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7885409912301581, 0.21145900876984217]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.788540991230158, 0.21145900876984208]
+    kx = 0.6224280444924778
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.22085387829753736, 0.7791461217024626]
+    error = 8.326672684688674e-17
+    published_projector_weights = [0.22085387829753744, 0.7791461217024626]
+    kx = 0.6430447462816609
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7791461217024626, 0.22085387829753736]
+    error = 8.326672684688674e-17
+    published_projector_weights = [0.7791461217024626, 0.22085387829753744]
+    kx = 0.6430447462816609
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2301909886714992, 0.769809011328501]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.23019098867149912, 0.7698090113285009]
+    kx = 0.6636614480708438
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.769809011328501, 0.2301909886714992]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7698090113285009, 0.23019098867149912]
+    kx = 0.6636614480708438
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.23946420591380307, 0.760535794086197]
+    error = 0.0
+    published_projector_weights = [0.23946420591380307, 0.760535794086197]
+    kx = 0.6842781498600269
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.760535794086197, 0.23946420591380307]
+    error = 0.0
+    published_projector_weights = [0.760535794086197, 0.23946420591380307]
+    kx = 0.6842781498600269
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.24866846923390862, 0.7513315307660913]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.24866846923390867, 0.7513315307660913]
+    kx = 0.7048948516492098
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7513315307660913, 0.24866846923390862]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.7513315307660913, 0.24866846923390867]
+    kx = 0.7048948516492098
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2577996845446828, 0.7422003154553172]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2577996845446827, 0.7422003154553173]
+    kx = 0.7255115534383929
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7422003154553172, 0.2577996845446828]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7422003154553173, 0.2577996845446827]
+    kx = 0.7255115534383929
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.26685462476872196, 0.7331453752312781]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.2668546247687219, 0.7331453752312781]
+    kx = 0.7461282552275759
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7331453752312781, 0.26685462476872196]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.7331453752312781, 0.2668546247687219]
+    kx = 0.7461282552275759
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2758308371763012, 0.7241691628236987]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2758308371763012, 0.7241691628236988]
+    kx = 0.7667449570167589
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7241691628236987, 0.2758308371763012]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7241691628236988, 0.2758308371763012]
+    kx = 0.7667449570167589
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2847265578033343, 0.7152734421966657]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2847265578033342, 0.7152734421966658]
+    kx = 0.7873616588059419
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7152734421966657, 0.2847265578033343]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7152734421966658, 0.2847265578033342]
+    kx = 0.7873616588059419
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2935406328491343, 0.706459367150866]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.2935406328491341, 0.7064593671508659]
+    kx = 0.807978360595125
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.706459367150866, 0.2935406328491343]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.7064593671508659, 0.2935406328491341]
+    kx = 0.807978360595125
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3022724468426495, 0.6977275531573505]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.30227244684264953, 0.6977275531573505]
+    kx = 0.828595062384308
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6977275531573505, 0.3022724468426495]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.6977275531573505, 0.30227244684264953]
+    kx = 0.828595062384308
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.31092185728587707, 0.6890781427141228]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3109218572858772, 0.6890781427141228]
+    kx = 0.849211764173491
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6890781427141228, 0.31092185728587707]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6890781427141228, 0.3109218572858772]
+    kx = 0.849211764173491
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.31948913542863117, 0.6805108645713687]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3194891354286312, 0.6805108645713688]
+    kx = 0.869828465962674
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6805108645713687, 0.31948913542863117]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6805108645713688, 0.3194891354286312]
+    kx = 0.869828465962674
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.32797491279480023, 0.6720250872051998]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.3279749127948002, 0.6720250872051998]
+    kx = 0.890445167751857
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6720250872051998, 0.32797491279480023]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.6720250872051998, 0.3279749127948002]
+    kx = 0.890445167751857
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.33638013306232933, 0.6636198669376706]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3363801330623293, 0.6636198669376707]
+    kx = 0.9110618695410401
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6636198669376706, 0.33638013306232933]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6636198669376707, 0.3363801330623293]
+    kx = 0.9110618695410401
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.344706008893807, 0.6552939911061932]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.3447060088938071, 0.6552939911061929]
+    kx = 0.931678571330223
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6552939911061932, 0.344706008893807]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.6552939911061929, 0.3447060088938071]
+    kx = 0.931678571330223
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.35295398331865646, 0.6470460166813435]
+    error = 0.0
+    published_projector_weights = [0.35295398331865646, 0.6470460166813435]
+    kx = 0.9522952731194061
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6470460166813435, 0.35295398331865646]
+    error = 0.0
+    published_projector_weights = [0.6470460166813435, 0.35295398331865646]
+    kx = 0.9522952731194061
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.361125695279039, 0.638874304720961]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.36112569527903904, 0.638874304720961]
+    kx = 0.972911974908589
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.638874304720961, 0.361125695279039]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.638874304720961, 0.36112569527903904]
+    kx = 0.972911974908589
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.36922294896765445, 0.6307770510323456]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.3692229489676544, 0.6307770510323456]
+    kx = 0.9935286766977721
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6307770510323456, 0.36922294896765445]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.6307770510323456, 0.3692229489676544]
+    kx = 0.9935286766977721
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.37724768660501395, 0.6227523133949862]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.37724768660501395, 0.622752313394986]
+    kx = 1.0141453784869552
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6227523133949862, 0.37724768660501395]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.622752313394986, 0.37724768660501395]
+    kx = 1.0141453784869552
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.38520196432522913, 0.614798035674771]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3852019643252291, 0.6147980356747709]
+    kx = 1.0347620802761381
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.614798035674771, 0.38520196432522913]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6147980356747709, 0.3852019643252291]
+    kx = 1.0347620802761381
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3930879308618685, 0.6069120691381314]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3930879308618685, 0.6069120691381316]
+    kx = 1.055378782065321
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6069120691381314, 0.3930879308618685]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6069120691381316, 0.3930879308618685]
+    kx = 1.055378782065321
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4009078087482565, 0.5990921912517436]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.40090780874825643, 0.5990921912517435]
+    kx = 1.0759954838545043
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5990921912517436, 0.4009078087482565]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5990921912517435, 0.40090780874825643]
+    kx = 1.0759954838545043
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4086638777691348, 0.591336122230865]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.408663877769135, 0.5913361222308651]
+    kx = 1.0966121856436872
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.591336122230865, 0.4086638777691348]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5913361222308651, 0.408663877769135]
+    kx = 1.0966121856436872
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4163584604224925, 0.5836415395775073]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.41635846042249264, 0.5836415395775074]
+    kx = 1.1172288874328702
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5836415395775073, 0.4163584604224925]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5836415395775074, 0.41635846042249264]
+    kx = 1.1172288874328702
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.42399390917127344, 0.5760060908287264]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.42399390917127344, 0.5760060908287266]
+    kx = 1.1378455892220531
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5760060908287264, 0.42399390917127344]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5760060908287266, 0.42399390917127344]
+    kx = 1.1378455892220531
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.43157259528444564, 0.5684274047155541]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.43157259528444575, 0.5684274047155543]
+    kx = 1.1584622910112363
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5684274047155541, 0.43157259528444564]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.5684274047155543, 0.43157259528444575]
+    kx = 1.1584622910112363
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4390968990854056, 0.5609031009145947]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.43909689908540556, 0.5609031009145945]
+    kx = 1.1790789928004193
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5609031009145947, 0.4390968990854056]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.5609031009145945, 0.43909689908540556]
+    kx = 1.1790789928004193
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.44656920144286777, 0.5534307985571322]
+    error = 0.0
+    published_projector_weights = [0.44656920144286777, 0.5534307985571322]
+    kx = 1.1996956945896022
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5534307985571322, 0.44656920144286777]
+    error = 0.0
+    published_projector_weights = [0.5534307985571322, 0.44656920144286777]
+    kx = 1.1996956945896022
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4539918763552346, 0.5460081236447656]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4539918763552346, 0.5460081236447655]
+    kx = 1.2203123963787854
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5460081236447656, 0.4539918763552346]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5460081236447655, 0.4539918763552346]
+    kx = 1.2203123963787854
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4613672844939597, 0.5386327155060402]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.46136728449395986, 0.5386327155060402]
+    kx = 1.2409290981679684
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5386327155060402, 0.4613672844939597]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5386327155060402, 0.46136728449395986]
+    kx = 1.2409290981679684
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4686977675846801, 0.5313022324153199]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.46869776758468, 0.5313022324153199]
+    kx = 1.2615457999571513
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5313022324153199, 0.4686977675846801]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5313022324153199, 0.46869776758468]
+    kx = 1.2615457999571513
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.475985643516914, 0.5240143564830858]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4759856435169141, 0.5240143564830859]
+    kx = 1.2821625017463343
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5240143564830858, 0.475985643516914]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5240143564830859, 0.4759856435169141]
+    kx = 1.2821625017463343
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4832332020840281, 0.5167667979159717]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.4832332020840283, 0.5167667979159717]
+    kx = 1.3027792035355175
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5167667979159717, 0.4832332020840281]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.5167667979159717, 0.4832332020840283]
+    kx = 1.3027792035355175
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.49044270126497014, 0.50955729873503]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.49044270126497, 0.50955729873503]
+    kx = 1.3233959053247004
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.50955729873503, 0.49044270126497014]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.50955729873503, 0.49044270126497]
+    kx = 1.3233959053247004
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.49761636396809256, 0.5023836360319072]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.49761636396809267, 0.5023836360319073]
+    kx = 1.3440126071138834
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5023836360319072, 0.49761636396809256]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5023836360319073, 0.49761636396809267]
+    kx = 1.3440126071138834
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5047563751652812, 0.4952436248347189]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5047563751652812, 0.4952436248347188]
+    kx = 1.3646293089030663
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4952436248347189, 0.5047563751652812]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4952436248347188, 0.5047563751652812]
+    kx = 1.3646293089030663
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5118648793516367, 0.48813512064836323]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.5118648793516367, 0.4881351206483633]
+    kx = 1.3852460106922495
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.48813512064836323, 0.5118648793516367]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.4881351206483633, 0.5118648793516367]
+    kx = 1.3852460106922495
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5189439782722425, 0.48105602172775747]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.5189439782722425, 0.4810560217277575]
+    kx = 1.4058627124814325
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.48105602172775747, 0.5189439782722425]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.4810560217277575, 0.5189439782722425]
+    kx = 1.4058627124814325
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5259957288630991, 0.47400427113690086]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5259957288630992, 0.47400427113690086]
+    kx = 1.4264794142706154
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.47400427113690086, 0.5259957288630991]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.47400427113690086, 0.5259957288630992]
+    kx = 1.4264794142706154
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.533022141358234, 0.46697785864176616]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5330221413582339, 0.4669778586417661]
+    kx = 1.4470961160597986
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.46697785864176616, 0.533022141358234]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4669778586417661, 0.5330221413582339]
+    kx = 1.4470961160597986
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5400251775193283, 0.4599748224806716]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.5400251775193283, 0.4599748224806717]
+    kx = 1.4677128178489816
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4599748224806716, 0.5400251775193283]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.4599748224806717, 0.5400251775193283]
+    kx = 1.4677128178489816
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5470067489480243, 0.45299325105197585]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5470067489480243, 0.45299325105197574]
+    kx = 1.4883295196381645
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.45299325105197585, 0.5470067489480243]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.45299325105197574, 0.5470067489480243]
+    kx = 1.4883295196381645
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5539687154444061, 0.4460312845555942]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.553968715444406, 0.446031284555594]
+    kx = 1.5089462214273475
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4460312845555942, 0.5539687154444061]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.446031284555594, 0.553968715444406]
+    kx = 1.5089462214273475
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5609128833780784, 0.4390871166219214]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5609128833780785, 0.43908711662192146]
+    kx = 1.5295629232165306
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4390871166219214, 0.5609128833780784]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.43908711662192146, 0.5609128833780785]
+    kx = 1.5295629232165306
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5678410040407971, 0.43215899595920276]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5678410040407971, 0.4321589959592029]
+    kx = 1.5501796250057136
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.43215899595920276, 0.5678410040407971]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4321589959592029, 0.5678410040407971]
+    kx = 1.5501796250057136
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5747547719518095, 0.42524522804819076]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5747547719518094, 0.4252452280481907]
+    kx = 1.5707963267948966
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.42524522804819076, 0.5747547719518095]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4252452280481907, 0.5747547719518094]
+    kx = 1.5707963267948966
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.58165582308897, 0.41834417691103004]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5816558230889701, 0.4183441769110299]
+    kx = 1.5914130285840797
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.41834417691103004, 0.58165582308897]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.4183441769110299, 0.5816558230889701]
+    kx = 1.5914130285840797
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5885457330203331, 0.4114542669796667]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.5885457330203332, 0.41145426697966686]
+    kx = 1.6120297303732627
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.4114542669796667, 0.5885457330203331]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.41145426697966686, 0.5885457330203332]
+    kx = 1.6120297303732627
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.5954260149123326, 0.40457398508766734]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.5954260149123327, 0.4045739850876673]
+    kx = 1.6326464321624456
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.40457398508766734, 0.5954260149123326]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.4045739850876673, 0.5954260149123327]
+    kx = 1.6326464321624456
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6022981173918818, 0.3977018826081184]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.6022981173918815, 0.39770188260811845]
+    kx = 1.6532631339516286
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3977018826081184, 0.6022981173918818]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.39770188260811845, 0.6022981173918815]
+    kx = 1.6532631339516286
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6091634222407589, 0.39083657775924113]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.6091634222407589, 0.3908365777592411]
+    kx = 1.6738798357408118
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.39083657775924113, 0.6091634222407589]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.3908365777592411, 0.6091634222407589]
+    kx = 1.6738798357408118
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6160232419015665, 0.38397675809843373]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.6160232419015663, 0.3839767580984336]
+    kx = 1.6944965375299947
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.38397675809843373, 0.6160232419015665]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.3839767580984336, 0.6160232419015663]
+    kx = 1.6944965375299947
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6228788167753275, 0.3771211832246725]
+    error = 0.0
+    published_projector_weights = [0.6228788167753275, 0.3771211832246725]
+    kx = 1.7151132393191777
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3771211832246725, 0.6228788167753275]
+    error = 0.0
+    published_projector_weights = [0.3771211832246725, 0.6228788167753275]
+    kx = 1.7151132393191777
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.629731312291519, 0.37026868770848104]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6297313122915189, 0.37026868770848104]
+    kx = 1.7357299411083607
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.37026868770848104, 0.629731312291519]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.37026868770848104, 0.6297313122915189]
+    kx = 1.7357299411083607
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6365818157319763, 0.36341818426802347]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.6365818157319764, 0.36341818426802364]
+    kx = 1.7563466428975438
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.36341818426802347, 0.6365818157319763]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.36341818426802364, 0.6365818157319764]
+    kx = 1.7563466428975438
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6434313327907484, 0.35656866720925195]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.6434313327907483, 0.35656866720925173]
+    kx = 1.7769633446867268
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.35656866720925195, 0.6434313327907484]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.35656866720925173, 0.6434313327907483]
+    kx = 1.7769633446867268
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6502807838525997, 0.3497192161474004]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.6502807838525997, 0.34971921614740037]
+    kx = 1.7975800464759097
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3497192161474004, 0.6502807838525997]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.34971921614740037, 0.6502807838525997]
+    kx = 1.7975800464759097
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6571309999735231, 0.34286900002647686]
+    error = 0.0
+    published_projector_weights = [0.6571309999735231, 0.34286900002647686]
+    kx = 1.818196748265093
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.34286900002647686, 0.6571309999735231]
+    error = 0.0
+    published_projector_weights = [0.34286900002647686, 0.6571309999735231]
+    kx = 1.818196748265093
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6639827185473328, 0.33601728145266746]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.6639827185473327, 0.3360172814526673]
+    kx = 1.8388134500542759
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.33601728145266746, 0.6639827185473328]
+    error = 1.6653345369377348e-16
+    published_projector_weights = [0.3360172814526673, 0.6639827185473327]
+    kx = 1.8388134500542759
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.670836578643227, 0.3291634213567732]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6708365786432269, 0.3291634213567731]
+    kx = 1.8594301518434588
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3291634213567732, 0.670836578643227]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3291634213567731, 0.6708365786432269]
+    kx = 1.8594301518434588
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6776931160001366, 0.3223068839998634]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6776931160001367, 0.3223068839998633]
+    kx = 1.8800468536326418
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3223068839998634, 0.6776931160001366]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3223068839998633, 0.6776931160001367]
+    kx = 1.8800468536326418
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.684552757664773, 0.3154472423352269]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6845527576647731, 0.3154472423352269]
+    kx = 1.900663555421825
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.3154472423352269, 0.684552757664773]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3154472423352269, 0.6845527576647731]
+    kx = 1.900663555421825
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6914158162615787, 0.30858418373842117]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6914158162615788, 0.3085841837384212]
+    kx = 1.921280257211008
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.30858418373842117, 0.6914158162615787]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3085841837384212, 0.6914158162615788]
+    kx = 1.921280257211008
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.6982824838843259, 0.30171751611567416]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.6982824838843258, 0.3017175161156742]
+    kx = 1.9418969590001909
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.30171751611567416, 0.6982824838843259]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.3017175161156742, 0.6982824838843258]
+    kx = 1.9418969590001909
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7051528256009125, 0.2948471743990876]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7051528256009125, 0.2948471743990875]
+    kx = 1.962513660789374
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2948471743990876, 0.7051528256009125]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2948471743990875, 0.7051528256009125]
+    kx = 1.962513660789374
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7120267725650608, 0.28797322743493947]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7120267725650606, 0.28797322743493936]
+    kx = 1.983130362578557
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.28797322743493947, 0.7120267725650608]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.28797322743493936, 0.7120267725650606]
+    kx = 1.983130362578557
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7189041147311324, 0.2810958852688675]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7189041147311326, 0.2810958852688675]
+    kx = 2.00374706436774
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2810958852688675, 0.7189041147311324]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.2810958852688675, 0.7189041147311326]
+    kx = 2.00374706436774
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7257844931712363, 0.27421550682876356]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7257844931712364, 0.2742155068287636]
+    kx = 2.024363766156923
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.27421550682876356, 0.7257844931712363]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.2742155068287636, 0.7257844931712364]
+    kx = 2.024363766156923
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7326673919972163, 0.26733260800278336]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7326673919972165, 0.26733260800278347]
+    kx = 2.044980467946106
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.26733260800278336, 0.7326673919972163]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.26733260800278347, 0.7326673919972165]
+    kx = 2.044980467946106
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7395521298940851, 0.2604478701059151]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7395521298940849, 0.2604478701059151]
+    kx = 2.065597169735289
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2604478701059151, 0.7395521298940851]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.2604478701059151, 0.7395521298940849]
+    kx = 2.065597169735289
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7464378512760061, 0.25356214872399374]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7464378512760063, 0.25356214872399374]
+    kx = 2.086213871524472
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.25356214872399374, 0.7464378512760061]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.25356214872399374, 0.7464378512760063]
+    kx = 2.086213871524472
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7533235170811422, 0.24667648291885766]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7533235170811423, 0.24667648291885763]
+    kx = 2.106830573313655
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.24667648291885766, 0.7533235170811422]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.24667648291885763, 0.7533235170811423]
+    kx = 2.106830573313655
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7602078952275588, 0.2397921047724412]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.7602078952275588, 0.23979210477244117]
+    kx = 2.127447275102838
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2397921047724412, 0.7602078952275588]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.23979210477244117, 0.7602078952275588]
+    kx = 2.127447275102838
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7670895507590461, 0.23291044924095372]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7670895507590463, 0.23291044924095378]
+    kx = 2.148063976892021
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.23291044924095372, 0.7670895507590461]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.23291044924095378, 0.7670895507590463]
+    kx = 2.148063976892021
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7739668357171505, 0.22603316428284964]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.7739668357171503, 0.22603316428284964]
+    kx = 2.1686806786812043
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.22603316428284964, 0.7739668357171505]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.22603316428284964, 0.7739668357171503]
+    kx = 2.1686806786812043
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7808378787839981, 0.21916212121600204]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.780837878783998, 0.21916212121600204]
+    kx = 2.189297380470387
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.21916212121600204, 0.7808378787839981]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.21916212121600204, 0.780837878783998]
+    kx = 2.189297380470387
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7877005747496568, 0.2122994252503433]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.7877005747496568, 0.21229942525034323]
+    kx = 2.20991408225957
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.2122994252503433, 0.7877005747496568]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.21229942525034323, 0.7877005747496568]
+    kx = 2.20991408225957
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.7945525738678195, 0.20544742613218037]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.7945525738678196, 0.20544742613218042]
+    kx = 2.2305307840487534
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.20544742613218037, 0.7945525738678195]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.20544742613218042, 0.7945525738678196]
+    kx = 2.2305307840487534
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8013912711745511, 0.19860872882544883]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.8013912711745511, 0.1986087288254489]
+    kx = 2.251147485837936
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.19860872882544883, 0.8013912711745511]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.1986087288254489, 0.8013912711745511]
+    kx = 2.251147485837936
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8082137958566574, 0.19178620414334252]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.8082137958566574, 0.19178620414334258]
+    kx = 2.2717641876271193
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.19178620414334252, 0.8082137958566574]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.19178620414334258, 0.8082137958566574]
+    kx = 2.2717641876271193
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8150170007689075, 0.1849829992310925]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.8150170007689075, 0.18498299923109252]
+    kx = 2.292380889416302
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.1849829992310925, 0.8150170007689075]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.18498299923109252, 0.8150170007689075]
+    kx = 2.292380889416302
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8217974522127832, 0.178202547787217]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8217974522127831, 0.17820254778721695]
+    kx = 2.312997591205485
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.178202547787217, 0.8217974522127832]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.17820254778721695, 0.8217974522127831]
+    kx = 2.312997591205485
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8285514201035407, 0.17144857989645942]
+    error = 8.326672684688674e-17
+    published_projector_weights = [0.8285514201035407, 0.17144857989645934]
+    kx = 2.3336142929946684
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.17144857989645942, 0.8285514201035407]
+    error = 8.326672684688674e-17
+    published_projector_weights = [0.17144857989645934, 0.8285514201035407]
+    kx = 2.3336142929946684
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8352748686670266, 0.16472513133297342]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.8352748686670266, 0.16472513133297345]
+    kx = 2.354230994783851
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.16472513133297342, 0.8352748686670266]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.16472513133297345, 0.8352748686670266]
+    kx = 2.354230994783851
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8419634478226785, 0.15803655217732118]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8419634478226787, 0.1580365521773212]
+    kx = 2.3748476965730343
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.15803655217732118, 0.8419634478226785]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.1580365521773212, 0.8419634478226787]
+    kx = 2.3748476965730343
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8486124854242586, 0.15138751457574115]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8486124854242588, 0.15138751457574118]
+    kx = 2.3954643983622175
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.15138751457574115, 0.8486124854242586]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.15138751457574118, 0.8486124854242588]
+    kx = 2.3954643983622175
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8552169805448043, 0.14478301945519553]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8552169805448044, 0.14478301945519562]
+    kx = 2.4160811001514
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.14478301945519553, 0.8552169805448043]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.14478301945519562, 0.8552169805448044]
+    kx = 2.4160811001514
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8617715980067027, 0.13822840199329722]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.8617715980067027, 0.13822840199329728]
+    kx = 2.4366978019405834
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.13822840199329722, 0.8617715980067027]
+    error = 5.551115123125783e-17
+    published_projector_weights = [0.13822840199329728, 0.8617715980067027]
+    kx = 2.4366978019405834
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.868270664371281, 0.13172933562871925]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8682706643712808, 0.1317293356287192]
+    kx = 2.4573145037297666
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.13172933562871925, 0.868270664371281]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.1317293356287192, 0.8682706643712808]
+    kx = 2.4573145037297666
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8747081656144058, 0.12529183438559435]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.8747081656144056, 0.12529183438559438]
+    kx = 2.4779312055189493
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.12529183438559435, 0.8747081656144058]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.12529183438559438, 0.8747081656144056]
+    kx = 2.4779312055189493
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8810777467247505, 0.11892225327524947]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8810777467247506, 0.11892225327524947]
+    kx = 2.4985479073081325
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.11892225327524947, 0.8810777467247505]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.11892225327524947, 0.8810777467247506]
+    kx = 2.4985479073081325
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8873727134690379, 0.11262728653096198]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.887372713469038, 0.11262728653096199]
+    kx = 2.5191646090973157
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.11262728653096198, 0.8873727134690379]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.11262728653096199, 0.887372713469038]
+    kx = 2.5191646090973157
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8935860365730653, 0.10641396342693495]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.893586036573065, 0.10641396342693493]
+    kx = 2.5397813108864984
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.10641396342693495, 0.8935860365730653]
+    error = 3.3306690738754696e-16
+    published_projector_weights = [0.10641396342693493, 0.893586036573065]
+    kx = 2.5397813108864984
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.8997103585679805, 0.1002896414320197]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.8997103585679804, 0.10028964143201963]
+    kx = 2.5603980126756816
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.1002896414320197, 0.8997103585679805]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.10028964143201963, 0.8997103585679804]
+    kx = 2.5603980126756816
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9057380035474001, 0.09426199645259985]
+    error = 1.3877787807814457e-17
+    published_projector_weights = [0.9057380035474001, 0.09426199645259986]
+    kx = 2.5810147144648643
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.09426199645259985, 0.9057380035474001]
+    error = 1.3877787807814457e-17
+    published_projector_weights = [0.09426199645259986, 0.9057380035474001]
+    kx = 2.5810147144648643
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9116609900718347, 0.08833900992816539]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.9116609900718347, 0.08833900992816535]
+    kx = 2.6016314162540475
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.08833900992816539, 0.9116609900718347]
+    error = 4.163336342344337e-17
+    published_projector_weights = [0.08833900992816535, 0.9116609900718347]
+    kx = 2.6016314162540475
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9174710474418231, 0.08252895255817687]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9174710474418232, 0.08252895255817683]
+    kx = 2.6222481180432307
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.08252895255817687, 0.9174710474418231]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.08252895255817683, 0.9174710474418232]
+    kx = 2.6222481180432307
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9231596355395479, 0.076840364460452]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.923159635539548, 0.07684036446045195]
+    kx = 2.6428648198324134
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.076840364460452, 0.9231596355395479]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.07684036446045195, 0.923159635539548]
+    kx = 2.6428648198324134
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9287179684099156, 0.07128203159008442]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.9287179684099156, 0.07128203159008445]
+    kx = 2.6634815216215966
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.07128203159008442, 0.9287179684099156]
+    error = 2.7755575615628914e-17
+    published_projector_weights = [0.07128203159008445, 0.9287179684099156]
+    kx = 2.6634815216215966
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9341370417157553, 0.06586295828424489]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9341370417157551, 0.06586295828424488]
+    kx = 2.6840982234107797
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.06586295828424489, 0.9341370417157553]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.06586295828424488, 0.9341370417157551]
+    kx = 2.6840982234107797
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9394076641576111, 0.060592335842388795]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9394076641576112, 0.06059233584238882]
+    kx = 2.7047149251999625
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.060592335842388795, 0.9394076641576111]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.06059233584238882, 0.9394076641576112]
+    kx = 2.7047149251999625
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9445204928965201, 0.05547950710348007]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.9445204928965198, 0.0554795071034801]
+    kx = 2.7253316269891457
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.05547950710348007, 0.9445204928965201]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.0554795071034801, 0.9445204928965198]
+    kx = 2.7253316269891457
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9494660729583665, 0.05053392704163368]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9494660729583664, 0.050533927041633675]
+    kx = 2.745948328778329
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.05053392704163368, 0.9494660729583665]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.050533927041633675, 0.9494660729583664]
+    kx = 2.745948328778329
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.95423488053138, 0.045765119468620025]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9542348805313801, 0.04576511946862]
+    kx = 2.7665650305675116
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.045765119468620025, 0.95423488053138]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.04576511946862, 0.9542348805313801]
+    kx = 2.7665650305675116
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9588173699948285, 0.041182630005171375]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9588173699948286, 0.04118263000517136]
+    kx = 2.7871817323566948
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.041182630005171375, 0.9588173699948285]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.04118263000517136, 0.9588173699948286]
+    kx = 2.7871817323566948
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9632040244381541, 0.036795975561845946]
+    error = 6.938893903907228e-18
+    published_projector_weights = [0.9632040244381541, 0.03679597556184594]
+    kx = 2.8077984341458775
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.036795975561845946, 0.9632040244381541]
+    error = 6.938893903907228e-18
+    published_projector_weights = [0.03679597556184594, 0.9632040244381541]
+    kx = 2.8077984341458775
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9673854093471527, 0.03261459065284742]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9673854093471526, 0.032614590652847386]
+    kx = 2.8284151359350607
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.03261459065284742, 0.9673854093471527]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.032614590652847386, 0.9673854093471526]
+    kx = 2.8284151359350607
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9713522290491516, 0.02864777095084842]
+    error = 3.469446951953614e-18
+    published_projector_weights = [0.9713522290491516, 0.028647770950848417]
+    kx = 2.849031837724244
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.02864777095084842, 0.9713522290491516]
+    error = 3.469446951953614e-18
+    published_projector_weights = [0.028647770950848417, 0.9713522290491516]
+    kx = 2.849031837724244
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9750953854246578, 0.024904614575341967]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.975095385424658, 0.024904614575341932]
+    kx = 2.8696485395134266
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.024904614575341967, 0.9750953854246578]
+    error = 2.220446049250313e-16
+    published_projector_weights = [0.024904614575341932, 0.975095385424658]
+    kx = 2.8696485395134266
+    ky = 1.350884841043611
+    band = 2
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.9786060383110715, 0.02139396168892858]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.9786060383110714, 0.021393961688928598]
+    kx = 2.8902652413026098
+    ky = 1.350884841043611
+    band = 1
+    [[benchmarks.rows]]
+    target_orbital_weights = [0.02139396168892858, 0.9786060383110715]
+    error = 1.1102230246251565e-16
+    published_projector_weights = [0.021393961688928598, 0.9786060383110714]
+    kx = 2.8902652413026098
+    ky = 1.350884841043611
+    band = 2

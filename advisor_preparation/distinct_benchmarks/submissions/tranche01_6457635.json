@@ -1,0 +1,15 @@
+{
+  "job_id": "6457635",
+  "submission_utc": "2026-10-22 17:58 UTC",
+  "state_at_submission": "PENDING",
+  "source_release": "../source_releases/tranche01-freeze.json",
+  "archive_sha256": "a5c95efd46268165a9556a7a56371651257f2e66da63850d2ba35a9bcec9d09c",
+  "runtime_estimate_minutes_after_start": [
+    3,
+    8
+  ],
+  "wall_limit_minutes": 20,
+  "cpus": 1,
+  "memory_mb": 3500,
+  "scientific_results": "NOT_YET_AVAILABLE"
+}

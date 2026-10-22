@@ -1,0 +1,53 @@
+protocol_revision = "distinct-packages-01"
+L = 4
+t = 1.0
+U = 4.0
+mu_uncentered = 0.0
+boundary = "pbc"
+Nup = 2
+Ndown = 2
+ground_residual_limit = 1e-9
+ground_degeneracy_gap_min = 1e-8
+spin_window_above_ground = 6.0
+absolute_tolerance = 1e-8
+probability_tolerance = 1e-9
+[[cases]]
+id="P01"
+ready=true
+observable="Renyi2,3,4 power traces and entropies, A=[0,1]"
+[[cases]]
+id="P02"
+ready=true
+observable="All fixed-N4 energy/S2 multiplets within6t of ground, allSz"
+[[cases]]
+id="P03"
+ready=true
+observable="Full spin-resolved1RDM,natural occupations,degenerate eigenspace projectors"
+[[cases]]
+id="P04"
+ready=true
+observable="Full Szz matrix,all fourmomentum values,dominant wavevector"
+[[cases]]
+id="P05"
+ready=true
+observable="Full connected density matrix andall fourmomentum values"
+[[cases]]
+id="P06"
+ready=true
+observable="Full onsite andnormalized nearest-neighbor bond-singlet pair matrices"
+[[cases]]
+id="P16"
+ready=true
+observable="Disjoint I2, A=[0],B=[2],union=[0,2],threeunderlying purities"
+[[cases]]
+id="P11"
+ready=false
+observable="TeNPy charge-resolved entanglement levels; adapter pending"
+[[cases]]
+id="P12"
+ready=false
+observable="TeNPy doped Friedel profile; adapter pending"
+[[cases]]
+id="P15"
+ready=false
+observable="TeNPy charge-parity string; adapter pending"
