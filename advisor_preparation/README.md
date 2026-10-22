@@ -71,9 +71,9 @@ questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
 The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has completed
-31 questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/thermal_tenpy_v6_attempt02/README.md)
-records **31 PASS and 69 NOT_RUN**. These checks found a missing fermionic
+32 questions on ISAAC. Its latest
+[independently audited ledger](distinct_benchmarks/reporting/reports/full32_public_replay_v7/README.md)
+records **32 PASS and 68 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
@@ -83,8 +83,12 @@ with successful diagnostic/resource audits; neither pilot adds a distinct PASS.
 The full independent TeNPy/ITensor DMRG comparison passed all three registered
 questions: symmetry-resolved entanglement, doped density profiles and nonlocal
 charge-parity strings. Both convergence arms and both eight-site fixtures passed
-their energy, variance, sector and observable gates. The fixed 400-repetition
-DQMC interval-coverage study is running; no coverage pass is claimed yet.
+their energy, variance, sector and observable gates. The fixed 400-trial
+DQMC interval-coverage study passed: nominal 95% energy intervals covered the
+independent finite-time-step target in 378/400 trials (94.5%). All trial-quality
+gates passed, and a separate standard-library audit reproduced the result.
+This is one defined energy-error question at the registered four-site fixture;
+it does not establish coverage for entropy or other model/size regimes.
 Three further thermal-ensemble/response questions passed independent QuSpin
 checks: cooling-to-ground entropy, fixed-total-number versus matched-mean grand
 ensembles, and fixed-chemical-potential energy response. These four-site fixtures

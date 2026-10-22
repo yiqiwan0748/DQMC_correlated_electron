@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/thermal_tenpy_v6_attempt02/README.md)
-records **31 PASS and 69 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/full32_public_replay_v7/README.md)
+records **32 PASS and 68 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -98,8 +98,28 @@ TeNPy oracle and 191 seconds for the user-ITensor adapter, about 1.1 GiB peak RS
 These are finite-fixture results, with optimizer credit retained for the
 independent libraries. They do not certify all DMRG model/size regimes.
 
-The [latest immutable audit](reporting/reports/thermal_tenpy_v6_attempt02/README.md)
+The [latest immutable audit](reporting/reports/full32_public_replay_v7/README.md)
 replays frozen comparators and preserves all source hashes and earlier reports.
 One cross-platform Fourier-error replay difference of 8.85e-18 is recorded as
 machine roundoff; scientific acceptance gates remain unchanged. The earlier
 strict receipt-equality audit is preserved rather than rewritten.
+
+## Repeated DQMC interval coverage
+
+The frozen X06 study passed for the registered four-site, half-filled Hubbard
+fixture (U/t=2, beta*t=1, time step*t=0.1). The actual corrected DQMC kernel
+produced 400 independent eight-chain trials; nominal 95% Student intervals
+contained the independent finite-time-step energy in **378/400 trials (94.5%)**.
+The 99% exact coverage interval is [0.908725, 0.970173], and the 99% mean-energy
+bias interval is [-0.000566704, 0.000793669] in hopping units. All 400 trials
+passed their frozen convergence and effective-sample gates. No trial was removed
+or rerun. Sampling job 6457947 completed in 548 seconds, about 824 MiB peak RSS.
+
+The [raw paired-bin data and frozen audit](results/distinct_X06_final01/) and
+[separate standard-library implementation](dqmc_coverage/audits/independent_stdlib_audit.py)
+reproduce all 400 trials, 3,200 chains and 204,800 paired bins. The
+[latest ledger](reporting/reports/full32_public_replay_v7/README.md) was rebuilt
+using analysis code checked out from the exact published commit, with all 53
+input hashes verified. This validates this energy-interval procedure for the
+specified fixture; it does not certify entropy intervals, other regimes or the
+historical ten-site calculation's systematic errors.
