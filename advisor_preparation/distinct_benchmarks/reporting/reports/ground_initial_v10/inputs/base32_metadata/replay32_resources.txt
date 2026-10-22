@@ -1,0 +1,23 @@
+	Command being timed: "timeout 120 /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/quspin-venv/bin/python /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/public_record_replay32_20261022/advisor_preparation/distinct_benchmarks/reporting/merge_later_tranches.py --thermal-dir /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/thermal_bridges_6457908 --tenpy-dir /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/tenpy_full_6457944 --coverage-final /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/distinct_X06_final01/shard_1_400.toml --renyi-source-root /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/renyi_disjoint_corrected --coverage-oracle /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/quspin_attempt02/oracle_values.toml --history /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/tenpy_pilot_6457724/comparison.json /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/distinct_X06_pilot01/summary.json --output-dir /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/full32_replayed_from_public_attempt01"
+	User time (seconds): 13.06
+	System time (seconds): 0.48
+	Percent of CPU this job got: 73%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:18.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 117836
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 762
+	Minor (reclaiming a frame) page faults: 70541
+	Voluntary context switches: 7275
+	Involuntary context switches: 68
+	Swaps: 0
+	File system inputs: 129504
+	File system outputs: 16848
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

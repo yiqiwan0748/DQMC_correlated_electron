@@ -1,0 +1,236 @@
+{
+  "schema": "bethe_l32_portable_pilot_audit_v1",
+  "status": "PASS",
+  "checks": 177,
+  "scientific_completions": 0,
+  "catalogue_status": {
+    "A18": "NOT_RUN",
+    "A19": "NOT_RUN",
+    "A20": "NOT_RUN"
+  },
+  "refined": {
+    "energy_per_site": -0.5623305698767918,
+    "charge_gap": 1.4026135090826557,
+    "double_occupancy": 0.09816194113588342
+  },
+  "coarse_refined_errors": {
+    "energy_per_site": 2.8779540972578843e-09,
+    "charge_gap": 1.352910707907995e-06,
+    "double_occupancy": 3.5293537398173314e-09
+  },
+  "source_archive_sha256": "f89d0b905a57988154d6c53dac6dd5ff307ac4b60848dd89775f53711816c581",
+  "source_members": 12,
+  "remote_text_files": 12,
+  "native_source_environment_pins": 3,
+  "auditor_sha256": "8c93bb6fe7f1128cc168f79b56d8b4366a7773058605aa0c3f2bba4b23914291",
+  "adapted_from_portable_L24_auditor_sha256": "0d4904d6de8004165a8925f69129ff56f99d38999733fc221d44e1d1e4d5d64c",
+  "frozen_summary_replay_sha256": "ec29fff7f614eaee16122532ec8061fb549d73e53ad48b4f6cce5f41fde4946b",
+  "resources": {
+    "job_elapsed_seconds": 1316,
+    "target_adapter_seconds": 1289.4115431308746,
+    "batch_peak_rss_kib": 1735276,
+    "target_process_peak_rss_kib": 1740640,
+    "frozen_source_wall_minutes": 60,
+    "administrative_effective_wall_minutes": 45,
+    "administrative_override_changes_physics_or_gates": false
+  },
+  "inputs": [
+    {
+      "path": "results/bethe_l32_pilot_6458711/target.toml",
+      "bytes": 18903,
+      "sha256": "c8fffce059493d37332e239cea83f45f03b0de3a38923f1bff12ca4d2b501327"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/oracle.json",
+      "bytes": 2387,
+      "sha256": "190d027743abe2da2a11144f8a52ee808efa7eb78dc74bc6721565ff492cd5b8"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/summary.json",
+      "bytes": 2017,
+      "sha256": "ec29fff7f614eaee16122532ec8061fb549d73e53ad48b4f6cce5f41fde4946b"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/oracle.resources.txt",
+      "bytes": 1154,
+      "sha256": "edd1d891ff32c42a027fd0f5f4a801c2b8eea46bd1b008abd4ec546e72ebb57c"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/target.resources.txt",
+      "bytes": 1299,
+      "sha256": "23eb2b016f4e04577c3b4dd0369753a65bfc3e2c284bceee038d8dd9c5daa042"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/L32_half_coarse.toml",
+      "bytes": 2934,
+      "sha256": "11db54d798a5409990aceeeda6e6c70a298456ed738e88832daddb71a70d212d"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/L32_half_refined.toml",
+      "bytes": 3066,
+      "sha256": "33f7f6229c2370a43492b7a9fef193de96abb1b2b48e6f53f1a0663b0946ee44"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/L32_minus_coarse.toml",
+      "bytes": 2909,
+      "sha256": "60ffc37bfe52fe71ba47cfc26648469d0042655c11a054def1fc0ae178d56b31"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/L32_minus_refined.toml",
+      "bytes": 3074,
+      "sha256": "822cc4b65c160034feac64e0bc5e8790dac22ae0fd54108dd8b7db551e019c29"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/L32_plus_coarse.toml",
+      "bytes": 2920,
+      "sha256": "7e961160df1fb5ef019b4894592839af646fbaf24857fec338934d68a836f863"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/L32_plus_refined.toml",
+      "bytes": 3065,
+      "sha256": "0d0b797b1340fc8d892836cacfa9cfabf6a81150f19c154a1487acc27ad361c3"
+    },
+    {
+      "path": "logs/bethe_l32_pilot_6458711.log",
+      "bytes": 12970,
+      "sha256": "dc079c2b1200d12817cebcf081f17da0be7bd64bf8f83888a5569a46aa51dabb"
+    },
+    {
+      "path": "results/bethe_l32_pilot_6458711/remote_transfer_metadata.json",
+      "bytes": 2404,
+      "sha256": "98803ec2ed4ce0afaa8bd5469b72fc3f9ec3f980af680c414089d262750ea3f9"
+    },
+    {
+      "path": "source_releases/bethe-l32-pilot-v3-source.tar.gz",
+      "bytes": 18799,
+      "sha256": "f89d0b905a57988154d6c53dac6dd5ff307ac4b60848dd89775f53711816c581"
+    },
+    {
+      "path": "source_releases/bethe-l32-pilot-v3-freeze.json",
+      "bytes": 1742,
+      "sha256": "8a1a775de3cbd4ca5a8c0a4f80789f62f96d2e1ac7d4c8fa3fc42039f94e9a1f"
+    },
+    {
+      "path": "reporting/reports/bethe_l24_audit_6458547_portable_v2/auditor_source.py",
+      "bytes": 13178,
+      "sha256": "0d4904d6de8004165a8925f69129ff56f99d38999733fc221d44e1d1e4d5d64c"
+    },
+    {
+      "path": "reporting/reports/bethe_l24_audit_6458547_portable_v2/audit.json",
+      "bytes": 3648,
+      "sha256": "fbdb45d74d59895196799b5af3d8c87b6de6cddce9733a33d77a3d646189f176"
+    },
+    {
+      "path": "bethe_ansatz_l32/README.md",
+      "bytes": 7335,
+      "sha256": "75f0af22310f3429353eefd69484cf11ab5818eac85cdb0dcd939f383eb4f846"
+    },
+    {
+      "path": "bethe_ansatz_l32/SHA256SUMS",
+      "bytes": 947,
+      "sha256": "524de9340386bae3010e658eadb38bfb27e0cb23255e6d46429b3753798784ad"
+    },
+    {
+      "path": "bethe_ansatz_l32/engineering_gate_anchor_66950c7.md",
+      "bytes": 6992,
+      "sha256": "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6"
+    },
+    {
+      "path": "bethe_ansatz_l32/engineering_prerequisite_audit.json",
+      "bytes": 3648,
+      "sha256": "fbdb45d74d59895196799b5af3d8c87b6de6cddce9733a33d77a3d646189f176"
+    },
+    {
+      "path": "bethe_ansatz_l32/oracle_lieb_wu.py",
+      "bytes": 4159,
+      "sha256": "c9ed6807fe3391e34159afe0c2bcbb3b3ed8d68d64b38708aaa45f9c5f72ad26"
+    },
+    {
+      "path": "bethe_ansatz_l32/pilot.sbatch",
+      "bytes": 2538,
+      "sha256": "9c39f47d616fb278443c445e7f631398b932d22af70214c1212268e0f3df6334"
+    },
+    {
+      "path": "bethe_ansatz_l32/pilot.toml",
+      "bytes": 2722,
+      "sha256": "733de42c0d7cf1e1efe2eab96c5d849f8177d69fd700dd3942b9fc87dc603893"
+    },
+    {
+      "path": "bethe_ansatz_l32/pilot_target.jl",
+      "bytes": 5163,
+      "sha256": "e3f5d54d6fe9ae60dcd40d8beffb167e1a077c51ff6bb10cc2f9f43f87a439d2"
+    },
+    {
+      "path": "bethe_ansatz_l32/protocol_changes.diff",
+      "bytes": 5610,
+      "sha256": "87107a643ba11be7966b653bf61d336d5826d5e5c1df76a8d46fff857217d671"
+    },
+    {
+      "path": "bethe_ansatz_l32/protocol_changes.json",
+      "bytes": 3470,
+      "sha256": "fef182bfd801206978ef53b4f889086b3ae53b0edd9c83ed6a2846a6ecbce959"
+    },
+    {
+      "path": "bethe_ansatz_l32/static_review.json",
+      "bytes": 3285,
+      "sha256": "ebbd416555f76ed6422e7bb53f97c0a07bcdf3edc2a361ae97278c4ecc5ed270"
+    },
+    {
+      "path": "bethe_ansatz_l32/summarize_pilot.py",
+      "bytes": 7074,
+      "sha256": "3786244bb2bfdc4ad0672e023b5be70bf16724534fee1b91f98f4e52d29892b7"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl",
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/Project.toml",
+      "bytes": 950,
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/Manifest.toml",
+      "bytes": 61818,
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+    }
+  ],
+  "input_sha256": {
+    "results/bethe_l32_pilot_6458711/target.toml": "c8fffce059493d37332e239cea83f45f03b0de3a38923f1bff12ca4d2b501327",
+    "results/bethe_l32_pilot_6458711/oracle.json": "190d027743abe2da2a11144f8a52ee808efa7eb78dc74bc6721565ff492cd5b8",
+    "results/bethe_l32_pilot_6458711/summary.json": "ec29fff7f614eaee16122532ec8061fb549d73e53ad48b4f6cce5f41fde4946b",
+    "results/bethe_l32_pilot_6458711/oracle.resources.txt": "edd1d891ff32c42a027fd0f5f4a801c2b8eea46bd1b008abd4ec546e72ebb57c",
+    "results/bethe_l32_pilot_6458711/target.resources.txt": "23eb2b016f4e04577c3b4dd0369753a65bfc3e2c284bceee038d8dd9c5daa042",
+    "results/bethe_l32_pilot_6458711/L32_half_coarse.toml": "11db54d798a5409990aceeeda6e6c70a298456ed738e88832daddb71a70d212d",
+    "results/bethe_l32_pilot_6458711/L32_half_refined.toml": "33f7f6229c2370a43492b7a9fef193de96abb1b2b48e6f53f1a0663b0946ee44",
+    "results/bethe_l32_pilot_6458711/L32_minus_coarse.toml": "60ffc37bfe52fe71ba47cfc26648469d0042655c11a054def1fc0ae178d56b31",
+    "results/bethe_l32_pilot_6458711/L32_minus_refined.toml": "822cc4b65c160034feac64e0bc5e8790dac22ae0fd54108dd8b7db551e019c29",
+    "results/bethe_l32_pilot_6458711/L32_plus_coarse.toml": "7e961160df1fb5ef019b4894592839af646fbaf24857fec338934d68a836f863",
+    "results/bethe_l32_pilot_6458711/L32_plus_refined.toml": "0d0b797b1340fc8d892836cacfa9cfabf6a81150f19c154a1487acc27ad361c3",
+    "logs/bethe_l32_pilot_6458711.log": "dc079c2b1200d12817cebcf081f17da0be7bd64bf8f83888a5569a46aa51dabb",
+    "results/bethe_l32_pilot_6458711/remote_transfer_metadata.json": "98803ec2ed4ce0afaa8bd5469b72fc3f9ec3f980af680c414089d262750ea3f9",
+    "source_releases/bethe-l32-pilot-v3-source.tar.gz": "f89d0b905a57988154d6c53dac6dd5ff307ac4b60848dd89775f53711816c581",
+    "source_releases/bethe-l32-pilot-v3-freeze.json": "8a1a775de3cbd4ca5a8c0a4f80789f62f96d2e1ac7d4c8fa3fc42039f94e9a1f",
+    "reporting/reports/bethe_l24_audit_6458547_portable_v2/auditor_source.py": "0d4904d6de8004165a8925f69129ff56f99d38999733fc221d44e1d1e4d5d64c",
+    "reporting/reports/bethe_l24_audit_6458547_portable_v2/audit.json": "fbdb45d74d59895196799b5af3d8c87b6de6cddce9733a33d77a3d646189f176",
+    "bethe_ansatz_l32/README.md": "75f0af22310f3429353eefd69484cf11ab5818eac85cdb0dcd939f383eb4f846",
+    "bethe_ansatz_l32/SHA256SUMS": "524de9340386bae3010e658eadb38bfb27e0cb23255e6d46429b3753798784ad",
+    "bethe_ansatz_l32/engineering_gate_anchor_66950c7.md": "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6",
+    "bethe_ansatz_l32/engineering_prerequisite_audit.json": "fbdb45d74d59895196799b5af3d8c87b6de6cddce9733a33d77a3d646189f176",
+    "bethe_ansatz_l32/oracle_lieb_wu.py": "c9ed6807fe3391e34159afe0c2bcbb3b3ed8d68d64b38708aaa45f9c5f72ad26",
+    "bethe_ansatz_l32/pilot.sbatch": "9c39f47d616fb278443c445e7f631398b932d22af70214c1212268e0f3df6334",
+    "bethe_ansatz_l32/pilot.toml": "733de42c0d7cf1e1efe2eab96c5d849f8177d69fd700dd3942b9fc87dc603893",
+    "bethe_ansatz_l32/pilot_target.jl": "e3f5d54d6fe9ae60dcd40d8beffb167e1a077c51ff6bb10cc2f9f43f87a439d2",
+    "bethe_ansatz_l32/protocol_changes.diff": "87107a643ba11be7966b653bf61d336d5826d5e5c1df76a8d46fff857217d671",
+    "bethe_ansatz_l32/protocol_changes.json": "fef182bfd801206978ef53b4f889086b3ae53b0edd9c83ed6a2846a6ecbce959",
+    "bethe_ansatz_l32/static_review.json": "ebbd416555f76ed6422e7bb53f97c0a07bcdf3edc2a361ae97278c4ecc5ed270",
+    "bethe_ansatz_l32/summarize_pilot.py": "3786244bb2bfdc4ad0672e023b5be70bf16724534fee1b91f98f4e52d29892b7",
+    "../validated_package/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+    "../validated_package/HubbardRenyiDQMC/Project.toml": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "../validated_package/HubbardRenyiDQMC/Manifest.toml": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+  },
+  "physics_executed": false,
+  "future_growth_planned": false,
+  "scope": "Postprocessing only; single finiteL32 OBC pilot is not a thermodynamic benchmark. A18/A19/A20 remainNOT_RUN; no new scientific jobs or submissions. Prior engineering admission evidence preserved without deriving permission for larger execution."
+}

@@ -1,0 +1,48 @@
+{
+  "approved_scope": "Only excluded timing pilot; no production precision campaign or fits implemented.",
+  "checks": {
+    "JDQMC_pinned_manifest_version_and_tree": true,
+    "TOML_parse": true,
+    "actual_initialization_seeds_positive_unique": 36,
+    "bash_syntax": true,
+    "missing_timeout_receipts_produce_UNRESOLVED_NOT_RUN_zero": true,
+    "native_UInt64_formula_static_match": true,
+    "no_scientific_backend_imported_during_checks": true,
+    "python_AST": true,
+    "recursive_Julia_syntax_only": true,
+    "seed_regeneration_byte_identical": true,
+    "source_hashes_before_include_count": 6,
+    "source_hashes_match_actual_corrected_root": true
+  },
+  "created_utc": "2026-10-22T20:10:28.996567+00:00",
+  "jobs_submitted": false,
+  "peer_readonly_review": {
+    "reviewer": "validation_design",
+    "scope": "Actual API/config and cumulative deltaG, physical energy/centering, full-Fock oracle, finite-h/cut similarity, full-grid receipts and zero-completion logic. No physics or edits.",
+    "status": "No blocking math/API issue found"
+  },
+  "physics_executed": false,
+  "reviewed_file_sha256": {
+    "README.md": "78d130aa5ee63dd37f5287aabc1664428bb973f844c2b33683b8481140bd37d7",
+    "generate_seeds.py": "7afbad50f670e0b9b7f143aadcd572547b48935562e1c57b855bf4ab01aceb2b",
+    "manifest.toml": "8598916cdc3173be8115f360f3e29c49f3e6e44d229994e8bb73d38c4223587d",
+    "oracle_quspin.py": "8ebd57c42a6fe5c066d255bb1325eb95bae2b637ae9b1b2c98531b49d9251149",
+    "pilot.sbatch": "80c5bad749a4b5460fdc4339ff1f80b3a2353634234e77d13bd03081599029d5",
+    "primary_source_review.json": "417f86fc816119657a751c6d5ebc30b4251de5d305fc429e3095e7b68f5a4bc5",
+    "seeds.toml": "2522c3b6e5ce8e4d2a37a6750dac304e1984e158bbef0611c2df287370490356",
+    "summarize_pilot.py": "5576b1390aafaa34b736e239761e5563c4b8eab181a50dc2fe97523ee2152ff1",
+    "target_pilot.jl": "7cf5ddb08297a828c88e3bd2b9c845245105ed3c732b16d6c387cce3d084b478"
+  },
+  "schema": "X01_TIMING_PILOT_STATIC_REVIEW_V1",
+  "scientific_completions": 0,
+  "source_hashes": {
+    "Manifest.toml": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+    "Project.toml": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "run/run_lambda_node.jl": "5d7f7a1ff45a8cf69f061d009ca258d829eb4bbbdd36d5b5acf649d76c246e21",
+    "src/HubbardRenyiDQMC.jl": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721",
+    "src/dqmc_kernel.jl": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+    "src/grover_rank1_update.jl": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+  },
+  "status": "PASS_STATIC_ONLY",
+  "unapproved_full_proposal_sha256": "8208dc93334af1eecbd42b086016df60210ebffebbc9e2ff3fdade04bf595d01"
+}

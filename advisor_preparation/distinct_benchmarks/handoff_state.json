@@ -1,0 +1,104 @@
+{
+  "schema": "portable_public_handoff_v1",
+  "recorded_utc": "2026-10-22T20:31:28.180884+00:00",
+  "user_stop_deadline_local": "2026-10-22T17:00:00-04:00",
+  "user_stop_deadline_utc": "2026-10-22T21:00:00Z",
+  "new_scientific_submissions_authorized": false,
+  "resume_requires_new_explicit_human_instruction": true,
+  "final_stop_or_results_verification": "ALL_CAMPAIGN_JOBS_STOPPED_BEFORE_USER_DEADLINE; L32_INDEPENDENTLY_AUDITED_PILOT_QUALITY_PASS_ZERO_CATALOGUE_COMPLETIONS",
+  "all_campaign_jobs_stopped_confirmed": true,
+  "latest_scientific_ledger": "reporting/reports/ground_initial_v10/ledger_100.json",
+  "ledger_sha256": "abee1b7af4263979880d24afc679d1553567e2141caf16c41888c7c46cf2e228",
+  "scientific_counts": {
+    "PASS": 39,
+    "FAIL": 0,
+    "UNRESOLVED": 1,
+    "NOT_RUN": 60
+  },
+  "submitted_stage_receipts": [
+    "submissions/bethe_l32_pilot_6458711.json",
+    "submissions/ground_certification_precision_v2_6458825.json",
+    "submissions/alf_measurement_proof_v5_6458826.json",
+    "submissions/continuum_bias_timing_pilot_6458828.json"
+  ],
+  "job_state_note": "Original submission receipts and the initial stop receipt are unchanged. Three stages never started. L32 completed at 16:22:48 EDT; its pilot adds no catalogue completion and its independent 177-check receipt audit passes.",
+  "source_versions": {
+    "ground_v1": {
+      "freeze": "source_releases/ground-certification-v1-freeze.json",
+      "archive_sha256": "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4"
+    },
+    "ground_precision_v2": {
+      "freeze": "source_releases/ground-certification-precision-v2-freeze.json",
+      "archive_sha256": "78dd8f5cd33b35d4acba0d7857c0c75824d023039d8c0412946c5cdbfae72489"
+    },
+    "alf_v5": {
+      "freeze": "source_releases/alf-measurement-proof-v5-submission-freeze.json",
+      "archive_sha256": "7b304bef60801ba71ede97117d26a49f0ab71ec14e7d3ac0c5fff26af7a4103d"
+    },
+    "X01_pilot": {
+      "freeze": "source_releases/continuum-bias-timing-pilot-v1-freeze.json",
+      "archive_sha256": "f9c4350bed37e7f75db78f6271048cef232f9b2f918ca925518fab139a62d483"
+    },
+    "L32_pilot": {
+      "freeze": "source_releases/bethe-l32-pilot-v3-freeze.json",
+      "archive_sha256": "f89d0b905a57988154d6c53dac6dd5ff307ac4b60848dd89775f53711816c581"
+    }
+  },
+  "portable_replay": "reporting/GROUND_INITIAL_V10_REPRODUCE.md",
+  "authoritative_stop_receipt": "submissions/user_stop_deadline_20261022.json",
+  "authoritative_stop_receipt_sha256": "057fa332e3c5f924d3ec5344bbcb36577860a2ccb62b99dd248a493902404389",
+  "automation_status": "PAUSED_TOOL_VERIFIED",
+  "cancelled_before_start": [
+    {
+      "job_id": "6458825",
+      "state": "CANCELLED by 12640",
+      "start": "None",
+      "elapsed_seconds": 0,
+      "end_EDT": "2026-10-22 16:22:12",
+      "scientific_outcome": "NOT_RUN_USER_STOP"
+    },
+    {
+      "job_id": "6458826",
+      "state": "CANCELLED by 12640",
+      "start": "None",
+      "elapsed_seconds": 0,
+      "end_EDT": "2026-10-22 16:22:12",
+      "scientific_outcome": "NOT_RUN_USER_STOP"
+    },
+    {
+      "job_id": "6458828",
+      "state": "CANCELLED by 12640",
+      "start": "None",
+      "elapsed_seconds": 0,
+      "end_EDT": "2026-10-22 16:22:12",
+      "scientific_outcome": "NOT_RUN_USER_STOP"
+    }
+  ],
+  "completed_L32_pilot": {
+    "job_id": "6458711",
+    "status_at_receipt": "COMPLETED_PILOT_ONLY",
+    "start_EDT": "2026-10-22 16:00:52",
+    "original_wall_limit_minutes": 60,
+    "user_stop_override_wall_limit_minutes": 45,
+    "scheduler_end_EDT": "2026-10-22 16:45:52",
+    "Requeue": 0,
+    "cpus": 1,
+    "memory_mb": 3500,
+    "scientific_completions": 0,
+    "rule": "Independent audit passes all 177 checks for the six finite-size pilot solves. No catalogue completion is added. No automatic resume or new scientific submission is authorized.",
+    "end_EDT": "2026-10-22 16:22:48",
+    "elapsed_seconds": 1316,
+    "exit_code": "0:0",
+    "MaxRSS_KiB": 1735276,
+    "reported_pilot_quality": "PASS",
+    "independent_receipt_audit": "PASS",
+    "independent_audit": "reporting/reports/bethe_l32_audit_6458711_portable_v1/audit.json",
+    "independent_audit_sha256": "dd93d8b8adaa4d8e99d5da305ae505e1eec5fe653fba337bfedc6b0f42e32095",
+    "independent_audit_checks": 177,
+    "frozen_summarizer_replay_sha256": "ec29fff7f614eaee16122532ec8061fb549d73e53ad48b4f6cce5f41fde4946b"
+  },
+  "final_stop_receipt": "submissions/user_stop_final_state_20261022.json",
+  "final_stop_receipt_sha256": "b1cf170bd564bb1b44edf304b84b647c4e45969c1b98288cc38e17528fa85202",
+  "final_scheduler_accounting": "submissions/user_stop_final_accounting_20261022.txt",
+  "final_scheduler_accounting_sha256": "2b6b02877c5a914e84bd382a0bb596402dcc510296c2a90c93dc16ed9aa44369"
+}

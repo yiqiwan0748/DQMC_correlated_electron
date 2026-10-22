@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/two_orbital_v9/README.md)
-records **38 PASS and 62 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/ground_initial_v10/README.md)
+records **39 PASS, 1 UNRESOLVED and 60 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -126,7 +126,7 @@ historical ten-site calculation's systematic errors.
 
 ## Independent real-time, spectral and thermal-response additions
 
-P08, P09 and P10 passed on ISAAC job6458468. The actual user ED/thermal-ED
+P08, P09 and P10 passed on ISAAC job 6458468. The actual user ED/thermal-ED
 Hamiltonian and state routines, with declared new measurement adapters, agree
 with independent QuSpin calculations for a charge-density quench (25 times),
 all eight spin/momentum spectral channels with complete addition/removal sectors,
@@ -144,7 +144,7 @@ completed in3m10s; target process peak RSS was about562MiB.
 
 ## Two-orbital analytical limits
 
-A15/A16/A17 passed on job6458671 after the separately audited resource pilot.
+A15/A16/A17 passed on job 6458671 after the separately audited resource pilot.
 The complete one-electron ED spectra and orbital projectors agree with an
 independently constructed one-body Hamiltonian (energy error1.20e-14; projector
 error4.06e-15). All held-out2048-mesh DOS curves match the elliptic-integral
@@ -159,3 +159,49 @@ all35 prior PASS rows and every historical receipt. All796 detailed gates,
 including lower bounds and positivity, retain their own inequality directions.
 A25 remains NOT_RUN because this release does not provide a native flux-threaded
 one-dimensional ring. [Raw data and audit](results/two_orbital_analytic_full_6458671/).
+
+
+## Ground-manifold comparison and retained precision failure
+
+ISAAC job 6458708 evaluated both original certification questions in 5 min 53 s.
+Scheduler completion produced **X12 PASS and X09 UNRESOLVED**. The
+[original mixed-status leaf](reporting/reports/ground_initial_v10/README.md)
+keeps all 38 preceding passing rows, the other 98 row objects and every prior
+receipt. Its independently replayed comparator preserves 15 failed detailed
+gates for three native DMRG starts, including signed variance, external energy,
+ground-projector fidelity and the resulting certificate. The eight-sweep
+attempt and its thresholds are not overwritten. This new certification adapter
+used eight sweeps, compared with the production entry point's 14-sweep default.
+Full Hamiltonian and MPO matrices agree with independent QuSpin; the observed
+shortfall is optimization precision under that adapter budget, without a
+demonstrated Hamiltonian or package defect.
+
+X12 compares the complete canonical total-N3 dimer spectrum and ten prescribed
+pure/coherent/mixed/Gibbs states, including both subsystem cuts and all physical
+spin components. Its limiting state is the full equal ground-manifold mixture,
+not an arbitrary single eigenvector. Manufactured excited MPS states in X09
+are explicitly diagnostic challenges; they do not claim a natural optimizer
+failure. [Raw outputs and independent audit](results/ground_certification_6458708/)
+and a [self-contained reproduction command](reporting/GROUND_INITIAL_V10_REPRODUCE.md)
+retain source/runtime closure and the complete physical grids.
+
+## User-stop cancellation and portable handoff
+
+The user requested all campaign work stop by 17:00 EDT on 22 October 2026, regardless of outcomes. Automatic follow-up is paused. The three stages below were cancelled before starting at 16:22:12 EDT. L32 pilot 6458711 completed at 16:22:48 EDT after 21m56s, exit 0 and MaxRSS 1,735,276 KiB. Its pilot quality PASS has been [independently audited](reporting/reports/bethe_l32_audit_6458711_portable_v1/README.md) with 177 checks and adds no catalogue completion. All campaign jobs are stopped before the deadline. [The initial stop receipt](submissions/user_stop_deadline_20261022.json) preserves the original submission history; [final accounting](submissions/user_stop_final_state_20261022.json) confirms all campaign jobs are terminal. These cancellations add no scientific failures or passes.
+
+| Stage | Receipt | Scientific status |
+|---|---|---|
+| X09/X12 precision revision2, same fixtures and gates | [6458825](submissions/ground_certification_precision_v2_6458825.json) | Cancelled unrun for user deadline; original X09 UNRESOLVED retained |
+| Native ALF full-matrix observer eligibility revision5 | [6458826](submissions/alf_measurement_proof_v5_6458826.json) | Cancelled unrun; P21 NOT_RUN; proofs and sampling still required |
+| Excluded X01 continuum timing pilot | [6458828](submissions/continuum_bias_timing_pilot_6458828.json) | Cancelled unrun; X01 NOT_RUN; zero scientific completions |
+
+The [precision revision](ground_certification_precision_v2/README.md) increases
+optimizer precision without changing its original acceptance gates.
+ALF revision4's [preserved startup failure](results/alf_adapter_proof_v4_6458709/failure_audit.json)
+followed successful compilation/linkage and a pinned-provider check. The
+[revision5 seed-input repair](alf_preparation/measurement_preparation_v5/README.md)
+changes no Fortran, propagation, observer, proof or tolerance from revision4.
+The [X01 pilot](continuum_bias/pilot_v1/README.md) measures timing and numerical
+eligibility only; it performs no production continuum fit or equivalence decision.
+
+A [portable handoff](PORTABLE_HANDOFF.md) and [machine-readable state](handoff_state.json) identify exact ledgers, frozen versions, raw receipts and replay entry points for another computer. L32 independent receipt audit passes; its finite-size pilot does not change the ledger. No automatic resume is authorized; a new explicit human instruction and fresh scheduler/resource reconciliation are required.

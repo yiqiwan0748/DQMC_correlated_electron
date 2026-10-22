@@ -70,10 +70,10 @@ questions. It is a broader research programme, with unsupported and unexecuted
 questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
-The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has completed
-38 questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/two_orbital_v9/README.md)
-records **38 PASS and 62 NOT_RUN**. These checks found a missing fermionic
+The new [distinct-benchmark campaign](distinct_benchmarks/README.md) records 39 passing questions and one unresolved
+precision question on ISAAC. Its latest
+[independently audited ledger](distinct_benchmarks/reporting/reports/ground_initial_v10/README.md)
+records **39 PASS, 1 UNRESOLVED and 60 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
@@ -104,3 +104,34 @@ Three two-orbital analytical limits also passed: complete one-electron orbital
 projectors, the square-lattice DOS singularity with a held-out momentum mesh,
 and thermal factorization of independent interacting orbitals. Source versions,
 normalizations, smoothing and all inequality gates remain explicit.
+
+
+## Ground-manifold comparison and unresolved precision
+
+[X12 passed](distinct_benchmarks/reporting/reports/ground_initial_v10/README.md)
+for the interacting canonical three-particle dimer: pure and coherent spin states,
+equal ground-manifold mixtures, basis-rotated mixtures and finite-temperature
+Gibbs states are compared against their own independent QuSpin references.
+X09 remains **UNRESOLVED** at its original frozen eight-sweep DMRG budget.
+The new certification adapter used eight sweeps; the production entry point
+has a 14-sweep default. Full Hamiltonian and MPO matrices agree with independent
+QuSpin. This attempt shows insufficient optimization precision under the adapter
+budget, without demonstrating a Hamiltonian or package defect.
+Three of four native starts miss the variance requirement, with their energy,
+fidelity and certificate checks retained. Small final truncation does not replace
+external ground-state certification. The complete original states and 15 failed
+detailed gates remain visible; no acceptance threshold changed.
+
+A [separate precision revision](distinct_benchmarks/ground_certification_precision_v2/README.md)
+retains the same questions, physical fixtures, starts and scientific gates.
+Its job 6458825 was cancelled before starting for the user deadline; it adds no pass or failure. Native ALF observer
+revision4 compiled and passed the pinned-library check, then stopped because
+its fresh proof directory lacked the required seed input. The [revision5 input
+repair](distinct_benchmarks/alf_preparation/measurement_preparation_v5/README.md)
+was cancelled before start as job 6458826; P21 remains NOT_RUN.
+The [X01 timing pilot](distinct_benchmarks/continuum_bias/pilot_v1/README.md),
+cancelled before start as job 6458828, is excluded from future production fits and contributes zero
+scientific completions. Submission receipts preserve the serial dependency chain.
+
+
+The user requested a hard stop by 22 October 2026, 17:00 EDT (21:00 UTC), regardless of outcomes. Automatic follow-up is paused. The [stop receipt](distinct_benchmarks/submissions/user_stop_deadline_20261022.json) confirms all three queued stages were cancelled before starting. The L32 pilot completed at 16:22:48 EDT (21m56s, exit 0); its pilot quality PASS has been independently audited with 177 checks and adds no catalogue completion. [Final stop accounting](distinct_benchmarks/submissions/user_stop_final_state_20261022.json) confirms all campaign jobs are stopped before the deadline. A [portable public handoff](distinct_benchmarks/PORTABLE_HANDOFF.md) records source versions, raw receipts and replay commands. Resume scientific work only after a new explicit human instruction.

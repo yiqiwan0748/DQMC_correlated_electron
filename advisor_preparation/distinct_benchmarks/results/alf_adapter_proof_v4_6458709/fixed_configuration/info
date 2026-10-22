@@ -1,0 +1,20 @@
+ START TIME: 2026-10-22T16:00:45.051-04:00
+ =====================================
+ Model is      : Hubbard                                                         
+ Lattice is    : Square                                                          
+ # unit cells  :            4
+ # of orbitals :            1
+ Flux_1        :    0.0000000000000000     
+ Flux_2        :    0.0000000000000000     
+ Twist as phase factor in bulk
+ HS  couples to z-component of spin
+ Checkerboard  :  F
+ Symm. decomp  :  F
+ Finite temperture version
+ Beta          :    1.0000000000000000     
+ dtau,Ltrot_eff:   0.10000000000000001               10
+ N_SUN         :            2
+ N_FL          :            2
+ t             :    1.0000000000000000     
+ Ham_U         :    2.0000000000000000     
+ Ham_chem      :    0.0000000000000000     

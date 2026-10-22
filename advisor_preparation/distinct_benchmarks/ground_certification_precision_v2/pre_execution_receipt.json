@@ -1,0 +1,40 @@
+{
+  "schema": "ground_certification_precision_pre_execution_v2",
+  "created_utc": "2026-10-22T20:06:53.588988+00:00",
+  "status": "FROZEN_NOT_EXECUTED",
+  "catalogue_ids": [
+    "X09",
+    "X12"
+  ],
+  "scientific_completions": 0,
+  "files": {
+    "manifest.toml": "2a543304f53c44842aac75eacd4b8800e3cc7573c6bcc04495fad5fbfc24986a",
+    "oracle_quspin.py": "77cf51e2915e1741e01a3a00ace6e6b6ff7291eac6b0f0aec405847a9a0d1c58",
+    "target.jl": "b7f8e424c5487fcef12317f3c9620e39ef34a9941a2639253880dfcd79988841",
+    "compare.py": "e3d95287e270813ae786566f9bb7dfb8e796052a79ac43a87565bbe906468b88",
+    "README.md": "6cb1cffa55f8990b3b8652d0d51ebc5f08895e9f34adfd98f7a4741ec8256975",
+    "run.sbatch": "4326a60026160e869294ff81c4a8181149cd06af30b9e6cd8818c5fee155e3a4",
+    "precision_changes.diff": "cc35b33a6a298fbbb8beec0d8e16abc14483ffed4fd084847e5a211256d7bdb1",
+    "precision_changes.json": "eb9baf1351bff3364e058df8cec584d13c5dbc6c3b09979868f27158d9caa430"
+  },
+  "checks": {
+    "python_ast": "PASS",
+    "julia_recursive_Meta_parseall": "PASS syntaxonly with localJulia1.12.6, noerror/incomplete AST nodes",
+    "bash_syntax": "PASS",
+    "toml_parse": "PASS",
+    "old_v1_all8frozen_hashes_preserved": "PASS",
+    "unchanged_gates_and_X12_manifest": "PASS",
+    "first8schedule_noise_and_cap_cutoff_seeds_sources_versions": "PASS",
+    "oracle_byte_identity": "PASS",
+    "X12_comparator_AST_semantics_identity": "PASS",
+    "native_keyword_API": "PASS declared+forwarded in pinnedITensorMPSv0.4.1/src/dmrg.jl",
+    "local_physics_executed": false,
+    "jobs_submitted": 0
+  },
+  "independent_read_only_review": {
+    "reviewer": "cv_evidence agent",
+    "result": "PASS; manifest changes confined to release/predecessor and precision; target forwards all three eigen keywords, records globally/pernative row; comparator requires exactprecision and16truncation records; no unrelatedphysics change"
+  },
+  "execution_owner": "Root; oneCPU3500MB15minute cap; newunused resultroot; noautomatic submissions",
+  "counting": "Same two catalogue questions. X12alreadyPASS in v1; repeating it adds no completion. At most one new global pass from X09. Preserve initialX09UNRESOLVED and allrawreceipts."
+}

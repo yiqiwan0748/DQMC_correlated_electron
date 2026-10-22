@@ -1,0 +1,27 @@
+{
+  "release": "ground-certification-v1",
+  "distinct_ids": [
+    "X09",
+    "X12"
+  ],
+  "status": "FROZEN_FULL_PROTOCOL_NOT_YET_EXECUTED",
+  "files": {
+    "ground_certification/README.md": "6a1a17a540b472ecc5353b3cd9e63124810c2a47a1895e14a4afd25137d2c0e7",
+    "ground_certification/SHA256SUMS": "1d9bf1831d2a4d1d0ebc73e45e3fff3022c92d9aaee856b0d0e09db286543f0c",
+    "ground_certification/compare.py": "46a01ccf16265b704bf297634f55a654f2996d32cd0f5cd2fdf502b87f64b938",
+    "ground_certification/manifest.toml": "96e4d336d4cd82b485d0b4c4796caec26db5ede4688012cee692f2e747d5236a",
+    "ground_certification/oracle_quspin.py": "77cf51e2915e1741e01a3a00ace6e6b6ff7291eac6b0f0aec405847a9a0d1c58",
+    "ground_certification/pre_execution_receipt.json": "22854ea48d638147997a25abb0b41e5520af590adbd3e6f32e058ace76134c3e",
+    "ground_certification/run.sbatch": "6b38c66997fdcce3916406ce3f83147ec7acc5a00905eca3aff255dc173d2f26",
+    "ground_certification/target.jl": "d988f3feb305caaeac7b1d318dea8fe760f540c19ff911bf442c7bb87088a791"
+  },
+  "archive_sha256": "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 15,
+  "runtime_estimate_minutes": [
+    1,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 16:15"
+}

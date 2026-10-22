@@ -1,0 +1,24 @@
+{
+  "schema": "p21_v5_startup_seed_independent_review_v1",
+  "recorded_utc": "2026-10-22T20:09:11.920007+00:00",
+  "reviewer": "validation_design",
+  "status": "READ_ONLY_NO_BLOCKER",
+  "archive_sha256": "7b304bef60801ba71ede97117d26a49f0ab71ec14e7d3ac0c5fff26af7a4103d",
+  "archive_member_count": 33,
+  "inner_wrapper_sha256": "a204531d417347a9b2a1688adcc34143520e7b58b1b7cfb0165e3a32131e626b",
+  "seed_bytes": 9,
+  "seed_ascii": "20261022\\n",
+  "seed_sha256": "622c1d1526b4244f434120df690f5c81f1d475e308ad99726fb89370a4f1e7c4",
+  "native_seed_reader_Gitblob": "cd00ff52d663316ace06011ba436ba70d567cd0b",
+  "checks": [
+    "PositiveInt32andexactLFformatverified",
+    "PinnedserialreaderOPENOLD/READoneinteger/RANSETmatchesobservedmissingfilefailure",
+    "OnlyfreshproofdirseedcopyandSHAlogaddedbeforestartup",
+    "NativeproofdeterministicHSoverwritebeforeUDVunchanged",
+    "AllFortran/userkernel/checkers/model/parameters/tolerancesbyte-identicalv4",
+    "All33archiveentries/localbytesindependentlymatched",
+    "Bashsyntaxpassed"
+  ],
+  "execution_or_science_by_reviewer": false,
+  "scientific_status": "NOT_RUN_AS_DEFINED"
+}
