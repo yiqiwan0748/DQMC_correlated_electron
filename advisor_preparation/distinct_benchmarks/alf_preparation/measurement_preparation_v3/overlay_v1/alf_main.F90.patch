@@ -1,0 +1,124 @@
+--- a/Prog/main.F90
++++ b/Prog/main.F90
+@@ -121,6 +121,7 @@
+         Use Hamiltonian_main
+         Use Control
+         Use Tau_m_mod
++        Use Observables, only: Print_bin_Vec
+         Use Tau_p_mod
+         Use Hop_mod
+         Use Global_mod
+@@ -159,6 +160,8 @@
+         Real(Kind=Kind(0.d0)) :: CPU_MAX
+         Character (len=64) :: file_seeds, file_para, file_dat, file_info, file_git_info, ham_name
+         Integer :: Seed_in
++        Character(len=16) :: P21_mode
++        Logical :: P21_proof
+         Complex (Kind=Kind(0.d0)) , allocatable, dimension(:,:) :: Initial_field
+ 
+         ! Space for choosing sampling scheme
+@@ -550,6 +553,22 @@
+ 
+         Call control_init(Group_Comm)
+         Call ham%Alloc_obs(Ltau)
++        ! P21 fixed-configuration proof only; ordinary runs take the unchanged path.
++        P21_mode=''
++        Call get_environment_variable('P21_PROOF_ONLY',P21_mode)
++        P21_proof=trim(P21_mode)=='1'
++        If (P21_proof) then
++           If (Projector .or. Symm .or. reconstruction_needed .or. Ltau/=1) &
++                & error stop 'P21 fixed-configuration mode mismatch'
++           If (Ndim/=4 .or. N_FL/=2 .or. N_SUN/=1 .or. Ltrot/=10) &
++                & error stop 'P21 proof dimensions mismatch'
++           ! Deterministic, nonuniform fields; overwrite before native UDV construction.
++           Do NT=1,Ltrot
++              Do N=1,size(nsigma%f,1)
++                 nsigma%f(N,NT)=cmplx(real(mod(3*N+2*NT,7)-3,kind(0.d0))/5.d0,0.d0,kind(0.d0))
++              enddo
++           enddo
++        endif
+ 
+         If ( mod(Ltrot,nwrap) == 0  ) then
+            Nstm = Ltrot/nwrap
+@@ -775,6 +794,20 @@
+ 
+ 
+         Call Control_init(Group_Comm)
++
++        If (P21_proof) then
++           Call P21_export_propagators()
++           Call ham%Init_obs(Ltau)
++           ! This is native Tau_m on one fixed configuration, before any MC sweeps.
++           Call Tau_m(udvst,GR,PHASE,NSTM,NWRAP,STAB_NT,LOBS_ST,LOBS_EN)
++           Do I=5,7
++              Call Print_bin_Vec(Obs_scal(I),Group_Comm)
++           enddo
++           open(unit=5,file='RUNNING',status='old')
++           close(5,status='delete')
++           write(*,*) 'P21_FIXED_CONFIGURATION_EXPORTED_NOT_SCIENTIFIC_BENCHMARK'
++           stop
++        endif
+ 
+         DO  NBC = 1, NBIN
+            ! Here, you have the green functions on time slice 1.
+@@ -1099,4 +1132,60 @@
+         CALL MPI_FINALIZE(ierr)
+ #endif
+ 
++      contains
++
++        Subroutine P21_export_propagators()
++          ! Additive proof export. Native PROPR/PROPRM1 and Tau_m remain unmodified.
++          Implicit none
++          complex(kind=kind(0.d0)) :: P21_B(Ndim,Ndim,N_FL),P21_inv(Ndim,Ndim,N_FL)
++          complex(kind=kind(0.d0)) :: P21_K(Ndim,Ndim,N_FL)
++          integer :: P21_u,P21_i,P21_j,P21_f,P21_t,P21_n
++          open(newunit=P21_u,file='P21_native_propagators.tsv',status='new')
++          write(P21_u,'(A)') '# kind tau flavor row col real imag; indices zero-based'
++          Do P21_t=1,Ltrot
++             P21_B=cmplx(0.d0,0.d0,kind(0.d0))
++             P21_inv=P21_B
++             P21_K=P21_B
++             Do P21_f=1,N_FL
++                Do P21_i=1,Ndim
++                   P21_B(P21_i,P21_i,P21_f)=1.d0
++                   P21_inv(P21_i,P21_i,P21_f)=1.d0
++                   P21_K(P21_i,P21_i,P21_f)=1.d0
++                enddo
++                Call Hop_mod_mmthr(P21_K(:,:,P21_f),P21_f,P21_t)
++             enddo
++             Call PROPR(P21_B,P21_t)
++             Call PROPRM1(P21_inv,P21_t)
++             Do P21_f=1,N_FL
++                Do P21_i=1,Ndim
++                   Do P21_j=1,Ndim
++                      write(P21_u,'(A,4(1X,I0),2(1X,ES26.17E3))') &
++                           & 'B',P21_t,P21_f-1,P21_i-1,P21_j-1,P21_B(P21_i,P21_j,P21_f)
++                      write(P21_u,'(A,4(1X,I0),2(1X,ES26.17E3))') &
++                           & 'Binv',P21_t,P21_f-1,P21_i-1,P21_j-1,P21_inv(P21_i,P21_j,P21_f)
++                      write(P21_u,'(A,4(1X,I0),2(1X,ES26.17E3))') &
++                           & 'Kexp',P21_t,P21_f-1,P21_i-1,P21_j-1,P21_K(P21_i,P21_j,P21_f)
++                   enddo
++                enddo
++                Do P21_n=1,size(Op_V,1)
++                   If (Op_V(P21_n,P21_f)%N/=1 .or. Op_V(P21_n,P21_f)%type/=3) &
++                        & error stop 'P21 proof requires onsite continuous fields'
++                   write(P21_u,'(A,4(1X,I0),2(1X,ES26.17E3))') &
++                        & 'field',P21_t,P21_f-1,Op_V(P21_n,P21_f)%P(1)-1,0,nsigma%f(P21_n,P21_t)
++                   write(P21_u,'(A,4(1X,I0),2(1X,ES26.17E3))') &
++                        & 'coupling',P21_t,P21_f-1,Op_V(P21_n,P21_f)%P(1)-1,0,Op_V(P21_n,P21_f)%g
++                enddo
++             enddo
++          enddo
++          Do P21_f=1,N_FL
++             Do P21_i=1,Ndim
++                Do P21_j=1,Ndim
++                   write(P21_u,'(A,4(1X,I0),2(1X,ES26.17E3))') &
++                        & 'G00',0,P21_f-1,P21_i-1,P21_j-1,GR(P21_i,P21_j,P21_f)
++                enddo
++             enddo
++          enddo
++          close(P21_u)
++        end Subroutine P21_export_propagators
++
+       end Program Main
