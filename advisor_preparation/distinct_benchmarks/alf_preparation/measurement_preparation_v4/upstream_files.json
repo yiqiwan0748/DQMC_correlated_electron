@@ -1,0 +1,96 @@
+{
+  "repository": "https://github.com/ALF-QMC/ALF",
+  "commit": "f4c500cc5d7bcf089400c63e4e75382c558a4ed3",
+  "files": [
+    {
+      "path": "Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5a505bc0388e9dc8eab4c840fd81e28d6e1d427",
+      "size": 38771,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/c5a505bc0388e9dc8eab4c840fd81e28d6e1d427",
+      "sha256": "555b291628a80dd94796c59242993933f700096f4af45cbce3dd419da7885cd7"
+    },
+    {
+      "path": "Prog/Hop_mod.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9785c220926ff7c6cfe18ccd12b3a10323a77440",
+      "size": 10034,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/9785c220926ff7c6cfe18ccd12b3a10323a77440",
+      "sha256": "9cba68f11e840e3597f498717c7c9598c317d17756728d798ac156bf9369ba84"
+    },
+    {
+      "path": "Prog/Operator_mod.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d753134b9cb3fe20ffdec020e9156947d70f25c",
+      "size": 32580,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/1d753134b9cb3fe20ffdec020e9156947d70f25c",
+      "sha256": "eab7b788ff08b1b4f83bf75976376b90652a9c627fd8706e6f8a8805df1fb7bf"
+    },
+    {
+      "path": "Prog/Predefined_Int_mod.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42fda050aff20230b8c36f36c7f1f8d4f15524cf",
+      "size": 12737,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/42fda050aff20230b8c36f36c7f1f8d4f15524cf",
+      "sha256": "651f77f7416f4cda318960b4272f3610e248bb9ca60aff357986c67e6af6a73b"
+    },
+    {
+      "path": "Prog/main.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca769d53446ad39d1fe86f74be99b00dd1585937",
+      "size": 45911,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/ca769d53446ad39d1fe86f74be99b00dd1585937",
+      "sha256": "9b08c61719c57a8beb249bfde5a77f68098ea25563b001aebec19727db8cbf2c"
+    },
+    {
+      "path": "Prog/observables_mod.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c693fe5cf933585413974eb80e17890abcdae0b",
+      "size": 37236,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/7c693fe5cf933585413974eb80e17890abcdae0b",
+      "sha256": "4d64d20aa84ea82f3e7bcf9206ac357f9b861db9c4d8350f205c2aad00744760"
+    },
+    {
+      "path": "Prog/tau_m_mod.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "664559981ea799a837c2860542336d37a53716c4",
+      "size": 11052,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/664559981ea799a837c2860542336d37a53716c4",
+      "sha256": "0ba01c9095d670b527fa3e42bd7b6cdc6ca8c8315c584ff291a057238c365614"
+    },
+    {
+      "path": "license.additional",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "355eb3de832af90a0fba0229066714e1cae3f2ad",
+      "size": 1007,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/355eb3de832af90a0fba0229066714e1cae3f2ad",
+      "sha256": "b6f280768a4be6593de9768f720cb36a6efe50701e916e64de07fe9684c8c619"
+    },
+    {
+      "path": "license.gpl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "size": 35147,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "Prog/Hamiltonian_main_mod.F90",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13ec1174618fcc50e2607ca3227710760d9619e5",
+      "size": 33205,
+      "url": "https://api.github.com/repos/ALF-QMC/ALF/git/blobs/13ec1174618fcc50e2607ca3227710760d9619e5",
+      "sha256": "ed458b2d02b1c6ba833c9b2ef7b7165a4719d98643f05adb13f89f8627c961e1"
+    }
+  ]
+}

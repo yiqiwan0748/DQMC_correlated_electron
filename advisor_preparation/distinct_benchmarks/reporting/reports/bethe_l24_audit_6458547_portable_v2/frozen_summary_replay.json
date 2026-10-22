@@ -1,0 +1,56 @@
+{
+  "schema": "bethe_ansatz_pilot_v1",
+  "phase": "PILOT_ONLY",
+  "manifest_sha256": "cb0566e9228aa8ea08a66488ea870a9e20d4a143b8e97215b07f3e5e3f3b5fe3",
+  "analysis_source_sha256": "6d13ce236a21c1e716e20df60c05a19e131a149b6346c57ad5db87326dbf5b89",
+  "distinct_ideas_passed": 0,
+  "rows": [
+    {
+      "id": "A18",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    },
+    {
+      "id": "A19",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    },
+    {
+      "id": "A20",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    }
+  ],
+  "pilot_quality": "PILOT_QUALITY_PASS",
+  "quality_reasons": [],
+  "finite_size_diagnostics": [
+    {
+      "L": 24,
+      "arms": {
+        "coarse": {
+          "energy_per_site": -0.5585862903685549,
+          "charge_gap": 1.4591127714284866,
+          "double_occupancy": 0.09747777769881132,
+          "particle_hole_error": 9.296030611949391e-11
+        },
+        "refined": {
+          "energy_per_site": -0.5585862906819251,
+          "charge_gap": 1.4591125843744628,
+          "double_occupancy": 0.097477778167342,
+          "particle_hole_error": 9.059419880941277e-14
+        }
+      },
+      "finite_size_offsets_from_thermodynamic_oracle": {
+        "energy_per_site": 0.015143077216524081,
+        "charge_gap": 0.17238556236155822,
+        "double_occupancy": -0.002763592981758975
+      },
+      "scope": "Finite-size offsets are diagnostic, never finite-size equality gates."
+    }
+  ],
+  "solves": 6,
+  "sampling_seconds_sum": 766.4466331005096,
+  "slowest_solve_seconds": 265.5083520412445,
+  "largest_bond_observed": 512,
+  "planning_limit": "This L24-only pilot does not establish L32 or full-size feasibility. Review resource receipts before a separately authorized larger bridge or thermodynamic execution release."
+}

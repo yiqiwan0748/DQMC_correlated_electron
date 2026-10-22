@@ -71,9 +71,9 @@ questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
 The new [distinct-benchmark campaign](distinct_benchmarks/README.md) has completed
-35 questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/spectral_v8/README.md)
-records **35 PASS and 65 NOT_RUN**. These checks found a missing fermionic
+38 questions on ISAAC. Its latest
+[independently audited ledger](distinct_benchmarks/reporting/reports/two_orbital_v9/README.md)
+records **38 PASS and 62 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
@@ -99,3 +99,8 @@ Three further QuSpin comparisons passed for real-time charge-density evolution,
 addition/removal spectra and imaginary-time spin response. Complete physical
 grids and independent moment/conservation checks passed, with explicit credit
 to the existing user ED APIs and newly added measurement adapters.
+
+Three two-orbital analytical limits also passed: complete one-electron orbital
+projectors, the square-lattice DOS singularity with a held-out momentum mesh,
+and thermal factorization of independent interacting orbitals. Source versions,
+normalizations, smoothing and all inequality gates remain explicit.

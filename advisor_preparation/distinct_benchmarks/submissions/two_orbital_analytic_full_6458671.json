@@ -1,0 +1,17 @@
+{
+  "job_id": "6458671",
+  "dependency": "afterany:6458657",
+  "status": "COMPLETED_AWAITING_INDEPENDENT_AUDIT",
+  "distinct_ids": [
+    "A15",
+    "A16",
+    "A17"
+  ],
+  "source_freeze": "../source_releases/two-orbital-analytic-v1-freeze.json",
+  "resource_gate": "pilot_resource_assessment.json PASS,projected123.517s<600,RSS599796KiB<1500000",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 15,
+  "elapsed_seconds": 125,
+  "checkpoint_EDT": "2026-10-22 16:10"
+}

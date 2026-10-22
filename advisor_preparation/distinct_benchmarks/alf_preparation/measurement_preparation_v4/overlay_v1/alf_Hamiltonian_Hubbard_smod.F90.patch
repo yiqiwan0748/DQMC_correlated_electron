@@ -1,0 +1,125 @@
+--- a/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90
++++ b/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90
+@@ -137,6 +137,7 @@
+         ! Set Hamiltonian-specific procedures
+         procedure, nopass :: Ham_Set
+         procedure, nopass :: Alloc_obs
++        procedure, nopass :: Pr_obs => P21_Pr_obs
+         procedure, nopass :: Obser
+         procedure, nopass :: ObserT
+         procedure, nopass :: S0
+@@ -549,6 +550,27 @@
+ !> Specifiy the equal time and time displaced observables
+ !> @details
+ !--------------------------------------------------------------------
++        Subroutine P21_Pr_obs(Ltau)
++          ! P21 observer-only dispatch through the public Hamiltonian interface.
++          ! Obs_scal remains private in its parent module; this submodule has host access.
++          Implicit none
++          Integer, Intent(In) :: Ltau
++          Integer :: I
++          Character(len=16) :: P21_mode
++          P21_mode=''
++          Call get_environment_variable('P21_PROOF_ONLY',P21_mode)
++          If (trim(P21_mode)=='1') then
++             If (Ltau/=1 .or. size(Obs_scal)/=7) error stop 'P21 proof print dimensions mismatch'
++             Do I=5,7
++                If (Obs_scal(I)%N<=0) error stop 'P21 proof has no measurements'
++                Call Print_bin_Vec(Obs_scal(I),Group_Comm)
++             enddo
++          else
++             ! Ordinary sampled runs keep ALF's original complete print routine.
++             Call Pr_obs_base(Ltau)
++          endif
++        End Subroutine P21_Pr_obs
++
+         Subroutine  Alloc_obs(Ltau)
+ 
+           Implicit none
+@@ -560,7 +582,22 @@
+ 
+ 
+           ! Scalar observables
+-          Allocate ( Obs_scal(4) )
++          ! P21 additive observer; original ALF sampling/propagation is unchanged.
++          ! This modified source is not an official ALF version.
++          If (Ltau == 1) then
++             If (Projector .or. Symm .or. Checkerboard) error stop 'P21 representation mismatch'
++             If (.not.Mz .or. .not.Continuous) error stop 'P21 requires exact continuous Mz HS'
++             If (Ndim /= 4 .or. N_FL /= 2 .or. N_SUN /= 1 .or. Ltrot /= 10) &
++                  & error stop 'P21 fixture dimensions mismatch'
++             If (abs(Dtau-0.1d0)>1.d-14 .or. abs(Beta-1.d0)>1.d-14 .or. &
++                  & abs(Ham_U-2.d0)>1.d-14 .or. abs(Ham_T-1.d0)>1.d-14 .or. &
++                  & abs(Ham_chem)>1.d-14 .or. abs(ham_h0)>1.d-14 .or. &
++                  & abs(Phi_X)>1.d-14 .or. abs(Phi_Y)>1.d-14 .or. N_Phi/=0) &
++                  & error stop 'P21 interacting fixture mismatch'
++             Allocate ( Obs_scal(7) )
++          else
++             Allocate ( Obs_scal(4) )
++          endif
+           Do I = 1,Size(Obs_scal,1)
+              select case (I)
+              case (1)
+@@ -571,6 +608,13 @@
+                 N = 1;   Filename = "Part"
+              case (4)
+                 N = 1;   Filename = "Ener"
++              case (5)
++                 N = Ndim*Ndim*N_FL*(Ltrot+1); Filename = "P21_GT0"
++              case (6)
++                 N = Ndim*Ndim*N_FL*(Ltrot+1); Filename = "P21_G0T"
++              case (7)
++                 ! Metadata counts per tau, printed with N=1, sign=1.
++                 N = Ltrot+1; Filename = "P21_Counts"
+              case default
+                 Write(6,*) ' Error in Alloc_obs '
+              end select
+@@ -724,7 +768,7 @@
+           ! GRC(i,j,nf) = < c^{dagger}_{i,nf } c_{j,nf } >
+ 
+           ! Compute scalar observables.
+-          Do I = 1,Size(Obs_scal,1)
++          Do I = 1,4  ! P21 vectors are counted by ObserT, not equal-time Obser
+              Obs_scal(I)%N         =  Obs_scal(I)%N + 1
+              Obs_scal(I)%Ave_sign  =  Obs_scal(I)%Ave_sign + Real(ZS,kind(0.d0))
+           Enddo
+@@ -835,13 +879,37 @@
+           !Locals
+           Complex (Kind=Kind(0.d0)) :: Z, ZP, ZS, ZZ, ZXY
+           Real    (Kind=Kind(0.d0)) :: X
+-          Integer :: IMJ, I, J, I1, J1, no_I, no_J
++          Integer :: IMJ, I, J, I1, J1, no_I, no_J, P21_nf, P21_idx
+ 
+           ZP = PHASE/Real(Phase, kind(0.D0))
+           ZS = Real(Phase, kind(0.D0))/Abs(Real(Phase, kind(0.D0)))
+           ZS = ZS * Mc_step_weight
+ 
+-          ! Standard two-point correlations
++          ! Native full-matrix buffers; no recomputation and no channel averaging.
++           ! Flattening: tau-major, flavor, row i, column j, all zero-based externally.
++           If (size(Obs_scal) /= 7) error stop 'P21 observables not allocated'
++           If (NT<0 .or. NT>Ltrot) error stop 'P21 tau out of range'
++           If (NT == 0) then
++              Do I=5,6
++                 Obs_scal(I)%N = Obs_scal(I)%N+1
++                 Obs_scal(I)%Ave_sign = Obs_scal(I)%Ave_sign+real(ZS,kind(0.d0))
++              enddo
++           endif
++           ! Counts are raw counts, not sign weighted; their print divisor is one.
++           Obs_scal(7)%N=1
++           Obs_scal(7)%Ave_sign=1.d0
++           Obs_scal(7)%Obs_vec(NT+1)=Obs_scal(7)%Obs_vec(NT+1)+1.d0
++           Do P21_nf=1,N_FL
++              Do I=1,Ndim
++                 Do J=1,Ndim
++                    P21_idx=1+(((NT*N_FL+P21_nf-1)*Ndim+I-1)*Ndim+J-1)
++                    Obs_scal(5)%Obs_vec(P21_idx)=Obs_scal(5)%Obs_vec(P21_idx)+GT0(I,J,P21_nf)*ZP*ZS
++                    Obs_scal(6)%Obs_vec(P21_idx)=Obs_scal(6)%Obs_vec(P21_idx)+G0T(I,J,P21_nf)*ZP*ZS
++                 enddo
++              enddo
++           enddo
++
++           ! Standard two-point correlations
+ 
+           If ( N_FL == 2 ) then
+              Call Predefined_Obs_tau_Green_measure  ( Latt, Latt_unit, List, NT, GT0,G0T,G00,GTT,  N_SUN, ZS, ZP, Obs_tau(1) )

@@ -1,0 +1,102 @@
+--- bethe_ansatz_l24/pilot.toml
++++ bethe_ansatz_l32/pilot.toml
+@@ -1,10 +1,10 @@
+ schema = "bethe_ansatz_pilot_v1"
+ phase = "PILOT_ONLY"
+-release = "bethe_l24_pilot_v2"
+-predecessor_manifest_sha256 = "0293c9e608dfb0ab827782533f6ab8173d2e16bf694b5a8ca37c441898e510c9"
++release = "bethe_l32_pilot_v3"
++predecessor_manifest_sha256 = "cb0566e9228aa8ea08a66488ea870a9e20d4a143b8e97215b07f3e5e3f3b5fe3"
+ catalogue_ids = ["A18", "A19", "A20"]
+ scientific_completion_allowed = false
+-L = [24]
++L = [32]
+ U = 4.0
+ t = 1.0
+ mu_physical = 0.0
+@@ -62,7 +62,19 @@
+ [resources]
+ cpus = 1
+ memory_mb = 3500
+-wall_cap_minutes = 45
+-target_command_cap_seconds = 2400
+-estimated_after_start_minutes = [15, 40]
+-runtime_status = "L24 UNMEASURED; 6 finite-chain DMRG solves. Preliminary 15-40 minute engineering range from prior L8/L12 pilot, not a measured L24 prediction. Scheduler wait separate; pilot can establish runtime/quality only."
++wall_cap_minutes = 60
++target_command_cap_seconds = 3300
++estimated_after_start_minutes = [20, 50]
++runtime_status = "L32 UNMEASURED; 6 finite-chain DMRG solves. Empirical engineering range20-50min after start uses audited L24 job6458547 wall16m31s and fixed-chi length factor4/3 (about22min before guard). QN blocks, entanglement, contractions, convergence and filesystem wait may change scaling. Scheduler wait separate; caps are not a runtime guarantee or scientific result."
++
++[engineering_prerequisite]
++L24_job_id = "6458547"
++L24_job_elapsed_seconds = 991
++L24_peak_rss_kib = 1484548
++maximum_L24_wall_seconds = 1800
++maximum_L24_peak_rss_MiB = 2300
++audit_relative = "engineering_prerequisite_audit.json"
++audit_sha256 = "fbdb45d74d59895196799b5af3d8c87b6de6cddce9733a33d77a3d646189f176"
++preexecution_engineering_anchor_commit = "66950c791f7f939ca176e5427be62cd8dfca8348"
++preexecution_engineering_anchor_sha256 = "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6"
++anchor_relative = "engineering_gate_anchor_66950c7.md"
+--- bethe_ansatz_l24/pilot.sbatch
++++ bethe_ansatz_l32/pilot.sbatch
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env bash
+ # Root owns submission and serial scheduling; this pilot cannot pass A18/A19/A20.
+-#SBATCH --job-name=bethe_l24_pilot
++#SBATCH --job-name=bethe_l32_pilot
+ #SBATCH --account=acf-utk0011
+ #SBATCH --partition=short
+ #SBATCH --qos=short
+@@ -8,20 +8,37 @@
+ #SBATCH --ntasks=1
+ #SBATCH --cpus-per-task=1
+ #SBATCH --mem=3500M
+-#SBATCH --time=00:45:00
++#SBATCH --time=01:00:00
+ set -euo pipefail
+ : "${VALIDATION_ROOT:?Set VALIDATION_ROOT}"
+ : "${BETHE_TRANCHE:?Set absolute staged tranche directory}"
+ module load anaconda3/2024.06
++cd "$BETHE_TRANCHE"
++sha256sum -c SHA256SUMS
++python3 - "$BETHE_TRANCHE" <<'PY'
++from pathlib import Path
++import hashlib,json,sys,tomllib
++root=Path(sys.argv[1]);cfg=tomllib.loads((root/'pilot.toml').read_text());p=cfg['engineering_prerequisite']
++audit=root/p['audit_relative'];anchor=root/p['anchor_relative']
++assert hashlib.sha256(audit.read_bytes()).hexdigest()==p['audit_sha256']
++assert hashlib.sha256(anchor.read_bytes()).hexdigest()==p['preexecution_engineering_anchor_sha256']
++report=json.loads(audit.read_text());gate=report['next_L32_engineering_eligibility']
++assert report['status']=='PASS' and report['scientific_completions']==0
++assert gate['job_elapsed_seconds']==p['L24_job_elapsed_seconds']<=p['maximum_L24_wall_seconds']
++assert gate['peak_rss_kib']==p['L24_peak_rss_kib']<=p['maximum_L24_peak_rss_MiB']*1024
++assert gate['wall_at_most_30_minutes'] and gate['peak_at_most_2300_MiB']
++assert gate['preexecution_anchor']['commit']==p['preexecution_engineering_anchor_commit']
++assert cfg['L']==[32] and cfg['scientific_completion_allowed'] is False
++PY
+ export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 JULIA_NUM_THREADS=1
+ export JULIA_DEPOT_PATH="$VALIDATION_ROOT/depot"
+ export RENYI_ROOT="$VALIDATION_ROOT/source/renyi_disjoint_corrected"
+-BETHE_OUTPUT="$VALIDATION_ROOT/results/bethe_l24_pilot_${SLURM_JOB_ID}"
++BETHE_OUTPUT="$VALIDATION_ROOT/results/bethe_l32_pilot_${SLURM_JOB_ID}"
+ mkdir "$BETHE_OUTPUT"
+ /usr/bin/time -v -o "$BETHE_OUTPUT/oracle.resources.txt" \
+  "$VALIDATION_ROOT/quspin-venv/bin/python" "$BETHE_TRANCHE/oracle_lieb_wu.py" \
+  --manifest "$BETHE_TRANCHE/pilot.toml" --output "$BETHE_OUTPUT/oracle.json"
+-/usr/bin/time -v -o "$BETHE_OUTPUT/target.resources.txt" timeout 2400 \
++/usr/bin/time -v -o "$BETHE_OUTPUT/target.resources.txt" timeout 3300 \
+  "$VALIDATION_ROOT/runtime/julia-1.12.1/bin/julia" --project="$RENYI_ROOT" \
+  "$BETHE_TRANCHE/pilot_target.jl" --manifest "$BETHE_TRANCHE/pilot.toml" --output "$BETHE_OUTPUT/target.toml"
+ "$VALIDATION_ROOT/quspin-venv/bin/python" "$BETHE_TRANCHE/summarize_pilot.py" \
+--- bethe_ansatz_l24/summarize_pilot.py
++++ bethe_ansatz_l32/summarize_pilot.py
+@@ -72,7 +72,7 @@
+     return {'pilot_quality':'PILOT_QUALITY_PASS' if not reasons else 'PILOT_QUALITY_UNRESOLVED','quality_reasons':reasons,
+             'finite_size_diagnostics':metrics,'solves':len(rows),'sampling_seconds_sum':sum(x['elapsed_seconds'] for x in rows),
+             'slowest_solve_seconds':max(x['elapsed_seconds'] for x in rows),'largest_bond_observed':max(x['max_bond'] for x in rows),
+-            'planning_limit':'This L24-only pilot does not establish L32 or full-size feasibility. Review resource receipts before a separately authorized larger bridge or thermodynamic execution release.'}
++            'planning_limit':'This L32-only pilot does not establish L48 or full-size feasibility. Review resource receipts before any separately authorized larger bridge or thermodynamic execution release.'}
+ 
+ 
+ def main():

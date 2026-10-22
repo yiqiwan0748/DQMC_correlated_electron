@@ -1,0 +1,233 @@
+created_utc = "2026-10-22T17:59:18.510"
+julia_threads = 1
+julia_version = "1.12.1"
+host = "clr1244"
+slurm_job_id = "6457635"
+reference_url = "https://arxiv.org/pdf/0804.1113v1"
+reference_version = "0804.1113v1; APS final PDF unavailable during preparation; preprint parameters explicitly pinned"
+reference_doi = "10.1103/PhysRevB.77.220503"
+blas_threads = 1
+driver_sha256 = "2aba1a9e9b518dabb5a9ffaaeaacce0b015ca9c3829c263ccec02c430ce141aa"
+
+[source_hashes]
+"src/noninteracting.jl" = "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568"
+"src/realspace_kinetic.jl" = "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6"
+
+[parameters]
+t3 = -0.85
+t2 = 1.3
+t1 = -1.0
+t4 = -0.85
+mu = 1.45
+
+[[benchmarks]]
+runtime_seconds = 1.7723510265350342
+status = "PASS"
+scope = "Author-preprint-v1 Fig3 four-pocket topology and Eqs2-4; actual production band/grid/realspace code, not interacting DQMC"
+maximum_contour_radius_error = 1.7763568394002505e-15
+id = "J20"
+last_mesh_filling_change = 0.0001068115234375
+realspace_Fourier_block_error = 5.333535978150284e-15
+
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.93408203125
+    published_topology_matches = true
+    Nk = 128
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.93408203125
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 1137
+        center = [-3.141592653589793, 3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 629
+        center = [-3.264380005124372e-17, -6.547520814875897e-17]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 613
+        center = [-1.0038748569970826e-17, 3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 613
+        center = [-3.141592653589793, -3.598796657159351e-17]
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.933837890625
+    published_topology_matches = true
+    Nk = 256
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.933837890625
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 4533
+        center = [3.141592653589793, -3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 2521
+        center = [-1.781405540440109e-17, -1.592731050874437e-16]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 2443
+        center = [-1.1199727289405054e-16, -3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 2443
+        center = [-3.141592653589793, -1.1826551119043163e-16]
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.933868408203125
+    published_topology_matches = true
+    Nk = 512
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.933868408203125
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 18097
+        center = [3.141592653589793, 3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 10081
+        center = [8.501903403942372e-17, -6.499940470764022e-17]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 9755
+        center = [1.3772049314672681e-16, 3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 9755
+        center = [-3.141592653589793, 2.2711571091085136e-16]
+    [[benchmarks.meshes]]
+    independent_equation_filling = 1.9339752197265625
+    published_topology_matches = true
+    Nk = 1024
+    maximum_band_error = 1.7763568394002505e-15
+    filling_error = 0.0
+    target_filling_per_cell_both_spins = 1.9339752197265625
+
+        [[benchmarks.meshes.hole_components]]
+        cells = 72353
+        center = [-3.141592653589793, -3.141592653589793]
+        [[benchmarks.meshes.hole_components]]
+        cells = 40305
+        center = [-7.697118983105271e-17, 2.0723496920141802e-16]
+
+        [[benchmarks.meshes.electron_components]]
+        cells = 39021
+        center = [-3.455352642137973e-17, -3.141592653589793]
+        [[benchmarks.meshes.electron_components]]
+        cells = 39021
+        center = [3.141592653589793, -8.611920894180741e-17]
+
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 0.0
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 0.39269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531756
+    error = 0.0
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 0.7853981633974483
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 1.1780972450961724
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 1.5707963267948966
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 1.9634954084936207
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531756
+    error = 0.0
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 2.356194490192345
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 2.748893571891069
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 3.141592653589793
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 3.5342917352885173
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531758
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 3.9269908169872414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 4.319689898685965
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.7227342478134156
+    error = 0.0
+    published_equation_radius = 0.7227342478134156
+    center = [0.0, 0.0]
+    band = 1
+    angle = 4.71238898038469
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566256
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 5.105088062083414
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6701755740531758
+    error = 2.220446049250313e-16
+    published_equation_radius = 0.6701755740531756
+    center = [0.0, 0.0]
+    band = 1
+    angle = 5.497787143782138
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.6929874827566254
+    error = 0.0
+    published_equation_radius = 0.6929874827566254
+    center = [0.0, 0.0]
+    band = 1
+    angle = 5.890486225480862
+    [[benchmarks.fermi_rays]]
+    target_radius = 0.9581921787462746
+    error = 0.0
+    published_equation_radius = 0.9581921787462746
+    center = [

@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/spectral_v8/README.md)
-records **35 PASS and 65 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/two_orbital_v9/README.md)
+records **38 PASS and 62 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -141,3 +141,21 @@ the frozen comparison replay is byte-identical to its ISAAC receipt.
 and all previous results. This is a four-site fixture with additive measurement
 adapters; it does not test native DQMC dynamics. The job used one CPU3500MB and
 completed in3m10s; target process peak RSS was about562MiB.
+
+## Two-orbital analytical limits
+
+A15/A16/A17 passed on job6458671 after the separately audited resource pilot.
+The complete one-electron ED spectra and orbital projectors agree with an
+independently constructed one-body Hamiltonian (energy error1.20e-14; projector
+error4.06e-15). All held-out2048-mesh DOS curves match the elliptic-integral
+reference within8.13e-5 after identical binning/broadening; the final mesh
+change is below9.71e-5. All27 decoupled two-orbital thermal fixtures agree
+with independent product Gibbs states within2.23e-15, including every connected
+spin component and nonzero local moments. This uses unchanged user ED/atomic/
+band functions plus disclosed measurement adapters, without DQMC sampling.
+
+The [38-question ledger](reporting/reports/two_orbital_v9/README.md) retains
+all35 prior PASS rows and every historical receipt. All796 detailed gates,
+including lower bounds and positivity, retain their own inequality directions.
+A25 remains NOT_RUN because this release does not provide a native flux-threaded
+one-dimensional ring. [Raw data and audit](results/two_orbital_analytic_full_6458671/).
