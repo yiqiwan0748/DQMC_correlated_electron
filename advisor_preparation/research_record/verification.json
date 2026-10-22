@@ -1,0 +1,44 @@
+{
+  "status": "PASS_FILE_INTEGRITY_AND_RECORDED_SCALAR_ARITHMETIC",
+  "preserved_files_verified": 205,
+  "simulations_run_by_this_verifier": 0,
+  "subsystem_z_recomputed": [
+    -0.26698436583508556,
+    0.31256955996246394,
+    0.5708711577699002,
+    0.11592421356127389,
+    -0.03608292445584523
+  ],
+  "max_abs_subsystem_z": 0.5708711577699002,
+  "large_L_comparisons": {
+    "20": {
+      "S2_DQMC": 1.805179361272,
+      "nominal_MC_error": 0.008209270540022,
+      "S2_DMRG": 1.808766655046391,
+      "z_using_DQMC_error_only": -0.4369808202692549
+    },
+    "22": {
+      "S2_DQMC": 2.025158749526,
+      "nominal_MC_error": 0.004730458606235,
+      "S2_DMRG": 2.0219147921796217,
+      "z_using_DQMC_error_only": 0.6857595883204199
+    }
+  },
+  "FSS_input_rows": 22,
+  "FSS_fit_rows": 289,
+  "principal_DQMC_chi2_per_dof": [
+    477.89267492413984,
+    29.278025835523582,
+    3.8992042661126725,
+    80.55570909909797,
+    244.17817350347443
+  ],
+  "saved_DMRG_final_arms_passed": 4,
+  "saved_DMRG_max_energy_error": 3.197442310920451e-14,
+  "limits": [
+    "No historical timing repeated",
+    "No large ED or MPS vector revalidated",
+    "No full external large-L raw production corpus recovered",
+    "No personal contribution or appointment dates inferred"
+  ]
+}
