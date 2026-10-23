@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/pyscf_v13/README.md)
-records **44 PASS, 2 UNRESOLVED and 54 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/orbital_entanglement_v14/README.md)
+records **45 PASS, 2 UNRESOLVED and 53 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -222,3 +222,11 @@ Full production job 6465923 passes P23 and P24 at the frozen gates: seven comple
 The [44-question leaf](reporting/reports/pyscf_v13/README.md) changes only these two IDs from the immutable 42-question leaf. All 98 other rows, every prior PASS and both unresolved histories remain exact. The [compact public scientific packet](pyscf_external_20261023/README.md) retains complete arrays, frozen sources, licences, installed-reference hash metadata and a fresh replay from the actual compressed payload. Public replay passes 847 scientific/integrity checks; private remote-inode/transport checks are explicitly excluded.
 
 Pilot 6465868's native and reference producers succeeded, then comparator JSON serialization failed. Its original failed execution and traceback remain intact. Analysis-only repair 6465910 converts NumPy Boolean values for JSON, preserves all scientific formulas/gates and retains original plus repair costs. Both add zero credit. Production v2 changes that single Boolean conversion only. The interaction is intraorbital Hubbard U without Hund/interorbital/pair-hopping terms; selected finite-cluster agreement does not establish thermodynamic or whole-package reliability.
+
+## Orbital entanglement with unchanged density
+
+X17 passes full production job 6466242: six fixed open-cluster fixtures, all five total-N4 spin sectors per fixture and complete 256-level orbital spectra for both cuts. The actual native Lanczos state remains primary; a basis/mask metadata carrier lets the unchanged repaired native entropy function evaluate orbital partitions without generating a state from its carrier Hamiltonian. Independent QuSpin states/partial traces and explicit fermion/RDM/spin audits agree. All 1116 frozen gates and 703 independent checks pass.
+
+The [45-question leaf](reporting/reports/orbital_entanglement_v14/README.md) changes only X17. The [scientific packet](x17_external_20261023/README.md) retains one unchanged frozen source release, complete pilot/full raw data, original scientific execution/resource receipts, both independent auditors and original reports. Compressed-payload replay passes 672 full public checks with bitwise-identical case metrics. Pilot 6466078 remains zero-credit: 185 frozen gates, 173 original independent checks and 81 selected public mathematical/resource checks.
+
+The registered t3=0 model has uniform spin-resolved densities while t4 produces orbital entropy and nonzero connected density/spin-dot correlations. New dense certificates and full-RDM/observable adapters are attributed; only intraorbital U and selected finite fixtures are covered. Conditional binary64 uniqueness/gap budgets are not directed-rounding proofs. No full-Hund, bulk ALM, native-DQMC or whole-package claim follows; all other 99 row objects and both unresolved histories remain exact.

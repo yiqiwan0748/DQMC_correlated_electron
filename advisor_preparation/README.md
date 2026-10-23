@@ -70,10 +70,10 @@ questions. It is a broader research programme, with unsupported and unexecuted
 questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
-The new [distinct-benchmark campaign](distinct_benchmarks/README.md) records 44 passing questions and two unresolved
+The new [distinct-benchmark campaign](distinct_benchmarks/README.md) records 45 passing questions and two unresolved
 precision/mixing questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/pyscf_v13/README.md)
-records **44 PASS, 2 UNRESOLVED and 54 NOT_RUN**. These checks found a missing fermionic
+[independently audited ledger](distinct_benchmarks/reporting/reports/orbital_entanglement_v14/README.md)
+records **45 PASS, 2 UNRESOLVED and 53 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
@@ -150,3 +150,9 @@ The pinned [PySCF environment setup](distinct_benchmarks/pyscf_setup_v1/README.m
 The [44-question checkpoint](distinct_benchmarks/reporting/reports/pyscf_v13/README.md) adds exactly P23 and P24: complete low-energy spectra/spin labels and directed orbital-transition strengths, compared against actual PySCF FCI operators on seven finite two-orbital fixtures. All 3,503 frozen comparator checks and 887 independent checks pass. The [public source/data replay](distinct_benchmarks/pyscf_external_20261023/README.md) independently reproduces the complete result from retained operators/eigensystems, without solver reruns.
 
 The original pilot's comparator serialization failure and its analysis-only Boolean repair remain visible with zero catalogue credit. The native Hamiltonian, reference producer, physical fixtures and scientific gates are unchanged. Only intraorbital Hubbard interaction is tested; no whole-package, full-Hund or thermodynamic certification follows. All 98 other catalogue rows, including X01/P21 unresolved histories, remain exact.
+
+## Orbital entanglement beyond density redistribution
+
+The [45-question checkpoint](distinct_benchmarks/reporting/reports/orbital_entanglement_v14/README.md) adds exactly X17. Six frozen finite fixtures compare actual native Lanczos states and the repaired native entropy API with independent QuSpin orbital reduced-density spectra and physical connected correlations. Hybridization changes the quantum correlations while density means remain fixed. All 30 sector certificates, 1116 frozen gates and 703 independent checks pass; a [replay of the compressed public data](distinct_benchmarks/x17_external_20261023/README.md) reproduces identical scientific case metrics.
+
+The excluded pilot adds zero credit. All 99 other catalogue rows, all 44 prior PASS rows and both unresolved histories remain exact. The model uses analytically chosen t3=0 and intraorbital U only; this finite-cluster result does not establish a bulk ALM phase or whole-package reliability. Existing package APIs and new RDM/certificate/observable adapters are distinguished explicitly.

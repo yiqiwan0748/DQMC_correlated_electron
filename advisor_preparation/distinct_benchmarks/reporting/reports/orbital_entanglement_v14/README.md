@@ -1,0 +1,7 @@
+# Orbital-entanglement checkpoint
+
+**45 PASS, 2 UNRESOLVED and 53 NOT_RUN** across exactly 100 distinct catalogue IDs. Only X17 changes from the immutable [44-question checkpoint](../pyscf_v13/README.md). All 99 other row objects, all 44 prior PASS rows and both unresolved histories remain exact.
+
+Six frozen open-cluster fixtures show interorbital quantum correlation from hybridization while the physical density means stay fixed. Actual native Lanczos states and the repaired native entropy API agree with independent QuSpin full orbital spectra, entropy and physical connected spin/density observables. All 30 fixed-spin sector certificates, 1116 frozen gates and 703 original independent audit checks pass. The ground-gap bounds are conditional binary64 numerical qualifications, and the model uses t3=0 and only intraorbital U. No bulk ALM or whole-package claim follows.
+
+The [public source/data packet](../../../x17_external_20261023/README.md) retains original scientific execution and resource receipts, complete source/raw arrays, both exact independent auditors and original reports. Actual compressed-payload replay passes 672 full public checks with bitwise-identical case metrics. The 185-gate/173-check resource pilot remains excluded from credit; its public selected mathematical replay passes 81 checks. One parameter grid, 30 sectors and 256 orbital levels do not add ideas. The [closure audit](audit.json) binds all source/data members and predecessor histories.

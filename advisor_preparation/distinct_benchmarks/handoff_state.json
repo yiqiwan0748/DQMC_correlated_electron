@@ -1,31 +1,32 @@
 {
-  "schema": "portable_public_handoff_v3",
-  "recorded_utc": "2026-10-23T18:16:33.756696+00:00",
+  "schema": "portable_public_handoff_v4",
+  "recorded_utc": "2026-10-23T18:47:20.383534+00:00",
   "manual_resume_authorized_date": "2026-10-23",
   "automation_status": "PAUSED",
-  "latest_scientific_ledger": "reporting/reports/pyscf_v13/ledger_100.json",
-  "ledger_sha256": "95205b58d9f2dfac9bcbf9afeb161cc8469af898d4cacc5b6c1d542caff95259",
+  "latest_scientific_ledger": "reporting/reports/orbital_entanglement_v14/ledger_100.json",
+  "ledger_sha256": "b0f11847356b46017006bb35cd5f160e0923ccfb3bff4bfda55985bce9ad5462",
   "scientific_counts": {
-    "PASS": 44,
+    "PASS": 45,
     "FAIL": 0,
     "UNRESOLVED": 2,
-    "NOT_RUN": 54
+    "NOT_RUN": 53
   },
   "changed_ids": [
-    "P23",
-    "P24"
+    "X17"
   ],
-  "unchanged_row_objects": 98,
-  "prior_PASS_rows_unchanged": 42,
+  "unchanged_row_objects": 99,
+  "prior_PASS_rows_unchanged": 44,
   "scientific_packets": [
     "pc_continuation_20261023/README.md",
-    "pyscf_external_20261023/README.md"
+    "pyscf_external_20261023/README.md",
+    "x17_external_20261023/README.md"
   ],
   "portable_replay": [
     "pc_continuation_20261023/README.md",
-    "pyscf_external_20261023/README.md"
+    "pyscf_external_20261023/README.md",
+    "x17_external_20261023/README.md"
   ],
-  "job_state_note": "This checkpoint records completed full PySCF production6465923 and analysis of retained scientific outputs. Pilot6465868 and analysis repair6465910 add zero credit. No current queue state or future submission is inferred; automatic follow-up remains paused.",
+  "job_state_note": "This checkpoint records complete X17 production6466242 and analysis of retained scientific outputs. Pilot6466078 adds zero credit. No current queue or future submission is inferred; automatic follow-up remains paused.",
   "historical_20261022_stop_snapshot": {
     "schema": "portable_public_handoff_v1",
     "recorded_utc": "2026-10-22T20:31:28.180884+00:00",
@@ -137,6 +138,6 @@
     "The October22 hard-stop and cancelled jobs remain immutable historical evidence. Explicit human resume occurredOctober23; automatic follow-up remains paused."
   ],
   "prior_UNRESOLVED_rows_unchanged": 2,
-  "previous_scientific_ledger": "reporting/reports/pc_reconciliation_v12/ledger_100.json",
-  "previous_ledger_sha256": "976272652f95647c133eed9c6261edeedfcf0833b38cf8bc44095398474d6338"
+  "previous_scientific_ledger": "reporting/reports/pyscf_v13/ledger_100.json",
+  "previous_ledger_sha256": "95205b58d9f2dfac9bcbf9afeb161cc8469af898d4cacc5b6c1d542caff95259"
 }
