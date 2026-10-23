@@ -1,0 +1,22 @@
+{
+  "attempts": [
+    {
+      "job_id": null,
+      "original_admission_receipt_sha256": "93deb923b6c42a0d5c451873026f50d263b8dec8edf18ca8a32ca01981d20b06",
+      "reason": "Required Slurm account option was omitted; sbatch rejected before a job was created.",
+      "science_or_sampling_executed": false,
+      "scientific_completions": 0,
+      "status": "REJECTED_BEFORE_JOB_CREATION"
+    },
+    {
+      "computational_source_or_gate_changes": false,
+      "job_id": "6465868",
+      "original_submission_receipt_sha256": "be3696c5c577a91dd555cd4d2390547064df57daf79491ea3cb90b15bb796bfa",
+      "status": "SUBMITTED_ORIGINAL_PILOT"
+    }
+  ],
+  "private_queue_or_admission_bodies_included": false,
+  "schema": "PYSCF_MINIMAL_NO_JOB_MECHANICAL_HISTORY_V1",
+  "source_archive_sha256": "3c4644711b744897ebfdb52c937001cf262e8e81f5930c78f4a1d9e6fa1055cc",
+  "source_freeze_sha256": "259e988a8bb6733b16a62692c284e931f1761bac779c7ebd38e3f7202bc6a5ed"
+}

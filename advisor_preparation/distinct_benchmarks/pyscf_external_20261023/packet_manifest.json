@@ -1,0 +1,191 @@
+{
+  "base_ledger_sha256": "976272652f95647c133eed9c6261edeedfcf0833b38cf8bc44095398474d6338",
+  "files": [
+    {
+      "bytes": 5061,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/README.md",
+      "sha256": "daf512c89bd65d611037b3d4cc898933ab32f36a04e7360a2079ecb42aa66702"
+    },
+    {
+      "bytes": 3311,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/evidence_io.py",
+      "sha256": "e11df6f07b67363f76049f962d078a4a6964bdeea5c4738b132765460ca6bb7e"
+    },
+    {
+      "bytes": 127083,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/failed_pilot/data.tar.gz",
+      "sha256": "d88918312b009f6d44c149772bbf3fe64b57404222eddd57e4450d64234427b5"
+    },
+    {
+      "bytes": 2282,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/failed_pilot/data_manifest.json",
+      "sha256": "49467923d801f1dc13d11efd6039c9755264a2de84c5b13503b7844c5dbca57b"
+    },
+    {
+      "bytes": 1212,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/failed_pilot/failure_summary.json",
+      "sha256": "f7f23529595f31e76b4b96ec15ddd7adaf063adb21bf3e4f62776ed3a4e58d77"
+    },
+    {
+      "bytes": 3204,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/failed_pilot/scientific_selection.json",
+      "sha256": "7fbbe4415613985979616fecc60f95ebd02003f968dba515e1226042cc0fe963"
+    },
+    {
+      "bytes": 12066,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/independent/audit_pyscf_production.py",
+      "sha256": "4b33bd92bbef0a719f47a11d65a0db0a297b0374096efde97ccb62f43d54b0b7"
+    },
+    {
+      "bytes": 8072,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/independent/audit_recovered_pilot.py",
+      "sha256": "e2e69b19c29d7d0aace5fb16780bc35c9f91b410563a49493be7dce4c58dd893"
+    },
+    {
+      "bytes": 950,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/mechanical_submission_history.json",
+      "sha256": "418706e7b3a9a700b05b78d52b3442c52eade92f917e2bbd24ac25240c7dca75"
+    },
+    {
+      "bytes": 1044,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/pilot_public_replay_receipt.json",
+      "sha256": "a026064a11ea83d3e4539bffd4b0bf4ac879c098ee8343ab119bb1450b579afe"
+    },
+    {
+      "bytes": 34911077,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/data.tar.gz",
+      "sha256": "9164ede9db58f4286a74b16e43c83183368735ab85f9d142c1b68105a46df65f"
+    },
+    {
+      "bytes": 2652,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/data_manifest.json",
+      "sha256": "88c48e7881dc1ae037133afd424dca19354e5420faabd314226d0d597172a337"
+    },
+    {
+      "bytes": 122136,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/original_independent_audit.json",
+      "sha256": "0ca893c030f775dd6d912f4a1b89e8a4e3cc3339e7180b23ccb0dba73e068ab6"
+    },
+    {
+      "bytes": 635890,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/public_frozen_comparator_replay.json",
+      "sha256": "12d4a6dfb8e0c339ce028ee18e4d914c2455496b1c2e9d51eed326f52b8e132d"
+    },
+    {
+      "bytes": 118097,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/public_independent_audit.json",
+      "sha256": "58c398466e406e6a0bfe0c186e5fc9f74d5505735480dd1061f73e005da3454a"
+    },
+    {
+      "bytes": 3524,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/public_replay_receipt.json",
+      "sha256": "a39b0c9e356ce27591f6e041bca0b9f8bcb82193b91f250e5787c72859724391"
+    },
+    {
+      "bytes": 6647,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/public_scientific_input_manifest.json",
+      "sha256": "94a15ad62d382090c90aac4243c9de4de3613e2be758fa13090d971022007575"
+    },
+    {
+      "bytes": 4215,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/production/scientific_selection.json",
+      "sha256": "6bfacf826d60329bebea6d2c518e2cbe204a856588f67cc47d3824ef854a45dd"
+    },
+    {
+      "bytes": 11357,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/reference_metadata/PYSCF_APACHE_2_LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "bytes": 308,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/reference_metadata/native_source_pins.json",
+      "sha256": "9403943a35d42f7adb49f49781b25cdcfa2d29d7c682e96d1ce9244827cf1437"
+    },
+    {
+      "bytes": 1864,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/reference_metadata/primary_sources.json",
+      "sha256": "b06fdac75b1599b5dfecc3de4f3f141e85cc38cc52fb88ae8c04f40c43913d7f"
+    },
+    {
+      "bytes": 1148,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/reference_metadata/reference_library_pins.json",
+      "sha256": "8944a79591e4c068ffe8db47d44f891d47fb4da84c5cc8b0b3b6e67f915cdc4b"
+    },
+    {
+      "bytes": 11434,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/repaired_pilot/data.tar.gz",
+      "sha256": "cc26b3926374384a881e87bc3ef29e591e358b0c9f23c0a31277832b40f1ba45"
+    },
+    {
+      "bytes": 1703,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/repaired_pilot/data_manifest.json",
+      "sha256": "9f4365bcb6f2fc4027c6b69a6d729330826333335ce60080b425b2bdbb1c6325"
+    },
+    {
+      "bytes": 1161,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/repaired_pilot/independent_audit_summary.json",
+      "sha256": "f0a46e088a4664c20841c1491898c957ad95f15d82daf6e6bee2353ae7c9d78a"
+    },
+    {
+      "bytes": 2590,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/repaired_pilot/scientific_selection.json",
+      "sha256": "e7beb974a168a72a281555b26a8d61e97fcf30565c4cf2ba5e7f879cb2b5d7d4"
+    },
+    {
+      "bytes": 5920,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/replay_pilot.py",
+      "sha256": "36eb069733e216fdc083856f9af4b3e808e2f68407607c54268d156c5db11d48"
+    },
+    {
+      "bytes": 5422,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/replay_production.py",
+      "sha256": "dd4404f4bdb70ed6e23b2b1ade491eacb3b955412a9e548e71f334f2fa9d8700"
+    },
+    {
+      "bytes": 7819,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/sources/index.json",
+      "sha256": "ff3f47e4f0659f7bdf367c0bd10771d1d0dcfe0d9b8fd915fdfcd37eeca3ed71"
+    },
+    {
+      "bytes": 7347,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/sources/pyscf-pilot-analysis-v2-source.tar.gz",
+      "sha256": "12bbb6dd20447ff1e3b2cab4bc69c773bcf9ceb119f30a31d5624a3b944e0c9e"
+    },
+    {
+      "bytes": 71052,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/sources/pyscf-two-orbital-production-v2-source.tar.gz",
+      "sha256": "a92f18307173a500317563ed888ccc5c3d1b44c53ad8d6616a77a52e3558074f"
+    },
+    {
+      "bytes": 69465,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/sources/pyscf-two-orbital-v1-source.tar.gz",
+      "sha256": "3c4644711b744897ebfdb52c937001cf262e8e81f5930c78f4a1d9e6fa1055cc"
+    },
+    {
+      "bytes": 1961,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/sources/pyscf_pilot_analysis_v2_freeze.json",
+      "sha256": "52f86d2420f9c8d907ebf0d725de91a7867654b1a4521c21e4d54deb6b59d6a0"
+    },
+    {
+      "bytes": 4253,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/sources/pyscf_two_orbital_production_v2_freeze.json",
+      "sha256": "469eda04dfaf88287513fdf670871057cb0f4c24a65fd996ce8be9268ba58bc2"
+    },
+    {
+      "bytes": 4377,
+      "path": "advisor_preparation/distinct_benchmarks/pyscf_external_20261023/sources/pyscf_two_orbital_v1_freeze.json",
+      "sha256": "259e988a8bb6733b16a62692c284e931f1761bac779c7ebd38e3f7202bc6a5ed"
+    },
+    {
+      "bytes": 16493,
+      "path": "advisor_preparation/distinct_benchmarks/reporting/merge_pyscf_tranche.py",
+      "sha256": "5ebea85599df367236fb45403731c3094388abe0af3d5f28afbef14791fc2645"
+    }
+  ],
+  "frozen_utc": "2026-10-23T18:16:33.756696+00:00",
+  "original_scientific_execution_bytes_retained": true,
+  "pilot_repair_credit": 0,
+  "root_admission_and_unrelated_queues_excluded": true,
+  "schema": "PUBLIC_PYSCF_PACKET_V1",
+  "scientific_only_selection": true
+}

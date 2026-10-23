@@ -1,28 +1,31 @@
 {
-  "schema": "portable_public_handoff_v2",
-  "recorded_utc": "2026-10-23T17:44:33.410332+00:00",
+  "schema": "portable_public_handoff_v3",
+  "recorded_utc": "2026-10-23T18:16:33.756696+00:00",
   "manual_resume_authorized_date": "2026-10-23",
   "automation_status": "PAUSED",
-  "latest_scientific_ledger": "reporting/reports/pc_reconciliation_v12/ledger_100.json",
-  "ledger_sha256": "976272652f95647c133eed9c6261edeedfcf0833b38cf8bc44095398474d6338",
+  "latest_scientific_ledger": "reporting/reports/pyscf_v13/ledger_100.json",
+  "ledger_sha256": "95205b58d9f2dfac9bcbf9afeb161cc8469af898d4cacc5b6c1d542caff95259",
   "scientific_counts": {
-    "PASS": 42,
+    "PASS": 44,
     "FAIL": 0,
     "UNRESOLVED": 2,
-    "NOT_RUN": 56
+    "NOT_RUN": 54
   },
   "changed_ids": [
-    "P21",
-    "X01",
-    "X09",
-    "X13",
-    "X16"
+    "P23",
+    "P24"
   ],
-  "unchanged_row_objects": 95,
-  "prior_PASS_rows_unchanged": 39,
-  "scientific_packets": "pc_continuation_20261023/README.md",
-  "portable_replay": "pc_continuation_20261023/README.md",
-  "job_state_note": "This reconciliation uses completed prior scientific jobs and performs postprocessing only. New current-queue claims require fresh scheduler receipts; no pending live-source candidate is counted here.",
+  "unchanged_row_objects": 98,
+  "prior_PASS_rows_unchanged": 42,
+  "scientific_packets": [
+    "pc_continuation_20261023/README.md",
+    "pyscf_external_20261023/README.md"
+  ],
+  "portable_replay": [
+    "pc_continuation_20261023/README.md",
+    "pyscf_external_20261023/README.md"
+  ],
+  "job_state_note": "This checkpoint records completed full PySCF production6465923 and analysis of retained scientific outputs. Pilot6465868 and analysis repair6465910 add zero credit. No current queue state or future submission is inferred; automatic follow-up remains paused.",
   "historical_20261022_stop_snapshot": {
     "schema": "portable_public_handoff_v1",
     "recorded_utc": "2026-10-22T20:31:28.180884+00:00",
@@ -132,5 +135,8 @@
     "X01 selected stage2 UNRESOLVED; incomplete final reserved stage adds no result or fourth look.",
     "X16 intervals are conditional on declared binary64 error budget; no thermodynamic pairing claim.",
     "The October22 hard-stop and cancelled jobs remain immutable historical evidence. Explicit human resume occurredOctober23; automatic follow-up remains paused."
-  ]
+  ],
+  "prior_UNRESOLVED_rows_unchanged": 2,
+  "previous_scientific_ledger": "reporting/reports/pc_reconciliation_v12/ledger_100.json",
+  "previous_ledger_sha256": "976272652f95647c133eed9c6261edeedfcf0833b38cf8bc44095398474d6338"
 }

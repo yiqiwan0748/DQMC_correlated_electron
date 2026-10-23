@@ -1,7 +1,7 @@
 # Hubbard numerical research evidence
 
 Numerical results, source code and external checks for research conversations.
-Updated 22 October 2026. [Reproduction on ISAAC](isaac/ISAAC_REPRODUCE.md).
+Updated 23 October 2026. [Reproduction on ISAAC](isaac/ISAAC_REPRODUCE.md).
 
 ## Research results
 
@@ -70,10 +70,10 @@ questions. It is a broader research programme, with unsupported and unexecuted
 questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
-The new [distinct-benchmark campaign](distinct_benchmarks/README.md) records 42 passing questions and two unresolved
+The new [distinct-benchmark campaign](distinct_benchmarks/README.md) records 44 passing questions and two unresolved
 precision/mixing questions on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/pc_reconciliation_v12/README.md)
-records **42 PASS, 2 UNRESOLVED and 56 NOT_RUN**. These checks found a missing fermionic
+[independently audited ledger](distinct_benchmarks/reporting/reports/pyscf_v13/README.md)
+records **44 PASS, 2 UNRESOLVED and 54 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
@@ -144,3 +144,9 @@ The [October 23 scientific leaf](distinct_benchmarks/reporting/reports/pc_reconc
 P21 remains UNRESOLVED across 704 complex native ALF/user Green entries: two individual-chain ESS gates and 376 precision limits fail. Its frozen production paired-chain/complex-disk protocol explicitly supersedes the older unexecuted sampling candidate. X01 remains UNRESOLVED because stage 2 quartic entropy halfwidth 0.0051318999469 exceeds 0.005. Its incomplete final reserved stage, cancelled parts and failed analyses remain visible; no pooling or fourth look is introduced. The [portable scientific packets](distinct_benchmarks/pc_continuation_20261023/README.md) include full selected text data, source and mathematical replay, with controller/private handoff material excluded.
 
 The pinned [PySCF environment setup](distinct_benchmarks/pyscf_setup_v1/README.md) completed as job 6465769. This is setup only and adds no scientific pass.
+
+## Independent PySCF finite-cluster comparison
+
+The [44-question checkpoint](distinct_benchmarks/reporting/reports/pyscf_v13/README.md) adds exactly P23 and P24: complete low-energy spectra/spin labels and directed orbital-transition strengths, compared against actual PySCF FCI operators on seven finite two-orbital fixtures. All 3,503 frozen comparator checks and 887 independent checks pass. The [public source/data replay](distinct_benchmarks/pyscf_external_20261023/README.md) independently reproduces the complete result from retained operators/eigensystems, without solver reruns.
+
+The original pilot's comparator serialization failure and its analysis-only Boolean repair remain visible with zero catalogue credit. The native Hamiltonian, reference producer, physical fixtures and scientific gates are unchanged. Only intraorbital Hubbard interaction is tested; no whole-package, full-Hund or thermodynamic certification follows. All 98 other catalogue rows, including X01/P21 unresolved histories, remain exact.

@@ -1,0 +1,16 @@
+{
+  "schema": "PYSCF_REFERENCE_LIBRARY_PINS_V1",
+  "pyscf_version": "2.14.0",
+  "files": {
+    "pyscf/__init__.py": "18d7ca2dba59d89e69256917990b01606af5999a8e22d7adec5edd4565850451",
+    "pyscf/fci/direct_spin1.py": "df00b56a8a4f996bbe4bddbb697db08b64c6f3110d68765ad5ac6798dff87d2d",
+    "pyscf/fci/spin_op.py": "a820086c0b58774dee42c7eb489fcafc118b89b8cfe208bae6573ffba09d0343",
+    "pyscf/fci/cistring.py": "f06a025d3eee7895d9e33d3cf4f2fbb22fabb94b555aad4c18fe6783e99db1be",
+    "pyscf/fci/addons.py": "a317adbe693172d8006bd4ded4355a1cfe004018d4dd9061e9b28f211e989517",
+    "pyscf/fci/rdm.py": "d66cd9412a6a44fb937a4b6d35e1393798a73e2809713637d985328591fd4a9b",
+    "pyscf/lib/libfci.so": "df1a6c5f5c175a536e2d2f4727e9af47cc0ce60ff334f10e0796315df05adcde",
+    "pyscf/lib/libnp_helper.so": "22367859ca19057d29013075accc0c1d47e78e7d213295e686bf9a40fee735eb",
+    "pyscf-2.14.0.dist-info/RECORD": "d0bafe91d738429327bfc6a5c820c4aaadae6816a93d84c1b316df04c7330663"
+  },
+  "provenance": "Fresh dedicated ISAAC environment installed from exact PyPI wheel hashes recorded in pyscf_setup_v1; source and binaries are hash-pinned; no binaries copied."
+}

@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/pc_reconciliation_v12/README.md)
-records **42 PASS, 2 UNRESOLVED and 56 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/pyscf_v13/README.md)
+records **44 PASS, 2 UNRESOLVED and 54 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -214,3 +214,11 @@ The [new immutable leaf](reporting/reports/pc_reconciliation_v12/README.md) reco
 P21's actual native ALF and maintained user buffers remain UNRESOLVED: two component mixing gates and 376 complex precision limits fail across 704 complex entries. X01 remains UNRESOLVED at its complete second reserved stage; quartic entropy halfwidth 0.0051318999469 misses 0.005. The final stage is incomplete and contributes no primary estimate. Pilots, repeated X12, analysis repairs, setup-only PySCF and cancelled attempts add no completions.
 
 [Portable source/data packets and replay commands](pc_continuation_20261023/README.md) preserve physical conventions, complete matrices/bins, all scientific failure history and explicit public selections. No private ZIP, controller policies, CV or contacts are required. The earlier October 22 stop remains fulfilled historical evidence; the user explicitly resumed work on October 23. Automatic follow-up remains paused.
+
+## Independent PySCF spectra and directed transitions
+
+Full production job 6465923 passes P23 and P24 at the frozen gates: seven complete finite fixtures and eight complete low-energy manifolds per fixture. The reference uses actual PySCF 2.14.0 FCI Hamiltonian/spin contractions and transition density matrices; the native target uses the existing two-orbital Hamiltonian with explicitly new dense-spectral and observable adapters. The asymmetric direction witness distinguishes the directed operator from its adjoint. All 3,503 comparator gates and 887 independent checks pass.
+
+The [44-question leaf](reporting/reports/pyscf_v13/README.md) changes only these two IDs from the immutable 42-question leaf. All 98 other rows, every prior PASS and both unresolved histories remain exact. The [compact public scientific packet](pyscf_external_20261023/README.md) retains complete arrays, frozen sources, licences, installed-reference hash metadata and a fresh replay from the actual compressed payload. Public replay passes 847 scientific/integrity checks; private remote-inode/transport checks are explicitly excluded.
+
+Pilot 6465868's native and reference producers succeeded, then comparator JSON serialization failed. Its original failed execution and traceback remain intact. Analysis-only repair 6465910 converts NumPy Boolean values for JSON, preserves all scientific formulas/gates and retains original plus repair costs. Both add zero credit. Production v2 changes that single Boolean conversion only. The interaction is intraorbital Hubbard U without Hund/interorbital/pair-hopping terms; selected finite-cluster agreement does not establish thermodynamic or whole-package reliability.

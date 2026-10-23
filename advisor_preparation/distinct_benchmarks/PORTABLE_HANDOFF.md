@@ -1,6 +1,6 @@
 # Portable scientific handoff: 23 October 2026
 
-The current [immutable scientific ledger](reporting/reports/pc_reconciliation_v12/README.md) records **42 PASS, 2 UNRESOLVED and 56 NOT_RUN** across 100 distinct ideas. SHA256: `976272652f95647c133eed9c6261edeedfcf0833b38cf8bc44095398474d6338`. It preserves all 95 unrelated rows and all 39 prior PASS rows from the [previous checkpoint](reporting/reports/ground_initial_v10/README.md). The user explicitly resumed work on October 23; automatic follow-up remains paused.
+The current [immutable scientific ledger](reporting/reports/pyscf_v13/README.md) records **44 PASS, 2 UNRESOLVED and 54 NOT_RUN** across 100 distinct ideas. SHA256: `95205b58d9f2dfac9bcbf9afeb161cc8469af898d4cacc5b6c1d542caff95259`. It preserves all 98 unrelated row objects, all 42 prior PASS rows and both unresolved histories from the [42-question checkpoint](reporting/reports/pc_reconciliation_v12/README.md). The user explicitly resumed work on October 23; automatic follow-up remains paused.
 
 Clone draft PR 9's branch and record the actual checked-out commit:
 
@@ -14,6 +14,8 @@ The [scientific continuation packets](pc_continuation_20261023/README.md) provid
 
 | Question | Reconciled scientific state | Principal original jobs |
 | --- | --- | --- |
+| P23 | PASS: complete finite two-orbital energy manifolds, projectors and spin labels versus actual PySCF FCI operators |6465923; failed pilot6465868 and analysis-only repair6465910 excluded |
+| P24 | PASS: complete directed orbital-transition strengths, reverse action and asymmetric witness |6465923; seven fixtures/56 manifolds count as one question |
 | X09 | PASS at unchanged gates with frozen sixteen-sweep precision; original eight-sweep failed gates retained |6460656; original 6458708 |
 | X13 | PASS across complete finite charged thresholds/operator visibility; new adapter through unchanged native Hamiltonian |6462017 |
 | X16 | PASS for all finite binding intervals under declared conditional binary64 budget; pilot excluded |6462471; pilot 6462342 |
@@ -25,3 +27,9 @@ P21 uses actual native ALF continuous-Gaussian fields versus actual maintained u
 Use Python 3.12 with NumPy 2.4.6 and SciPy 1.17.1 for the [four read-only packet replays](pc_continuation_20261023/README.md). They reconstruct full numerical gates without native solvers, Monte Carlo, ALF execution or submission. A successful integrity audit leaves P21/X01 scientifically UNRESOLVED. Setup-only PySCF job 6465769 contributes zero scientific completions. Do not infer a current live queue or new source release from this archival snapshot; inspect fresh scheduler receipts and freeze any newly authorized scientific run separately.
 
 The October 22 deadline was fulfilled. Original jobs 6458825, 6458826 and 6458828 were cancelled before starting, while L32 pilot 6458711 completed and independently passed 177 pilot checks with zero catalogue credit. The [initial stop receipt](submissions/user_stop_deadline_20261022.json), [final stop receipt](submissions/user_stop_final_state_20261022.json), [scheduler accounting](submissions/user_stop_final_accounting_20261022.txt) and [L32 audit](reporting/reports/bethe_l32_audit_6458711_portable_v1/README.md) remain immutable. [handoff_state.json](handoff_state.json) retains that historical stop snapshot separately from today's audited ledger.
+
+## PySCF public replay and failure history
+
+The [separate PySCF packet](pyscf_external_20261023/README.md) supplies all three frozen source versions, selected complete scientific raw arrays and original authored execution receipts, the failed pilot traceback, unchanged scientific independent auditors and two replay entry points. `replay_pilot.py` reproduces 122 selected science/resource checks with zero credit. `replay_production.py` reproduces all 3,503 frozen gates and 847 public independent checks, matching all seven scientific case metrics from the original 887-check audit. It runs analysis of retained eigensystems/operators only. Installed binary hashes are metadata; no binaries, root-admission prior queues, CV or contact data are included.
+
+The first account-related submission rejection created no job and is retained as a minimal hash-bound mechanical history. The failed pilot's original process exits remain [0,0,1]. Its strict NumPy-Boolean analysis repair does not overwrite that receipt, resample science, change gates or add credit. Only complete independently audited production changes P23/P24. Earlier PC-stage precision/mixing failures remain unchanged in the predecessor and current ledgers. No current queue state or future submission is implied by this archived handoff.
