@@ -1,0 +1,1935 @@
+{
+  "description": "80 external observable/model/ensemble benchmark cases in 10 QuSpin oracle fixtures. Multiple observables per fixture are not independent methods. User-package comparisons have not yet run.",
+  "site_indexing": "zero-based spatial sites; S2 retains both spin species on every listed site",
+  "energy_convention": "energy_uncentered=<Khop+U D>, chemical potential excluded; finite-dtau density built from centered Hc at mu_c=0.",
+  "cases": [
+    {
+      "id": "QG-01",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-02",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-03",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-04",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-05",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-06",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-07",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-08",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 0.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-09",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-10",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-11",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-12",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-13",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-14",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-15",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-16",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-17",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-18",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-19",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-20",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-21",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-22",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-23",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-24",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_03",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-25",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-26",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-27",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-28",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-29",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-30",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-31",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-32",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_04",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-33",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-34",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-35",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-36",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-37",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-38",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-39",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-40",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_05",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-41",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-42",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-43",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-44",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-45",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-46",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-47",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-48",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_06",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 8.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-49",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-50",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-51",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-52",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-53",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-54",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-55",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-56",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_07",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-57",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "energy_uncentered",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-58",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "double_occupancy_total",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-59",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-60",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-61",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-62",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-63",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QG-64",
+      "oracle_family": "QuSpin independent canonical ground state",
+      "fixture": "ground_08",
+      "model": {
+        "L": 6,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "apbc",
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "ensemble": "canonical_ground",
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1,
+        2
+      ],
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_ED",
+        "user_DMRG"
+      ]
+    },
+    {
+      "id": "QT-01",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "energy_uncentered",
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-02",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "double_occupancy_total",
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-03",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-04",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-05",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-06",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-07",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-08",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_01",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 2.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 1.0,
+      "dtau": 0.1,
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-09",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "energy_uncentered",
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-10",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "double_occupancy_total",
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-11",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        1
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-12",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "spin_z_correlation",
+      "sites": [
+        0,
+        2
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-13",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        1
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-14",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "onebody_up",
+      "sites": [
+        0,
+        2
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-15",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "S2",
+      "subsystem_sites": [
+        0
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    },
+    {
+      "id": "QT-16",
+      "oracle_family": "QuSpin independent grand-canonical finite-dtau transfer trace",
+      "fixture": "thermal_02",
+      "model": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_centered": 0.0,
+        "boundary": "pbc"
+      },
+      "ensemble": "grand_canonical_trotter",
+      "beta": 2.0,
+      "dtau": 0.1,
+      "observable": "S2",
+      "subsystem_sites": [
+        0,
+        1
+      ],
+      "trotter_order": "V_K",
+      "observable_normalization": "cluster total for energy and D; physical Sz=(nup-ndown)/2; per-spin <c\u2020_i c_j>; natural-log Renyi-2",
+      "targets": [
+        "user_thermal_ED",
+        "user_DQMC"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "p21_execution_plan_v4_static_review",
+  "created_utc": "2026-10-22T19:50:30.486591+00:00",
+  "status": "STATIC_CHECKS_PASS_NOT_EXECUTED",
+  "catalogue_status": "NOT_RUN_AS_DEFINED",
+  "archive_sha256": "961f9700e6ac41efd2ad778f073cd0ae8dd75a82bee56d85c505a0145633eb7e",
+  "archive_member_count": 30,
+  "generator_sha256": "65b1f9bb319b1e5df4af6118046ebfe933d4c37c396fbdb802c75623822d283a",
+  "inner_wrapper_sha256": "96c2624be665a7fc18c5db8a8db787558ab9c8cb18bcfd9db1d0033b46676ab6",
+  "root_sbatch_wrapper_sha256": "417957fa368320618a24a3b388c9d16641cb527b8c09afc4ec9d48982ef469d7",
+  "root_sbatch_PLAN_body_exact": true,
+  "body_sha256": "70ec7df8d2f64ea301422b0542e289f97287e42f81c7e6a393b72205a31b45d5",
+  "all30_archive_members_match_source_closure_and_local_bytes": true,
+  "wrapper_bash_syntax": "PASS",
+  "literal_PLAN_bash_block_syntax": "PASS",
+  "python_compile_only": "PASS",
+  "v1_v2_v3_freezes": "UNCHANGED_HASHES_VERIFIED",
+  "Fortran_compilation": "NOT_RUN; no local compiler",
+  "independent_review": "REQUESTED",
+  "science_or_cluster_execution_by_agent": 0
+}

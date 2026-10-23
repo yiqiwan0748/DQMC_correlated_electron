@@ -1,0 +1,11 @@
+{
+  "job_id": "6457724",
+  "dependency": "afterany:6457716",
+  "frozen_release": "../source_releases/tenpy-tranche-freeze.json",
+  "archive_sha256": "cc00d51fc99cf2d265a1fe2c75f59e649a35ff3116c69211511bb83f4987bbed",
+  "scope": "New isolated TeNPy venv then incomplete doped/coarse pilot; no distinct PASS inferred",
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 15,
+  "per_driver_compute_cap_seconds": 240
+}

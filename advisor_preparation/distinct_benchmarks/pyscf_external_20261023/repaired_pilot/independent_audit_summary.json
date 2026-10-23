@@ -1,0 +1,40 @@
+{
+  "audit_status": "PASS",
+  "auditor_sha256": "e2e69b19c29d7d0aace5fb16780bc35c9f91b410563a49493be7dce4c58dd893",
+  "catalogue_ids": [
+    "P23",
+    "P24"
+  ],
+  "catalogue_status": {
+    "P23": "NOT_RUN",
+    "P24": "NOT_RUN"
+  },
+  "check_count": 273,
+  "frozen_comparator_checks": 529,
+  "integrity": "PASS",
+  "local_vs_ISAAC_replay_max_float_difference": 4.440892098500626e-16,
+  "maximum_projected_peak_mib": 2641.671875,
+  "only_numpy_bool_serialization_repaired": true,
+  "original_complete_audit_sha256": "f93ed6fb65f627073d442e74330e46747e015d5294e0d126704891151a02ee34",
+  "original_execution_retained": "UNRESOLVED",
+  "physics_executed": false,
+  "pilot_cases": [
+    {
+      "case_id": "N2_U2",
+      "ground_dimension": 1,
+      "ground_energy": -4.395831525580128,
+      "manifolds": 8
+    },
+    {
+      "case_id": "DIR_N2_U1",
+      "ground_dimension": 1,
+      "ground_energy": -3.0355339059327306,
+      "manifolds": 8
+    }
+  ],
+  "production_admitted": false,
+  "projected_total_seconds": 712.6154508037725,
+  "replay_roundoff_allowance": 1e-12,
+  "schema": "PYSCF_RECOVERED_PILOT_INDEPENDENT_AUDIT_V1",
+  "scientific_completions": 0
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "A25_EXPLICIT_PUBLIC_SCIENTIFIC_SELECTION_V1",
+  "selected_original_scientific_members": {
+    "results/comparison.json": {
+      "sha256": "2d8d606fb3e9aaeec61aff32e9f628336e130dfee349227946bdb965864ca020",
+      "bytes": 1475199,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/comparison.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/comparison.stdout.txt": {
+      "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+      "bytes": 5,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/comparison.time.txt": {
+      "sha256": "6b3f5d0d56779136d8d6bf93926c4231df7983ef008d29d2ec41d193af1f6e54",
+      "bytes": 1294,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/execution.json": {
+      "sha256": "b499e4e34b8103c125bd29c6473904fd2fa12b3414fee683e50efdb74b07d452",
+      "bytes": 55389,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/native.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/native.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/native.time.txt": {
+      "sha256": "f19e123cce4804c1c22e96b4617c73444e789834d3dff5dd9d69eac7138c7549",
+      "bytes": 1074,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/native.toml": {
+      "sha256": "de1033a11400111affe6e3ce0043056c748e21f29efb1a5dd20c44a93a4db40d",
+      "bytes": 2866193,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/reference.json": {
+      "sha256": "fc23a8550a0a16308a2b20fe07382f6020955812384430f9a8a0bdb7bcf41376",
+      "bytes": 4092998,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/reference.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/reference.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "results/reference.time.txt": {
+      "sha256": "aedd7b5c5bce16d08a5bc25c504d803dbb5043c08840f030f1d339e26661270d",
+      "bytes": 1036,
+      "original_role": "ORIGINAL_SCIENTIFIC_EXECUTION_OUTPUT",
+      "original_bytes": true
+    },
+    "original_accounting.txt": {
+      "sha256": "9de039b898c7546a0f6f0d79bc90e708bf3c240375b12e0bfdd7bfe25d9b957c",
+      "bytes": 288,
+      "original_role": "ORIGINAL_OWN_JOB_ACCOUNTING",
+      "original_bytes": true
+    },
+    "analysis/audit.json": {
+      "sha256": "a3396cb84f3553d38d90f5c2277ca01c19e6f6d4f68d600f0d9db12085404be4",
+      "bytes": 2452275,
+      "original_role": "ORIGINAL_SAVED_DATA_ANALYSIS_OUTPUT",
+      "original_bytes": true
+    },
+    "analysis/frozen_replay/comparison.json": {
+      "sha256": "2d8d606fb3e9aaeec61aff32e9f628336e130dfee349227946bdb965864ca020",
+      "bytes": 1475199,
+      "original_role": "ORIGINAL_SAVED_DATA_ANALYSIS_OUTPUT",
+      "original_bytes": true
+    },
+    "analysis/frozen_replay/comparison.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_role": "ORIGINAL_SAVED_DATA_ANALYSIS_OUTPUT",
+      "original_bytes": true
+    },
+    "analysis/frozen_replay/comparison.stdout.txt": {
+      "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+      "bytes": 5,
+      "original_role": "ORIGINAL_SAVED_DATA_ANALYSIS_OUTPUT",
+      "original_bytes": true
+    },
+    "analysis_accounting.txt": {
+      "sha256": "5703feeb7f0236346b588b683708f38ff49c4606a819ea6231f77b6426c521ff",
+      "bytes": 293,
+      "original_role": "ORIGINAL_OWN_ANALYSIS_JOB_ACCOUNTING",
+      "original_bytes": true
+    }
+  },
+  "omitted_private_or_duplicate_files": [
+    {
+      "role": "a25_flux_full_6466916/remote_text_receipts.tar",
+      "sha256": "9526ea2fa1001c7347c320704e2b3b25db5b8126e9f7b1146c52288989bd858c",
+      "bytes": 9082880,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_flux_full_6466916/terminal_transfer_closure.json",
+      "sha256": "caa7300e16a7505b88d7e993e19842263ef31080224a769b6d2ddc78c7143435",
+      "bytes": 22334,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_flux_full_6466916/transfer_after.json",
+      "sha256": "f94881e5756926b2cd6ab9b015ddb28e9c2bf8da64b75e9e31c220cf6be0b30e",
+      "bytes": 105883,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_flux_full_6466916/transfer_before.json",
+      "sha256": "22f15a95e93750bedbde11f683b26443934c3bbf9773ed6158c9b6c0ceb4bdd5",
+      "bytes": 119723,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_full_saved_audit_6467038/original_input_archive.tar.gz",
+      "sha256": "4718659993588f8dead4fc49ebf98e5e40e0e3021f4e1c2088a9ad5b9f48381e",
+      "bytes": 1091338,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_full_saved_audit_6467038/original_input_inventory.json",
+      "sha256": "1e33bc7b3e63de86f627ca0f07abeecdd3ebd792736b4ac1085f306704b3671b",
+      "bytes": 12322,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_full_saved_audit_6467038/remote_text_receipts.tar",
+      "sha256": "f835b7821bd0935423cff3e2a44caa986878b98544e875f8ec1113f9d435ff67",
+      "bytes": 14489600,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_full_saved_audit_6467038/terminal_transfer_closure.json",
+      "sha256": "de1beef8ab97a1f3465570a30a2666d866dd6fdfddafbdfb5702ed7a957f75f4",
+      "bytes": 38216,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_full_saved_audit_6467038/transfer_after.json",
+      "sha256": "0bccd792980ccfb949369819070504f4347159ea81a2d8502037093be8d0ecc5",
+      "bytes": 94612,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    },
+    {
+      "role": "a25_full_saved_audit_6467038/transfer_before.json",
+      "sha256": "0865c83c106940a257d962c14cce563c97cba2f4b81a4726a9f8393f976258c6",
+      "bytes": 116046,
+      "reason": "Private transport/before-after/inventory or duplicate input container; scientific source and outputs are retained separately. Original metadata checks remain established only by retained compute audit, not newly claimed here."
+    }
+  ],
+  "private_controller_submission_bodies_included": false,
+  "original_scientific_execution_bytes_retained": true,
+  "full_data_and_analysis_text_unchanged": true
+}

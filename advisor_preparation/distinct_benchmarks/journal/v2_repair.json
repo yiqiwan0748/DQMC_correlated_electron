@@ -1,0 +1,10 @@
+{
+  "repair": "Journal receipt serialization only",
+  "original_driver_sha256": "2aba1a9e9b518dabb5a9ffaaeaacce0b015ca9c3829c263ccec02c430ce141aa",
+  "repaired_driver_sha256": "73f8e35d2c196f725ac959e54f710d1728dc0a904b3410cbb82a0ecacbb9faa0",
+  "cause": "A [pi,pi] root-center vector retained Julia Irrational values, unsupported by the TOML writer.",
+  "change": "Convert recorded root-center coordinates to Float64. No physical computation, input, tolerance or gate changes.",
+  "prior_attempt": "distinct_tranche01_attempt01/journal.toml",
+  "prior_attempt_status": "UNRESOLVED_RECEIPT_SERIALIZATION; partial malformed receipt preserved",
+  "scientific_rerun_required": true
+}

@@ -1,0 +1,329 @@
+{
+  "schema": "p21_auditor_diagnostic_conditioning_correction_v3",
+  "created_utc": "2026-10-23T00:48:06.544798+00:00",
+  "old_auditor_sha256": "84c1d709b7a9e40148cb7733dd65e53c928ced3fde2698293984137bb95f11eb",
+  "new_auditor_sha256": "d7398ec452b437bede06985a0075bc584414c1d5ad1808d661284dc5f41faa93",
+  "preserved_original_auditor": "audit_p21_sampled_pilot_v2_z_conditioned.py",
+  "original_audit_receipt": "p21_6460727/independent_audit_v2.json",
+  "original_audit_receipt_sha256": "955a3d07444819d018fa4573c78204483d1a05567640340a6880a5eb2c0b3712",
+  "additional_preserved_versions": [
+    {
+      "path": "audit_p21_sampled_pilot_v1_unconditioned.py",
+      "sha256": "923d429af85682066c34372eb6b36ae330fcdca756746b289489865a683822c0"
+    },
+    {
+      "path": "p21_6460727/independent_audit_v1.json",
+      "sha256": "d2cb3629f15840b9deabf06efb21bfe22d90e0be27455ee7d786c2380cf870e6"
+    },
+    {
+      "path": "p21_auditor_conditioning_correction_v2.json",
+      "sha256": "8871dc2f63b4b1b420120f7e080376b0ca2e91cad44534fe535a094eee0932e7"
+    }
+  ],
+  "original_failure_path": "components[917].alf.chains[0].lag1_bin_ESS_estimate",
+  "component": {
+    "order": "G0T",
+    "part": "real",
+    "tau_index": 6,
+    "spin": "down",
+    "row": 1,
+    "column": 1,
+    "backend": "alf",
+    "chain": 1
+  },
+  "independent": {
+    "rho": 0.9380579155352855,
+    "ESS": 2.0454979048687525
+  },
+  "reported": {
+    "rho": 0.9380579155352865,
+    "ESS": 2.0454979048687183
+  },
+  "rho_difference": -9.992007221626409e-16,
+  "ESS_difference": 3.419486915845482e-14,
+  "unconditioned_ESS_allowance": 2.906827354633993e-14,
+  "actual_complete_raw_stat_scan": "Exactlyone non-Z derivedmetric exceededunconditioned64eps; no other primitive/rawstat discrepancies",
+  "correction": "Comparison conditioning only: savedESS must equal its own savedrho clippedformula understrict64eps andrange[1,64]; backendESS must equal ownchainESSsum. CrossESS constrainedby64epsilon rho interval propagatedthrough exactclippedformula. Ownsaved Z definitions/zeroNone/originalmean residual and all primitive/raw64eps checks remain. Backend savedinputderivedmeans/SE/difference/hypot formulas also independentlyverified.",
+  "independent_review": {
+    "reviewer": "next_stage_review",
+    "reviewed_auditor_sha256": "d7398ec452b437bede06985a0075bc584414c1d5ad1808d661284dc5f41faa93",
+    "status": "APPROVED_NO_MATERIAL_BLOCKER",
+    "tests": "Read-only numeric cases: boundedrho conditioningaccepted; malformedESS/rho/constantflag/Z/zeroNone rejected;0solvers"
+  },
+  "robust_local_tests": [
+    "constant64bins",
+    "nearconstant1e-14trend",
+    "slowlinearhighrho",
+    "sinusoidalrho0.9953",
+    "clippingboundary63/65",
+    "badESSrejected",
+    "hugebadZsigma1e-30rejected",
+    "exactzeroNoneenforced"
+  ],
+  "fresh_retrieved_source_checks": {
+    "status": "PASS",
+    "frozen_source_files": 45,
+    "native_source_files": 6,
+    "files": [
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\closure.json",
+        "sha256": "53506350620e15d5ddf3b3807bb042dc99ac1ca798cdef317cef949aa9456aae",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\manifest.toml",
+        "sha256": "ad3390ef4d5285f67c0c7874c0b2ba13723904cd0dd82bd3a950c9ce7d1b8ac6",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\parameters.in",
+        "sha256": "04fe1c936036b4632fdf1562551030dfb0cf546030062ccc8c50d5f9bf4a0108",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\pilot.sbatch",
+        "sha256": "f7bdab7594d5419ca6b229b3f02183b3c83c6b98182405c2c865cd32b52351e3",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_adapter_proof.json",
+        "sha256": "1bf70cb6be15f4bddd63c561b47008b27843f02ab35d608b6c0b8c99bfdf43fc",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\Hamiltonian_main_mod.F90",
+        "sha256": "ed458b2d02b1c6ba833c9b2ef7b7165a4719d98643f05adb13f89f8627c961e1",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\Hamiltonians\\Hamiltonian_Hubbard_smod.F90",
+        "sha256": "fa6be71c1008d80ec2a6b052c341fd6e125089ecec2583316db08702459a8e5c",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\Hop_mod.F90",
+        "sha256": "9cba68f11e840e3597f498717c7c9598c317d17756728d798ac156bf9369ba84",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\main.F90",
+        "sha256": "1eacb29d94a127bd45fd45a3147979e80fcb0be098d4f52dcf6c2bd6e01a1183",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\observables_mod.F90",
+        "sha256": "4d64d20aa84ea82f3e7bcf9206ac357f9b861db9c4d8350f205c2aad00744760",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\Operator_mod.F90",
+        "sha256": "eab7b788ff08b1b4f83bf75976376b90652a9c627fd8706e6f8a8805df1fb7bf",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\Predefined_Int_mod.F90",
+        "sha256": "651f77f7416f4cda318960b4272f3610e248bb9ca60aff357986c67e6af6a73b",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\Set_random_mod.F90",
+        "sha256": "96338df481961e6466cd0a523789311f1f03cdce4ed9e60bc5abc1a75610d0ab",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_observer\\Prog\\tau_m_mod.F90",
+        "sha256": "0ba01c9095d670b527fa3e42bd7b6cdc6ca8c8315c584ff291a057238c365614",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\Hamiltonian_main_mod.F90",
+        "sha256": "ed458b2d02b1c6ba833c9b2ef7b7165a4719d98643f05adb13f89f8627c961e1",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\Hamiltonians\\Hamiltonian_Hubbard_smod.F90",
+        "sha256": "555b291628a80dd94796c59242993933f700096f4af45cbce3dd419da7885cd7",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\Hop_mod.F90",
+        "sha256": "9cba68f11e840e3597f498717c7c9598c317d17756728d798ac156bf9369ba84",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\main.F90",
+        "sha256": "9b08c61719c57a8beb249bfde5a77f68098ea25563b001aebec19727db8cbf2c",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\observables_mod.F90",
+        "sha256": "4d64d20aa84ea82f3e7bcf9206ac357f9b861db9c4d8350f205c2aad00744760",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\Operator_mod.F90",
+        "sha256": "eab7b788ff08b1b4f83bf75976376b90652a9c627fd8706e6f8a8805df1fb7bf",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\Predefined_Int_mod.F90",
+        "sha256": "651f77f7416f4cda318960b4272f3610e248bb9ca60aff357986c67e6af6a73b",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\Set_random_mod.F90",
+        "sha256": "96338df481961e6466cd0a523789311f1f03cdce4ed9e60bc5abc1a75610d0ab",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\alf_original\\Prog\\tau_m_mod.F90",
+        "sha256": "0ba01c9095d670b527fa3e42bd7b6cdc6ca8c8315c584ff291a057238c365614",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\CORRESPONDENCE.md",
+        "sha256": "19ee3dd1b1a9b588b7642e0a5cf598901d802bd1151e6d28a7efbd9771f0ab98",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\license.additional",
+        "sha256": "b6f280768a4be6593de9768f720cb36a6efe50701e916e64de07fe9684c8c619",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\license.gpl",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\observer_linkage_audit.json",
+        "sha256": "917647c20dd01a7d478d03d426f37809383450f561d6ef2c34a1a5411e2266b9",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\overlay_receipt.json",
+        "sha256": "fe4d5c494fab45db23dd3d5baedc5a83879f34ade019e5ac343a20183a7163f3",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\upstream_files.json",
+        "sha256": "43d925cfee9c99d4c818e292198889a581099403e16fdbbf3ca3e1d2c90b4da4",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_adapter_proof.toml",
+        "sha256": "714ff6527552a9720e66ff2113e84f7f2dea3fe4660e9474570a4bdfcedf5aa6",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_native\\Manifest.toml",
+        "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_native\\Project.toml",
+        "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_native\\run\\run_lambda_node.jl",
+        "sha256": "5d7f7a1ff45a8cf69f061d009ca258d829eb4bbbdd36d5b5acf649d76c246e21",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_native\\src\\dqmc_kernel.jl",
+        "sha256": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_native\\src\\grover_rank1_update.jl",
+        "sha256": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_native\\src\\HubbardRenyiDQMC.jl",
+        "sha256": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\provenance\\user_overlay\\src\\dqmc_kernel.jl",
+        "sha256": "911a61642b23a4465639c3b3e4c63ff9d7cf05d51da288f3224f1775c0aba891",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\README.md",
+        "sha256": "54d6745a660684cb34719bbbfe9f464bb7351c3db42459ec8ba5ad21b3c2e368",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\run_pilot.py",
+        "sha256": "d04a9920efb88a81edd90d37f7bd721fd3e14b64489dc2d0538e2d8bb0f4b2d1",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\seeds.json",
+        "sha256": "33b2556d353199ae52b04a1af6e714f2adf7c73828b7a1db99bea63f925f9f64",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\SHA256SUMS",
+        "sha256": "1dc2c0daa3dc273bb03758a44b13f0dbf4f68dbf335c85654c44fb94437e4879",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\static_review.json",
+        "sha256": "991170e52f3ef7b23131431b9617377f2a19459f60b80e60c0b1412cd4cd5827",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\summarize_pilot.py",
+        "sha256": "2d9f4cc6a9a9396be3f4b4cbfb01bc1064fea89501710c7c8c362ab77c056640",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\user_sampling.jl",
+        "sha256": "20001a9ba223c0b0c5e3eeb51f4ea4fd874a9f9d47b07b93345220670b114aee",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\source\\UserMatrixObserver.jl",
+        "sha256": "c6e3462ccaa54d2f19a0c58202f222da4f099aa431712247545608933e2fa807",
+        "role": "fresh_retrieved_frozen_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\native_source\\Project.toml",
+        "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+        "role": "fresh_retrieved_actual_native_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\native_source\\Manifest.toml",
+        "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+        "role": "fresh_retrieved_actual_native_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\native_source\\src\\HubbardRenyiDQMC.jl",
+        "sha256": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721",
+        "role": "fresh_retrieved_actual_native_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\native_source\\src\\dqmc_kernel.jl",
+        "sha256": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+        "role": "fresh_retrieved_actual_native_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\native_source\\src\\grover_rank1_update.jl",
+        "sha256": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e",
+        "role": "fresh_retrieved_actual_native_source"
+      },
+      {
+        "path": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\p21_6460727\\native_source\\run\\run_lambda_node.jl",
+        "sha256": "5d7f7a1ff45a8cf69f061d009ca258d829eb4bbbdd36d5b5acf649d76c246e21",
+        "role": "fresh_retrieved_actual_native_source"
+      }
+    ]
+  },
+  "scientific_gates_changed": false,
+  "frozen_source_changed": false,
+  "scientific_completions": 0,
+  "P21_status": "NOT_RUN"
+}

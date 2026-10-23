@@ -1,0 +1,55 @@
+{
+  "status": "PASS_EIGHT_CLOSED_SHELL_FREE_ANALYTIC_CROSSCHECKS",
+  "scope": "Additional audit of QuSpin ground fixture1, L4 APBC U0 Nup=Ndown2; not eight extra user-package benchmarks",
+  "derivation": "Occupied momenta +/-pi/4 for each spin; C01=sqrt(2)/4, C02=0; E=-4sqrt(2), D=1, Wick Czz=-|Cij|^2/2, S2site=ln4, S2half=-4ln(3/4).",
+  "checks": [
+    {
+      "id": "QG-01",
+      "analytic_reference": -5.656854249492381,
+      "QuSpin_value": -5.656854249492379,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "id": "QG-02",
+      "analytic_reference": 1.0,
+      "QuSpin_value": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "id": "QG-03",
+      "analytic_reference": -0.0625,
+      "QuSpin_value": -0.06250000000000003,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "QG-04",
+      "analytic_reference": 0.0,
+      "QuSpin_value": -1.7347234759768117e-18,
+      "absolute_error": 1.7347234759768117e-18
+    },
+    {
+      "id": "QG-05",
+      "analytic_reference": 0.3535533905932738,
+      "QuSpin_value": 0.35355339059327384,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "id": "QG-06",
+      "analytic_reference": 0.0,
+      "QuSpin_value": 5.898059818321144e-17,
+      "absolute_error": 5.898059818321144e-17
+    },
+    {
+      "id": "QG-07",
+      "analytic_reference": 1.3862943611198906,
+      "QuSpin_value": 1.3862943611198906,
+      "absolute_error": 0.0
+    },
+    {
+      "id": "QG-08",
+      "analytic_reference": 1.1507282898071236,
+      "QuSpin_value": 1.1507282898071234,
+      "absolute_error": 2.220446049250313e-16
+    }
+  ]
+}

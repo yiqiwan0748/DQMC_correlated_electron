@@ -1,0 +1,119 @@
+{
+  "job_id": "6466078",
+  "numeric_formulas_or_gates_changed": false,
+  "omitted_roles": [
+    "Whole root submissions/admission/prior_queue and unrelated scheduler bodies",
+    "Private remote transport/inode/controller bodies; original transfer hashes and original complete independent audit retained",
+    "Duplicate frozen source directory; one original complete source archive retained",
+    "Verbose scontrol body; exact own-job accounting retained"
+  ],
+  "original_after_transfer_sha256": "b5517c2ac1636b602a684b5fa975a3d51f3d04d8c5cfa9568956e3200eb07773",
+  "original_auditor_sha256": "d3220adf8d731925e4a52ac00fb3175c37e6121c45d2ea15ade7e951e5f57c5c",
+  "original_before_transfer_sha256": "9fdea2b9b883493e3f4aa9ab7116ddc5e883086a03954952c1f06af7b4488b94",
+  "original_independent_audit_sha256": "59688ee4187434bea7f72e790015107bd95d47d593e3790b31410c9b6f0b76bd",
+  "original_scientific_execution_sha256": "92edac958ae002c88303451374e02701b7c1e08b2498791b489db95bc41f1d05",
+  "pilot_credit": 0,
+  "role": "pilot",
+  "schema": "X17_PUBLIC_SCIENTIFIC_SELECTION_V1",
+  "scientific_bytes_changed": false,
+  "scientific_file_members": [
+    {
+      "bytes": 4602,
+      "original_bytes": true,
+      "path": "recorded_frozen_pilot_audit/admission.json",
+      "sha256": "583b67d872f80244b4db9f2b9c117a56e94ac07fcdc86fb7eafe8a99039645b2"
+    },
+    {
+      "bytes": 146788,
+      "original_bytes": true,
+      "path": "recorded_frozen_pilot_audit/comparison_replay.json",
+      "sha256": "185acdaefd917610f608fd6c6610492df3da6dd1fdc2c4fa8ea4882c2aef7267"
+    },
+    {
+      "bytes": 1294,
+      "original_bytes": true,
+      "path": "results/comparator.resources.txt",
+      "sha256": "cc559f2fd4caada5a42419e3c5f5a7f740e0741a7f436bb3d5fbf070f7d8bc09"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/comparator.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 79,
+      "original_bytes": true,
+      "path": "results/comparator.stdout.txt",
+      "sha256": "ef716c54d90dd5c6739db74356d306ccc41e0e7799a060721c3ee1d8c577195d"
+    },
+    {
+      "bytes": 146790,
+      "original_bytes": true,
+      "path": "results/comparison.json",
+      "sha256": "9f41e63dfe0d67b61abd5aa5eed2ce6caa88284e571ffdbce2a747874bbe6d7f"
+    },
+    {
+      "bytes": 4460,
+      "original_bytes": true,
+      "path": "results/execution.json",
+      "sha256": "92edac958ae002c88303451374e02701b7c1e08b2498791b489db95bc41f1d05"
+    },
+    {
+      "bytes": 3690951,
+      "original_bytes": true,
+      "path": "results/reference.json",
+      "sha256": "fd7526a3200620f9f17625f258782e1e9f605f449a714ed977ad6d83953e320c"
+    },
+    {
+      "bytes": 1050,
+      "original_bytes": true,
+      "path": "results/reference.resources.txt",
+      "sha256": "e6f8d731f7051258509b71396ee918cf29d356a0504000e786a37c29855d6720"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/reference.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/reference.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1066,
+      "original_bytes": true,
+      "path": "results/target.resources.txt",
+      "sha256": "a9f91c4e0f1d8496dcf3642a7e638b2968735b3b143799971f04ab29980730ee"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/target.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/target.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1209432,
+      "original_bytes": true,
+      "path": "results/target.toml",
+      "sha256": "c5bf2e56c7adbba332570e94d82716a16077b3fcc8b82f9b65586c09ec0d975d"
+    },
+    {
+      "bytes": 276,
+      "original_bytes": true,
+      "path": "scheduler_own_job.txt",
+      "sha256": "960a5d7b04fd48b6e4beb35a0720fe1dc555e84ac758ff4009e4d5b22be6d3ec"
+    }
+  ],
+  "source_archive_sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958",
+  "source_freeze_sha256": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb"
+}

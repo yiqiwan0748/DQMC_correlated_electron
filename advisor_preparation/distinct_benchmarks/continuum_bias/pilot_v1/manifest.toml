@@ -1,0 +1,71 @@
+schema = "X01_timing_pilot_v1"
+phase = "PILOT_ONLY"
+catalogue_id = "X01"
+scientific_completion_allowed = false
+production_campaign_implemented = false
+L = 4
+t = 1.0
+U = 4.0
+beta = 1.0
+mu_centered = 0.0
+mu_physical = 2.0
+boundary = "pbc"
+ensemble = "Full grand canonical 256-state trace; half filling is mean N4, no fixed-sector restriction"
+nA = 2
+cut_sites_one_based = [1, 2]
+observable_energy = "Total physical internal H=K+U*D, no chemical-potential subtraction"
+observable_entropy = "Natural-log second Renyi entropy of the same first-two-site cut, both spins, finite-temperature state"
+pilot_dtau = [0.25, 0.03125]
+reference_dtau = [0.25, 0.125, 0.0625, 0.03125]
+bundles_per_dtau = 2
+burn_sweeps = 512
+measured_sweeps = 1024
+bins = 64
+n_stab = 2
+sweeps_per_measurement = 1
+lambda_increments = 4
+lambda_indices = [0, 1, 2, 3]
+lambda_values = [0.0, 0.25, 0.5, 0.75]
+delta_lambda = 0.25
+seed_namespace = "X01_TIMING_PILOT_V1_20261022_EXCLUDED_FROM_PRODUCTION"
+seed_file = "seeds.toml"
+seed_policy = "Fixed separate scalar/root-entropy seeds; native derived_seed preserved. All 36 actual initialization seeds disjoint. Excluded from every future production fit/interval."
+julia_version = "1.12.1"
+jdqmcframework_version = "1.2.6"
+jdqmcframework_tree_sha1 = "97a2c2eb5511ebddc6c6b19e13c2839d450cd75b"
+quspin_version = "1.0.1"
+numpy_version = "2.4.6"
+scipy_version = "1.17.1"
+
+[source_hashes]
+"Project.toml" = "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+"Manifest.toml" = "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+"src/HubbardRenyiDQMC.jl" = "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721"
+"src/dqmc_kernel.jl" = "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be"
+"src/grover_rank1_update.jl" = "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+"run/run_lambda_node.jl" = "5d7f7a1ff45a8cf69f061d009ca258d829eb4bbbdd36d5b5acf649d76c246e21"
+
+[gates]
+cumulative_deltaG_max = 1e-8
+oracle_matrix_abs = 1e-10
+oracle_scalar_abs = 1e-10
+oracle_positive_eigenvalue_min = -1e-12
+positive_phase_abs = 1e-10
+jackknife_minimum_ratio = 0.0
+interpretation = "Pilot eligibility/source/finite arithmetic only. Blocking and MC-oracle differences are descriptive; no production equivalence/fit gate or scientific PASS is evaluated."
+
+[resources]
+cpus = 1
+memory_mb = 3500
+wall_minutes = 10
+target_timeout_seconds = 480
+oracle_timeout_seconds = 90
+estimate = "Unmeasured pilot: roughly 2-8min after start including cold Julia/loading; 10min wall cap is authoritative, not a guarantee. Queue delay separate."
+projection = "Descriptive work-count scaling only: measured pilot API seconds*(8/2)*(sum full slice counts/sum pilot slice counts)*(production burn+measurements)/(pilot burn+measurements). This scales cold overhead too and does not authorize or guarantee a production allocation."
+
+[references]
+jdqmc_propagator = "https://github.com/SmoQySuite/JDQMCFramework.jl/blob/v1.2.6/src/Propagators.jl"
+jdqmc_api = "https://smoqysuite.github.io/JDQMCFramework.jl/stable/api/"
+grover = "https://arxiv.org/pdf/1307.1486"
+quspin_basis = "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html"
+quspin_hamiltonian = "https://quspin.github.io/QuSpin/generated/quspin.operators.hamiltonian.html"

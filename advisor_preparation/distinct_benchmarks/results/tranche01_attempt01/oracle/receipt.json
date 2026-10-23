@@ -1,0 +1,22 @@
+{
+  "status": "EXPORTED",
+  "manifest_sha256": "6d3fd97ee4e83be6914416d2b645c3cb237f614638c4dfbb509516fbc14e71fe",
+  "source_sha256": "9becd439d816875a0f08576ea7d6d238f0c7268c28d32163d78cad7cde57ee76",
+  "package_versions": {
+    "quspin": "1.0.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "quspin-extensions": "0.1.8"
+  },
+  "python": "3.11.11",
+  "job_id": "6457635",
+  "elapsed_seconds": 25.378843069076538,
+  "ground_energy_uncentered": -2.1027484834620616,
+  "ground_residual": 1.6534765972907128e-14,
+  "ground_gap": 0.2963246316389565,
+  "sources": [
+    "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+    "https://quspin.github.io/QuSpin/examples/example6.html"
+  ],
+  "errors": {}
+}

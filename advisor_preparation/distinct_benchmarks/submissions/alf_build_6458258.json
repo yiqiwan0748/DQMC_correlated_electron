@@ -1,0 +1,12 @@
+{
+  "job_id": "6458258",
+  "dependency": "afterany:6458253",
+  "status": "SUBMITTED_BUILD_ONLY_ZERO_SCIENTIFIC_SAMPLES",
+  "source_release": "../source_releases/alf-setup-v2-freeze.json",
+  "output": "external/alf_build_attempt01",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_cap_minutes": 20,
+  "build_cap_minutes": 15,
+  "P21_remains": "NOT_RUN"
+}

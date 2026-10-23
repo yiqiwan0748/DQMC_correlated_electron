@@ -1,0 +1,5 @@
+"benchmark","L","beta","dtau","Ltau","sweeps","replicas","wall_seconds","composite_proposals","replica_field_touches","composite_proposals_per_second","replica_field_touches_per_second","note"
+"current_renyi_lambda_node","8","32","0.05","640","1500","2","58.043667","7680000","15360000","132314.176","264628.353","Actual current two-replica Renyi lambda-node, k=2, Ninc=4"
+"trimmed_jdqmc_hubbard_kernel","8","32","0.05","640","1500","1","2.396","7680000","7680000","3205342.237","3205342.237","One-replica skeleton-style local-update kernel; no Renyi estimator"
+"smoqy_highlevel_hubbard_chain_example","8","32","0.1","320","1500","1","27.130667","3840000","3840000","141537.25","141537.25","Unmodified high-level SmoQyDQMC example; dtau hardcoded to 0.10"
+"smoqy_highlevel_linear_dtau005_estimate","8","32","0.05","640","1500","1","54.261334","7680000","7680000","141537.25","141537.25","Not measured; linear Ltau estimate from high-level SmoQyDQMC dtau=0.10 run"

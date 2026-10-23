@@ -1,0 +1,91 @@
+{
+  "status": "PASS_PRIMARY_RAW_TIMING_ARITHMETIC_PROVENANCE_AND_REPLAY_GATES",
+  "new_scientific_or_timing_runs_started": 0,
+  "job_id": "6456993",
+  "receipt_sha256": "26216f983e52299fdcd98f1b8dc48b22830f18aaa7df89c4ca9a01e837b6fa2d",
+  "benchmark_runner_sha256": "56ce5e3c395df4aeb1fe0b7654e315a81e280c74b2f65bb0b0ab65a010d06c49",
+  "source_hashes_match_frozen_corrected_archive": true,
+  "registered_sizes_match": true,
+  "all35paired_repeats_checked": 35,
+  "rows": [
+    {
+      "L": 8,
+      "nA": 4,
+      "paired_repeats": 7,
+      "two_replica_rounds_per_repeat": 12,
+      "direct_node_median_seconds": 0.024227236,
+      "optimized_node_median_seconds": 0.016631163,
+      "node_speedup_recomputed": 1.456737330997237,
+      "update_kernel_speedup_recomputed": 1.4583524182085397,
+      "direct_allocated_bytes_median": 27956832,
+      "optimized_allocated_bytes_median": 1203456,
+      "cumulative_allocation_reduction_recomputed": 23.23045628589662,
+      "registered_status": "PASS"
+    },
+    {
+      "L": 16,
+      "nA": 8,
+      "paired_repeats": 7,
+      "two_replica_rounds_per_repeat": 12,
+      "direct_node_median_seconds": 0.104514271,
+      "optimized_node_median_seconds": 0.04513553,
+      "node_speedup_recomputed": 2.3155653871794573,
+      "update_kernel_speedup_recomputed": 2.317405647924404,
+      "direct_allocated_bytes_median": 147170800,
+      "optimized_allocated_bytes_median": 2434752,
+      "cumulative_allocation_reduction_recomputed": 60.44590989143863,
+      "registered_status": "PASS"
+    },
+    {
+      "L": 32,
+      "nA": 16,
+      "paired_repeats": 7,
+      "two_replica_rounds_per_repeat": 12,
+      "direct_node_median_seconds": 0.567533148,
+      "optimized_node_median_seconds": 0.225903674,
+      "node_speedup_recomputed": 2.512279406310143,
+      "update_kernel_speedup_recomputed": 2.515451271815166,
+      "direct_allocated_bytes_median": 1023934304,
+      "optimized_allocated_bytes_median": 5513056,
+      "cumulative_allocation_reduction_recomputed": 185.72898660924176,
+      "registered_status": "PASS"
+    },
+    {
+      "L": 64,
+      "nA": 32,
+      "paired_repeats": 7,
+      "two_replica_rounds_per_repeat": 12,
+      "direct_node_median_seconds": 3.116521921,
+      "optimized_node_median_seconds": 1.223319739,
+      "node_speedup_recomputed": 2.547593913221407,
+      "update_kernel_speedup_recomputed": 2.5490129889685527,
+      "direct_allocated_bytes_median": 7792731168,
+      "optimized_allocated_bytes_median": 14086976,
+      "cumulative_allocation_reduction_recomputed": 553.1869414699081,
+      "registered_status": "PASS"
+    },
+    {
+      "L": 128,
+      "nA": 64,
+      "paired_repeats": 7,
+      "two_replica_rounds_per_repeat": 12,
+      "direct_node_median_seconds": 23.410449674,
+      "optimized_node_median_seconds": 8.758641974,
+      "node_speedup_recomputed": 2.672840121047743,
+      "update_kernel_speedup_recomputed": 2.673719053447679,
+      "direct_allocated_bytes_median": 61581153376,
+      "optimized_allocated_bytes_median": 40970176,
+      "cumulative_allocation_reduction_recomputed": 1503.0727077179263,
+      "registered_status": "PASS"
+    }
+  ],
+  "headline_selection": "Largest registered completed size L128,nA64, not a post-hoc maximum search",
+  "correctness_maxima": {
+    "maximum_Green_absolute_error": 0.0,
+    "maximum_logdet_absolute_error": 0.0,
+    "maximum_measurement_absolute_error": 0.0,
+    "maximum_measurement_relative_error": 0.0,
+    "maximum_reported_deltaG": 9.71221367218611e-13
+  },
+  "scope": "Primary fixed half-chain finite-temperature lambda=.5 node-loop benchmark; excludes init,compile,common warmup,deepcopy,explicitGC. Includes loop measurements/snapshots and allocation-triggeredGC. Cumulative allocation ratios are not peak memory ratios. Bootstrap intervals are recorded from the Julia receipt, not independently regenerated here. Larger-cut follow-ups are a separate exploratory campaign."
+}

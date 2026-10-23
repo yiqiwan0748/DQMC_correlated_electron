@@ -1,0 +1,23 @@
+{
+  "status": "SETUP_VERIFIED_ZERO_SCIENTIFIC_COMPLETIONS",
+  "job_id": "6465769",
+  "scheduler_state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed_seconds": 75,
+  "batch_peak_rss_KiB": 96328,
+  "cpu": 1,
+  "memory_mb": 3500,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "h5py": "3.15.1",
+    "pyscf": "2.14.0"
+  },
+  "files": {
+    "environment.json": "89026a459874b1541ed5c1fc11ecf834ef710c9c284af6e6b4d7feeaf34ed22d",
+    "install.resources.txt": "33ce4d5dc70b8c51c720ba11c6af79a10f38d2daedae83b8b612ee10e3c73c2c",
+    "installed_packages.json": "ff9cd911961fc179f7d40979c7b41896ddf7ec9004ea00875b209e5259df2bb2",
+    "pyscf_setup_v1_6465769.log": "d1badce7df09e7734ebe91f180f9bbb3abdbd0ce3d8be3953e1c211871d9f26d"
+  },
+  "scientific_solver_executed": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "p21_v4_print_interface_independent_review_v1",
+  "recorded_utc": "2026-10-22T19:50:54.137902+00:00",
+  "reviewer": "validation_design",
+  "status": "READ_ONLY_NO_BLOCKING_ISSUE",
+  "archive_sha256": "961f9700e6ac41efd2ad778f073cd0ae8dd75a82bee56d85c505a0145633eb7e",
+  "archive_members_verified": 30,
+  "source_freeze_sha256": "556b3831ccaa80a0bc27e67751ce12cb4f3191cd4c2e3691abce7d6ec9cd99a0",
+  "findings": [
+    "Public ham%Pr_obs avoids main access to private Obs_scal.",
+    "Hubbard NOPASS override exactly matches base single Integer,Intent(In)::Ltau signature.",
+    "Submodule host association grants parent-private observable access.",
+    "Direct Pr_obs_base call uses original implementation without recursive dynamic dispatch.",
+    "Proof-only vectors5:7 require Ltau1,size7 and positive counts before the unchanged writer.",
+    "Ordinary sampled mode delegates original complete base printing.",
+    "Archive SHA and all30members independently matched local files.",
+    "Propagation, proof checkers, output format and all tolerances remain unchanged.",
+    "Native tree and preparations1\u20133 preserved."
+  ],
+  "compilation_or_physics": "NOT_RUN; compiler unavailable locally. Actual bounded rebuild+both proofs still required.",
+  "scientific_status": "NOT_RUN_AS_DEFINED",
+  "files_reviewed": {
+    "alf_preparation/measurement_preparation_v4/prepare_observers.py": "65b1f9bb319b1e5df4af6118046ebfe933d4c37c396fbdb802c75623822d283a",
+    "alf_preparation/measurement_preparation_v4/overlay_v1/alf/Prog/main.F90": "1eacb29d94a127bd45fd45a3147979e80fcb0be098d4f52dcf6c2bd6e01a1183",
+    "alf_preparation/measurement_preparation_v4/overlay_v1/alf/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90": "fa6be71c1008d80ec2a6b052c341fd6e125089ecec2583316db08702459a8e5c",
+    "alf_preparation/measurement_preparation_v4/upstream_reference/Prog/Hamiltonian_main_mod.F90": "ed458b2d02b1c6ba833c9b2ef7b7165a4719d98643f05adb13f89f8627c961e1",
+    "alf_preparation/measurement_execution_plan_v4/bundle_receipt.json": "de74d9ca58b49abf661a0a4388a662d1e20300d0ea84c2796f70211f6e0e759f"
+  }
+}

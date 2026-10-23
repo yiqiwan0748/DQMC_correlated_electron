@@ -1,0 +1,16 @@
+{
+  "public_repository": "https://github.com/yiqiwan0748/DQMC_correlated_electron",
+  "source_commit": "cbb2a9c3b68d250cfb5136dd8687a35676e63b5f",
+  "method": "Cloned published branch at exact commit, verified HEAD, reran frozen postprocessing comparators against immutable ISAAC raw outputs with existing QuSpin SciPy environment. No physics or new samples.",
+  "script_sha256": "c3f0b8434510421061fbfc89f89d0320f76bf04160039d9224a79565b47581ba",
+  "raw_400_trial_generation_job": "6457947",
+  "frozen_raw_audit_job": "6458309",
+  "independent_stdlib_audit": "../../../results/distinct_X06_final01/independent_stdlib_audit_attempt01.json",
+  "counts": {
+    "PASS": 32,
+    "FAIL": 0,
+    "UNRESOLVED": 0,
+    "NOT_RUN": 68
+  },
+  "cv_excluded": true
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "p21_execution_plan_v3_static_review",
+  "created_utc": "2026-10-22T19:22:41.490245+00:00",
+  "status": "STATIC_CHECKS_PASS_NOT_EXECUTED",
+  "catalogue_status": "NOT_RUN_AS_DEFINED",
+  "archive_sha256": "eaff11972ff34831893d51132ad805b6e415703a3dc10edc97a910dea050bf06",
+  "archive_member_count": 28,
+  "wrapper_sha256": "96c2624be665a7fc18c5db8a8db787558ab9c8cb18bcfd9db1d0033b46676ab6",
+  "wrapper_bash_syntax": "PASS",
+  "embedded_targeted_cleanup_python_syntax": "PASS",
+  "literal_plan_bash_block_syntax": "PASS",
+  "v1_v2_frozen_sources_and_bundles": "UNCHANGED",
+  "cleanup_path": "Prog/opt_time_dependent_mod.mod ONLY in NEW copy; reject tracked source/symlink/native-tree cleanup; record bytes/SHA before unlink",
+  "strict_no_stale_assertion": "UNCHANGED",
+  "physics_source_and_estimator_changes": false,
+  "science_or_cluster_execution_by_agent": 0,
+  "independent_review": "PASS by validation_design: exact targeted untracked-module cleanup in NEW copy, SHA/size log, native/symlink/tracked-source guards and unchanged strict stale assertion; all28 archive members/local bytes and wrapper hash independently matched; no propagation/estimator/proof changes."
+}

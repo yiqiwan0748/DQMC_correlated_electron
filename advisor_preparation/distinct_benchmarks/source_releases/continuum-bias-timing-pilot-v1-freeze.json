@@ -1,0 +1,30 @@
+{
+  "release": "continuum-bias-timing-pilot-v1",
+  "distinct_ids": [
+    "X01"
+  ],
+  "status": "TIMING_ONLY_ZERO_CATALOGUE_COMPLETIONS",
+  "files": {
+    "continuum_bias/pilot_v1/README.md": "78d130aa5ee63dd37f5287aabc1664428bb973f844c2b33683b8481140bd37d7",
+    "continuum_bias/pilot_v1/SHA256SUMS": "6feedc612648852fe9e91339a004a90fdc6cace8ce844953ba28b13e874cd295",
+    "continuum_bias/pilot_v1/generate_seeds.py": "7afbad50f670e0b9b7f143aadcd572547b48935562e1c57b855bf4ab01aceb2b",
+    "continuum_bias/pilot_v1/manifest.toml": "8598916cdc3173be8115f360f3e29c49f3e6e44d229994e8bb73d38c4223587d",
+    "continuum_bias/pilot_v1/oracle_quspin.py": "8ebd57c42a6fe5c066d255bb1325eb95bae2b637ae9b1b2c98531b49d9251149",
+    "continuum_bias/pilot_v1/pilot.sbatch": "80c5bad749a4b5460fdc4339ff1f80b3a2353634234e77d13bd03081599029d5",
+    "continuum_bias/pilot_v1/primary_source_review.json": "417f86fc816119657a751c6d5ebc30b4251de5d305fc429e3095e7b68f5a4bc5",
+    "continuum_bias/pilot_v1/seeds.toml": "2522c3b6e5ce8e4d2a37a6750dac304e1984e158bbef0611c2df287370490356",
+    "continuum_bias/pilot_v1/static_review.json": "b191f97fa50108196fbe31336cd7f17558091d5a0ef2f13d956d7cc224be3bec",
+    "continuum_bias/pilot_v1/summarize_pilot.py": "5576b1390aafaa34b736e239761e5563c4b8eab181a50dc2fe97523ee2152ff1",
+    "continuum_bias/pilot_v1/target_pilot.jl": "7cf5ddb08297a828c88e3bd2b9c845245105ed3c732b16d6c387cce3d084b478"
+  },
+  "archive_sha256": "f9c4350bed37e7f75db78f6271048cef232f9b2f918ca925518fab139a62d483",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 10,
+  "estimated_minutes_after_start": [
+    2,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 17:45",
+  "prior_attempts_preserved": true
+}

@@ -1,0 +1,4866 @@
+{
+  "audit_status": "PASS",
+  "integrity": "PASS",
+  "catalogue_status": "PASS",
+  "scientific_completions": 1,
+  "pilot_completion_credit": 0,
+  "source_archive_sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958",
+  "source_freeze_sha256": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb",
+  "case_metrics": [
+    {
+      "case_id": "U0_decoupled",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 0.9999999999999991,
+      "minimum_all5_native_ground_fidelity": 0.9999999999999991,
+      "independent_global_gap": 2.000000000000009,
+      "independent_conditional_gap_lower": 1.9999999996206999,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "maximum_external_spectrum_L1": 1.476800310198502e-15,
+      "maximum_external_S2_error": 6.661338147750941e-16,
+      "entropy_A": -0.0,
+      "max_abs_connected_density": 5.551115123125783e-17,
+      "max_abs_connected_Sdot": 9.37286000377181e-18
+    },
+    {
+      "case_id": "U0_hybrid",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 1.0,
+      "minimum_all5_native_ground_fidelity": 0.9999999999999982,
+      "independent_global_gap": 1.4257742301889529,
+      "independent_conditional_gap_lower": 1.425774229675504,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "maximum_external_spectrum_L1": 1.8576147086056546e-15,
+      "maximum_external_S2_error": 3.7470027081099033e-16,
+      "entropy_A": 0.10724843292405511,
+      "max_abs_connected_density": 0.0066139636819055325,
+      "max_abs_connected_Sdot": 0.004960472761429374
+    },
+    {
+      "case_id": "U2_decoupled",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 0.9999999999999978,
+      "minimum_all5_native_ground_fidelity": 0.9999999999999978,
+      "independent_global_gap": 1.6036828031723651,
+      "independent_conditional_gap_lower": 1.6036828026357277,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "maximum_external_spectrum_L1": 1.1345314030020264e-15,
+      "maximum_external_S2_error": 2.2204460492503136e-16,
+      "entropy_A": 3.33066907387547e-16,
+      "max_abs_connected_density": 5.88418203051333e-15,
+      "max_abs_connected_Sdot": 8.517771764165876e-16
+    },
+    {
+      "case_id": "U2_hybrid",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 1.0,
+      "minimum_all5_native_ground_fidelity": 0.9999999999999979,
+      "independent_global_gap": 1.231108322333041,
+      "independent_conditional_gap_lower": 1.2311083216996899,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "maximum_external_spectrum_L1": 1.3510816933953236e-14,
+      "maximum_external_S2_error": 5.204170427930421e-15,
+      "entropy_A": 0.109277509834004,
+      "max_abs_connected_density": 0.008521847400666027,
+      "max_abs_connected_Sdot": 0.007592858100709863
+    },
+    {
+      "case_id": "U6_decoupled",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 0.9999999999999984,
+      "minimum_all5_native_ground_fidelity": 0.9999999999999984,
+      "independent_global_gap": 1.1931638477128814,
+      "independent_conditional_gap_lower": 1.1931638469213794,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "maximum_external_spectrum_L1": 1.0699774050597252e-15,
+      "maximum_external_S2_error": 7.771561172376096e-16,
+      "entropy_A": -0.0,
+      "max_abs_connected_density": 7.271960811294775e-15,
+      "max_abs_connected_Sdot": 2.3056468063764638e-15
+    },
+    {
+      "case_id": "U6_hybrid",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 0.9999999999999996,
+      "minimum_all5_native_ground_fidelity": 0.9999999999999996,
+      "independent_global_gap": 1.007455003388019,
+      "independent_conditional_gap_lower": 1.0074550024728506,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "maximum_external_spectrum_L1": 3.924205188989186e-14,
+      "maximum_external_S2_error": 1.0380585280245214e-14,
+      "entropy_A": 0.11892881668128231,
+      "max_abs_connected_density": 0.010385157458477234,
+      "max_abs_connected_Sdot": 0.011901695737615074
+    }
+  ],
+  "full_process_peak_rss_KiB": {
+    "target": 605136,
+    "reference": 275320,
+    "comparator": 149680
+  },
+  "elapsed_seconds": 28.112054347991943,
+  "replay_roundoff": [
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        26,
+        "value"
+      ],
+      "original": 1.4656413461214414e-16,
+      "replay": 1.4656413461214412e-16,
+      "absolute_difference": 2.465190328815662e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        27,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999993,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        45,
+        "value"
+      ],
+      "original": 1.1102230246251565e-16,
+      "replay": 2.220446049250313e-16,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        48,
+        "value"
+      ],
+      "original": 0.9999999999999999,
+      "replay": 0.9999999999999998,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        110,
+        "value"
+      ],
+      "original": 1.4656413461214414e-16,
+      "replay": 1.4656413461214412e-16,
+      "absolute_difference": 2.465190328815662e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        111,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999993,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        130,
+        "value"
+      ],
+      "original": -1.3649796858006397e-16,
+      "replay": -1.5282099618569004e-16,
+      "absolute_difference": 1.6323027605626068e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        137,
+        "value"
+      ],
+      "original": -2.418651643603406e-16,
+      "replay": -9.662509255530801e-17,
+      "absolute_difference": 1.4524007180503258e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        157,
+        "value"
+      ],
+      "original": -3.3052750362822855e-16,
+      "replay": -2.5464316422187944e-16,
+      "absolute_difference": 7.58843394063491e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        164,
+        "value"
+      ],
+      "original": -1.4349518891512566e-16,
+      "replay": -1.339326623927253e-16,
+      "absolute_difference": 9.562526522400366e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        165,
+        "value"
+      ],
+      "original": 6.661338147750939e-16,
+      "replay": 4.440892098500626e-16,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        185,
+        "value"
+      ],
+      "original": 2.3091111042429645e-15,
+      "replay": 3.562903876196186e-15,
+      "absolute_difference": 1.2537927719532213e-15,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        186,
+        "value"
+      ],
+      "original": 2.2609265295313118e-15,
+      "replay": 3.406372055390844e-15,
+      "absolute_difference": 1.1454455258595323e-15,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        0,
+        "gates",
+        187,
+        "value"
+      ],
+      "original": 1.1256519462742178e-16,
+      "replay": 8.881784197001252e-16,
+      "absolute_difference": 7.756132250727034e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        66,
+        "value"
+      ],
+      "original": 0.0,
+      "replay": 1.1102230246251565e-16,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        90,
+        "value"
+      ],
+      "original": 1.0,
+      "replay": 0.9999999999999999,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        130,
+        "value"
+      ],
+      "original": -1.734286598435772e-16,
+      "replay": -1.6603741813839733e-16,
+      "absolute_difference": 7.391241705179873e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        131,
+        "value"
+      ],
+      "original": 3.3306690738754696e-16,
+      "replay": 5.551115123125783e-16,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        137,
+        "value"
+      ],
+      "original": -1.1088958668580841e-16,
+      "replay": -1.5967249051167378e-16,
+      "absolute_difference": 4.8782903825865365e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        138,
+        "value"
+      ],
+      "original": 2.220446049250313e-16,
+      "replay": 1.1102230246251565e-16,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        157,
+        "value"
+      ],
+      "original": -1.767391959874221e-16,
+      "replay": -9.487445601628865e-17,
+      "absolute_difference": 8.186473997113346e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        158,
+        "value"
+      ],
+      "original": 1.2419451182526728e-16,
+      "replay": 1.3321734701528792e-16,
+      "absolute_difference": 9.022835190020646e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        164,
+        "value"
+      ],
+      "original": -1.868622938554769e-16,
+      "replay": -1.6314926693358193e-16,
+      "absolute_difference": 2.3713026921894963e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        165,
+        "value"
+      ],
+      "original": 1.1354000276065435e-16,
+      "replay": 3.3306690738754696e-16,
+      "absolute_difference": 2.195269046268926e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        185,
+        "value"
+      ],
+      "original": 3.6145297016971996e-15,
+      "replay": 3.4608310229530035e-15,
+      "absolute_difference": 1.536986787441961e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        1,
+        "gates",
+        186,
+        "value"
+      ],
+      "original": 4.081776865716381e-15,
+      "replay": 3.536065039175349e-15,
+      "absolute_difference": 5.457118265410319e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        26,
+        "value"
+      ],
+      "original": 1.4656413461214414e-16,
+      "replay": 1.4656413461214412e-16,
+      "absolute_difference": 2.465190328815662e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        27,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999993,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        69,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999998,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        87,
+        "value"
+      ],
+      "original": 1.1102230246251565e-16,
+      "replay": 0.0,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        110,
+        "value"
+      ],
+      "original": 1.4656413461214414e-16,
+      "replay": 1.4656413461214412e-16,
+      "absolute_difference": 2.465190328815662e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        111,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999993,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        130,
+        "value"
+      ],
+      "original": -1.6096423525756073e-16,
+      "replay": -1.321483081729997e-16,
+      "absolute_difference": 2.8815927084561034e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        131,
+        "value"
+      ],
+      "original": 1.2378373933208821e-16,
+      "replay": 1.1251617249892298e-16,
+      "absolute_difference": 1.126756683316523e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        137,
+        "value"
+      ],
+      "original": -1.6617398192971918e-16,
+      "replay": -1.547975008014468e-16,
+      "absolute_difference": 1.1376481128272394e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        140,
+        "value"
+      ],
+      "original": 0.0,
+      "replay": 4.930380657631324e-32,
+      "absolute_difference": 4.930380657631324e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        157,
+        "value"
+      ],
+      "original": -8.944086978282279e-17,
+      "replay": -2.0231035236132482e-16,
+      "absolute_difference": 1.1286948257850203e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        158,
+        "value"
+      ],
+      "original": 2.220446049250313e-16,
+      "replay": 1.1102230246251565e-16,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        160,
+        "value"
+      ],
+      "original": 0.0,
+      "replay": 4.930380657631324e-32,
+      "absolute_difference": 4.930380657631324e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        2,
+        "gates",
+        164,
+        "value"
+      ],
+      "original": -2.109212771357391e-16,
+      "replay": -2.2016548118227793e-16,
+      "absolute_difference": 9.24420404653884e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        45,
+        "value"
+      ],
+      "original": 1.1102230246251565e-16,
+      "replay": 2.220446049250313e-16,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        48,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999993,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        69,
+        "value"
+      ],
+      "original": 1.0000000000000004,
+      "replay": 1.0,
+      "absolute_difference": 4.440892098500626e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        87,
+        "value"
+      ],
+      "original": 0.0,
+      "replay": 2.220446049250313e-16,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        130,
+        "value"
+      ],
+      "original": -4.058460341414026e-17,
+      "replay": -4.067498578615526e-17,
+      "absolute_difference": 9.038237201500104e-20,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        131,
+        "value"
+      ],
+      "original": 2.220446049250313e-16,
+      "replay": 1.338792734321272e-16,
+      "absolute_difference": 8.816533149290412e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        137,
+        "value"
+      ],
+      "original": -4.817010658217365e-17,
+      "replay": -3.4618298672065214e-17,
+      "absolute_difference": 1.3551807910108435e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        157,
+        "value"
+      ],
+      "original": -9.134094224468532e-17,
+      "replay": -8.753369695669964e-17,
+      "absolute_difference": 3.807245287985676e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        158,
+        "value"
+      ],
+      "original": 2.220446049250313e-16,
+      "replay": 4.440892098500626e-16,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        164,
+        "value"
+      ],
+      "original": -4.3675911069508605e-17,
+      "replay": -3.264035239312447e-17,
+      "absolute_difference": 1.1035558676384136e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        3,
+        "gates",
+        165,
+        "value"
+      ],
+      "original": 6.661338147750939e-16,
+      "replay": 3.3306690738754696e-16,
+      "absolute_difference": 3.3306690738754696e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        26,
+        "value"
+      ],
+      "original": 1.4656413461214414e-16,
+      "replay": 1.4656413461214412e-16,
+      "absolute_difference": 2.465190328815662e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        27,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999993,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        66,
+        "value"
+      ],
+      "original": 1.1102230246251565e-16,
+      "replay": 0.0,
+      "absolute_difference": 1.1102230246251565e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        110,
+        "value"
+      ],
+      "original": 1.4656413461214414e-16,
+      "replay": 1.4656413461214412e-16,
+      "absolute_difference": 2.465190328815662e-32,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        111,
+        "value"
+      ],
+      "original": 0.9999999999999996,
+      "replay": 0.9999999999999993,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        130,
+        "value"
+      ],
+      "original": -1.6796416650314153e-16,
+      "replay": -1.549829409711622e-16,
+      "absolute_difference": 1.2981225531979339e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        137,
+        "value"
+      ],
+      "original": -1.8501506714207645e-16,
+      "replay": -1.7523523844584374e-16,
+      "absolute_difference": 9.77982869623271e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        157,
+        "value"
+      ],
+      "original": -2.6374363389132316e-16,
+      "replay": -3.264679299496154e-16,
+      "absolute_difference": 6.272429605829223e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        158,
+        "value"
+      ],
+      "original": 9.444039632222178e-17,
+      "replay": 8.892792867392834e-17,
+      "absolute_difference": 5.51246764829344e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        164,
+        "value"
+      ],
+      "original": -2.495398015584966e-16,
+      "replay": -2.5918844957707546e-16,
+      "absolute_difference": 9.648648018578834e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        4,
+        "gates",
+        165,
+        "value"
+      ],
+      "original": 2.220446049250313e-16,
+      "replay": 8.551723640673568e-17,
+      "absolute_difference": 1.3652736851829563e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        66,
+        "value"
+      ],
+      "original": 2.220446049250313e-16,
+      "replay": 0.0,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        87,
+        "value"
+      ],
+      "original": 0.0,
+      "replay": 2.220446049250313e-16,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        130,
+        "value"
+      ],
+      "original": -6.630987632276863e-17,
+      "replay": -3.581966003402753e-17,
+      "absolute_difference": 3.04902162887411e-17,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        131,
+        "value"
+      ],
+      "original": 2.654126918244515e-16,
+      "replay": 7.771561172376096e-16,
+      "absolute_difference": 5.117434254131581e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        137,
+        "value"
+      ],
+      "original": -5.62686152059405e-17,
+      "replay": -6.197029371215007e-17,
+      "absolute_difference": 5.701678506209568e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        138,
+        "value"
+      ],
+      "original": 2.220446049250313e-16,
+      "replay": 4.440892098500626e-16,
+      "absolute_difference": 2.220446049250313e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        157,
+        "value"
+      ],
+      "original": -7.622572959432967e-17,
+      "replay": -6.914605105108353e-17,
+      "absolute_difference": 7.079678543246144e-18,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        158,
+        "value"
+      ],
+      "original": 4.440892098500626e-16,
+      "replay": 7.771561172376096e-16,
+      "absolute_difference": 3.3306690738754696e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        164,
+        "value"
+      ],
+      "original": -2.0420469525669355e-16,
+      "replay": -5.79977131918856e-17,
+      "absolute_difference": 1.4620698206480794e-16,
+      "replay_tolerance": 1e-12
+    },
+    {
+      "path": [
+        "cases",
+        5,
+        "gates",
+        165,
+        "value"
+      ],
+      "original": 3.3306690738754696e-16,
+      "replay": 8.881784197001252e-16,
+      "absolute_difference": 5.551115123125783e-16,
+      "replay_tolerance": 1e-12
+    }
+  ],
+  "root_admission_or_submission_by_auditor": false,
+  "integrity_evidence_mode": "original_remote_before_after_transfer",
+  "schema": "X17_FULL_INDEPENDENT_RAW_AUDIT_V1",
+  "checks": [
+    {
+      "name": "exact original source freeze",
+      "passed": true
+    },
+    {
+      "name": "source PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source README.md",
+      "passed": true
+    },
+    {
+      "name": "source SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "source admit_production.py",
+      "passed": true
+    },
+    {
+      "name": "source audit_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "source catalogue_X17.json",
+      "passed": true
+    },
+    {
+      "name": "source compare.py",
+      "passed": true
+    },
+    {
+      "name": "source freeze_release.py",
+      "passed": true
+    },
+    {
+      "name": "source manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "source native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "source oracle_quspin.py",
+      "passed": true
+    },
+    {
+      "name": "source pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "source production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "source reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "source run_campaign.py",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "source target.jl",
+      "passed": true
+    },
+    {
+      "name": "remote-after stable",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparator.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparator.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparator.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparator.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparator.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparator.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "input hash results/execution.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/execution.json",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.json",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.toml",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.toml",
+      "passed": true
+    },
+    {
+      "name": "input hash source/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "input hash source/README.md",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/README.md",
+      "passed": true
+    },
+    {
+      "name": "input hash source/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "input hash source/admit_production.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/admit_production.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/audit_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/audit_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/catalogue_X17.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/catalogue_X17.json",
+      "passed": true
+    },
+    {
+      "name": "input hash source/compare.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/compare.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/freeze_release.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/freeze_release.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "input hash source/native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "input hash source/oracle_quspin.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/oracle_quspin.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "input hash source/production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "input hash source/reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "input hash source/run_campaign.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/run_campaign.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/target.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/target.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "input hash outer_logs/x17_orbital_production_6466242.log",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged outer_logs/x17_orbital_production_6466242.log",
+      "passed": true
+    },
+    {
+      "name": "successful production processes",
+      "passed": true
+    },
+    {
+      "name": "one full idea only and pilot0credit",
+      "passed": true
+    },
+    {
+      "name": "frozen arithmetic replay all gates",
+      "passed": true
+    },
+    {
+      "name": "all72 reference pins",
+      "passed": true
+    },
+    {
+      "name": "all six registered fixtures",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent geometry target",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent geometry oracle",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/both producers ready",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/all5 sectors",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/basis0",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete native spectrum0",
+      "error": 1.687538997430238e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete oracle spectrum0",
+      "error": 1.4432899320127035e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native norm0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native physical residual0",
+      "error": 1.4656413461214412e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle ground projector0",
+      "error": 3.5530659925560114e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent target ground projector0",
+      "error": 5.00532257980463e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native ground fidelity0",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/basis1",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete native spectrum1",
+      "error": 8.881784197001252e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete oracle spectrum1",
+      "error": 8.881784197001252e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native norm1",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native physical residual1",
+      "error": 2.4099914323698884e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle ground projector1",
+      "error": 1.5265566588595902e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent target ground projector1",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native ground fidelity1",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/basis2",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete native spectrum2",
+      "error": 1.5987211554602254e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete oracle spectrum2",
+      "error": 1.5987211554602254e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native norm2",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native physical residual2",
+      "error": 2.6875177882574756e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle ground projector2",
+      "error": 4.336808689942018e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent target ground projector2",
+      "error": 4.163336342344337e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native ground fidelity2",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/basis3",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete native spectrum3",
+      "error": 5.329070518200751e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete oracle spectrum3",
+      "error": 7.549516567451064e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native norm3",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native physical residual3",
+      "error": 2.522293262541226e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle ground projector3",
+      "error": 7.979727989493313e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent target ground projector3",
+      "error": 1.0755285551056204e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native ground fidelity3",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/basis4",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete native spectrum4",
+      "error": 1.687538997430238e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/complete oracle spectrum4",
+      "error": 1.4432899320127035e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native norm4",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native physical residual4",
+      "error": 1.4656413461214412e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent oracle ground projector4",
+      "error": 3.5530659925560114e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent target ground projector4",
+      "error": 5.00532257980463e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/native ground fidelity4",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/unique global ground",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent conditional gap",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/exact native entropy basis embedding",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/native full256 levels",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/external full256 L1",
+      "value": 1.1470859893044253e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/actual native entropy",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/external entropy",
+      "error": 6.661338147750941e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/trace",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/PSD",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/A/analytic product purity",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/native full256 levels",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/external full256 L1",
+      "value": 1.476800310198502e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/actual native entropy",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/external entropy",
+      "error": 6.661338147750941e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/trace",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/PSD",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/B/analytic product purity",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native density_up",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external density_up",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native density_down",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external density_down",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native density_total",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external density_total",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native Sz_mean",
+      "error": 1.734723475976807e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external Sz_mean",
+      "error": 2.2551405187698492e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native cross_nn_connected",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external cross_nn_connected",
+      "error": 1.3877787807814457e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native cross_SzSz_connected",
+      "error": 1.7347234759768069e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external cross_SzSz_connected",
+      "error": 9.75781955236954e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native cross_Sdot_connected",
+      "error": 1.7347234759768075e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external cross_Sdot_connected",
+      "error": 1.2191785652234122e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent native spin_squared",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent external spin_squared",
+      "error": 3.4428090185417937e-32,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent singlet",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent physical spin rotation",
+      "error": 1.184141545577578e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/analytic nup density control",
+      "error": 5.551115123125783e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/analytic ndn density control",
+      "error": 5.551115123125783e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/analytic total density control",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent density symmetry x",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent density symmetry y",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent density symmetry transpose",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/analytic product zero cross_nn_connected",
+      "error": 5.551115123125783e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/analytic product zero cross_Sdot_connected",
+      "error": 9.37286000377181e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/free filled shell resolved",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/Gaussian eigenvalue domain",
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent Gaussian256 native",
+      "value": 3.406372055390844e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_decoupled/independent Gaussian256 oracle",
+      "value": 3.562903876196186e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent geometry target",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent geometry oracle",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/both producers ready",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/all5 sectors",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/basis0",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete native spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete oracle spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native norm0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native physical residual0",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle ground projector0",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent target ground projector0",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native ground fidelity0",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/basis1",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete native spectrum1",
+      "error": 7.105427357601002e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete oracle spectrum1",
+      "error": 7.105427357601002e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native norm1",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native physical residual1",
+      "error": 5.862290596553959e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle ground projector1",
+      "error": 6.765421556309548e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent target ground projector1",
+      "error": 6.591949208711867e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native ground fidelity1",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/basis2",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete native spectrum2",
+      "error": 1.3322676295501878e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete oracle spectrum2",
+      "error": 1.1546319456101628e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native norm2",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native physical residual2",
+      "error": 7.092241471530248e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle ground projector2",
+      "error": 4.7271214720367993e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent target ground projector2",
+      "error": 3.642919299551295e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native ground fidelity2",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/basis3",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete native spectrum3",
+      "error": 8.881784197001252e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete oracle spectrum3",
+      "error": 7.105427357601002e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native norm3",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native physical residual3",
+      "error": 5.3801399649327494e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle ground projector3",
+      "error": 7.806255641895632e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent target ground projector3",
+      "error": 7.28583859910259e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native ground fidelity3",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/basis4",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete native spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/complete oracle spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native norm4",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native physical residual4",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent oracle ground projector4",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent target ground projector4",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/native ground fidelity4",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/unique global ground",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent conditional gap",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/exact native entropy basis embedding",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/native full256 levels",
+      "error": 5.551115123125783e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/external full256 L1",
+      "value": 1.5925196013935297e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/actual native entropy",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/external entropy",
+      "error": 3.7470027081099033e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/trace",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/PSD",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/A/positive hybrid entropy",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/native full256 levels",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/external full256 L1",
+      "value": 1.8576147086056546e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/actual native entropy",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/external entropy",
+      "error": 3.7470027081099033e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/trace",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/PSD",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/B/positive hybrid entropy",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native density_up",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external density_up",
+      "error": 1.6930901125533637e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native density_down",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external density_down",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native density_total",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external density_total",
+      "error": 1.0547118733938987e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native Sz_mean",
+      "error": 1.6479873021779667e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external Sz_mean",
+      "error": 1.1032841307212493e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native cross_nn_connected",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external cross_nn_connected",
+      "error": 3.941291737419306e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native cross_SzSz_connected",
+      "error": 2.195509399283048e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external cross_SzSz_connected",
+      "error": 1.7104373473131316e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native cross_Sdot_connected",
+      "error": 2.1955093992831465e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external cross_Sdot_connected",
+      "error": 3.1064530633144942e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent native spin_squared",
+      "error": 1.4349296274686127e-42,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent external spin_squared",
+      "error": 1.0430125036245621e-26,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent singlet",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent physical spin rotation",
+      "error": 2.4260107811535647e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/analytic nup density control",
+      "error": 1.6375789613221059e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/analytic ndn density control",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/analytic total density control",
+      "error": 1.0547118733938987e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent density symmetry x",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent density symmetry y",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent density symmetry transpose",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/nonzero hybrid cross_nn_connected",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/nonzero hybrid cross_Sdot_connected",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/free filled shell resolved",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/Gaussian eigenvalue domain",
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent Gaussian256 native",
+      "value": 3.536065039175349e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U0_hybrid/independent Gaussian256 oracle",
+      "value": 3.4608310229530035e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent geometry target",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent geometry oracle",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/both producers ready",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/all5 sectors",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/basis0",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete native spectrum0",
+      "error": 1.687538997430238e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete oracle spectrum0",
+      "error": 1.4432899320127035e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native norm0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native physical residual0",
+      "error": 1.4656413461214412e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle ground projector0",
+      "error": 3.5530659925560114e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent target ground projector0",
+      "error": 5.00532257980463e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native ground fidelity0",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/basis1",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete native spectrum1",
+      "error": 7.105427357601002e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete oracle spectrum1",
+      "error": 2.1316282072803006e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native norm1",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native physical residual1",
+      "error": 8.99334729944475e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle ground projector1",
+      "error": 1.1449174941446927e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent target ground projector1",
+      "error": 8.326672684688674e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native ground fidelity1",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/basis2",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete native spectrum2",
+      "error": 1.1546319456101628e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete oracle spectrum2",
+      "error": 1.3322676295501878e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native norm2",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native physical residual2",
+      "error": 5.881476900014478e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle ground projector2",
+      "error": 2.5587171270657905e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent target ground projector2",
+      "error": 2.992397996059992e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native ground fidelity2",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/basis3",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete native spectrum3",
+      "error": 8.881784197001252e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete oracle spectrum3",
+      "error": 1.0658141036401503e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native norm3",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native physical residual3",
+      "error": 9.724899628328435e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle ground projector3",
+      "error": 8.153200337090993e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent target ground projector3",
+      "error": 7.979727989493313e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native ground fidelity3",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/basis4",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete native spectrum4",
+      "error": 1.687538997430238e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/complete oracle spectrum4",
+      "error": 1.4432899320127035e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native norm4",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native physical residual4",
+      "error": 1.4656413461214412e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent oracle ground projector4",
+      "error": 3.5530659925560114e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent target ground projector4",
+      "error": 5.00532257980463e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/native ground fidelity4",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/unique global ground",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent conditional gap",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/exact native entropy basis embedding",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/native full256 levels",
+      "error": 1.1251617249892298e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/external full256 L1",
+      "value": 1.0522879600057541e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/actual native entropy",
+      "error": 1.110223024625157e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/external entropy",
+      "error": 1.110223024625157e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/trace",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/PSD",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/A/analytic product purity",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/native full256 levels",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/external full256 L1",
+      "value": 1.1345314030020264e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/actual native entropy",
+      "error": 4.930380657631324e-32,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/external entropy",
+      "error": 2.2204460492503136e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/trace",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/PSD",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/B/analytic product purity",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native density_up",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external density_up",
+      "error": 1.5432100042289676e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native density_down",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external density_down",
+      "error": 1.6736612096224235e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native density_total",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external density_total",
+      "error": 2.3092638912203256e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native Sz_mean",
+      "error": 3.7513395167998453e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external Sz_mean",
+      "error": 8.493206138382448e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native cross_nn_connected",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external cross_nn_connected",
+      "error": 5.800915303666443e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native cross_SzSz_connected",
+      "error": 3.469446951953614e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external cross_SzSz_connected",
+      "error": 8.231262893510252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native cross_Sdot_connected",
+      "error": 3.469446951953614e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external cross_Sdot_connected",
+      "error": 8.552466233685412e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent native spin_squared",
+      "error": 5.739718509874451e-42,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent external spin_squared",
+      "error": 1.0676234797497666e-26,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent singlet",
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent physical spin rotation",
+      "error": 1.8899690576010547e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/analytic nup density control",
+      "error": 1.5432100042289676e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/analytic ndn density control",
+      "error": 1.6819878823071122e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/analytic total density control",
+      "error": 2.3037127760971998e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent density symmetry x",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent density symmetry y",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/independent density symmetry transpose",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/analytic product zero cross_nn_connected",
+      "error": 5.88418203051333e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_decoupled/analytic product zero cross_Sdot_connected",
+      "error": 8.517771764165876e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent geometry target",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent geometry oracle",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/both producers ready",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/all5 sectors",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/basis0",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete native spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete oracle spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native norm0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native physical residual0",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle ground projector0",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent target ground projector0",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native ground fidelity0",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/basis1",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete native spectrum1",
+      "error": 2.6645352591003757e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete oracle spectrum1",
+      "error": 9.769962616701378e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native norm1",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native physical residual1",
+      "error": 1.0020194897999937e-13,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle ground projector1",
+      "error": 6.591949208711867e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent target ground projector1",
+      "error": 1.9081958235744878e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native ground fidelity1",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/basis2",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete native spectrum2",
+      "error": 2.842170943040401e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete oracle spectrum2",
+      "error": 2.842170943040401e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native norm2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native physical residual2",
+      "error": 8.326056672274737e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle ground projector2",
+      "error": 3.0791341698588326e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent target ground projector2",
+      "error": 4.0766001685454967e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native ground fidelity2",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/basis3",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete native spectrum3",
+      "error": 3.019806626980426e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete oracle spectrum3",
+      "error": 1.1546319456101628e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native norm3",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native physical residual3",
+      "error": 6.824056211952807e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle ground projector3",
+      "error": 7.979727989493313e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent target ground projector3",
+      "error": 1.5612511283791264e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native ground fidelity3",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/basis4",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete native spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/complete oracle spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native norm4",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native physical residual4",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent oracle ground projector4",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent target ground projector4",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/native ground fidelity4",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/unique global ground",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent conditional gap",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/exact native entropy basis embedding",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/native full256 levels",
+      "error": 1.338792734321272e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/external full256 L1",
+      "value": 1.2310253750155358e-14,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/actual native entropy",
+      "error": 1.249000902703301e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/external entropy",
+      "error": 5.079270337660091e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/trace",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/PSD",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/A/positive hybrid entropy",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/native full256 levels",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/external full256 L1",
+      "value": 1.3510816933953236e-14,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/actual native entropy",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/external entropy",
+      "error": 5.204170427930421e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/trace",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/PSD",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/B/positive hybrid entropy",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native density_up",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external density_up",
+      "error": 1.7819079545233762e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native density_down",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external density_down",
+      "error": 2.3647750424515834e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native density_total",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external density_total",
+      "error": 2.581268532253489e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native Sz_mean",
+      "error": 5.160802341031001e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external Sz_mean",
+      "error": 1.6372320166269105e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native cross_nn_connected",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external cross_nn_connected",
+      "error": 8.104628079763643e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native cross_SzSz_connected",
+      "error": 1.734723475976807e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external cross_SzSz_connected",
+      "error": 1.0373212705472312e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native cross_Sdot_connected",
+      "error": 1.734723475976807e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external cross_Sdot_connected",
+      "error": 6.608429081733647e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent native spin_squared",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent external spin_squared",
+      "error": 8.100399482400001e-26,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent singlet",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent physical spin rotation",
+      "error": 2.5946692711054098e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/analytic nup density control",
+      "error": 1.7708057242771247e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/analytic ndn density control",
+      "error": 2.353672812205332e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/analytic total density control",
+      "error": 2.55351295663786e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent density symmetry x",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent density symmetry y",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/independent density symmetry transpose",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/nonzero hybrid cross_nn_connected",
+      "passed": true
+    },
+    {
+      "name": "U2_hybrid/nonzero hybrid cross_Sdot_connected",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent geometry target",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent geometry oracle",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/both producers ready",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/all5 sectors",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/basis0",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete native spectrum0",
+      "error": 1.687538997430238e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete oracle spectrum0",
+      "error": 1.4432899320127035e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native norm0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native physical residual0",
+      "error": 1.4656413461214412e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle ground projector0",
+      "error": 3.5530659925560114e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent target ground projector0",
+      "error": 5.00532257980463e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native ground fidelity0",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/basis1",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete native spectrum1",
+      "error": 4.3520742565306136e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete oracle spectrum1",
+      "error": 7.105427357601002e-15,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native norm1",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native physical residual1",
+      "error": 7.478910949135575e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle ground projector1",
+      "error": 1.214306433183765e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent target ground projector1",
+      "error": 1.5217514551979983e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native ground fidelity1",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/basis2",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete native spectrum2",
+      "error": 3.907985046680551e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete oracle spectrum2",
+      "error": 3.907985046680551e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native norm2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native physical residual2",
+      "error": 8.19325766189179e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle ground projector2",
+      "error": 3.8163916471489756e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent target ground projector2",
+      "error": 3.2959746043559335e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native ground fidelity2",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/basis3",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete native spectrum3",
+      "error": 2.4202861936828413e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete oracle spectrum3",
+      "error": 3.9968028886505635e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native norm3",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native physical residual3",
+      "error": 5.154908057726755e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle ground projector3",
+      "error": 1.2939810099390783e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent target ground projector3",
+      "error": 1.1449174941446927e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native ground fidelity3",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/basis4",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete native spectrum4",
+      "error": 1.687538997430238e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/complete oracle spectrum4",
+      "error": 1.4432899320127035e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native norm4",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native physical residual4",
+      "error": 1.4656413461214412e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent oracle ground projector4",
+      "error": 3.5530659925560114e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent target ground projector4",
+      "error": 5.00532257980463e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/native ground fidelity4",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/unique global ground",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent conditional gap",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/exact native entropy basis embedding",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/native full256 levels",
+      "error": 5.551115123125783e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/external full256 L1",
+      "value": 1.0699774050597252e-15,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/actual native entropy",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/external entropy",
+      "error": 2.2204460492503128e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/trace",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/PSD",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/A/analytic product purity",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/native full256 levels",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/external full256 L1",
+      "value": 5.243246168422621e-16,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/actual native entropy",
+      "error": 1.110223024625157e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/external entropy",
+      "error": 7.771561172376096e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/trace",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/PSD",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/B/analytic product purity",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native density_up",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external density_up",
+      "error": 1.27675647831893e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native density_down",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external density_down",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native density_total",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external density_total",
+      "error": 2.55351295663786e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native Sz_mean",
+      "error": 4.943961906532579e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external Sz_mean",
+      "error": 9.02923569245928e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native cross_nn_connected",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external cross_nn_connected",
+      "error": 7.271960811294775e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native cross_SzSz_connected",
+      "error": 3.2526065174285087e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external cross_SzSz_connected",
+      "error": 2.610758831345095e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native cross_Sdot_connected",
+      "error": 3.2526065174285087e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external cross_Sdot_connected",
+      "error": 2.303912082900487e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent native spin_squared",
+      "error": 1.1479437019748901e-41,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent external spin_squared",
+      "error": 5.529353817990544e-26,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent singlet",
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent physical spin rotation",
+      "error": 5.531833858086753e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/analytic nup density control",
+      "error": 1.27675647831893e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/analytic ndn density control",
+      "error": 1.8041124150158794e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/analytic total density control",
+      "error": 2.4424906541753444e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent density symmetry x",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent density symmetry y",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/independent density symmetry transpose",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/analytic product zero cross_nn_connected",
+      "error": 7.271960811294775e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_decoupled/analytic product zero cross_Sdot_connected",
+      "error": 2.3056468063764638e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent geometry target",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent geometry oracle",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/both producers ready",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/all5 sectors",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis0",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual0",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle ground projector0",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent target ground projector0",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity0",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis1",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum1",
+      "error": 2.220446049250313e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum1",
+      "error": 2.531308496145357e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm1",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual1",
+      "error": 7.045880894034598e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle ground projector1",
+      "error": 2.5326962749261384e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent target ground projector1",
+      "error": 4.3368086899420177e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity1",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis2",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum2",
+      "error": 4.263256414560601e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum2",
+      "error": 4.440892098500626e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual2",
+      "error": 6.042962710907077e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle ground projector2",
+      "error": 3.122502256758253e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent target ground projector2",
+      "error": 3.469446951953614e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity2",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis3",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum3",
+      "error": 2.4202861936828413e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum3",
+      "error": 2.4202861936828413e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm3",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual3",
+      "error": 9.812705039846714e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle ground projector3",
+      "error": 1.244664094013359e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent target ground projector3",
+      "error": 2.5673907444456745e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity3",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis4",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm4",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual4",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle ground projector4",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent target ground projector4",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity4",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/unique global ground",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent conditional gap",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/exact native entropy basis embedding",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/native full256 levels",
+      "error": 7.771561172376096e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/external full256 L1",
+      "value": 3.924205188989186e-14,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/actual native entropy",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/external entropy",
+      "error": 1.0255685189974884e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/trace",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/PSD",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/positive hybrid entropy",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/native full256 levels",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/external full256 L1",
+      "value": 3.8670299697105014e-14,
+      "bound": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/actual native entropy",
+      "error": 1.249000902703301e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/external entropy",
+      "error": 1.0380585280245214e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/trace",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/PSD",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/positive hybrid entropy",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native density_up",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external density_up",
+      "error": 1.8207657603852567e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native density_down",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external density_down",
+      "error": 1.5959455978986625e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native density_total",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external density_total",
+      "error": 2.453592884421596e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native Sz_mean",
+      "error": 4.2500725161431774e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external Sz_mean",
+      "error": 1.2569806306927944e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native cross_nn_connected",
+      "error": 2.498001805406602e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external cross_nn_connected",
+      "error": 9.43689570931383e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native cross_SzSz_connected",
+      "error": 3.469446951953614e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external cross_SzSz_connected",
+      "error": 1.0030171138097899e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native cross_Sdot_connected",
+      "error": 3.469446951953614e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external cross_Sdot_connected",
+      "error": 1.515915214536645e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native spin_squared",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external spin_squared",
+      "error": 1.0251423985174038e-25,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent singlet",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent physical spin rotation",
+      "error": 3.5967593920577245e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/analytic nup density control",
+      "error": 1.8318679906315083e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/analytic ndn density control",
+      "error": 1.61259894326804e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/analytic total density control",
+      "error": 2.475797344914099e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent density symmetry x",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent density symmetry y",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent density symmetry transpose",
+      "error": 0.0,
+      "limit": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/nonzero hybrid cross_nn_connected",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/nonzero hybrid cross_Sdot_connected",
+      "passed": true
+    },
+    {
+      "name": "one CPU3500M production receipt",
+      "passed": true
+    },
+    {
+      "name": "fixed full wall cap",
+      "passed": true
+    },
+    {
+      "name": "fixed full memory envelope",
+      "passed": true
+    },
+    {
+      "name": "one X17 after all30sector records",
+      "passed": true
+    }
+  ],
+  "check_count": 703,
+  "scientific_producer_rerun": false,
+  "postprocessing_eigendecomposition": true,
+  "input_sha256": {
+    "frozen_full_replay/comparison.json": "f8f4ad9caaeb3ab4edcf9b6fbc6cf6a63396fcfd4b045afdb03e2065ffc7b715",
+    "independent_auditor.py": "0dfa7af559a3e60c8c3167d8bf75ab07f34beda2f617fe2ece6623bd076ce4f1",
+    "outer_logs/x17_orbital_production_6466242.log": "c9b9e4a83aac17ad8bf023fc0ee4eba7689aa215f6bff187bfad29cc90c0dfa7",
+    "results/comparator.resources.txt": "db5c4f41bd747c14628ec536a1869d51ea64263ba18202db0fae359434c4238f",
+    "results/comparator.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/comparator.stdout.txt": "59b16dc2dc692b0a030b00a53f671966932e0ac021dd2950414e9a0c4728d19b",
+    "results/comparison.json": "43cd5ec312048414240f023b502294d276a40031ad70e9944e30f4a377099449",
+    "results/execution.json": "43879a8250a6a0af7cab0431bd143000a80d539e2cb6ec772e20a1f04ddb0bf9",
+    "results/reference.json": "a2532261fb45acec73d568476185ff4822e4d4325035cb66d1042d954522fd74",
+    "results/reference.resources.txt": "57fb316c49d7a173d515a9da19c2599262e2f2487e6664d6ca000d56ecf1cda7",
+    "results/reference.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/reference.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.resources.txt": "ef06b76a615491b4662c688f5f23fe2d15af7fd9e9f5f38cbcf8d18983589ce7",
+    "results/target.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.toml": "2c236345ed6cde7245b5daaa63f7c8fc0ac87f1ae2a11ef25f76beec258af001",
+    "sacct_fresh.txt": "902c7da69388d7577f6c02c55616575fd408db86d5ef3da91a2ab4b141ebbde2",
+    "scontrol_fresh.txt": "fbe9a8fce4d686d5ff654c96b59ed0e52547335f39547ae0f0f62cdc48ea711e",
+    "source/PROTOCOL.md": "229bdde7ca2b2acb9b169bd2af50b170259416d296715371631d66db91736ad1",
+    "source/README.md": "9a48720a18efa35235193c35fed5312eb91fe624ccc6aba83b0843364333acf2",
+    "source/SHA256SUMS": "18be5ef442271ee2cabb155ca3f0354d8d702691fbb3b2ea2a1dcfd727a38450",
+    "source/admit_production.py": "2908faebf20e8cac85baeeff026f1f2dd1a11b05db16fcc937876520171dbd58",
+    "source/audit_pilot.py": "bbd479f0e3a028f6c6d122ad2ad7e9aa24c4c55d8ed21aacbc5eee8de0ec7766",
+    "source/catalogue_X17.json": "edfab71e23503416ba99a8a056de5005f080841232330b5020875173fda15c0d",
+    "source/compare.py": "43ebd1bc62e2c9f6e8b189d5f647e03c5dfe79bc1ea69260cc3938a059158b16",
+    "source/freeze_release.py": "5a5bc3dd5e77725cb821ba0306451e600a5f7cc9ac6ed1a831e21968ab7e5097",
+    "source/manifest.toml": "c1e6a63fc78d839c969eed8addb930ffd1f1e0c37dd5b8cb6b853014e87526cc",
+    "source/native_source_pins.json": "e030002519ff8d95a698e9254e9a46dea517355c2fc92fa2b427fd33fcf5d24c",
+    "source/oracle_quspin.py": "8d5f8253d88777ad1dd928e6b9fe0e50297ae2170aefb0fc50637a529670bf8c",
+    "source/pilot.sbatch": "e9ddee8eae428e420ec0cca8db06eef42a616ae6e8136db1d2a04a914d96a6ed",
+    "source/production.sbatch": "b4f0c81eada1a5f17a49d3018c47e2995fca5a4bb82e30f6ee08f2f8f3554e0b",
+    "source/reference_library_pins.json": "734f5adc84fd931b56b7274d67b1ed9f7c724bdc90e454dfc863696a3140d888",
+    "source/run_campaign.py": "fa803f2a3009e082ace5e2a0822321b3348491140c8d1931f48dbe8ed4ca7834",
+    "source/source_freeze.json": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb",
+    "source/source_snapshot/analysis/compute_s2_ed.jl": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751",
+    "source/source_snapshot/src/noninteracting.jl": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568",
+    "source/source_snapshot/src/realspace_kinetic.jl": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6",
+    "source/target.jl": "32f200f3ee9c2875b429f64d4b30bf686145f9208f73b8ba2fe4b590876af018",
+    "transfer_after.json": "d4e0d16c549dfc4594c80b9691e4623213463c420ba0c66976e5a33242fad0a8",
+    "transfer_before.json": "21e2399cc0e287f37907f9688bd93a04c10e761cacac1e5aa8f753a07406bb59"
+  },
+  "auditor_sha256": "0dfa7af559a3e60c8c3167d8bf75ab07f34beda2f617fe2ece6623bd076ce4f1",
+  "pilot_math_predecessor_sha256": "d3220adf8d731925e4a52ac00fb3175c37e6121c45d2ea15ade7e951e5f57c5c"
+}

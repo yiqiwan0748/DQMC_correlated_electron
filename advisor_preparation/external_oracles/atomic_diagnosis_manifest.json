@@ -1,0 +1,142 @@
+{
+  "status": "INDEPENDENT_DIAGNOSIS_AND_READ_ONLY_PATCH_REVIEW_COMPLETE",
+  "date": "2026-10-22",
+  "scientific_monte_carlo_runs_started_by_diagnosis_agent": 0,
+  "exact_analytical_transition_enumeration_executed": true,
+  "original_receipts_unchanged": true,
+  "immutable_historical_source_unchanged": true,
+  "patched_scientific_validation_status": "Final corrected finite-fixture campaign:all8atomic+16thermalDQMC comparisons PASS after registered precision extensions; combined100cases/188methodarms PASS. Original failures,initial unresolved cases and harness error preserved. No claim of untested-regime reliability.",
+  "files": [
+    {
+      "path": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "bytes": 13797,
+      "sha256": "c93a38f75d120a40676c1076eab1bf42b477f0d82110bb5ee53e2d74fe52093d"
+    },
+    {
+      "path": "external_oracles/analyze_atomic_bins.py",
+      "bytes": 4082,
+      "sha256": "cde53a129d80697ecad8e152441fd4b0abb149e08596fcdc06bc1bd996a87956"
+    },
+    {
+      "path": "external_oracles/atomic_bin_diagnostic.json",
+      "bytes": 14403,
+      "sha256": "5c2be77ee4a444d124896f4d87675791ebfbcd046af9e6e836ef68c6fa0c6a4d"
+    },
+    {
+      "path": "external_oracles/exact_atomic_scan_graph.py",
+      "bytes": 5431,
+      "sha256": "dfdf2493cb528e979c6e49c228151948fe77647fd07b10c5c00dd8d083819f7d"
+    },
+    {
+      "path": "external_oracles/exact_atomic_scan_graph.json",
+      "bytes": 3316,
+      "sha256": "9369bdc2a0b04a4848b6394da5f52396ddb46f4e2bf221e857230aa7db632c55"
+    },
+    {
+      "path": "external_oracles/retrospective_split_rhat.py",
+      "bytes": 4363,
+      "sha256": "659237ff79343c23a383067a39e74c01d0ae80a316b9df817911292e9d04ee0c"
+    },
+    {
+      "path": "external_oracles/retrospective_split_rhat.json",
+      "bytes": 11812,
+      "sha256": "c35796d4704706cb0ed9c13c60b2c6aceda766bda5c7a3a8f40b821d45f48a3e"
+    },
+    {
+      "path": "external_oracles/retrospective_split_rhat.csv",
+      "bytes": 3110,
+      "sha256": "c6668c23b55d29382a625e4f02d7d9ec720e1966366cbcfd8199a0b9bcd79047"
+    },
+    {
+      "path": "isaac/results/external_atomic_mc_4096.toml",
+      "bytes": 663051,
+      "sha256": "a69af55fb680a1b44eec95cdbae8bdb77439a456e9352031c660ca7ab323e094"
+    },
+    {
+      "path": "isaac/diagnostics/atomic_odd_sweep_diagnostic.toml",
+      "bytes": 3282,
+      "sha256": "e2d26479e7cbe040df7cf2fcd50efa41a7ce43a3dfa2b29212488e18afe76b81"
+    },
+    {
+      "path": "isaac/diagnostics/atomic_local_lazy_fix.patch",
+      "bytes": 1989,
+      "sha256": "0d44db04485e9d69dc58ba1c1959bd0b054e920f3abf294180c48c8fb53a73c7"
+    },
+    {
+      "path": "isaac/diagnostics/atomic_local_lazy_fix_receipt.json",
+      "bytes": 2058,
+      "sha256": "9c40f3886ba92677a14cab175ce60a16e517d8fd6136a18fc008458b94ea93f0"
+    },
+    {
+      "path": "external_oracles/audit_corrected_atomic.py",
+      "bytes": 4947,
+      "sha256": "f88014b6e97f61f2c7e479338fae84a443af76cdf14e61abdf6688551efd2cce"
+    },
+    {
+      "path": "external_oracles/corrected_atomic_independent_audit.json",
+      "bytes": 4593,
+      "sha256": "983853368bc855f7df3c3f2936e26b717a0d6d1849db4ba8415e6555826b6ca4"
+    },
+    {
+      "path": "isaac/results/atomic_corrected_kernel_diagnostic_v2.toml",
+      "bytes": 15503,
+      "sha256": "3af57c724ba4cddab2099040d600fb53cebaf0f515b643455c2ddbf28508a70e"
+    },
+    {
+      "path": "isaac/results/external_atomic_corrected_4096.toml",
+      "bytes": 663090,
+      "sha256": "03e6a6383c36a409115610ac5d540f21fb46799cde1e5dca93b92c36dcc83720"
+    },
+    {
+      "path": "isaac/logs/atomic_corrected_6456921.log",
+      "bytes": 4038,
+      "sha256": "21f08df267ec80de52458a6be447267b8c0a8f4fdeb965723a2decbdf1cd2d2b"
+    },
+    {
+      "path": "isaac/diagnostics/diagnose_atomic_odd_sweep_v2.jl",
+      "bytes": 6968,
+      "sha256": "402f3614afd71ddb87f0977fcc778d9a314b40ff4bd7828443f28597d7f04dad"
+    },
+    {
+      "path": "isaac/atomic_corrected_resume.sbatch",
+      "bytes": 893,
+      "sha256": "12ab41a5fa44b62f15dfb32d55b6036e7812a86482b7cd100f52e49152b6c889"
+    },
+    {
+      "path": "isaac/ISAAC_REPRODUCE.md",
+      "bytes": 16142,
+      "sha256": "22ebb4bf06080b475e84a8e376576ddaa9d1c29ac02f7db5cfee4c8d3f7711bc"
+    },
+    {
+      "path": "external_oracles/audit_final_campaign.py",
+      "bytes": 9720,
+      "sha256": "9113fdf0e8040a916b353c115f96da383e8edbc2079c725b2c9448e8fc2e9d48"
+    },
+    {
+      "path": "external_oracles/final_campaign_independent_audit.json",
+      "bytes": 41919,
+      "sha256": "f1ff9d971acab6ec36eee47cf76ecbfe7dedb30e710d3cdc1da513f1d87cbbc9"
+    },
+    {
+      "path": "isaac/results/external_atomic_corrected_16384.toml",
+      "bytes": 94176,
+      "sha256": "2f2545a57e585341730ee903c1f7be03a71b7b272491f0d5e2954f81b9c04c51"
+    },
+    {
+      "path": "isaac/results/external_thermal_corrected_4096.toml",
+      "bytes": 1215467,
+      "sha256": "693d8c27e05f110d4cd142b0c3c24fb962def19a25beaebc2408f10dc05d2d6c"
+    },
+    {
+      "path": "isaac/results/external_thermal_corrected_16384.toml",
+      "bytes": 197846,
+      "sha256": "a1f0413142458ab94f816ab14c2df100d1e55d3d3f74ce07778b80b2dea16834"
+    },
+    {
+      "path": "isaac/results/summary/summary.json",
+      "bytes": 4355309,
+      "sha256": "dfeae6117790d6547a904b4eb926c7b8301f52ae54d6d2ab7bd70903924b4f5e"
+    }
+  ],
+  "additional_execution_history": "Supporting test job6456921 passed382 checks, then diagnostic harness world-age failure; physics source archive unchanged. Versioned v2 diagnostic/resume is staged separately; corrected scientific results require their own receipts."
+}

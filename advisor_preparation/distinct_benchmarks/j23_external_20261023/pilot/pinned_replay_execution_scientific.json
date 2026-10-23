@@ -1,0 +1,52 @@
+{
+  "schema": "J23_DERIVED_PINNED_REPLAY_SCIENTIFIC_EXECUTION_V1",
+  "original_receipt_sha256": "784d5f2d82d86fb55fb268d145693ad55a9ca4dcfcdcec82ba2c0ed87122e462",
+  "retained_original_fields": {
+    "schema": "J23_FROZEN_SAVED_DATA_REPLAY_EXECUTION_V1",
+    "status": "ANALYSIS_COMPLETE",
+    "job_id": "6466655",
+    "original_pilot_job_id": "6466377",
+    "python_version": "3.11.11",
+    "actual_python": "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/python3.11",
+    "cpus": 1,
+    "memory_MB": 3500,
+    "source_freeze_sha256": "7b763ad944dd745d604957bf25556fdad06b2ff733f09cb6c25230f7db7b4043",
+    "input_bindings_sha256": "19eb48219a14a33e7d43931ba301fc889a2e626a1606cafba21a1a2e87c0d1fe",
+    "runner_sha256": "aef71528ec4c4a81f1c14da70839dd219f038a0100e77007fe07ea77cd685cac",
+    "unchanged_assessor_sha256": "56a925ccf7fb09364ddc5767f54b5b3d37d707e94286523a76e658a383892e9f",
+    "original_inputs_unchanged": true,
+    "started_unix": 1792784092.6328785,
+    "finished_unix": 1792784095.3674831,
+    "exit_code": 0,
+    "timed_out": false,
+    "error": null,
+    "outputs": {
+      "process.log": {
+        "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+        "bytes": 5
+      },
+      "process.resources.txt": {
+        "sha256": "85c7be7b59fd99c2a3d81c660f3e4ea65b74e5b040bb260c04260271afc4ea26",
+        "bytes": 1147
+      },
+      "replay/assessment.json": {
+        "sha256": "864de402585c65987ebe0a0d362ed4cf5a126fac29022b4b7c3f54215c2662a6",
+        "bytes": 2293
+      },
+      "replay/comparison_replay.json": {
+        "sha256": "a5b8aef23c66b3fc5cb92ed346c4007736dac6cf4bc4a343d2f1c52b20ab7612",
+        "bytes": 43625
+      }
+    },
+    "scientific_completions": 0,
+    "new_HF_or_quadrature_or_fixture_producer_executed": false,
+    "pinned_runtime_bypass": false,
+    "full_job_admitted": false
+  },
+  "omitted_fields": [
+    "original_input_before",
+    "original_input_after"
+  ],
+  "transport_or_admission_checks_replayed_publicly": false,
+  "derived_projection_not_original_receipt": true
+}

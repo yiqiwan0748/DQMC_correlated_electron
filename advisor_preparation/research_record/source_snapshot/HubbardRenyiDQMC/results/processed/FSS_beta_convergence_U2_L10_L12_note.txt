@@ -1,0 +1,19 @@
+U=2 beta-convergence diagnostic for 1D FSS
+
+L10:
+beta=40, S2 = 1.716441955736 +/- 0.003040377094
+beta=60, S2 = 1.720125232459 +/- 0.002984680310
+ED      S2 = 1.716551661433
+Conclusion: beta=4L and beta=6L agree within uncertainty.
+
+L12:
+beta=48, S2 = 1.561005400404 +/- 0.007601610412
+beta=72 burnin8000, S2 = 1.549125391521 +/- 0.007923460648
+ED      S2 = 1.542354369358
+Conclusion: beta=4L and beta=6L agree within uncertainty after sufficient burn-in.
+
+Diagnostic note:
+The first L12 beta=72 highstat run with N_burnin=500 gave S2 = 1.682911609447 +/- 0.008203214721, but it failed bidirectional and stationarity checks. This was treated as an equilibration/autocorrelation artifact and excluded from final processed summaries.
+
+Physics conclusion:
+The anomalously large finite-size-scaling slopes are not primarily due to beta=4L being too small. The remaining issue is finite-size/parity corrections.

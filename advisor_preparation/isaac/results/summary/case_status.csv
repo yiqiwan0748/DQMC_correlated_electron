@@ -1,0 +1,101 @@
+id,family,observable,status,arms
+QG-01,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-02,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-03,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-04,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-05,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-06,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-07,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-08,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-09,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-10,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-11,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-12,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-13,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-14,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-15,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-16,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-17,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-18,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-19,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-20,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-21,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-22,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-23,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-24,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-25,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-26,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-27,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-28,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-29,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-30,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-31,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-32,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-33,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-34,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-35,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-36,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-37,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-38,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-39,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-40,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-41,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-42,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-43,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-44,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-45,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-46,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-47,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-48,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-49,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-50,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-51,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-52,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-53,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-54,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-55,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-56,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-57,QuSpin_ground,energy_uncentered,PASS,ED:PASS; DMRG:PASS
+QG-58,QuSpin_ground,double_occupancy_total,PASS,ED:PASS; DMRG:PASS
+QG-59,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-60,QuSpin_ground,spin_z_correlation,PASS,ED:PASS; DMRG:PASS
+QG-61,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-62,QuSpin_ground,onebody_up,PASS,ED:PASS; DMRG:PASS
+QG-63,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QG-64,QuSpin_ground,S2,PASS,ED:PASS; DMRG:PASS
+QT-01,QuSpin_thermal_trotter,energy_uncentered,PASS,thermal_ED:PASS; DQMC:PASS
+QT-02,QuSpin_thermal_trotter,double_occupancy_total,PASS,thermal_ED:PASS; DQMC:PASS
+QT-03,QuSpin_thermal_trotter,spin_z_correlation,PASS,thermal_ED:PASS; DQMC:PASS
+QT-04,QuSpin_thermal_trotter,spin_z_correlation,PASS,thermal_ED:PASS; DQMC:PASS
+QT-05,QuSpin_thermal_trotter,onebody_up,PASS,thermal_ED:PASS; DQMC:PASS
+QT-06,QuSpin_thermal_trotter,onebody_up,PASS,thermal_ED:PASS; DQMC:PASS
+QT-07,QuSpin_thermal_trotter,S2,PASS,thermal_ED:PASS; DQMC:PASS
+QT-08,QuSpin_thermal_trotter,S2,PASS,thermal_ED:PASS; DQMC:PASS
+QT-09,QuSpin_thermal_trotter,energy_uncentered,PASS,thermal_ED:PASS; DQMC:PASS
+QT-10,QuSpin_thermal_trotter,double_occupancy_total,PASS,thermal_ED:PASS; DQMC:PASS
+QT-11,QuSpin_thermal_trotter,spin_z_correlation,PASS,thermal_ED:PASS; DQMC:PASS
+QT-12,QuSpin_thermal_trotter,spin_z_correlation,PASS,thermal_ED:PASS; DQMC:PASS
+QT-13,QuSpin_thermal_trotter,onebody_up,PASS,thermal_ED:PASS; DQMC:PASS
+QT-14,QuSpin_thermal_trotter,onebody_up,PASS,thermal_ED:PASS; DQMC:PASS
+QT-15,QuSpin_thermal_trotter,S2,PASS,thermal_ED:PASS; DQMC:PASS
+QT-16,QuSpin_thermal_trotter,S2,PASS,thermal_ED:PASS; DQMC:PASS
+FREE-01,analytic_free,energy_uncentered,PASS,DQMC:PASS
+FREE-02,analytic_free,onebody_up,PASS,DQMC:PASS
+FREE-03,analytic_free,S2,PASS,DQMC:PASS
+FREE-04,analytic_free,energy_uncentered,PASS,DQMC:PASS
+FREE-05,analytic_free,onebody_up,PASS,DQMC:PASS
+FREE-06,analytic_free,S2,PASS,DQMC:PASS
+FREE-07,analytic_free,energy_uncentered,PASS,DQMC:PASS
+FREE-08,analytic_free,onebody_up,PASS,DQMC:PASS
+FREE-09,analytic_free,S2,PASS,DQMC:PASS
+FREE-10,analytic_free,energy_uncentered,PASS,DQMC:PASS
+FREE-11,analytic_free,onebody_up,PASS,DQMC:PASS
+FREE-12,analytic_free,S2,PASS,DQMC:PASS
+ATOM-01,analytic_atom,energy_centered,PASS,thermal_ED:PASS; DQMC:PASS
+ATOM-02,analytic_atom,density_total,PASS,thermal_ED:PASS; DQMC:PASS
+ATOM-03,analytic_atom,double_occupancy_total,PASS,thermal_ED:PASS; DQMC:PASS
+ATOM-04,analytic_atom,S2,PASS,thermal_ED:PASS; DQMC:PASS
+ATOM-05,analytic_atom,energy_centered,PASS,thermal_ED:PASS; DQMC:PASS
+ATOM-06,analytic_atom,density_total,PASS,thermal_ED:PASS; DQMC:PASS
+ATOM-07,analytic_atom,double_occupancy_total,PASS,thermal_ED:PASS; DQMC:PASS
+ATOM-08,analytic_atom,S2,PASS,thermal_ED:PASS; DQMC:PASS

@@ -1,0 +1,12 @@
+{
+  "release": "p16-diagnosis",
+  "files": {
+    "packages/p16_diagnosis/verify_quspin_regrouping.py": "be6d4e0cdca647d2d13359940bbfa923a6c9c1e3483057595920c2e09046d9ea",
+    "packages/p16_diagnosis/recheck_user_v2.jl": "faff62239befc076d4ee1c36e39edc4745ace196151fc58f91e8efb0a6ee13cf",
+    "packages/p16_diagnosis/regrouping_v2.jl": "016c0438d6f0df62c08551d87df79699a8e804b14d3ab235359269ca83ecd5e1",
+    "packages/p16_diagnosis/frozen_inputs.json": "666135dd40265d5bc3a3ed0905ed762dfce970f10516d4d6707f5e606ad220d4",
+    "packages/p16_diagnosis/recheck.sbatch": "6f3ee01a0750f3d035fbe167c3aa5bec7439c6aa938f76dffed89f2fd2591344"
+  },
+  "archive_sha256": "9998a60a70155d9c37647135e7e1da3b2031fb488e5fd9330ebe8f62308274da",
+  "purpose": "Diagnose one failed idea, not a new idea or production repair claim"
+}

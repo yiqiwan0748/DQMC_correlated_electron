@@ -1,0 +1,42 @@
+{
+  "schema": "public_X17_leaf_closure_audit_v14",
+  "status": "PASS",
+  "ledger_sha256": "b0f11847356b46017006bb35cd5f160e0923ccfb3bff4bfda55985bce9ad5462",
+  "counts": {
+    "PASS": 45,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 53
+  },
+  "changed_ids": [
+    "X17"
+  ],
+  "preserved_unaffected_row_objects": 99,
+  "preserved_prior_PASS_rows": 44,
+  "preserved_prior_UNRESOLVED_rows": 2,
+  "public_input_files_checked": 28,
+  "prior_evidence_bindings_checked": 274,
+  "archives": [
+    {
+      "path": "sources/orbital-entanglement-v1-source.tar.gz",
+      "members": 20,
+      "sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958"
+    },
+    {
+      "path": "pilot/data.tar.gz",
+      "members": 16,
+      "sha256": "fbc561365e22b172560671bc8e6033c68dcde0c74c86979c054f556673e5bef7"
+    },
+    {
+      "path": "production/data.tar.gz",
+      "members": 15,
+      "sha256": "ee6fadad35360fbadedac1d75f6945d78110e468173f9bd3af72d7d9376c869b"
+    }
+  ],
+  "archive_regular_text_members": 51,
+  "all_original_source_raw_bytes_preserved": true,
+  "case_metrics_bitwise_identical": true,
+  "pilot_completion_credit": 0,
+  "scientific_producer_executed": false,
+  "postprocessing_only": true
+}

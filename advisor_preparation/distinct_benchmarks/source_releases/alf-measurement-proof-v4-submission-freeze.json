@@ -1,0 +1,41 @@
+{
+  "schema": "p21_proof_submission_freeze_v4",
+  "created_utc": "2026-10-22T19:50:30.510935+00:00",
+  "status": "FROZEN_NOT_SUBMITTED_NOT_EXECUTED",
+  "scientific_completions": 0,
+  "catalogue_id": "P21",
+  "catalogue_status": "NOT_RUN_AS_DEFINED",
+  "wrapper_sha256": "417957fa368320618a24a3b388c9d16641cb527b8c09afc4ec9d48982ef469d7",
+  "body_sha256": "70ec7df8d2f64ea301422b0542e289f97287e42f81c7e6a393b72205a31b45d5",
+  "body_matches_PLAN": true,
+  "observer_archive_sha256": "961f9700e6ac41efd2ad778f073cd0ae8dd75a82bee56d85c505a0145633eb7e",
+  "observer_archive_members_verified": 30,
+  "observer_inner_wrapper_sha256": "96c2624be665a7fc18c5db8a8db787558ab9c8cb18bcfd9db1d0033b46676ab6",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "unmeasured_runtime_estimate_minutes": [
+    2,
+    6
+  ],
+  "root_fresh_resource_check_and_serialization_required": true,
+  "root_announcement_EDT_checkpoint_required": true,
+  "independent_review_before_execution_required": true,
+  "submissions_by_preparing_agent": 0,
+  "files": {
+    "postprocessing/alf_measurement_proof_v4.sbatch": "417957fa368320618a24a3b388c9d16641cb527b8c09afc4ec9d48982ef469d7",
+    "alf_preparation/measurement_execution_plan_v4/PLAN.md": "251bbe390f3cbad4723c94f59bd8fb83b808e2a3f52fb9c57ff44121023af8d4",
+    "alf_preparation/measurement_execution_plan_v4/bundle_receipt.json": "de74d9ca58b49abf661a0a4388a662d1e20300d0ea84c2796f70211f6e0e759f",
+    "alf_preparation/measurement_execution_plan_v4/alf-measurement-observers-v4-source.tar.gz": "961f9700e6ac41efd2ad778f073cd0ae8dd75a82bee56d85c505a0145633eb7e",
+    "alf_preparation/measurement_preparation_v4/pre_execution_receipt.json": "556b3831ccaa80a0bc27e67751ce12cb4f3191cd4c2e3691abce7d6ec9cd99a0",
+    "alf_preparation/measurement_execution_plan_v4/static_review_receipt.json": "1a0fdda8dad1275a455f818313a5e5e3c264361820132058e813bb580167460c"
+  },
+  "prior_versions_preserved": true,
+  "remote_paths": {
+    "wrapper": "source/distinct_benchmarks/postprocessing/alf_measurement_proof_v4.sbatch",
+    "archive": "source_releases/alf-measurement-observers-v4-source.tar.gz",
+    "extract_root": "source/p21_measurement_proof_v4",
+    "result_root": "results/p21_adapter_proof_v4_attempt01",
+    "log_candidate": "logs/alf_measurement_proof_v4_%j.log"
+  }
+}

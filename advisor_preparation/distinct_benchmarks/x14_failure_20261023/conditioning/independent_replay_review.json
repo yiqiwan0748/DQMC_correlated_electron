@@ -1,0 +1,60 @@
+{
+  "schema": "X14_SAVED_CONTEXT_DIAGNOSTIC_INDEPENDENT_REPLAY_V1",
+  "status": "PASS_CONDITIONAL_DIAGNOSTIC_ONLY",
+  "created_utc": "2026-10-23T19:54:36.404430+00:00",
+  "check_count": 9,
+  "checks": [
+    {
+      "name": "Frozen source file PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "Frozen source file analyze_saved_context.py",
+      "passed": true
+    },
+    {
+      "name": "Frozen source file peer_review.json",
+      "passed": true
+    },
+    {
+      "name": "Independent NEW/tmp stdlib replay byte-identical original diagnostic",
+      "passed": true
+    },
+    {
+      "name": "All11 exact-rational curvature/absolute derivative sums",
+      "passed": true
+    },
+    {
+      "name": "Exact gamma1024 and conditional arithmetic allowance",
+      "passed": true
+    },
+    {
+      "name": "Independent exact rational strict infeasibility predicate",
+      "passed": true
+    },
+    {
+      "name": "Exact minimum padded-sign width exceeds original tolerance",
+      "passed": true
+    },
+    {
+      "name": "Conditional saved-bracket scope,no original probe/gate change or credit",
+      "passed": true
+    }
+  ],
+  "source_freeze_sha256": "4f2e4f2d16891907fbfbdb7e3adbaa060ecdf91ff05fb6cf5ee594bceed80e85",
+  "source_sha256": "a90ea75f54752c5a883ebe8b0e663a34443166e24591067317881b49bc64f9bc",
+  "original_diagnostic_sha256": "49852efe9f022232f067ee9abe36eab85801fdb6e8d69b232de97a151ad16a8a",
+  "fresh_replay_sha256": "49852efe9f022232f067ee9abe36eab85801fdb6e8d69b232de97a151ad16a8a",
+  "trace_sha256": "fe67ce63c4a1ad0ee365e8724df4909f694b700708577f73e3e998b1b0aad033",
+  "renderer_sha256": "05a77d109916913bf8139c06e37141e614fd81307daab10a552fb65582a9ae39",
+  "conditional_curvature_upper": 0.000386146126286652,
+  "conditional_center_error_upper": 6.377467372119609e-18,
+  "minimum_padded_sign_width": 1.0358769523268931e-07,
+  "original_width_tolerance": 1e-07,
+  "exact_rational_predicate": true,
+  "scientific_completions": 0,
+  "scope": "LocalstdlibFraction replay of NEW approved posthoc saved-context analysis only; not original pinned-runtime replay,root census or hardware-verified interval arithmetic. Conclusion restricted to sign-certified subbrackets inside retained bracket under declared model.",
+  "original_function_or_probe_executed": false,
+  "new_fixture_eigensolver_sampling": false,
+  "job_submitted": false
+}

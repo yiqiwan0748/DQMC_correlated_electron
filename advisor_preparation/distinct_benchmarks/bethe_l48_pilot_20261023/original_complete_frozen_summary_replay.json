@@ -1,0 +1,67 @@
+{
+  "schema": "bethe_ansatz_pilot_v1",
+  "phase": "PILOT_ONLY",
+  "manifest_sha256": "a3f5cdfba3e14adc036ed3e568e29e914e300d4213966740d58ddd885c755298",
+  "analysis_source_sha256": "f93e6ee281c1ff17fe9e97559e8d9559f07f1de9c076138137f0613240331777",
+  "distinct_ideas_passed": 0,
+  "rows": [
+    {
+      "id": "A18",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    },
+    {
+      "id": "A19",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    },
+    {
+      "id": "A20",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    }
+  ],
+  "pilot_quality": "PILOT_QUALITY_UNRESOLVED",
+  "quality_reasons": [
+    "L48/minus/coarse: energy variance",
+    "L48/minus/refined: energy variance",
+    "L48/minus/refined: final truncation error",
+    "L48/plus/coarse: energy variance",
+    "L48/plus/coarse: final truncation error",
+    "L48/plus/refined: energy variance",
+    "L48/plus/refined: final truncation error",
+    "L48/coarse: particle-hole energy identity",
+    "L48/refined: particle-hole energy identity",
+    "L48: charge_gap truncation/seed stability"
+  ],
+  "finite_size_diagnostics": [
+    {
+      "L": 48,
+      "arms": {
+        "coarse": {
+          "energy_per_site": -0.5661014949616289,
+          "charge_gap": 1.362026459277324,
+          "double_occupancy": 0.09885046402499865,
+          "particle_hole_error": 0.00921002218898792
+        },
+        "refined": {
+          "energy_per_site": -0.5661014980186241,
+          "charge_gap": 1.3525508511338344,
+          "double_occupancy": 0.09885049703519448,
+          "particle_hole_error": 2.0134627760626245e-06
+        }
+      },
+      "finite_size_offsets_from_thermodynamic_oracle": {
+        "energy_per_site": 0.007627869879825111,
+        "charge_gap": 0.06582382912092988,
+        "double_occupancy": -0.0013908741139064956
+      },
+      "scope": "Finite-size offsets are diagnostic, never finite-size equality gates."
+    }
+  ],
+  "solves": 6,
+  "sampling_seconds_sum": 1797.5278580188751,
+  "slowest_solve_seconds": 444.8398780822754,
+  "largest_bond_observed": 512,
+  "planning_limit": "This L48-only pilot does not establish L56/L64 or full-size feasibility. Review resource receipts before any separately authorized larger bridge or thermodynamic execution release."
+}

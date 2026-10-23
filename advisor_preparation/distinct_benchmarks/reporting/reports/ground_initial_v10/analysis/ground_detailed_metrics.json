@@ -1,0 +1,1548 @@
+{
+  "X09": [
+    {
+      "metric": "Hamiltonian",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "MPO_qn_Hamiltonian",
+      "value": 6.661338147750939e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "MPO_dense_Hamiltonian",
+      "value": 6.661338147750939e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "MPO_qn_max_imaginary",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "MPO_dense_max_imaginary",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "physical_energy",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "physical_second_moment",
+      "value": 2.842170943040401e-14,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "physical_variance",
+      "value": 2.842170943040401e-14,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "challenge_energy_vs_source",
+      "value": 6.661338147750939e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "unique_external_ground_dimension",
+      "value": 1,
+      "relation": "equals",
+      "bound": 1,
+      "source": "QuSpin",
+      "passed": true
+    },
+    {
+      "metric": "external_ground_gap",
+      "value": 0.2963246316389565,
+      "relation": "greater_than_or_equal",
+      "bound": 1e-06,
+      "source": "QuSpin; frozen comparator additionally enforces strict>",
+      "passed": true
+    },
+    {
+      "metric": "oracle_eigen_residual",
+      "value": 5.17512425905064e-14,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "raw eligibility",
+      "passed": true
+    },
+    {
+      "metric": "source_eigen_residual",
+      "value": 4.856143649413051e-14,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "raw eligibility",
+      "passed": true
+    },
+    {
+      "metric": "oracle_projector_idempotency",
+      "value": 2.268876394332537e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "raw eligibility",
+      "passed": true
+    },
+    {
+      "metric": "neel:variance",
+      "value": 1.856057885163409e-08,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-09,
+        1e-08
+      ],
+      "source": "raw MPS variance; signed range, not absolute error",
+      "passed": false
+    },
+    {
+      "metric": "neel:low_variance_gate",
+      "value": false,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate",
+      "passed": false
+    },
+    {
+      "metric": "neel:external_ground_certificate",
+      "value": false,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate; manufactured states must be rejected",
+      "passed": false
+    },
+    {
+      "metric": "neel:ground_projector_fidelity",
+      "value": 0.9999999095019717,
+      "relation": "greater_than_or_equal",
+      "bound": 0.99999999,
+      "source": "independent complete ground projector",
+      "passed": false
+    },
+    {
+      "metric": "neel:external_energy_excess",
+      "value": 2.817548461209185e-08,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-08,
+        1e-08
+      ],
+      "source": "independent ground energy/gap",
+      "passed": false
+    },
+    {
+      "metric": "neel:norm_deviation",
+      "value": 7.771561172376096e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "neel:outside_sector_weight_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "neel:Nup_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "neel:Ndown_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "neel:reported_energy_deviation",
+      "value": 3.9968028886505635e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "native optimizer output versus physical expectation",
+      "passed": true
+    },
+    {
+      "metric": "charge_density_wave:variance",
+      "value": 2.8478204683324293e-08,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-09,
+        1e-08
+      ],
+      "source": "raw MPS variance; signed range, not absolute error",
+      "passed": false
+    },
+    {
+      "metric": "charge_density_wave:low_variance_gate",
+      "value": false,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate",
+      "passed": false
+    },
+    {
+      "metric": "charge_density_wave:external_ground_certificate",
+      "value": false,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate; manufactured states must be rejected",
+      "passed": false
+    },
+    {
+      "metric": "charge_density_wave:ground_projector_fidelity",
+      "value": 0.9999998703715703,
+      "relation": "greater_than_or_equal",
+      "bound": 0.99999999,
+      "source": "independent complete ground projector",
+      "passed": false
+    },
+    {
+      "metric": "charge_density_wave:external_energy_excess",
+      "value": 4.05063276254225e-08,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-08,
+        1e-08
+      ],
+      "source": "independent ground energy/gap",
+      "passed": false
+    },
+    {
+      "metric": "charge_density_wave:norm_deviation",
+      "value": 1.1102230246251565e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "charge_density_wave:outside_sector_weight_deviation",
+      "value": 1.1102230246251565e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "charge_density_wave:Nup_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "charge_density_wave:Ndown_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "charge_density_wave:reported_energy_deviation",
+      "value": 2.220446049250313e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "native optimizer output versus physical expectation",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:variance",
+      "value": 2.316166813898235e-09,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-09,
+        1e-08
+      ],
+      "source": "raw MPS variance; signed range, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:low_variance_gate",
+      "value": true,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:external_ground_certificate",
+      "value": true,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate; manufactured states must be rejected",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:ground_projector_fidelity",
+      "value": 0.9999999928247536,
+      "relation": "greater_than_or_equal",
+      "bound": 0.99999999,
+      "source": "independent complete ground projector",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:external_energy_excess",
+      "value": 2.3154775874445477e-09,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-08,
+        1e-08
+      ],
+      "source": "independent ground energy/gap",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:norm_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:outside_sector_weight_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:Nup_deviation",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:Ndown_deviation",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "spin_domains:reported_energy_deviation",
+      "value": 4.884981308350689e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "native optimizer output versus physical expectation",
+      "passed": true
+    },
+    {
+      "metric": "shuffled:variance",
+      "value": 3.5563285649686804e-08,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-09,
+        1e-08
+      ],
+      "source": "raw MPS variance; signed range, not absolute error",
+      "passed": false
+    },
+    {
+      "metric": "shuffled:low_variance_gate",
+      "value": false,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate",
+      "passed": false
+    },
+    {
+      "metric": "shuffled:external_ground_certificate",
+      "value": false,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate; manufactured states must be rejected",
+      "passed": false
+    },
+    {
+      "metric": "shuffled:ground_projector_fidelity",
+      "value": 0.9999998381513738,
+      "relation": "greater_than_or_equal",
+      "bound": 0.99999999,
+      "source": "independent complete ground projector",
+      "passed": false
+    },
+    {
+      "metric": "shuffled:external_energy_excess",
+      "value": 5.0694482833790744e-08,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-08,
+        1e-08
+      ],
+      "source": "independent ground energy/gap",
+      "passed": false
+    },
+    {
+      "metric": "shuffled:norm_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "shuffled:outside_sector_weight_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "shuffled:Nup_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "shuffled:Ndown_deviation",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "shuffled:reported_energy_deviation",
+      "value": 1.7763568394002505e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "native optimizer output versus physical expectation",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:variance",
+      "value": 0.0,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-09,
+        1e-08
+      ],
+      "source": "raw MPS variance; signed range, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:low_variance_gate",
+      "value": true,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:external_ground_certificate",
+      "value": false,
+      "relation": "equals",
+      "bound": false,
+      "source": "frozen comparator certificate; manufactured states must be rejected",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:ground_projector_fidelity",
+      "value": 3.27408752990026e-18,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "independent complete ground projector",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:external_energy_excess",
+      "value": 0.2963246316389554,
+      "relation": "greater_than_or_equal",
+      "bound": 0.14816231581947825,
+      "source": "independent ground energy/gap",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:norm_deviation",
+      "value": 1.1102230246251565e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:outside_sector_weight_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:Nup_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:Ndown_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "first_excited_eigenvector:source_eigen_residual",
+      "value": 4.4907313080327474e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "manufactured diagnostic source",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:variance",
+      "value": -2.842170943040401e-14,
+      "relation": "inside_closed_interval",
+      "bound": [
+        -1e-09,
+        1e-08
+      ],
+      "source": "raw MPS variance; signed range, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:low_variance_gate",
+      "value": true,
+      "relation": "equals",
+      "bound": true,
+      "source": "frozen comparator certificate",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:external_ground_certificate",
+      "value": false,
+      "relation": "equals",
+      "bound": false,
+      "source": "frozen comparator certificate; manufactured states must be rejected",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:ground_projector_fidelity",
+      "value": 1.1050292098706027e-18,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "independent complete ground projector",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:external_energy_excess",
+      "value": 12.205496966924137,
+      "relation": "greater_than_or_equal",
+      "bound": 0.14816231581947825,
+      "source": "independent ground energy/gap",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:norm_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:outside_sector_weight_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:Nup_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:Ndown_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-09,
+      "source": "raw target eligibility",
+      "passed": true
+    },
+    {
+      "metric": "highest_eigenvector:source_eigen_residual",
+      "value": 6.431531303699736e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "manufactured diagnostic source",
+      "passed": true
+    }
+  ],
+  "X12": [
+    {
+      "metric": "analytic_canonical_eigenvalues",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_energy",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_trace",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_Nmean",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_Czz",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_connected_Czz",
+      "value": 2.7755575615628914e-17,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_distance_to_equal_ground",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_spin_z_means",
+      "value": 1.1102230246251565e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_spin_xyz_means",
+      "value": 1.1102230246251565e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_spectrum_L1",
+      "value": 9.097468326486019e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_purity",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "analytic_S2",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_energy",
+      "value": 1.3322676295501878e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_trace",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_Nmean",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_spin_z_means",
+      "value": 1.6653345369377348e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_spin_xyz_means",
+      "value": 1.6653345369377348e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_Czz",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_connected_Czz",
+      "value": 4.163336342344337e-17,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_distance_to_equal_ground",
+      "value": 3.3306690738754696e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_purity",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_S2",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "cross_spectrum_L1",
+      "value": 5.689893001203926e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "frozen comparator absolute-error field; specific bound retained",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:eigen_residual",
+      "value": 1.6616296724220897e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "raw eligibility",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:mixture_rotation_error",
+      "value": 9.024782978098973e-17,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "raw eligibility",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_up:beta=-1.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_up:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_up:beta=-1.0:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_up:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_rotated:beta=-1.0:nA=1:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_rotated:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": -6.938893903907228e-17,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_rotated:beta=-1.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_rotated:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": -6.654781321416742e-17,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:equal_ground_mixture:beta=-1.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:equal_ground_mixture:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:equal_ground_mixture:beta=-1.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:equal_ground_mixture:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": -2.7755575615628914e-17,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:rotated_basis_ground_mixture:beta=-1.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:rotated_basis_ground_mixture:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:rotated_basis_ground_mixture:beta=-1.0:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:rotated_basis_ground_mixture:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": -8.666359002756824e-48,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=0.5:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=0.5:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=0.5:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=0.5:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=1.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=1.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=1.0:nA=2:minimum_eigenvalue",
+      "value": -3.089004085947725e-32,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=2.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=2.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=2.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=2.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=4.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=4.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=4.0:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=4.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=8.0:nA=1:trace_deviation",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=8.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=8.0:nA=2:trace_deviation",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=8.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=16.0:nA=1:trace_deviation",
+      "value": 1.1102230246251565e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=16.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=16.0:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:canonical_gibbs:beta=16.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_mixed_entropy_separation",
+      "value": 0.2876820724517799,
+      "relation": "greater_than_or_equal",
+      "bound": 0.1,
+      "source": "distinct prescribed states",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:pure_mixed_connected_separation",
+      "value": 0.06249999999999997,
+      "relation": "greater_than_or_equal",
+      "bound": 0.01,
+      "source": "distinct prescribed states",
+      "passed": true
+    },
+    {
+      "metric": "QuSpin:last_beta_trace_norm_distance",
+      "value": 2.5646151868841116e-14,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "full canonical Gibbs versus equal ground mixture",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:eigen_residual",
+      "value": 1.6616296724220897e-15,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "raw eligibility",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:mixture_rotation_error",
+      "value": 9.024782978098973e-17,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "raw eligibility",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_up:beta=-1.0:nA=1:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_up:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_up:beta=-1.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_up:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": -5.551115123125783e-17,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_rotated:beta=-1.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_rotated:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_rotated:beta=-1.0:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_rotated:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": -6.629535770549618e-17,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:equal_ground_mixture:beta=-1.0:nA=1:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:equal_ground_mixture:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:equal_ground_mixture:beta=-1.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:equal_ground_mixture:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": -2.7755575615628914e-17,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:rotated_basis_ground_mixture:beta=-1.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:rotated_basis_ground_mixture:beta=-1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:rotated_basis_ground_mixture:beta=-1.0:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:rotated_basis_ground_mixture:beta=-1.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=0.5:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=0.5:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=0.5:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=0.5:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=1.0:nA=1:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=1.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=1.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=1.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=2.0:nA=1:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=2.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=2.0:nA=2:trace_deviation",
+      "value": 0.0,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=2.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=4.0:nA=1:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=4.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=4.0:nA=2:trace_deviation",
+      "value": 2.220446049250313e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=4.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=8.0:nA=1:trace_deviation",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=8.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=8.0:nA=2:trace_deviation",
+      "value": 4.440892098500626e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=8.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=16.0:nA=1:trace_deviation",
+      "value": 1.1102230246251565e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=16.0:nA=1:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=16.0:nA=2:trace_deviation",
+      "value": 1.1102230246251565e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "complete physical RDM",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:canonical_gibbs:beta=16.0:nA=2:minimum_eigenvalue",
+      "value": 0.0,
+      "relation": "greater_than_or_equal",
+      "bound": -1e-10,
+      "source": "signed positivity bound, not absolute error",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_mixed_entropy_separation",
+      "value": 0.2876820724517807,
+      "relation": "greater_than_or_equal",
+      "bound": 0.1,
+      "source": "distinct prescribed states",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:pure_mixed_connected_separation",
+      "value": 0.06250000000000001,
+      "relation": "greater_than_or_equal",
+      "bound": 0.01,
+      "source": "distinct prescribed states",
+      "passed": true
+    },
+    {
+      "metric": "user_ED_thermal_RDM:last_beta_trace_norm_distance",
+      "value": 2.5646151868841116e-14,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "full canonical Gibbs versus equal ground mixture",
+      "passed": true
+    },
+    {
+      "metric": "user_pure_lanczos_residual",
+      "value": 9.081081387112244e-32,
+      "relation": "less_than_or_equal",
+      "bound": 1e-10,
+      "source": "actual user Lanczos",
+      "passed": true
+    },
+    {
+      "metric": "user_pure_lanczos_energy_error",
+      "value": 8.881784197001252e-16,
+      "relation": "less_than_or_equal",
+      "bound": 1e-08,
+      "source": "physical dimer convention",
+      "passed": true
+    }
+  ]
+}

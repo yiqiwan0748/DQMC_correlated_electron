@@ -1,0 +1,26 @@
+{
+  "job_id": "6458825",
+  "dependency": "afterany:6458711",
+  "status": "SUBMITTED_HIGHER_PRECISION_RETEST_NOT_A_PASS",
+  "distinct_ids": [
+    "X09",
+    "X12"
+  ],
+  "source_freeze": "../source_releases/ground-certification-precision-v2-freeze.json",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 15,
+  "estimated_minutes_after_start": [
+    1,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 17:15",
+  "staged_tranche": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/ground_certification_precision_v2/ground_certification_precision_v2",
+  "output": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/ground_certification_precision_v2_6458825",
+  "log": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/logs/ground_certification_precision_v2_6458825.log",
+  "prior_attempt_preserved": "ground_certification_6458708",
+  "scientific_gates_unchanged": true,
+  "submitted_UTC": "2026-10-22 20:15:51",
+  "admission": "Fresh live queue had one running one-CPU campaign job and zero unrelated running jobs; all new stages serially dependent; unrelated pending jobs unchanged.",
+  "scheduler_verification": "scontrol confirmed PENDING Dependency, specified afterany predecessor, NumCPUs=1, ReqTRES mem=3500M, and 15/22/10-minute respective wall limits; no restart."
+}

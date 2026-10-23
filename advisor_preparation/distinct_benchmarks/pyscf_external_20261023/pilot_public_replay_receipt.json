@@ -1,0 +1,27 @@
+{
+  "audit_status": "PASS",
+  "catalogue_status": {
+    "P23": "NOT_RUN",
+    "P24": "NOT_RUN"
+  },
+  "check_count": 122,
+  "maximum_projected_peak_mib": 2641.671875,
+  "original_execution_status": "UNRESOLVED",
+  "original_full_replay_receipt_sha256": "c588926347cf8faffc4a1bab96cc6d92602f36e26d026cff5a98c340f05d9a51",
+  "original_independent_audit_sha256": "f93ed6fb65f627073d442e74330e46747e015d5294e0d126704891151a02ee34",
+  "original_mathematical_auditor_sha256": "e2e69b19c29d7d0aace5fb16780bc35c9f91b410563a49493be7dce4c58dd893",
+  "original_process_exits": [
+    0,
+    0,
+    1
+  ],
+  "original_resource_policy_unchanged": true,
+  "producer_reruns": false,
+  "production_admitted": false,
+  "projected_total_seconds": 712.6154508037725,
+  "public_transport_or_root_admission_checks_replayed": false,
+  "schema": "PYSCF_PUBLIC_PILOT_RECOVERY_REPLAY_V1",
+  "scientific_completions": 0,
+  "scientific_solver_executed": false,
+  "unchanged_scientific_fragment_sha256": "c6392e62c0df3a2ac0767e30afc50796b289d8583649b5ec6d786f0c69f907bb"
+}

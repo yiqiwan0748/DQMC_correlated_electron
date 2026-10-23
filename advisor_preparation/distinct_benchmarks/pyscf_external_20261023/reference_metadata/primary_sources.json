@@ -1,0 +1,44 @@
+[
+  {
+    "path": "direct_spin1.py",
+    "url": "https://raw.githubusercontent.com/pyscf/pyscf/v2.14.0/pyscf/fci/direct_spin1.py",
+    "bytes": 47776,
+    "sha256": "df00b56a8a4f996bbe4bddbb697db08b64c6f3110d68765ad5ac6798dff87d2d",
+    "role": "Unmodified Apache2.0 primary API reference, not imported by target/oracle"
+  },
+  {
+    "path": "spin_op.py",
+    "url": "https://raw.githubusercontent.com/pyscf/pyscf/v2.14.0/pyscf/fci/spin_op.py",
+    "bytes": 11591,
+    "sha256": "a820086c0b58774dee42c7eb489fcafc118b89b8cfe208bae6573ffba09d0343",
+    "role": "Unmodified Apache2.0 primary API reference, not imported by target/oracle"
+  },
+  {
+    "path": "rdm.py",
+    "url": "https://raw.githubusercontent.com/pyscf/pyscf/v2.14.0/pyscf/fci/rdm.py",
+    "bytes": 15210,
+    "sha256": "d66cd9412a6a44fb937a4b6d35e1393798a73e2809713637d985328591fd4a9b",
+    "role": "Unmodified Apache2.0 primary API reference, not imported by target/oracle"
+  },
+  {
+    "path": "cistring.py",
+    "url": "https://raw.githubusercontent.com/pyscf/pyscf/v2.14.0/pyscf/fci/cistring.py",
+    "bytes": 16833,
+    "sha256": "f06a025d3eee7895d9e33d3cf4f2fbb22fabb94b555aad4c18fe6783e99db1be",
+    "role": "Unmodified Apache2.0 primary API reference, not imported by target/oracle"
+  },
+  {
+    "path": "addons.py",
+    "url": "https://raw.githubusercontent.com/pyscf/pyscf/v2.14.0/pyscf/fci/addons.py",
+    "bytes": 31866,
+    "sha256": "a317adbe693172d8006bd4ded4355a1cfe004018d4dd9061e9b28f211e989517",
+    "role": "Unmodified Apache2.0 primary API reference, not imported by target/oracle"
+  },
+  {
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/pyscf/pyscf/v2.14.0/LICENSE",
+    "bytes": 11357,
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "role": "PySCF Apache2.0 license preserved with unmodified API references"
+  }
+]

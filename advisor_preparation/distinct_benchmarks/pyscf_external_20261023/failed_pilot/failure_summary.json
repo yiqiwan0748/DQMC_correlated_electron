@@ -1,0 +1,30 @@
+{
+  "catalogue_ids": [
+    "P23",
+    "P24"
+  ],
+  "catalogue_status": "NOT_RUN",
+  "failure": "Comparator reached final json.dumps and could not encode NumPy bool leaves. Native and independentreference producer processes completed; scientific gate outcome remains unaudited until reviewed serialization-only postprocessing recovery.",
+  "job_id": "6465868",
+  "original_execution_status": "UNRESOLVED",
+  "original_full_failure_audit_sha256": "8be674a4579ba3cf61fd7834a63e358bca197e361080dcb53b8a2ba287b4e708",
+  "original_receipts_rewritten": false,
+  "original_source_archive_sha256": "3c4644711b744897ebfdb52c937001cf262e8e81f5930c78f4a1d9e6fa1055cc",
+  "producer_exit_codes": {
+    "comparator": 1,
+    "reference": 0,
+    "target": 0
+  },
+  "producer_process_wall_seconds": {
+    "comparator": 0.6121561527252197,
+    "reference": 25.99112105369568,
+    "target": 42.88115477561951
+  },
+  "scheduler_exit_code": "2:0",
+  "scheduler_state": "FAILED",
+  "schema": "PYSCF_PILOT_FAILURE_PRESERVATION_AUDIT_V1",
+  "scientific_completions": 0,
+  "scientific_oracle_or_native_rerun": false,
+  "source_freeze_sha256": "259e988a8bb6733b16a62692c284e931f1761bac779c7ebd38e3f7202bc6a5ed",
+  "status": "UNRESOLVED"
+}

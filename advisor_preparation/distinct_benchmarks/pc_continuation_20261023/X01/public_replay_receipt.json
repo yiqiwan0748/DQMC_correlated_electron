@@ -1,0 +1,16 @@
+{
+  "schema": "X01_PUBLIC_SCIENTIFIC_SELECTION_RECONCILIATION_V1",
+  "audit_status": "PASS",
+  "scientific_status": "UNRESOLVED",
+  "catalogue_id": "X01",
+  "new_scientific_completions": 0,
+  "selected_stage": 2,
+  "reason": "Fixed quartic S2 continuum halfwidth exceeds predeclared precision threshold. Incomplete final stage3 adds no result; no pooling, fourth look, retry, or gate relaxation.",
+  "check_count": 4857,
+  "failure_count": 0,
+  "auditor_sha256": "72918b4038aedec5b081c71d3f52a17c0ca523043dcfad0c3d7cf86af39249e8",
+  "independent_math_auditor_sha256": "6d68b99f06eeea2834f72e386e7b91fbe63bf8aa62f265c95947361eb761910c",
+  "original_full_audit_sha256": "4eecab1e48c0164b43833c5f0f63e5004a0b16436f0f487c0c30ae7383000f38",
+  "physics_executed": false,
+  "source_raw_bytes_changed": false
+}

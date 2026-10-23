@@ -1,0 +1,53 @@
+{
+  "schema": "user_requested_stop_deadline_v1",
+  "requested_deadline_EDT": "2026-10-22 17:00:00",
+  "recorded_UTC": "2026-10-22 20:22:24",
+  "reason": "User requested all campaign work stop by5pm today and portable PC resume handoff.",
+  "automation": {
+    "id": "continue-isaac-external-benchmarks",
+    "status": "PAUSED",
+    "verified_by": "automation_update tool returned PAUSED"
+  },
+  "cancelled_before_start": [
+    {
+      "job_id": "6458825",
+      "state": "CANCELLED by 12640",
+      "start": "None",
+      "elapsed_seconds": 0,
+      "end_EDT": "2026-10-22 16:22:12",
+      "scientific_outcome": "NOT_RUN_USER_STOP"
+    },
+    {
+      "job_id": "6458826",
+      "state": "CANCELLED by 12640",
+      "start": "None",
+      "elapsed_seconds": 0,
+      "end_EDT": "2026-10-22 16:22:12",
+      "scientific_outcome": "NOT_RUN_USER_STOP"
+    },
+    {
+      "job_id": "6458828",
+      "state": "CANCELLED by 12640",
+      "start": "None",
+      "elapsed_seconds": 0,
+      "end_EDT": "2026-10-22 16:22:12",
+      "scientific_outcome": "NOT_RUN_USER_STOP"
+    }
+  ],
+  "remaining_campaign_job": {
+    "job_id": "6458711",
+    "status_at_receipt": "RUNNING_PILOT_ONLY",
+    "start_EDT": "2026-10-22 16:00:52",
+    "original_wall_limit_minutes": 60,
+    "user_stop_override_wall_limit_minutes": 45,
+    "scheduler_end_EDT": "2026-10-22 16:45:52",
+    "Requeue": 0,
+    "cpus": 1,
+    "memory_mb": 3500,
+    "scientific_completions": 0,
+    "rule": "Collect completed or partial receipts on explicit resume; timeout/partial is not a scientific pass. Resource cap reduction is an administrative user-stop override, not relaxed scientific acceptance."
+  },
+  "unrelated_jobs": "Untouched; all cancellations explicitly enumerate only our3 queued jobs.",
+  "resume_policy": "No automatic resume. Require new explicit user instruction from apartment PC; reconcile ISAAC scheduler/results and GitHub record first.",
+  "source_and_original_attempts": "Unchanged; original submission receipts remain immutable."
+}

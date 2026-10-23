@@ -1,0 +1,63 @@
+{
+  "schema": "X14_CONDITIONING_SAVED_CONTEXT_SOURCE_REVIEW_V2",
+  "status": "PASS_CONDITIONAL_THEORY_AND_SOURCE_FOR_ROOT_REVIEW",
+  "created_utc": "2026-10-23T19:51:38.155951+00:00",
+  "analysis_sha256": "a90ea75f54752c5a883ebe8b0e663a34443166e24591067317881b49bc64f9bc",
+  "protocol_sha256": "d3833f62e9caf8d87df18c5149743968bd7c4add7b9b5bf8d24b1c6c59ba3142",
+  "supersedes_normal_guard_pending_review_sha256": "b74c789911108099babb4e730642e218fcff87ace49925cae087387630c767d2",
+  "check_count": 11,
+  "checks": [
+    {
+      "name": "Exact originaltrace/renderer/freeze/manifest identities enforced before reading retained context",
+      "passed": true
+    },
+    {
+      "name": "No original renderer/function imports,newprobe,census,fixtureproducer,numericalmodule or source/gate/padding change",
+      "passed": true
+    },
+    {
+      "name": "All11 savedbinary64poles/weights/endpoints/eta/observedfixedpadding embedded exactly as Fractions",
+      "passed": true
+    },
+    {
+      "name": "Wholeinterval3*dmin\u00b2>eta\u00b2 and nonnegativeweights give positive curvature,pi>3 gives exactM/B uppers",
+      "passed": true
+    },
+    {
+      "name": "Explicit entire-interval intermediate envelopes now include base,base\u00b2/base\u00b3,pi*basepowers,weight,2eta*w,derivative/curvature products/polynomials/termvalues",
+      "passed": true
+    },
+    {
+      "name": "All nonzero used intermediates require1024*minnormal<lower<=upper<max/1024;zero-weight products correctly structuralzero",
+      "passed": true
+    },
+    {
+      "name": "Conditional53bitbinary64/smallintegerpower/nearestpi/fsum assumptions remain explicit;gamma1024 conservatively covers11*<64 termfactors and<=2final fsum rounds",
+      "passed": true
+    },
+    {
+      "name": "Meanvalue/evaluationerror boundM*tol+2rho<2eps excludes only original fixed-padding opposite-sign subbrackets withinretained[a,b]",
+      "passed": true
+    },
+    {
+      "name": "Exactrational predicate/widthcertificate are reported separately from floating approximate presentation",
+      "passed": true
+    },
+    {
+      "name": "Conclusion doesnotclaim rootabsence,allroots census,originalruntime replay,newprecision success or scientificcredit",
+      "passed": true
+    },
+    {
+      "name": "Python syntax parsed only; no savedtrace numerical evaluation or original/diagnostic code executed",
+      "passed": true
+    }
+  ],
+  "blockers": [],
+  "conditions": "Only the explicitly declared arithmetic model and original endpoint-sign/fixedpadding criterion,inside retained bracket. This is not hardware-verified interval arithmetic.",
+  "numerical_imported": false,
+  "original_source_imported": false,
+  "raw_trace_evaluated": false,
+  "fixture_or_probe_executed": false,
+  "job_submitted": false,
+  "scientific_completions": 0
+}

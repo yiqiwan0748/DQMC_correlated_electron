@@ -1,0 +1,48 @@
+{
+  "schema": "J23_DERIVED_PINNED_REPLAY_SCIENTIFIC_EXECUTION_V1",
+  "original_receipt_sha256": "a4d8eae1a3f099240258ff929a8cac69c57b6453af8ef50e5241c74af8112cb7",
+  "retained_original_fields": {
+    "schema": "J23_FULL_FROZEN_SAVED_COMPARATOR_REPLAY_V1",
+    "status": "ANALYSIS_COMPLETE",
+    "job_id": "6466878",
+    "original_full_job_id": "6466733",
+    "python_version": "3.11.11",
+    "actual_python": "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/python3.11",
+    "cpus": 1,
+    "memory_MB": 3500,
+    "original_source_freeze_sha256": "7b763ad944dd745d604957bf25556fdad06b2ff733f09cb6c25230f7db7b4043",
+    "input_bindings_sha256": "939c5299a2963348a9e440603d6af9a75341f7014c462ef5c2570b10ce84ec9b",
+    "runner_sha256": "66cc3c8c1673448803aa14ab68558607008d34262854b5dddbb602d2f00a3fc6",
+    "unchanged_comparator_sha256": "968a0e60097054b486bdbfbc527d31d82ee4651f7dc2eb825ef0a2a09e05b108",
+    "original_inputs_unchanged": true,
+    "started_unix": 1792785299.942411,
+    "finished_unix": 1792785331.998278,
+    "exit_code": 0,
+    "timed_out": false,
+    "error": null,
+    "outputs": {
+      "comparison_replay.json": {
+        "sha256": "51190d8a66e74d0bb338125940dd0884e5ef735f880ad8483b9bebc231b97971",
+        "bytes": 772184
+      },
+      "process.log": {
+        "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+        "bytes": 5
+      },
+      "process.resources.txt": {
+        "sha256": "c4fac8619be43f8b3a76a40f874e926a3f12164b8c7fcdc37fe3e15ce42f0666",
+        "bytes": 1305
+      }
+    },
+    "scientific_completions": 0,
+    "new_HF_or_quadrature_or_fixture_producer_executed": false,
+    "pinned_runtime_bypass": false,
+    "full_job_admitted": false
+  },
+  "omitted_fields": [
+    "original_input_before",
+    "original_input_after"
+  ],
+  "transport_or_admission_checks_replayed_publicly": false,
+  "derived_projection_not_original_receipt": true
+}

@@ -1,0 +1,6 @@
+[files]
+"src/HubbardRenyiDQMC.jl" = "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721"
+"src/dqmc_kernel.jl" = "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be"
+"src/grover_rank1_update.jl" = "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+"Project.toml" = "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+"Manifest.toml" = "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"

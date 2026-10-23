@@ -1,0 +1,118 @@
+{
+  "status": "SOURCE_INSPECTED_NOT_INSTALLED",
+  "retrieval_date": "2026-10-22",
+  "repository": "https://github.com/ALF-QMC/ALF",
+  "release_line": "ALF-2.6",
+  "resolved_commit": "f4c500cc5d7bcf089400c63e4e75382c558a4ed3",
+  "commit_date": "2025-11-05T18:51:59Z",
+  "branch_resolution_url": "https://api.github.com/repos/ALF-QMC/ALF/branches/ALF-2.6",
+  "commit_url": "https://github.com/ALF-QMC/ALF/commit/f4c500cc5d7bcf089400c63e4e75382c558a4ed3",
+  "license": "GPL-3.0-or-later with additional attribution/origin terms in license.additional; documentation CC-BY-SA-4.0; bundled LAPACK BSD",
+  "files": [
+    {
+      "path": "README.md",
+      "git_blob_sha": "621733232f642f77a6a26ad886f7ea7989708dc6",
+      "bytes": 10130,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/README.md"
+    },
+    {
+      "path": "configure.sh",
+      "git_blob_sha": "3a9d2a32881dfffecf8e531562ce3722b42b12c0",
+      "bytes": 16730,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/configure.sh"
+    },
+    {
+      "path": "Makefile",
+      "git_blob_sha": "6acdfc450ba0c3794cdd47bf7474733c67d91c98",
+      "bytes": 1363,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Makefile"
+    },
+    {
+      "path": "license.gpl",
+      "git_blob_sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "bytes": 35147,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/license.gpl"
+    },
+    {
+      "path": "license.additional",
+      "git_blob_sha": "355eb3de832af90a0fba0229066714e1cae3f2ad",
+      "bytes": 1007,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/license.additional"
+    },
+    {
+      "path": "CITATION.cff",
+      "git_blob_sha": "47b9f223adbd850c3b18b5878dbeb3d372cd9396",
+      "bytes": 2357,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/CITATION.cff"
+    },
+    {
+      "path": "Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "git_blob_sha": "c5a505bc0388e9dc8eab4c840fd81e28d6e1d427",
+      "bytes": 38771,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90"
+    },
+    {
+      "path": "Prog/Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_smod.F90",
+      "git_blob_sha": "03c8dc4aa1610cbe3adf4b3eb91f903217310587",
+      "bytes": 31956,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_smod.F90"
+    },
+    {
+      "path": "Prog/Predefined_Int_mod.F90",
+      "git_blob_sha": "42fda050aff20230b8c36f36c7f1f8d4f15524cf",
+      "bytes": 12737,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Predefined_Int_mod.F90"
+    },
+    {
+      "path": "Prog/Fields_mod.F90",
+      "git_blob_sha": "a63164560061a08196ea590a0acd0205f4bc2f74",
+      "bytes": 32583,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Fields_mod.F90"
+    },
+    {
+      "path": "Prog/Hamiltonian_main_mod.F90",
+      "git_blob_sha": "13ec1174618fcc50e2607ca3227710760d9619e5",
+      "bytes": 33205,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Hamiltonian_main_mod.F90"
+    },
+    {
+      "path": "Prog/Predefined_Obs_mod.F90",
+      "git_blob_sha": "f39fd922d63a100714fcfd62ac567ed30cdb008a",
+      "bytes": 32202,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Predefined_Obs_mod.F90"
+    },
+    {
+      "path": "Prog/tau_m_mod.F90",
+      "git_blob_sha": "664559981ea799a837c2860542336d37a53716c4",
+      "bytes": 11052,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/tau_m_mod.F90"
+    },
+    {
+      "path": "Prog/Wrapgr_mod.F90",
+      "git_blob_sha": "5466219a107faa695c87bdd3ad5b8b0f09a3830b",
+      "bytes": 18586,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Wrapgr_mod.F90"
+    },
+    {
+      "path": "Prog/wrapur_mod.F90",
+      "git_blob_sha": "7840c1083cd7de4281cafe79c42b8e39f6daa7dd",
+      "bytes": 4846,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/wrapur_mod.F90"
+    },
+    {
+      "path": "Prog/Operator_mod.F90",
+      "git_blob_sha": "1d753134b9cb3fe20ffdec020e9156947d70f25c",
+      "bytes": 32580,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Prog/Operator_mod.F90"
+    },
+    {
+      "path": "Scripts_and_Parameters_files/Start/parameters",
+      "git_blob_sha": "ddbf8793b858a2c0bb5fa64cfb660051b3332258",
+      "bytes": 9328,
+      "url": "https://github.com/ALF-QMC/ALF/blob/f4c500cc5d7bcf089400c63e4e75382c558a4ed3/Scripts_and_Parameters_files/Start/parameters"
+    }
+  ],
+  "catalogue_id": "P21",
+  "scientific_runs": 0,
+  "install_attempts": 0
+}

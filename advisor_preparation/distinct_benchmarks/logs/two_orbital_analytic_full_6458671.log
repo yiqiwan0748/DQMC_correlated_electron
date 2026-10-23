@@ -1,0 +1,17 @@
+Anaconda3 version 2024.06
+README.md: OK
+compare.py: OK
+manifest.toml: OK
+oracle.py: OK
+pilot_summary.py: OK
+run.sbatch: OK
+source_provenance.json: OK
+source_snapshot/scripts/two_orbital_atom_ed.jl: OK
+source_snapshot/scripts/two_orbital_open_cluster_ed.jl: OK
+source_snapshot/src/noninteracting.jl: OK
+source_snapshot/src/realspace_kinetic.jl: OK
+static_review.json: OK
+target.jl: OK
+A15 PASS
+A16 PASS
+A17 PASS

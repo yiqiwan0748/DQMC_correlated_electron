@@ -1,0 +1,2637 @@
+{
+  "schema": "A25_ACTUAL_SAVED_PILOT_AUDIT_INDEPENDENT_ADMISSION_READ_V1",
+  "status": "QUALIFIED_FOR_SEPARATE_ROOT_RESOURCE_REVIEW",
+  "created_utc": "2026-10-23T19:55:57.701818+00:00",
+  "check_count": 643,
+  "checks": [
+    {
+      "name": "Exact actual completed audit and frozen assessment",
+      "passed": true
+    },
+    {
+      "name": "Actual saved-audit identity and successful completion",
+      "passed": true
+    },
+    {
+      "name": "Exact independently reviewed auditor executed",
+      "passed": true
+    },
+    {
+      "name": "All actual1404 checks retained andPASS",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/uniform/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux9/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/uniform/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux17/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/uniform/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux21/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/uniform/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux25/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/uniform/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux29/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/uniform/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux33/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/uniform/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/nativedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/referencedirect edge K",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/nativebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/referencebalancedE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/globalfixedNE",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/nativevectornorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/LeibnizSlaternorm",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/independentLeibniznativefidelity",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value L6/center25/flux41/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h8/savedFDcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h8/savedFDcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h8/savedFDstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h8/unchangedbudgetcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h8/unchangedbudgetcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h8/unchangedbudgetstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h4/savedFDcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h4/savedFDcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h4/savedFDstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h4/unchangedbudgetcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h4/unchangedbudgetcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value uniform/h4/unchangedbudgetstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h8/savedFDcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h8/savedFDcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h8/savedFDstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h8/unchangedbudgetcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h8/unchangedbudgetcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h8/unchangedbudgetstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h4/savedFDcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h4/savedFDcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h4/savedFDstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h4/unchangedbudgetcurrent",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h4/unchangedbudgetcurvature",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value boundary_seam/h4/unchangedbudgetstiffness",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value independentfixedresourceformula/native_forecast_seconds",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value independentfixedresourceformula/full_forecast_seconds",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative finite upper-gated recorded value independentfixedresourceformula/full_forecast_mib",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed analysis source release",
+      "passed": true
+    },
+    {
+      "name": "All14 analysis source members",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member PREPARATION_SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member README.md",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member analysis.sbatch",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member audit_a25_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member audit_plan.json",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member retrieve_a25_text.py",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member reviews/unexecuted_attempt01_before_root_integrity_review/PREPARATION_SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member reviews/unexecuted_attempt01_before_root_integrity_review/README.md",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member reviews/unexecuted_attempt01_before_root_integrity_review/analysis.sbatch",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member reviews/unexecuted_attempt01_before_root_integrity_review/audit_a25_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member reviews/unexecuted_attempt01_before_root_integrity_review/audit_plan.json",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member reviews/unexecuted_attempt01_before_root_integrity_review/retrieve_a25_text.py",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member reviews/unexecuted_attempt01_before_root_integrity_review/static_review.json",
+      "passed": true
+    },
+    {
+      "name": "Safe source regular member",
+      "passed": true
+    },
+    {
+      "name": "Exact reviewed source member static_review.json",
+      "passed": true
+    },
+    {
+      "name": "Actual119 runtime before/after identities stable",
+      "passed": true
+    },
+    {
+      "name": "All53 original input metadata files stable",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original audit_a25_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original audit_plan.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original a25-free-ring-flux-v1-source.tar.gz",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original source_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original PREPARATION_SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original README.md",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original assess_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original catalogue_A25.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original compare.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original io_contract.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original proposal.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original proposal_review.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original reference.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original assess_pilot_before_warm_qualification.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original compare_before_FD_formation_allowance.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original pre_data_FD_arithmetic_completion.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original pre_data_engineering_correction.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original preparation_before_FD_formation_allowance.sha256",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original preparation_before_blas_provider_completeness.sha256",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original runtime_inventory_initial_111.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original target_before_blas_provider_completeness.jl",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original run_campaign.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original runtime_inventory.py",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original runtime_pins.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original runtime_pins.toml",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original two_orbital_twisted_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original target.jl",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original transfer_before.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original transfer_after.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original a25_free_ring_flux_pilot_6466533.log",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original release_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original comparison.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original comparison.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original comparison.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original comparison.time.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original execution.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original native.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original native.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original native.time.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original native.toml",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original reference.json",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original reference.time.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original sacct_fresh.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual auditor bound immutable local original sacct_reqmem_additional_20261023.txt",
+      "passed": true
+    },
+    {
+      "name": "Pilot-only scope and zero credit",
+      "passed": true
+    },
+    {
+      "name": "All14 points/all98 sector comparisons and independent Leibniz fidelity retained",
+      "passed": true
+    },
+    {
+      "name": "Unchanged original518 pilot gates exact frozen JSON replay;0credit",
+      "passed": true
+    },
+    {
+      "name": "Both original frozen comparison/assessor replay source-bound and successful",
+      "passed": true
+    },
+    {
+      "name": "All98 retained solves with91 warm after entire first cold point",
+      "passed": true
+    },
+    {
+      "name": "Warm sample covers bothgauges/all7sectors/maxdimension400",
+      "passed": true
+    },
+    {
+      "name": "Independent exact original resource forecast arithmetic",
+      "passed": true
+    },
+    {
+      "name": "Conditional resource eligibility true;separate root current-queue review still required",
+      "passed": true
+    },
+    {
+      "name": "Actual analysis own-job1CPU3500MB5min completed",
+      "passed": true
+    }
+  ],
+  "actual_math_audit_sha256": "7c23588be8ffe7dd7a470760805ba846615796c2f3040030d1c70a3f0298d95f",
+  "actual_auditor_sha256": "3cd20a52d5ba557b8a12c086addb5fa2bd4acd934f2ae70baf8facb6da08915d",
+  "frozen_assessment_sha256": "7b3216e5e8d9135ed1dfdeda40356988131556e1d559905bca9c141dbd02b1bd",
+  "pilot_source_archive_sha256": "76be7b3b22ee26da1ae91dde516ed458446aa6a0c6c2a4ef7e86759d5ec921ec",
+  "pilot_source_freeze_sha256": "9ce63aad259c091a40bf2af4668213b7c446df74c0aa93e73a70a16a65216ba7",
+  "source_review_sha256": "f7a5169cfda2a4af909bb3aaadd6b42b7d021bc9519b755fe126f708d998a98f",
+  "source_binding_review_sha256": "4947cf07a0227cf597ea042532a2a1c3baffaca6b2ac9b0f9e7b4716547461e0",
+  "resource_projection": {
+    "native_seconds": 490.1642394065857,
+    "full_seconds": 619.30535364151,
+    "full_MiB": 1286.4140625,
+    "warm_sector_count": 91,
+    "max_warm_seconds": 0.23346996307373047,
+    "limits": {
+      "seconds": 1500.0,
+      "MiB": 2800.0,
+      "native_seconds": 1410
+    }
+  },
+  "metric_specific_recorded_maxima": {
+    "direct edge K": {
+      "count": 28,
+      "maximum": 1.3627288067061554e-15
+    },
+    "native occupation sumE": {
+      "count": 98,
+      "maximum": 1.7763568394002505e-14
+    },
+    "freshresidual": {
+      "count": 98,
+      "maximum": 2.3290033954107633e-14
+    },
+    "nativebalancedE": {
+      "count": 14,
+      "maximum": 1.7763568394002505e-14
+    },
+    "independentLeibniznativefidelity": {
+      "count": 14,
+      "maximum": 4.440892098500626e-16
+    },
+    "savedFD": {
+      "count": 12,
+      "maximum": 0.0
+    },
+    "unchangedbudget": {
+      "count": 12,
+      "maximum": 6.4418252215741215e-09
+    }
+  },
+  "all1404_actual_checks_PASS": true,
+  "original518_frozen_replay_exact": true,
+  "authorship": "Prepared by cv_evidence, the same agent that authored the new A25 adapters. This attribution is explicit: ROOT and validation_design must independently review the auditor and receipts before any full resource admission. The saved-data calculations use a separate Leibniz determinant and analytic formulas; this does not create a new external reference or independent author.",
+  "scope": "Independent author read of the previously independently reviewed auditor and actual complete pinned-runtime saved-data audit,with fresh immutable-input checks and independent resource arithmetic. No new Leibniz/FD/native/reference producer calculation or numerical replay executed by this review.",
+  "scientific_completions": 0,
+  "catalogue_status": "NOT_RUN",
+  "full_execution_authorized": false,
+  "new_job_submitted": false
+}

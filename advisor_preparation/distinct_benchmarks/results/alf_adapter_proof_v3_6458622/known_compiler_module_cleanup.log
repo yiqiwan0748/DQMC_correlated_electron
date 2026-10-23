@@ -1,0 +1,12 @@
+{
+  "schema": "p21_known_compiler_module_cleanup_v1",
+  "relative_path": "Prog/opt_time_dependent_mod.mod",
+  "scope": "NEW copied ALF_observer only",
+  "source_tree": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer",
+  "preserved_native_tree": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF",
+  "tracked_source": false,
+  "strict_stale_assertion_unchanged": true,
+  "bytes": 4812,
+  "sha256_before_removal": "20838e13f92ffbae676ed194524d91ad989a4064c3684d105d09a7f861dead9f",
+  "status": "KNOWN_UNTRACKED_COMPILER_MODULE_REMOVED"
+}

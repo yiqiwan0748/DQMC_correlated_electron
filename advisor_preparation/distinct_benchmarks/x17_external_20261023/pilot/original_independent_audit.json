@@ -1,0 +1,885 @@
+{
+  "audit_status": "PASS",
+  "integrity": "PASS",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "source_archive_sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958",
+  "source_freeze_sha256": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb",
+  "case_metrics": [
+    {
+      "case_id": "U6_hybrid",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 0.9999999999999996,
+      "independent_global_gap": 1.007455003388019,
+      "independent_conditional_gap_lower": 1.0074550024728506,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "entropy_A": 0.11892881668128231,
+      "max_abs_connected_density": 0.010385157458477234,
+      "max_abs_connected_Sdot": 0.011901695737615074
+    }
+  ],
+  "projected_full_seconds": 1474.640973329544,
+  "projected_full_peak_rss_KiB": 619398.9541015625,
+  "resource_admission_only": true,
+  "root_production_admitted": false,
+  "schema": "X17_PILOT_INDEPENDENT_RAW_AUDIT_V1",
+  "checks": [
+    {
+      "name": "exact original source freeze",
+      "passed": true
+    },
+    {
+      "name": "source PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source README.md",
+      "passed": true
+    },
+    {
+      "name": "source SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "source admit_production.py",
+      "passed": true
+    },
+    {
+      "name": "source audit_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "source catalogue_X17.json",
+      "passed": true
+    },
+    {
+      "name": "source compare.py",
+      "passed": true
+    },
+    {
+      "name": "source freeze_release.py",
+      "passed": true
+    },
+    {
+      "name": "source manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "source native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "source oracle_quspin.py",
+      "passed": true
+    },
+    {
+      "name": "source pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "source production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "source reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "source run_campaign.py",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "source target.jl",
+      "passed": true
+    },
+    {
+      "name": "remote-after stable",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparator.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparator.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparator.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparator.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparator.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparator.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "input hash results/execution.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/execution.json",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.json",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "input hash results/target.toml",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged results/target.toml",
+      "passed": true
+    },
+    {
+      "name": "input hash source/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "input hash source/README.md",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/README.md",
+      "passed": true
+    },
+    {
+      "name": "input hash source/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "input hash source/admit_production.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/admit_production.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/audit_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/audit_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/catalogue_X17.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/catalogue_X17.json",
+      "passed": true
+    },
+    {
+      "name": "input hash source/compare.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/compare.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/freeze_release.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/freeze_release.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "input hash source/native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "input hash source/oracle_quspin.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/oracle_quspin.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "input hash source/production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "input hash source/reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "input hash source/run_campaign.py",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/run_campaign.py",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/target.jl",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/target.jl",
+      "passed": true
+    },
+    {
+      "name": "input hash source/source_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged source/source_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "input hash outer_logs/x17_orbital_pilot_6466078.log",
+      "passed": true
+    },
+    {
+      "name": "remote unchanged outer_logs/x17_orbital_pilot_6466078.log",
+      "passed": true
+    },
+    {
+      "name": "successful pilot processes",
+      "passed": true
+    },
+    {
+      "name": "pilot0credit",
+      "passed": true
+    },
+    {
+      "name": "frozen arithmetic replay all gates",
+      "passed": true
+    },
+    {
+      "name": "all72 reference pins",
+      "passed": true
+    },
+    {
+      "name": "all pilot fixtures",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent geometry target",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent geometry oracle",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/both producers ready",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/all5 sectors",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis0",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H0",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum0",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual0",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity0",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis1",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H1",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum1",
+      "error": 2.220446049250313e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum1",
+      "error": 2.531308496145357e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm1",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual1",
+      "error": 7.045880894034598e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity1",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis2",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H2",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum2",
+      "error": 4.263256414560601e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum2",
+      "error": 4.440892098500626e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual2",
+      "error": 6.042962710907077e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity2",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis3",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H3",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum3",
+      "error": 2.4202861936828413e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum3",
+      "error": 2.4202861936828413e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm3",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual3",
+      "error": 9.812705039846714e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity3",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/basis4",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent oracle H4",
+      "error": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete native spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/complete oracle spectrum4",
+      "error": 1.7763568394002505e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native norm4",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native physical residual4",
+      "error": 1.2456179490233892e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/native ground fidelity4",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/unique global ground",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent conditional gap",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/native full256 levels",
+      "error": 7.771561172376096e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/external full256 L1",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/actual native entropy",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/A/external entropy",
+      "error": 1.0255685189974884e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/explicit fermion RDM",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/native full256 levels",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/external full256 L1",
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/actual native entropy",
+      "error": 1.249000902703301e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/B/external entropy",
+      "error": 1.0380585280245214e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native density_up",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external density_up",
+      "error": 1.8207657603852567e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native density_down",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external density_down",
+      "error": 1.5959455978986625e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native density_total",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external density_total",
+      "error": 2.453592884421596e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native Sz_mean",
+      "error": 4.2500725161431774e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external Sz_mean",
+      "error": 1.2569806306927944e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native cross_nn_connected",
+      "error": 2.498001805406602e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external cross_nn_connected",
+      "error": 9.43689570931383e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native cross_SzSz_connected",
+      "error": 3.469446951953614e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external cross_SzSz_connected",
+      "error": 1.0030171138097899e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native cross_Sdot_connected",
+      "error": 3.469446951953614e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external cross_Sdot_connected",
+      "error": 1.515915214536645e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent native spin_squared",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent external spin_squared",
+      "error": 1.0251423985174038e-25,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "U6_hybrid/independent singlet",
+      "passed": true
+    },
+    {
+      "name": "unchanged projection seconds",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "unchanged projection RSS",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "engineering eligibility",
+      "passed": true
+    }
+  ],
+  "check_count": 173,
+  "scientific_producer_rerun": false,
+  "postprocessing_eigendecomposition": true,
+  "input_sha256": {
+    "frozen_pilot_audit/admission.json": "583b67d872f80244b4db9f2b9c117a56e94ac07fcdc86fb7eafe8a99039645b2",
+    "frozen_pilot_audit/comparison_replay.json": "185acdaefd917610f608fd6c6610492df3da6dd1fdc2c4fa8ea4882c2aef7267",
+    "independent_auditor.py": "d3220adf8d731925e4a52ac00fb3175c37e6121c45d2ea15ade7e951e5f57c5c",
+    "outer_logs/x17_orbital_pilot_6466078.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/comparator.resources.txt": "cc559f2fd4caada5a42419e3c5f5a7f740e0741a7f436bb3d5fbf070f7d8bc09",
+    "results/comparator.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/comparator.stdout.txt": "ef716c54d90dd5c6739db74356d306ccc41e0e7799a060721c3ee1d8c577195d",
+    "results/comparison.json": "9f41e63dfe0d67b61abd5aa5eed2ce6caa88284e571ffdbce2a747874bbe6d7f",
+    "results/execution.json": "92edac958ae002c88303451374e02701b7c1e08b2498791b489db95bc41f1d05",
+    "results/reference.json": "fd7526a3200620f9f17625f258782e1e9f605f449a714ed977ad6d83953e320c",
+    "results/reference.resources.txt": "e6f8d731f7051258509b71396ee918cf29d356a0504000e786a37c29855d6720",
+    "results/reference.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/reference.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.resources.txt": "a9f91c4e0f1d8496dcf3642a7e638b2968735b3b143799971f04ab29980730ee",
+    "results/target.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.toml": "c5bf2e56c7adbba332570e94d82716a16077b3fcc8b82f9b65586c09ec0d975d",
+    "sacct_fresh.txt": "960a5d7b04fd48b6e4beb35a0720fe1dc555e84ac758ff4009e4d5b22be6d3ec",
+    "scontrol_fresh.txt": "b0fb2f2ff938c33027d6a61b3ca1a5e4dc0616193a5d0303a040b5d94e5b8dd9",
+    "source/PROTOCOL.md": "229bdde7ca2b2acb9b169bd2af50b170259416d296715371631d66db91736ad1",
+    "source/README.md": "9a48720a18efa35235193c35fed5312eb91fe624ccc6aba83b0843364333acf2",
+    "source/SHA256SUMS": "18be5ef442271ee2cabb155ca3f0354d8d702691fbb3b2ea2a1dcfd727a38450",
+    "source/admit_production.py": "2908faebf20e8cac85baeeff026f1f2dd1a11b05db16fcc937876520171dbd58",
+    "source/audit_pilot.py": "bbd479f0e3a028f6c6d122ad2ad7e9aa24c4c55d8ed21aacbc5eee8de0ec7766",
+    "source/catalogue_X17.json": "edfab71e23503416ba99a8a056de5005f080841232330b5020875173fda15c0d",
+    "source/compare.py": "43ebd1bc62e2c9f6e8b189d5f647e03c5dfe79bc1ea69260cc3938a059158b16",
+    "source/freeze_release.py": "5a5bc3dd5e77725cb821ba0306451e600a5f7cc9ac6ed1a831e21968ab7e5097",
+    "source/manifest.toml": "c1e6a63fc78d839c969eed8addb930ffd1f1e0c37dd5b8cb6b853014e87526cc",
+    "source/native_source_pins.json": "e030002519ff8d95a698e9254e9a46dea517355c2fc92fa2b427fd33fcf5d24c",
+    "source/oracle_quspin.py": "8d5f8253d88777ad1dd928e6b9fe0e50297ae2170aefb0fc50637a529670bf8c",
+    "source/pilot.sbatch": "e9ddee8eae428e420ec0cca8db06eef42a616ae6e8136db1d2a04a914d96a6ed",
+    "source/production.sbatch": "b4f0c81eada1a5f17a49d3018c47e2995fca5a4bb82e30f6ee08f2f8f3554e0b",
+    "source/reference_library_pins.json": "734f5adc84fd931b56b7274d67b1ed9f7c724bdc90e454dfc863696a3140d888",
+    "source/run_campaign.py": "fa803f2a3009e082ace5e2a0822321b3348491140c8d1931f48dbe8ed4ca7834",
+    "source/source_freeze.json": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb",
+    "source/source_snapshot/analysis/compute_s2_ed.jl": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751",
+    "source/source_snapshot/src/noninteracting.jl": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568",
+    "source/source_snapshot/src/realspace_kinetic.jl": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6",
+    "source/target.jl": "32f200f3ee9c2875b429f64d4b30bf686145f9208f73b8ba2fe4b590876af018",
+    "transfer_after.json": "b5517c2ac1636b602a684b5fa975a3d51f3d04d8c5cfa9568956e3200eb07773",
+    "transfer_before.json": "9fdea2b9b883493e3f4aa9ab7116ddc5e883086a03954952c1f06af7b4488b94"
+  },
+  "auditor_sha256": "d3220adf8d731925e4a52ac00fb3175c37e6121c45d2ea15ade7e951e5f57c5c"
+}

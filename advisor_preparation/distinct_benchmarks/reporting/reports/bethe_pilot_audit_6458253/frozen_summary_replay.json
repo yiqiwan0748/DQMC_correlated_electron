@@ -1,0 +1,79 @@
+{
+  "schema": "bethe_ansatz_pilot_v1",
+  "phase": "PILOT_ONLY",
+  "manifest_sha256": "0293c9e608dfb0ab827782533f6ab8173d2e16bf694b5a8ca37c441898e510c9",
+  "analysis_source_sha256": "abc406ce2515eaf0f6e0928e24da614fb29517373811fff88b7ef1703c53a3b6",
+  "distinct_ideas_passed": 0,
+  "rows": [
+    {
+      "id": "A18",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    },
+    {
+      "id": "A19",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    },
+    {
+      "id": "A20",
+      "status": "UNRESOLVED",
+      "reason": "Pilot only; thermodynamic size/truncation/held-out validation not executed."
+    }
+  ],
+  "pilot_quality": "PILOT_QUALITY_PASS",
+  "quality_reasons": [],
+  "finite_size_diagnostics": [
+    {
+      "L": 8,
+      "arms": {
+        "coarse": {
+          "energy_per_site": -0.5294758748578892,
+          "charge_gap": 1.970373428890369,
+          "double_occupancy": 0.09216169312702532,
+          "particle_hole_error": 0.0
+        },
+        "refined": {
+          "energy_per_site": -0.5294758748910408,
+          "charge_gap": 1.9703734286633967,
+          "double_occupancy": 0.09216169316157151,
+          "particle_hole_error": 0.0
+        }
+      },
+      "finite_size_offsets_from_thermodynamic_oracle": {
+        "energy_per_site": 0.04425349300740844,
+        "charge_gap": 0.6836464066504921,
+        "double_occupancy": -0.008079677987529468
+      },
+      "scope": "Finite-size offsets are diagnostic, never finite-size equality gates."
+    },
+    {
+      "L": 12,
+      "arms": {
+        "coarse": {
+          "energy_per_site": -0.5438536143447765,
+          "charge_gap": 1.7121854517026005,
+          "double_occupancy": 0.09478301131179252,
+          "particle_hole_error": 2.6645352591003757e-15
+        },
+        "refined": {
+          "energy_per_site": -0.5438536153697299,
+          "charge_gap": 1.7121853645958325,
+          "double_occupancy": 0.09478301246332388,
+          "particle_hole_error": 2.220446049250313e-15
+        }
+      },
+      "finite_size_offsets_from_thermodynamic_oracle": {
+        "energy_per_site": 0.029875752528719324,
+        "charge_gap": 0.4254583425829279,
+        "double_occupancy": -0.005458358685777098
+      },
+      "scope": "Finite-size offsets are diagnostic, never finite-size equality gates."
+    }
+  ],
+  "solves": 12,
+  "sampling_seconds_sum": 236.68532633781433,
+  "slowest_solve_seconds": 131.20193099975586,
+  "largest_bond_observed": 256,
+  "planning_limit": "No full-size cost bound from L8/L12 alone. Review resource receipts and perform a separately approved bridge-size pilot before freezing full execution settings."
+}

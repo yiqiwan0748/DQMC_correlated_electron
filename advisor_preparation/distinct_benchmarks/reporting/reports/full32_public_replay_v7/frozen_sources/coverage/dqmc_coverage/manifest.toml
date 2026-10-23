@@ -1,0 +1,58 @@
+schema = "dqmc_external_coverage_v1"
+id = "X06"
+question = "Does the actual eight-chain DQMC energy interval attain nominal 95% coverage against an independent exact finite-dtau QuSpin trace?"
+status_at_freeze = "NOT_RUN"
+observable = "energy_uncentered_total"
+oracle_case = "QT-01"
+oracle_sha256 = "12eb9b383888a45219b0edd0fbef85aab0fb7b1a4e2a7c701bcbf788238c2571"
+oracle_reference = -1.4650726727669701
+seed_namespace = "X06_20261022_v1"
+final_replicates = 400
+pilot_replicates = 4
+chains_per_replicate = 8
+burn_sweeps = 512
+measured_sweeps = 1024
+bins = 64
+nominal_interval_coverage = 0.95
+interval_distribution = "Student_t_df7_on_eight_independent_chain_means"
+student_t7_critical = 2.3646242515927844
+binomial_test = "scipy.stats.binomtest two_sided"
+coverage_null = 0.95
+binomial_significance = 0.01
+coverage_cp_confidence = 0.99
+coverage_equivalence_lower = 0.90
+coverage_equivalence_upper = 0.995
+bias_interval_confidence = 0.99
+bias_equivalence_margin = 0.02
+split_rhat_max = 1.05
+blocking_relative_change_max = 0.5
+effective_bins_min = 128.0
+seed_formula = "SHA256 UTF8(namespace|mode={pilot,final}|replicate=i|chain=j), first8bytes bigendian & (2^63-1)"
+invalid_replicate_policy = "No deletion/replacement. Any quality failure makes overall UNRESOLVED; unconditional coverage of all400 is still reported when all intervals are finite."
+
+[fixture]
+L = 4
+t = 1.0
+U = 2.0
+mu_centered = 0.0
+beta = 1.0
+dtau = 0.1
+n_stab = 2
+boundary = "pbc"
+ensemble = "grand_canonical"
+trotter_order = "[exp(-dtau V) exp(-dtau K)]^10"
+
+[resources]
+cpus_per_shard = 1
+memory_mb = 3500
+pilot_wall_limit_minutes = 10
+full_wall_cap_minutes = 120
+final_total_sweeps = 4915200
+runtime_status = "UNMEASURED; pilot first, no scientific claim from pilot"
+planning_rule = "Final cost extrapolate 100 times four-replicate pilot sampling runtime; parent selects at most8 disjoint fixed ranges, never changes400replicates/seeds/measurements/gates. Cap120minutes per shard."
+
+[sources]
+quspin = "https://quspin.github.io/QuSpin/examples/example6.html"
+scipy_binomial = "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binomtest.html"
+scipy_beta = "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html"
+scipy_student = "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html"

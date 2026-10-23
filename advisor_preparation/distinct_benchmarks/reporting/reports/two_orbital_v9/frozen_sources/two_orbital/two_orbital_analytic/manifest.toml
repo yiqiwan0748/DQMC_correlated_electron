@@ -1,0 +1,85 @@
+schema_version = 1
+release = "two_orbital_analytic_v1"
+catalogue_ids = ["A15", "A16", "A17"]
+unsupported_ids = ["A25"]
+execution_status = "FROZEN_NOT_RUN"
+new_observable_scope = "New full-spectrum/projector, matched DOS quadrature and full atomic thermal-trace adapters around unchanged production APIs; no interacting DQMC sampling."
+source_root = "source_snapshot"
+source_provenance = "source_provenance.json"
+julia_version = "1.12.1"
+python_minimum = "3.11"
+numpy_version = "2.4.6"
+scipy_version = "1.17.1"
+blas_threads = 1
+
+[source_hashes]
+"src/noninteracting.jl" = "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568"
+"src/realspace_kinetic.jl" = "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6"
+"scripts/two_orbital_open_cluster_ed.jl" = "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751"
+"scripts/two_orbital_atom_ed.jl" = "0771bfdc6c1080a26e682590d6cb664cf649a800c1aab2fe4cb2875ea105334f"
+
+[A15]
+geometry = "2x2 open two-orbital cluster; orbital-fast, x-fast cells"
+hoppings = [-1.0, -1.75, -0.85, -0.65]
+interactions = [0.0, 4.0, 12.0]
+spin_sectors = [[1, 0], [0, 1]]
+degeneracy_tolerance = 1e-8
+eigensystem_tolerance = 1e-10
+energy_tolerance = 1e-9
+projector_tolerance = 1e-9
+centered_shift = "Hc=Hphysical+U*(M/4-N/2); M=8,N=1, hence subtract1.5U from target eigenvalues"
+scope = "All one-electron eigenvalues and degeneracy-group full spatial projectors, site probabilities and total orbital weights from the actual interacting sector Hamiltonian."
+
+[A16]
+hoppings = [1.0, 1.0, 0.0, 0.0]
+meshes = [256, 512, 1024, 2048]
+held_out_mesh = 2048
+bins = 512
+smoothing_widths = [0.12, 0.24]
+energy_min = -4.0
+energy_max = 4.0
+edge_window_start = 3.75
+dos_normalization = "Per site and spin for ONE orbital; divide production two-identical-orbital DOS and counts by2."
+broadening = "Production histogram bin masses followed by normalized sampled Gaussian kernel, radius ceil(4*sigma/bin_width), zero extension at edges and final area renormalization on[-4,4]. Oracle applies this same declared observable to continuum elliptic-integral bin masses."
+quad_epsabs = 1e-12
+quad_epsrel = 1e-12
+quad_limit = 300
+oracle_identity_tolerance = 1e-9
+normalization_tolerance = 1e-10
+spectrum_edge_tolerance = 1e-10
+curve_tolerance = 0.002
+last_mesh_curve_tolerance = 0.001
+edge_mass_tolerance = 0.001
+last_mesh_edge_mass_tolerance = 0.001
+peak_location_bins = 2.0
+minimum_peak_growth = 0.01
+scope = "Continuum van-Hove peak and band-edge mass after a fixed nonzero broadening and held-out mesh check, using the actual production DOS histogram/convolution. No finite delta spike is equated to a singular continuum value."
+
+[A17]
+geometry = "One physical cell, two independent Hubbard orbitals, zero2x2 kinetic"
+interactions = [0.0, 4.0, 9.0]
+centered_chemical_potentials = [-1.2, 0.0, 0.7]
+inverse_temperatures = [0.3, 2.0, 6.0]
+mode_order = "x-up,y-up,x-down,y-down; all9(Nup,Ndown) blocks, complete16-state grand canonical trace"
+generator = "G=U*sum_orbital(nup-1/2)*(ndown-1/2)-mu_centered*N; mu_physical=mu_centered+U/2, G=Hphysical-mu_physical*N+U/2"
+eigensystem_tolerance = 1e-10
+observable_tolerance = 1e-10
+factorization_tolerance = 1e-10
+minimum_local_moment = 1e-14
+scope = "Connected cross-orbital density and all9 spin components, local moments and density-matrix factorization from production sector Hamiltonians; native atom solver N,D,S_ALM cross-checked. Only intraorbital U exists; no Hund or interorbital interaction is claimed."
+
+[A25]
+status = "NOT_RUN"
+reason = "The baseline complex-twist API natively constructs an LxL two-orbital torus, not the catalogue's one-dimensional free ring. An invariant-ring principal-block reduction would be a separate new geometry adapter and is not counted in this release. The earlier real one-orbital PBC/APBC API also cannot impose arbitrary flux."
+
+[resources]
+cpus = 1
+memory_mb = 3500
+wall_minutes = 15
+target_timeout_seconds = 600
+pilot_meshes = [256, 512]
+pilot_rss_limit_kib = 1500000
+projected_target_limit_seconds = 600
+projection_safety_factor = 2.0
+projection_startup_reserve_seconds = 120.0
+estimated_runtime = "Unmeasured planning only: pilot about1-3min; full about1-10min after startup, dominated by2048x2048 band mesh. Ten-minute target timeout, fifteen-minute job wall limit. Pilot timings and measured RSS must be reviewed before a separate full submission; no automatic promotion. Queue time separate."

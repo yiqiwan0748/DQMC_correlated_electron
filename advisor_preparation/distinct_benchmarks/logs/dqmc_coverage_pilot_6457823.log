@@ -1,0 +1,21 @@
+X06 pilot replicate 1 quality=true covered=true seconds=10.035674095153809
+X06 pilot replicate 2 quality=true covered=true seconds=1.3919849395751953
+X06 pilot replicate 3 quality=true covered=true seconds=1.396941900253296
+X06 pilot replicate 4 quality=true covered=true seconds=1.4524619579315186
+{
+  "id": "X06",
+  "schema": "dqmc_external_coverage_v1",
+  "mode": "pilot",
+  "status": "PILOT_ONLY",
+  "manifest_sha256": "ba4282ba512f9889a5f5dc55ca39a4f67ddf78b837026d2646d8df7c7215ef81",
+  "analysis_source_sha256": "81d75e70684b3e93e2a112423ffa81a026b07ac5186bf8b2e3f4886ced8fa015",
+  "scipy_version": "1.17.1",
+  "reference": -1.46507267276697,
+  "scope": "Single interacting hopping fixture and actual eight-chain95% interval; no universalcoverage or Bonferroni-tail calibration claim.",
+  "raw_audit": "PASS",
+  "quality_failures": [],
+  "mean_sampling_seconds_per_replicate": 3.5692657232284546,
+  "planning_full400_sampling_seconds": 1427.7062892913818,
+  "planning_full400_seconds_at3x_pilot": 4283.1188678741455,
+  "planning_wall_cap_seconds_per_shard": 7200
+}

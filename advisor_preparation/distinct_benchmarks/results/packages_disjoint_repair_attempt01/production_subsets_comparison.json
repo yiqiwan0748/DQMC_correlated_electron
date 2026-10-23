@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "maximum_absolute_error": 5.6066262743570405e-15,
+  "rows": [
+    {
+      "sites": [],
+      "purity": 1.0000000000000004,
+      "quspin_purity": 1.0,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "sites": [
+        0
+      ],
+      "purity": 0.3769762811028424,
+      "quspin_purity": 0.3769762811028421,
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "sites": [
+        1
+      ],
+      "purity": 0.3769762811028425,
+      "quspin_purity": 0.37697628110284215,
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "sites": [
+        0,
+        1
+      ],
+      "purity": 0.4713652367002053,
+      "quspin_purity": 0.4713652367002102,
+      "absolute_error": 4.884981308350689e-15
+    },
+    {
+      "sites": [
+        2
+      ],
+      "purity": 0.3769762811028425,
+      "quspin_purity": 0.3769762811028422,
+      "absolute_error": 2.7755575615628914e-16
+    },
+    {
+      "sites": [
+        0,
+        2
+      ],
+      "purity": 0.19215599964073338,
+      "quspin_purity": 0.19215599964073315,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "sites": [
+        1,
+        2
+      ],
+      "purity": 0.471365236700204,
+      "quspin_purity": 0.4713652367001985,
+      "absolute_error": 5.551115123125783e-15
+    },
+    {
+      "sites": [
+        0,
+        1,
+        2
+      ],
+      "purity": 0.3769762811028424,
+      "quspin_purity": 0.37697628110284215,
+      "absolute_error": 2.7755575615628914e-16
+    },
+    {
+      "sites": [
+        3
+      ],
+      "purity": 0.3769762811028426,
+      "quspin_purity": 0.37697628110284215,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "sites": [
+        0,
+        3
+      ],
+      "purity": 0.4713652367002041,
+      "quspin_purity": 0.4713652367001985,
+      "absolute_error": 5.6066262743570405e-15
+    },
+    {
+      "sites": [
+        1,
+        3
+      ],
+      "purity": 0.19215599964073338,
+      "quspin_purity": 0.19215599964073315,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "sites": [
+        0,
+        1,
+        3
+      ],
+      "purity": 0.37697628110284254,
+      "quspin_purity": 0.3769762811028422,
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "sites": [
+        2,
+        3
+      ],
+      "purity": 0.47136523670020536,
+      "quspin_purity": 0.4713652367002102,
+      "absolute_error": 4.829470157119431e-15
+    },
+    {
+      "sites": [
+        0,
+        2,
+        3
+      ],
+      "purity": 0.3769762811028425,
+      "quspin_purity": 0.3769762811028422,
+      "absolute_error": 2.7755575615628914e-16
+    },
+    {
+      "sites": [
+        1,
+        2,
+        3
+      ],
+      "purity": 0.3769762811028424,
+      "quspin_purity": 0.3769762811028422,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "sites": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "purity": 1.0000000000000002,
+      "quspin_purity": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    }
+  ],
+  "actual_source_sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+  "production_result_sha256": "a07fda137f3a463df373756c2e5055f2090e127bc3264434dd776111b9752a34",
+  "proof_sha256": "2f3086981d2bf5db66acf515cffa5dac22a55c6549e2fc9145cc16453bf56d3f",
+  "scope": "All16 spatial subsets from actual repaired user source vs independent QuSpin; diagnostic support for P16, not extra ideas"
+}

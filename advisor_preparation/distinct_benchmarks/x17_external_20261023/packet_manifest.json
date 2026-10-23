@@ -1,0 +1,150 @@
+{
+  "schema": "PUBLIC_X17_SCIENTIFIC_PACKET_V1",
+  "frozen_utc": "2026-10-23T18:47:20.383534+00:00",
+  "base_ledger_sha256": "95205b58d9f2dfac9bcbf9afeb161cc8469af898d4cacc5b6c1d542caff95259",
+  "pilot_completion_credit": 0,
+  "original_scientific_execution_bytes_retained": true,
+  "root_admission_and_unrelated_queues_excluded": true,
+  "files": [
+    {
+      "path": "advisor_preparation/distinct_benchmarks/reporting/merge_pyscf_tranche.py",
+      "sha256": "5ebea85599df367236fb45403731c3094388abe0af3d5f28afbef14791fc2645",
+      "bytes": 16493
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/reporting/merge_x17_tranche.py",
+      "sha256": "92e3f57abffa3df6e7c2c41852964c01a70c694a654b0750d87d710f26e8ccb4",
+      "bytes": 17357
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/README.md",
+      "sha256": "49f5f95631f2bab95ac1cb893b7e1666d6335c630e4381e1b1c4ba1449ab4308",
+      "bytes": 5233
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/evidence_io.py",
+      "sha256": "e11df6f07b67363f76049f962d078a4a6964bdeea5c4738b132765460ca6bb7e",
+      "bytes": 3311
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/independent/audit_pilot.py",
+      "sha256": "d3220adf8d731925e4a52ac00fb3175c37e6121c45d2ea15ade7e951e5f57c5c",
+      "bytes": 11831
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/independent/audit_production.py",
+      "sha256": "0dfa7af559a3e60c8c3167d8bf75ab07f34beda2f617fe2ece6623bd076ce4f1",
+      "bytes": 16033
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/data.tar.gz",
+      "sha256": "fbc561365e22b172560671bc8e6033c68dcde0c74c86979c054f556673e5bef7",
+      "bytes": 323670
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/data_manifest.json",
+      "sha256": "81c3a903aa6bd198d54bd2d61bb8619da0fbb5c66e669f64913a497930b88e4d",
+      "bytes": 2831
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/original_independent_audit.json",
+      "sha256": "59688ee4187434bea7f72e790015107bd95d47d593e3790b31410c9b6f0b76bd",
+      "bytes": 23723
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/public_frozen_comparator_replay.json",
+      "sha256": "185acdaefd917610f608fd6c6610492df3da6dd1fdc2c4fa8ea4882c2aef7267",
+      "bytes": 146788
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/public_frozen_resource_assessment.json",
+      "sha256": "583b67d872f80244b4db9f2b9c117a56e94ac07fcdc86fb7eafe8a99039645b2",
+      "bytes": 4602
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/public_independent_audit.json",
+      "sha256": "7c009d42a6f2eccfec9d373149eff401d40a98f77ccf26f1931cf57b8ffa8bea",
+      "bytes": 11340
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/public_replay_receipt.json",
+      "sha256": "6c567f8d8ce8cee083fea5c7ad2f17a2436da7c34b9447472aab745bfd063192",
+      "bytes": 1973
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/public_scientific_input_manifest.json",
+      "sha256": "d83f0c322f98be81ae53a922039920755419455a09bb159d36f2336d09c2a2bf",
+      "bytes": 5897
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/scientific_runtime_projection.json",
+      "sha256": "4a0ebc094ac84271334e42edbb7239ad2965e1a9dbb71398c335373f8d3b7cd3",
+      "bytes": 9201
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/pilot/scientific_selection.json",
+      "sha256": "08c478121c41343f30e69e10240315e7056c086170b4b137cda9a567d50f30ab",
+      "bytes": 4423
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/data.tar.gz",
+      "sha256": "ee6fadad35360fbadedac1d75f6945d78110e468173f9bd3af72d7d9376c869b",
+      "bytes": 1841077
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/data_manifest.json",
+      "sha256": "f78f16172f9f4973e01aaec00e733fc0334d98c1afc400ed6d0bcd236388cd37",
+      "bytes": 2649
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/original_independent_audit.json",
+      "sha256": "b617c4775c525c7e0328b6c9ed1c32f0e6212021af9daf885e0492092d348fb2",
+      "bytes": 117148
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/public_frozen_comparator_replay.json",
+      "sha256": "f8f4ad9caaeb3ab4edcf9b6fbc6cf6a63396fcfd4b045afdb03e2065ffc7b715",
+      "bytes": 869389
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/public_independent_audit.json",
+      "sha256": "61336f4bc3460e6f1ba2177978b03eff21d44f7f99e0c80914f31b5f6c2214a4",
+      "bytes": 114000
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/public_replay_receipt.json",
+      "sha256": "0da1053e025f015d56a8e0039c6748aa2d2d6f2dd7c760d8896a8b6d5bbc20b7",
+      "bytes": 5371
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/public_scientific_input_manifest.json",
+      "sha256": "c85c4e252a190c0e5baaf9fa57029ea3766a16c5e6aaca7f1db8c8c1e6620e91",
+      "bytes": 5567
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/production/scientific_selection.json",
+      "sha256": "88cb2e7880cf7bc9eed4b7c112343bf58b365c2edefe8d2e7c3c24d27e5372fe",
+      "bytes": 4215
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/replay.py",
+      "sha256": "de8e196dc8098b24d492c54a6e359a3923cb941f8dbb1fb77c57b61b1dbe1133",
+      "bytes": 9221
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/sources/index.json",
+      "sha256": "42df0f1df56cbde0f108de0afaf256dc9f95e87c8974cc5ac4a53a5b8da5258a",
+      "bytes": 379
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/sources/orbital-entanglement-v1-source.tar.gz",
+      "sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958",
+      "bytes": 48726
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/x17_external_20261023/sources/source_freeze.json",
+      "sha256": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb",
+      "bytes": 2968
+    }
+  ]
+}

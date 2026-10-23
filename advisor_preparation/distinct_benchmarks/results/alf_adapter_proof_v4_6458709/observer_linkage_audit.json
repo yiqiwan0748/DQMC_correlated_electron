@@ -1,0 +1,15 @@
+{
+  "schema": "p21_alf_linkage_audit_v1",
+  "status": "PINNED_SINGLE_PROVIDER_PASS",
+  "binary_sha256": "c2e8e60676234c11d48eecc78c1feca450efdd89fd77f890a18b4a882c2ace14",
+  "provider": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so",
+  "provider_sha256": "3cadb0f797c5bba7310ea042213601cdfd1f8cacf2fb104c2f972b822bc262c0",
+  "resolved_libraries": [
+    {
+      "ldd_line": "libopenblas.so.0 => /spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas.so.0 (0x00007fd0ed689000)",
+      "realpath": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so"
+    }
+  ],
+  "ldd": "\tlinux-vdso.so.1 (0x00007ffdb35c1000)\n\tlibopenblas.so.0 => /spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas.so.0 (0x00007fd0ed689000)\n\tlibgfortran.so.5 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgfortran.so.5 (0x00007fd0ed1d2000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007fd0ece50000)\n\tlibgomp.so.1 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgomp.so.1 (0x00007fd0ecc11000)\n\tlibgcc_s.so.1 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgcc_s.so.1 (0x00007fd0ec9f9000)\n\tlibquadmath.so.0 => /sw/isaac/compilers/gcc/10.2.0/lib64/libquadmath.so.0 (0x00007fd0ec7b2000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007fd0ec592000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007fd0ec1bc000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fd0ee444000)\n\tlibdl.so.2 => /lib64/libdl.so.2 (0x00007fd0ebfb8000)\n",
+  "scientific_samples": 0
+}
