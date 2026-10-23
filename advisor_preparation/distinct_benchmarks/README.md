@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/j23_mean_field_v15/README.md)
-records **46 PASS, 2 UNRESOLVED and 52 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/a25_free_ring_flux_v16/README.md)
+records **47 PASS, 2 UNRESOLVED and 51 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -247,3 +247,9 @@ The [46-question leaf](reporting/reports/j23_mean_field_v15/README.md) changes o
 The [X14 failure and diagnostic packet](x14_failure_20261023/README.md) retains the original completed native rendering, failed independent reference and trace-only diagnosis. No comparison was produced. A separate exact-rational, saved-context analysis shows that the original derivative padding cannot certify the required bracket width within the retained failed bracket under its declared conditional arithmetic model. This is a bounded diagnostic, with no root-absence or complete-census claim. Original padding, gates and failure remain unchanged; X14 stays NOT_RUN and this pilot grants zero credit. Explicit scientific selections and derived traceback projections exclude private transport and workstation paths.
 
 The X14 replay manifest SHA256 is `1c928e25fa732e599ef41acc123ff8566612eecf7cb04d5f804429059bd9364b`; the metadata and conditional-analysis replay commands are in its README.
+
+## Free-ring flux response
+
+[A25](a25_external_20261023/README.md) adds one analytical comparison for the explicit free one-dimensional ring adapter using the actual native complex-sector Hamiltonian and dense ground-state APIs. The two fixed rings and two gauges produce 196 point records, 980 sector solves and 56 current, curvature and stiffness responses. All 6,072 frozen comparator gates and 13,436 compute audit checks pass; an independent actual-result review checks 9,462 bindings and physical qualifications. The largest propagated conditional error bound is 6.44e-9 against the fixed 1e-8 gate. This establishes one free-ring result; interacting current, bulk stiffness and whole-package reliability require separate comparisons.
+
+The complete sources, arrays, resource receipts, original pinned audits and byte-identical pinned comparator replay are retained. Public saved-data replay calls the unchanged original mathematical helpers; derived receipt details differ by at most 4.44e-16 (two pilot and 50 full floating-point leaves), with every difference recorded under the explicit receipt-only policy. All original physical gates, literal bounds, decisions and report bytes remain unchanged. The excluded pilot and two saved-data analysis jobs add zero further credit. All 99 other catalogue rows, all 46 earlier PASS rows and both unresolved histories remain exact.

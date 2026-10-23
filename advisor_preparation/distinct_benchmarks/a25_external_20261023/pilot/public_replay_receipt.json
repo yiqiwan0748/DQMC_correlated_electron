@@ -1,0 +1,5034 @@
+{
+  "schema": "A25_PUBLIC_UNCHANGED_SAVED_MATH_REPLAY_V1",
+  "status": "PASS",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "pilot_completion_credit": 0,
+  "role": "pilot",
+  "original_independent_audit_sha256": "7c23588be8ffe7dd7a470760805ba846615796c2f3040030d1c70a3f0298d95f",
+  "original_unchanged_auditor_sha256": "3cd20a52d5ba557b8a12c086addb5fa2bd4acd934f2ae70baf8facb6da08915d",
+  "original_check_count": 1404,
+  "public_scientific_check_count": 775,
+  "public_closure_check_count": 34,
+  "checks": [
+    {
+      "name": "Actual original analysis report and unchanged original auditor identity",
+      "passed": true
+    },
+    {
+      "name": "All original recorded audit checks pass",
+      "passed": true
+    },
+    {
+      "name": "Actual compressed scientific data closure",
+      "passed": true
+    },
+    {
+      "name": "Exact frozen scientific release",
+      "passed": true
+    },
+    {
+      "name": "Exact frozen pilot_analysis release",
+      "passed": true
+    },
+    {
+      "name": "Exact returned compute audit body retained in payload",
+      "passed": true
+    },
+    {
+      "name": "Retained actual pinned compute comparison replay exact to original",
+      "passed": true
+    },
+    {
+      "name": "Original actual pinned compute replay succeeded",
+      "passed": true
+    },
+    {
+      "name": "Complete original scientific execution, all role exits and zero runner credit",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output comparison.json",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output comparison.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output comparison.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output comparison.time.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output native.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output native.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output native.time.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output native.toml",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output reference.json",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "Original execution-bound scientific output reference.time.txt",
+      "passed": true
+    },
+    {
+      "name": "Actual saved audit binds retained original native.toml",
+      "passed": true
+    },
+    {
+      "name": "Actual saved audit binds retained original reference.json",
+      "passed": true
+    },
+    {
+      "name": "Actual saved audit binds retained original comparison.json",
+      "passed": true
+    },
+    {
+      "name": "Actual saved audit binds retained original execution.json",
+      "passed": true
+    },
+    {
+      "name": "Byte-unchanged original mathematical auditor module",
+      "passed": true
+    },
+    {
+      "name": "Byte-unchanged original analysis plan",
+      "passed": true
+    },
+    {
+      "name": "Retained original runtime metadata maps; not a local runtime qualification",
+      "passed": true
+    },
+    {
+      "name": "Pilot all14point metrics98sector timings518gates unchanged and excluded",
+      "passed": true
+    },
+    {
+      "name": "All unchanged original mathematical gates pass",
+      "passed": true
+    },
+    {
+      "name": "Every scientific check name/schema/type/decision/literal bound unchanged; fresh error observations satisfy original helpers",
+      "passed": true
+    },
+    {
+      "name": "Retained actual pinned resource assessment is exact and zero-credit",
+      "passed": true
+    },
+    {
+      "name": "Original pinned assessment replay succeeded",
+      "passed": true
+    },
+    {
+      "name": "Predeclared retained full91warm/cold resource formula reproduced exactly",
+      "passed": true
+    }
+  ],
+  "scientific_checks": [
+    {
+      "name": "same frozen full source mapping in allscientific roles",
+      "passed": true
+    },
+    {
+      "name": "actual native vs independent analytic role",
+      "passed": true
+    },
+    {
+      "name": "original mode/job/runtime/version/zero-credit",
+      "passed": true
+    },
+    {
+      "name": "native/complete ordered14point grid",
+      "passed": true
+    },
+    {
+      "name": "reference/complete ordered14point grid",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/referencedirect edge K",
+      "passed": true,
+      "value": 1.3348302303878492e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.469989318702062e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.469989318702062e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 7.399676830815357e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 7.399676830815357e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 4.484945318667425e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 4.484945318667425e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 2.4339553884903023e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 2.4339553884903023e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.469989318702062e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.469989318702062e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/nativebalancedE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/referencebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/globalfixedNE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/uniform/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/nativevectornorm",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.1102230246251565e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux9/uniform/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux9/uniform/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 8.326672684688674e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/referencedirect edge K",
+      "passed": true,
+      "value": 1.3540802986917941e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.389464168912871e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.389464168912871e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 7.186122097722451e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 7.186122097722451e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 1.509903313490213e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 2.0951913150932048e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 2.0951913150932048e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 2.392515751118842e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 2.392515751118842e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.389464168912871e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.389464168912871e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/nativebalancedE",
+      "passed": true,
+      "value": 1.509903313490213e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/referencebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/globalfixedNE",
+      "passed": true,
+      "value": 1.509903313490213e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 4.220764384040162e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/referencedirect edge K",
+      "passed": true,
+      "value": 1.3400998189662178e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 8.919680892975506e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 8.919680892975506e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 7.583823946904232e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 7.583823946904232e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 4.054485034876356e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 4.054485034876356e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 5.454494387134409e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 5.454494387134409e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 8.919680892975506e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 8.919680892975506e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/nativebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/referencebalancedE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/globalfixedNE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/uniform/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/nativevectornorm",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.1102230246251565e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux17/uniform/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux17/uniform/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 8.326672684688674e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/referencedirect edge K",
+      "passed": true,
+      "value": 1.326926261480803e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.611137222560807e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.611137222560807e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 7.098365522796684e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 7.098365522796684e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 4.229674520367632e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 4.229674520367632e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 3.552713678800501e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 1.741893501264036e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 1.741893501264036e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.611137222560807e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.611137222560807e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/nativebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/referencebalancedE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/globalfixedNE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.5543122344752192e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 9.71445146547012e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/referencedirect edge K",
+      "passed": true,
+      "value": 1.338934151906818e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 3.1086244689504383e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.709139515038208e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.709139515038208e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 6.217248937900877e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 2.2094792890563e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 2.2094792890563e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 2.6899571031848987e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 2.6899571031848987e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 2.9061532649006744e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 2.9061532649006744e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 3.1086244689504383e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.709139515038208e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.709139515038208e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/nativebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/referencebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/globalfixedNE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/uniform/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.1102230246251565e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux21/uniform/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux21/uniform/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 8.326672684688674e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/referencedirect edge K",
+      "passed": true,
+      "value": 1.3426356273935429e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 8.934342303429366e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 8.934342303429366e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 9.644064852832974e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 9.644064852832974e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 3.1815979846801617e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 3.1815979846801617e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 3.5391735719701064e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 3.5391735719701064e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 8.934342303429366e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 8.934342303429366e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/nativebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/referencebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/globalfixedNE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 5.003707553108401e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/referencedirect edge K",
+      "passed": true,
+      "value": 1.307479541663561e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.3322676295501878e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 8.737091251899076e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 8.737091251899076e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 1.4246648943502902e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 1.4246648943502902e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 2.807712243341942e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 2.807712243341942e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 2.990710140074858e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 2.990710140074858e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 8.737091251899076e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 8.737091251899076e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.3322676295501878e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/nativebalancedE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/referencebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/globalfixedNE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/uniform/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/nativevectornorm",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.1102230246251565e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux25/uniform/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux25/uniform/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 8.326672684688674e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/referencedirect edge K",
+      "passed": true,
+      "value": 1.3350294823652989e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.3322676295501878e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 5.329070518200751e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 1.0040664146769196e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 1.0040664146769196e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 9.695029943677984e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 9.695029943677984e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 3.552713678800501e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 3.561743915090915e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 3.561743915090915e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 5.329070518200751e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 1.0581995738872875e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 1.0581995738872875e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 5.329070518200751e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 1.0040664146769196e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 1.0040664146769196e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.3322676295501878e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/nativebalancedE",
+      "passed": true,
+      "value": 3.552713678800501e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/referencebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/globalfixedNE",
+      "passed": true,
+      "value": 3.552713678800501e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/nativevectornorm",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.3322676295501878e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 4.3885418357208765e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/referencedirect edge K",
+      "passed": true,
+      "value": 1.342856811303484e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 2.220446049250313e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.06134720202509e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.06134720202509e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 5.254204990499027e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 5.254204990499027e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 3.489857330194745e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 3.489857330194745e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 9.350163203019772e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 9.350163203019772e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 2.220446049250313e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.06134720202509e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.06134720202509e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/nativebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/referencebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/globalfixedNE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/uniform/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.1102230246251565e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux29/uniform/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux29/uniform/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 8.326672684688674e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/referencedirect edge K",
+      "passed": true,
+      "value": 1.3627288067061554e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 7.549516567451064e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.924798123517566e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.924798123517566e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 5.106620352528324e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 5.106620352528324e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 1.4210854715202004e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 2.164633246833752e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 2.164633246833752e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 2.817883420745418e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 2.817883420745418e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 7.549516567451064e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.924798123517566e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.924798123517566e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/nativebalancedE",
+      "passed": true,
+      "value": 1.4210854715202004e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/referencebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/globalfixedNE",
+      "passed": true,
+      "value": 1.4210854715202004e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.3322676295501878e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 6.206335383118183e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/referencedirect edge K",
+      "passed": true,
+      "value": 1.3244166210134346e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.6653345369377348e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 2.220446049250313e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.11924720159431e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.11924720159431e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 3.017839165622919e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 3.017839165622919e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 1.7763568394002505e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 2.3290033954107633e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 2.3290033954107633e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 3.366046608086079e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 3.366046608086079e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 2.220446049250313e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.11924720159431e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.11924720159431e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.6653345369377348e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/nativebalancedE",
+      "passed": true,
+      "value": 1.7763568394002505e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/referencebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/globalfixedNE",
+      "passed": true,
+      "value": 1.7763568394002505e-14,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/uniform/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/nativevectornorm",
+      "passed": true,
+      "value": 3.3306690738754696e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.1102230246251565e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux33/uniform/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux33/uniform/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 8.326672684688674e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/referencedirect edge K",
+      "passed": true,
+      "value": 1.3325567187647329e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 1.6653345369377348e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 7.549516567451064e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 1.197069612251804e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 1.197069612251804e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 2.041580132494007e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 2.041580132494007e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 4.5502883237467015e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 4.5502883237467015e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 9.21016914966861e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 9.21016914966861e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 7.549516567451064e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 1.197069612251804e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 1.197069612251804e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 1.6653345369377348e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/nativebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/referencebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/globalfixedNE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.5543122344752192e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 4.2349997174859565e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/referencedirect edge K",
+      "passed": true,
+      "value": 1.3099548751793144e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 3.3306690738754696e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 3.9968028886505635e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 6.7833492150029734e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 6.7833492150029734e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 8.536128195223916e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 8.536128195223916e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 2.5731192387537307e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 2.5731192387537307e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 1.8358857410820427e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 1.8358857410820427e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 3.9968028886505635e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 6.7833492150029734e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 6.7833492150029734e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 3.3306690738754696e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/nativebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/referencebalancedE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/globalfixedNE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/uniform/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/nativevectornorm",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.1102230246251565e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux41/uniform/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux41/uniform/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 8.326672684688674e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/exact metadata",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/nativecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/nativedirect edge K",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/referencecompleteKshape",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/referencedirect edge K",
+      "passed": true,
+      "value": 1.3564073414255491e-15,
+      "lower_bound": 0,
+      "bound": 1e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/all7spinsectors",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/native occupation sumE",
+      "passed": true,
+      "value": 3.3306690738754696e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/native occupation sumE",
+      "passed": true,
+      "value": 6.661338147750939e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/reportedresidual",
+      "passed": true,
+      "value": 9.52726305090975e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/freshresidual",
+      "passed": true,
+      "value": 9.52726305090975e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/native occupation sumE",
+      "passed": true,
+      "value": 2.6645352591003757e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/reportedresidual",
+      "passed": true,
+      "value": 1.2895094233253785e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/freshresidual",
+      "passed": true,
+      "value": 1.2895094233253785e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/reportedresidual",
+      "passed": true,
+      "value": 4.575887855259252e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/freshresidual",
+      "passed": true,
+      "value": 4.575887855259252e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/native occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/reference occupation sumE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/reportedresidual",
+      "passed": true,
+      "value": 1.0084866661815167e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/freshresidual",
+      "passed": true,
+      "value": 1.0084866661815167e-14,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/native occupation sumE",
+      "passed": true,
+      "value": 6.661338147750939e-15,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/reference occupation sumE",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/reportedresidual",
+      "passed": true,
+      "value": 9.52726305090975e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/freshresidual",
+      "passed": true,
+      "value": 9.52726305090975e-15,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/actual dense solver qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/native occupation sumE",
+      "passed": true,
+      "value": 3.3306690738754696e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/reference occupation sumE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/reportedresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/freshresidual",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 2e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/uniquebalancedground",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/nativebalancedE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/referencebalancedE",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/globalfixedNE",
+      "passed": true,
+      "value": 8.881784197001252e-16,
+      "lower_bound": 0,
+      "bound": 5e-13
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/complete400maskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/completebalancedvector",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/nativevectornorm",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/LeibnizSlaternorm",
+      "passed": true,
+      "value": 1.3322676295501878e-15,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/independentLeibniznativefidelity",
+      "passed": true,
+      "value": 2.220446049250313e-16,
+      "lower_bound": 0,
+      "bound": 1e-10
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/referencemaskbasis",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/referencevectorcomplete",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/Leibniz-referenceamplitudes",
+      "passed": true,
+      "value": 4.3885418357208765e-17,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "all98native timings andonecoldpoint retained",
+      "passed": true
+    },
+    {
+      "name": "all91warmcoveragebothgauges7sectorsdim400",
+      "passed": true
+    },
+    {
+      "name": "recordedall518frozengatespilot0credit",
+      "passed": true
+    },
+    {
+      "name": "all4responsearmsmandatory",
+      "passed": true
+    },
+    {
+      "name": "uniform/h8/savedFDcurrent",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "uniform/h8/savedFDcurvature",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "uniform/h8/savedFDstiffness",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "uniform/h8/unchangedbudgetcurrent",
+      "passed": true,
+      "value": 2.11904710140206e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "uniform/h8/unchangedbudgetcurvature",
+      "passed": true,
+      "value": 6.520510313599495e-10,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "uniform/h8/unchangedbudgetstiffness",
+      "passed": true,
+      "value": 1.9561542772899062e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "uniform/h4/savedFDcurrent",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "uniform/h4/savedFDcurvature",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "uniform/h4/savedFDstiffness",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "uniform/h4/unchangedbudgetcurrent",
+      "passed": true,
+      "value": 1.5577583980898855e-10,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "uniform/h4/unchangedbudgetcurvature",
+      "passed": true,
+      "value": 2.1472746794546877e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "uniform/h4/unchangedbudgetstiffness",
+      "passed": true,
+      "value": 6.4418252215741215e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "boundary_seam/h8/savedFDcurrent",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "boundary_seam/h8/savedFDcurvature",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "boundary_seam/h8/savedFDstiffness",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "boundary_seam/h8/unchangedbudgetcurrent",
+      "passed": true,
+      "value": 2.11904710140206e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "boundary_seam/h8/unchangedbudgetcurvature",
+      "passed": true,
+      "value": 6.520510313599495e-10,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "boundary_seam/h8/unchangedbudgetstiffness",
+      "passed": true,
+      "value": 1.9561542772899062e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "boundary_seam/h4/savedFDcurrent",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "boundary_seam/h4/savedFDcurvature",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "boundary_seam/h4/savedFDstiffness",
+      "passed": true,
+      "value": 0.0,
+      "lower_bound": 0,
+      "bound": 1e-12
+    },
+    {
+      "name": "boundary_seam/h4/unchangedbudgetcurrent",
+      "passed": true,
+      "value": 1.5577583980898855e-10,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "boundary_seam/h4/unchangedbudgetcurvature",
+      "passed": true,
+      "value": 2.1472746794546877e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    },
+    {
+      "name": "boundary_seam/h4/unchangedbudgetstiffness",
+      "passed": true,
+      "value": 6.4418252215741215e-09,
+      "lower_bound": 0,
+      "bound": 1e-08
+    }
+  ],
+  "point_details": [
+    {
+      "id": "L6/center25/flux9/uniform",
+      "Leibniz_fidelity": 1.0000000000000002,
+      "analytic_energy": -7.9991000168748725,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux9/boundary_seam",
+      "Leibniz_fidelity": 0.9999999999999998,
+      "analytic_energy": -7.9991000168748725,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux17/uniform",
+      "Leibniz_fidelity": 1.0000000000000002,
+      "analytic_energy": -7.996789103700529,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux17/boundary_seam",
+      "Leibniz_fidelity": 1.0,
+      "analytic_energy": -7.996789103700529,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux21/uniform",
+      "Leibniz_fidelity": 1.0,
+      "analytic_energy": -7.99510050018791,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux21/boundary_seam",
+      "Leibniz_fidelity": 0.9999999999999998,
+      "analytic_energy": -7.99510050018791,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux25/uniform",
+      "Leibniz_fidelity": 1.0000000000000002,
+      "analytic_energy": -7.993056560191343,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux25/boundary_seam",
+      "Leibniz_fidelity": 1.0000000000000002,
+      "analytic_energy": -7.993056560191343,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux29/uniform",
+      "Leibniz_fidelity": 1.0,
+      "analytic_energy": -7.990657374552278,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux29/boundary_seam",
+      "Leibniz_fidelity": 0.9999999999999998,
+      "analytic_energy": -7.990657374552278,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux33/uniform",
+      "Leibniz_fidelity": 1.0000000000000002,
+      "analytic_energy": -7.987903049900787,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux33/boundary_seam",
+      "Leibniz_fidelity": 1.0,
+      "analytic_energy": -7.987903049900787,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux41/uniform",
+      "Leibniz_fidelity": 1.0000000000000002,
+      "analytic_energy": -7.981329488994888,
+      "allsectors": 7
+    },
+    {
+      "id": "L6/center25/flux41/boundary_seam",
+      "Leibniz_fidelity": 0.9999999999999998,
+      "analytic_energy": -7.981329488994888,
+      "allsectors": 7
+    }
+  ],
+  "response_details": [],
+  "retained_original_metric_bytes_exact": true,
+  "fresh_derived_point_and_response_metrics_exact": false,
+  "portable_receipt_roundoff_differences": [
+    {
+      "path": [
+        "point_details",
+        3,
+        "Leibniz_fidelity"
+      ],
+      "original": 0.9999999999999996,
+      "fresh": 1.0,
+      "absolute_difference": 4.440892098500626e-16,
+      "allowed_portable_receipt_roundoff": 1.4210854715202004e-14
+    },
+    {
+      "path": [
+        "point_details",
+        7,
+        "Leibniz_fidelity"
+      ],
+      "original": 0.9999999999999998,
+      "fresh": 1.0000000000000002,
+      "absolute_difference": 4.440892098500626e-16,
+      "allowed_portable_receipt_roundoff": 1.4210854715202007e-14
+    }
+  ],
+  "portable_receipt_policy_sha256": "6af9c537a8febf1a8abe2b9f9acc6e537902726cf90814d904a96a42d89c8aa8",
+  "portable_python_version": "3.12.3",
+  "original_pinned_compute_python_version": "3.11.11",
+  "source_archive_sha256": "76be7b3b22ee26da1ae91dde516ed458446aa6a0c6c2a4ef7e86759d5ec921ec",
+  "source_freeze_sha256": "9ce63aad259c091a40bf2af4668213b7c446df74c0aa93e73a70a16a65216ba7",
+  "data_archive_sha256": "13c2f9537363c2b2a07258c68873ac7385e276fae260e08ebe06a806fea7f314",
+  "retained_actual_pinned_comparator_replay_sha256": "caf5b52bffd21c1e1ba087e9df2158c3fd3e0ee80c89eed34053b266ff40e79e",
+  "retained_pinned_compute_replay_verified": true,
+  "actual_frozen_comparator_executed_by_this_script": false,
+  "original_runtime_or_controller_guards_executed_by_this_script": false,
+  "private_guard_replacement_scope": "Explicit public compressed source/data hash closure plus retained actual pinned-compute receipts. Only unchanged audit_math/audit_responses are called; main/closure/replay are never called.",
+  "resource_assessment": {
+    "schema": "A25_EXCLUDED_PILOT_RESOURCE_ASSESSMENT_V1",
+    "source_freeze_sha256": "9ce63aad259c091a40bf2af4668213b7c446df74c0aa93e73a70a16a65216ba7",
+    "input_sha256": {
+      "execution": "c221b9f861866bf79745ac25ead72d3dbb4fb9bd43a6fe93358171660d6c930b",
+      "comparison": "caf5b52bffd21c1e1ba087e9df2158c3fd3e0ee80c89eed34053b266ff40e79e",
+      "native": "4fa6df27e2467ea0f2fe92f6fc23764b4f829854c7a5e6895b0d3b80313c642f"
+    },
+    "formula": "2*(entire cold pilot native wall+980*max of all91 warm sector walls after first complete point)+2*14*(reference wall+comparison wall)+30sec; peak2*(observed peakMiB+64)",
+    "warm_sector_count": 91,
+    "cold_sector_count": 7,
+    "warm_maximum_dimension": 400,
+    "native_forecast_seconds": 490.1642394065857,
+    "full_forecast_seconds": 619.30535364151,
+    "full_forecast_mib": 1286.4140625,
+    "limits": {
+      "seconds": 1500.0,
+      "MiB": 2800.0,
+      "native_seconds": 1410
+    },
+    "eligible_for_root_full_review": true,
+    "full_execution_authorized": false,
+    "independent_audit_and_root_review_still_required": true,
+    "scientific_completions": 0,
+    "catalogue_status": "NOT_RUN",
+    "scope": "Measured excluded pilot supports only an empirical bounded-resource projection; no full scientific result or automatic submission"
+  },
+  "public_replay_script_sha256": "2ea576779c65655fceebc64e9c334ef6662b25a24c7ff7cb3676155678851f72",
+  "original_mathematical_source_changed": false,
+  "producer_eigensolver_sampler_or_new_fixture_executed": false,
+  "authorship": "Prepared by cv_evidence, the same agent that authored the new A25 adapters. This attribution is explicit: ROOT and validation_design must independently review the auditor and receipts before any full resource admission. The saved-data calculations use a separate Leibniz determinant and analytic formulas; this does not create a new external reference or independent author."
+}

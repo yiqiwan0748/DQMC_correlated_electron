@@ -1,0 +1,31 @@
+{
+  "schema": "A25_REVIEWED_FULL_SAVED_AUDIT_SOURCE_FREEZE_V1",
+  "created_utc": "2026-10-23T20:15:46.303234+00:00",
+  "status": "FROZEN_REVIEWED_NOT_EXECUTED",
+  "release": "a25_full_saved_audit_v1",
+  "prefix": "a25_full_saved_audit_v1/",
+  "archive": "a25-full-saved-audit-v1-source.tar.gz",
+  "archive_sha256": "853bc747612b3954982ef93fcacd416f2398f7e82a0c4667c8653db039fe3936",
+  "archive_bytes": 12442,
+  "files": {
+    "PREPARATION_SHA256SUMS": "c22b86e634faa866cb2b9fae1959f348679aa2ea40fe58534b20c6f3249d9ada",
+    "README.md": "b7a555dca865d9bbe955f3881a553b63f466d8829ff9ee5d4a8978875f7f710a",
+    "analysis.sbatch": "38625de8c8aa0fc08633746a87801ccdbe9d9098abb7ece69861054ba788e760",
+    "audit_a25_full.py": "137e68f31f46d3fb0974357bc151bf1b2fc0a1501a40de580c4c3333d5210148",
+    "plan.json": "7e780dd3c3b6a5101c2c76a66e349b909a20a6d6adeaa66de75454f4dd0c88fd",
+    "root_review.json": "1273ecb197cb4b4b08d016007ec3c594982def7aeb764586830a274bafa9b520",
+    "static_review.json": "68d2bcc3e8253d1530f1a2835050de7242e05db3fa67cb16ea79dfb9f70a72cf"
+  },
+  "member_count": 7,
+  "auditor_sha256": "137e68f31f46d3fb0974357bc151bf1b2fc0a1501a40de580c4c3333d5210148",
+  "root_review_sha256": "1273ecb197cb4b4b08d016007ec3c594982def7aeb764586830a274bafa9b520",
+  "original_full_job": "6466916",
+  "original_scientific_source_unchanged": true,
+  "scientific_results_assumed": false,
+  "job_submitted": false,
+  "required_resources": {
+    "cpus": 1,
+    "memory_MB": 3500
+  },
+  "administrative_submission_override": null
+}

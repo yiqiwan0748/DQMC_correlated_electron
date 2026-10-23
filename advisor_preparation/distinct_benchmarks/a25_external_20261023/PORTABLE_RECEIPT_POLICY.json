@@ -1,0 +1,33 @@
+{
+  "schema": "ROOT_APPROVED_A25_PORTABLE_DERIVED_RECEIPT_POLICY_V1",
+  "scope": "Only fresh derived point/response detail floats compared with retained original pinned-compute audit receipt. Never original raw inputs, physical/helper gates, fixed bounds, original runtime identity or comparator replay.",
+  "float_allowance": "64*sys.float_info.epsilon*max(1,abs(original),abs(fresh))",
+  "all_nonfloat_types_schema_array_membership_IDs_thresholds_Booleans_exact": true,
+  "unchanged_original_helper_physics_and_literal_bounds_must_all_pass": true,
+  "original_metric_and_report_bytes_remain_exact": true,
+  "fresh_gate_values_are_observations_tested_by_unchanged_original_helpers_not_fixed_inputs": true,
+  "actual_original_pinned_comparator_byte_equality_required": true,
+  "original_strict_failure_retained": true,
+  "first_pilot_detail_differences": [
+    {
+      "path": [
+        3,
+        "Leibniz_fidelity"
+      ],
+      "fresh": 1.0,
+      "original": 0.9999999999999996,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "path": [
+        7,
+        "Leibniz_fidelity"
+      ],
+      "fresh": 1.0000000000000002,
+      "original": 0.9999999999999998,
+      "absolute_difference": 4.440892098500626e-16
+    }
+  ],
+  "same_agent_authorship_disclosed": true,
+  "no_kernel_formula_gate_or_reference_changes": true
+}
