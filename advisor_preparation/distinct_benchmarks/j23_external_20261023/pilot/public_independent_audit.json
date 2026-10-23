@@ -1,0 +1,1951 @@
+{
+  "status": "PASS",
+  "pilot_math_status": "PASS",
+  "engineering_eligible": true,
+  "resource_projection": {
+    "components_seconds": {
+      "native": 286.0013279914856,
+      "reference": 92.50263698041933,
+      "comparator": 434.5857810974121,
+      "reserve": 30
+    },
+    "full_seconds": 843.089746069317,
+    "full_peak_RSS_KiB": 2640582.697265625,
+    "pilot_max_RSS_KiB": 467880
+  },
+  "native_rows": 8,
+  "reference_rows": 10,
+  "frozen_comparator_gates": 200,
+  "max_recorded_metric_error": 2.3803181647963356e-13,
+  "schema": "J23_PUBLIC_COMPLETE_SELECTED_SCIENTIFIC_REPLAY_V1",
+  "role": "pilot",
+  "checks": [
+    {
+      "name": "Actual native original source/version 16",
+      "passed": true
+    },
+    {
+      "name": "Actual physical-cell/grid normalization 16",
+      "passed": true
+    },
+    {
+      "name": "Complete four cold/warm rows 16",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual native original source/version 32",
+      "passed": true
+    },
+    {
+      "name": "Actual physical-cell/grid normalization 32",
+      "passed": true
+    },
+    {
+      "name": "Complete four cold/warm rows 32",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Fixed row N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete Bloch N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete eigenvalues N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent complete pure occupations N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent exchange spin signs N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Pure gapped trial qualification N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "All momentum counts N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual density N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Actual entropy N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent actual rho N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual rho N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick physicalF/N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual physicalF/N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent physical Wick kinetic/N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Observer actual kinetic/N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Eigenpair residual N32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "All four native-reference and six Gaussian rows",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 16, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 16, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 16, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('native_mesh', 16, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('native_mesh', 16, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('native_mesh', 16, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('native_mesh', 16, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('native_mesh', 16, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 16, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 16, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 16, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 16, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('native_mesh', 16, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 16, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 16, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 32, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 32, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 32, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('native_mesh', 32, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('native_mesh', 32, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('native_mesh', 32, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('native_mesh', 32, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('native_mesh', 32, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 32, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('native_mesh', 32, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 32, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('native_mesh', 32, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('native_mesh', 32, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 32, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('native_mesh', 32, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 64, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 64, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 64, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('gauss', 64, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('gauss', 64, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('gauss', 64, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('gauss', 64, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('gauss', 64, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 64, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 64, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 64, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 64, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('gauss', 64, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 64, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 64, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 96, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 96, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 96, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('gauss', 96, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('gauss', 96, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('gauss', 96, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('gauss', 96, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('gauss', 96, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 96, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 96, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 96, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 96, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('gauss', 96, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 96, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 96, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 128, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 128, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 128, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('gauss', 128, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel filled-spin projector ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('gauss', 128, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel full-band kinetic trace ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('gauss', 128, 'parallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Parallel analytic physical energy ('gauss', 128, 'parallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference qualification ('gauss', 128, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 128, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference measure ('gauss', 128, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 128, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference density ('gauss', 128, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Physical local reference density ('gauss', 128, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 128, 'antiparallel') finite/count",
+      "passed": true
+    },
+    {
+      "name": "Reference physical Wick identity ('gauss', 128, 'antiparallel')",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 16/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/cold/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/cold/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/cold/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/cold/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/warm/parallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/warm/parallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference rho 32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference kinetic 32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/warm/antiparallel finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent native-reference physicalF 32/warm/antiparallel",
+      "passed": true
+    },
+    {
+      "name": "Comparator original raw input hashes",
+      "passed": true
+    },
+    {
+      "name": "Original full excluded-pilot comparator gates",
+      "passed": true
+    },
+    {
+      "name": "Unchanged frozen comparator replay identities/decisions and declared arithmetic tolerance",
+      "passed": true
+    },
+    {
+      "name": "Unchanged frozen assessor original inputs and zero credit",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input native32.log",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input comparison.json",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input native16.toml",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input comparator.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input native32.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input reference.log",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input comparator.log",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input reference.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input reference.json",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input native16.log",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input execution.json",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input native32.toml",
+      "passed": true
+    },
+    {
+      "name": "Frozen assessor original input native16.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "Original GNUtime success native16",
+      "passed": true
+    },
+    {
+      "name": "Original GNUtime success native32",
+      "passed": true
+    },
+    {
+      "name": "Original GNUtime success reference",
+      "passed": true
+    },
+    {
+      "name": "Original GNUtime success comparator",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component native finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component native",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component reference finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component reference",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component comparator finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component comparator",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component reserve finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent resource component reserve",
+      "passed": true
+    },
+    {
+      "name": "Independent conditional full wall forecast finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent conditional full wall forecast",
+      "passed": true
+    },
+    {
+      "name": "Independent conditional full RSS forecast finite/count",
+      "passed": true
+    },
+    {
+      "name": "Independent conditional full RSS forecast",
+      "passed": true
+    },
+    {
+      "name": "Exact unchanged engineering decision; no automatic admission",
+      "passed": true
+    }
+  ],
+  "check_count": 431,
+  "metric_specific_errors": {
+    "Independent complete Bloch N16/cold/parallel": 5.551115123125783e-17,
+    "Independent complete eigenvalues N16/cold/parallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N16/cold/parallel": 0.0,
+    "Independent exchange spin signs N16/cold/parallel": 0.0,
+    "All momentum counts N16/cold/parallel": 0.0,
+    "Actual density N16/cold/parallel": 1.7763568394002505e-15,
+    "Actual entropy N16/cold/parallel": 0.0,
+    "Independent actual rho N16/cold/parallel": 8.881784197001252e-16,
+    "Observer actual rho N16/cold/parallel": 0.0,
+    "Independent physical Wick physicalF/N16/cold/parallel": 1.4210854715202004e-14,
+    "Observer actual physicalF/N16/cold/parallel": 3.552713678800501e-14,
+    "Independent physical Wick kinetic/N16/cold/parallel": 3.582550922587302e-14,
+    "Observer actual kinetic/N16/cold/parallel": 3.605969689512989e-14,
+    "Independent complete Bloch N16/cold/antiparallel": 5.551115123125783e-17,
+    "Independent complete eigenvalues N16/cold/antiparallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N16/cold/antiparallel": 0.0,
+    "Independent exchange spin signs N16/cold/antiparallel": 0.0,
+    "All momentum counts N16/cold/antiparallel": 0.0,
+    "Actual density N16/cold/antiparallel": 4.440892098500626e-16,
+    "Actual entropy N16/cold/antiparallel": 0.0,
+    "Independent actual rho N16/cold/antiparallel": 6.2341624917916505e-18,
+    "Observer actual rho N16/cold/antiparallel": 0.0,
+    "Independent physical Wick physicalF/N16/cold/antiparallel": 3.552713678800501e-15,
+    "Observer actual physicalF/N16/cold/antiparallel": 3.552713678800501e-15,
+    "Independent physical Wick kinetic/N16/cold/antiparallel": 3.816391647148976e-15,
+    "Observer actual kinetic/N16/cold/antiparallel": 3.2959746043559335e-15,
+    "Independent complete Bloch N16/warm/parallel": 5.551115123125783e-17,
+    "Independent complete eigenvalues N16/warm/parallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N16/warm/parallel": 0.0,
+    "Independent exchange spin signs N16/warm/parallel": 0.0,
+    "All momentum counts N16/warm/parallel": 0.0,
+    "Actual density N16/warm/parallel": 1.7763568394002505e-15,
+    "Actual entropy N16/warm/parallel": 0.0,
+    "Independent actual rho N16/warm/parallel": 8.881784197001252e-16,
+    "Observer actual rho N16/warm/parallel": 0.0,
+    "Independent physical Wick physicalF/N16/warm/parallel": 1.4210854715202004e-14,
+    "Observer actual physicalF/N16/warm/parallel": 3.552713678800501e-14,
+    "Independent physical Wick kinetic/N16/warm/parallel": 3.582550922587302e-14,
+    "Observer actual kinetic/N16/warm/parallel": 3.605969689512989e-14,
+    "Independent complete Bloch N16/warm/antiparallel": 5.551115123125783e-17,
+    "Independent complete eigenvalues N16/warm/antiparallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N16/warm/antiparallel": 0.0,
+    "Independent exchange spin signs N16/warm/antiparallel": 0.0,
+    "All momentum counts N16/warm/antiparallel": 0.0,
+    "Actual density N16/warm/antiparallel": 4.440892098500626e-16,
+    "Actual entropy N16/warm/antiparallel": 0.0,
+    "Independent actual rho N16/warm/antiparallel": 6.2341624917916505e-18,
+    "Observer actual rho N16/warm/antiparallel": 0.0,
+    "Independent physical Wick physicalF/N16/warm/antiparallel": 3.552713678800501e-15,
+    "Observer actual physicalF/N16/warm/antiparallel": 3.552713678800501e-15,
+    "Independent physical Wick kinetic/N16/warm/antiparallel": 3.816391647148976e-15,
+    "Observer actual kinetic/N16/warm/antiparallel": 3.2959746043559335e-15,
+    "Independent complete Bloch N32/cold/parallel": 1.7763568394002505e-15,
+    "Independent complete eigenvalues N32/cold/parallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N32/cold/parallel": 0.0,
+    "Independent exchange spin signs N32/cold/parallel": 0.0,
+    "All momentum counts N32/cold/parallel": 0.0,
+    "Actual density N32/cold/parallel": 0.0,
+    "Actual entropy N32/cold/parallel": 0.0,
+    "Independent actual rho N32/cold/parallel": 0.0,
+    "Observer actual rho N32/cold/parallel": 0.0,
+    "Independent physical Wick physicalF/N32/cold/parallel": 1.0658141036401503e-14,
+    "Observer actual physicalF/N32/cold/parallel": 1.0658141036401503e-14,
+    "Independent physical Wick kinetic/N32/cold/parallel": 1.0574006947816628e-14,
+    "Observer actual kinetic/N32/cold/parallel": 1.0895798152610325e-14,
+    "Independent complete Bloch N32/cold/antiparallel": 1.7763568394002505e-15,
+    "Independent complete eigenvalues N32/cold/antiparallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N32/cold/antiparallel": 0.0,
+    "Independent exchange spin signs N32/cold/antiparallel": 0.0,
+    "All momentum counts N32/cold/antiparallel": 0.0,
+    "Actual density N32/cold/antiparallel": 0.0,
+    "Actual entropy N32/cold/antiparallel": 0.0,
+    "Independent actual rho N32/cold/antiparallel": 1.1102230246251565e-16,
+    "Observer actual rho N32/cold/antiparallel": 0.0,
+    "Independent physical Wick physicalF/N32/cold/antiparallel": 8.881784197001252e-15,
+    "Observer actual physicalF/N32/cold/antiparallel": 1.2434497875801753e-14,
+    "Independent physical Wick kinetic/N32/cold/antiparallel": 7.712580574192884e-15,
+    "Observer actual kinetic/N32/cold/antiparallel": 1.2406742300186124e-14,
+    "Independent complete Bloch N32/warm/parallel": 1.7763568394002505e-15,
+    "Independent complete eigenvalues N32/warm/parallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N32/warm/parallel": 0.0,
+    "Independent exchange spin signs N32/warm/parallel": 0.0,
+    "All momentum counts N32/warm/parallel": 0.0,
+    "Actual density N32/warm/parallel": 0.0,
+    "Actual entropy N32/warm/parallel": 0.0,
+    "Independent actual rho N32/warm/parallel": 0.0,
+    "Observer actual rho N32/warm/parallel": 0.0,
+    "Independent physical Wick physicalF/N32/warm/parallel": 1.0658141036401503e-14,
+    "Observer actual physicalF/N32/warm/parallel": 1.0658141036401503e-14,
+    "Independent physical Wick kinetic/N32/warm/parallel": 1.0574006947816628e-14,
+    "Observer actual kinetic/N32/warm/parallel": 1.0895798152610325e-14,
+    "Independent complete Bloch N32/warm/antiparallel": 1.7763568394002505e-15,
+    "Independent complete eigenvalues N32/warm/antiparallel": 7.105427357601002e-15,
+    "Independent complete pure occupations N32/warm/antiparallel": 0.0,
+    "Independent exchange spin signs N32/warm/antiparallel": 0.0,
+    "All momentum counts N32/warm/antiparallel": 0.0,
+    "Actual density N32/warm/antiparallel": 0.0,
+    "Actual entropy N32/warm/antiparallel": 0.0,
+    "Independent actual rho N32/warm/antiparallel": 1.1102230246251565e-16,
+    "Observer actual rho N32/warm/antiparallel": 0.0,
+    "Independent physical Wick physicalF/N32/warm/antiparallel": 8.881784197001252e-15,
+    "Observer actual physicalF/N32/warm/antiparallel": 1.2434497875801753e-14,
+    "Independent physical Wick kinetic/N32/warm/antiparallel": 7.712580574192884e-15,
+    "Observer actual kinetic/N32/warm/antiparallel": 1.2406742300186124e-14,
+    "Reference measure ('native_mesh', 16, 'parallel')": 0.0,
+    "Reference density ('native_mesh', 16, 'parallel')": 0.0,
+    "Reference physical Wick identity ('native_mesh', 16, 'parallel')": 0.0,
+    "Parallel filled-spin projector ('native_mesh', 16, 'parallel')": 0.0,
+    "Parallel full-band kinetic trace ('native_mesh', 16, 'parallel')": 3.3306690738754696e-16,
+    "Parallel analytic physical energy ('native_mesh', 16, 'parallel')": 0.0,
+    "Reference measure ('native_mesh', 16, 'antiparallel')": 0.0,
+    "Reference density ('native_mesh', 16, 'antiparallel')": 0.0,
+    "Reference physical Wick identity ('native_mesh', 16, 'antiparallel')": 0.0,
+    "Reference measure ('native_mesh', 32, 'parallel')": 0.0,
+    "Reference density ('native_mesh', 32, 'parallel')": 0.0,
+    "Reference physical Wick identity ('native_mesh', 32, 'parallel')": 0.0,
+    "Parallel filled-spin projector ('native_mesh', 32, 'parallel')": 0.0,
+    "Parallel full-band kinetic trace ('native_mesh', 32, 'parallel')": 1.3877787807814457e-16,
+    "Parallel analytic physical energy ('native_mesh', 32, 'parallel')": 0.0,
+    "Reference measure ('native_mesh', 32, 'antiparallel')": 0.0,
+    "Reference density ('native_mesh', 32, 'antiparallel')": 0.0,
+    "Reference physical Wick identity ('native_mesh', 32, 'antiparallel')": 0.0,
+    "Reference measure ('gauss', 64, 'parallel')": 0.0,
+    "Reference density ('gauss', 64, 'parallel')": 0.0,
+    "Reference physical Wick identity ('gauss', 64, 'parallel')": 0.0,
+    "Parallel filled-spin projector ('gauss', 64, 'parallel')": 0.0,
+    "Parallel full-band kinetic trace ('gauss', 64, 'parallel')": 2.2190582704695316e-14,
+    "Parallel analytic physical energy ('gauss', 64, 'parallel')": 2.1316282072803006e-14,
+    "Reference measure ('gauss', 64, 'antiparallel')": 0.0,
+    "Reference density ('gauss', 64, 'antiparallel')": 0.0,
+    "Reference physical Wick identity ('gauss', 64, 'antiparallel')": 0.0,
+    "Reference measure ('gauss', 96, 'parallel')": 1.1102230246251565e-16,
+    "Reference density ('gauss', 96, 'parallel')": 2.220446049250313e-16,
+    "Reference physical Wick identity ('gauss', 96, 'parallel')": 0.0,
+    "Parallel filled-spin projector ('gauss', 96, 'parallel')": 1.1102230246251565e-16,
+    "Parallel full-band kinetic trace ('gauss', 96, 'parallel')": 2.4826495026442075e-14,
+    "Parallel analytic physical energy ('gauss', 96, 'parallel')": 2.842170943040401e-14,
+    "Reference measure ('gauss', 96, 'antiparallel')": 1.1102230246251565e-16,
+    "Reference density ('gauss', 96, 'antiparallel')": 0.0,
+    "Reference physical Wick identity ('gauss', 96, 'antiparallel')": 0.0,
+    "Reference measure ('gauss', 128, 'parallel')": 0.0,
+    "Reference density ('gauss', 128, 'parallel')": 0.0,
+    "Reference physical Wick identity ('gauss', 128, 'parallel')": 0.0,
+    "Parallel filled-spin projector ('gauss', 128, 'parallel')": 0.0,
+    "Parallel full-band kinetic trace ('gauss', 128, 'parallel')": 2.378041340234116e-13,
+    "Parallel analytic physical energy ('gauss', 128, 'parallel')": 2.3803181647963356e-13,
+    "Reference measure ('gauss', 128, 'antiparallel')": 0.0,
+    "Reference density ('gauss', 128, 'antiparallel')": 0.0,
+    "Reference physical Wick identity ('gauss', 128, 'antiparallel')": 0.0,
+    "Independent native-reference rho 16/cold/parallel": 0.0,
+    "Independent native-reference kinetic 16/cold/parallel": 3.469446951953614e-17,
+    "Independent native-reference physicalF 16/cold/parallel": 0.0,
+    "Independent native-reference rho 16/cold/antiparallel": 3.3306690738754696e-16,
+    "Independent native-reference kinetic 16/cold/antiparallel": 5.689893001203927e-16,
+    "Independent native-reference physicalF 16/cold/antiparallel": 3.552713678800501e-15,
+    "Independent native-reference rho 16/warm/parallel": 0.0,
+    "Independent native-reference kinetic 16/warm/parallel": 3.469446951953614e-17,
+    "Independent native-reference physicalF 16/warm/parallel": 0.0,
+    "Independent native-reference rho 16/warm/antiparallel": 3.3306690738754696e-16,
+    "Independent native-reference kinetic 16/warm/antiparallel": 5.689893001203927e-16,
+    "Independent native-reference physicalF 16/warm/antiparallel": 3.552713678800501e-15,
+    "Independent native-reference rho 32/cold/parallel": 0.0,
+    "Independent native-reference kinetic 32/cold/parallel": 7.0507835681077324e-15,
+    "Independent native-reference physicalF 32/cold/parallel": 7.105427357601002e-15,
+    "Independent native-reference rho 32/cold/antiparallel": 4.440892098500626e-16,
+    "Independent native-reference kinetic 32/cold/antiparallel": 6.6509298068950784e-15,
+    "Independent native-reference physicalF 32/cold/antiparallel": 8.881784197001252e-15,
+    "Independent native-reference rho 32/warm/parallel": 0.0,
+    "Independent native-reference kinetic 32/warm/parallel": 7.0507835681077324e-15,
+    "Independent native-reference physicalF 32/warm/parallel": 7.105427357601002e-15,
+    "Independent native-reference rho 32/warm/antiparallel": 4.440892098500626e-16,
+    "Independent native-reference kinetic 32/warm/antiparallel": 6.6509298068950784e-15,
+    "Independent native-reference physicalF 32/warm/antiparallel": 8.881784197001252e-15,
+    "Independent resource component native": 0.0,
+    "Independent resource component reference": 0.0,
+    "Independent resource component comparator": 0.0,
+    "Independent resource component reserve": 0,
+    "Independent conditional full wall forecast": 0.0,
+    "Independent conditional full RSS forecast": 0.0
+  },
+  "independent_physics_checks": [],
+  "portable_gate_value_differences": [],
+  "original_scientific_fragment_sha256": "b2ba99ef5391076166054e1c8ca2442079cb7b0824c8ce36bb02e1ad243f1010",
+  "original_check_definitions_sha256": "b5ab5426d6c6d02a0a448761b9411eea9d9acf43533f1b196b15c900883be6e2",
+  "scientific_fragment_changed": false,
+  "original_auditor_sha256": "899360edd906a42ce6293a6b595dd9788314cdc41bbd6929907c6659b02b7416",
+  "original_independent_audit_sha256": "e9f350cf0280ae9bde9bbe2eabf0972f4185a4c42bb057b9766b2982417df47c",
+  "original_independent_check_count": 599,
+  "source_archive_sha256": "5b78ce7ea96a31aedb5ee2c2a27e3f128667ae0121cf410219a13a4ae6ae6bbe",
+  "source_freeze_sha256": "7b763ad944dd745d604957bf25556fdad06b2ff733f09cb6c25230f7db7b4043",
+  "data_archive_sha256": "014a51cb9e654d6e88c72b158ffafe40b1b72a5aafd79c7645390e7f39a15e0b",
+  "scientific_selection_sha256": "fbc0acead1ac470d30dc85c9fd0680869ce70f64d40cb0afbcf01b768ae0069b",
+  "frozen_comparator_replay_sha256": "a5b8aef23c66b3fc5cb92ed346c4007736dac6cf4bc4a343d2f1c52b20ab7612",
+  "actual_frozen_comparator_executed_by_this_script": false,
+  "original_pinned_compute_replay_verified": true,
+  "remote_transport_or_admission_checks_replayed": false,
+  "new_HF_or_quadrature_or_eigensolver_executed": false,
+  "postprocessing_only": true,
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "pilot_credit": 0
+}

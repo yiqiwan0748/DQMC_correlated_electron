@@ -1,0 +1,50 @@
+{
+  "schema": "public_J23_leaf_closure_audit_v15",
+  "status": "PASS",
+  "ledger_sha256": "9aed58c07be2ba5fe6aefa4994c8ed35164a6ab9494ad9c25b8ff2315b4b4d95",
+  "counts": {
+    "PASS": 46,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 52
+  },
+  "changed_ids": [
+    "J23"
+  ],
+  "preserved_unaffected_row_objects": 99,
+  "preserved_prior_PASS_rows": 45,
+  "preserved_prior_UNRESOLVED_rows": 2,
+  "public_input_files_checked": 46,
+  "prior_evidence_bindings_checked": 302,
+  "archives": [
+    {
+      "path": "sources/j23-mean-field-v1-source.tar.gz",
+      "members": 19,
+      "sha256": "5b78ce7ea96a31aedb5ee2c2a27e3f128667ae0121cf410219a13a4ae6ae6bbe"
+    },
+    {
+      "path": "pilot/data.tar.gz",
+      "members": 15,
+      "sha256": "014a51cb9e654d6e88c72b158ffafe40b1b72a5aafd79c7645390e7f39a15e0b"
+    },
+    {
+      "path": "production/data.tar.gz",
+      "members": 12,
+      "sha256": "f762c6a3c09fb8978bea1c340474f5f861d1d47a30a85f4941ec298f620a01c9"
+    },
+    {
+      "path": "sources/pilot-analysis-source.tar.gz",
+      "members": 5,
+      "sha256": "e1c9e438050f35fa2475915854ee42b3fd3604ec6f7b5db6cd1a158e05159f46"
+    },
+    {
+      "path": "sources/production-analysis-source.tar.gz",
+      "members": 5,
+      "sha256": "ed3d3de7f0eefca354022a34261c6f4e6f88b14327e52a2306a6b51566acbeea"
+    }
+  ],
+  "archive_regular_text_members": 56,
+  "pilot_completion_credit": 0,
+  "scientific_producer_executed": false,
+  "postprocessing_only": true
+}

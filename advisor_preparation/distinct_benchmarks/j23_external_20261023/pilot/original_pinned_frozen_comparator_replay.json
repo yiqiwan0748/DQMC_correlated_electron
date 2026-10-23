@@ -1,0 +1,1621 @@
+{
+  "schema": "J23_COMPARISON_V1",
+  "catalogue_id": "J23",
+  "mode": "pilot",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/actual common mu gap",
+      "value": 3.310727202916657,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/actual density",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/eigenpair residual",
+      "value": 5.0242958677880805e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/observer reproduces actual physicalF",
+      "value": 3.552713678800501e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/observer reproduces actual kinetic",
+      "value": 3.605969689512989e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/all actual Bloch entries",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/all analytic AppendixD eigenvalues",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/same mesh actual rho",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/same mesh independent physical physicalF",
+      "value": 1.4210854715202004e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/cold/same mesh independent physical kinetic",
+      "value": 3.5860203695392556e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/actual common mu gap",
+      "value": 3.335110474943347,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/actual density",
+      "value": 4.440892098500626e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/eigenpair residual",
+      "value": 3.554447978966673e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/observer reproduces actual physicalF",
+      "value": 3.552713678800501e-15,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/observer reproduces actual kinetic",
+      "value": 3.2959746043559335e-15,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/all actual Bloch entries",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/all analytic AppendixD eigenvalues",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/same mesh actual rho",
+      "value": 3.3306690738754696e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/same mesh independent physical physicalF",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/cold/same mesh independent physical kinetic",
+      "value": 3.247402347028583e-15,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/actual common mu gap",
+      "value": 3.310727202916657,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/actual density",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/eigenpair residual",
+      "value": 5.0242958677880805e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/observer reproduces actual physicalF",
+      "value": 3.552713678800501e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/observer reproduces actual kinetic",
+      "value": 3.605969689512989e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/all actual Bloch entries",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/all analytic AppendixD eigenvalues",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/same mesh actual rho",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/same mesh independent physical physicalF",
+      "value": 1.4210854715202004e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/parallel/warm/same mesh independent physical kinetic",
+      "value": 3.5860203695392556e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/actual common mu gap",
+      "value": 3.335110474943347,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/actual density",
+      "value": 4.440892098500626e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/eigenpair residual",
+      "value": 3.554447978966673e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/observer reproduces actual physicalF",
+      "value": 3.552713678800501e-15,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/observer reproduces actual kinetic",
+      "value": 3.2959746043559335e-15,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/all actual Bloch entries",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/all analytic AppendixD eigenvalues",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/same mesh actual rho",
+      "value": 3.3306690738754696e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/same mesh independent physical physicalF",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N16/m12.0/t40.16/antiparallel/warm/same mesh independent physical kinetic",
+      "value": 3.247402347028583e-15,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/actual common mu gap",
+      "value": 3.1530003163464597,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/actual density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/eigenpair residual",
+      "value": 7.160723346098895e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/observer reproduces actual physicalF",
+      "value": 1.0658141036401503e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/observer reproduces actual kinetic",
+      "value": 1.0895798152610325e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/all actual Bloch entries",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/all analytic AppendixD eigenvalues",
+      "value": 1.0658141036401503e-14,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/same mesh actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/same mesh independent physical physicalF",
+      "value": 1.7763568394002505e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/cold/same mesh independent physical kinetic",
+      "value": 1.762479051592436e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/actual common mu gap",
+      "value": 3.1591506018939057,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/actual density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/eigenpair residual",
+      "value": 5.3316719684500096e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/observer reproduces actual physicalF",
+      "value": 1.2434497875801753e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/observer reproduces actual kinetic",
+      "value": 1.2406742300186124e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/all actual Bloch entries",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/all analytic AppendixD eigenvalues",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/same mesh actual rho",
+      "value": 5.551115123125783e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/same mesh independent physical physicalF",
+      "value": 1.7763568394002505e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/cold/same mesh independent physical kinetic",
+      "value": 1.4363510381087963e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/actual common mu gap",
+      "value": 3.1530003163464597,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/actual density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/eigenpair residual",
+      "value": 7.160723346098895e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/observer reproduces actual physicalF",
+      "value": 1.0658141036401503e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/observer reproduces actual kinetic",
+      "value": 1.0895798152610325e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/all actual Bloch entries",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/all analytic AppendixD eigenvalues",
+      "value": 1.0658141036401503e-14,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/same mesh actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/same mesh independent physical physicalF",
+      "value": 1.7763568394002505e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/parallel/warm/same mesh independent physical kinetic",
+      "value": 1.762479051592436e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/actual trial input",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/actual native V",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/binary pure occupations",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/two occupied at every k",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/saved occupied count",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/actual common mu gap",
+      "value": 3.1591506018939057,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/saved common mu gap",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/actual density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/actual entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/observer entropy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/eigenpair residual",
+      "value": 5.3316719684500096e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/observer reproduces actual rho",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/observer reproduces actual physicalF",
+      "value": 1.2434497875801753e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/observer reproduces actual kinetic",
+      "value": 1.2406742300186124e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/all actual Bloch entries",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/all analytic AppendixD eigenvalues",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/independent pure occupation prescription",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 0.0,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/same mesh actual rho",
+      "value": 5.551115123125783e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/same mesh independent physical physicalF",
+      "value": 1.7763568394002505e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "N32/m12.0/t40.16/antiparallel/warm/same mesh independent physical kinetic",
+      "value": 1.4363510381087963e-14,
+      "relation": "le",
+      "bound": 1e-06,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'parallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'parallel')/common gap",
+      "value": 3.310727202916657,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'parallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'parallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'antiparallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'antiparallel')/common gap",
+      "value": 3.335110474943347,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'antiparallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(16, 12.0, 0.16, 'antiparallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'parallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'parallel')/common gap",
+      "value": 3.1530003163464597,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'parallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'parallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'antiparallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'antiparallel')/common gap",
+      "value": 3.1591506018939057,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'antiparallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "native_mesh/(32, 12.0, 0.16, 'antiparallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'parallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'parallel')/common gap",
+      "value": 3.1322054731936833,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'parallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'parallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'antiparallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'antiparallel')/common gap",
+      "value": 3.135944067927019,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'antiparallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(64, 12.0, 0.16, 'antiparallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'parallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'parallel')/common gap",
+      "value": 3.1143995733226006,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'parallel')/density",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'parallel')/integration measure normalization",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'antiparallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'antiparallel')/common gap",
+      "value": 3.116071689792303,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'antiparallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(96, 12.0, 0.16, 'antiparallel')/integration measure normalization",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'parallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'parallel')/common gap",
+      "value": 3.1081231236466786,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'parallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'parallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'antiparallel')/analytic pure-state qualification",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'antiparallel')/common gap",
+      "value": 3.109066507818092,
+      "relation": "ge",
+      "bound": 1.0,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'antiparallel')/density",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "gauss/(128, 12.0, 0.16, 'antiparallel')/integration measure normalization",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    }
+  ],
+  "leading_coefficients": [],
+  "native_rows": 8,
+  "reference_rows": 10,
+  "pilot_excluded": true,
+  "source_freeze_sha256": "7b763ad944dd745d604957bf25556fdad06b2ff733f09cb6c25230f7db7b4043",
+  "input_sha256": {
+    "native16.toml": "a4ec0c35dc9d3c9ddef06922f63b36b4fbb0dacc1a353da813c1a038cbdc0c9c",
+    "native32.toml": "f9de0530db3c6df1bddd07af6134f043962c3c9645c445f88a5a2d592739b3f5",
+    "reference.json": "a84be5efd2b6a17d51d3303089b620ff717c8b2ebde4d657c75b923a3d6ff558"
+  },
+  "scientific_scope": "One journal AppendixD prescribed pure-Slater trial functional at n2; actual evaluate/solve_fields+Bloch, analytic projectors/Wick/Gauss; no SCF/gRISB/doped/exact-ground claim"
+}

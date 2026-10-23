@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/orbital_entanglement_v14/README.md)
-records **45 PASS, 2 UNRESOLVED and 53 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/j23_mean_field_v15/README.md)
+records **46 PASS, 2 UNRESOLVED and 52 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -233,4 +233,17 @@ The registered t3=0 model has uniform spin-resolved densities while t4 produces 
 
 ## L48 DMRG convergence pilot remains unresolved
 
-The [complete original L48 pilot and saved-data replay](bethe_l48_pilot_20261023/README.md) preserve six completed sector/precision solves and all ten original quality failures. Half-filled results are stable; charged-state variance, particle-hole and refinement checks fail. The original strict audit and the complete 215-check audit remain available, with the public transport omissions explicitly documented. The stored final truncation value is a leftward half-sweep maximum, as a separate source-semantics diagnostic explains. No gate or original result changed. This pilot grants zero catalogue credit; A18/A19/A20 remain NOT_RUN and the latest ledger stays 45 PASS / 2 UNRESOLVED / 53 NOT_RUN.
+The [complete original L48 pilot and saved-data replay](bethe_l48_pilot_20261023/README.md) preserve six completed sector/precision solves and all ten original quality failures. Half-filled results are stable; charged-state variance, particle-hole and refinement checks fail. The original strict audit and the complete 215-check audit remain available, with the public transport omissions explicitly documented. The stored final truncation value is a leftward half-sweep maximum, as a separate source-semantics diagnostic explains. No gate or original result changed. This pilot grants zero catalogue credit; A18/A19/A20 remain NOT_RUN. Its publication retained the immutable 45-question checkpoint.
+
+
+## Prescribed orbital-antialignment trial functional
+
+J23 passes full ISAAC job 6466733: 112 native evaluator rows, 196 independent analytical/quadrature rows and all 3,542 frozen gates. The native returned fields, densities and pure occupations are qualified before comparing the physical kinetic-plus-interaction energy. Independent projectors, Wick contractions and an exact-Fraction moment enclosure reproduce the prescribed small-hybridization energetic mechanism in the journal appendix; the largest leading-coefficient error is 6.16e-9 against the fixed 1e-6 gate. This concerns prescribed density-two Slater trial states, with no self-consistency, gRISB, doped phase or exact-ground-state claim.
+
+The [46-question leaf](reporting/reports/j23_mean_field_v15/README.md) changes only J23; all 99 other row objects, all 45 earlier PASS rows and both unresolved histories remain exact. The [complete scientific packet and portable replay](j23_external_20261023/README.md) retain every scientific array, original source and independent auditor. The original full audit includes 646 source/metadata and 2,842 independent physical checks. Public replay executes the unchanged scientific fragments and verifies the actual pinned compute comparator replay, rather than claiming to repeat private transport checks. The 599-check excluded pilot and two saved-data replay jobs grant zero additional credit.
+
+## Preserved spectral-reference precision failure
+
+The [X14 failure and diagnostic packet](x14_failure_20261023/README.md) retains the original completed native rendering, failed independent reference and trace-only diagnosis. No comparison was produced. A separate exact-rational, saved-context analysis shows that the original derivative padding cannot certify the required bracket width within the retained failed bracket under its declared conditional arithmetic model. This is a bounded diagnostic, with no root-absence or complete-census claim. Original padding, gates and failure remain unchanged; X14 stays NOT_RUN and this pilot grants zero credit. Explicit scientific selections and derived traceback projections exclude private transport and workstation paths.
+
+The X14 replay manifest SHA256 is `1c928e25fa732e599ef41acc123ff8566612eecf7cb04d5f804429059bd9364b`; the metadata and conditional-analysis replay commands are in its README.
