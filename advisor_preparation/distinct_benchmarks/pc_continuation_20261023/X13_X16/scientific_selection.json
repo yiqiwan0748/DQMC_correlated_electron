@@ -1,0 +1,238 @@
+{
+  "schema": "X13_X16_PUBLIC_SCIENTIFIC_SELECTION_V2",
+  "original_full_raw_transfer_files": 139,
+  "original_restoration_metadata_files": 4,
+  "selected_original_scientific_files": 109,
+  "selected_original_accounting_files": 1,
+  "new_scientific_execution_projections": 3,
+  "public_archive_members": 113,
+  "original_full_data_archive_sha256": "4efd2c2ff42c0670c7eff124f040cfc0d36493fe4d4533f7ab0f27b650017e43",
+  "scientific_source_and_raw_bytes_changed": false,
+  "scientific_execution_metadata_is_derived": true,
+  "frozen_physical_or_statistical_gates_changed": false,
+  "original_mathematical_auditors_changed": false,
+  "excluded_files": [
+    {
+      "path": "retrieval_after.json",
+      "bytes": 44506,
+      "sha256": "bcbaebbcd431c10f4fc430cb02ea7b83eda787d08a9fbccc3af8348f3717d60b",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "retrieval_before.json",
+      "bytes": 103906,
+      "sha256": "c9a221443e00bfc13854bd678ea07e2b949b8a96f9623170e21f3ee09873ab6f",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "retrieval_request.json",
+      "bytes": 46391,
+      "sha256": "a435ede8eafb37f962000e68689b6b8e27d7dbc8850f59edb22382f107e47d02",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x13_6462017/results/execution.json",
+      "bytes": 7400,
+      "sha256": "cae4383d51f94bd37f160640dcda031bbf399487bb6951d43dcf47b869c44370",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x13_6462017/results/preflight.json",
+      "bytes": 2556,
+      "sha256": "798c2c37cf9beafd0205b300b6616ab8105d8ade0a64af081fb0612d6c5d4612",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/results/active_queue.txt",
+      "bytes": 66,
+      "sha256": "88974c26c8582c5aff0e3dd4218bc5a9cd9b4374247ddd991189b64f2e3da9e4",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/results/execution.json",
+      "bytes": 11840,
+      "sha256": "7bc1c44c52868da69eda9b8390df92697619470e679e040ddf9ff9c5d29534bc",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/results/preflight.json",
+      "bytes": 6685,
+      "sha256": "e5d1f3e3e6e43a0cd42289e61eb2fdefc9c63ad408e80ae5179137cbb20f11d2",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/results/previous_twelve_terminal.txt",
+      "bytes": 2325,
+      "sha256": "b2120df5e71aca5bcdb8a15064d0b28e136dbf840302498c7e411b8529065c6a",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/submissions/durable_before_sbatch.json",
+      "bytes": 4477,
+      "sha256": "9ccf2e94685b660f339b534ed57f84e885cfaca172b7ac3eb8c29a7373c96a90",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/submissions/intent.json",
+      "bytes": 6314,
+      "sha256": "d0cb51ad2fc8fca899643a66b227cb9b2947d298b578a5559eba1cc121efed3d",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/submissions/receipt.json",
+      "bytes": 2124,
+      "sha256": "fbba17c4c686f12a94ef1e9dbacaca3b04f790ce0f395b94368a37953773f433",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16pilot_6462342/submissions/sbatch_result.json",
+      "bytes": 1087,
+      "sha256": "6eab909ab1a685e1672019f052c515617a4b0f968d2c185d21cc88bd26f8a820",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/results/active_queue.txt",
+      "bytes": 71,
+      "sha256": "bc04c487e904f42f43ee5c6f456bc145b372b623fbccabc55ff603bb08f69e66",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/results/execution.json",
+      "bytes": 16853,
+      "sha256": "776eae214bc11934674463407fb60363990dd9d856cc1f2f496f04053c34e3e9",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/results/preflight.json",
+      "bytes": 11706,
+      "sha256": "7b5f1d041c0d9c65a716de8996fd8c6d0b3579e5a27bd4456d8463e3d46e6f88",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/results/previous_twelve_terminal.txt",
+      "bytes": 2325,
+      "sha256": "b2120df5e71aca5bcdb8a15064d0b28e136dbf840302498c7e411b8529065c6a",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/durable_before_sbatch.json",
+      "bytes": 5026,
+      "sha256": "37dbab6770b4e8f7064b37de07d9f9496073f77ab7b813447cfeec7f072ff663",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/intent.json",
+      "bytes": 3206659,
+      "sha256": "2ea8fe417b876ab1cce6528e7d527ee9d68bd0ad9e62773dbf2c539ec8e96881",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/pilot_auditor_peer_review.json",
+      "bytes": 2066,
+      "sha256": "458bf2d2b84689980acb80bf765f478148102484e6a211b587a06bd92b14cb27",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/pilot_auditor_source.py",
+      "bytes": 128651,
+      "sha256": "435b77332158a79172db1c6d7fc168ec3f290834ce915abb0d692e068baa731c",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/pilot_auditor_validation.json",
+      "bytes": 4932,
+      "sha256": "407e65596a67e3d508342bffe6db133760035567e5553707b9bef4eae0e4fdf1",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/pilot_independent_audit.json",
+      "bytes": 2820743,
+      "sha256": "685b1bec84ddd032493d1a3123f76a814f204dbb9a8edab3fe20e63a4be9965d",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/pilot_readiness.json",
+      "bytes": 4965,
+      "sha256": "4f4de8cd663f46561e7097ccb3ca4e917a71e03390c257bc4bd2a3478b361602",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/pilot_scheduler.txt",
+      "bytes": 405,
+      "sha256": "757d9b0efe86e7a2ca46d21a104312975ef30e0a9259c8a99e40f07e133bb321",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/pilot_transfer.json",
+      "bytes": 33176,
+      "sha256": "591d248a1bf894e8fe345c197ce2a074d3cd9df80e8f89c7663cdb1180f562e5",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/receipt.json",
+      "bytes": 2451,
+      "sha256": "cd772bcb4231c04a78a6dbecdfd92f5969d14f6a3fa21145c4b542c5f6fadbcb",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/recovery_before_sbatch.json",
+      "bytes": 5688,
+      "sha256": "c60a30de16b30d08b1a15c3c9b2d6d728459b9a33a220f4ea9d817cf88621096",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/sbatch_result.json",
+      "bytes": 1394,
+      "sha256": "01d9f3688d4d22656e324959f201fa95bfdf4aa28e5cd6fa0993ef9baa43c54f",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/x16_auditor_mechanical_amendment.json",
+      "bytes": 3770,
+      "sha256": "6d2309b70858dec219c752fae1ae2f1cbf7f25325f72bb947641d32ce4454d74",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/x16_production_controller_amendment.json",
+      "bytes": 4796,
+      "sha256": "4dbaed24b5997bbe6720291bec5598939de56b8ff1d223892eb02b646a8bbf11",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/x16_recovery_root.json",
+      "bytes": 7748,
+      "sha256": "66f153bce72af95fb6092986d178e00a0d8463ed4164f945baa2a70d352ded71",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    },
+    {
+      "path": "x16prod_6462471/submissions/x16_rejected_submission_closure.json",
+      "bytes": 5282,
+      "sha256": "6b9fe63f3c3e1df886d55de94aaeb1bad6e0c318720178ba147b44a19bd5cff4",
+      "reason": "PC controller, submission, unrelated queue/transport or admission body; scientific execution values are separately projected where needed."
+    }
+  ],
+  "execution_projections": [
+    {
+      "original": "x13_6462017/results/execution.json",
+      "public_projection": "x13_6462017/results/execution_scientific.json",
+      "original_sha256": "cae4383d51f94bd37f160640dcda031bbf399487bb6951d43dcf47b869c44370",
+      "public_projection_sha256": "217443d0d2ba397e51c130038af7d017ee2b65b6b327f0438eedf9b73f6fc480",
+      "consumed_values_unchanged": true
+    },
+    {
+      "original": "x16pilot_6462342/results/execution.json",
+      "public_projection": "x16pilot_6462342/results/execution_scientific.json",
+      "original_sha256": "7bc1c44c52868da69eda9b8390df92697619470e679e040ddf9ff9c5d29534bc",
+      "public_projection_sha256": "9ce88d09be739e5d5678eda3da28009424755836d2982838db7fa72b9bede582",
+      "consumed_values_unchanged": true
+    },
+    {
+      "original": "x16prod_6462471/results/execution.json",
+      "public_projection": "x16prod_6462471/results/execution_scientific.json",
+      "original_sha256": "776eae214bc11934674463407fb60363990dd9d856cc1f2f496f04053c34e3e9",
+      "public_projection_sha256": "4ef56cd209508c6237da64d126dca47dbd4fc2ebd8f3fed7030562682326ebb1",
+      "consumed_values_unchanged": true
+    }
+  ],
+  "policy": "All submissions subtrees, unrelated queue/previous-job bodies, transport retrieval snapshots and admission preflight/original execution bodies are omitted. The new execution_scientific.json files preserve unchanged scientific provenance/resource/process values and exactly the attempt_mode/start_unix/end_unix values consumed by the unchanged raw-math auditor. All original hashes remain provenance-only; originals stay private and unmodified."
+}

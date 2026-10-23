@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/ground_initial_v10/README.md)
-records **39 PASS, 1 UNRESOLVED and 60 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/pc_reconciliation_v12/README.md)
+records **42 PASS, 2 UNRESOLVED and 56 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche
@@ -98,7 +98,7 @@ TeNPy oracle and 191 seconds for the user-ITensor adapter, about 1.1 GiB peak RS
 These are finite-fixture results, with optimizer credit retained for the
 independent libraries. They do not certify all DMRG model/size regimes.
 
-The [latest immutable audit](reporting/reports/full32_public_replay_v7/README.md)
+The [earlier immutable 32-question audit](reporting/reports/full32_public_replay_v7/README.md)
 replays frozen comparators and preserves all source hashes and earlier reports.
 One cross-platform Fourier-error replay difference of 8.85e-18 is recorded as
 machine roundoff; scientific acceptance gates remain unchanged. The earlier
@@ -118,7 +118,7 @@ or rerun. Sampling job 6457947 completed in 548 seconds, about 824 MiB peak RSS.
 The [raw paired-bin data and frozen audit](results/distinct_X06_final01/) and
 [separate standard-library implementation](dqmc_coverage/audits/independent_stdlib_audit.py)
 reproduce all 400 trials, 3,200 chains and 204,800 paired bins. The
-[latest ledger](reporting/reports/full32_public_replay_v7/README.md) was rebuilt
+[earlier 32-question ledger](reporting/reports/full32_public_replay_v7/README.md) was rebuilt
 using analysis code checked out from the exact published commit, with all 53
 input hashes verified. This validates this energy-interval procedure for the
 specified fixture; it does not certify entropy intervals, other regimes or the
@@ -205,3 +205,12 @@ The [X01 pilot](continuum_bias/pilot_v1/README.md) measures timing and numerical
 eligibility only; it performs no production continuum fit or equivalence decision.
 
 A [portable handoff](PORTABLE_HANDOFF.md) and [machine-readable state](handoff_state.json) identify exact ledgers, frozen versions, raw receipts and replay entry points for another computer. L32 independent receipt audit passes; its finite-size pilot does not change the ledger. No automatic resume is authorized; a new explicit human instruction and fresh scheduler/resource reconciliation are required.
+
+
+## October 23 scientific reconciliation
+
+The [new immutable leaf](reporting/reports/pc_reconciliation_v12/README.md) reconciles the apartment-PC continuation against complete original raw files and frozen sources. Only X09, X13, X16, P21 and X01 change; all 95 unrelated row objects and 39 earlier PASS rows remain exact. X09 now passes the unchanged finite ground-certificate gates at sixteen sweeps. X13 passes its complete charged-threshold/visibility grid, and X16 passes all eight finite binding intervals under its declared conditional binary64 budget.
+
+P21's actual native ALF and maintained user buffers remain UNRESOLVED: two component mixing gates and 376 complex precision limits fail across 704 complex entries. X01 remains UNRESOLVED at its complete second reserved stage; quartic entropy halfwidth 0.0051318999469 misses 0.005. The final stage is incomplete and contributes no primary estimate. Pilots, repeated X12, analysis repairs, setup-only PySCF and cancelled attempts add no completions.
+
+[Portable source/data packets and replay commands](pc_continuation_20261023/README.md) preserve physical conventions, complete matrices/bins, all scientific failure history and explicit public selections. No private ZIP, controller policies, CV or contacts are required. The earlier October 22 stop remains fulfilled historical evidence; the user explicitly resumed work on October 23. Automatic follow-up remains paused.

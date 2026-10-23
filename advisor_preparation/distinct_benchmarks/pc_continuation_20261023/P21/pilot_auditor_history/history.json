@@ -1,0 +1,33 @@
+{
+  "schema": "p21_excluded_pilot_audit_history_v1",
+  "job_id": "6460727",
+  "receipts": [
+    {
+      "receipt": "independent_audit_v1.json",
+      "sha256": "d2cb3629f15840b9deabf06efb21bfe22d90e0be27455ee7d786c2380cf870e6",
+      "status": "UNRESOLVED",
+      "catalogue_status": "NOT_RUN",
+      "scientific_completions": 0,
+      "reason": "ValueError: Independent raw component 35.difference_over_descriptive_standard_error: beyond64-epsilon arithmetic allowance"
+    },
+    {
+      "receipt": "independent_audit_v2.json",
+      "sha256": "955a3d07444819d018fa4573c78204483d1a05567640340a6880a5eb2c0b3712",
+      "status": "UNRESOLVED",
+      "catalogue_status": "NOT_RUN",
+      "scientific_completions": 0,
+      "reason": "ValueError: Independent raw component 917.alf.chains[0].lag1_bin_ESS_estimate: beyond64-epsilon arithmetic allowance"
+    },
+    {
+      "receipt": "independent_audit_v3.json",
+      "sha256": "ecbac074c2828d30cd9ffb6bd442e4cc3a26381294915c4ac6ea86acb3ba2b31",
+      "status": "PASS",
+      "catalogue_status": "NOT_RUN",
+      "scientific_completions": 0,
+      "reason": null
+    }
+  ],
+  "science_resampled": false,
+  "pilot_pooled_into_production": false,
+  "note": "Original audit precision-conditioning rejections and repairs remain visible. The excluded pilot never earns catalogue credit; the final production has its own fixed independent seeds and source-frozen gates."
+}

@@ -70,10 +70,10 @@ questions. It is a broader research programme, with unsupported and unexecuted
 questions explicitly identified. The small initial 100-case batch provides
 partial coverage; it does not complete this 100-idea programme.
 
-The new [distinct-benchmark campaign](distinct_benchmarks/README.md) records 39 passing questions and one unresolved
-precision question on ISAAC. Its latest
-[independently audited ledger](distinct_benchmarks/reporting/reports/ground_initial_v10/README.md)
-records **39 PASS, 1 UNRESOLVED and 60 NOT_RUN**. These checks found a missing fermionic
+The new [distinct-benchmark campaign](distinct_benchmarks/README.md) records 42 passing questions and two unresolved
+precision/mixing questions on ISAAC. Its latest
+[independently audited ledger](distinct_benchmarks/reporting/reports/pc_reconciliation_v12/README.md)
+records **42 PASS, 2 UNRESOLVED and 56 NOT_RUN**. These checks found a missing fermionic
 regrouping sign in ED entropy for noncontiguous regions. The minimal production
 repair passed all seven original QuSpin questions and all 16 four-site subsets;
 only the ED entropy source file changed. The working package includes the
@@ -106,13 +106,13 @@ and thermal factorization of independent interacting orbitals. Source versions,
 normalizations, smoothing and all inequality gates remain explicit.
 
 
-## Ground-manifold comparison and unresolved precision
+## Ground-manifold comparison and original precision history
 
 [X12 passed](distinct_benchmarks/reporting/reports/ground_initial_v10/README.md)
 for the interacting canonical three-particle dimer: pure and coherent spin states,
 equal ground-manifold mixtures, basis-rotated mixtures and finite-temperature
 Gibbs states are compared against their own independent QuSpin references.
-X09 remains **UNRESOLVED** at its original frozen eight-sweep DMRG budget.
+X09 was **UNRESOLVED** at its original frozen eight-sweep DMRG budget.
 The new certification adapter used eight sweeps; the production entry point
 has a 14-sweep default. Full Hamiltonian and MPO matrices agree with independent
 QuSpin. This attempt shows insufficient optimization precision under the adapter
@@ -128,10 +128,19 @@ Its job 6458825 was cancelled before starting for the user deadline; it adds no 
 revision4 compiled and passed the pinned-library check, then stopped because
 its fresh proof directory lacked the required seed input. The [revision5 input
 repair](distinct_benchmarks/alf_preparation/measurement_preparation_v5/README.md)
-was cancelled before start as job 6458826; P21 remains NOT_RUN.
+was cancelled before start as job 6458826; P21 was NOT_RUN at that October 22 checkpoint.
 The [X01 timing pilot](distinct_benchmarks/continuum_bias/pilot_v1/README.md),
 cancelled before start as job 6458828, is excluded from future production fits and contributes zero
 scientific completions. Submission receipts preserve the serial dependency chain.
 
 
-The user requested a hard stop by 22 October 2026, 17:00 EDT (21:00 UTC), regardless of outcomes. Automatic follow-up is paused. The [stop receipt](distinct_benchmarks/submissions/user_stop_deadline_20261022.json) confirms all three queued stages were cancelled before starting. The L32 pilot completed at 16:22:48 EDT (21m56s, exit 0); its pilot quality PASS has been independently audited with 177 checks and adds no catalogue completion. [Final stop accounting](distinct_benchmarks/submissions/user_stop_final_state_20261022.json) confirms all campaign jobs are stopped before the deadline. A [portable public handoff](distinct_benchmarks/PORTABLE_HANDOFF.md) records source versions, raw receipts and replay commands. Resume scientific work only after a new explicit human instruction.
+The user requested a hard stop by 22 October 2026, 17:00 EDT (21:00 UTC), regardless of outcomes. Automatic follow-up is paused. The [stop receipt](distinct_benchmarks/submissions/user_stop_deadline_20261022.json) confirms all three queued stages were cancelled before starting. The L32 pilot completed at 16:22:48 EDT (21m56s, exit 0); its pilot quality PASS has been independently audited with 177 checks and adds no catalogue completion. [Final stop accounting](distinct_benchmarks/submissions/user_stop_final_state_20261022.json) confirms all campaign jobs are stopped before the deadline. A [portable public handoff](distinct_benchmarks/PORTABLE_HANDOFF.md) records source versions, raw receipts and replay commands. The user explicitly resumed work on October 23; the stop receipts remain unchanged historical evidence. Automatic follow-up remains paused.
+
+
+## Reconciled apartment-PC continuation
+
+The [October 23 scientific leaf](distinct_benchmarks/reporting/reports/pc_reconciliation_v12/README.md) adds three distinct passes while preserving all 39 earlier PASS rows and 95 unrelated objects. X09's frozen sixteen-sweep release passes the original ground-certificate gates; the eight-sweep failure remains intact. X13 passes complete finite charged thresholds and visibility; X16 passes all eight finite binding intervals under an explicitly conditional binary64 error budget. New charged/pair measurement adapters use the unchanged native Hamiltonian. No thermodynamic binding or whole-package certification follows.
+
+P21 remains UNRESOLVED across 704 complex native ALF/user Green entries: two individual-chain ESS gates and 376 precision limits fail. Its frozen production paired-chain/complex-disk protocol explicitly supersedes the older unexecuted sampling candidate. X01 remains UNRESOLVED because stage 2 quartic entropy halfwidth 0.0051318999469 exceeds 0.005. Its incomplete final reserved stage, cancelled parts and failed analyses remain visible; no pooling or fourth look is introduced. The [portable scientific packets](distinct_benchmarks/pc_continuation_20261023/README.md) include full selected text data, source and mathematical replay, with controller/private handoff material excluded.
+
+The pinned [PySCF environment setup](distinct_benchmarks/pyscf_setup_v1/README.md) completed as job 6465769. This is setup only and adds no scientific pass.

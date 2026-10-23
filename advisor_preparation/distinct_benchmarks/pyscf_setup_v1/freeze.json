@@ -1,0 +1,29 @@
+{
+  "schema": "pyscf_independent_environment_setup_v1",
+  "frozen_UTC": "2026-10-23T17:22:47.020279+00:00",
+  "phase": "SETUP_ONLY_ZERO_SCIENTIFIC_COMPLETIONS",
+  "files": {
+    "requirements.txt": "7ba1cb069cce39f2f32c20862b453b9c1cf3524ed8fef13214b31f696f0fa65f",
+    "setup.sbatch": "5501cafd057d1f29a2d96f0a9fb99eeb7acdb6077a99473d55d2ab75b505df1e",
+    "wheels_sha256.txt": "758a79db016eb19ce558ac854a4484fbedd5eb3dd8d2a49378a8e05be63b90ae"
+  },
+  "wheel_provider": "https://pypi.org/simple",
+  "versions": {
+    "pyscf": "2.14.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "h5py": "3.15.1"
+  },
+  "wheel_selection": "Python3.11 linuxx86_64; original binary wheels retained only on ISAAC; exact archive hashes recorded.",
+  "install_location": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/pyscf-venv",
+  "existing_reference_environments": "Unmodified; new dedicated environment only.",
+  "cpus": 1,
+  "memory_MB": 3500,
+  "wall_minutes": 10,
+  "estimated_minutes_after_start": [
+    1,
+    4
+  ],
+  "EDT_checkpoint": "2026-10-23 13:40",
+  "no_model_or_scientific_acceptance_run": true
+}

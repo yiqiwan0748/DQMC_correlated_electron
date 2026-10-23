@@ -1,0 +1,9 @@
+# X01: fixed-look continuum-bias comparison
+
+The selected result remains **UNRESOLVED**. Stage 2's quartic Rényi-entropy continuum interval lies within the original ±0.01 equivalence margin, but its halfwidth 0.0051318999469 exceeds the fixed 0.005 precision limit. Source, mixing, fit and other equivalence gates pass; this does not establish the entire question. The approximate Student/CLT tail calibration remains conditional on independent, approximately normal bundle contrasts.
+
+The complete earlier stage 1, cancelled mechanical attempt, original failed stage 2 analysis and its analysis-only repair remain available. Stage 3 is the incomplete final reserved look: one part completed, a second native process exited 137, and the remaining parts were cancelled. The frozen merge rejects its incomplete grid. Stage 3 adds no primary estimate or comparison. No pooling, fourth look, replacement sampling or threshold change is applied.
+
+`data.tar.gz` contains all 720 selected scientific raw files and 100 original source/receipt files. `selection_manifest.json` explicitly excludes 390 controller, transport or duplicate files, while retaining genuine `parts.json` merge registries. The original full closure audit is preserved by its SHA256; original inputs were never rewritten. All frozen source, retained/burn bins, oracles, failed comparisons, source/archive pins, scheduler outcomes and mathematical failure histories needed for these scientific decisions are included.
+
+With Python 3.12, NumPy 2.4.6 and SciPy 1.17.1, run `python -B replay.py --output-dir /tmp/new-x01-analysis`. The safe extractor checks every archive member before the unchanged independent mathematical auditor and frozen comparators replay stage 1 and stage 2. The public adapter reports 4,857 checks, including 1,657 mathematical checks per complete stage. All statistical gates and the incomplete-stage rejection remain intact; no solver, Monte Carlo or scheduler runs.
