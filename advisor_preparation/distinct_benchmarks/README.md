@@ -17,6 +17,13 @@ The [latest audited 100-row ledger](reporting/reports/weekend_reconciliation_v17
 records **49 PASS, 2 UNRESOLVED and 49 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
+The [26 October runtime prerequisite record](runtime_validation_20261026/README.md)
+retains the rejected empty-mapping native PASS, both later Python preflight
+successes, the unresolved native check and the independently audited full-width
+inode diagnostic. The replacement native check is staged and NOT_RUN at its
+recorded resource checkpoint. These checks add zero scientific credit; the
+100-row ledger and all prior scientific evidence remain unchanged.
+
 ## First tranche
 
 The frozen first release contains 25 questions: A01–A14, A22, A23, P01–P06,
