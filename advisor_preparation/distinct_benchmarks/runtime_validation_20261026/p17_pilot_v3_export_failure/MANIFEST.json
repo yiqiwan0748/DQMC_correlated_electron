@@ -1,0 +1,15 @@
+{
+  "schema": "P17_PILOT_V3_EXPORT_FAILURE_PUBLIC_PACKET_V1",
+  "scientific_completions_added": 0,
+  "files": {
+    "README.md": {
+      "sha256": "89633ff61ea0b90486e097e02152b4162edbac9d57919ceab45b83644aaaa8ee",
+      "bytes": 2570
+    },
+    "result.json": {
+      "sha256": "37d41fc8457b6c7710319fc62c2e780940397bb42344a03d96bc161041c7d9d6",
+      "bytes": 3879
+    }
+  },
+  "ledger_sha256_unchanged": "3f5c83a7566aa754dea836b7501de14f157acff25e9945b620c23e03013ee304"
+}

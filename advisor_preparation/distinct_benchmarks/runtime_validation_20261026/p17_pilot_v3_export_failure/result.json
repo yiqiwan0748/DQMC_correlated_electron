@@ -1,0 +1,99 @@
+{
+  "schema": "P17_EXCLUDED_PILOT_V3_EXPORT_FAILURE_PUBLIC_V1",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "attempt_status": "UNRESOLVED_EXPORT_FAILURE",
+  "scheduler_terminal_state": "FAILED",
+  "scheduler_exit_code": "2:0",
+  "scientific_credit": 0,
+  "pilot_only": true,
+  "scientific_comparison_verdict": "NOT_RUN",
+  "model": {
+    "sites": 6,
+    "particles": 6,
+    "hopping_t": 1.0,
+    "onsite_U": 4.0,
+    "boundaries": "open",
+    "temperature": "ground_state",
+    "field_term": "-h*Sz at the first site; Sz=(Nup-Ndn)/2",
+    "pilot_fields": [
+      0.0,
+      -0.01,
+      0.01
+    ],
+    "starts": [
+      "Neel",
+      "doublon_hole_pattern"
+    ],
+    "arm": "refined64"
+  },
+  "roles": {
+    "native": {
+      "execution_status": "COMPLETE",
+      "producer_status": "PRODUCER_COMPLETE_NOT_A_SCIENTIFIC_PASS",
+      "completed_samples": 6,
+      "returncode": 0,
+      "elapsed_seconds": 263.1501754075289,
+      "scientific_comparison_pass": false
+    },
+    "tenpy": {
+      "execution_status": "FAILED",
+      "returncode": 1,
+      "elapsed_seconds": 155.2780849058181,
+      "failure_stage": "final strict JSON serialization before output write",
+      "strict_json_allow_nan": false,
+      "error": "ValueError: Out of range float values are not JSON compliant: nan",
+      "final_json_persisted": false,
+      "completed_sample_count": "NOT_ESTABLISHED",
+      "actual_nonfinite_leaf": "NOT_ESTABLISHED_REPORT_NOT_PERSISTED"
+    },
+    "quspin": {
+      "execution_status": "NOT_RUN"
+    },
+    "comparison": {
+      "execution_status": "NOT_RUN"
+    }
+  },
+  "final_elapsed_seconds": 583.1100067906082,
+  "source_derived_hypothesis": {
+    "reference_package": "TeNPy",
+    "reference_version": "1.1.1",
+    "reference_source": "tenpy/algorithms/dmrg.py",
+    "reference_source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32",
+    "behavior": "The first sweep initializes E_old to NaN and subsequently appends (E-E_old)/N_sweeps_check to Delta_E.",
+    "first_Delta_E_undefined_by_source": true,
+    "hypothesis": "Exporting the first Delta_E diagnostic NaN can trigger strict JSON rejection.",
+    "actual_lost_report_leaf_recovered": false,
+    "claim_limit": "The traceback and reference source do not establish the exact failing leaf in the lost in-memory report."
+  },
+  "preservation": {
+    "original_attempt_unchanged": true,
+    "physical_gates_unchanged": true,
+    "no_retry_or_replacement_claimed": true,
+    "producer_completion_does_not_establish_scientific_agreement": true,
+    "terminal_archive_sha256": "776ed5b7a86b8b37295ef1c0705cfee20cc512a436f4c34188b9198dbcfc6448",
+    "execution_receipt_sha256": "1901778261d5f995c5e5a28f5e300e6afb9eead37b53f2693c21ba455d5696c0",
+    "native_output_sha256": "869e6a70a5ef9c27b267d023eba60302b570136d72f1cb78874e8b2b92154b69",
+    "source_freeze_sha256": "ca69b2a318ae2169b29de404463e0e41809794bab4fb4991e6068104f7eba50a"
+  },
+  "campaign_counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  },
+  "ledger_sha256": "3f5c83a7566aa754dea836b7501de14f157acff25e9945b620c23e03013ee304",
+  "scope_limits": [
+    "An excluded pilot is not a new distinct benchmark completion.",
+    "A scheduler or export failure does not establish a physical discrepancy.",
+    "The full seven-field P17 comparison remains NOT_RUN.",
+    "This public projection omits private operational and runtime records."
+  ],
+  "independent_failure_boundary_audit": {
+    "sha256": "393cfd930e856d798ce512e26de43d601c76fdf4e9c913313f267ae106246d09",
+    "checks": 210,
+    "status": "PASS",
+    "scope": "Metadata, source hashes, receipt hashes and failure boundaries only; zero scientific credit. Runtime PASS is preserved as reported and hash-bound, not a fresh full provider re-audit.",
+    "final_full_source_postcheck_claimed": false
+  }
+}
