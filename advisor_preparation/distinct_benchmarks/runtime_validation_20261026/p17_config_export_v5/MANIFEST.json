@@ -1,0 +1,28 @@
+{
+  "schema": "P17_V5_PUBLIC_SELECTION_MANIFEST_V2",
+  "scientific_credit": 0,
+  "files": {
+    "README.md": {
+      "bytes": 5095,
+      "sha256": "d97530b1dea5bf962c2ee63dba2d1bfa86e37aad5af522367a62fcc50a64df0a"
+    },
+    "attempt_v5_result.json": {
+      "bytes": 2258,
+      "sha256": "3b75c235f6b670dbae5b681b59462f9fb68d7496acb7e046631ffd7c19c99b5d"
+    },
+    "metadata_fixture_receipt.json": {
+      "bytes": 4535,
+      "sha256": "e95f83f2401437bc445c47deb19a7beda70e47d0328864fb0c0668d5b6c6151d"
+    },
+    "strict_export.py": {
+      "bytes": 9266,
+      "sha256": "8ba5e1c1c553cd80036fccdc8193472c2d00cdfdcab017516acfe2e5d79e0e7b"
+    },
+    "strict_export_fixtures.py": {
+      "bytes": 11644,
+      "sha256": "7791b5d2c4f33c1b0485ff5d8e9028a68bd7df7a9e95b510d50f9a76ffd90524"
+    }
+  },
+  "independent_source_review_sha256": "13728d6e51f9ce7dfe879ea7d0bd3b67688ea67123c1a36062a64b8bdf56232a",
+  "independent_terminal_audit_sha256": "2de1e03b3a9e7584c4e7d499cff70f8d8a400e46457b139dd4e958297a09e8f9"
+}

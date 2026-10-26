@@ -1,0 +1,56 @@
+{
+  "schema": "P17_V5_EXCLUDED_PILOT_EXPORT_DIAGNOSTIC_PUBLIC_V1",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "status": "UNRESOLVED_EXPORT_CHECKER_TYPE_RESTRICTION",
+  "scheduler_state": "FAILED",
+  "scheduler_exit_code": "2:0",
+  "final_elapsed_seconds": 511.6654367521405,
+  "native": {
+    "producer_status": "COMPLETE_NOT_COMPARISON_PASS",
+    "samples": 6,
+    "elapsed_seconds": 221.52580606937408
+  },
+  "tenpy": {
+    "status": "UNRESOLVED",
+    "elapsed_seconds": 102.27570409327745,
+    "persisted_final_report": true,
+    "persisted_completed_samples": 0,
+    "diagnostic_path": [
+      "lanczos_params",
+      "cutoff"
+    ],
+    "type_module": "numpy",
+    "type_name": "float64",
+    "reason": "UNREGISTERED_TYPE",
+    "actual_scalar_value_or_raw_bits_observed": false
+  },
+  "quspin": "NOT_RUN",
+  "comparison": "NOT_RUN",
+  "source_cause": {
+    "package": "TeNPy",
+    "version": "1.1.1",
+    "source": "tenpy/linalg/krylov_based.py",
+    "source_sha256": "7319bb6c940bd49c36ee7614cacfe9e8f41ca900dfef988e03911eb1454b1158",
+    "claim_limit": "Observed path and NumPy type match the pinned default-setting source; the lost scalar value itself was not recovered.",
+    "source_defined_default_behavior": "Config.get inserts a cutoff default equal to100times the machine epsilon of the actual working-vector dtype."
+  },
+  "source_members_verified": 62,
+  "result_files_verified": 41,
+  "freeze_sha256": "aa0038d36f953dba15089716f9097a8f9e0601c939c584a8fbe4c4ec7764d353",
+  "execution_sha256": "47bf3ce1371242a271d1605d3848c03166f4423cca7b583aa51a7b983fb05477",
+  "terminal_archive_sha256": "7ab99c7defe9df49141cb753d78d5bf72130bda1cea82454d3c732e99647fc1d",
+  "independent_saved_receipt_audit": {
+    "checks": 363,
+    "sha256": "2de1e03b3a9e7584c4e7d499cff70f8d8a400e46457b139dd4e958297a09e8f9",
+    "scope": "Metadata/source/runtime status as reported/failure/resource boundaries only"
+  },
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  },
+  "scope_limit": "This failure is in the new benchmark export checker; it establishes no numerical package discrepancy or physical agreement. All original attempts and acceptance gates remain unchanged."
+}
