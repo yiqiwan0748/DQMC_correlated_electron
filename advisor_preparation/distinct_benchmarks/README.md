@@ -13,8 +13,8 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/a25_free_ring_flux_v16/README.md)
-records **47 PASS, 2 UNRESOLVED and 51 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/weekend_reconciliation_v17/README.md)
+records **49 PASS, 2 UNRESOLVED and 49 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
 
 ## First tranche

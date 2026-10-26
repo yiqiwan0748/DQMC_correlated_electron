@@ -1,0 +1,25 @@
+{
+  "completed_utc": "2026-10-26T03:06:59.291990+00:00",
+  "elapsed_seconds": 85.87974807799992,
+  "original_pinned_runtime_replay": false,
+  "packet_manifest_sha256": "8eeeda012f70e253cd4947e48363a3cace10e1238045e60ba194fe4a8ea06012",
+  "physical_gates_changed": false,
+  "python": "3.12.3",
+  "reviews": [
+    {
+      "all_retained_decoded_scientific_review_fields_equal": true,
+      "check_count": 18571,
+      "explicitly_omitted_private_runtime_metadata_checks": [],
+      "original_review_report_sha256": "cae8ff79874a2a4a4543e9b3b6b3e0c9192f7864af4ef7cfb52b6465221da93b",
+      "original_script_sha256": "a7264e2fc12a3af3d66d9251ce5fc70b9854450fa333eb95297b144e4e1e69e1",
+      "output_sha256": "c7cbb49fbeca0fa18503d10e4430de945902c541cf01cd7023ef4aecb7aff328",
+      "role": "x14",
+      "status": "PASS"
+    }
+  ],
+  "role": "x14",
+  "schema": "WEEKEND_PUBLIC_SAVED_MATH_ADAPTER_V1",
+  "scientific_completions": 0,
+  "status": "PASS",
+  "verified_regular_UTF8_members": 164
+}
