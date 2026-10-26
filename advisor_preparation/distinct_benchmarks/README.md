@@ -23,6 +23,9 @@ successes, the unresolved native check and the independently audited full-width
 inode diagnostic. The replacement native check is staged and NOT_RUN at its
 recorded resource checkpoint. These checks add zero scientific credit; the
 100-row ledger and all prior scientific evidence remain unchanged.
+The [later native preflight attempt](runtime_validation_20261026/native_preflight_v3_timeout/README.md)
+reached its 180-second limit before producing a native report and remains
+UNRESOLVED, with zero scientific credit.
 
 ## First tranche
 
