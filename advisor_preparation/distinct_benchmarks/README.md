@@ -26,6 +26,10 @@ recorded resource checkpoint. These checks add zero scientific credit; the
 The [later native preflight attempt](runtime_validation_20261026/native_preflight_v3_timeout/README.md)
 reached its 180-second limit before producing a native report and remains
 UNRESOLVED, with zero scientific credit.
+The [subsequent instrumented native check](runtime_validation_20261026/native_preflight_v4_qualified/README.md)
+passed its complete runtime qualifications, with the actual full-width helper
+and eight metadata regression tests included. This qualifies those runtime
+processes; an excluded physics pilot and the full P17 question remain separate.
 
 ## First tranche
 
