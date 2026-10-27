@@ -1,0 +1,215 @@
+{
+  "schema": "P17_SAVED_COMPARISON_V2_OBSERVED_PARTIAL_EVIDENCE_PUBLIC_V1",
+  "status": "PARTIAL_NOT_COMPLETED_COMPARISON",
+  "scientific_credit": 0,
+  "reported_gate_counts": {
+    "PASS": 829,
+    "FAIL": 0
+  },
+  "reported_gate_prefix_counts": {
+    "QuSpin": 277,
+    "h0": 6,
+    "native": 513,
+    "tenpy": 33
+  },
+  "completed_state_count": 6,
+  "completed_states_by_backend": {
+    "native": 6,
+    "tenpy": 0
+  },
+  "completed_state_identities": [
+    {
+      "backend": "native",
+      "h": 0.0,
+      "start": "Neel"
+    },
+    {
+      "backend": "native",
+      "h": 0.0,
+      "start": "doublon_hole_pattern"
+    },
+    {
+      "backend": "native",
+      "h": -0.01,
+      "start": "Neel"
+    },
+    {
+      "backend": "native",
+      "h": -0.01,
+      "start": "doublon_hole_pattern"
+    },
+    {
+      "backend": "native",
+      "h": 0.01,
+      "start": "Neel"
+    },
+    {
+      "backend": "native",
+      "h": 0.01,
+      "start": "doublon_hole_pattern"
+    }
+  ],
+  "persisted_reference_fields": 3,
+  "persisted_reference_sector_certificates": 21,
+  "persisted_spectral_response_sites": 6,
+  "actual_arithmetic_metadata_and_calls": "NOT_PERSISTED_NO_COUNT_INFERRED",
+  "planned_total_coverage_not_assumed": true,
+  "last_persisted_gate_names": [
+    {
+      "name": "tenpy:h0.0:Neel:site5:local state (0, 0)",
+      "status": "PASS"
+    },
+    {
+      "name": "tenpy:h0.0:Neel:site5:local state (1, 0)",
+      "status": "PASS"
+    },
+    {
+      "name": "tenpy:h0.0:Neel:site5:local state (0, 1)",
+      "status": "PASS"
+    },
+    {
+      "name": "tenpy:h0.0:Neel:site5:local state (1, 1)",
+      "status": "PASS"
+    },
+    {
+      "name": "tenpy:h0.0:Neel:site5:complete exact local CAR/number/spin",
+      "status": "PASS"
+    },
+    {
+      "name": "tenpy:3ffda3ada35d315da8f1a6c9be69d992336ae4629de951c6e9665dcc1e4a2ffc:sector0:actual MPO field Hamiltonian",
+      "status": "PASS"
+    },
+    {
+      "name": "tenpy:3ffda3ada35d315da8f1a6c9be69d992336ae4629de951c6e9665dcc1e4a2ffc:sector1:actual MPO field Hamiltonian",
+      "status": "PASS"
+    },
+    {
+      "name": "tenpy:3ffda3ada35d315da8f1a6c9be69d992336ae4629de951c6e9665dcc1e4a2ffc:sector2:actual MPO field Hamiltonian",
+      "status": "PASS"
+    }
+  ],
+  "before_after_runtime_census": [
+    {
+      "stage": "before",
+      "reported_status": "PASS",
+      "report_sha256": "8ed90cb701dc6824f99192477057b8923de92be3c6cece3f24cc0f3424027d49",
+      "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+      "mapped_segments": 173,
+      "loaded_modules": 189,
+      "mapped_unique_files": 33
+    },
+    {
+      "stage": "after",
+      "reported_status": "PASS",
+      "report_sha256": "26ada0b90ffaa864797aed8c9f75c10f11fab7d687c11a232cbaa9e4259142b9",
+      "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+      "mapped_segments": 173,
+      "loaded_modules": 189,
+      "mapped_unique_files": 33
+    }
+  ],
+  "actual_KeyboardInterrupt_text_observed": true,
+  "stderr_sha256": "91d27d0b956fda4e6b8b499c73f1b0004110329b07212bd7ed2ecbb42f34f959",
+  "sanitized_traceback_frames": [
+    {
+      "file": "compare.py",
+      "function": "<module>",
+      "line": 518,
+      "source_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    {
+      "file": "compare.py",
+      "function": "main",
+      "line": 501,
+      "source_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    {
+      "file": "compare.py",
+      "function": "run",
+      "line": 439,
+      "source_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    {
+      "file": "compare.py",
+      "function": "state",
+      "line": 317,
+      "source_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    {
+      "file": "compare.py",
+      "function": "qualify_operators",
+      "line": 181,
+      "source_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    {
+      "file": "compare.py",
+      "function": "contracted",
+      "line": 165,
+      "source_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    {
+      "file": "compare.py",
+      "function": "contract_mpo",
+      "line": 149,
+      "source_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    {
+      "file": "certificate.py",
+      "function": "__mul__",
+      "line": 247,
+      "source_sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    {
+      "file": "certificate.py",
+      "function": "__mul__",
+      "line": 165,
+      "source_sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    {
+      "file": "certificate.py",
+      "function": "positive_product",
+      "line": 81,
+      "source_sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    {
+      "file": "fromnumeric.py",
+      "function": "any",
+      "line": 2539,
+      "source_sha256": "6055d8e195cf7aaae417d23bda203cd35014e3db3d7c28a32e7eb71e858e945f"
+    },
+    {
+      "file": "fromnumeric.py",
+      "function": "_wrapreduction_any_all",
+      "line": 99,
+      "source_sha256": "6055d8e195cf7aaae417d23bda203cd35014e3db3d7c28a32e7eb71e858e945f"
+    }
+  ],
+  "traceback_scope": "Frames identify where Python reported interrupt delivery. They do not establish exclusive runtime cost or completion of an unpersisted numerical phase.",
+  "source_bound_mathematical_call_ceiling": 5000000,
+  "actual_calls_not_inferred": true,
+  "no_producer_reruns": true,
+  "upstream_inputs": {
+    "native": {
+      "sha256": "a4cd680cd837480eb7ced99b2bf907a31c044a2a6dca39b45097bab007fc1867",
+      "bytes": 2764179
+    },
+    "tenpy": {
+      "sha256": "0ecc11c51ee198241b2b9370fd42c5a77274ee46007857a6a74537431d00f175",
+      "bytes": 5790909
+    },
+    "quspin": {
+      "sha256": "28fbf8152ef77dea826935f14da3d31f2df561ba8dcc92bd2b0e086f281b5e0b",
+      "bytes": 78118142
+    }
+  },
+  "frozen_original_comparator_sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4",
+  "conditional_certificate_not_interval_arithmetic": true,
+  "no_full_physical_comparison_verdict": true,
+  "postterminal_identities_verified": {
+    "diagnostic_source_files": 7,
+    "upstream_source_files": 70,
+    "original_producer_files": 3,
+    "preserved_upstream_records": 52,
+    "both_new_approvals": true
+  }
+}
