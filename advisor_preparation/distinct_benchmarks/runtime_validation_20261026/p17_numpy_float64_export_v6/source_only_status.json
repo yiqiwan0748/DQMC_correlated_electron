@@ -1,0 +1,31 @@
+{
+  "schema": "P17_V6_PUBLIC_SOURCE_ONLY_STATUS_V1",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "execution_status": "NOT_SUBMITTED_CAPACITY_HOLD_WINDOW_EXPIRED",
+  "scientific_credit": 0,
+  "actual_NumPy_scalar_qualification": "NOT_RUN_IN_THIS_ATTEMPT",
+  "physical_comparison": "NOT_RUN",
+  "preceding_v5_observation": {
+    "scope": "NEW_EXPORT_CHECKER_RESTRICTION_WITHOUT_NUMERICAL_PACKAGE_VERDICT",
+    "effective_parameter_path": ["lanczos_params", "cutoff"],
+    "type_module": "numpy",
+    "type_name": "float64",
+    "reason": "UNREGISTERED_TYPE",
+    "completed_TeNPy_samples": 0,
+    "actual_scalar_value": "NOT_OBSERVED",
+    "actual_scalar_dtype_bytes": "NOT_OBSERVED",
+    "actual_first_Delta_E_NaN_tag_bits": "NOT_OBSERVED"
+  },
+  "source_review": {
+    "sha256": "0fecfd9c330cb87a542fcb4f98ec35e0e138c41e0aef1a867438769d29d73f10",
+    "source_checks": 391,
+    "independently_rerun_metadata_checks": 145,
+    "scope": "SOURCE_ONLY_AND_STANDARD_LIBRARY_STAND_IN_METADATA_FIXTURES"
+  },
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  }
+}
