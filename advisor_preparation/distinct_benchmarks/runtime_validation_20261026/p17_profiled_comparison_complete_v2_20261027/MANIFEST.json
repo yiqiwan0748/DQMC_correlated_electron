@@ -1,0 +1,21 @@
+{
+  "schema": "P17_COMPLETE_COMPONENT_PROFILE_PUBLIC_PACKET_MANIFEST_V2",
+  "files": {
+    "README.md": {
+      "bytes": 4237,
+      "sha256": "1dbab06b752679ddc3d8c238255c0cbc1964e1d9a4a34ddfdd384f581edb9c31"
+    },
+    "attempt_result.json": {
+      "bytes": 3539,
+      "sha256": "6393b17b179685c3eaac265c8113133e566508c2dbc9bc161837bb0a2ee97570"
+    },
+    "observed_profile.json": {
+      "bytes": 5557,
+      "sha256": "dc7f48c363d0f84a90a46c7435312750559dc4a41fe62bc3df6f7fb0b1217f7a"
+    }
+  },
+  "scientific_credit": 0,
+  "classification": "COMPLETE_SAVED_COMPONENT_PENDING_FULL_RECONCILIATION",
+  "counts_unchanged": true,
+  "private_runtime_paths_maps_commands_and_execution_control_records_excluded": true
+}
