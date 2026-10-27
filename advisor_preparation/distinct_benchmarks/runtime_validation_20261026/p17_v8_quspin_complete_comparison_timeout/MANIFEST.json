@@ -1,0 +1,24 @@
+{
+  "schema": "P17_V8_PUBLIC_COMPLETE_PRODUCER_TIMEOUT_SELECTION_MANIFEST_V1",
+  "scientific_credit": 0,
+  "status": "UNRESOLVED_ATTEMPTED_COMPARISON_TIMEOUT_NO_PERSISTED_GATES",
+  "files": {
+    "README.md": {
+      "bytes": 3976,
+      "sha256": "971e105bed2d3eb701491889b6214e9f6109d95e61c090e2846330bbb9c80d66"
+    },
+    "actual_producer_evidence.json": {
+      "bytes": 16760,
+      "sha256": "9f197ece6ff99ba8e8ee9a0934ada7d6e4da1a5fe943b3208c7130d935a794ff"
+    },
+    "attempt_v8_result.json": {
+      "bytes": 3293,
+      "sha256": "4b1eb1515141fbd863ed4f67c233a7f3e3af6b37c537fdf9791b23d9a29dc7ed"
+    }
+  },
+  "independent_saved_receipts_audit_sha256": "3b3c656e7a30fc1ee5f6abfa3e35c81b0151f9362f2b8f75877052641688db33",
+  "source_freeze_sha256": "da9af9ad26b0692149e77ddea5088b2b3856a0de8b78da2777fd5cd17b2741f0",
+  "execution_sha256": "21200bad41cf7512a9530d4a06cf41730b28a3e6bff1028b37d774ee19750199",
+  "terminal_archive_sha256": "afdf1bd2efcc8955bbdaa1a046fd469a1d40c162538df312872d12f0716c75e4",
+  "earlier_V7_failed_Q90_and_unexecuted_V6_records_unchanged": true
+}
