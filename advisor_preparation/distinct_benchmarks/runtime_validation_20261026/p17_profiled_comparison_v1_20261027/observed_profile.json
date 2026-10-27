@@ -1,0 +1,133 @@
+{
+  "schema": "P17_OBSERVED_PARTIAL_PROFILE_PUBLIC_V1",
+  "status": "OBSERVED_PARTIAL_TIMEOUT_NOT_COMPLETE_COMPARISON",
+  "recorded_events": 1098,
+  "actual_Arithmetic_function_calls": {
+    "multiply": 132470,
+    "add": 67373,
+    "matmul": 390,
+    "divide": 77,
+    "sum": 56356
+  },
+  "actual_Arithmetic_total_function_calls": 256666,
+  "calls_are_not_hardware_FLOPs": true,
+  "original_logical_call_ceiling": 5000000,
+  "completed_MPO_contraction_scopes": {
+    "count": 35,
+    "wall_seconds": 203.5786325801164,
+    "self_cpu_seconds": 202.29053591000002,
+    "actual_bump_calls": 249480
+  },
+  "selected_completed_INCLUSIVE_scopes": {
+    "runtime_inventory_bulk_hash": {
+      "completed_intervals": 1,
+      "wall_seconds": 69.23807469382882,
+      "self_cpu_seconds": 4.536049352999999,
+      "actual_bump_calls": 0
+    },
+    "numpy_import": {
+      "completed_intervals": 1,
+      "wall_seconds": 2.2433666363358498,
+      "self_cpu_seconds": 0.11567094900000008,
+      "actual_bump_calls": 0
+    },
+    "runtime_provider_qualification": {
+      "completed_intervals": 1,
+      "wall_seconds": 1.6755710393190384,
+      "self_cpu_seconds": 1.6382028409999991,
+      "actual_bump_calls": 0
+    },
+    "input_parse": {
+      "completed_intervals": 1,
+      "wall_seconds": 1.4628449492156506,
+      "self_cpu_seconds": 1.4552011119999992,
+      "actual_bump_calls": 0
+    },
+    "all_reference_work": {
+      "completed_intervals": 1,
+      "wall_seconds": 11.779702700674534,
+      "self_cpu_seconds": 11.693179571000003,
+      "actual_bump_calls": 630
+    },
+    "state_reconstruct_mps": {
+      "completed_intervals": 4,
+      "wall_seconds": 112.43543647229671,
+      "self_cpu_seconds": 111.688003253,
+      "actual_bump_calls": 476
+    },
+    "mps_extended_contraction": {
+      "completed_intervals": 4,
+      "wall_seconds": 56.03288008272648,
+      "self_cpu_seconds": 55.65763135999998,
+      "actual_bump_calls": 200
+    },
+    "mps_binary64_export_budget_contraction": {
+      "completed_intervals": 4,
+      "wall_seconds": 56.19676713831723,
+      "self_cpu_seconds": 55.82963993300004,
+      "actual_bump_calls": 200
+    },
+    "runtime_after_qualification": {
+      "completed_intervals": 1,
+      "wall_seconds": 2.4319703821092844,
+      "self_cpu_seconds": 1.6736004640000033,
+      "actual_bump_calls": 0
+    }
+  },
+  "nesting_warning": "Both MPS contraction rows are included in state_reconstruct_mps. These scopes must not be added to their parent. Selected intervals do not exhaust total time.",
+  "interrupted_scope": {
+    "name": "extended_MPS_contraction",
+    "backend": "native",
+    "field_h": 0.01,
+    "start": "Neel",
+    "elapsed_wall_seconds_since_start_marker": 9.623167430981994,
+    "elapsed_self_CPU_seconds_since_start_marker": 9.536735265999994,
+    "actual_Arithmetic_calls_since_start_marker": 26,
+    "MPO_contraction_open": false,
+    "operator_sector_dimension_row_context_cleared": true
+  },
+  "partial_coverage": {
+    "recorded_gates": {
+      "reference_PASS": 277,
+      "spectral_response_PASS": 6,
+      "native_PASS": 407,
+      "tenpy_PASS": 0,
+      "FAIL": 0
+    },
+    "native_completed_states": [
+      {
+        "h": 0.0,
+        "start": "Neel"
+      },
+      {
+        "h": 0.0,
+        "start": "doublon_hole_pattern"
+      },
+      {
+        "h": -0.01,
+        "start": "Neel"
+      },
+      {
+        "h": -0.01,
+        "start": "doublon_hole_pattern"
+      }
+    ],
+    "tenpy_completed_states": 0,
+    "reference_sector_certificates": 21,
+    "h0_spectral_responses": 6,
+    "pending_original_cross_state_gates": {
+      "profile_pairs": 108,
+      "linear_windows": 24,
+      "response_pairs": 36
+    }
+  },
+  "measurement_limits": [
+    "These timings describe verification of saved solver outputs, not solver production speed.",
+    "Wall and self-CPU times measure inclusive annotated scopes and include instrumentation overhead.",
+    "No matched baseline, isolated low-level hotspot, instrumentation-overhead estimate or speedup experiment was performed.",
+    "The bulk-hash wall/CPU difference does not identify an exclusive waiting or filesystem cause.",
+    "A partial profile and zero reported numerical failures do not establish complete agreement or a completed catalogue idea.",
+    "Actual counters and interruption context were preserved; source/runtime/private commands and paths are omitted."
+  ],
+  "scientific_credit": 0
+}
