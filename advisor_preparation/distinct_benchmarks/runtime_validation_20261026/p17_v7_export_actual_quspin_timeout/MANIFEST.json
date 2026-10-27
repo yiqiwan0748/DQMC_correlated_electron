@@ -1,0 +1,24 @@
+{
+  "schema": "P17_V7_PUBLIC_ACTUAL_EXPORT_TIMEOUT_SELECTION_MANIFEST_V1",
+  "scientific_credit": 0,
+  "status": "UNRESOLVED_NO_PHYSICAL_COMPARISON",
+  "files": {
+    "README.md": {
+      "bytes": 3792,
+      "sha256": "a90e01481dcb7a01461126bd9ab3a5380ecbb543ddb977ccd411536d9087e222"
+    },
+    "actual_export_evidence.json": {
+      "bytes": 12680,
+      "sha256": "bc965dbe48c89499b8ebb9b657c10c208a36a43f4e6a3e97744127b53f38e90e"
+    },
+    "attempt_v7_result.json": {
+      "bytes": 2814,
+      "sha256": "da329f16c50817c0013e154480fe1be0055452804856c32942619e5adefcae28"
+    }
+  },
+  "independent_saved_receipts_audit_sha256": "b340a2c8233d8a1475d912943c14a8eca89ea66fa61b7b17c451d271006cb132",
+  "source_freeze_sha256": "93febb72683a99e47ac008526385c7a6958411bb60136ef4785ae3e52ba0ef91",
+  "execution_sha256": "880a0bade1dc1278b3eb9c6c3e7b0f0b545cd945ab26f96f9436c79f71ff4589",
+  "terminal_archive_sha256": "677da60cd06c62fa8e87514356368ea55fe9539e1709ae3737f15785db1113d3",
+  "previous_v6_source_only_record_unchanged": true
+}
