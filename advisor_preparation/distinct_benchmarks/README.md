@@ -278,3 +278,6 @@ The complete sources, arrays, resource receipts, original pinned audits and byte
 
 
 The [six-site interaction-quench pilot](runtime_validation_20261028/p13_quench_pilot_precision_unresolved/README.md) completed its comparison but remains precision-unresolved: 8,887 gates, including all 15 original failures, are preserved. This excluded pilot adds zero catalogue credit; the ledger remains **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**, and full P13 is **NOT_RUN**.
+
+
+The [same-state quench pilot with a sharper initial-state bound](runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/README.md) reports **8,889 PASS / 0 FAIL**, with a completed 12,375-check saved-association audit. All original 8,887 gate occurrences and limits, twenty saved centers, and the separate original 15-failure record are retained. This excluded pilot adds zero catalogue credit; full P13 remains NOT_RUN and the ledger stays **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**.
