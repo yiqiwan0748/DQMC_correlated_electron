@@ -1,0 +1,213 @@
+{
+  "schema": "P13_GLOBAL_INTERACTION_QUENCH_PROSPECTIVE_PROTOCOL_V1",
+  "status": "SOURCE_PREPARATION_ONLY_UNFROZEN_UNADMITTED_NOT_RUN",
+  "scientific_credit": 0,
+  "catalogue_id": "P13",
+  "question": "Does an interaction quench produce the correct full time-dependent second-Renyi entropy and fixed-window growth rate?",
+  "geometry": {
+    "L": 6,
+    "boundary": "obc",
+    "particles_up": 3,
+    "particles_down": 3,
+    "balanced_sector_dimension": 400,
+    "full_site_tensor_dimension": 4096,
+    "central_cut_after_one_based_site": 3,
+    "local_hilbert_dimension": 4,
+    "physical_maximum_schmidt_rank": 64
+  },
+  "hamiltonian": "H(U)=-sum_{j=1..5,sigma}(c\u2020_j c_{j+1}+h.c.)+U sum_j nup_j ndn_j;physical mu0;hopping1;hbar1",
+  "quench": {
+    "U_initial": 8.0,
+    "U_final": 4.0,
+    "initial_state": "Unique ground state in the explicitly fixed (Nup,Ndown)=(3,3) sector, independently prepared by complete native-MPO and TeNPy model diagonalization. No unrestricted-total-N ground claim."
+  },
+  "full_times": {
+    "numerators": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "denominator": 8,
+    "count": 33,
+    "interpretation": "Independent direct exp(-i H_final*time) action from the same initial state at each observation; no chained time integration."
+  },
+  "growth_rate": {
+    "definition": "Ordinary least-squares slope S2(time) against time, including an intercept. Exact rational times and fixed weights. No fit-window selection.",
+    "lower_time": 0.5,
+    "upper_time": 1.5,
+    "included_time_numerators": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "time_denominator": 8,
+    "count": 9,
+    "scope": "Finite-window slope in nats per inverse-hopping unit, not a thermodynamic or asymptotic universal production rate.",
+    "exact_weight_numerators": [
+      -8,
+      -6,
+      -4,
+      -2,
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "exact_weight_denominator": 15,
+    "absolute_weight_sum": "8/3",
+    "arithmetic_rule": "Form every weight as numerator/denominator ball division; a binary64 float(Fraction) is not treated as an exact rational coefficient."
+  },
+  "native": {
+    "user_apis": [
+      "hubbard_mpo(sites;L=6,t=1.0,U,mu=0.0,boundary=\"obc\")",
+      "renyi2_bond_entropy(psi::MPS,3)"
+    ],
+    "libraries": "ITensors0.9.30/ITensorMPS0.4.1",
+    "new_adapters": [
+      "MPO actual tensor export and complete balanced-sector matrix contraction",
+      "complete dense eigensystem and direct spectral real-time action",
+      "complex full-state to ITensor/MPS conversion; complete pre/post state and tensor exports",
+      "physical local-operator/basis/fermionic-phase mapping; source/runtime/certificate/resource wrappers"
+    ],
+    "unsupported_claims": [
+      "No existing native user real-time evolver is claimed.",
+      "No native user DMRG dynamics or new user-developed optimizer is claimed.",
+      "The frozen user ED real-only/PBC-only APIs are neither changed nor used on these complex OBC states."
+    ]
+  },
+  "reference": {
+    "model": "Independent TeNPy1.1.1 FermiHubbardChain with exact physical parameters and fixed N/Sz charges. Receives no user Hamiltonian, initial vector, time series or entropy values.",
+    "apis": [
+      "ExactDiag(model,charge_sector=derived_balanced_charge,max_size=16777216)",
+      "ExactDiag.build_full_H_from_mpo",
+      "ExactDiag.full_diagonalization",
+      "ExactDiag.groundstate",
+      "ExactDiag.exp_H(time)",
+      "npc.tensordot(actual_exp_H,own_initial_state,axes=...)",
+      "MPS.from_full(actual_restored_full_state,cutoff=registered,normalize=True,bc=\"finite\")",
+      "MPS.entanglement_entropy(n=2,bonds=[3])"
+    ],
+    "unprojected_size_gate": 16777216,
+    "mandatory_eigensystem_shape": [
+      400,
+      400
+    ],
+    "forbidden": "No4096-dimensional eigensolve; no fallback after max_size warning; no private charge-order assumptions."
+  },
+  "mps_arms": {
+    "coarse": {
+      "native_maxdim": 128,
+      "native_cutoff_discarded_squared_weight": 1e-24,
+      "tenpy_external_bond_budget": 128,
+      "tenpy_from_full_cutoff": 1e-12
+    },
+    "primary": {
+      "native_maxdim": 256,
+      "native_cutoff_discarded_squared_weight": 1e-28,
+      "tenpy_external_bond_budget": 256,
+      "tenpy_from_full_cutoff": 1e-14
+    }
+  },
+  "truncation_rule": "Retain both complete 33-time arms. Compare complete actual normalized pre-conversion and reconstructed post-conversion states with explicit conditional arithmetic error. No solely requested-cutoff proof. Record every bond rank; require actual maximum rank<=64 and strictly below registered128/256 budgets. TeNPy.from_full has no chi_max argument; its external budget is an asserted resource/eligibility bound, not an invented API option.",
+  "time_discretization_error": "Analytically zero Trotter/integration truncation for direct full-spectral exponentials at each registered time. Floating eigenpair/phase/matvec errors remain mandatory and separately certified. Observation spacing1/8 is not an integration step.",
+  "fixed_gates": {
+    "physical_matrix_entry_plus_radii_max": 1e-11,
+    "initial_same_sector_gap_lower_min": 0.001,
+    "raw_norm_abs_max": 1e-12,
+    "initial_state_residual_upper_max": 1e-10,
+    "raw_spectral_state_identity_error_upper_max": 1e-10,
+    "complete_MPS_reconstruction_error_upper_max": 1e-10,
+    "library_entropy_vs_own_full_state_plus_radii_max": 1e-10,
+    "primary_entropy_total_radius_max": 4e-08,
+    "full_primary_S2_cross_backend_discrepancy_plus_radii_max": 1e-07,
+    "full_primary_purity_cross_backend_discrepancy_plus_radii_max": 1e-08,
+    "growth_slope_discrepancy_plus_radii_max": 1e-06,
+    "primary_vs_coarse_S2_discrepancy_plus_radii_max": 1e-07,
+    "nontrivial_curve_range_lower_min": 0.0001
+  },
+  "fixed_obligations": [
+    "All33times and both MPS arms/backend required. Every failure retained.",
+    "Actual MPOs, complete400x400eigensystems/energies, actual initial states, actual evolved states, all MPS tensors/Schmidt probabilities/library outputs retained.",
+    "Independent local CAR/occupation/JW/phase/basis qualification and complete initial/final physical-H equality; do not infer equality from energies alone.",
+    "No final-eigenvector-by-eigenvector matching in degenerate spaces; complete spectral functional calculus is basis invariant.",
+    "Conditional state/purity/log error bounds and exact-rational OLS weights; no clipped negative subtractive diagnostics or manufactured growth signal.",
+    "If curve fails registered dynamic-range gate, record UNRESOLVED_NONEXERCISING_FIXED_FIXTURE; no data-dependent fixture,window,timegrid or gate changes.",
+    "Pilots, source/runtime/synthetic checks, time points and cutoff arms contribute zero additional catalogue ideas.",
+    "Normalize actual initial and raw evolved input vectors with every original norm/normalization error retained. Multiply final-operator error by actual initial norm upper bound; do not silently replace that norm by1.",
+    "Native non-QN MPS conversion may create tiny floating charge leakage. Retain all4096amplitudes and include any outside-balanced weight in the complete pre/post state-distance bound; no dropping or renormalizing only the400balanced entries.",
+    "TeNPy entropy assumes normalized Schmidt probabilities and drops p<=1e-30; record their sum and apply the at-most64*1e-60 missing-purity allowance plus arithmetic/source-normalization error."
+  ],
+  "pilot": {
+    "scientific_credit": 0,
+    "times_numerators": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "time_denominator": 8,
+    "same_initial_final_models": true,
+    "same_complete_eigensystems": true,
+    "both_MPS_arms": true,
+    "same_full_certificate_paths": true,
+    "cpus": 1,
+    "memory_MB": 3500,
+    "allocation_seconds_proposed": 1200,
+    "inner_combined_seconds_proposed": 1000,
+    "cleanup_final_reserve_seconds_proposed": 120,
+    "runtime_estimate_after_start_minutes": [
+      3,
+      15
+    ],
+    "estimate_status": "Unmeasured analogy only; exact cold import/fullMPO/400eigh/certificate/SVD/output cost unknown. Root review and fresh measured sizing required. No launch wrapper or admission exists."
+  },
+  "full_resource_status": "UNADMITTED;forecast from pilot must separately price fixed4eigensystemcertificates and 33/5state+MPS+entropy/scalar work, capture/output/runtime overhead and resource reserve; no automatic full run.",
+  "required_before_any_execution": [
+    "Complete producer/comparator/runtime/source/admission implementations and independent review",
+    "Exact installed API/provider/source closure with fresh before/after actual-process qualification",
+    "Prospective source/gates frozen; root single-use admission and host capacity review",
+    "Bounded pilot under resource limits; no solver import on login/laptop"
+  ],
+  "source_revision": 2,
+  "required_runtime_callback": "runtime_guard(stage,api_witnesses) afterallrequiredimports butbeforeanysite/model/operator/matrix/eigensolverwork,andaftercompletedrole;returnactualstatusPASSorelseabortpreservingpartials",
+  "required_partial_callback": "on_record(kind,deepcopied_record) forruntime_before,eachcompleteUmodel,eachcomplete(time,arm)sample,andruntime_after;callbackmustpersistnewatomicprivateoutputfileswithoutmutatingrecord",
+  "new_raw_mapping_obligation": "ExportactualLegPipe.q_map/slices/qflat/qconj/chinfo andallincomingleg.slices/qflat/qconj/ind_len forindependentreconstructionofall4096pipeentriesand400projection."
+}
