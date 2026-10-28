@@ -1,0 +1,76 @@
+{
+  "additional_idea_credit": 0,
+  "audit_summary": "AUDIT_SUMMARY.json",
+  "catalogue_X08": "NOT_RUN",
+  "catalogue_credit": 0,
+  "files": {
+    "AUDIT_SUMMARY.json": {
+      "bytes": 3696,
+      "sha256": "bb9dce2c84c03d38e097edaf1e86160c2c3fb153d4e6279331d19d7d3324a0b4"
+    },
+    "DATA_DICTIONARY.md": {
+      "bytes": 3500,
+      "sha256": "b4b23f6e6c446849fea8a5d6214c140f79cce77e6e29ee051d07ac3fd7f791a8"
+    },
+    "PROVENANCE.json": {
+      "bytes": 3006,
+      "sha256": "e6ce4632c802061ca118459f8e3bf675138158b6f15aff92fc158e90398d4951"
+    },
+    "README.md": {
+      "bytes": 6312,
+      "sha256": "93dd9d1befeb75330b5d8c686540080d16f43ec129a9110cd24c555b33f6e5e2"
+    },
+    "code/EngineeringCompare.jl": {
+      "bytes": 36420,
+      "sha256": "54e3477f59aa102254495c54a247a5a555c3b699d6f841e3c267e72354f33c62"
+    },
+    "code/compute_s2_itensor_dmrg.jl": {
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    "data/bond_diagnostics.csv": {
+      "bytes": 4566,
+      "sha256": "cdde53991af5e7509ce0bbc95bb6f71d0fd89993a4448a37097a6d246d989897"
+    },
+    "data/entropy.csv": {
+      "bytes": 1294,
+      "sha256": "42058b98583dd210b2afb8e48240d469b3cdbe268435d37e37840cd6b20da34b"
+    },
+    "data/local_observables.csv": {
+      "bytes": 4275,
+      "sha256": "14c491169409da80b40d00cdae58612aec2e9f1b3f91cbc265379113d3906973"
+    },
+    "data/optimizer_ritz_energies.csv": {
+      "bytes": 387,
+      "sha256": "4553b74baf9c73ebcd3072a60300e4b89dd47edd47c1ee5df42430f9d2c3de4d"
+    },
+    "data/recorded_exact_replay.jsonl": {
+      "bytes": 2080847,
+      "sha256": "5a30a1eebeb541c3c211b5b8e8be1cdda94e44af9d96375d3d345548f32eac19"
+    },
+    "data/scientific_raw.json": {
+      "bytes": 887131,
+      "sha256": "8d21fc4d0675664b7ed8eedf38ba1f60ff29ac406a3adde3300dfcc0829016f5"
+    },
+    "data/spin_correlations.csv": {
+      "bytes": 8214,
+      "sha256": "6be7d863cd53bd5f783611014b6e9bdc4c21d439214d173b17222c3767b07dc2"
+    },
+    "data/stage_scalars.csv": {
+      "bytes": 371,
+      "sha256": "2a983510ac2e2573a3c2dcf2078f5a20933356465c41c771a52f73f9a992ec47"
+    },
+    "data/stop_callbacks.csv": {
+      "bytes": 126,
+      "sha256": "4e79ea2f3313425e4f7a285146819c7275ccd867d77edcaf3d347193bdb72079"
+    },
+    "protocol.json": {
+      "bytes": 1484,
+      "sha256": "7975a5133ff1fb772a39406889a8d769cf66fe97bea61955218cb3756dc6bbc0"
+    }
+  },
+  "manifest_self_excluded": true,
+  "schema": "AUDITED_FINEST_SCIENTIFIC_PROJECTION_FILE_MANIFEST_V1",
+  "scope": "One excluded original parameter arm; no ground-state, convergence, speedup, full-X08 or standalone reproduction claim.",
+  "status": "AUDITED_EXCLUDED_ENGINEERING_SCIENTIFIC_PROJECTION"
+}

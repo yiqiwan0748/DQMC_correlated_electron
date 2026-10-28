@@ -1,0 +1,31 @@
+# Four-site Hubbard MPS check at higher bond capacity
+
+**Saved-record audit: PASS, 23,898 checks and zero failures.** This is one excluded engineering parameter arm of the existing X08 proposal. The full X08 benchmark remains `NOT_RUN`, with zero additional idea or catalogue credit. The current audit scope and limits are in [AUDIT_SUMMARY.json](AUDIT_SUMMARY.json).
+
+The recorded arm uses the original chi cap 64, cutoff 1e-12, start A and seed 698071. Initial link dimension is 4, and the 12-sweep maximum-dimension schedule is [2, 4, 8, 16, 32, 64, 64, 64, 64, 64, 64, 64]. The original noise and eigensolver controls are retained in [protocol.json](protocol.json). A finest-arm designation describes the registered controls; it supplies no ground-state or convergence certificate.
+
+The model is the open four-site Hubbard chain with hopping t = 1, uncentered on-site interaction U = 4, chemical potential 0, and two up and two down electrons. The library optimizer starts from fresh alternating up/down occupations and performs 12 sweeps. Snapshots are retained after sweeps 3, 6 and 12.
+
+| Saved sweep | Same-state energy | Raw state norm squared | Native helper S2, cut 1 | Native helper S2, cut 2 | Native helper S2, cut 3 | Final-bond optimizer Ritz diagnostic |
+| --- | --- | --- | --- | --- | --- | --- |
+| 3 | -1.9514272370835193 | 0.9999999999999998 | 0.9776974883928965 | 0.24689906880065318 | 0.9790766877407254 | -1.951427237083517 |
+| 6 | -1.953145308684553 | 1.0 | 0.9792692064649557 | 0.2509270481129123 | 0.9792692064649555 | -1.953145308684553 |
+| 12 | -1.9531453086845525 | 0.9999999999999998 | 0.9792692064649551 | 0.250927048112914 | 0.9792692064649551 | -1.953145308684552 |
+
+These are observations copied from stored tables. Preparing this projection did not recompute any energy or entropy. The saved post-truncation state expectation and the local optimizer Ritz diagnostic remain separate fields, even when their displayed values are close. Their equality is not an acceptance criterion. The complete per-sweep Ritz table is retained separately. Floating signs, negative values and signed zero are preserved throughout the scientific JSON and tables.
+
+The native user-helper entropy and the separately captured SVD adapter entropy are both retained in [data/entropy.csv](data/entropy.csv). Small recorded differences remain visible. Raw numerators, explicit normalization denominators, ratios, tensor components, amplitudes and spin-correlation signs remain in the scientific data. No clipping, averaging, symmetrizing, phase fitting or conversion to absolute values was applied.
+
+During the original run, an independently authored finite-data reference decoded saved binary64 coefficients as exact dyadic rationals, constructed the eight-mode fermion algebra, contracted tensors and checked norms, actions, observables and reduced-state purities. Natural logarithms were enclosed by a finite rational series with an explicit tail bound. The stored execution reports 2,799 passing checks, 17 state records and 21 entropy-cut records. Those 2,799 checks are the original execution outcomes. The separate saved-record audit passed 23,898 checks authenticating retained bytes, source/runtime observations, callback/scalar associations and recorded finite-data certificates. It independently checked stored rational inequalities and logarithm enclosures; it did not recompute the underlying physical residuals or purities. This reference checks the represented finite states and supplies no independent ground-state oracle.
+
+The user supplied the Hubbard MPO builder and `renyi2_bond_entropy` in [the complete original analysis source](code/compute_s2_itensor_dmrg.jl). ITensorMPS supplied the DMRG/MPS optimizer and native observer. The measurement, capture and checkpoint adapters and [the complete independently authored exact-reference module](code/EngineeringCompare.jl) were campaign work. The two source files are byte-identical copies from this finest-arm execution, and their hashes are in [PROVENANCE.json](PROVENANCE.json). This record makes no authored-optimizer claim.
+
+The bounded original execution used one CPU, took 150.0930287259398 seconds in the outer receipt, and reached a recorded memory peak of 1,641,197,568 bytes. Its native import/measurement/replay role took 147.7500390089117 seconds. These are whole-role observations, not solver-only timings, and support no speedup claim or comparison of implementation performance.
+
+The [data dictionary](DATA_DICTIONARY.md) describes all tables. The scientific raw projection preserves numerical tensor/state and operator witnesses; the byte-identical exact-reference journal preserves the recorded checks and rational diagnostics. All 72 bond diagnostics, 12 stopping callbacks, three snapshot stages and checkpoint replay observations are retained as scientific data. The sweep-3 zero-noise window remains explicitly not applicable with a null value.
+
+The guarded measurement/capture runner, private execution infrastructure and opaque serialized snapshots are not part of this prospective public subtree. The supplied scientific data and two complete source files are for inspection; the general-purpose analysis program's defaults are not a reproduction command for this arm. No tested standalone public replay command is supplied. No captured code, binary snapshot, physical calculation or reference replay was executed while preparing the projection.
+
+The saved-record audit passed within the limits described above. Ground-state accuracy, optimizer convergence, discarded-weight bias calibration and the full registered X08 protocol remain unresolved by this excluded arm.
+
+The unchanged `publication_status` field in [protocol.json](protocol.json) records the earlier candidate-preparation stage. Current saved-record audit status is in [AUDIT_SUMMARY.json](AUDIT_SUMMARY.json). The audit authenticates stored runtime associations conditional on the executed collection and guard source. Individual raw library-name to resolved-provider pairs and JIT instruction identity were not independently established. Separate returned-MPS vector equality was not exported and is not claimed. Admission and preflight creation timestamps were not exported or inferred; the preflight observation is bound by its saved hash.
