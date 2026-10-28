@@ -33,6 +33,10 @@ passed its complete runtime qualifications, with the actual full-width helper
 and eight metadata regression tests included. This qualifies those runtime
 processes; an excluded physics pilot and the full P17 question remain separate.
 
+## Small PC measurement checks
+
+The [four-site Hubbard MPS measurement record](runtime_validation_20261028/pc_chain4_engineering/README.md) adds one excluded, deliberately coarse arm. The original execution passed 2,799 exact finite-data checks of saved states and observables; its saved-record audit passed 19,094 checks. The saved-state energy and local optimizer Ritz diagnostic remain separate. This is not a ground-state or convergence result and does not complete X08. The 100-row ledger remains **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**. The public packet contains unchanged numerical data and original/reference source, with its reproduction limits stated explicitly.
+
 ## First tranche
 
 The frozen first release contains 25 questions: A01–A14, A22, A23, P01–P06,
