@@ -1,0 +1,27 @@
+{
+  "schema": "P17_FULL_PUBLIC_SCIENTIFIC_PACKET_MANIFEST_V1",
+  "status": "AUDITED_SCIENTIFIC_PROJECTION",
+  "scientific_credit_added": 1,
+  "files": {
+    "README.md": {
+      "bytes": 3348,
+      "sha256": "6d641bdfc9d44e53e90e241d75feaef25a2fdabcfea6b24fed15b077ffe070e9"
+    },
+    "attempt_result.json": {
+      "bytes": 3807,
+      "sha256": "3b1878fe6a5fcb919215abd1a6cb41c64d564fc72cb44ed74c39506b52b80839"
+    },
+    "audit_history.json": {
+      "bytes": 1508,
+      "sha256": "7267810a14c40f2ee01a1f5eabad0d7fb0d661a35e211bda4fc15b690433d05e"
+    },
+    "full_comparison_scientific_projection.json": {
+      "bytes": 1310315,
+      "sha256": "52675377c620874590a91e7204c4ac302ea3ecd56b1e5c3571354473e95d9e16"
+    },
+    "scientific_audit_summary.json": {
+      "bytes": 2260,
+      "sha256": "4f7987f1acb5b37bda351cbe6e2a7b419bebac8f170f9a6474babb6665f4af6f"
+    }
+  }
+}

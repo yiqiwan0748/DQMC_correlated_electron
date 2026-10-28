@@ -1,0 +1,30 @@
+{
+  "schema": "P17_FULL_AUDIT_HISTORY_PUBLIC_PROJECTION_V1",
+  "status": "RECONCILED_WITH_ORIGINAL_FAILURES_PRESERVED",
+  "scientific_data_recomputed": false,
+  "physical_gates_changed": false,
+  "history": [
+    {
+      "stage": "Scientific audit source V2",
+      "status": "HOLD_SOURCE",
+      "reason": "Checker could accept missing effective-configuration attribution records. Found by independent source review before actual use.",
+      "repair": "V3 requires all three source-mandated configuration path/name pairs; additional records remain preserved."
+    },
+    {
+      "stage": "Scientific audit V3 on saved full results",
+      "status": "HOLD",
+      "completed_metadata_checks": 662,
+      "failed_metadata_checks": 0,
+      "reason": "Capture reader hashed but did not retain eight runtime report members that the prerequisite step later needed. No scientific result was reached.",
+      "repair": "V4 retains the eight existing report members. An integration fixture reproduces the V3 omission and verifies V4 exact retention."
+    },
+    {
+      "stage": "Scientific audit V4 on same saved full results",
+      "status": "PASS_RECORDED_RELATIONSHIPS_WITH_EXPLICIT_CONDITIONAL_SCOPE",
+      "checks": 17002,
+      "failed": 0,
+      "root_reconciled_distinct_credit": 1
+    }
+  ],
+  "failure_preservation": "Earlier scientific/global pilot failures, resource timeouts and every original producer/comparator status remain unchanged. Source/runtime/synthetic checks add no catalogue ideas."
+}
