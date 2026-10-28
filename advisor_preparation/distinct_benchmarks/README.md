@@ -281,3 +281,6 @@ The [six-site interaction-quench pilot](runtime_validation_20261028/p13_quench_p
 
 
 The [same-state quench pilot with a sharper initial-state bound](runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/README.md) reports **8,889 PASS / 0 FAIL**, with a completed 12,375-check saved-association audit. All original 8,887 gate occurrences and limits, twenty saved centers, and the separate original 15-failure record are retained. This excluded pilot adds zero catalogue credit; full P13 remains NOT_RUN and the ledger stays **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**.
+
+
+The [fresh native/reference quench qualification pilot](runtime_validation_20261028/p13_quench_source_identical_qualification_pilot/README.md) reran all three roles under one unchanged source inventory. Its scientific JSON values are bit-identical to the preceding re-comparison: **8,889 PASS / 0 FAIL**, supported by a completed 8,991-check saved-record audit. The original failures remain preserved. This excluded pilot adds zero catalogue credit; full P13 and its growth-rate fits remain **NOT_RUN**, and the ledger stays **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**.
