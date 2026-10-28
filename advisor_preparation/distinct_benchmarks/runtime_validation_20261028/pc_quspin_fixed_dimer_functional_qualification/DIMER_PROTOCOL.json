@@ -1,0 +1,42 @@
+{
+  "schema": "PC_FIXED_DIMER_NUMERICAL_PROTOCOL_V1",
+  "status": "FROZEN_SOURCE_BEFORE_DATA_ROOT_ADMISSION_REQUIRED",
+  "scientific_credit": 0,
+  "X08_status": "NOT_RUN",
+  "model": {
+    "sites": 2,
+    "t": 1,
+    "U": 4,
+    "mu": 0,
+    "Nup": 1,
+    "Ndown": 1,
+    "dimension": 4,
+    "boundary": "open",
+    "interaction": "uncentered_nup_ndown",
+    "energy_offset": 0
+  },
+  "energy_absolute_limit": {
+    "numerator": "1",
+    "denominator": "100000000000"
+  },
+  "Hermitian_max_absolute_limit": {
+    "numerator": "1",
+    "denominator": "1000000000000"
+  },
+  "reference": "Integer-isqrt rational interval of sqrt(32), q=10^80, evaluated only inside future qualified unit; four sorted actual levels compared to both reference endpoints. No target-dependent fit/reference.",
+  "registered_calls": [
+    "basis_constructor",
+    "number_up_0_constructor",
+    "number_up_0_toarray",
+    "number_up_1_constructor",
+    "number_up_1_toarray",
+    "number_down_0_constructor",
+    "number_down_0_toarray",
+    "number_down_1_constructor",
+    "number_down_1_toarray",
+    "Hamiltonian_constructor",
+    "Hamiltonian_toarray",
+    "Hamiltonian_eigh"
+  ],
+  "scope": "QuSpin constructor/operator/complete-eigensolver functional qualification for fixed2site case only; no native solver, newidea, fullX08, globalgap/state/observable certification or general package qualification."
+}

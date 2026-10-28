@@ -1,0 +1,42 @@
+{
+  "catalogue_count_changed": false,
+  "files": {
+    "AUDIT_SCOPE.md": {
+      "bytes": 3196,
+      "sha256": "8eea817295c0700872ab3f3aeeffb3e50fe74d1eecdb507162dec4301f672428"
+    },
+    "DIMER_PROTOCOL.json": {
+      "bytes": 1388,
+      "sha256": "14c9e4fb1a8ea8a7b74e35e9885931394a943a8d795d93cd4a08280e44694947"
+    },
+    "PROJECTION_AUDIT.json": {
+      "bytes": 2412,
+      "sha256": "b78e8ae9c7d3bc47e254e27206498d7aaa0d746ef8fbfc42eac626ed6d08cc76"
+    },
+    "README.md": {
+      "bytes": 2664,
+      "sha256": "1ab5c94092c9cdac73267eed2755b9dd3186ee37a53189c39ff3f7c7626f687a"
+    },
+    "dimer_science.py": {
+      "bytes": 9601,
+      "sha256": "e6dcb03055d3dae44d443b6784a69a11238dc4000d6a822bc8e3f17c516219f8"
+    },
+    "saved_scientific_record.json": {
+      "bytes": 10941,
+      "sha256": "65218aeecf5f7e8571f85871ef41c41264c40f879694868b805b54318acb471c"
+    },
+    "scientific_data.json": {
+      "bytes": 11114,
+      "sha256": "8abdc5859cf6614f5ecdc8e91c6ea36306d50ad9e1a25d01854bfa693c37967b"
+    },
+    "verify_packet.py": {
+      "bytes": 4266,
+      "sha256": "e322bfb13d4a8452b62932a2b9c34633b58c0b76342303539fe493c97d845381"
+    }
+  },
+  "full_X08_status": "NOT_RUN",
+  "new_ideas": 0,
+  "schema": "QUSPIN_FIXED_DIMER_PUBLIC_FILE_MANIFEST_V1",
+  "scientific_credit": 0,
+  "scope": "Scientific sources, saved finite data and projection checks for one fixed dimer reference process."
+}

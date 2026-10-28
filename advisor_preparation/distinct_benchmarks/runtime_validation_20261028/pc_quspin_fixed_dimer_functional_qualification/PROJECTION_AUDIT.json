@@ -1,0 +1,61 @@
+{
+  "catalogue_count_changed": false,
+  "checks": {
+    "all_four_recorded_energy_gates_pass": true,
+    "all_selected_fields_equal_saved": true,
+    "frozen_protocol_byte_exact": true,
+    "physical_recomputation_during_preparation": false,
+    "saved_scientific_checkpoint_byte_exact": true,
+    "scientific_helper_byte_exact": true,
+    "target_package_imports": false
+  },
+  "full_X08_status": "NOT_RUN",
+  "new_ideas": 0,
+  "projection_rules": {
+    "credit": "Zero new ideas; catalogue count unchanged; full X08 NOT_RUN.",
+    "physical_values": "Every selected value is copied unchanged from the saved scientific record.",
+    "schema": "A public scientific schema replaces the generic original checkpoint schema in the presentation file.",
+    "scope": "Explicit fixed-case reference-process qualification replaces the presentation scope; the original remains in the unchanged saved scientific record.",
+    "source_annotations": "Scientific helper/protocol retain historical generic pre-data admission annotations byte for byte; they contain no machine-specific identifiers."
+  },
+  "public_projection": "scientific_data.json",
+  "schema": "QUSPIN_FIXED_DIMER_PUBLIC_PROJECTION_AUDIT_V1",
+  "scientific_credit": 0,
+  "scientific_file_pins": {
+    "DIMER_PROTOCOL.json": {
+      "bytes": 1388,
+      "sha256": "14c9e4fb1a8ea8a7b74e35e9885931394a943a8d795d93cd4a08280e44694947"
+    },
+    "dimer_science.py": {
+      "bytes": 9601,
+      "sha256": "e6dcb03055d3dae44d443b6784a69a11238dc4000d6a822bc8e3f17c516219f8"
+    },
+    "saved_scientific_record.json": {
+      "bytes": 10941,
+      "sha256": "65218aeecf5f7e8571f85871ef41c41264c40f879694868b805b54318acb471c"
+    },
+    "scientific_data.json": {
+      "bytes": 11114,
+      "sha256": "8abdc5859cf6614f5ecdc8e91c6ea36306d50ad9e1a25d01854bfa693c37967b"
+    }
+  },
+  "scope": "Self-contained scientific byte and field consistency. Execution provenance was checked by the saved-record audit and is not republished.",
+  "source_record": "saved_scientific_record.json",
+  "unchanged_scientific_fields": [
+    "E",
+    "H",
+    "Hermitian_limit",
+    "Hermitian_max_abs",
+    "V_by_column",
+    "X08_status",
+    "actual_number_operators",
+    "analytic_energy_gates",
+    "analytic_reference",
+    "basis_labels",
+    "diagnostics",
+    "eigenvector_global_gap_ground_state_qualification",
+    "model",
+    "physical_masks",
+    "scientific_credit"
+  ]
+}
