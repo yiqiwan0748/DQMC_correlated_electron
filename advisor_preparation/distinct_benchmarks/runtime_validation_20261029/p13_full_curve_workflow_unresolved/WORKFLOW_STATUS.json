@@ -1,0 +1,57 @@
+{
+  "schema": "P13_FULL_CURVE_PUBLIC_WORKFLOW_SCOPE_V1",
+  "publication_status": "NUMERICAL_COMPARISON_WITH_WORKFLOW_FAILURE",
+  "original_comparison_report_status": "PASS_FULL_PENDING_INDEPENDENT_AUDIT",
+  "original_workflow_status": "UNRESOLVED",
+  "original_scheduler_state": "FAILED",
+  "original_scheduler_exit": "2:0",
+  "failure_stage": "Final output census",
+  "failure_reason": "The output-census time allowance was exceeded after all three numerical roles returned successfully.",
+  "full_workflow_PASS": false,
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "distinct_ideas_added": 0,
+  "ledger_counts": {
+    "PASS": 50,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 48
+  },
+  "original_full_workflow_predicates_unmet": [
+    {
+      "name": "scheduler_completed_successfully",
+      "expected": "COMPLETED0:0",
+      "observed": "FAILED2:0",
+      "pass": false
+    },
+    {
+      "name": "original_workflow_error_free_PASS",
+      "expected": "Error-free workflow completion",
+      "observed": "UNRESOLVED after final-census time limit",
+      "pass": false
+    },
+    {
+      "name": "original_output_census_published",
+      "expected": "Original complete output census with parent association",
+      "observed": "Not published",
+      "pass": false
+    }
+  ],
+  "scientific_reported_gates": {
+    "total": 11692,
+    "PASS": 11692,
+    "FAIL": 0
+  },
+  "saved_association_audit": {
+    "status": "PASS_SAVED_ROLE_AND_SCALAR_ASSOCIATIONS_WORKFLOW_UNRESOLVED",
+    "checks": 26498,
+    "failed_checks": 0,
+    "physical_certificate_recomputations": 0
+  },
+  "independent_saved_receipt_review": {
+    "focused_checks": 34,
+    "failed_checks": 0,
+    "physical_certificate_recomputations": 0
+  },
+  "scope": "A numerical comparison and its saved associations completed. The failed whole workflow remains unresolved; this record adds no catalogue credit."
+}
