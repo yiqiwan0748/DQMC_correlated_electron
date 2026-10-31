@@ -1,0 +1,93 @@
+{
+  "schema": "P17_NATIVE_V4_IMMUTABLE_PARENT_PUBLIC_RECORD_V1",
+  "parent_commit": "17d1cb24c0cbd90f6ad8cd924da7a3c8aecb4278",
+  "parent_record": "advisor_preparation/distinct_benchmarks/runtime_validation_20261026",
+  "files": [
+    {
+      "path": "DIAGNOSTIC_AGGREGATES.json",
+      "bytes": 3955,
+      "sha256": "37432a5e06e4ac062cdeef1cc16a65ba88aac5653621869de01d117fd69f1359"
+    },
+    {
+      "path": "NATIVE_V3_STAGED_SNAPSHOT.json",
+      "bytes": 1254,
+      "sha256": "41ae9a9c3c022e90f0c602db4056a74ef65b80affb7d8bf65cf234299ebeaaf3"
+    },
+    {
+      "path": "PRIMARY_SOURCES.json",
+      "bytes": 1755,
+      "sha256": "dff96a17f76960d79d70a566f0feb6e8121189cd4deb9e26f8474ffbce385bd5"
+    },
+    {
+      "path": "PRIOR_RUNTIME_AGGREGATES.json",
+      "bytes": 5424,
+      "sha256": "eb6d45662e554c1d6475bc1da9f2c2de87eed00f5f9c91d01fbac24fba674685"
+    },
+    {
+      "path": "PUBLICATION_AUDIT.json",
+      "bytes": 551,
+      "sha256": "f62e9d4b38145600991379c2ec92d9975f0b255378d7a90687f85442be96666c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2305,
+      "sha256": "fce5770e3ca29eee027c8e28f6b3418448071944cb24f34bddd3638ba687012a"
+    },
+    {
+      "path": "SELECTION_MANIFEST.json",
+      "bytes": 4159,
+      "sha256": "ec83b83386d3ee344b42f890d7a874ed9ada9dc7b45d9042cd37627506e1e811"
+    },
+    {
+      "path": "native_preflight_v3_timeout/IMMUTABLE_PARENT_RECORD.json",
+      "bytes": 2099,
+      "sha256": "97297faaf8e3783cac9780fdaca4b68b62c3befa6864468f89dd8e8d9ac50d98"
+    },
+    {
+      "path": "native_preflight_v3_timeout/NATIVE_V3_TIMEOUT_AGGREGATES.json",
+      "bytes": 4464,
+      "sha256": "2ea0514beedaa1e167e0e6076e451c86b4435539e9223b8055bd539be8f8fc65"
+    },
+    {
+      "path": "native_preflight_v3_timeout/PUBLICATION_AUDIT.json",
+      "bytes": 580,
+      "sha256": "9cc61837e8df922a532b70d028fba00ade982c07c16133162854bf035bf674eb"
+    },
+    {
+      "path": "native_preflight_v3_timeout/README.md",
+      "bytes": 2208,
+      "sha256": "7cdc211a094bb0f391f93f53befddcbbf69133b586102af24d411182d318f6ee"
+    },
+    {
+      "path": "native_preflight_v3_timeout/SELECTION_MANIFEST.json",
+      "bytes": 4318,
+      "sha256": "143f88974da87b6cd5a9b119f431910edc732a90386a0da8386066d4c7642443"
+    },
+    {
+      "path": "source/maps_parser.jl",
+      "bytes": 1650,
+      "sha256": "f0048b64555f3ab6712ebd4e267ed983591320d65f01684d466c6ecfed8019da"
+    },
+    {
+      "path": "source/postprocess.py",
+      "bytes": 8414,
+      "sha256": "c5f98ac02ee2225a54839ea822e3de6568dfb2e680aeeea1efe47afe3693151d"
+    },
+    {
+      "path": "source/stat_batch.py",
+      "bytes": 3298,
+      "sha256": "94803235150dbe182797a13b67bad82efc6045cbe984c11d55e76a102da410f9"
+    },
+    {
+      "path": "source/stat_helper.c",
+      "bytes": 1594,
+      "sha256": "7df6dad2584fc4c58c3ba5cbdcd41e0174b84e3e8767d2c6ef2846b467ee0fe4"
+    }
+  ],
+  "scientific_ledger": {
+    "path": "advisor_preparation/distinct_benchmarks/reporting/reports/weekend_reconciliation_v17/ledger_100.json",
+    "bytes": 2658916,
+    "sha256": "3f5c83a7566aa754dea836b7501de14f157acff25e9945b620c23e03013ee304"
+  },
+  "scientific_completions_added": 0
+}

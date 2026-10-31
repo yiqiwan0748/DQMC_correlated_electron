@@ -1,0 +1,43 @@
+{
+  "schema": "isaac_named_text_transfer_v1",
+  "job_id": "6458671",
+  "files": {
+    "results/two_orbital_analytic_full_6458671/end_utc.txt": {
+      "bytes": 21,
+      "sha256": "9d9af28818d17f927314e143ff1a80996fc5f6a19e562c906d38067c39520b06"
+    },
+    "results/two_orbital_analytic_full_6458671/start_utc.txt": {
+      "bytes": 21,
+      "sha256": "6215c17b6b4f48ff431eec8bb52e0c8d452dc0789c5be8e6989b0f21dc0e5ed8"
+    },
+    "results/two_orbital_analytic_full_6458671/target.resources.txt": {
+      "bytes": 864,
+      "sha256": "4e96b1b4f58a83fda3a9b7db2d1e520abe96607b8516337330c0ac04f9eb307d"
+    },
+    "results/two_orbital_analytic_full_6458671/oracle.resources.txt": {
+      "bytes": 955,
+      "sha256": "9e5170a62e68da93fdf76a21e2712f9a01ef5b3253ddd1cd765b153b71544b93"
+    },
+    "results/two_orbital_analytic_full_6458671/target.toml": {
+      "bytes": 203618,
+      "sha256": "dd68eec9b659df9e465d252f673a97e689e1acae1b56bafb91f5de1997ed230d"
+    },
+    "results/two_orbital_analytic_full_6458671/oracle.json": {
+      "bytes": 99657,
+      "sha256": "bb245da6b13404459f145b8dbc6e3faefa61ad4b22046dc54b3c421256b20fdd"
+    },
+    "results/two_orbital_analytic_full_6458671/comparison.json": {
+      "bytes": 152400,
+      "sha256": "0e79a01cd4f09d4b35ecf9d501ac5dbfde62a71ff93751f409d811e5e9b5c82a"
+    },
+    "results/two_orbital_analytic_full_6458671/receipts.sha256": {
+      "bytes": 584,
+      "sha256": "4ceda898467ffe0543038a52bc4c824de663988d146f8749abd688f00c95d9d8"
+    },
+    "logs/two_orbital_analytic_full_6458671.log": {
+      "bytes": 411,
+      "sha256": "fc7deb0ad05d0cca27ef821736afe3e6b14620c6d0dd6487a66584c4ac75f945"
+    }
+  },
+  "sacct": "6458671|COMPLETED|0:0|00:02:05||3500M|1\n6458671.batch|COMPLETED|0:0|00:02:05|240620K||1\n6458671.extern|COMPLETED|0:0|00:02:05|||1\n"
+}

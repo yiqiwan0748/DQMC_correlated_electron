@@ -1,0 +1,44 @@
+{
+  "schema": "p21_sampling_design_pre_execution_v1",
+  "created_utc": "2026-10-22T19:42:28.196181+00:00",
+  "status": "DESIGN_METADATA_STATIC_CHECKS_PASS_NO_EXECUTION",
+  "catalogue_id": "P21",
+  "scientific_status": "NOT_RUN_AS_DEFINED",
+  "sampling_drivers_implemented": false,
+  "both_v3_proofs_required": true,
+  "pilot_and_prefinal_budget_receipt_required": true,
+  "source_files": {
+    "PROTOCOL.md": {
+      "sha256": "55e88b2fde860e0d07131aa9bf250cfd650a92253d0b8fa18bf69f9ce45bac4d",
+      "bytes": 13972
+    },
+    "components.csv": {
+      "sha256": "eb7846b1f9b8e0fe99b14584f34367ea60c41edb46d937cc6b52b2b9fc5c18a7",
+      "bytes": 54399
+    },
+    "generate_design_tables.py": {
+      "sha256": "1818e1efa6b0a9a9c657550eb50410b70c330597512db40870aeb245d6189239",
+      "bytes": 2652
+    },
+    "manifest.toml": {
+      "sha256": "3c6358dfe64a69cc275588415224db8b00291e3d9b0a7b5f62275fe830f220e3",
+      "bytes": 3498
+    },
+    "seeds.json": {
+      "sha256": "96e7f3ce1c71a072c0951751fba88db75429819117494b9feed1b36df35d7680",
+      "bytes": 9124
+    }
+  },
+  "checks": {
+    "python_syntax": "PASS",
+    "toml_parse": "PASS",
+    "metadata_regeneration": "PASS",
+    "components_complete": 1408,
+    "imaginary_structural_zero_components": 704,
+    "distinct_positive_int32_seeds": 32,
+    "no_pilot_final_or_package_seed_overlap": true,
+    "native_whole_burn_and_measurement_bin_arithmetic": "PASS"
+  },
+  "previous_frozen_preparations_modified": false,
+  "scientific_or_cluster_execution_by_agent": 0
+}

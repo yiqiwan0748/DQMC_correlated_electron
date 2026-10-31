@@ -1,0 +1,37 @@
+{
+  "schema": "two_orbital_v9_leaf_independent_review_v1",
+  "recorded_utc": "2026-10-22T19:59:22.431913+00:00",
+  "reviewer": "cv_evidence",
+  "status": "READ_ONLY_NO_BLOCKER",
+  "counts": {
+    "PASS": 38,
+    "FAIL": 0,
+    "UNRESOLVED": 0,
+    "NOT_RUN": 62
+  },
+  "ledger_sha256": "ef0ea9e561858941329c28c9f0a78ce9c789d5bc53971b0f1cd7789f24f433d7",
+  "manifest_sha256": "9da0a99746a2749d06942c13bbc73953eaac85f99dd8ee79864b644eb5761204",
+  "input_files_verified": 97,
+  "analysis_receipts_verified": 13,
+  "base_files_byte_verified": 128,
+  "unchanged_other_row_objects": 97,
+  "unchanged_prior_PASS": 35,
+  "only_promoted_ids": [
+    "A15",
+    "A16",
+    "A17"
+  ],
+  "A25": "NOT_RUN",
+  "frozen_archive_members_verified": 14,
+  "frozen_comparator_replay": "EXACT_JSON_AGREEMENT",
+  "gate_counts": {
+    "A15": 236,
+    "A16": 47,
+    "A17": 513
+  },
+  "all_actual_inequality_directions_verified": true,
+  "review_checks_reported": 1145,
+  "physics_or_cluster_execution": false,
+  "reporter_sha256": "10c20f8f3435eb39f11803937b85bb3bf92cc089e16c1d5636b9b9c88bcdcfc7",
+  "helper_sha256": "f2211fcb1fc59c811ccda68587d2abea855b1cde933d9abea97119b064278a38"
+}

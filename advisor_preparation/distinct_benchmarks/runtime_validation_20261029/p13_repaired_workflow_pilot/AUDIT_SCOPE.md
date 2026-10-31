@@ -1,0 +1,13 @@
+# Evidence and audit scope
+
+The original pilot workflow completed successfully, with three completed numerical roles, no parent errors and a complete output census. This five-time pilot still provides zero catalogue credit and no full-curve admission. Full P13 remains NOT_RUN. Earlier failed and unresolved records are preserved.
+
+The saved-association audit recorded 9,321 passing checks and zero failed checks. It authenticates the original source and complete captured bytes, all three fresh role journals and chunk-to-final-to-parent relationships, recorded before/after process/API/module/provider associations, queue/resource observations, and saved scalar-limit relationships. Its original 8,889-gate scalar contract and runtime-association logic remain intact. A separate focused review of the saved receipt passed 152 checks with zero failures, including 296 stored scalar-limit records, 20 state records, four model records, two initial-state records and zero growth records. That review did not rerun the complete association audit.
+
+The numerical run computed the physical Hamiltonian, eigensystem, conversion, purity, entropy and certificate records. This public projection removes ONLY the two top-level private dictionaries runtime_before and runtime_after. Every remaining scientific JSON value, ordered gate, limit and reported status is retained. Compression is lossless; CSV values are copied from saved state records.
+
+Neither audit nor this packet independently recomputes matrices, eigenstates, tensors, purities, entropies, Rayleigh certificates or internal extended-precision bounds. The certificate remains conditional floating error accounting, rather than directed interval arithmetic. Recorded source/object/provider associations are source-conditioned evidence, rather than recreated live objects, unique creator/JIT identity, or an atomic snapshot claim.
+
+The independent reference constructs its own model, sector, initial state, direct spectral evolution and entropy; native results are not supplied as the reference answer. The native path contains the user's MPO/entropy APIs and disclosed validation adapters on ITensors/ITensorMPS. No production DMRG evolver, user-developed optimizer, speedup or general reliability claim follows.
+
+Public files contain scientific fields, workflow outcomes and references to already public numerical sources. Machine/process/provider/controller identities, private paths and CV/contact material are excluded. Raw producer eigensystems/tensors and private execution records are not supplied. Public hashes, status checks and CSV/source-reference checks establish consistency of this published record and perform no new physical validation.

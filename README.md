@@ -1,1 +1,5 @@
 # Two-Orbital Altermagnet DQMC Trial
+
+The [Hubbard research evidence record](advisor_preparation/README.md) preserves numerical results, frozen source and external validation receipts. The distinct 100-question campaign currently records **42 PASS, 2 UNRESOLVED and 56 NOT_RUN** after [independent reconciliation of the apartment-PC continuation](advisor_preparation/distinct_benchmarks/reporting/reports/pc_reconciliation_v12/README.md). All 95 unrelated rows and all 39 prior passing rows remain unchanged.
+
+X09 ground certification, X13 charged visibility and X16 finite binding intervals add three passes. Native ALF/user unequal-time comparison P21 and continuum-bias question X01 retain inadequate precision or mixing. Complete scientific raw data, frozen gates, failed attempts and portable mathematical replays are public; integrity audit PASS never substitutes for scientific acceptance. These counts are separate from the initial 100 parameter comparisons and 188 solver arms. [Portable handoff](advisor_preparation/distinct_benchmarks/PORTABLE_HANDOFF.md).

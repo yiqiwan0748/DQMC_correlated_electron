@@ -1,0 +1,15 @@
+{
+  "schema": "P17_PUBLIC_NATIVE_TIMEOUT_PROJECTION_PRIVACY_AUDIT_V1",
+  "status": "PASS_FAILURE_ONLY_SUPPLEMENT_NO_SCIENTIFIC_CREDIT",
+  "independent_check_count": 58,
+  "selected_manifest_sha256": "143f88974da87b6cd5a9b119f431910edc732a90386a0da8386066d4c7642443",
+  "independent_review_receipt": {
+    "bytes": 8051,
+    "sha256": "68df0196c7bc197b0460a0da32c00f64b8e6d432b53689332c44d67938bffd75",
+    "body": "PRIVATE_BODY_EXCLUDED"
+  },
+  "immutable_parent_files": 11,
+  "catalogue_rows_changed": 0,
+  "scientific_completions": 0,
+  "runtime_qualification_granted": false
+}

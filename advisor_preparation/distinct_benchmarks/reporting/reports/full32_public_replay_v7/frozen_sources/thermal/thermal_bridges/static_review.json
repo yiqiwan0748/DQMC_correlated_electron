@@ -1,0 +1,25 @@
+{
+  "execution_status": "NOT_RUN",
+  "numerical_results_executed": false,
+  "python_syntax": "PASS; AST only, no imports of scientific packages",
+  "julia_syntax": "PASS; Meta.parseall only with Julia 1.12.6 syntax checker; execution pinned to 1.12.1",
+  "shell_syntax": "PASS; bash -n",
+  "manifest_parse": "PASS",
+  "source_closure": {
+    "thermal": {
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+      "status": "PASS"
+    },
+    "ed": {
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+      "status": "PASS"
+    }
+  },
+  "independent_review": "validation_design read-only review complete: centered-to-physical mu restoration, conservative 4 epsilon purity/S2 bound, all 56 total-N3 states versus 24 fixed-spin states, fixed-physical-mu covariance, five-point derivative, and per-backend formula-separation guard passed. No simulations.",
+  "launch_owner": "root; chooses serial dependency; no submission by preparer",
+  "distinct_ideas": [
+    "X02",
+    "X03",
+    "P07"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "job_id": "6457716",
+  "dependency": "afterany:6457709",
+  "frozen_release": "../source_releases/p16-production-retest-freeze.json",
+  "archive_sha256": "caf185fa1710d9d0d384c8ae69d1e4d36a6ec12b0f844f42cd584a1aeeb278fb",
+  "gate": "Independent proof and isolated candidate PASS required before source overlay",
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 10
+}

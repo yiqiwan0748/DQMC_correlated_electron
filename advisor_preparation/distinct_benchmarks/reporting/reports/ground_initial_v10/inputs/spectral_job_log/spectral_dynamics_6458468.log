@@ -1,0 +1,57 @@
+Anaconda3 version 2024.06
+{
+  "schema": "spectral_dynamics_v1",
+  "manifest_sha256": "2db20b0e6b71e932bc8db1ae071007b328f3fca117e0590acbdde425aa8109a2",
+  "rows": [
+    {
+      "id": "P08",
+      "status": "PASS",
+      "max_abs_errors": {
+        "imbalance": 6.411537967210279e-15,
+        "double_occupancy_total": 3.552713678800501e-15,
+        "norm": 1.5543122344752192e-15,
+        "energy": 8.881784197001252e-15,
+        "Nup": 3.1086244689504383e-15,
+        "Ndown": 3.1086244689504383e-15,
+        "density": 8.215650382226158e-15
+      },
+      "eligibility_reasons": [],
+      "scope": "Frozen L4 fixture and new observable adapters only; native DQMC dynamics not tested."
+    },
+    {
+      "id": "P09",
+      "status": "PASS",
+      "max_abs_errors": {
+        "ground_energy": 1.7763568394002505e-15,
+        "ground_gap_same_sector": 2.1316282072803006e-14,
+        "ground_Nup": 2.220446049250313e-16,
+        "ground_Ndown": 2.220446049250313e-16,
+        "occupation": 3.0531133177191805e-16,
+        "addition_norm": 3.7470027081099033e-16,
+        "sum_weight": 1.7763568394002505e-15,
+        "first_moment": 9.325873406851315e-15,
+        "second_moment": 5.773159728050814e-14,
+        "pole": 1.1546319456101628e-14,
+        "residue": 9.992007221626409e-16
+      },
+      "eligibility_reasons": [],
+      "scope": "Frozen L4 fixture and new observable adapters only; native DQMC dynamics not tested."
+    },
+    {
+      "id": "P10",
+      "status": "PASS",
+      "max_abs_errors": {
+        "value": 2.831068712794149e-15,
+        "equal_time_direct": 2.275957200481571e-15,
+        "spin_mean_abs": 1.927400043770359e-15,
+        "unconnected_value": 2.831068712794149e-15,
+        "Nmean": 4.884981308350689e-15,
+        "double_occupancy_total": 8.881784197001252e-16,
+        "local_moment_sum": 1.2212453270876722e-15
+      },
+      "eligibility_reasons": [],
+      "scope": "Frozen L4 fixture and new observable adapters only; native DQMC dynamics not tested."
+    }
+  ],
+  "distinct_ideas_passed": 3
+}

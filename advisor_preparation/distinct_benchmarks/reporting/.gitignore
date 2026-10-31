@@ -1,0 +1,3 @@
+__pycache__/
+# Internal first audit predates relative-path privacy handling.
+reports/tranche01_attempt01_v1/

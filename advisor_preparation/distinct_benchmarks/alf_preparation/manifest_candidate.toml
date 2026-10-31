@@ -1,0 +1,70 @@
+schema = "alf_p21_preparation_v1"
+id = "P21"
+status = "NOT_RUN_AS_DEFINED"
+readiness = "SOURCE_RESEARCH_COMPLETE; ALF_NOT_INSTALLED; MATRIX_ADAPTERS_NOT_IMPLEMENTED"
+external_package = "ALF"
+release_line = "ALF-2.6"
+commit = "f4c500cc5d7bcf089400c63e4e75382c558a4ed3"
+repository = "https://github.com/ALF-QMC/ALF.git"
+license = "GPL-3.0-or-later plus license.additional attribution/origin terms"
+model = "Hubbard"
+hs = "Native Mz continuous Gaussian HS, not four-valued quadrature"
+model_changes_required = false
+observable_export_changes_required = true
+user_observer_changes_required = true
+science_protocol_state = "CANDIDATE; freeze final adapter, seeds and precision settings before interacting pilot"
+
+[fixture_candidate]
+L = 4
+t = 1.0
+U = 2.0
+mu_centered = 0.0
+beta = 1.0
+dtau = 0.1
+Ltau = 10
+boundary = "pbc"
+ensemble = "grand_canonical"
+checkerboard = false
+symmetrize_measured_greens = false
+operator_order = "V_K each slice; must confirm ALF one-slice export matches user V_K before science"
+spin_flavors = 2
+orbitals_per_site = 1
+tau_indices = [0,1,2,3,4,5,6,7,8,9,10]
+components_per_complex_order = 352
+orders = ["GT0_ij_sigma=<c_i_sigma(tau)c†_j_sigma(0)>","G0T_ij_sigma=-<c†_j_sigma(tau)c_i_sigma(0)>"]
+real_components_total = 1408
+fourier = "None for primary comparison; no spin or spatial averaging"
+
+[build_candidate]
+compiler = "GNU gfortran supporting Fortran2008; actual ISAAC module/version unresolved until inventory"
+blas_lapack = "Compatible LP64 BLAS+LAPACK, linked -llapack -lblas -fopenmp"
+mpi = false
+openmp_threads = 1
+hdf5 = false
+python = "Python3 for ALF build-time parameter parser; stdlib-only path"
+configuration = "source configure.sh GNU noMPI STAB3 NO-INTERACTIVE NO-FALLBACK"
+extra_flags = "-fno-fast-math (appended after ALF default flags); record complete effective flags"
+make_jobs = 1
+
+[setup_pilot]
+scientific_measurements = 0
+cpus = 1
+memory_mb = 3500
+wall_limit_minutes = 20
+build_timeout_minutes = 15
+network_download_limit_seconds = 180
+outputs = ["module inventory", "compiler versions", "ALF commit/tree receipts", "configure log", "build log", "binary SHA256", "ldd linkage", "license paths"]
+exit_success_marker = "SETUP_BUILT_NOT_BENCHMARKED"
+
+[future_precision_candidate]
+independent_chains_per_package = 8
+bins_per_chain = 64
+alpha_family = 0.01
+real_components = 1408
+component_equivalence_margin = 0.02
+split_rhat_max = 1.05
+blocking_change_max = 0.5
+estimated_effective_bins_min = 128.0
+quality_policy = "Any nonfinite/missing channel, unresolved denominator, failed mixing/stability/source-order gate => UNRESOLVED; no dropped components"
+comparison = "Independent-chain Welch t intervals for ALF minus actual user output, Bonferroni over1408 real components; each whole interval must lie within ±.02; deterministic zero channels checked at1e-10"
+claim_scope = "Finite interacting real-hopping one-orbital fixture and declared time grid only; not all complex hoppings or general orbital mixing"

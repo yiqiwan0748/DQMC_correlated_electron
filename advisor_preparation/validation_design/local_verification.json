@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-22",
+  "scope": "Local non-simulation checks only",
+  "canonical_cases": 100,
+  "unique_ids": 100,
+  "families": {
+    "QuSpin_ground": 64,
+    "QuSpin_thermal_trotter": 16,
+    "analytic_free": 12,
+    "analytic_atom": 8
+  },
+  "julia_syntax_parse": "PASS: recursively inspected Meta.parseall AST and rejected :error/:incomplete nodes after repairing macro main guard",
+  "full_runtime_import": "UNRESOLVED: local pinned Julia dependencies incomplete; failed to find ChainRulesCore. ISAAC parent is preparing pinned environment.",
+  "canonical_vs_quspin_fixture_mapping": "PASS, all 80 IDs, models, observable names and entropy subsystem lengths matched",
+  "independent_reviewers": [
+    "cv_evidence",
+    "research_record"
+  ],
+  "reviewed_math": [
+    "zero-based fermion hopping sign",
+    "centered versus uncentered energy shift",
+    "Gaussian spin factor",
+    "four-state atomic weights and internal energy",
+    "asymmetric finite-dtau thermal ordering",
+    "longitudinal-spin Wick estimator",
+    "t7 Bonferroni critical value"
+  ],
+  "scientific_results_executed_by_this_agent": "Local stdlib ED only: 88 unique ED arms passed against 80 ISAAC-generated QuSpin references and eight analytical atom references; zero complete multi-method cases. Separate receipt.",
+  "files": {
+    "validation_100.json": "f48cb9fc9bf237636c5802e1b32e2c6d00c17300221e60fef25fa42bb32a20de",
+    "validation_100.csv": "c6bc54a1e80ad09d1b286b231c12943903fb6502753ab798dd05d399830b3d56",
+    "benchmark_manifest.toml": "f87b5942223f255c2282852686f112bcd32260d71bfd77e61878c4ed5793c52e",
+    "run_external_validation.jl": "a2feffc81b5f202522fce5e8d46f766fd7660ab9f80f2953fc80ee25d892e898",
+    "run_ed_reference_checks.jl": "f603f5a032b80359028ca1f6d9d53213edaa246540104ab57ea7b122dfebe1f3",
+    "ed_reference_helpers.jl": "6153ac91eb9df9e223f9291125389c86c9e42155e3172a8ef2e9d261a5ebfeb1"
+  }
+}

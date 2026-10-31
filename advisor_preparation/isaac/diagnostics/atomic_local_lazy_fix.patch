@@ -1,0 +1,56 @@
+--- source_snapshot/HubbardRenyiDQMC/src/dqmc_kernel.jl
++++ validated_package/HubbardRenyiDQMC/src/dqmc_kernel.jl
+@@ -3,6 +3,12 @@
+ import JDQMCFramework as jdqmcf
+ import JDQMCMeasurements as jdqmcm
+ import LatticeUtilities as lu
++
++# Every local update is the mixture p_idle*I + (1-p_idle)*P_Metropolis.
++# Local laziness breaks closed deterministic scan orbits (e.g. odd-Ltau atoms)
++# while preserving the target weight and the existing acceptance/sign ratio.
++# A sweep-level idle step alone does not repair those reducible scan orbits.
++const LOCAL_PROPOSAL_IDLE_PROBABILITY = 0.5
+ 
+ function local_update_G00!(
+     G00::AbstractMatrix{T},
+@@ -316,6 +322,9 @@
+     N = length(perm)
+ 
+     for i in perm
++        # Count an idle slot in the existing accepted/N sweep statistic.
++        rand(rng) < LOCAL_PROPOSAL_IDLE_PROBABILITY && continue
++
+         ΔVup = -α / Δτ * (-2 * s[i])
+         ΔVdn = +α / Δτ * (-2 * s[i])
+ 
+@@ -369,6 +378,9 @@
+     logX_current = logabsX_from_G00(Gup_00, Gdn_00, G2up_00, G2dn_00, C)
+ 
+     for i in perm
++        # Count an idle slot in the existing accepted/N sweep statistic.
++        rand(rng) < LOCAL_PROPOSAL_IDLE_PROBABILITY && continue
++
+         ΔVup = -α / Δτ * (-2 * s[i])
+         ΔVdn = +α / Δτ * (-2 * s[i])
+ 
+--- source_snapshot/HubbardRenyiDQMC/src/grover_rank1_update.jl
++++ validated_package/HubbardRenyiDQMC/src/grover_rank1_update.jl
+@@ -398,6 +398,9 @@
+     N = length(perm)
+ 
+     for i in perm
++        # Count an idle slot in the existing accepted/N sweep statistic.
++        rand(rng) < LOCAL_PROPOSAL_IDLE_PROBABILITY && continue
++
+         delta_V_up = -alpha / dtau * (-2 * s[i])
+         delta_V_dn = +alpha / dtau * (-2 * s[i])
+ 
+--- source_snapshot/HubbardRenyiDQMC/test/runtests.jl
++++ validated_package/HubbardRenyiDQMC/test/runtests.jl
+@@ -606,3 +606,6 @@
+         end
+     end
+ end
++
++# Regression for the externally diagnosed odd-Ltau atomic sampling failure.
++include("atomic_lazy_scan_tests.jl")

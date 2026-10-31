@@ -1,0 +1,1880 @@
+scope = "Preliminary ED arms only; no complete multi-method case is certified"
+ed_arm_pass_count = 88
+runner_sha256 = "f603f5a032b80359028ca1f6d9d53213edaa246540104ab57ea7b122dfebe1f3"
+created_utc = "2026-10-22T16:32:40.122"
+oracle_sha256 = "12eb9b383888a45219b0edd0fbef85aab0fb7b1a4e2a7c701bcbf788238c2571"
+helper_sha256 = "6153ac91eb9df9e223f9291125389c86c9e42155e3172a8ef2e9d261a5ebfeb1"
+finished_utc = "2026-10-22T16:32:45.707"
+manifest_sha256 = "f87b5942223f255c2282852686f112bcd32260d71bfd77e61878c4ed5793c52e"
+julia_threads = 1
+oracle_file = "/mnt/c/Users/神通广大/OneDrive/文档/ChatGPT/Idea/advisor_preparation/isaac/results/quspin_attempt02/oracle_values.toml"
+julia_version = "1.12.6"
+slurm_job_id = "LOCAL"
+host = "UNKNOWN"
+ed_arm_fail_count = 0
+unresolved_arm_count = 100
+complete_case_pass_count = 0
+source_root = "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC"
+canonical_consumer_sha256 = "a2feffc81b5f202522fce5e8d46f766fd7660ab9f80f2953fc80ee25d892e898"
+blas_threads = 1
+
+[source_hashes]
+"analysis/compute_s2_ed.jl" = "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd"
+"analysis/audit_u4_l4_thermal_ed.jl" = "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-01"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 1.587960958480835
+    status = "PASS"
+    reference = -5.656854249492379
+    value = -5.656854249492368
+    absolute_error = 1.0658141036401503e-14
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-02"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 0.1149299144744873
+    status = "PASS"
+    reference = 1.0
+    value = 1.0000000000000002
+    absolute_error = 2.220446049250313e-16
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-03"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 0.016789913177490234
+    status = "PASS"
+    reference = -0.06250000000000003
+    value = -0.06250000000000003
+    absolute_error = 0.0
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-04"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 5.1975250244140625e-5
+    status = "PASS"
+    reference = -1.7347234759768117e-18
+    value = 8.673617379884035e-19
+    absolute_error = 2.6020852139652153e-18
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-05"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 0.024266958236694336
+    status = "PASS"
+    reference = 0.35355339059327384
+    value = 0.3535533905932738
+    absolute_error = 5.551115123125783e-17
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-06"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 4.315376281738281e-5
+    status = "PASS"
+    reference = 5.898059818321144e-17
+    value = -1.1449174941446927e-16
+    absolute_error = 1.734723475976807e-16
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-07"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 0.2093820571899414
+    status = "PASS"
+    reference = 1.3862943611198906
+    value = 1.3862943611198901
+    absolute_error = 4.440892098500626e-16
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-08"
+
+    [[cases.arms]]
+    iterations = 5
+    method = "ED"
+    runtime_seconds = 4.1961669921875e-5
+    status = "PASS"
+    reference = 1.1507282898071234
+    value = 1.1507282898071234
+    absolute_error = 0.0
+    residual = 1.235394403650015e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-09"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 0.0004279613494873047
+    status = "PASS"
+    reference = -2.8284271247461894
+    value = -2.8284271247461943
+    absolute_error = 4.884981308350689e-15
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-10"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 2.09808349609375e-5
+    status = "PASS"
+    reference = 0.45308183932197266
+    value = 0.4530818393219727
+    absolute_error = 5.551115123125783e-17
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-11"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 8.106231689453125e-5
+    status = "PASS"
+    reference = -0.1208529813029707
+    value = -0.1208529813029703
+    absolute_error = 4.0245584642661925e-16
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-12"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 6.198883056640625e-5
+    status = "PASS"
+    reference = 0.04834119252118836
+    value = 0.048341192521188354
+    absolute_error = 6.938893903907228e-18
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-13"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 4.8160552978515625e-5
+    status = "PASS"
+    reference = 0.2334119252118833
+    value = 0.23341192521188206
+    absolute_error = 1.2490009027033011e-15
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-14"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 4.601478576660156e-5
+    status = "PASS"
+    reference = 4.440892098500626e-16
+    value = 4.901454940366135e-15
+    absolute_error = 4.457365730516072e-15
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-15"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 3.3855438232421875e-5
+    status = "PASS"
+    reference = 1.1246076534656944
+    value = 1.124607653465694
+    absolute_error = 4.440892098500626e-16
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-16"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 3.790855407714844e-5
+    status = "PASS"
+    reference = 0.8803580896857056
+    value = 0.8803580896857114
+    absolute_error = 5.773159728050814e-15
+    residual = 1.041543019570664e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-17"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 0.00038504600524902344
+    status = "PASS"
+    reference = -3.9235131037784536
+    value = -3.923513103778454
+    absolute_error = 4.440892098500626e-16
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-18"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 2.6941299438476562e-5
+    status = "PASS"
+    reference = 0.7323875699760852
+    value = 0.7323875699760852
+    absolute_error = 0.0
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-19"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 7.510185241699219e-5
+    status = "PASS"
+    reference = -0.08751736351006414
+    value = -0.08751736351006424
+    absolute_error = 9.71445146547012e-17
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-20"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 0.00011515617370605469
+    status = "PASS"
+    reference = 0.016583173267139085
+    value = 0.01658317326713915
+    absolute_error = 6.591949208711867e-17
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-21"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 4.792213439941406e-5
+    status = "PASS"
+    reference = 0.3367680152331639
+    value = 0.33676801523316396
+    absolute_error = 5.551115123125783e-17
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-22"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 4.00543212890625e-5
+    status = "PASS"
+    reference = -1.0581813203458523e-16
+    value = 2.5153490401663703e-16
+    absolute_error = 3.5735303605122226e-16
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-23"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 3.1948089599609375e-5
+    status = "PASS"
+    reference = 1.317126186476352
+    value = 1.3171261864763515
+    absolute_error = 4.440892098500626e-16
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-24"
+
+    [[cases.arms]]
+    iterations = 19
+    method = "ED"
+    runtime_seconds = 4.601478576660156e-5
+    status = "PASS"
+    reference = 1.0800715216708625
+    value = 1.0800715216708605
+    absolute_error = 1.9984014443252818e-15
+    residual = 1.1322369896547121e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-25"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 0.0004220008850097656
+    status = "PASS"
+    reference = -2.102748483462074
+    value = -2.1027484834620633
+    absolute_error = 1.0658141036401503e-14
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-26"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 2.09808349609375e-5
+    status = "PASS"
+    reference = 0.2873253726900547
+    value = 0.2873253726900545
+    absolute_error = 2.220446049250313e-16
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-27"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 5.817413330078125e-5
+    status = "PASS"
+    reference = -0.13717202264035178
+    value = -0.13717202264035158
+    absolute_error = 1.942890293094024e-16
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-28"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 4.696846008300781e-5
+    status = "PASS"
+    reference = 0.06025971686695959
+    value = 0.06025971686695961
+    absolute_error = 2.0816681711721685e-17
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-29"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 3.409385681152344e-5
+    status = "PASS"
+    reference = 0.20325312338889412
+    value = 0.20325312338889373
+    absolute_error = 3.885780586188048e-16
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-30"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 5.602836608886719e-5
+    status = "PASS"
+    reference = 6.938893903907228e-18
+    value = -2.2836051633011365e-15
+    absolute_error = 2.2905440572050437e-15
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-31"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 3.1948089599609375e-5
+    status = "PASS"
+    reference = 0.9755730083599206
+    value = 0.9755730083599202
+    absolute_error = 3.3306690738754696e-16
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-32"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 3.790855407714844e-5
+    status = "PASS"
+    reference = 0.7521220360016653
+    value = 0.7521220360016674
+    absolute_error = 2.1094237467877974e-15
+    residual = 1.9499455721328895e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-33"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 0.0004100799560546875
+    status = "PASS"
+    reference = -2.72056623273045
+    value = -2.7205662327304374
+    absolute_error = 1.2434497875801753e-14
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-34"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 3.409385681152344e-5
+    status = "PASS"
+    reference = 0.4774461302183907
+    value = 0.4774461302183909
+    absolute_error = 1.6653345369377348e-16
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-35"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 6.890296936035156e-5
+    status = "PASS"
+    reference = -0.11461777722692881
+    value = -0.11461777722692879
+    absolute_error = 2.7755575615628914e-17
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-36"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 7.104873657226562e-5
+    status = "PASS"
+    reference = 0.0389163207311566
+    value = 0.038916320731156626
+    absolute_error = 2.7755575615628914e-17
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-37"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 4.601478576660156e-5
+    status = "PASS"
+    reference = 0.2893969221002505
+    value = 0.28939692210025103
+    absolute_error = 5.551115123125783e-16
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-38"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 4.315376281738281e-5
+    status = "PASS"
+    reference = 7.806255641895632e-17
+    value = -6.583275591331983e-16
+    absolute_error = 7.363901155521546e-16
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-39"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 4.57763671875e-5
+    status = "PASS"
+    reference = 1.144868909347278
+    value = 1.144868909347279
+    absolute_error = 1.1102230246251565e-15
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-40"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 4.696846008300781e-5
+    status = "PASS"
+    reference = 0.9167090793055535
+    value = 0.9167090793055536
+    absolute_error = 1.1102230246251565e-16
+    residual = 1.8185621743297295e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-41"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 0.0004818439483642578
+    status = "PASS"
+    reference = -1.3202349582719286
+    value = -1.3202349582719073
+    absolute_error = 2.1316282072803006e-14
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-42"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 3.600120544433594e-5
+    status = "PASS"
+    reference = 0.12999189163010474
+    value = 0.12999189163010452
+    absolute_error = 2.220446049250313e-16
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-43"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 7.390975952148438e-5
+    status = "PASS"
+    reference = -0.15319618871535992
+    value = -0.15319618871535925
+    absolute_error = 6.661338147750939e-16
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-44"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 7.700920104980469e-5
+    status = "PASS"
+    reference = 0.0726413638844816
+    value = 0.07264136388448082
+    absolute_error = 7.771561172376096e-16
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-45"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 5.412101745605469e-5
+    status = "PASS"
+    reference = 0.14751063070704856
+    value = 0.14751063070704837
+    absolute_error = 1.942890293094024e-16
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-46"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 6.794929504394531e-5
+    status = "PASS"
+    reference = 9.367506770274758e-17
+    value = -3.0010842223769892e-15
+    absolute_error = 3.094759290079737e-15
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-47"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 4.100799560546875e-5
+    status = "PASS"
+    reference = 0.8227354383521042
+    value = 0.8227354383521052
+    absolute_error = 9.992007221626409e-16
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-48"
+
+    [[cases.arms]]
+    iterations = 21
+    method = "ED"
+    runtime_seconds = 3.600120544433594e-5
+    status = "PASS"
+    reference = 0.6335802076108993
+    value = 0.6335802076109022
+    absolute_error = 2.886579864025407e-15
+    residual = 3.3181194717302616e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-49"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 0.003170013427734375
+    status = "PASS"
+    reference = -5.409456845100601
+    value = -5.409456845100594
+    absolute_error = 6.217248937900877e-15
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-50"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 4.601478576660156e-5
+    status = "PASS"
+    reference = 1.0848982972841679
+    value = 1.0848982972842443
+    absolute_error = 7.638334409421077e-14
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-51"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 0.0003199577331542969
+    status = "PASS"
+    reference = -0.07996850269661551
+    value = -0.07996850269657324
+    absolute_error = 4.2271741662602835e-14
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-52"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 0.00028586387634277344
+    status = "PASS"
+    reference = 0.013729377962939084
+    value = 0.013729377962876505
+    absolute_error = 6.257841467238734e-14
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-53"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 0.00012302398681640625
+    status = "PASS"
+    reference = 0.3158022266528722
+    value = 0.3158022266527991
+    absolute_error = 7.310818617156656e-14
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-54"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 0.00013184547424316406
+    status = "PASS"
+    reference = -1.0096090630185017e-15
+    value = 1.2604067095578486e-13
+    absolute_error = 1.2705028001880336e-13
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-55"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 9.202957153320312e-5
+    status = "PASS"
+    reference = 1.3125031849575899
+    value = 1.3125031849576452
+    absolute_error = 5.5289106626332796e-14
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-56"
+
+    [[cases.arms]]
+    iterations = 42
+    method = "ED"
+    runtime_seconds = 7.486343383789062e-5
+    status = "PASS"
+    reference = 1.5350209048924224
+    value = 1.5350209048927996
+    absolute_error = 3.772537837676282e-13
+    residual = 6.4033112159762394e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QG-57"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 0.0053119659423828125
+    status = "PASS"
+    reference = -3.407849058619119
+    value = -3.4078490586191172
+    absolute_error = 1.7763568394002505e-15
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QG-58"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 6.29425048828125e-5
+    status = "PASS"
+    reference = 0.5322836848505054
+    value = 0.5322836848504945
+    absolute_error = 1.0880185641326534e-14
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-59"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 0.00032019615173339844
+    status = "PASS"
+    reference = -0.11943718270639628
+    value = -0.11943718270637624
+    absolute_error = 2.0039525594484076e-14
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QG-60"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 0.0002989768981933594
+    status = "PASS"
+    reference = 0.044693613367362425
+    value = 0.044693613367323776
+    absolute_error = 3.864963904476326e-14
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-61"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 0.00011706352233886719
+    status = "PASS"
+    reference = 0.23070765825088077
+    value = 0.2307076582509005
+    absolute_error = 1.9734214262712158e-14
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QG-62"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 0.0001270771026611328
+    status = "PASS"
+    reference = -2.931682674400804e-16
+    value = -6.952282445484709e-14
+    absolute_error = 6.922965618740701e-14
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-63"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 8.416175842285156e-5
+    status = "PASS"
+    reference = 1.038309329055801
+    value = 1.0383093290558523
+    absolute_error = 5.129230373768223e-14
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_ground"
+observable = "S2"
+status = "PARTIAL"
+id = "QG-64"
+
+    [[cases.arms]]
+    iterations = 59
+    method = "ED"
+    runtime_seconds = 6.604194641113281e-5
+    status = "PASS"
+    reference = 1.1711548317789462
+    value = 1.1711548317790585
+    absolute_error = 1.1235457009206584e-13
+    residual = 5.784938638623744e-12
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DMRG"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QT-01"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 2.0913360118865967
+    status = "PASS"
+    reference = -1.46507267276697
+    value = -1.465072672766972
+    absolute_error = 1.9984014443252818e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QT-02"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 6.699562072753906e-5
+    status = "PASS"
+    reference = 0.6926872549442714
+    value = 0.6926872549442722
+    absolute_error = 7.771561172376096e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QT-03"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00024008750915527344
+    status = "PASS"
+    reference = -0.022834733212279704
+    value = -0.02283473321227932
+    absolute_error = 3.8510861166685117e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QT-04"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00022077560424804688
+    status = "PASS"
+    reference = 0.0024342559444026943
+    value = 0.002434255944402463
+    absolute_error = 2.3115190317390955e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QT-05"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.007002115249633789
+    status = "PASS"
+    reference = 0.17815294891596983
+    value = 0.17815294891596967
+    absolute_error = 1.6653345369377348e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QT-06"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00011920928955078125
+    status = "PASS"
+    reference = -1.478851763270228e-16
+    value = -3.5626883387873676e-16
+    absolute_error = 2.0838365755171395e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "PARTIAL"
+id = "QT-07"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.2605760097503662
+    status = "PASS"
+    reference = 1.2960505178489796
+    value = 1.296050517848981
+    absolute_error = 1.3322676295501878e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "PARTIAL"
+id = "QT-08"
+
+    [[cases.arms]]
+    trace_error = 2.220446049250313e-16
+    method = "thermal_ED"
+    runtime_seconds = 8.20159912109375e-5
+    status = "PASS"
+    reference = 2.149837107651421
+    value = 2.1498371076514218
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "energy_uncentered"
+status = "PARTIAL"
+id = "QT-09"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.04460310935974121
+    status = "PASS"
+    reference = -1.5240809976046146
+    value = -1.5240809976045924
+    absolute_error = 2.220446049250313e-14
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "QT-10"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 4.100799560546875e-5
+    status = "PASS"
+    reference = 0.3426713815251188
+    value = 0.3426713815251211
+    absolute_error = 2.3314683517128287e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QT-11"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00019097328186035156
+    status = "PASS"
+    reference = -0.0591609293875773
+    value = -0.059160929387575285
+    absolute_error = 2.0122792321330962e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "spin_z_correlation"
+status = "PARTIAL"
+id = "QT-12"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00016498565673828125
+    status = "PASS"
+    reference = 0.025836097065578476
+    value = 0.025836097065577403
+    absolute_error = 1.0720591081536668e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QT-13"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 9.202957153320312e-5
+    status = "PASS"
+    reference = 0.18092290773156872
+    value = 0.1809229077315685
+    absolute_error = 2.220446049250313e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "onebody_up"
+status = "PARTIAL"
+id = "QT-14"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 9.799003601074219e-5
+    status = "PASS"
+    reference = -1.734723475976807e-18
+    value = -1.2893090830807651e-15
+    absolute_error = 1.2875743596047883e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "PARTIAL"
+id = "QT-15"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 6.198883056640625e-5
+    status = "PASS"
+    reference = 1.027165790919237
+    value = 1.0271657909192362
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "QuSpin_thermal_trotter"
+observable = "S2"
+status = "PARTIAL"
+id = "QT-16"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 6.699562072753906e-5
+    status = "PASS"
+    reference = 1.4960164756554908
+    value = 1.4960164756554974
+    absolute_error = 6.661338147750939e-15
+    tolerance = 1.0e-8
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "UNRESOLVED"
+id = "FREE-01"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "UNRESOLVED"
+id = "FREE-02"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "UNRESOLVED"
+id = "FREE-03"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "UNRESOLVED"
+id = "FREE-04"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "UNRESOLVED"
+id = "FREE-05"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "UNRESOLVED"
+id = "FREE-06"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "UNRESOLVED"
+id = "FREE-07"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "UNRESOLVED"
+id = "FREE-08"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "UNRESOLVED"
+id = "FREE-09"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "energy_uncentered"
+status = "UNRESOLVED"
+id = "FREE-10"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "onebody_up"
+status = "UNRESOLVED"
+id = "FREE-11"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_free"
+observable = "S2"
+status = "UNRESOLVED"
+id = "FREE-12"
+
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "energy_centered"
+status = "PARTIAL"
+id = "ATOM-01"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.061591148376464844
+    status = "PASS"
+    reference = -0.9242343145200196
+    value = -0.9242343145200199
+    absolute_error = 3.3306690738754696e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "density_total"
+status = "PARTIAL"
+id = "ATOM-02"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 4.00543212890625e-5
+    status = "PASS"
+    reference = 4.0
+    value = 3.9999999999999942
+    absolute_error = 5.773159728050814e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "ATOM-03"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 2.9087066650390625e-5
+    status = "PASS"
+    reference = 0.5378828427399902
+    value = 0.5378828427399898
+    absolute_error = 4.440892098500626e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "S2"
+status = "PARTIAL"
+id = "ATOM-04"
+
+    [[cases.arms]]
+    trace_error = 1.1102230246251565e-16
+    method = "thermal_ED"
+    runtime_seconds = 0.00010991096496582031
+    status = "PASS"
+    reference = 2.385485089106837
+    value = 2.3854850891068384
+    absolute_error = 1.3322676295501878e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "energy_centered"
+status = "PARTIAL"
+id = "ATOM-05"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 0.004690885543823242
+    status = "PASS"
+    reference = -1.830793928648644
+    value = -1.830793928648643
+    absolute_error = 1.1102230246251565e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "density_total"
+status = "PARTIAL"
+id = "ATOM-06"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 3.600120544433594e-5
+    status = "PASS"
+    reference = 4.161481159434526
+    value = 4.161481159434518
+    absolute_error = 7.993605777301127e-15
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "double_occupancy_total"
+status = "PARTIAL"
+id = "ATOM-07"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 3.719329833984375e-5
+    status = "PASS"
+    reference = 0.6230420975551021
+    value = 0.6230420975551025
+    absolute_error = 4.440892098500626e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"
+[[cases]]
+family = "analytic_atom"
+observable = "S2"
+status = "PARTIAL"
+id = "ATOM-08"
+
+    [[cases.arms]]
+    trace_error = 1.9984014443252818e-15
+    method = "thermal_ED"
+    runtime_seconds = 9.083747863769531e-5
+    status = "PASS"
+    reference = 2.3868119588046195
+    value = 2.3868119588046204
+    absolute_error = 8.881784197001252e-16
+    tolerance = 1.0e-10
+    [[cases.arms]]
+    method = "DQMC"
+    status = "UNRESOLVED"
+    reason = "Requires full dependency-backed runner"

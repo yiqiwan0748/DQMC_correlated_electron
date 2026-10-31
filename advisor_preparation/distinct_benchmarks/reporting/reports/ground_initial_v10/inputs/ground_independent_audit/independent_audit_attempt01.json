@@ -1,0 +1,301 @@
+{
+  "status": "PASS",
+  "audit_scope": "Successful audit of a mixed scientific outcome; top-level PASS does not certify every benchmark",
+  "scientific_completions": 1,
+  "catalogue_ids": [
+    "X09",
+    "X12"
+  ],
+  "source_archive_sha256": "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4",
+  "independent_comparator_replay": "BYTE_IDENTICAL",
+  "source_closure_members": 8,
+  "native_source_environment_pins": 5,
+  "benchmarks": {
+    "X09": {
+      "status": "UNRESOLVED",
+      "eligibility_reasons": [
+        "neel: native DMRG variance unresolved",
+        "charge_density_wave: native DMRG variance unresolved",
+        "shuffled: native DMRG variance unresolved"
+      ],
+      "native_optimizer_starts": 4,
+      "manufactured_challenges": 2,
+      "matrix_errors": {
+        "Hamiltonian": 0.0,
+        "MPO_qn_Hamiltonian": 6.661338147750939e-16,
+        "MPO_dense_Hamiltonian": 6.661338147750939e-16,
+        "MPO_qn_max_imaginary": 0.0,
+        "MPO_dense_max_imaginary": 0.0
+      },
+      "certificates": [
+        {
+          "label": "neel",
+          "kind": "native_dmrg",
+          "norm": 0.9999999999999993,
+          "external_energy": -2.102748455286577,
+          "external_energy_excess": 2.817548461209185e-08,
+          "external_ground_fidelity": 0.9999999095019717,
+          "independent_variance": 1.8560580684145532e-08,
+          "low_variance": false,
+          "ground_certificate": false
+        },
+        {
+          "label": "charge_density_wave",
+          "kind": "native_dmrg",
+          "norm": 0.9999999999999998,
+          "external_energy": -2.102748442955734,
+          "external_energy_excess": 4.05063276254225e-08,
+          "external_ground_fidelity": 0.9999998703715703,
+          "independent_variance": 2.8478203986248768e-08,
+          "low_variance": false,
+          "ground_certificate": false
+        },
+        {
+          "label": "spin_domains",
+          "kind": "native_dmrg",
+          "norm": 1.0000000000000004,
+          "external_energy": -2.102748481146584,
+          "external_energy_excess": 2.3154775874445477e-09,
+          "external_ground_fidelity": 0.9999999928247536,
+          "independent_variance": 2.3161679067094162e-09,
+          "low_variance": true,
+          "ground_certificate": true
+        },
+        {
+          "label": "shuffled",
+          "kind": "native_dmrg",
+          "norm": 1.0000000000000002,
+          "external_energy": -2.1027484327675787,
+          "external_energy_excess": 5.0694482833790744e-08,
+          "external_ground_fidelity": 0.9999998381513738,
+          "independent_variance": 3.556328794983562e-08,
+          "low_variance": false,
+          "ground_certificate": false
+        },
+        {
+          "label": "first_excited_eigenvector",
+          "kind": "manufactured_excited_mps",
+          "norm": 0.999999999999999,
+          "external_energy": -1.8064238518231062,
+          "external_energy_excess": 0.2963246316389554,
+          "external_ground_fidelity": 3.27408752990026e-18,
+          "independent_variance": 2.0218088054089127e-29,
+          "low_variance": true,
+          "ground_certificate": false
+        },
+        {
+          "label": "highest_eigenvector",
+          "kind": "manufactured_excited_mps",
+          "norm": 1.0000000000000002,
+          "external_energy": 10.102748483462076,
+          "external_energy_excess": 12.205496966924137,
+          "external_ground_fidelity": 1.1050292098706027e-18,
+          "independent_variance": 2.364293532513777e-28,
+          "low_variance": true,
+          "ground_certificate": false
+        }
+      ]
+    },
+    "X12": {
+      "status": "PASS",
+      "backends": {
+        "QuSpin": {
+          "prescriptions": 10,
+          "RDMs": 20,
+          "max_errors": {
+            "energy": 8.881784197001252e-16,
+            "trace": 4.440892098500626e-16,
+            "Nmean": 8.881784197001252e-16,
+            "Czz": 0.0,
+            "connected_Czz": 2.7755575615628914e-17,
+            "distance_to_equal_ground": 4.440892098500626e-16,
+            "spin_xyz": 5.551115123125783e-17,
+            "spin_z": 5.551115123125783e-17,
+            "cut1_spectrum_L1": 3.885780586188048e-16,
+            "RDM_trace": 4.440892098500626e-16,
+            "purity_vs_spectrum": 6.661338147750939e-16,
+            "purity_vs_analytic": 4.440892098500626e-16,
+            "S2_vs_analytic": 8.881784197001252e-16,
+            "cut2_spectrum_L1": 4.668700550873486e-16,
+            "excited_weight": 1.6653345369377348e-16
+          },
+          "pure_mixed_separation": {
+            "S2": 0.2876820724517799,
+            "connected_Czz": 0.06249999999999997
+          }
+        },
+        "user_ED_thermal_RDM": {
+          "prescriptions": 10,
+          "RDMs": 20,
+          "max_errors": {
+            "energy": 8.881784197001252e-16,
+            "trace": 4.440892098500626e-16,
+            "Nmean": 8.881784197001252e-16,
+            "Czz": 0.0,
+            "connected_Czz": 1.3877787807814457e-17,
+            "distance_to_equal_ground": 3.885780586188048e-16,
+            "spin_xyz": 1.1102230246251565e-16,
+            "spin_z": 1.1102230246251565e-16,
+            "cut1_spectrum_L1": 3.885780586188048e-16,
+            "RDM_trace": 6.661338147750939e-16,
+            "purity_vs_spectrum": 8.881784197001252e-16,
+            "purity_vs_analytic": 1.3322676295501878e-15,
+            "S2_vs_analytic": 8.881784197001252e-16,
+            "cut2_spectrum_L1": 9.097468326486019e-16,
+            "excited_weight": 4.213083646127766e-16
+          },
+          "pure_mixed_separation": {
+            "S2": 0.2876820724517807,
+            "connected_Czz": 0.06250000000000001
+          }
+        }
+      }
+    }
+  },
+  "inputs": [
+    {
+      "path": "results/ground_certification_6458708/oracle.json",
+      "bytes": 76611,
+      "sha256": "c41d18eba752608b6b7a415ec3736fbafcc4bff854c267d89ca28c20d6fbde67"
+    },
+    {
+      "path": "results/ground_certification_6458708/target.toml",
+      "bytes": 43580,
+      "sha256": "f5b2d115cd127522bebb2fdd232f96ab57bfe3ff3d496c361947a60f34f6bb42"
+    },
+    {
+      "path": "results/ground_certification_6458708/comparison.json",
+      "bytes": 5086,
+      "sha256": "3a5a2d9994918ea135b5a1397334c0eac53bc52fd8c9c7ea4a6d41e9770e9e6a"
+    },
+    {
+      "path": "results/ground_certification_6458708/comparison_independent_replay_attempt01.json",
+      "bytes": 5086,
+      "sha256": "3a5a2d9994918ea135b5a1397334c0eac53bc52fd8c9c7ea4a6d41e9770e9e6a"
+    },
+    {
+      "path": "source_releases/ground-certification-v1-source.tar.gz",
+      "bytes": 17269,
+      "sha256": "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4"
+    },
+    {
+      "path": "source_releases/ground-certification-v1-freeze.json",
+      "bytes": 1277,
+      "sha256": "47d379b14e8d7cf03ee139355f034ec0060694e76ae37c4e868889c63de369d1"
+    },
+    {
+      "path": "ground_certification/README.md",
+      "bytes": 8370,
+      "sha256": "6a1a17a540b472ecc5353b3cd9e63124810c2a47a1895e14a4afd25137d2c0e7"
+    },
+    {
+      "path": "ground_certification/SHA256SUMS",
+      "bytes": 562,
+      "sha256": "1d9bf1831d2a4d1d0ebc73e45e3fff3022c92d9aaee856b0d0e09db286543f0c"
+    },
+    {
+      "path": "ground_certification/compare.py",
+      "bytes": 13597,
+      "sha256": "46a01ccf16265b704bf297634f55a654f2996d32cd0f5cd2fdf502b87f64b938"
+    },
+    {
+      "path": "ground_certification/manifest.toml",
+      "bytes": 3659,
+      "sha256": "96e4d336d4cd82b485d0b4c4796caec26db5ede4688012cee692f2e747d5236a"
+    },
+    {
+      "path": "ground_certification/oracle_quspin.py",
+      "bytes": 6293,
+      "sha256": "77cf51e2915e1741e01a3a00ace6e6b6ff7291eac6b0f0aec405847a9a0d1c58"
+    },
+    {
+      "path": "ground_certification/pre_execution_receipt.json",
+      "bytes": 3223,
+      "sha256": "22854ea48d638147997a25abb0b41e5520af590adbd3e6f32e058ace76134c3e"
+    },
+    {
+      "path": "ground_certification/run.sbatch",
+      "bytes": 1647,
+      "sha256": "6b38c66997fdcce3916406ce3f83147ec7acc5a00905eca3aff255dc173d2f26"
+    },
+    {
+      "path": "ground_certification/target.jl",
+      "bytes": 10032,
+      "sha256": "d988f3feb305caaeac7b1d318dea8fe760f540c19ff911bf442c7bb87088a791"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+      "bytes": 17625,
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl",
+      "bytes": 11032,
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl",
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/Project.toml",
+      "bytes": 950,
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+    },
+    {
+      "path": "../validated_package/HubbardRenyiDQMC/Manifest.toml",
+      "bytes": 61818,
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+    },
+    {
+      "path": "results/ground_certification_6458708/oracle.resources.txt",
+      "bytes": 1200,
+      "sha256": "31267a3b87fe62dd5dba26d88ea906c94f3b9d546843dbae394c7e8d67fd2516"
+    },
+    {
+      "path": "results/ground_certification_6458708/target.resources.txt",
+      "bytes": 1311,
+      "sha256": "29c3045e4083b0ca6f8c166bdbd191eef7de8471c6469fa023baa2220691f959"
+    },
+    {
+      "path": "logs/ground_certification_6458708.log",
+      "bytes": 7875,
+      "sha256": "71b0e812a6b4b2ca0bca9a50d54587cc88659d28148a5c50a64ed5e1e168fbea"
+    },
+    {
+      "path": "results/ground_certification_6458708/remote_transfer_metadata.json",
+      "bytes": 1263,
+      "sha256": "57d355ef7112efc7327e36971b5401288bc641a7dc833b855bede32a86b1a38c"
+    }
+  ],
+  "input_sha256": {
+    "results/ground_certification_6458708/oracle.json": "c41d18eba752608b6b7a415ec3736fbafcc4bff854c267d89ca28c20d6fbde67",
+    "results/ground_certification_6458708/target.toml": "f5b2d115cd127522bebb2fdd232f96ab57bfe3ff3d496c361947a60f34f6bb42",
+    "results/ground_certification_6458708/comparison.json": "3a5a2d9994918ea135b5a1397334c0eac53bc52fd8c9c7ea4a6d41e9770e9e6a",
+    "results/ground_certification_6458708/comparison_independent_replay_attempt01.json": "3a5a2d9994918ea135b5a1397334c0eac53bc52fd8c9c7ea4a6d41e9770e9e6a",
+    "source_releases/ground-certification-v1-source.tar.gz": "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4",
+    "source_releases/ground-certification-v1-freeze.json": "47d379b14e8d7cf03ee139355f034ec0060694e76ae37c4e868889c63de369d1",
+    "ground_certification/README.md": "6a1a17a540b472ecc5353b3cd9e63124810c2a47a1895e14a4afd25137d2c0e7",
+    "ground_certification/SHA256SUMS": "1d9bf1831d2a4d1d0ebc73e45e3fff3022c92d9aaee856b0d0e09db286543f0c",
+    "ground_certification/compare.py": "46a01ccf16265b704bf297634f55a654f2996d32cd0f5cd2fdf502b87f64b938",
+    "ground_certification/manifest.toml": "96e4d336d4cd82b485d0b4c4796caec26db5ede4688012cee692f2e747d5236a",
+    "ground_certification/oracle_quspin.py": "77cf51e2915e1741e01a3a00ace6e6b6ff7291eac6b0f0aec405847a9a0d1c58",
+    "ground_certification/pre_execution_receipt.json": "22854ea48d638147997a25abb0b41e5520af590adbd3e6f32e058ace76134c3e",
+    "ground_certification/run.sbatch": "6b38c66997fdcce3916406ce3f83147ec7acc5a00905eca3aff255dc173d2f26",
+    "ground_certification/target.jl": "d988f3feb305caaeac7b1d318dea8fe760f540c19ff911bf442c7bb87088a791",
+    "../validated_package/HubbardRenyiDQMC/analysis/compute_s2_ed.jl": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "../validated_package/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+    "../validated_package/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+    "../validated_package/HubbardRenyiDQMC/Project.toml": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "../validated_package/HubbardRenyiDQMC/Manifest.toml": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+    "results/ground_certification_6458708/oracle.resources.txt": "31267a3b87fe62dd5dba26d88ea906c94f3b9d546843dbae394c7e8d67fd2516",
+    "results/ground_certification_6458708/target.resources.txt": "29c3045e4083b0ca6f8c166bdbd191eef7de8471c6469fa023baa2220691f959",
+    "logs/ground_certification_6458708.log": "71b0e812a6b4b2ca0bca9a50d54587cc88659d28148a5c50a64ed5e1e168fbea",
+    "results/ground_certification_6458708/remote_transfer_metadata.json": "57d355ef7112efc7327e36971b5401288bc641a7dc833b855bede32a86b1a38c"
+  },
+  "limits": "Manufactured excited MPS states test certificate failure sensitivity, not natural optimizer failure. This audit executes only scalar/vector arithmetic and frozen postprocessing, no model, eigensolver, native optimizer or Monte Carlo.",
+  "schema": "ground_certification_independent_receipt_audit_v1",
+  "auditor_sha256": "5192375591f34ba50e213968233df4d4b6e2da38dfccf80d2842515481a2254f",
+  "no_physics_executed": true
+}

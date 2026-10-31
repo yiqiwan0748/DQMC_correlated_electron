@@ -1,0 +1,39 @@
+{
+  "schema": "p21_auditor_diagnostic_conditioning_correction_v2",
+  "created_utc": "2026-10-23T00:43:46.474489+00:00",
+  "old_auditor_sha256": "923d429af85682066c34372eb6b36ae330fcdca756746b289489865a683822c0",
+  "new_auditor_sha256": "84c1d709b7a9e40148cb7733dd65e53c928ced3fde2698293984137bb95f11eb",
+  "preserved_original_auditor": "audit_p21_sampled_pilot_v1_unconditioned.py",
+  "original_audit_receipt": "p21_6460727/independent_audit_v1.json",
+  "original_audit_receipt_sha256": "d2cb3629f15840b9deabf06efb21bfe22d90e0be27455ee7d786c2380cf870e6",
+  "original_failure_path": "components[35].difference_over_descriptive_standard_error",
+  "component": {
+    "order": "GT0",
+    "part": "real",
+    "tau_index": 1,
+    "spin": "up",
+    "row": 0,
+    "column": 3
+  },
+  "independent": {
+    "alf_mean": -0.18736470758001733,
+    "user_mean": -0.13813852181447217,
+    "difference": 0.04922618576554516,
+    "combined_SE": 0.047146743590352626,
+    "Z": 1.0441057434053205
+  },
+  "reported": {
+    "alf_mean": -0.18736470758001644,
+    "user_mean": -0.13813852181447217,
+    "difference": 0.04922618576554427,
+    "combined_SE": 0.047146743590353514,
+    "Z": 1.044105743405282
+  },
+  "Z_difference": 3.8413716652030416e-14,
+  "reported_Z_times_independent_SE_minus_independent_difference": -1.817990202823694e-15,
+  "correction": "Conditioned diagnostic comparison only. All independently reconstructed raw means, standard errors, numerators/signs/counts, source hashes and non-diagnostic comparisons retain the original strict64-epsilon rule. Each serialized Z must equal its own verified difference/SE under strict64epsilon, and reconstruct the original mean-scale difference. Exact zero-SE/None semantics are required. Cross-receipt Z values are not compared without accounting for division conditioning.",
+  "scientific_gates_changed": false,
+  "frozen_source_changed": false,
+  "scientific_completions": 0,
+  "P21_status": "NOT_RUN"
+}

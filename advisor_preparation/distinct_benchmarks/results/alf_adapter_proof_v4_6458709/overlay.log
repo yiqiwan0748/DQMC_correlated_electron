@@ -1,0 +1,35 @@
+{
+  "schema": "p21_observer_overlay_v1",
+  "status": "GENERATED_NOT_COMPILED_NOT_SCIENTIFICALLY_RUN",
+  "alf_commit": "f4c500cc5d7bcf089400c63e4e75382c558a4ed3",
+  "generator_sha256": "65b1f9bb319b1e5df4af6118046ebfe933d4c37c396fbdb802c75623822d283a",
+  "files": [
+    {
+      "origin": "alf",
+      "path": "Prog/main.F90",
+      "original_sha256": "9b08c61719c57a8beb249bfde5a77f68098ea25563b001aebec19727db8cbf2c",
+      "observer_sha256": "1eacb29d94a127bd45fd45a3147979e80fcb0be098d4f52dcf6c2bd6e01a1183",
+      "patch": "alf_main.F90.patch",
+      "patch_sha256": "efd57a4c4e1333b0b539514592bea021b5bfd2d776b1b44934ec15bc264fb27c"
+    },
+    {
+      "origin": "alf",
+      "path": "Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "original_sha256": "555b291628a80dd94796c59242993933f700096f4af45cbce3dd419da7885cd7",
+      "observer_sha256": "fa6be71c1008d80ec2a6b052c341fd6e125089ecec2583316db08702459a8e5c",
+      "patch": "alf_Hamiltonian_Hubbard_smod.F90.patch",
+      "patch_sha256": "d362254cd5dee2052c995bb0281869f26f5c7ce06793e1360da3ed1f315ba401"
+    },
+    {
+      "origin": "user",
+      "path": "src/dqmc_kernel.jl",
+      "original_sha256": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+      "observer_sha256": "911a61642b23a4465639c3b3e4c63ff9d7cf05d51da288f3224f1775c0aba891",
+      "patch": "user_dqmc_kernel.jl.patch",
+      "patch_sha256": "80ff5fe819f93ec5b99aaa36b50bda04971af5b682b54c1885d7467a21721587"
+    }
+  ],
+  "sampling_kernel_changes": false,
+  "user_original_preserved": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/renyi_disjoint_corrected",
+  "alf_original_preserved": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF"
+}

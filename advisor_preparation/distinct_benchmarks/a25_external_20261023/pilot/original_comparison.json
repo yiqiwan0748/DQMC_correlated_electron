@@ -1,0 +1,4372 @@
+{
+  "schema": "A25_COMPARISON_V1",
+  "catalogue_id": "A25",
+  "mode": "pilot",
+  "scientific_completions": 0,
+  "catalogue_status": "NOT_RUN",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "L6/center25/flux9/uniform/all complex K entries",
+      "value": 1.3348302303878492e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/nonzero native imaginary hopping",
+      "value": 0.01499943750632809,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/analytic shell gap",
+      "value": 1.9478154285268892,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/analytic global fixedN gap",
+      "value": 1.9478154285268892,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/reported residual",
+      "value": 9.469989318702062e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(1, 5)/fresh native H residual",
+      "value": 9.469989318702062e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/reported residual",
+      "value": 7.399676830815357e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(2, 4)/fresh native H residual",
+      "value": 7.399676830815357e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/reported residual",
+      "value": 4.484945318667425e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(3, 3)/fresh native H residual",
+      "value": 4.484945318667425e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/reported residual",
+      "value": 2.4339553884903023e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(4, 2)/fresh native H residual",
+      "value": 2.4339553884903023e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/reported residual",
+      "value": 9.469989318702062e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(5, 1)/fresh native H residual",
+      "value": 9.469989318702062e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/native norm",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/independent full-vector Slater fidelity",
+      "value": 3.774758283725532e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/uniform/independent Slater fullFock residual",
+      "value": 3.0876893212387653e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/all complex K entries",
+      "value": 1.3540802986917941e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/nonzero native imaginary hopping",
+      "value": 0.08987854919801104,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/analytic shell gap",
+      "value": 1.9478154285268892,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/analytic global fixedN gap",
+      "value": 1.9478154285268892,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/reported residual",
+      "value": 9.389464168912871e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(1, 5)/fresh native H residual",
+      "value": 9.389464168912871e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/reported residual",
+      "value": 7.186122097722451e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(2, 4)/fresh native H residual",
+      "value": 7.186122097722451e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/independent occupation ground energy",
+      "value": 1.509903313490213e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/reported residual",
+      "value": 2.0951913150932048e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(3, 3)/fresh native H residual",
+      "value": 2.0951913150932048e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/reported residual",
+      "value": 2.392515751118842e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(4, 2)/fresh native H residual",
+      "value": 2.392515751118842e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/reported residual",
+      "value": 9.389464168912871e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(5, 1)/fresh native H residual",
+      "value": 9.389464168912871e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/balanced analytic totalE",
+      "value": 1.5987211554602254e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/global totalN groundE",
+      "value": 1.5987211554602254e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/independent full-vector Slater fidelity",
+      "value": 7.993605777301127e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux9/boundary_seam/independent Slater fullFock residual",
+      "value": 3.0082961129039247e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/all complex K entries",
+      "value": 1.3400998189662178e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/nonzero native imaginary hopping",
+      "value": 0.028329542590431016,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/analytic shell gap",
+      "value": 1.9010608616815055,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/analytic global fixedN gap",
+      "value": 1.9010608616815055,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/reported residual",
+      "value": 8.919680892975506e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(1, 5)/fresh native H residual",
+      "value": 8.919680892975506e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/reported residual",
+      "value": 7.583823946904232e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(2, 4)/fresh native H residual",
+      "value": 7.583823946904232e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/reported residual",
+      "value": 4.054485034876356e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(3, 3)/fresh native H residual",
+      "value": 4.054485034876356e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/reported residual",
+      "value": 5.454494387134409e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(4, 2)/fresh native H residual",
+      "value": 5.454494387134409e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/reported residual",
+      "value": 8.919680892975506e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(5, 1)/fresh native H residual",
+      "value": 8.919680892975506e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/native norm",
+      "value": 4.440892098500626e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/independent full-vector Slater fidelity",
+      "value": 3.774758283725532e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/uniform/independent Slater fullFock residual",
+      "value": 4.054107124944722e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/all complex K entries",
+      "value": 1.326926261480803e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/nonzero native imaginary hopping",
+      "value": 0.16918234906699603,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/analytic shell gap",
+      "value": 1.9010608616815055,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/analytic global fixedN gap",
+      "value": 1.9010608616815055,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/reported residual",
+      "value": 9.611137222560807e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(1, 5)/fresh native H residual",
+      "value": 9.611137222560807e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/reported residual",
+      "value": 7.098365522796684e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(2, 4)/fresh native H residual",
+      "value": 7.098365522796684e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/reported residual",
+      "value": 4.229674520367632e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(3, 3)/fresh native H residual",
+      "value": 4.229674520367632e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/independent occupation ground energy",
+      "value": 3.552713678800501e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/reported residual",
+      "value": 1.741893501264036e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(4, 2)/fresh native H residual",
+      "value": 1.741893501264036e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/reported residual",
+      "value": 9.611137222560807e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(5, 1)/fresh native H residual",
+      "value": 9.611137222560807e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/independent full-vector Slater fidelity",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux17/boundary_seam/independent Slater fullFock residual",
+      "value": 3.3912118061220614e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/all complex K entries",
+      "value": 1.3389341519068181e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/nonzero native imaginary hopping",
+      "value": 0.03499285460433619,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/analytic shell gap",
+      "value": 1.8775563208938162,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/analytic global fixedN gap",
+      "value": 1.8775563208938157,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/independent occupation ground energy",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/independent occupation ground energy",
+      "value": 3.552713678800501e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/reported residual",
+      "value": 9.709139515038208e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(1, 5)/fresh native H residual",
+      "value": 9.709139515038208e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/independent occupation ground energy",
+      "value": 6.217248937900877e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/reported residual",
+      "value": 2.2094792890563e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(2, 4)/fresh native H residual",
+      "value": 2.2094792890563e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/reported residual",
+      "value": 2.6899571031848987e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(3, 3)/fresh native H residual",
+      "value": 2.6899571031848987e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/reported residual",
+      "value": 2.9061532649006744e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(4, 2)/fresh native H residual",
+      "value": 2.9061532649006744e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/independent occupation ground energy",
+      "value": 3.552713678800501e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/reported residual",
+      "value": 9.709139515038208e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(5, 1)/fresh native H residual",
+      "value": 9.709139515038208e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/independent occupation ground energy",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/independent full-vector Slater fidelity",
+      "value": 3.774758283725532e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/uniform/independent Slater fullFock residual",
+      "value": 4.091237289128393e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/all complex K entries",
+      "value": 1.3426356273935429e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/nonzero native imaginary hopping",
+      "value": 0.20845989984609956,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/analytic shell gap",
+      "value": 1.8775563208938162,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/analytic global fixedN gap",
+      "value": 1.8775563208938157,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/independent occupation ground energy",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/reported residual",
+      "value": 8.934342303429366e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(1, 5)/fresh native H residual",
+      "value": 8.934342303429366e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/reported residual",
+      "value": 9.644064852832974e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(2, 4)/fresh native H residual",
+      "value": 9.644064852832974e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/reported residual",
+      "value": 3.1815979846801617e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(3, 3)/fresh native H residual",
+      "value": 3.1815979846801617e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/reported residual",
+      "value": 3.5391735719701064e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(4, 2)/fresh native H residual",
+      "value": 3.5391735719701064e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/reported residual",
+      "value": 8.934342303429366e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(5, 1)/fresh native H residual",
+      "value": 8.934342303429366e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/independent occupation ground energy",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/independent Slater norm",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/independent full-vector Slater fidelity",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux21/boundary_seam/independent Slater fullFock residual",
+      "value": 3.920370663878483e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/all complex K entries",
+      "value": 1.307479541663561e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/nonzero native imaginary hopping",
+      "value": 0.041654611386019086,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/analytic shell gap",
+      "value": 1.8539683334675925,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/analytic global fixedN gap",
+      "value": 1.8539683334675925,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/independent occupation ground energy",
+      "value": 1.3322676295501878e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/reported residual",
+      "value": 8.737091251899076e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(1, 5)/fresh native H residual",
+      "value": 8.737091251899076e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/reported residual",
+      "value": 1.4246648943502902e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(2, 4)/fresh native H residual",
+      "value": 1.4246648943502902e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/reported residual",
+      "value": 2.807712243341942e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(3, 3)/fresh native H residual",
+      "value": 2.807712243341942e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/reported residual",
+      "value": 2.990710140074858e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(4, 2)/fresh native H residual",
+      "value": 2.990710140074858e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/reported residual",
+      "value": 8.737091251899076e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(5, 1)/fresh native H residual",
+      "value": 8.737091251899076e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/independent occupation ground energy",
+      "value": 1.3322676295501878e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/native norm",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/independent full-vector Slater fidelity",
+      "value": 3.774758283725532e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/uniform/independent Slater fullFock residual",
+      "value": 3.2150165500136135e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/all complex K entries",
+      "value": 1.3350294823652989e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/nonzero native imaginary hopping",
+      "value": 0.24740395925452294,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/analytic shell gap",
+      "value": 1.8539683334675925,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/analytic global fixedN gap",
+      "value": 1.8539683334675925,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/independent occupation ground energy",
+      "value": 1.3322676295501878e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/independent occupation ground energy",
+      "value": 5.329070518200751e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/reported residual",
+      "value": 1.0040664146769196e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(1, 5)/fresh native H residual",
+      "value": 1.0040664146769196e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/reported residual",
+      "value": 9.695029943677984e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(2, 4)/fresh native H residual",
+      "value": 9.695029943677984e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/independent occupation ground energy",
+      "value": 3.552713678800501e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/reported residual",
+      "value": 3.561743915090915e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(3, 3)/fresh native H residual",
+      "value": 3.561743915090915e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/independent occupation ground energy",
+      "value": 4.440892098500626e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/reported residual",
+      "value": 1.0581995738872875e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(4, 2)/fresh native H residual",
+      "value": 1.0581995738872875e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/independent occupation ground energy",
+      "value": 5.329070518200751e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/reported residual",
+      "value": 1.0040664146769196e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(5, 1)/fresh native H residual",
+      "value": 1.0040664146769196e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/independent occupation ground energy",
+      "value": 1.3322676295501878e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/balanced analytic totalE",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/global totalN groundE",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/native norm",
+      "value": 1.1102230246251565e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/independent Slater norm",
+      "value": 1.1102230246251565e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/independent full-vector Slater fidelity",
+      "value": 3.9968028886505635e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux25/boundary_seam/independent Slater fullFock residual",
+      "value": 2.8467081803480182e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/all complex K entries",
+      "value": 1.342856811303484e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/nonzero native imaginary hopping",
+      "value": 0.0483145168584971,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/analytic shell gap",
+      "value": 1.8302979477539498,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/analytic global fixedN gap",
+      "value": 1.8302979477539498,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/independent occupation ground energy",
+      "value": 2.220446049250313e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/reported residual",
+      "value": 9.06134720202509e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(1, 5)/fresh native H residual",
+      "value": 9.06134720202509e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/reported residual",
+      "value": 5.254204990499027e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(2, 4)/fresh native H residual",
+      "value": 5.254204990499027e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/reported residual",
+      "value": 3.489857330194745e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(3, 3)/fresh native H residual",
+      "value": 3.489857330194745e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/reported residual",
+      "value": 9.350163203019772e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(4, 2)/fresh native H residual",
+      "value": 9.350163203019772e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/independent occupation ground energy",
+      "value": 2.220446049250313e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/reported residual",
+      "value": 9.06134720202509e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(5, 1)/fresh native H residual",
+      "value": 9.06134720202509e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/balanced analytic totalE",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/global totalN groundE",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/independent full-vector Slater fidelity",
+      "value": 3.3306690738754696e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/uniform/independent Slater fullFock residual",
+      "value": 2.785721697724683e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/all complex K entries",
+      "value": 1.3627288067061554e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/nonzero native imaginary hopping",
+      "value": 0.28595222510483553,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/analytic shell gap",
+      "value": 1.8302979477539498,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/analytic global fixedN gap",
+      "value": 1.8302979477539498,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/independent occupation ground energy",
+      "value": 7.549516567451064e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/reported residual",
+      "value": 9.924798123517566e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(1, 5)/fresh native H residual",
+      "value": 9.924798123517566e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/reported residual",
+      "value": 5.106620352528324e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(2, 4)/fresh native H residual",
+      "value": 5.106620352528324e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/independent occupation ground energy",
+      "value": 1.4210854715202004e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/reported residual",
+      "value": 2.164633246833752e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(3, 3)/fresh native H residual",
+      "value": 2.164633246833752e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/reported residual",
+      "value": 2.817883420745418e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(4, 2)/fresh native H residual",
+      "value": 2.817883420745418e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/independent occupation ground energy",
+      "value": 7.549516567451064e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/reported residual",
+      "value": 9.924798123517566e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(5, 1)/fresh native H residual",
+      "value": 9.924798123517566e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/independent occupation ground energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/balanced analytic totalE",
+      "value": 1.5987211554602254e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/global totalN groundE",
+      "value": 1.5987211554602254e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/independent full-vector Slater fidelity",
+      "value": 4.440892098500626e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux29/boundary_seam/independent Slater fullFock residual",
+      "value": 2.7543126276698006e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/all complex K entries",
+      "value": 1.3244166210134346e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/nonzero native imaginary hopping",
+      "value": 0.05497227502706773,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/analytic shell gap",
+      "value": 1.806546215766136,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/analytic global fixedN gap",
+      "value": 1.806546215766136,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/independent occupation ground energy",
+      "value": 1.6653345369377348e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/reported residual",
+      "value": 9.11924720159431e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(1, 5)/fresh native H residual",
+      "value": 9.11924720159431e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/reported residual",
+      "value": 3.017839165622919e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(2, 4)/fresh native H residual",
+      "value": 3.017839165622919e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/independent occupation ground energy",
+      "value": 1.7763568394002505e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/reported residual",
+      "value": 2.3290033954107633e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(3, 3)/fresh native H residual",
+      "value": 2.3290033954107633e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/reported residual",
+      "value": 3.366046608086079e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(4, 2)/fresh native H residual",
+      "value": 3.366046608086079e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/reported residual",
+      "value": 9.11924720159431e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(5, 1)/fresh native H residual",
+      "value": 9.11924720159431e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/independent occupation ground energy",
+      "value": 1.6653345369377348e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/balanced analytic totalE",
+      "value": 1.865174681370263e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/global totalN groundE",
+      "value": 1.865174681370263e-14,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/native norm",
+      "value": 3.3306690738754696e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/independent full-vector Slater fidelity",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/uniform/independent Slater fullFock residual",
+      "value": 3.1806767562430965e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/all complex K entries",
+      "value": 1.3325567187647329e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/nonzero native imaginary hopping",
+      "value": 0.32404302839486837,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/analytic shell gap",
+      "value": 1.806546215766136,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/analytic global fixedN gap",
+      "value": 1.806546215766136,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/independent occupation ground energy",
+      "value": 1.6653345369377348e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/independent occupation ground energy",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/reported residual",
+      "value": 1.197069612251804e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(1, 5)/fresh native H residual",
+      "value": 1.197069612251804e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/reported residual",
+      "value": 2.041580132494007e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(2, 4)/fresh native H residual",
+      "value": 2.041580132494007e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/reported residual",
+      "value": 4.5502883237467015e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(3, 3)/fresh native H residual",
+      "value": 4.5502883237467015e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/independent occupation ground energy",
+      "value": 2.6645352591003757e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/reported residual",
+      "value": 9.21016914966861e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(4, 2)/fresh native H residual",
+      "value": 9.21016914966861e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/independent occupation ground energy",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/reported residual",
+      "value": 1.197069612251804e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(5, 1)/fresh native H residual",
+      "value": 1.197069612251804e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/independent occupation ground energy",
+      "value": 1.6653345369377348e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/balanced analytic totalE",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/global totalN groundE",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/independent full-vector Slater fidelity",
+      "value": 8.43769498715119e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux33/boundary_seam/independent Slater fullFock residual",
+      "value": 3.2099734940538534e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/all complex K entries",
+      "value": 1.3099548751793144e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/nonzero native imaginary hopping",
+      "value": 0.06828016596400475,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/analytic shell gap",
+      "value": 1.7588029390509399,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/analytic global fixedN gap",
+      "value": 1.7588029390509394,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/independent occupation ground energy",
+      "value": 3.3306690738754696e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/independent occupation ground energy",
+      "value": 4.440892098500626e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/reported residual",
+      "value": 6.7833492150029734e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(1, 5)/fresh native H residual",
+      "value": 6.7833492150029734e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/reported residual",
+      "value": 8.536128195223916e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(2, 4)/fresh native H residual",
+      "value": 8.536128195223916e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/reported residual",
+      "value": 2.5731192387537307e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(3, 3)/fresh native H residual",
+      "value": 2.5731192387537307e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/independent occupation ground energy",
+      "value": 5.329070518200751e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/reported residual",
+      "value": 1.8358857410820427e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(4, 2)/fresh native H residual",
+      "value": 1.8358857410820427e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/independent occupation ground energy",
+      "value": 4.440892098500626e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/reported residual",
+      "value": 6.7833492150029734e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(5, 1)/fresh native H residual",
+      "value": 6.7833492150029734e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/independent occupation ground energy",
+      "value": 3.3306690738754696e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/native norm",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/independent Slater norm",
+      "value": 1.5543122344752192e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/independent full-vector Slater fidelity",
+      "value": 3.774758283725532e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/uniform/independent Slater fullFock residual",
+      "value": 3.465986945901104e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/all complex K entries",
+      "value": 1.3564073414255491e-15,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/native K Hermiticity",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/nonzero native imaginary hopping",
+      "value": 0.3986093279844229,
+      "relation": "ge",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/fixed closed shell",
+      "value": true,
+      "relation": "eq",
+      "bound": true,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/analytic shell gap",
+      "value": 1.7588029390509399,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/analytic global fixedN gap",
+      "value": 1.7588029390509394,
+      "relation": "ge",
+      "bound": 0.05,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/independent occupation ground energy",
+      "value": 3.3306690738754696e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(0, 6)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/independent occupation ground energy",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/reported residual",
+      "value": 9.52726305090975e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(1, 5)/fresh native H residual",
+      "value": 9.52726305090975e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/independent occupation ground energy",
+      "value": 3.552713678800501e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/reported residual",
+      "value": 1.2895094233253785e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(2, 4)/fresh native H residual",
+      "value": 1.2895094233253785e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/independent occupation ground energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/reported residual",
+      "value": 4.575887855259252e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(3, 3)/fresh native H residual",
+      "value": 4.575887855259252e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/independent occupation ground energy",
+      "value": 1.7763568394002505e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/reported residual",
+      "value": 1.0084866661815167e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(4, 2)/fresh native H residual",
+      "value": 1.0084866661815167e-14,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/independent occupation ground energy",
+      "value": 7.105427357601002e-15,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/reported residual",
+      "value": 9.52726305090975e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(5, 1)/fresh native H residual",
+      "value": 9.52726305090975e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/independent occupation ground energy",
+      "value": 3.3306690738754696e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/reported residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/sector(6, 0)/fresh native H residual",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/balanced analytic totalE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/global totalN groundE",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 5e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/native norm",
+      "value": 2.220446049250313e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/independent Slater norm",
+      "value": 1.3322676295501878e-15,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/independent full-vector Slater fidelity",
+      "value": 1.9984014443252818e-15,
+      "relation": "le",
+      "bound": 1e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/center25/flux41/boundary_seam/independent Slater fullFock residual",
+      "value": 3.3197854774551326e-15,
+      "relation": "le",
+      "bound": 2e-12,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux9/gauge K relation",
+      "value": 2.2215299868541707e-16,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux9/gauge energy",
+      "value": 1.509903313490213e-14,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux17/gauge K relation",
+      "value": 1.1443916996305594e-16,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux17/gauge energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux21/gauge K relation",
+      "value": 2.2887833992611187e-16,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux21/gauge energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux25/gauge K relation",
+      "value": 1.1443916996305594e-16,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux25/gauge energy",
+      "value": 8.881784197001252e-16,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux29/gauge K relation",
+      "value": 2.237726045655905e-16,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux29/gauge energy",
+      "value": 1.5987211554602254e-14,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux33/gauge K relation",
+      "value": 5.551115123125783e-17,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux33/gauge energy",
+      "value": 1.865174681370263e-14,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux41/gauge K relation",
+      "value": 1.2412670766236366e-16,
+      "relation": "le",
+      "bound": 1e-13,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/flux41/gauge energy",
+      "value": 0.0,
+      "relation": "le",
+      "bound": 1e-12,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/current full error budget eligibility",
+      "value": 2.11904710140206e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/current exact derivative",
+      "value": 5.835359279116048e-11,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/current conditional propagated enclosure",
+      "value": 5.835359279116048e-11,
+      "relation": "le",
+      "bound": 2.11904710140206e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/curvature full error budget eligibility",
+      "value": 6.520510313599495e-10,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/curvature exact derivative",
+      "value": 7.413997193950195e-11,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/curvature conditional propagated enclosure",
+      "value": 7.413997193950195e-11,
+      "relation": "le",
+      "bound": 6.520510313599495e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/stiffness full error budget eligibility",
+      "value": 1.9561542772899062e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/stiffness exact derivative",
+      "value": 2.224198603073546e-10,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h8/stiffness conditional propagated enclosure",
+      "value": 2.224198603073546e-10,
+      "relation": "le",
+      "bound": 1.9561542772899062e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/current full error budget eligibility",
+      "value": 1.5577583980898855e-10,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/current exact derivative",
+      "value": 3.7176720035780875e-12,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/current conditional propagated enclosure",
+      "value": 3.7176720035780875e-12,
+      "relation": "le",
+      "bound": 1.5577583980898855e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/curvature full error budget eligibility",
+      "value": 2.1472746794546877e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/curvature exact derivative",
+      "value": 5.097977595625025e-12,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/curvature conditional propagated enclosure",
+      "value": 5.097977595625025e-12,
+      "relation": "le",
+      "bound": 2.1472746794546877e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/stiffness full error budget eligibility",
+      "value": 6.4418252215741215e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/stiffness exact derivative",
+      "value": 1.5293988298026306e-11,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/stiffness conditional propagated enclosure",
+      "value": 1.5293988298026306e-11,
+      "relation": "le",
+      "bound": 6.4418252215741215e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/current both-fixed-step consistency",
+      "value": 5.463592078758239e-11,
+      "relation": "le",
+      "bound": 2.2748229412110483e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/curvature both-fixed-step consistency",
+      "value": 6.904199434387692e-11,
+      "relation": "le",
+      "bound": 2.7993257108146375e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/uniform/h4/stiffness both-fixed-step consistency",
+      "value": 2.071258720093283e-10,
+      "relation": "le",
+      "bound": 8.397979498864028e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/current full error budget eligibility",
+      "value": 2.11904710140206e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/current exact derivative",
+      "value": 5.849330048102175e-11,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/current conditional propagated enclosure",
+      "value": 5.849330048102175e-11,
+      "relation": "le",
+      "bound": 2.11904710140206e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/curvature full error budget eligibility",
+      "value": 6.520510313599495e-10,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/curvature exact derivative",
+      "value": 7.785228017809231e-11,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/curvature conditional propagated enclosure",
+      "value": 7.785228017809231e-11,
+      "relation": "le",
+      "bound": 6.520510313599495e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/stiffness full error budget eligibility",
+      "value": 1.9561542772899062e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/stiffness exact derivative",
+      "value": 2.3355684053427694e-10,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h8/stiffness conditional propagated enclosure",
+      "value": 2.3355684053427694e-10,
+      "relation": "le",
+      "bound": 1.9561542772899062e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/current full error budget eligibility",
+      "value": 1.5577583980898855e-10,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/current exact derivative",
+      "value": 3.4123606718061694e-12,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/current conditional propagated enclosure",
+      "value": 3.4123606718061694e-12,
+      "relation": "le",
+      "bound": 1.5577583980898855e-10,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/curvature full error budget eligibility",
+      "value": 2.1472746794546877e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/curvature exact derivative",
+      "value": 1.0676431960732202e-11,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/curvature conditional propagated enclosure",
+      "value": 1.0676431960732202e-11,
+      "relation": "le",
+      "bound": 2.1472746794546877e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/stiffness full error budget eligibility",
+      "value": 6.4418252215741215e-09,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "qualification",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/stiffness exact derivative",
+      "value": 3.202926812662099e-11,
+      "relation": "le",
+      "bound": 1e-08,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/stiffness conditional propagated enclosure",
+      "value": 3.202926812662099e-11,
+      "relation": "le",
+      "bound": 6.4418252215741215e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/current both-fixed-step consistency",
+      "value": 5.508093980921558e-11,
+      "relation": "le",
+      "bound": 2.2748229412110483e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/curvature both-fixed-step consistency",
+      "value": 8.852871213882452e-11,
+      "relation": "le",
+      "bound": 2.7993257108146375e-09,
+      "kind": "comparison",
+      "passed": true
+    },
+    {
+      "name": "L6/ctr25/boundary_seam/h4/stiffness both-fixed-step consistency",
+      "value": 2.6558610866089793e-10,
+      "relation": "le",
+      "bound": 8.397979498864028e-09,
+      "kind": "comparison",
+      "passed": true
+    }
+  ],
+  "points": [
+    {
+      "id": "L6/center25/flux9/uniform",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 0.9999999999999962,
+      "reference_slater_residual": 3.0876893212387653e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux9/boundary_seam",
+      "energy_error": 1.5987211554602254e-14,
+      "fidelity": 0.999999999999992,
+      "reference_slater_residual": 3.0082961129039247e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux17/uniform",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 0.9999999999999962,
+      "reference_slater_residual": 4.054107124944722e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux17/boundary_seam",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 0.9999999999999973,
+      "reference_slater_residual": 3.3912118061220614e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux21/uniform",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 0.9999999999999962,
+      "reference_slater_residual": 4.091237289128393e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux21/boundary_seam",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 1.0000000000000016,
+      "reference_slater_residual": 3.920370663878483e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux25/uniform",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 0.9999999999999962,
+      "reference_slater_residual": 3.2150165500136135e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux25/boundary_seam",
+      "energy_error": 1.7763568394002505e-15,
+      "fidelity": 1.000000000000004,
+      "reference_slater_residual": 2.8467081803480182e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux29/uniform",
+      "energy_error": 0.0,
+      "fidelity": 0.9999999999999967,
+      "reference_slater_residual": 2.785721697724683e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux29/boundary_seam",
+      "energy_error": 1.5987211554602254e-14,
+      "fidelity": 0.9999999999999956,
+      "reference_slater_residual": 2.7543126276698006e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux33/uniform",
+      "energy_error": 1.865174681370263e-14,
+      "fidelity": 1.0000000000000002,
+      "reference_slater_residual": 3.1806767562430965e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux33/boundary_seam",
+      "energy_error": 0.0,
+      "fidelity": 1.0000000000000084,
+      "reference_slater_residual": 3.2099734940538534e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux41/uniform",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 0.9999999999999962,
+      "reference_slater_residual": 3.465986945901104e-15,
+      "sectors": 7
+    },
+    {
+      "id": "L6/center25/flux41/boundary_seam",
+      "energy_error": 8.881784197001252e-16,
+      "fidelity": 1.000000000000002,
+      "reference_slater_residual": 3.3197854774551326e-15,
+      "sectors": 7
+    }
+  ],
+  "responses": [
+    {
+      "L": 6,
+      "center_units": 25,
+      "gauge": "uniform",
+      "step_units": 8,
+      "current": -0.05553948178967187,
+      "curvature": 0.22202934882006403,
+      "stiffness": 0.6660880464601922,
+      "current_budget": 2.11904710140206e-09,
+      "curvature_budget": 6.520510313599495e-10,
+      "stiffness_budget": 1.9561542772899062e-09,
+      "current_input": 1.1504525692594694e-11,
+      "curvature_input": 5.113182126693427e-10,
+      "current_truncation": 2.1069958847736627e-09,
+      "curvature_truncation": 1.1705532693187018e-10,
+      "current_formation": 5.323814231486746e-13,
+      "curvature_formation": 2.366288650066906e-11,
+      "current_division": 9.86579383338295e-17,
+      "curvature_division": 3.944033523241055e-16,
+      "current_reference": 1.4210854715202007e-14,
+      "curvature_reference": 1.4210854715202007e-14,
+      "stiffness_scaling": 1.1832100569723167e-15,
+      "unit_roundoff": 1.1102230246251565e-16,
+      "gamma32": 3.552713678800514e-15,
+      "gamma16": 1.776356839400254e-15,
+      "positive_bounds_recording": "nextafter toward positive infinity; conditional binary64 scope"
+    },
+    {
+      "L": 6,
+      "center_units": 25,
+      "gauge": "uniform",
+      "step_units": 4,
+      "current": -0.05553948184430779,
+      "curvature": 0.22202934888910603,
+      "stiffness": 0.666088046667318,
+      "current_budget": 1.5577583980898855e-10,
+      "curvature_budget": 2.1472746794546877e-09,
+      "stiffness_budget": 6.4418252215741215e-09,
+      "current_input": 2.300942999838478e-11,
+      "curvature_input": 2.0452886263440354e-09,
+      "current_truncation": 1.3168724279835392e-10,
+      "curvature_truncation": 7.315957933241886e-12,
+      "current_formation": 1.0648574995961973e-12,
+      "curvature_formation": 9.465548991934241e-11,
+      "current_division": 9.865793843088239e-17,
+      "curvature_division": 3.9440335244674873e-16,
+      "current_reference": 1.4210854715202007e-14,
+      "curvature_reference": 1.4210854715202007e-14,
+      "stiffness_scaling": 1.1832100573402461e-15,
+      "unit_roundoff": 1.1102230246251565e-16,
+      "gamma32": 3.552713678800514e-15,
+      "gamma16": 1.776356839400254e-15,
+      "positive_bounds_recording": "nextafter toward positive infinity; conditional binary64 scope"
+    },
+    {
+      "L": 6,
+      "center_units": 25,
+      "gauge": "boundary_seam",
+      "step_units": 8,
+      "current": -0.055539481789532164,
+      "curvature": 0.22202934881635172,
+      "stiffness": 0.6660880464490552,
+      "current_budget": 2.11904710140206e-09,
+      "curvature_budget": 6.520510313599495e-10,
+      "stiffness_budget": 1.9561542772899062e-09,
+      "current_input": 1.1504525692594694e-11,
+      "curvature_input": 5.113182126693427e-10,
+      "current_truncation": 2.1069958847736627e-09,
+      "curvature_truncation": 1.1705532693187018e-10,
+      "current_formation": 5.323814231486751e-13,
+      "curvature_formation": 2.3662886500669074e-11,
+      "current_division": 9.865793833358133e-17,
+      "curvature_division": 3.9440335231751113e-16,
+      "current_reference": 1.4210854715202007e-14,
+      "curvature_reference": 1.4210854715202007e-14,
+      "stiffness_scaling": 1.1832100569525334e-15,
+      "unit_roundoff": 1.1102230246251565e-16,
+      "gamma32": 3.552713678800514e-15,
+      "gamma16": 1.776356839400254e-15,
+      "positive_bounds_recording": "nextafter toward positive infinity; conditional binary64 scope"
+    },
+    {
+      "L": 6,
+      "center_units": 25,
+      "gauge": "boundary_seam",
+      "step_units": 4,
+      "current": -0.0555394818446131,
+      "curvature": 0.22202934890488044,
+      "stiffness": 0.6660880467146413,
+      "current_budget": 1.5577583980898855e-10,
+      "curvature_budget": 2.1472746794546877e-09,
+      "stiffness_budget": 6.4418252215741215e-09,
+      "current_input": 2.300942999838478e-11,
+      "curvature_input": 2.0452886263440354e-09,
+      "current_truncation": 1.3168724279835392e-10,
+      "curvature_truncation": 7.315957933241886e-12,
+      "current_formation": 1.0648574995961967e-12,
+      "curvature_formation": 9.465548991934239e-11,
+      "current_division": 9.865793843142473e-17,
+      "curvature_division": 3.944033524747697e-16,
+      "current_reference": 1.4210854715202007e-14,
+      "curvature_reference": 1.4210854715202007e-14,
+      "stiffness_scaling": 1.1832100574243091e-15,
+      "unit_roundoff": 1.1102230246251565e-16,
+      "gamma32": 3.552713678800514e-15,
+      "gamma16": 1.776356839400254e-15,
+      "positive_bounds_recording": "nextafter toward positive infinity; conditional binary64 scope"
+    }
+  ],
+  "sector_solves": 98,
+  "pilot_excluded": true,
+  "source_freeze_sha256": "9ce63aad259c091a40bf2af4668213b7c446df74c0aa93e73a70a16a65216ba7",
+  "input_sha256": {
+    "native": "4fa6df27e2467ea0f2fe92f6fc23764b4f829854c7a5e6895b0d3b80313c642f",
+    "reference": "d0ce45a4c1276987550065a015d3378ea1cf5ad1537e2a6ea2fdfc4c8c000bb8"
+  },
+  "scope": "One free closed-shell 1D ring flux response through NEW K/Slater adapters and actual unchanged native complex ED; no arbitrary-flux DQMC/interacting/bulk stiffness claim"
+}

@@ -1,0 +1,3342 @@
+{
+  "generated_utc": "2026-10-22T18:36:42.363683+00:00",
+  "tool_sha256": "2519dceef66d633e02e863aea34fc986a51c16c56ecd0044a681882e42fde43c",
+  "base_ledger_sha256": "d32231a48f54a46d5233af6df9d7c0d275adec4f0d0134ee8cf4f2f21d696de0",
+  "counts": {
+    "PASS": 28,
+    "FAIL": 0,
+    "UNRESOLVED": 3,
+    "NOT_RUN": 69
+  },
+  "category_counts": {
+    "Analytical": {
+      "PASS": 16,
+      "FAIL": 0,
+      "UNRESOLVED": 0,
+      "NOT_RUN": 9
+    },
+    "External-reference error control": {
+      "PASS": 2,
+      "FAIL": 0,
+      "UNRESOLVED": 0,
+      "NOT_RUN": 23
+    },
+    "Independent package": {
+      "PASS": 8,
+      "FAIL": 0,
+      "UNRESOLVED": 3,
+      "NOT_RUN": 14
+    },
+    "Published journal target": {
+      "PASS": 2,
+      "FAIL": 0,
+      "UNRESOLVED": 0,
+      "NOT_RUN": 23
+    }
+  },
+  "counting_rule": "Exactly 100 catalogue IDs; one status per distinct idea. Parameters, matrix elements, fixture/check/component counts are not additional ideas.",
+  "scope_limit": "ED/thermal-ED analysis and production free-band construction only for this tranche. No production DQMC sampling or DMRG pass is inferred.",
+  "base_history_and_source_amendments": "Exact immutable base ledger and every base evidence file copied under inputs; no replacement or deletion",
+  "later_tranche_audits": {
+    "thermal": {
+      "status": "AUDITED",
+      "release": "thermal-bridges-v1",
+      "archive_sha256": "73e34d1c706f302b79523559bdac0faf7b4c84a62ed9e840f153ad15ac29d826"
+    },
+    "tenpy": {
+      "status": "UNRESOLVED",
+      "reason": "ValueError: Reported comparison differs from frozen independent rerun"
+    }
+  },
+  "input_manifest": {
+    "reporting_tool": {
+      "original_path": "distinct_benchmarks/reporting/merge_later_tranches.py",
+      "evidence_copy": "inputs/reporting_tool/merge_later_tranches.py",
+      "sha256": "2519dceef66d633e02e863aea34fc986a51c16c56ecd0044a681882e42fde43c",
+      "bytes": 23597
+    },
+    "base_ledger": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/ledger_100.json",
+      "evidence_copy": "inputs/base_ledger/ledger_100.json",
+      "sha256": "d32231a48f54a46d5233af6df9d7c0d275adec4f0d0134ee8cf4f2f21d696de0",
+      "bytes": 133912
+    },
+    "base_reporting_tool": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/reporting_tool_merge_status_ledger.py",
+      "evidence_copy": "inputs/base_reporting_tool/reporting_tool_merge_status_ledger.py",
+      "sha256": "22d9253987517a5350c08e38ac4f12c85652e5664e802a81adfd905a24cfc10e",
+      "bytes": 34214
+    },
+    "base_catalogue": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/catalogue_benchmark_ideas_100.json",
+      "evidence_copy": "inputs/base_catalogue/catalogue_benchmark_ideas_100.json",
+      "sha256": "59a780c5994db50a56da260fc51ae639f22b674b3bc24f878cde1a6e7bc31818",
+      "bytes": 144066
+    },
+    "base_frozen_release": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/frozen_release_tranche01-freeze.json",
+      "evidence_copy": "inputs/base_frozen_release/frozen_release_tranche01-freeze.json",
+      "sha256": "dcb7e8ca0a48f1578c93049f90d3129df5cceede019e41fcc1343d903d439ba9",
+      "bytes": 2090
+    },
+    "base_frozen_archive": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/frozen_archive_tranche01-source.tar.gz",
+      "evidence_copy": "inputs/base_frozen_archive/frozen_archive_tranche01-source.tar.gz",
+      "sha256": "a5c95efd46268165a9556a7a56371651257f2e66da63850d2ba35a9bcec9d09c",
+      "bytes": 33740
+    },
+    "base_user_ed_source": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/user_ed_source_compute_s2_ed.jl",
+      "evidence_copy": "inputs/base_user_ed_source/user_ed_source_compute_s2_ed.jl",
+      "sha256": "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd",
+      "bytes": 16741
+    },
+    "base_user_thermal_source": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/user_thermal_source_audit_u4_l4_thermal_ed.jl",
+      "evidence_copy": "inputs/base_user_thermal_source/user_thermal_source_audit_u4_l4_thermal_ed.jl",
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+      "bytes": 11032
+    },
+    "base_selected_package_ED_source": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/selected_package_ED_source_compute_s2_ed_v2.jl",
+      "evidence_copy": "inputs/base_selected_package_ED_source/selected_package_ED_source_compute_s2_ed_v2.jl",
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+      "bytes": 17625
+    },
+    "base_selected_package_ED_patch": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/selected_package_ED_patch_compute_s2_ed_v2.patch",
+      "evidence_copy": "inputs/base_selected_package_ED_patch/selected_package_ED_patch_compute_s2_ed_v2.patch",
+      "sha256": "da3fe6cde8c390f7dfb0dede91f8a04ea8e2afc04ae5c9448afe10d2b9c8c34f",
+      "bytes": 2042
+    },
+    "base_selected_journal_driver": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/selected_journal_driver_run_raghu_v2.jl",
+      "evidence_copy": "inputs/base_selected_journal_driver/selected_journal_driver_run_raghu_v2.jl",
+      "sha256": "73f8e35d2c196f725ac959e54f710d1728dc0a904b3410cbb82a0ecacbb9faa0",
+      "bytes": 7936
+    },
+    "base_journal_predecessor_01": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/journal_predecessor_01_journal.toml",
+      "evidence_copy": "inputs/base_journal_predecessor_01/journal_predecessor_01_journal.toml",
+      "sha256": "e970c09f686f3e9454d4d1fc25fe9029f4ac36978e3de06e52a511260be20c7d",
+      "bytes": 7660
+    },
+    "base_packages_predecessor_02": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/packages_predecessor_02_packages.json",
+      "evidence_copy": "inputs/base_packages_predecessor_02/packages_predecessor_02_packages.json",
+      "sha256": "f6697318eb71ae846825c8ff1a1bc3e6b2bbc1505c47c73c13aedfd926f7b2c8",
+      "bytes": 35634
+    },
+    "base_analytic": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/analytic_analytic.toml",
+      "evidence_copy": "inputs/base_analytic/analytic_analytic.toml",
+      "sha256": "02df06113d552f25376365826aaf3b238acb1722c35f1ef1806076cd78a224b2",
+      "bytes": 301410
+    },
+    "base_packages": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/packages_packages.json",
+      "evidence_copy": "inputs/base_packages/packages_packages.json",
+      "sha256": "f02f2b6c9a81c9d8b640cc56d9cad4de7c01f00167476aeeb441bbc7154e9704",
+      "bytes": 35651
+    },
+    "base_p16-production-retest_freeze": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/p16-production-retest_freeze_p16-production-retest-freeze.json",
+      "evidence_copy": "inputs/base_p16-production-retest_freeze/p16-production-retest_freeze_p16-production-retest-freeze.json",
+      "sha256": "7ed2801bd33a442f341249dec39afcea05b445f38047f9524f7030652200d26d",
+      "bytes": 1144
+    },
+    "base_p16-production-retest_archive": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/p16-production-retest_archive_p16-production-retest-source.tar.gz",
+      "evidence_copy": "inputs/base_p16-production-retest_archive/p16-production-retest_archive_p16-production-retest-source.tar.gz",
+      "sha256": "caf185fa1710d9d0d384c8ae69d1e4d36a6ec12b0f844f42cd584a1aeeb278fb",
+      "bytes": 10089
+    },
+    "base_p16-diagnosis_freeze": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/p16-diagnosis_freeze_p16-diagnosis-freeze.json",
+      "evidence_copy": "inputs/base_p16-diagnosis_freeze/p16-diagnosis_freeze_p16-diagnosis-freeze.json",
+      "sha256": "272a6473320bab43bcc2e23295a8d51c9db18f75e77543112a569d58a45960bd",
+      "bytes": 810
+    },
+    "base_p16-diagnosis_archive": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/p16-diagnosis_archive_p16-diagnosis-source.tar.gz",
+      "evidence_copy": "inputs/base_p16-diagnosis_archive/p16-diagnosis_archive_p16-diagnosis-source.tar.gz",
+      "sha256": "9998a60a70155d9c37647135e7e1da3b2031fb488e5fd9330ebe8f62308274da",
+      "bytes": 4277
+    },
+    "base_package_source_release": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/package_source_release_source_release_receipt.json",
+      "evidence_copy": "inputs/base_package_source_release/package_source_release_source_release_receipt.json",
+      "sha256": "690357cc318498d5b78a5505a3d16068b402f1088c09c6fc08d3983cff467a68",
+      "bytes": 25215
+    },
+    "base_production_subsets": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/production_subsets_production_subsets.toml",
+      "evidence_copy": "inputs/base_production_subsets/production_subsets_production_subsets.toml",
+      "sha256": "a07fda137f3a463df373756c2e5055f2090e127bc3264434dd776111b9752a34",
+      "bytes": 1093
+    },
+    "base_production_subsets_comparison": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/production_subsets_comparison_production_subsets_comparison.json",
+      "evidence_copy": "inputs/base_production_subsets_comparison/production_subsets_comparison_production_subsets_comparison.json",
+      "sha256": "5a0558fb26244f69fa11e94e277a1279b1c4cc8c32e934767e862cb5b97ab7df",
+      "bytes": 3443
+    },
+    "base_p16_independent_proof": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/p16_independent_proof_permutation_proof.json",
+      "evidence_copy": "inputs/base_p16_independent_proof/p16_independent_proof_permutation_proof.json",
+      "sha256": "2f3086981d2bf5db66acf515cffa5dac22a55c6549e2fc9145cc16453bf56d3f",
+      "bytes": 4381
+    },
+    "base_package_target": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/package_target_target.toml",
+      "evidence_copy": "inputs/base_package_target/package_target_target.toml",
+      "sha256": "f2d2e21b3784f4cc76f362e0af86eeb218f3d373d7ff183532aa463b7f27b50d",
+      "bytes": 6559
+    },
+    "base_package_oracle": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/package_oracle_oracle.toml",
+      "evidence_copy": "inputs/base_package_oracle/package_oracle_oracle.toml",
+      "sha256": "709a1a8303ecde7803283b7392e8fa7844ad4752c7c0ead7f3525cc5f1a0828b",
+      "bytes": 6001
+    },
+    "base_journal": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/journal_journal.toml",
+      "evidence_copy": "inputs/base_journal/journal_journal.toml",
+      "sha256": "a75694f6ea0321ddcbc0b223fbb1a3981927679f2480ea0cd44b9a8986ec3614",
+      "bytes": 159142
+    },
+    "base_process_status": {
+      "original_path": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4/inputs/process_status_process_status.txt",
+      "evidence_copy": "inputs/base_process_status/process_status_process_status.txt",
+      "sha256": "f63ef1f253274923ea8aa94fa2672fd103b3282b9dcbf5547f6e263827bb335d",
+      "bytes": 74
+    },
+    "predecessor_001": {
+      "original_path": "distinct_benchmarks/results/tenpy_pilot_6457724/oracle.json",
+      "evidence_copy": "inputs/predecessor_001/oracle.json",
+      "sha256": "2c8b3c7f89e020c8d14140872829680b2e681bc296de6b542c0a46e48cbffb56",
+      "bytes": 17812
+    },
+    "predecessor_002": {
+      "original_path": "distinct_benchmarks/results/tenpy_pilot_6457724/target.toml",
+      "evidence_copy": "inputs/predecessor_002/target.toml",
+      "sha256": "fd4087ceda3cdb7bcb421df69217599e1453d7480d3d433746a8fa34d8c4e7df",
+      "bytes": 6066
+    },
+    "predecessor_003": {
+      "original_path": "distinct_benchmarks/results/tenpy_pilot_6457724/comparison.json",
+      "evidence_copy": "inputs/predecessor_003/comparison.json",
+      "sha256": "a973bd691f766bb147a0a0a684d5c3e732afbbeffd08a243e68333a5cf61e5cf",
+      "bytes": 680
+    },
+    "predecessor_004": {
+      "original_path": "distinct_benchmarks/results/dqmc_X06_pilot01/pilot.toml",
+      "evidence_copy": "inputs/predecessor_004/pilot.toml",
+      "sha256": "c0cbbaca35171f185d0c6b49914520ce7943b62a8cdeec1d90d6b6ef907c19ae",
+      "bytes": 63399
+    },
+    "predecessor_005": {
+      "original_path": "distinct_benchmarks/results/dqmc_X06_pilot01/summary.json",
+      "evidence_copy": "inputs/predecessor_005/summary.json",
+      "sha256": "9e2ed11e9b4a5ed29123593eae591422d13ac48533e86b3a9b4226bf80bd83d6",
+      "bytes": 3755
+    },
+    "predecessor_006": {
+      "original_path": "distinct_benchmarks/reporting/reports/thermal_bridges_v5/ledger_100.json",
+      "evidence_copy": "inputs/predecessor_006/ledger_100.json",
+      "sha256": "309a6df4ed484d8eb47db5b2aa0a71cacf56846855cacc3319a47b017c7ba3de",
+      "bytes": 143253
+    },
+    "thermal_freeze": {
+      "original_path": "distinct_benchmarks/source_releases/thermal-bridges-v1-freeze.json",
+      "evidence_copy": "inputs/thermal_freeze/thermal-bridges-v1-freeze.json",
+      "sha256": "31555adcda87e515a141bac770baec785f3deecf6c888f40e4d39c2cbce904dc",
+      "bytes": 1069
+    },
+    "thermal_archive": {
+      "original_path": "distinct_benchmarks/source_releases/thermal-bridges-v1-source.tar.gz",
+      "evidence_copy": "inputs/thermal_archive/thermal-bridges-v1-source.tar.gz",
+      "sha256": "73e34d1c706f302b79523559bdac0faf7b4c84a62ed9e840f153ad15ac29d826",
+      "bytes": 14544
+    },
+    "thermal_oracle": {
+      "original_path": "distinct_benchmarks/results/thermal_bridges_6457908/oracle.json",
+      "evidence_copy": "inputs/thermal_oracle/oracle.json",
+      "sha256": "d9ede5c627105d92b3ae30e4f7929b424fa840e35c03c9278747c97b5ec71cd6",
+      "bytes": 14686
+    },
+    "thermal_target": {
+      "original_path": "distinct_benchmarks/results/thermal_bridges_6457908/target.toml",
+      "evidence_copy": "inputs/thermal_target/target.toml",
+      "sha256": "61a65997c2a078bf1a3e5f09a24df961fad0ca7d60833f04b88433057719454d",
+      "bytes": 12015
+    },
+    "thermal_reported_comparison": {
+      "original_path": "distinct_benchmarks/results/thermal_bridges_6457908/comparison.json",
+      "evidence_copy": "inputs/thermal_reported_comparison/comparison.json",
+      "sha256": "06774d06392fd4ca62e841eeb94356a3211846e11413d8b25bd0b29b7a9aa72a",
+      "bytes": 4216
+    },
+    "thermal_user_source_analysis_compute_s2_ed.jl": {
+      "original_path": "validated_package/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+      "evidence_copy": "inputs/thermal_user_source_analysis_compute_s2_ed.jl/compute_s2_ed.jl",
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+      "bytes": 17625
+    },
+    "thermal_user_source_analysis_audit_u4_l4_thermal_ed.jl": {
+      "original_path": "validated_package/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl",
+      "evidence_copy": "inputs/thermal_user_source_analysis_audit_u4_l4_thermal_ed.jl/audit_u4_l4_thermal_ed.jl",
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+      "bytes": 11032
+    },
+    "tenpy_freeze": {
+      "original_path": "distinct_benchmarks/source_releases/tenpy-tranche-freeze.json",
+      "evidence_copy": "inputs/tenpy_freeze/tenpy-tranche-freeze.json",
+      "sha256": "688846e930d5ca2e3e3fe71e0108d90ef37d8277ede4978697eba514e3c51278",
+      "bytes": 1178
+    },
+    "tenpy_archive": {
+      "original_path": "distinct_benchmarks/source_releases/tenpy-tranche-source.tar.gz",
+      "evidence_copy": "inputs/tenpy_archive/tenpy-tranche-source.tar.gz",
+      "sha256": "cc00d51fc99cf2d265a1fe2c75f59e649a35ff3116c69211511bb83f4987bbed",
+      "bytes": 13531
+    },
+    "tenpy_oracle": {
+      "original_path": "distinct_benchmarks/results/tenpy_full_6457944/oracle.json",
+      "evidence_copy": "inputs/tenpy_oracle/oracle.json",
+      "sha256": "019477d7f9beb11868e71df2adf1d4173916aaf9f897b4aea2b36d42fc7fe8a7",
+      "bytes": 45085
+    },
+    "tenpy_target": {
+      "original_path": "distinct_benchmarks/results/tenpy_full_6457944/target.toml",
+      "evidence_copy": "inputs/tenpy_target/target.toml",
+      "sha256": "565a06cb17e24da547ecca68da4578d61383db166edaef6989f0d9f06a4c70b9",
+      "bytes": 19027
+    },
+    "tenpy_reported_comparison": {
+      "original_path": "distinct_benchmarks/results/tenpy_full_6457944/comparison.json",
+      "evidence_copy": "inputs/tenpy_reported_comparison/comparison.json",
+      "sha256": "04f69419e8fa48b6d9e53b591bb62eefeadadc1dff709708244e4bc9d01e212a",
+      "bytes": 1413
+    },
+    "tenpy_user_source_analysis_compute_s2_itensor_dmrg.jl": {
+      "original_path": "validated_package/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl",
+      "evidence_copy": "inputs/tenpy_user_source_analysis_compute_s2_itensor_dmrg.jl/compute_s2_itensor_dmrg.jl",
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+      "bytes": 10719
+    },
+    "tenpy_user_source_Project.toml": {
+      "original_path": "validated_package/HubbardRenyiDQMC/Project.toml",
+      "evidence_copy": "inputs/tenpy_user_source_Project.toml/Project.toml",
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+      "bytes": 950
+    },
+    "tenpy_user_source_Manifest.toml": {
+      "original_path": "validated_package/HubbardRenyiDQMC/Manifest.toml",
+      "evidence_copy": "inputs/tenpy_user_source_Manifest.toml/Manifest.toml",
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+      "bytes": 61818
+    }
+  },
+  "analysis_receipts": {
+    "analysis/tenpy_process.json": "8045414fcb09220be7a0ee164244bf2f017751bebc63687fb051f5a674e4ef6d",
+    "analysis/tenpy_recomputed.json": "c146d3154dd20ca042ab639fb3f6a3ff0c5f0d8cea7969bdd91d4663ce7943f2",
+    "analysis/thermal_process.json": "54f7284feb24fc789ecf612f10fbb6c8dc17330a678b8a1e3020cde51317eaf4",
+    "analysis/thermal_recomputed.json": "06774d06392fd4ca62e841eeb94356a3211846e11413d8b25bd0b29b7a9aa72a"
+  },
+  "rows": [
+    {
+      "id": "A01",
+      "category": "Analytical",
+      "title": "Atomic equation of state",
+      "scientific_question": "Does an interacting isolated site reproduce the full density and double-occupancy equation of state?",
+      "catalogue_model": "t=0 Hubbard atom or decoupled chain",
+      "catalogue_ensemble": "Grand canonical finite beta, explicit centered mu",
+      "source_urls": "https://arxiv.org/html/1502.02194",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 18,
+      "comparisons": 72,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 5.551115123125783e-16,
+          "comparison_count": 72,
+          "scalar_components": 72,
+          "maximum_tolerance_ratio": 5.551115123125783e-06,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=1,t=0; U=0,2,6; mu_centered=-0.7,0,0.6; beta=0.25,2; N,D,centered internal E,logZ"
+    },
+    {
+      "id": "A02",
+      "category": "Analytical",
+      "title": "Atomic two-pole Green function",
+      "scientific_question": "Are atomic addition/removal energies, residues and imaginary-time decay correct?",
+      "catalogue_model": "One Hubbard site with t=0",
+      "catalogue_ensemble": "Grand canonical thermal trace",
+      "source_urls": "https://arxiv.org/html/1502.02194",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 8,
+      "comparisons": 72,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 1.6653345369377348e-16,
+          "comparison_count": 72,
+          "scalar_components": 80,
+          "maximum_tolerance_ratio": 1.6653345369377348e-06,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=1,t=0; U=1,4; mu_centered=-0.3,0.7; beta=0.5,2; both poles/residues and tau/beta=0,1/8,1/3,1/2,7/8,1"
+    },
+    {
+      "id": "A03",
+      "category": "Analytical",
+      "title": "Dimer superexchange gap",
+      "scientific_question": "Does the solver reproduce interaction-generated spin exchange?",
+      "catalogue_model": "Two-site open Hubbard dimer, one bond t",
+      "catalogue_ensemble": "Canonical N=2; lowest S=0 and S=1",
+      "source_urls": "https://arxiv.org/html/1502.02194",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 8,
+      "comparisons": 32,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 7.105427357601002e-15,
+          "comparison_count": 32,
+          "scalar_components": 32,
+          "maximum_tolerance_ratio": 7.105427357601001e-06,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "ED Hamiltonian/Lanczos plus analytical adapter",
+        "existing_user_functions": [
+          "build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Open one-bond dimer: physical t=0.7,1.3; U=0,1,4,12; singlet and triplet classified by full S^2; source ring input t/2"
+    },
+    {
+      "id": "A04",
+      "category": "Analytical",
+      "title": "Dimer charge gap",
+      "scientific_question": "Do charged excitations reproduce the analytic dimer insulating gap?",
+      "catalogue_model": "Same open dimer",
+      "catalogue_ensemble": "Canonical ground states N=1,2,3",
+      "source_urls": "https://arxiv.org/html/1502.02194",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 8,
+      "comparisons": 32,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 1.2878587085651816e-14,
+          "comparison_count": 32,
+          "scalar_components": 32,
+          "maximum_tolerance_ratio": 1.2878587085651816e-05,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "ED Hamiltonian/Lanczos plus analytical adapter",
+        "existing_user_functions": [
+          "build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Same dimer grid, ground sectors (Nup,Ndown)=(1,0),(1,1),(2,1); compare each E1,E2,E3 and charge gap"
+    },
+    {
+      "id": "A05",
+      "category": "Analytical",
+      "title": "Dimer entanglement spectrum",
+      "scientific_question": "Are interacting local Schmidt probabilities correct, beyond one entropy value?",
+      "catalogue_model": "Open symmetric Hubbard dimer",
+      "catalogue_ensemble": "Unique N=2 singlet ground state",
+      "source_urls": "https://arxiv.org/html/1502.02194",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 8,
+      "comparisons": 24,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 7.105427357601002e-15,
+          "comparison_count": 24,
+          "scalar_components": 48,
+          "maximum_tolerance_ratio": 6.88338275267597e-05,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "ED Hamiltonian/Lanczos plus analytical adapter",
+        "existing_user_functions": [
+          "build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos",
+          "reduced_operator",
+          "renyi2_entropy"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Same dimer grid, all four one-site RDM probabilities and native user ED S2 functional"
+    },
+    {
+      "id": "A06",
+      "category": "Analytical",
+      "title": "Free finite-chain thermodynamics",
+      "scientific_question": "Does the free finite-chain thermal state reproduce its independent mode sum?",
+      "catalogue_model": "Periodic/APBC one-orbital chain with explicit seam",
+      "catalogue_ensemble": "Grand canonical finite beta",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0212631",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 18,
+      "comparisons": 72,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 3.419486915845482e-14,
+          "comparison_count": 72,
+          "scalar_components": 72,
+          "maximum_tolerance_ratio": 0.0003419486915845482,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1.2,U=0; PBC/APBC; beta=0.25,1,3; mu_centered=-0.4,0,0.6; density,Ekin,logZ,total thermal entropy"
+    },
+    {
+      "id": "A07",
+      "category": "Analytical",
+      "title": "Free unequal-time propagator",
+      "scientific_question": "Does time propagation agree over the whole imaginary-time interval?",
+      "catalogue_model": "Free chain or square lattice",
+      "catalogue_ensemble": "Grand canonical finite beta",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 8,
+      "comparisons": 96,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 2.220446049250313e-15,
+          "comparison_count": 96,
+          "scalar_components": 1536,
+          "maximum_tolerance_ratio": 2.220446049250313e-06,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1,U=0; PBC/APBC; beta=0.5,2; mu_centered=-0.3,0.5; every site matrix element at tau/beta=0,1/8,1/3,1/2,7/8,1"
+    },
+    {
+      "id": "A08",
+      "category": "Analytical",
+      "title": "Free Lindhard response",
+      "scientific_question": "Does the two-particle frequency/momentum response have the correct continuum?",
+      "catalogue_model": "U=0 finite chain or square lattice",
+      "catalogue_ensemble": "Grand canonical thermal state",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 9,
+      "comparisons": 18,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 1.8984813721090177e-14,
+          "comparison_count": 18,
+          "scalar_components": 18,
+          "maximum_tolerance_ratio": 1.8984813721090177e-05,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1,U=0,APBC,beta=1.3,mu_centered=0.2; q=0,pi/2,pi; Matsubara m=0,1,2; connected density susceptibility per site, two spins"
+    },
+    {
+      "id": "A09",
+      "category": "Analytical",
+      "title": "Free spectral poles",
+      "scientific_question": "Are one-particle spectra placed and normalized correctly?",
+      "catalogue_model": "U=0 chain or two-orbital lattice",
+      "catalogue_ensemble": "Specified free ground/thermal state",
+      "source_urls": "https://doi.org/10.1103/PhysRevB.111.L020401",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 4,
+      "comparisons": 12,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 1.6596087969342757e-12,
+          "comparison_count": 12,
+          "scalar_components": 12,
+          "maximum_tolerance_ratio": 0.016596087969342758,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1,U=0,APBC,beta=1.3,mu_centered=0.2; every allowed k; every supported Lehmann pole and total spectral residue"
+    },
+    {
+      "id": "A10",
+      "category": "Analytical",
+      "title": "Free compressibility",
+      "scientific_question": "Does density response to mu agree with occupation fluctuations?",
+      "catalogue_model": "Free finite chain",
+      "catalogue_ensemble": "Grand canonical beta, fixed hopping",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 8,
+      "comparisons": 8,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 6.050715484207103e-15,
+          "comparison_count": 8,
+          "scalar_components": 8,
+          "maximum_tolerance_ratio": 6.050715484207103e-06,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1,U=0; PBC/APBC; beta=0.5,2; mu_centered=-0.3,0.5; beta*Var(N)/L versus mode derivative"
+    },
+    {
+      "id": "A11",
+      "category": "Analytical",
+      "title": "Gaussian entanglement level spectrum",
+      "scientific_question": "Does the code recover every free-fermion entanglement level?",
+      "catalogue_model": "Free chain, contiguous or separated subsystem",
+      "catalogue_ensemble": "Explicit pure or grand-canonical Gaussian state",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0212631",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 24,
+      "comparisons": 24,
+      "metrics": [
+        {
+          "metric": "L1",
+          "maximum_error": 1.44868654832625e-14,
+          "comparison_count": 24,
+          "scalar_components": 672,
+          "maximum_tolerance_ratio": 1.44868654832625e-05,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density",
+          "reduced_operator"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1,U=0; PBC/APBC; beta=0.5,3; mu_centered=-0.3,0.5; contiguous nA=1,2,3; all RDM eigenvalues"
+    },
+    {
+      "id": "A12",
+      "category": "Analytical",
+      "title": "Canonical infinite-temperature entropy",
+      "scientific_question": "Does fixed particle number produce the correct nonlocal entropy constraint?",
+      "catalogue_model": "Spinful chain at beta=0",
+      "catalogue_ensemble": "Canonical fixed Nup,Ndown maximally mixed sector",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0212631",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 18,
+      "comparisons": 36,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 4.440892098500626e-16,
+          "comparison_count": 36,
+          "scalar_components": 36,
+          "maximum_tolerance_ratio": 4.440892098500626e-06,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "ED sector Hamiltonian and thermal ED density/RDM",
+        "existing_user_functions": [
+          "build_space",
+          "apply_hamiltonian!",
+          "exact_thermal_density",
+          "reduced_operator"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1; U=0,4; fixed (Nup,Ndown)=(1,1),(2,2),(3,1); beta=0; nA=1,2,3; canonical RDM purity and S2"
+    },
+    {
+      "id": "A13",
+      "category": "Analytical",
+      "title": "Grand-canonical infinite-temperature entropy",
+      "scientific_question": "Does subsystem entropy approach the correct local Hilbert-space volume law?",
+      "catalogue_model": "Spinful Hubbard chain at beta=0",
+      "catalogue_ensemble": "Grand canonical, finite mu*beta ->0",
+      "source_urls": "https://arxiv.org/abs/1404.3027",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 8,
+      "comparisons": 16,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 3.469446951953614e-18,
+          "comparison_count": 16,
+          "scalar_components": 16,
+          "maximum_tolerance_ratio": 3.469446951953614e-08,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density",
+          "renyi2"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1; U=0,4; mu_centered=0.7; beta=0 grand canonical; nA=1,2,3,4; RDM purity and S2"
+    },
+    {
+      "id": "A14",
+      "category": "Analytical",
+      "title": "Fully polarized interacting gas",
+      "scientific_question": "Does a polarized sector eliminate Hubbard scattering exactly?",
+      "catalogue_model": "Chain with Ndown=0, arbitrary repulsive U",
+      "catalogue_ensemble": "Fixed spin-polarized N ground/thermal sector",
+      "source_urls": "https://arxiv.org/pdf/cond-mat/0207529",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 12,
+      "comparisons": 48,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 8.881784197001252e-15,
+          "comparison_count": 48,
+          "scalar_components": 648,
+          "maximum_tolerance_ratio": 8.881784197001252e-06,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "ED Hamiltonian/Lanczos plus analytical adapter",
+        "existing_user_functions": [
+          "build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Closed-shell polarized fixtures (L,Nup,bc)=(4,1,PBC),(4,2,APBC),(6,3,PBC),(6,2,APBC), Ndown=0; U=0,3,10; E,entire spin-up onebody matrix,D"
+    },
+    {
+      "id": "A15",
+      "category": "Analytical",
+      "title": "Single-electron orbital composition",
+      "scientific_question": "Does an interacting two-orbital solver retain exact one-electron wavefunctions?",
+      "catalogue_model": "Two-orbital open or tilted small cluster; total N=1",
+      "catalogue_ensemble": "Canonical single-electron eigenstate",
+      "source_urls": "https://doi.org/10.1103/PhysRevB.111.L020401",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "Two-orbital Hamiltonian API belongs to the main package; not substituted by this one-orbital adapter.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A16",
+      "category": "Analytical",
+      "title": "Van-Hove density-of-states singularity",
+      "scientific_question": "Does the square-lattice free spectrum recover the analytic van-Hove singularity and band-edge weight?",
+      "catalogue_model": "One-orbital nearest-neighbor infinite square lattice",
+      "catalogue_ensemble": "U=0 one-particle spectrum; a fixed broadening precedes size extrapolation",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "Square-lattice thermodynamic DOS requires an independently controlled quadrature/size adapter.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A17",
+      "category": "Analytical",
+      "title": "Decoupled orbital thermal correlations",
+      "scientific_question": "Do uncoupled local orbitals avoid artificial interorbital magnetism?",
+      "catalogue_model": "One two-orbital cell; hopping/hybridization/Hund/interorbital U all zero",
+      "catalogue_ensemble": "Product grand-canonical atomic thermal states",
+      "source_urls": "https://doi.org/10.1103/PhysRevB.111.L020401",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "Native two-orbital atomic Hamiltonian is not exercised by this one-orbital tranche.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A18",
+      "category": "Analytical",
+      "title": "Bethe-ansatz thermodynamic energy",
+      "scientific_question": "Does the finite-chain sequence approach the exact interacting bulk energy?",
+      "catalogue_model": "Half-filled nearest-neighbor 1D Hubbard chain",
+      "catalogue_ensemble": "T=0, thermodynamic limit",
+      "source_urls": "https://arxiv.org/pdf/cond-mat/0207529",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "Thermodynamic energy requires controlled finite-size extrapolation; a tiny-chain equality would be false.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A19",
+      "category": "Analytical",
+      "title": "Bethe-ansatz Mott charge gap",
+      "scientific_question": "Does the calculated charge gap approach the exact repulsive-chain gap?",
+      "catalogue_model": "Half-filled infinite 1D chain",
+      "catalogue_ensemble": "T=0; N,N\u00b11 sequence then L->infinity",
+      "source_urls": "https://arxiv.org/pdf/cond-mat/0207529",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "Bulk Mott gap requires charged-sector size extrapolation and independent integral control.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A20",
+      "category": "Analytical",
+      "title": "Bethe-ansatz double occupancy",
+      "scientific_question": "Does the interacting ground-state local charge fluctuation match the exact bulk derivative?",
+      "catalogue_model": "Same half-filled chain",
+      "catalogue_ensemble": "T=0 thermodynamic limit",
+      "source_urls": "https://arxiv.org/pdf/cond-mat/0207529",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "Bulk double occupancy requires derivative quadrature and size-error control.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A21",
+      "category": "Analytical",
+      "title": "Heisenberg spin-correlation limit",
+      "scientific_question": "Does strong coupling produce the correct nearest-neighbor spin correlation?",
+      "catalogue_model": "Half-filled repulsive chain U/t large",
+      "catalogue_ensemble": "T=0, L->infinity then controlled large-U limit",
+      "source_urls": "https://doi.org/10.1016/0375-9601(77)90702-2 | https://arxiv.org/pdf/cond-mat/0207529",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "Both finite-U and finite-size corrections must be controlled before the Heisenberg comparison.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A22",
+      "category": "Analytical",
+      "title": "Exact eta-pairing excited states",
+      "scientific_question": "Can the solver reproduce exact non-ground states with off-diagonal pair order?",
+      "catalogue_model": "Bipartite nearest-neighbor Hubbard graph",
+      "catalogue_ensemble": "Fixed eta-pair tower state (eta\u2020)^m|vac>",
+      "source_urls": "https://doi.org/10.1103/PhysRevLett.63.2144",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 6,
+      "comparisons": 18,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 4.440892098500626e-16,
+          "comparison_count": 18,
+          "scalar_components": 108,
+          "maximum_tolerance_ratio": 4.4408920985006256e-07,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "ED Hamiltonian plus explicit excited-state/pair adapter",
+        "existing_user_functions": [
+          "build_space",
+          "apply_hamiltonian!"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "L=4,t=1,PBC; U=1,4; m=1,2,3 eta pairs; exact excited eigenspace/residual plus full staggered pair density matrix"
+    },
+    {
+      "id": "A23",
+      "category": "Analytical",
+      "title": "Lieb ground-state spin theorem",
+      "scientific_question": "Does half-filled ground-state spin follow sublattice imbalance?",
+      "catalogue_model": "Connected bipartite graph with |NA-NB|>0, U_i>0, no frustrating hopping",
+      "catalogue_ensemble": "Canonical half filling, certified lowest multiplet",
+      "source_urls": "https://doi.org/10.1103/PhysRevLett.62.1201",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 3,
+      "comparisons": 18,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 1.0001045078119442e-14,
+          "comparison_count": 18,
+          "scalar_components": 18,
+          "maximum_tolerance_ratio": 1.000104507811944e-05,
+          "all_within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "thermal-ED Hamiltonian builder plus open-chain/full-spin adapter",
+        "existing_user_functions": [
+          "full_fock_matrices"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Open L=3,t=1,half-filled N=3; U=0.5,2,8; entire fixed-N sector, both ground multiplet components, S^2=3/4; PBC/APBC average removes seam"
+    },
+    {
+      "id": "A24",
+      "category": "Analytical",
+      "title": "Gapless spin sector of the repulsive chain",
+      "scientific_question": "Does the spin gap vanish while the charge gap remains finite?",
+      "catalogue_model": "Uniform repulsive half-filled 1D Hubbard chain",
+      "catalogue_ensemble": "T=0, size sequence",
+      "source_urls": "https://arxiv.org/pdf/cond-mat/0207529",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "A vanishing bulk spin gap cannot be certified on one small cluster.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "A25",
+      "category": "Analytical",
+      "title": "Free flux stiffness and persistent current",
+      "scientific_question": "Does the flux response reproduce independently differentiated band energies?",
+      "catalogue_model": "Closed-shell free ring with Peierls flux Phi",
+      "catalogue_ensemble": "Fixed particle ground branch away from level crossings",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": "NOT_RUN",
+      "reason": "The imported source supports only real PBC/APBC seams; arbitrary complex flux is unavailable.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {
+        "method": "thermal ED plus analytical observable adapter",
+        "existing_user_functions": [
+          "full_fock_matrices",
+          "exact_thermal_density"
+        ],
+        "existing_source_location": "analysis/compute_s2_ed.jl and/or analysis/audit_u4_l4_thermal_ed.jl",
+        "new_adapter": "sector, Lehmann, response, spectrum or theorem adapter declared in analytical protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "analytic",
+      "audit_issues": [],
+      "executed_fixture_scope": "Not run in this tranche"
+    },
+    {
+      "id": "P01",
+      "category": "Independent package",
+      "title": "Interacting Renyi-index hierarchy",
+      "scientific_question": "Does the interacting reduced state reproduce distinct Renyi indices rather than only one purity?",
+      "catalogue_model": "Small PBC/APBC repulsive chain with one fixed spatial cut",
+      "catalogue_ensemble": "Unique fixed-N singlet ground state",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 1,
+      "comparisons": 6,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 1.0658141036401503e-14,
+          "scalar_components": 6,
+          "all_within_tolerance": true,
+          "maximum_tolerance_ratio": 5.440092820663267e-06
+        }
+      ],
+      "scope": {
+        "method": "user ED state/Hamiltonian plus new observable adapter versus independent QuSpin",
+        "existing_user_functions": [
+          "analysis/compute_s2_ed.jl: build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "new_adapter": "explicit observable/partial-trace/spin-multiplet construction; see frozen package protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "packages",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_uncentered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2,
+        "observable": "Renyi2,3,4 power traces and entropies, A=[0,1]",
+        "source_amendment_selected": true
+      }
+    },
+    {
+      "id": "P02",
+      "category": "Independent package",
+      "title": "Interacting spin multiplet ladder",
+      "scientific_question": "Are all low-lying spin multiplets and their ordering correct?",
+      "catalogue_model": "Small half-filled interacting ring",
+      "catalogue_ensemble": "Fixed N; multiple Sz sectors plus full S^2",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 1,
+      "comparisons": 62,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 5.329070518200751e-15,
+          "scalar_components": 62,
+          "all_within_tolerance": true,
+          "maximum_tolerance_ratio": 5.329070518200751e-07
+        }
+      ],
+      "scope": {
+        "method": "user ED state/Hamiltonian plus new observable adapter versus independent QuSpin",
+        "existing_user_functions": [
+          "analysis/compute_s2_ed.jl: build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "new_adapter": "explicit observable/partial-trace/spin-multiplet construction; see frozen package protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "packages",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_uncentered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2,
+        "observable": "All fixed-N4 energy/S2 multiplets within6t of ground, allSz",
+        "source_amendment_selected": true
+      }
+    },
+    {
+      "id": "P03",
+      "category": "Independent package",
+      "title": "Interacting natural occupation spectrum",
+      "scientific_question": "Does the complete one-body density matrix produce correct natural occupations?",
+      "catalogue_model": "Interacting finite ring",
+      "catalogue_ensemble": "Unique fixed-N ground state",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 1,
+      "comparisons": 136,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 7.216449660063518e-15,
+          "scalar_components": 136,
+          "all_within_tolerance": true,
+          "maximum_tolerance_ratio": 7.216449660063518e-07
+        }
+      ],
+      "scope": {
+        "method": "user ED state/Hamiltonian plus new observable adapter versus independent QuSpin",
+        "existing_user_functions": [
+          "analysis/compute_s2_ed.jl: build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "new_adapter": "explicit observable/partial-trace/spin-multiplet construction; see frozen package protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "packages",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_uncentered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2,
+        "observable": "Full spin-resolved1RDM,natural occupations,degenerate eigenspace projectors",
+        "source_amendment_selected": true
+      }
+    },
+    {
+      "id": "P04",
+      "category": "Independent package",
+      "title": "Full magnetic momentum profile",
+      "scientific_question": "Does the solver identify the correct dominant magnetic wavevector?",
+      "catalogue_model": "Interacting chain or small two-orbital cluster",
+      "catalogue_ensemble": "Specified ground state or thermal ensemble",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 1,
+      "comparisons": 21,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 1.1934897514720433e-15,
+          "scalar_components": 21,
+          "all_within_tolerance": true,
+          "maximum_tolerance_ratio": 1.1934897514720433e-07
+        }
+      ],
+      "scope": {
+        "method": "user ED state/Hamiltonian plus new observable adapter versus independent QuSpin",
+        "existing_user_functions": [
+          "analysis/compute_s2_ed.jl: build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "new_adapter": "explicit observable/partial-trace/spin-multiplet construction; see frozen package protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "packages",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_uncentered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2,
+        "observable": "Full Szz matrix,all fourmomentum values,dominant wavevector",
+        "source_amendment_selected": true
+      }
+    },
+    {
+      "id": "P05",
+      "category": "Independent package",
+      "title": "Charge-order momentum profile",
+      "scientific_question": "Does the connected density structure factor agree independently?",
+      "catalogue_model": "Small interacting chain",
+      "catalogue_ensemble": "Matched canonical ground or thermal state",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 1,
+      "comparisons": 20,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 9.992007221626409e-16,
+          "scalar_components": 20,
+          "all_within_tolerance": true,
+          "maximum_tolerance_ratio": 9.992007221626409e-08
+        }
+      ],
+      "scope": {
+        "method": "user ED state/Hamiltonian plus new observable adapter versus independent QuSpin",
+        "existing_user_functions": [
+          "analysis/compute_s2_ed.jl: build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "new_adapter": "explicit observable/partial-trace/spin-multiplet construction; see frozen package protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "packages",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_uncentered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2,
+        "observable": "Full connected density matrix andall fourmomentum values",
+        "source_amendment_selected": true
+      }
+    },
+    {
+      "id": "P06",
+      "category": "Independent package",
+      "title": "Pair symmetry correlations",
+      "scientific_question": "Are onsite and bond-singlet pair channels evaluated with correct fermionic signs?",
+      "catalogue_model": "Small attractive/repulsive chain",
+      "catalogue_ensemble": "Fixed-N state; pair correlator is number-conserving",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 1,
+      "comparisons": 32,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 3.4416913763379853e-15,
+          "scalar_components": 32,
+          "all_within_tolerance": true,
+          "maximum_tolerance_ratio": 3.4416913763379853e-07
+        }
+      ],
+      "scope": {
+        "method": "user ED state/Hamiltonian plus new observable adapter versus independent QuSpin",
+        "existing_user_functions": [
+          "analysis/compute_s2_ed.jl: build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos"
+        ],
+        "new_adapter": "explicit observable/partial-trace/spin-multiplet construction; see frozen package protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "packages",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_uncentered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2,
+        "observable": "Full onsite andnormalized nearest-neighbor bond-singlet pair matrices",
+        "source_amendment_selected": true
+      }
+    },
+    {
+      "id": "P07",
+      "category": "Independent package",
+      "title": "Thermal heat capacity",
+      "scientific_question": "Does temperature-dependent energy fluctuation reproduce the independent thermal trace?",
+      "catalogue_model": "Small interacting ring",
+      "catalogue_ensemble": "Grand canonical at fixed mu; distinguish Cv-like fixed-mu response from fixed-N Cv",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": null,
+      "comparisons": null,
+      "metrics": [
+        {
+          "metric": "mu_physical",
+          "maximum_error": 0.0
+        },
+        {
+          "metric": "mu_centered",
+          "maximum_error": 0.0
+        },
+        {
+          "metric": "Ephysical",
+          "maximum_error": 4.884981308350689e-15
+        },
+        {
+          "metric": "Nmean",
+          "maximum_error": 7.549516567451064e-15
+        },
+        {
+          "metric": "Gphysical",
+          "maximum_error": 4.440892098500626e-15
+        },
+        {
+          "metric": "E2",
+          "maximum_error": 6.217248937900877e-15
+        },
+        {
+          "metric": "N2",
+          "maximum_error": 1.4210854715202004e-14
+        },
+        {
+          "metric": "G2",
+          "maximum_error": 6.394884621840902e-14
+        },
+        {
+          "metric": "EN",
+          "maximum_error": 3.552713678800501e-15
+        },
+        {
+          "metric": "EG",
+          "maximum_error": 2.842170943040401e-14
+        },
+        {
+          "metric": "var_E",
+          "maximum_error": 3.108624468950438e-14
+        },
+        {
+          "metric": "var_N",
+          "maximum_error": 3.375077994860476e-14
+        },
+        {
+          "metric": "var_G",
+          "maximum_error": 1.0658141036401503e-13
+        },
+        {
+          "metric": "cov_EN",
+          "maximum_error": 3.197442310920451e-14
+        },
+        {
+          "metric": "cov_EG",
+          "maximum_error": 3.375077994860476e-14
+        },
+        {
+          "metric": "C_mu",
+          "maximum_error": 2.1600499167107046e-12
+        },
+        {
+          "metric": "beta2_var_grand",
+          "maximum_error": 1.7053025658242404e-12
+        },
+        {
+          "metric": "C_mu_finite_difference",
+          "maximum_error": 9.473866136033848e-12
+        }
+      ],
+      "scope": {
+        "method": "Actual user thermal ED/ground ED plus ensemble and response adapters versus QuSpin",
+        "execution_evidence_audited": true,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false,
+        "parameter_points_and_convergence_arms_are_extra_ideas": false
+      },
+      "input_role": "thermal",
+      "audit_issues": [],
+      "history": [
+        {
+          "status": "NOT_RUN",
+          "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+          "source": "immutable_v4"
+        }
+      ],
+      "later_tranche_result": {
+        "id": "P07",
+        "status": "PASS",
+        "max_abs_errors": {
+          "mu_physical": 0.0,
+          "mu_centered": 0.0,
+          "Ephysical": 4.884981308350689e-15,
+          "Nmean": 7.549516567451064e-15,
+          "Gphysical": 4.440892098500626e-15,
+          "E2": 6.217248937900877e-15,
+          "N2": 1.4210854715202004e-14,
+          "G2": 6.394884621840902e-14,
+          "EN": 3.552713678800501e-15,
+          "EG": 2.842170943040401e-14,
+          "var_E": 3.108624468950438e-14,
+          "var_N": 3.375077994860476e-14,
+          "var_G": 1.0658141036401503e-13,
+          "cov_EN": 3.197442310920451e-14,
+          "cov_EG": 3.375077994860476e-14,
+          "C_mu": 2.1600499167107046e-12,
+          "beta2_var_grand": 1.7053025658242404e-12,
+          "C_mu_finite_difference": 9.473866136033848e-12
+        },
+        "eligibility_reasons": [],
+        "details": {
+          "scope": "Fixed-physical-mu d<Ephysical>/dT; neither fixed-N Cv nor grand-generator variance alone."
+        }
+      },
+      "executed_fixture_scope": "Frozen L4 U4 PBC; exact beta grids and ensembles in copied manifest"
+    },
+    {
+      "id": "P08",
+      "category": "Independent package",
+      "title": "Charge-imbalance quench dynamics",
+      "scientific_question": "Does real-time doublon/charge transport agree with independent dynamics?",
+      "catalogue_model": "Small Hubbard chain after a specified density quench",
+      "catalogue_ensemble": "Normalized fixed-N pure initial state, explicit t=0 protocol",
+      "source_urls": "https://quspin.github.io/QuSpin/examples/example6.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P09",
+      "category": "Independent package",
+      "title": "Lehmann electron spectrum",
+      "scientific_question": "Do interacting electron addition/removal poles and orbital weights match independent ED?",
+      "catalogue_model": "Small chain; later two-orbital cluster",
+      "catalogue_ensemble": "Fixed-N ground/selected state and complete N\u00b11 target sectors",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P10",
+      "category": "Independent package",
+      "title": "Finite-temperature dynamical spin response",
+      "scientific_question": "Does the imaginary-time magnetic susceptibility match the exact interacting spectrum?",
+      "catalogue_model": "Small repulsive chain",
+      "catalogue_ensemble": "Grand-canonical beta with same finite-dtau or continuum target",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P11",
+      "category": "Independent package",
+      "title": "Symmetry-resolved entanglement levels",
+      "scientific_question": "Are Schmidt levels assigned to the correct charge/spin sectors?",
+      "catalogue_model": "Interacting finite chain",
+      "catalogue_ensemble": "Fixed N,Sz ground state",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.models.hubbard.FermiHubbardModel.html | https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html",
+      "status": "UNRESOLVED",
+      "reported_status": "UNRESOLVED",
+      "reason": "ValueError: Reported comparison differs from frozen independent rerun",
+      "fixtures": null,
+      "comparisons": null,
+      "metrics": [],
+      "scope": {
+        "method": "Actual user Hubbard MPO and ITensorMPS DMRG versus independent TeNPy DMRG; new observables adapter",
+        "execution_evidence_audited": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false,
+        "parameter_points_and_convergence_arms_are_extra_ideas": false
+      },
+      "input_role": "tenpy",
+      "audit_issues": [
+        "ValueError: Reported comparison differs from frozen independent rerun"
+      ],
+      "executed_fixture_scope": "Full requires L8 OBC doped/half fixtures and both coarse/refined arms; pilot cannot PASS",
+      "history": [
+        {
+          "status": "NOT_RUN",
+          "reason": "TeNPy/user observable adapter not implemented in this tranche",
+          "source": "immutable_v4"
+        }
+      ],
+      "later_tranche_result": {
+        "id": "P11",
+        "status": "UNRESOLVED",
+        "reason": "ValueError: Reported comparison differs from frozen independent rerun"
+      }
+    },
+    {
+      "id": "P12",
+      "category": "Independent package",
+      "title": "Doped Friedel density profile",
+      "scientific_question": "Does boundary-induced charge modulation agree with an independent MPS calculation?",
+      "catalogue_model": "Open doped Hubbard chain",
+      "catalogue_ensemble": "Same fixed N,Sz and boundary potentials",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.models.hubbard.FermiHubbardModel.html",
+      "status": "UNRESOLVED",
+      "reported_status": "UNRESOLVED",
+      "reason": "ValueError: Reported comparison differs from frozen independent rerun",
+      "fixtures": null,
+      "comparisons": null,
+      "metrics": [],
+      "scope": {
+        "method": "Actual user Hubbard MPO and ITensorMPS DMRG versus independent TeNPy DMRG; new observables adapter",
+        "execution_evidence_audited": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false,
+        "parameter_points_and_convergence_arms_are_extra_ideas": false
+      },
+      "input_role": "tenpy",
+      "audit_issues": [
+        "ValueError: Reported comparison differs from frozen independent rerun"
+      ],
+      "executed_fixture_scope": "Full requires L8 OBC doped/half fixtures and both coarse/refined arms; pilot cannot PASS",
+      "history": [
+        {
+          "status": "NOT_RUN",
+          "reason": "TeNPy/user observable adapter not implemented in this tranche",
+          "source": "immutable_v4"
+        }
+      ],
+      "later_tranche_result": {
+        "id": "P12",
+        "status": "UNRESOLVED",
+        "reason": "ValueError: Reported comparison differs from frozen independent rerun"
+      }
+    },
+    {
+      "id": "P13",
+      "category": "Independent package",
+      "title": "Global-quench entanglement production",
+      "scientific_question": "Does an interaction quench produce the correct time-dependent entanglement rather than a correct density profile alone?",
+      "catalogue_model": "Open Hubbard chain with a registered global U_initial to U_final quench",
+      "catalogue_ensemble": "Same fixed-N pure initial state, matched time-evolution Hamiltonian",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/intro/overview.html | https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P14",
+      "category": "Independent package",
+      "title": "Interacting Luttinger charge parameter",
+      "scientific_question": "Does the small-q charge slope agree with a separate MPS reference?",
+      "catalogue_model": "Doped 1D repulsive chain",
+      "catalogue_ensemble": "T=0 fixed density; controlled L sequence",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.models.hubbard.FermiHubbardModel.html | https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P15",
+      "category": "Independent package",
+      "title": "Nonlocal charge parity string",
+      "scientific_question": "Does a nonlocal string distinguish suppressed charge fluctuations?",
+      "catalogue_model": "Half-filled repulsive chain",
+      "catalogue_ensemble": "Unique ground state or explicitly matched thermal state",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html",
+      "status": "UNRESOLVED",
+      "reported_status": "UNRESOLVED",
+      "reason": "ValueError: Reported comparison differs from frozen independent rerun",
+      "fixtures": null,
+      "comparisons": null,
+      "metrics": [],
+      "scope": {
+        "method": "Actual user Hubbard MPO and ITensorMPS DMRG versus independent TeNPy DMRG; new observables adapter",
+        "execution_evidence_audited": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false,
+        "parameter_points_and_convergence_arms_are_extra_ideas": false
+      },
+      "input_role": "tenpy",
+      "audit_issues": [
+        "ValueError: Reported comparison differs from frozen independent rerun"
+      ],
+      "executed_fixture_scope": "Full requires L8 OBC doped/half fixtures and both coarse/refined arms; pilot cannot PASS",
+      "history": [
+        {
+          "status": "NOT_RUN",
+          "reason": "TeNPy/user observable adapter not implemented in this tranche",
+          "source": "immutable_v4"
+        }
+      ],
+      "later_tranche_result": {
+        "id": "P15",
+        "status": "UNRESOLVED",
+        "reason": "ValueError: Reported comparison differs from frozen independent rerun"
+      }
+    },
+    {
+      "id": "P16",
+      "category": "Independent package",
+      "title": "Disjoint-region interacting mutual information",
+      "scientific_question": "Are correlations between separated intervals reproduced beyond Gaussian limits?",
+      "catalogue_model": "Small interacting chain with two disjoint spatial intervals",
+      "catalogue_ensemble": "Same pure or thermal state",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html | https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 1,
+      "comparisons": 4,
+      "metrics": [
+        {
+          "metric": "maximum_absolute",
+          "maximum_error": 4.440892098500626e-16,
+          "scalar_components": 4,
+          "all_within_tolerance": true,
+          "maximum_tolerance_ratio": 4.440892098500626e-08
+        }
+      ],
+      "scope": {
+        "method": "user ED state/Hamiltonian plus new observable adapter versus independent QuSpin",
+        "existing_user_functions": [
+          "analysis/compute_s2_ed.jl: build_space",
+          "apply_hamiltonian!",
+          "ground_state_lanczos",
+          "renyi2_entropy_sites"
+        ],
+        "new_adapter": "explicit observable/partial-trace/spin-multiplet construction; see frozen package protocol",
+        "production_band_construction_exercised": false,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "packages",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "L": 4,
+        "t": 1.0,
+        "U": 4.0,
+        "mu_uncentered": 0.0,
+        "boundary": "pbc",
+        "Nup": 2,
+        "Ndown": 2,
+        "observable": "Disjoint I2, A=[0],B=[2],union=[0,2],threeunderlying purities",
+        "source_amendment_selected": true
+      }
+    },
+    {
+      "id": "P17",
+      "category": "Independent package",
+      "title": "Boundary spin response",
+      "scientific_question": "Does an edge magnetic perturbation induce the correct spatial spin response?",
+      "catalogue_model": "Open half-filled chain, weak boundary Zeeman field",
+      "catalogue_ensemble": "Fixed N; spin sector allowed to respond as specified",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.models.hubbard.FermiHubbardModel.html | https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P18",
+      "category": "Independent package",
+      "title": "Two-dimensional thermal antiferromagnetic correlations",
+      "scientific_question": "Does finite-temperature sampling reproduce an independent 2D spin pattern?",
+      "catalogue_model": "One-orbital square LxL Hubbard lattice, tprime=0",
+      "catalogue_ensemble": "Grand canonical half filling, same beta and dtau convention",
+      "source_urls": "https://arxiv.org/abs/2012.11914",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P19",
+      "category": "Independent package",
+      "title": "Interacting compressibility plateau",
+      "scientific_question": "Does the density-versus-mu plateau and its response match a separate QMC package?",
+      "catalogue_model": "Small/medium one-orbital chain or square lattice",
+      "catalogue_ensemble": "Grand canonical finite beta; centered chemical potential conversion explicit",
+      "source_urls": "https://arxiv.org/abs/2012.11914",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P20",
+      "category": "Independent package",
+      "title": "Attractive pairing susceptibility",
+      "scientific_question": "Does imaginary-time integrated onsite pairing response agree independently?",
+      "catalogue_model": "Attractive Hubbard chain or square lattice",
+      "catalogue_ensemble": "Sign-free balanced grand canonical finite beta",
+      "source_urls": "https://arxiv.org/abs/2012.11914",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P21",
+      "category": "Independent package",
+      "title": "Interacting fermionic Green matrix",
+      "scientific_question": "Does the complete unequal-time orbital/spin Green function agree with independent AFQMC?",
+      "catalogue_model": "Interacting finite chain",
+      "catalogue_ensemble": "Matched grand canonical beta, boundary and time discretization",
+      "source_urls": "https://arxiv.org/abs/2012.11914",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P22",
+      "category": "Independent package",
+      "title": "Interorbital magnetic anticorrelation",
+      "scientific_question": "Does finite-U two-orbital sampling reproduce the complete cross-orbital spin tensor?",
+      "catalogue_model": "Small two-orbital cells, intraorbital U only, specified t4",
+      "catalogue_ensemble": "Matched canonical ground or grand-canonical thermal ensemble",
+      "source_urls": "https://arxiv.org/abs/2012.11914 | https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P23",
+      "category": "Independent package",
+      "title": "Two-orbital many-electron excitation spectrum",
+      "scientific_question": "Does an independent chemistry FCI solver recover orbital-driven multiplet splittings?",
+      "catalogue_model": "Two-orbital dimer/plaquette with exact chosen hopping/interactions",
+      "catalogue_ensemble": "Fixed N and spin-resolved low excited states",
+      "source_urls": "https://pyscf.org/quickstart.html | https://pyscf.org/pyscf_api_docs/pyscf.fci.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P24",
+      "category": "Independent package",
+      "title": "Orbital transition matrix elements",
+      "scientific_question": "Are orbital-selective transition strengths between many-body states correct?",
+      "catalogue_model": "Small two-orbital interacting cluster",
+      "catalogue_ensemble": "Fixed-N eigenstate pair; same relative phase convention only where needed",
+      "source_urls": "https://pyscf.org/pyscf_api_docs/pyscf.fci.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "P25",
+      "category": "Independent package",
+      "title": "Interacting persistent current",
+      "scientific_question": "Does correlated flux sensitivity agree with an independently mapped fermion Hamiltonian?",
+      "catalogue_model": "Small interacting ring with complex Peierls phase",
+      "catalogue_ensemble": "Fixed-N ground branch as flux varies",
+      "source_urls": "https://quantumai.google/openfermion/tutorials/intro_to_openfermion",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X01",
+      "category": "External-reference error control",
+      "title": "Finite-dtau continuum bias",
+      "scientific_question": "Does time-step extrapolation recover the exact thermal continuum target?",
+      "catalogue_model": "Small interacting ring",
+      "catalogue_ensemble": "Same GCE beta/mu; dtau sequence then dtau->0",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X02",
+      "category": "External-reference error control",
+      "title": "Thermal contamination of ground-state entropy",
+      "scientific_question": "At what beta does a thermal entropy become a defensible ground-state benchmark?",
+      "catalogue_model": "Finite repulsive chain with a unique ground state",
+      "catalogue_ensemble": "GCE cooling versus certified fixed-N ground state; mu chosen inside charge gap",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": null,
+      "comparisons": null,
+      "metrics": [
+        {
+          "metric": "ground_Ephysical",
+          "maximum_error": 1.7763568394002505e-15
+        },
+        {
+          "metric": "ground_S2",
+          "maximum_error": 3.3306690738754696e-16
+        },
+        {
+          "metric": "ground_purity",
+          "maximum_error": 1.6653345369377348e-16
+        },
+        {
+          "metric": "ground_Nmean",
+          "maximum_error": 2.220446049250313e-15
+        },
+        {
+          "metric": "ground_Nup_mean",
+          "maximum_error": 1.1102230246251565e-15
+        },
+        {
+          "metric": "ground_Ndown_mean",
+          "maximum_error": 1.1102230246251565e-15
+        },
+        {
+          "metric": "ground_global_grand_gap",
+          "maximum_error": 0.0
+        },
+        {
+          "metric": "ground_mu_minus",
+          "maximum_error": 1.7319479184152442e-14
+        },
+        {
+          "metric": "ground_mu_plus",
+          "maximum_error": 2.6645352591003757e-15
+        },
+        {
+          "metric": "mu_physical",
+          "maximum_error": 0.0
+        },
+        {
+          "metric": "mu_centered",
+          "maximum_error": 0.0
+        },
+        {
+          "metric": "S2",
+          "maximum_error": 2.1094237467877974e-15
+        },
+        {
+          "metric": "purity",
+          "maximum_error": 8.326672684688674e-16
+        },
+        {
+          "metric": "delta_S2",
+          "maximum_error": 2.4424906541753444e-15
+        },
+        {
+          "metric": "Nmean",
+          "maximum_error": 3.9968028886505635e-15
+        },
+        {
+          "metric": "weight_N_ground",
+          "maximum_error": 6.661338147750939e-16
+        },
+        {
+          "metric": "weight_fixed_Nup_Ndown",
+          "maximum_error": 1.4432899320127035e-15
+        },
+        {
+          "metric": "ground_weight",
+          "maximum_error": 2.4424906541753444e-15
+        },
+        {
+          "metric": "excited_weight",
+          "maximum_error": 2.4424906541753444e-15
+        },
+        {
+          "metric": "entropy_bias_bound",
+          "maximum_error": 7.438494264988549e-15
+        }
+      ],
+      "scope": {
+        "method": "Actual user thermal ED/ground ED plus ensemble and response adapters versus QuSpin",
+        "execution_evidence_audited": true,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false,
+        "parameter_points_and_convergence_arms_are_extra_ideas": false
+      },
+      "input_role": "thermal",
+      "audit_issues": [],
+      "history": [
+        {
+          "status": "NOT_RUN",
+          "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+          "source": "immutable_v4"
+        }
+      ],
+      "later_tranche_result": {
+        "id": "X02",
+        "status": "PASS",
+        "max_abs_errors": {
+          "ground_Ephysical": 1.7763568394002505e-15,
+          "ground_S2": 3.3306690738754696e-16,
+          "ground_purity": 1.6653345369377348e-16,
+          "ground_Nmean": 2.220446049250313e-15,
+          "ground_Nup_mean": 1.1102230246251565e-15,
+          "ground_Ndown_mean": 1.1102230246251565e-15,
+          "ground_global_grand_gap": 0.0,
+          "ground_mu_minus": 1.7319479184152442e-14,
+          "ground_mu_plus": 2.6645352591003757e-15,
+          "mu_physical": 0.0,
+          "mu_centered": 0.0,
+          "S2": 2.1094237467877974e-15,
+          "purity": 8.326672684688674e-16,
+          "delta_S2": 2.4424906541753444e-15,
+          "Nmean": 3.9968028886505635e-15,
+          "weight_N_ground": 6.661338147750939e-16,
+          "weight_fixed_Nup_Ndown": 1.4432899320127035e-15,
+          "ground_weight": 2.4424906541753444e-15,
+          "excited_weight": 2.4424906541753444e-15,
+          "entropy_bias_bound": 7.438494264988549e-15
+        },
+        "eligibility_reasons": [],
+        "details": {
+          "certified_beta_values_QuSpin": [
+            64.0,
+            128.0
+          ],
+          "scope": "L4 fixture only; not a bound for the historical L10 CV calculation."
+        }
+      },
+      "executed_fixture_scope": "Frozen L4 U4 PBC; exact beta grids and ensembles in copied manifest"
+    },
+    {
+      "id": "X03",
+      "category": "External-reference error control",
+      "title": "Canonical versus grand-canonical finite-temperature mismatch",
+      "scientific_question": "How large is the finite-size ensemble bias in observables and entropy?",
+      "catalogue_model": "Same finite interacting chain",
+      "catalogue_ensemble": "Fixed-N thermal trace versus GCE tuned to same mean N",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": null,
+      "comparisons": null,
+      "metrics": [
+        {
+          "metric": "mu_physical",
+          "maximum_error": 0.0
+        },
+        {
+          "metric": "mu_centered",
+          "maximum_error": 0.0
+        },
+        {
+          "metric": "Nmean_GCE",
+          "maximum_error": 8.43769498715119e-15
+        },
+        {
+          "metric": "Nmean_canonical",
+          "maximum_error": 1.7763568394002505e-15
+        },
+        {
+          "metric": "Nvariance_canonical",
+          "maximum_error": 3.552713678800501e-15
+        },
+        {
+          "metric": "compressibility",
+          "maximum_error": 1.5631940186722204e-13
+        },
+        {
+          "metric": "canonical_weight_Nup2_Ndown1",
+          "maximum_error": 1.071365218763276e-14
+        },
+        {
+          "metric": "Ecanonical_per_site",
+          "maximum_error": 1.6653345369377348e-15
+        },
+        {
+          "metric": "EGCE_per_site",
+          "maximum_error": 1.1102230246251565e-15
+        },
+        {
+          "metric": "delta_energy_per_site",
+          "maximum_error": 1.2212453270876722e-15
+        },
+        {
+          "metric": "purity_canonical",
+          "maximum_error": 2.3869795029440866e-15
+        },
+        {
+          "metric": "purity_GCE",
+          "maximum_error": 1.582067810090848e-15
+        },
+        {
+          "metric": "delta_purity",
+          "maximum_error": 3.969047313034935e-15
+        },
+        {
+          "metric": "S2_canonical",
+          "maximum_error": 1.2434497875801753e-14
+        },
+        {
+          "metric": "S2_GCE",
+          "maximum_error": 7.771561172376096e-15
+        }
+      ],
+      "scope": {
+        "method": "Actual user thermal ED/ground ED plus ensemble and response adapters versus QuSpin",
+        "execution_evidence_audited": true,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false,
+        "parameter_points_and_convergence_arms_are_extra_ideas": false
+      },
+      "input_role": "thermal",
+      "audit_issues": [],
+      "history": [
+        {
+          "status": "NOT_RUN",
+          "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+          "source": "immutable_v4"
+        }
+      ],
+      "later_tranche_result": {
+        "id": "X03",
+        "status": "PASS",
+        "max_abs_errors": {
+          "mu_physical": 0.0,
+          "mu_centered": 0.0,
+          "Nmean_GCE": 8.43769498715119e-15,
+          "Nmean_canonical": 1.7763568394002505e-15,
+          "Nvariance_canonical": 3.552713678800501e-15,
+          "compressibility": 1.5631940186722204e-13,
+          "canonical_weight_Nup2_Ndown1": 1.071365218763276e-14,
+          "Ecanonical_per_site": 1.6653345369377348e-15,
+          "EGCE_per_site": 1.1102230246251565e-15,
+          "delta_energy_per_site": 1.2212453270876722e-15,
+          "purity_canonical": 2.3869795029440866e-15,
+          "purity_GCE": 1.582067810090848e-15,
+          "delta_purity": 3.969047313034935e-15,
+          "S2_canonical": 1.2434497875801753e-14,
+          "S2_GCE": 7.771561172376096e-15
+        },
+        "eligibility_reasons": [],
+        "details": {
+          "ensemble_bias_QuSpin": [
+            {
+              "beta": 0.5,
+              "delta_energy_per_site": 0.1255140879705973,
+              "delta_purity": -0.02027533393390296
+            },
+            {
+              "beta": 1.0,
+              "delta_energy_per_site": 0.06893529159231837,
+              "delta_purity": -0.017424166909372096
+            },
+            {
+              "beta": 2.0,
+              "delta_energy_per_site": 0.024146200944439533,
+              "delta_purity": -0.006500736494453069
+            },
+            {
+              "beta": 4.0,
+              "delta_energy_per_site": 0.005115877042862316,
+              "delta_purity": 0.0028262766756310953
+            },
+            {
+              "beta": 8.0,
+              "delta_energy_per_site": 0.002102042863336928,
+              "delta_purity": 0.008521648761545153
+            }
+          ],
+          "scope": "Each ensemble is checked against its own oracle; their difference is a result, not an error to force to zero."
+        }
+      },
+      "executed_fixture_scope": "Frozen L4 U4 PBC; exact beta grids and ensembles in copied manifest"
+    },
+    {
+      "id": "X04",
+      "category": "External-reference error control",
+      "title": "Rare-event entropy bias",
+      "scientific_question": "Does the estimator remain accurate when subsystem overlap becomes small?",
+      "catalogue_model": "Fixed small chain with several physically different cuts",
+      "catalogue_ensemble": "Same exact thermal/pure target; independent MC seeds",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html | https://arxiv.org/abs/1307.1486",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X05",
+      "category": "External-reference error control",
+      "title": "Independent entropy estimator efficiency",
+      "scientific_question": "Which independent estimator reaches a specified physical accuracy most efficiently?",
+      "catalogue_model": "Matched small Hubbard ring",
+      "catalogue_ensemble": "Same beta,dtau,cut and ensemble",
+      "source_urls": "https://arxiv.org/abs/1404.3027 | https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X06",
+      "category": "External-reference error control",
+      "title": "Uncertainty coverage calibration",
+      "scientific_question": "Do reported Monte Carlo error bars have their advertised coverage?",
+      "catalogue_model": "Tiny interacting ring with exact finite-dtau trace",
+      "catalogue_ensemble": "Fixed GCE parameters, many independent campaigns",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X07",
+      "category": "External-reference error control",
+      "title": "Sign-reweighting bias under doping",
+      "scientific_question": "Does sign-reweighted sampling recover an external exact answer where phase quenching fails?",
+      "catalogue_model": "Small doped/frustrated chain or cluster",
+      "catalogue_ensemble": "Matched GCE mu,beta,finite dtau; choose a measurable nontrivial sign",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X08",
+      "category": "External-reference error control",
+      "title": "DMRG truncation error calibrated externally",
+      "scientific_question": "How does discarded weight translate into actual observable bias?",
+      "catalogue_model": "Small interacting chains and one exactly manageable two-orbital cluster",
+      "catalogue_ensemble": "Same unique fixed-N ground state",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html | https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X09",
+      "category": "External-reference error control",
+      "title": "False DMRG convergence",
+      "scientific_question": "Can apparently converged excited/metastable MPS states be detected?",
+      "catalogue_model": "Small interacting ring with competing low states",
+      "catalogue_ensemble": "Same N,Sz but independent starts; external ground subspace known",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X10",
+      "category": "External-reference error control",
+      "title": "Large-ED spin leakage effect",
+      "scientific_question": "Does spin contamination change physical results when only Sz is fixed?",
+      "catalogue_model": "Two-orbital small cluster matching the larger ED problem",
+      "catalogue_ensemble": "Selected states in same N,Sz, classified by full S",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X11",
+      "category": "External-reference error control",
+      "title": "Momentum-sector ground-state crossing",
+      "scientific_question": "Can a tracked branch be mistaken for the global ground state?",
+      "catalogue_model": "Small periodic two-orbital cluster with interaction/filling continuation",
+      "catalogue_ensemble": "All allowed total momenta and relevant spin sectors",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X12",
+      "category": "External-reference error control",
+      "title": "Degenerate-state ensemble dependence",
+      "scientific_question": "Which entropy/correlation changes are physical choices inside a degenerate manifold?",
+      "catalogue_model": "Small symmetric interacting cluster with known ground degeneracy",
+      "catalogue_ensemble": "Pure selected vector, equal-ground-manifold mixture and low-T Gibbs limit kept distinct",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X13",
+      "category": "External-reference error control",
+      "title": "Spectral thresholds versus charged gaps",
+      "scientific_question": "Can spectral selection rules hide the lowest charged state?",
+      "catalogue_model": "Small interacting chain or two-orbital cluster",
+      "catalogue_ensemble": "Fixed-N initial state; complete N\u00b11 external sectors",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X14",
+      "category": "External-reference error control",
+      "title": "Broadening-induced apparent peak shifts",
+      "scientific_question": "Do plotted peak positions misrepresent actual excitation energies?",
+      "catalogue_model": "Small cluster with overlapping many-body poles",
+      "catalogue_ensemble": "Same chosen initial eigenstate, fixed Lorentzian eta",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X15",
+      "category": "External-reference error control",
+      "title": "Constrained-path trial-state bias",
+      "scientific_question": "How much trial-state dependence remains after statistical convergence?",
+      "catalogue_model": "Small two-orbital Hubbard cluster supported by CP-AFQMC",
+      "catalogue_ensemble": "Matched fixed N,T=0 and Hamiltonian",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html | https://pyscf.org/quickstart.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X16",
+      "category": "External-reference error control",
+      "title": "Pair-binding energy certification",
+      "scientific_question": "Does apparent binding survive cancellation of several independently checked sector energies?",
+      "catalogue_model": "Small attractive or repulsive finite chain/ladder",
+      "catalogue_ensemble": "Ground states in N,N\u00b11 or N\u00b12 sectors; spin choices explicit",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X17",
+      "category": "External-reference error control",
+      "title": "Hybridization and orbital entanglement",
+      "scientific_question": "Does t4 create genuine interorbital quantum correlation beyond density redistribution?",
+      "catalogue_model": "Small two-orbital intraorbital-U cluster",
+      "catalogue_ensemble": "Same unique fixed-N state",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html | https://doi.org/10.1103/PhysRevB.111.L020401",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X18",
+      "category": "External-reference error control",
+      "title": "Orbital-selective interaction response",
+      "scientific_question": "Does an interaction imbalance produce the correct orbital-selective charge response?",
+      "catalogue_model": "Small hybridized two-orbital cluster with U_xz!=U_yz and no Hund term",
+      "catalogue_ensemble": "Same fixed-N ground state or matched grand-canonical thermal state",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html | https://doi.org/10.1103/PhysRevB.111.L020401",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X19",
+      "category": "External-reference error control",
+      "title": "Geometry-induced loss of orbital mixing",
+      "scientific_question": "How much does the periodic 2x2 cancellation of t4 alter the inferred physics?",
+      "catalogue_model": "Matched open 2x2, periodic 2x2 and noncancelling tilted two-orbital clusters",
+      "catalogue_ensemble": "Same density and stated ground/thermal prescription",
+      "source_urls": "https://doi.org/10.1103/PhysRevB.111.L020401 | https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X20",
+      "category": "External-reference error control",
+      "title": "Entropy shell effects versus asymptotic charge",
+      "scientific_question": "Can finite-window slopes be distinguished from a real asymptotic central charge?",
+      "catalogue_model": "Half-filled chain with separate L mod4 branches and larger independent references",
+      "catalogue_ensemble": "T=0 or separately controlled finite beta",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.models.hubbard.FermiHubbardModel.html | https://arxiv.org/abs/1404.3027",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X21",
+      "category": "External-reference error control",
+      "title": "Interacting charge stiffness beyond free bands",
+      "scientific_question": "Does interaction suppress charge transport consistently with an external many-body solution?",
+      "catalogue_model": "1D Hubbard ring at and away from half filling",
+      "catalogue_ensemble": "T=0 fixed density; controlled size/flux limits",
+      "source_urls": "https://arxiv.org/pdf/cond-mat/0207529 | https://quantumai.google/openfermion/tutorials/intro_to_openfermion",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X22",
+      "category": "External-reference error control",
+      "title": "Charge correlation length consistency",
+      "scientific_question": "Does the single-particle decay length agree with an independent large-chain MPS reference?",
+      "catalogue_model": "Half-filled repulsive chain in weak-Mott crossover",
+      "catalogue_ensemble": "T=0 fixed density; distances below boundary/finite-size scale",
+      "source_urls": "https://tenpy.readthedocs.io/en/latest/reference/tenpy.models.hubbard.FermiHubbardModel.html | https://tenpy.readthedocs.io/en/latest/reference/tenpy.networks.mps.MPS.html",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X23",
+      "category": "External-reference error control",
+      "title": "Thermodynamic two-dimensional energy extrapolation",
+      "scientific_question": "Does controlled finite-size/temperature extrapolation reach established many-method benchmark energy?",
+      "catalogue_model": "Square one-orbital Hubbard lattice, tprime0, half filling",
+      "catalogue_ensemble": "T->0 and thermodynamic limits distinguished",
+      "source_urls": "https://arxiv.org/abs/1505.02290",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X24",
+      "category": "External-reference error control",
+      "title": "Finite-temperature magnetic-order false positive",
+      "scientific_question": "Can finite-cluster magnetic signals be distinguished from forbidden finite-T SU2 order?",
+      "catalogue_model": "2D short-range Hubbard square lattice with exact continuous spin symmetry",
+      "catalogue_ensemble": "Fixed nonzero temperature, growing size",
+      "source_urls": "https://doi.org/10.1103/PhysRevLett.27.1584 | https://arxiv.org/abs/2012.11914",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "X25",
+      "category": "External-reference error control",
+      "title": "Pinning-field response versus spontaneous moment",
+      "scientific_question": "Can a field-induced orbital/spin pattern be separated from zero-field order?",
+      "catalogue_model": "Small two-orbital cluster with a weak specified orbital-odd pinning field",
+      "catalogue_ensemble": "Finite-cluster ground/thermal state; h->0 before any bulk claim",
+      "source_urls": "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html | https://doi.org/10.1103/PhysRevB.111.L020401",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J01",
+      "category": "Published journal target",
+      "title": "Published spatial entanglement profile of an interacting Hubbard chain",
+      "scientific_question": "Recover the complete ground-state cut profile and its shape, rather than one small-cluster entropy value.",
+      "catalogue_model": "Periodic half-filled one-dimensional repulsive Hubbard chain; published L=64,U/t=2 setup, Fig.5.",
+      "catalogue_ensemble": "Fixed-number ground-state DMRG; projector DQMC only after projection convergence; finite-beta replacement requires separate thermal bound.",
+      "source_urls": "https://arxiv.org/abs/1404.3027 | https://doi.org/10.1088/1742-5468/2014/08/P08015",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J02",
+      "category": "Published journal target",
+      "title": "Thermal conversion of the entropy arc into a volume profile",
+      "scientific_question": "Reproduce the change of the whole subsystem-size entropy curve during heating.",
+      "catalogue_model": "Half-filled periodic Hubbard chain, L=32,U/t=2; published Fig.6 temperature range.",
+      "catalogue_ensemble": "Grand-canonical thermal state at matched beta and centered chemical potential.",
+      "source_urls": "https://arxiv.org/abs/1404.3027 | https://doi.org/10.1088/1742-5468/2014/08/P08015",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J03",
+      "category": "Published journal target",
+      "title": "Finite-system purity crossover scale",
+      "scientific_question": "Match the published size dependence of the temperature below which the full chain becomes effectively pure.",
+      "catalogue_model": "Half-filled Hubbard rings with the sizes and interactions in published Fig.8.",
+      "catalogue_ensemble": "Grand-canonical thermal state, retaining charge sectors.",
+      "source_urls": "https://arxiv.org/abs/1404.3027 | https://doi.org/10.1088/1742-5468/2014/08/P08015",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J04",
+      "category": "Published journal target",
+      "title": "Quarter-filled shell-filling anomaly in entanglement",
+      "scientific_question": "Resolve the additional entropy contribution between L=0 mod8 and L=4 mod8 rings.",
+      "catalogue_model": "Quarter-filled spinful Hubbard rings, total N=L/2 and Nup=Ndown=L/4; paper-selected U and chain sizes.",
+      "catalogue_ensemble": "Fixed-sector ground state, preserving the paper ground multiplet prescription.",
+      "source_urls": "https://arxiv.org/abs/1211.2474",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J05",
+      "category": "Published journal target",
+      "title": "Spinon and holon branches of the removal spectrum",
+      "scientific_question": "Recover two distinct interacting dispersing spectral edges over a substantial momentum range.",
+      "catalogue_model": "Doped one-dimensional Hubbard chain with the published open boundaries, filling and hopping.",
+      "catalogue_ensemble": "Fixed-N zero-temperature removal spectrum, final N-1 sectors.",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0402664 | https://doi.org/10.1103/PhysRevLett.92.256401",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J06",
+      "category": "Published journal target",
+      "title": "Optical absorption edge of the one-dimensional Mott insulator",
+      "scientific_question": "Reproduce the published near-threshold square-root onset in the optical conductivity.",
+      "catalogue_model": "Half-filled one-dimensional repulsive Hubbard chain; paper geometry and weak/intermediate-coupling window.",
+      "catalogue_ensemble": "Zero-temperature fixed-number current response.",
+      "source_urls": "https://arxiv.org/abs/cond-mat/9911281 | https://doi.org/10.1103/PhysRevLett.85.3910",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J07",
+      "category": "Published journal target",
+      "title": "Bound optical exciton in the extended Hubbard chain",
+      "scientific_question": "Separate a bound absorption pole from the unbound holon-antiholon continuum using the published extended-model result.",
+      "catalogue_model": "Half-filled one-dimensional extended Hubbard chain, including the paper nearest-neighbor density interaction V.",
+      "catalogue_ensemble": "Zero-temperature fixed-N current response.",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0103406",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J08",
+      "category": "Published journal target",
+      "title": "Thermally activated in-gap charge resonance",
+      "scientific_question": "Reproduce the low-frequency density-response feature inside the zero-temperature Mott gap.",
+      "catalogue_model": "Half-filled strong-coupling Hubbard chain with the paper finite-temperature setup.",
+      "catalogue_ensemble": "Canonical or grand-canonical finite-temperature state exactly matching the selected published panel.",
+      "source_urls": "https://arxiv.org/abs/1710.06452",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J09",
+      "category": "Published journal target",
+      "title": "Spin-incoherent redistribution of electron spectral weight",
+      "scientific_question": "Recover the published temperature-driven spectral reconstruction when spin disordering precedes charge excitation.",
+      "catalogue_model": "Strong-coupling half-filled Hubbard chain, using finite U parameters from the selected paper panel.",
+      "catalogue_ensemble": "Finite-temperature thermal ensemble matched to the publication; not an artificial spin-temperature ensemble.",
+      "source_urls": "https://arxiv.org/abs/1710.06452",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J10",
+      "category": "Published journal target",
+      "title": "Boundary-induced bound state in the local spectrum",
+      "scientific_question": "Recover the nondispersing in-gap state created by a boundary potential.",
+      "catalogue_model": "Open half-filled Hubbard chain with the boundary potential and, where selected, V used by the paper.",
+      "catalogue_ensemble": "Fixed-number ground-state local addition/removal spectrum.",
+      "source_urls": "https://arxiv.org/abs/1612.05597 | https://doi.org/10.1103/PhysRevB.95.205103",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J11",
+      "category": "Published journal target",
+      "title": "Hidden antiferromagnetic string correlations in doped chains",
+      "scientific_question": "Recover magnetic correlations revealed by removing the signs accumulated across charge defects.",
+      "catalogue_model": "Hole-doped Hubbard chains at the published U, temperature and experimental postselection.",
+      "catalogue_ensemble": "Finite-temperature number-sector mixture or conditioned canonical ensemble matching the measured selection.",
+      "source_urls": "https://arxiv.org/abs/1702.00642 | https://doi.org/10.1126/science.aam8990",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J12",
+      "category": "Published journal target",
+      "title": "Density-driven incommensurate magnetic wave vector",
+      "scientific_question": "Recover the published spin modulation wave vector as carriers are removed.",
+      "catalogue_model": "Balanced doped Hubbard chains with the finite lengths, confinement and filling groups used in the source.",
+      "catalogue_ensemble": "Finite-temperature spin-balanced ensemble, conditioned on the same atom-number groups.",
+      "source_urls": "https://arxiv.org/abs/1803.08892 | https://www.nature.com/articles/s41586-018-0778-7",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J13",
+      "category": "Published journal target",
+      "title": "Longer-range spin correlations as a Hubbard-chain thermometer",
+      "scientific_question": "Match the simultaneous finite-temperature decay pattern at separations one through three.",
+      "catalogue_model": "Near-half-filled one-dimensional Hubbard chains at the publication interaction and confinement.",
+      "catalogue_ensemble": "Thermal state with the same spin balance and postselection.",
+      "source_urls": "https://arxiv.org/abs/1605.05661 | https://doi.org/10.1126/science.aag1635",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J14",
+      "category": "Published journal target",
+      "title": "Real-time separation of a locally created spin and charge disturbance",
+      "scientific_question": "Track the two propagation fronts after the same local atom-removal quench.",
+      "catalogue_model": "Open Hubbard chain at the published interaction and density, with matched weak confinement where needed.",
+      "catalogue_ensemble": "Published initial thermal preparation followed by unitary real-time evolution after local removal.",
+      "source_urls": "https://pure.mpg.de/pubman/item/item_3192290_2/component/file_3193592/5896preprint.pdf | https://doi.org/10.1126/science.aay2354",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J15",
+      "category": "Published journal target",
+      "title": "Separated spin and charge peaks in the square-lattice specific heat",
+      "scientific_question": "Resolve the published low- and high-temperature thermodynamic structures.",
+      "catalogue_model": "Half-filled two-dimensional nearest-neighbor square Hubbard lattice; match the published finite sizes and U.",
+      "catalogue_ensemble": "Grand-canonical thermal state at particle-hole symmetry.",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0008044 | https://doi.org/10.1103/PhysRevB.63.125116",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J16",
+      "category": "Published journal target",
+      "title": "Low-temperature feature in the local moment",
+      "scientific_question": "Recover the additional low-energy structure in local moment formation beyond the broad interaction-scale crossover.",
+      "catalogue_model": "Same half-filled square-lattice Hubbard model and selected published finite-size setup.",
+      "catalogue_ensemble": "Particle-hole-symmetric thermal ensemble.",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0008044 | https://doi.org/10.1103/PhysRevB.63.125116",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J17",
+      "category": "Published journal target",
+      "title": "Momentum-selective onset of the weak-coupling pseudogap",
+      "scientific_question": "Match the different cooling behavior of nodal and antinodal one-particle quantities.",
+      "catalogue_model": "Half-filled nearest-neighbor square Hubbard lattice at the weak-coupling parameters and finite-size treatment of the source.",
+      "catalogue_ensemble": "Grand-canonical finite-temperature state.",
+      "source_urls": "https://arxiv.org/abs/2006.10769 | https://doi.org/10.1103/PhysRevX.11.011058",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J18",
+      "category": "Published journal target",
+      "title": "Spin texture conditional on an isolated dopant",
+      "scientific_question": "Recover the spatial spin-correlation distortion surrounding a hole instead of averaging it away.",
+      "catalogue_model": "Lightly hole-doped two-dimensional square Hubbard system matched to the published measurement/theory setup.",
+      "catalogue_ensemble": "Finite-temperature state with the same isolated-hole selection.",
+      "source_urls": "https://www.nature.com/articles/s41586-019-1463-1",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J19",
+      "category": "Published journal target",
+      "title": "Physical stripe amplitude versus DMRG-induced density modulation",
+      "scientific_question": "Reproduce the published extrapolation separating genuine strong-coupling stripes from numerical modulation at weak coupling.",
+      "catalogue_model": "Six-leg Hubbard cylinders, periodic around the legs and open along the length; published lengths and hole sectors.",
+      "catalogue_ensemble": "Fixed-number ground state with matched boundary/pinning prescription.",
+      "source_urls": "https://arxiv.org/abs/cond-mat/0409321 | https://doi.org/10.1103/PhysRevB.71.075108",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J20",
+      "category": "Published journal target",
+      "title": "Two-orbital electron and hole Fermi-pocket topology",
+      "scientific_question": "Recover the published pocket types and their locations for the minimal iron-pnictide model.",
+      "catalogue_model": "Square-lattice dxz/dyz two-orbital tight-binding model at the exact Raghu hopping and chemical potential; not the different ALM hopping set.",
+      "catalogue_ensemble": "Noninteracting zero-temperature Fermi sea, with finite-temperature extrapolation if using DQMC.",
+      "source_urls": "https://arxiv.org/abs/0804.1113 | https://doi.org/10.1103/PhysRevB.77.220503",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 68,
+      "comparisons": 5,
+      "metrics": [
+        {
+          "metric": "band_energy_maximum_absolute",
+          "maximum_error": 1.7763568394002505e-15,
+          "tolerance": 1e-10,
+          "components": 4,
+          "within_tolerance": true
+        },
+        {
+          "metric": "filling_maximum_absolute",
+          "maximum_error": 0.0,
+          "tolerance": 1e-12,
+          "components": 4,
+          "within_tolerance": true
+        },
+        {
+          "metric": "contour_radius_maximum_absolute",
+          "maximum_error": 1.7763568394002505e-15,
+          "tolerance": 1e-09,
+          "components": 64,
+          "within_tolerance": true
+        },
+        {
+          "metric": "realspace_Fourier_block_maximum_absolute",
+          "maximum_error": 5.333535978150284e-15,
+          "tolerance": 1e-10,
+          "components": 1,
+          "within_tolerance": true
+        },
+        {
+          "metric": "last_mesh_filling_change",
+          "maximum_error": 0.0001068115234375,
+          "tolerance": 0.001,
+          "components": 1,
+          "within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "production free-band/real-space Hamiltonian builders",
+        "existing_user_functions": [
+          "src/noninteracting.jl: bloch_hamiltonian",
+          "sample_band_energies",
+          "zero_temperature_filling",
+          "src/realspace_kinetic.jl: realspace_kinetic_matrix",
+          "fourier_block"
+        ],
+        "new_adapter": "published-equation evaluation, topology/contour or orbital-projector analysis",
+        "production_band_construction_exercised": true,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "journal",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "scope": "Author-preprint-v1 Fig3 four-pocket topology and Eqs2-4; actual production band/grid/realspace code, not interacting DQMC",
+        "parameters": {
+          "t3": -0.85,
+          "t2": 1.3,
+          "t1": -1.0,
+          "t4": -0.85,
+          "mu": 1.45
+        },
+        "reference_version": "0804.1113v1; APS final PDF unavailable during preparation; preprint parameters explicitly pinned"
+      }
+    },
+    {
+      "id": "J21",
+      "category": "Published journal target",
+      "title": "Orbital mixing in the two-band spectral weights",
+      "scientific_question": "Recover redistribution between dxz and dyz character across hybridized band crossings.",
+      "catalogue_model": "Same published two-orbital tight-binding model and orbital convention.",
+      "catalogue_ensemble": "Noninteracting Fermi sea or matched thermal Gaussian state.",
+      "source_urls": "https://arxiv.org/abs/0804.1113 | https://doi.org/10.1103/PhysRevB.77.220503",
+      "status": "PASS",
+      "reported_status": "PASS",
+      "reason": "",
+      "fixtures": 516,
+      "comparisons": 2,
+      "metrics": [
+        {
+          "metric": "orbital_weight_maximum_absolute",
+          "maximum_error": 3.3306690738754696e-16,
+          "tolerance": 1e-08,
+          "components": 1032,
+          "within_tolerance": true
+        },
+        {
+          "metric": "weight_normalization_maximum_absolute",
+          "maximum_error": 4.440892098500626e-16,
+          "tolerance": 1e-12,
+          "components": 516,
+          "within_tolerance": true
+        }
+      ],
+      "scope": {
+        "method": "production free-band/real-space Hamiltonian builders",
+        "existing_user_functions": [
+          "src/noninteracting.jl: bloch_hamiltonian"
+        ],
+        "new_adapter": "published-equation evaluation, topology/contour or orbital-projector analysis",
+        "production_band_construction_exercised": true,
+        "production_DQMC_sampling_exercised": false,
+        "production_DMRG_exercised": false
+      },
+      "input_role": "journal",
+      "audit_issues": [],
+      "executed_fixture_scope": {
+        "scope": "Orbital-resolved band residues derived independently from published two-band projector, not a digitized figure or interacting spectral function",
+        "parameters": {
+          "t3": -0.85,
+          "t2": 1.3,
+          "t1": -1.0,
+          "t4": -0.85,
+          "mu": 1.45
+        },
+        "reference_version": "0804.1113v1; APS final PDF unavailable during preparation; preprint parameters explicitly pinned"
+      }
+    },
+    {
+      "id": "J22",
+      "category": "Published journal target",
+      "title": "Nesting-driven wave-vector selection in the bare spin response",
+      "scientific_question": "Recover the published response maximum near stripe wave vectors instead of inferring magnetism solely from bands.",
+      "catalogue_model": "Published Raghu two-orbital square-lattice parameters and temperature.",
+      "catalogue_ensemble": "U=0 thermal linear response.",
+      "source_urls": "https://arxiv.org/abs/0804.1113 | https://doi.org/10.1103/PhysRevB.77.220503",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J23",
+      "category": "Published journal target",
+      "title": "Hybridization selection between orbital-antiparallel and parallel mean-field states",
+      "scientific_question": "Reproduce the published intraorbital-only mean-field energetic mechanism for local orbital antialignment.",
+      "catalogue_model": "Giuli-Mejuto-Zaera-Capone two-orbital square model, using the AppendixD small-interorbital-hybridization setup.",
+      "catalogue_ensemble": "Specified Hartree-Fock trial states at matched density; this is a variational functional benchmark, not a certification of the exact ground state.",
+      "source_urls": "https://arxiv.org/abs/2410.00909 | https://doi.org/10.1103/PhysRevB.111.L020401",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J24",
+      "category": "Published journal target",
+      "title": "Published stripe magnetism of the interacting two-orbital pnictide cluster",
+      "scientific_question": "Recover the magnetic structure-factor pattern in the original finite-cluster model.",
+      "catalogue_model": "Published square cluster and hoppings of Daghofer et al., including its interorbital repulsion, Hund exchange and any pair-hopping terms exactly as specified.",
+      "catalogue_ensemble": "Undoped fixed-number ground-state sector; resolve the complete degenerate manifold as required.",
+      "source_urls": "https://arxiv.org/abs/0805.0148 | https://doi.org/10.1103/PhysRevLett.101.237004",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    },
+    {
+      "id": "J25",
+      "category": "Published journal target",
+      "title": "Spin and orbital symmetry of the leading two-electron addition channel",
+      "scientific_question": "Recover which normalized pair operator couples most strongly to the doped ground state.",
+      "catalogue_model": "Same published two-orbital finite cluster, comparing undoped N and electron-doped N+2 with the full published interactions.",
+      "catalogue_ensemble": "Certified fixed-number ground states/subspaces and their spin and spatial symmetry labels.",
+      "source_urls": "https://arxiv.org/abs/0805.0148 | https://doi.org/10.1103/PhysRevLett.101.237004",
+      "status": "NOT_RUN",
+      "reported_status": null,
+      "reason": "No execution receipt for this distinct idea. Earlier parameter-comparison batches do not establish completion.",
+      "fixtures": 0,
+      "comparisons": 0,
+      "metrics": [],
+      "scope": {},
+      "input_role": null,
+      "audit_issues": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# New matched timing record
+
+This benchmark compares the same corrected two-replica Rényi node loop **with** and **without** rank-one Grover caching. It uses the active working package, where both paths include the same independent 50% idle decision before every local HS proposal. The baseline rebuilds Grover matrices and evaluates determinants directly; it is not a different ED method or a different physics calculation.
+
+The registered grid is `L=8,16,32,64,128`, `nA=L/2`, `U=2`, `t=1`, `mu_centered=0`, `beta=2`, `dtau=0.05`, PBC, `lambda=0.5`, stabilization period5. Each repetition performs12 two-replica update rounds and the same forward/backward and endpoint ratio measurements. Seven repetitions alternate execution order. Both paths start from deep copies of the same warmed fields and RNG states. Initialization, a shared two-round warm-up, compilation probes, deep copies and explicit GC are outside the primary timing; allocation-triggered GC inside the loop is included.
+
+The primary number is the ratio of median **node-loop** elapsed times at each size. This includes updates, measurements and the same sweep-boundary state snapshots. Update-kernel and measurement subtimes are reported separately. Neither is a timing of a full final-entropy lambda-grid campaign. All registered sizes and raw repetitions remain in the report; a slow or incomplete size becomes unresolved. The600-second soft budget is checked between paired repetitions, so a long individual repetition may extend the elapsed time beyond that budget.
+
+Correctness requires exact sweep-boundary HS states, sweep acceptance rates, determinant signs and next RNG draws. Full Green matrices, determinant logs and every recorded measurement must meet their declared tolerances. The receipt includes machine/CPU, Julia/BLAS settings, job ID, seeds, source hashes, all raw wall/allocation/GC data and every correctness check. The paired-bootstrap95% interval describes timing jitter on the same host; it does not establish a speedup on all hardware or all physical parameters.
+
+A short pilot can use `TIMING_SIZES=8`, `TIMING_REPEATS=3`, `TIMING_ROUNDS=2` and a new `TIMING_OUTPUT`; the complete record uses the defaults. Set `RENYI_ROOT` to the corrected active package and run with its Julia project and one Julia/BLAS thread. A pilot is recorded separately and is not substituted for the registered complete grid.
+
+The script was prepared on October22,2026, independently reviewed for comparison fairness, and handed to the parent campaign for ISAAC execution. Preparing the script does not establish a speedup. Historical4.59× and3.8236× claims are not inputs to this new timing result.

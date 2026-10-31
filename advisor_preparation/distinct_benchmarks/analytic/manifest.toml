@@ -1,0 +1,266 @@
+schema_version = 1
+campaign = "Distinct analytical scientific benchmarks, first additive ED/thermal-ED tranche"
+parameter_points_are_not_additional_ideas = true
+runtime_tier = "T0/T1: all matrices at most 256x256 full Fock, or small fixed sectors"
+methods_exercised = ["ED", "thermal ED"]
+methods_not_certified = ["DQMC stochastic sampling", "DMRG"]
+execution_status = "NOT_RUN"
+
+[[benchmarks]]
+id = "A01"
+title = "Atomic equation of state"
+scientific_question = "Does an interacting isolated site reproduce the full density and double-occupancy equation of state?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/html/1502.02194"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=1,t=0; U=0,2,6; mu_centered=-0.7,0,0.6; beta=0.25,2; N,D,centered internal E,logZ"
+
+[[benchmarks]]
+id = "A02"
+title = "Atomic two-pole Green function"
+scientific_question = "Are atomic addition/removal energies, residues and imaginary-time decay correct?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/html/1502.02194"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=1,t=0; U=1,4; mu_centered=-0.3,0.7; beta=0.5,2; both poles/residues and tau/beta=0,1/8,1/3,1/2,7/8,1"
+
+[[benchmarks]]
+id = "A03"
+title = "Dimer superexchange gap"
+scientific_question = "Does the solver reproduce interaction-generated spin exchange?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/html/1502.02194"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Open one-bond dimer: physical t=0.7,1.3; U=0,1,4,12; singlet and triplet classified by full S^2; source ring input t/2"
+
+[[benchmarks]]
+id = "A04"
+title = "Dimer charge gap"
+scientific_question = "Do charged excitations reproduce the analytic dimer insulating gap?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/html/1502.02194"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Same dimer grid, ground sectors (Nup,Ndown)=(1,0),(1,1),(2,1); compare each E1,E2,E3 and charge gap"
+
+[[benchmarks]]
+id = "A05"
+title = "Dimer entanglement spectrum"
+scientific_question = "Are interacting local Schmidt probabilities correct, beyond one entropy value?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/html/1502.02194"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Same dimer grid, all four one-site RDM probabilities and native user ED S2 functional"
+
+[[benchmarks]]
+id = "A06"
+title = "Free finite-chain thermodynamics"
+scientific_question = "Does the free finite-chain thermal state reproduce its independent mode sum?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/abs/cond-mat/0212631"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1.2,U=0; PBC/APBC; beta=0.25,1,3; mu_centered=-0.4,0,0.6; density,Ekin,logZ,total thermal entropy"
+
+[[benchmarks]]
+id = "A07"
+title = "Free unequal-time propagator"
+scientific_question = "Does time propagation agree over the whole imaginary-time interval?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1,U=0; PBC/APBC; beta=0.5,2; mu_centered=-0.3,0.5; every site matrix element at tau/beta=0,1/8,1/3,1/2,7/8,1"
+
+[[benchmarks]]
+id = "A08"
+title = "Free Lindhard response"
+scientific_question = "Does the two-particle frequency/momentum response have the correct continuum?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1,U=0,APBC,beta=1.3,mu_centered=0.2; q=0,pi/2,pi; Matsubara m=0,1,2; connected density susceptibility per site, two spins"
+
+[[benchmarks]]
+id = "A09"
+title = "Free spectral poles"
+scientific_question = "Are one-particle spectra placed and normalized correctly?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://doi.org/10.1103/PhysRevB.111.L020401"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1,U=0,APBC,beta=1.3,mu_centered=0.2; every allowed k; every supported Lehmann pole and total spectral residue"
+
+[[benchmarks]]
+id = "A10"
+title = "Free compressibility"
+scientific_question = "Does density response to mu agree with occupation fluctuations?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1,U=0; PBC/APBC; beta=0.5,2; mu_centered=-0.3,0.5; beta*Var(N)/L versus mode derivative"
+
+[[benchmarks]]
+id = "A11"
+title = "Gaussian entanglement level spectrum"
+scientific_question = "Does the code recover every free-fermion entanglement level?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/abs/cond-mat/0212631"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1,U=0; PBC/APBC; beta=0.5,3; mu_centered=-0.3,0.5; contiguous nA=1,2,3; all RDM eigenvalues"
+
+[[benchmarks]]
+id = "A12"
+title = "Canonical infinite-temperature entropy"
+scientific_question = "Does fixed particle number produce the correct nonlocal entropy constraint?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/abs/cond-mat/0212631"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1; U=0,4; fixed (Nup,Ndown)=(1,1),(2,2),(3,1); beta=0; nA=1,2,3; canonical RDM purity and S2"
+
+[[benchmarks]]
+id = "A13"
+title = "Grand-canonical infinite-temperature entropy"
+scientific_question = "Does subsystem entropy approach the correct local Hilbert-space volume law?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/abs/1404.3027"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1; U=0,4; mu_centered=0.7; beta=0 grand canonical; nA=1,2,3,4; RDM purity and S2"
+
+[[benchmarks]]
+id = "A14"
+title = "Fully polarized interacting gas"
+scientific_question = "Does a polarized sector eliminate Hubbard scattering exactly?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/pdf/cond-mat/0207529"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Closed-shell polarized fixtures (L,Nup,bc)=(4,1,PBC),(4,2,APBC),(6,3,PBC),(6,2,APBC), Ndown=0; U=0,3,10; E,entire spin-up onebody matrix,D"
+
+[[benchmarks]]
+id = "A15"
+title = "Single-electron orbital composition"
+scientific_question = "Does an interacting two-orbital solver retain exact one-electron wavefunctions?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://doi.org/10.1103/PhysRevB.111.L020401"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "Two-orbital Hamiltonian API belongs to the main package; not substituted by this one-orbital adapter."
+
+[[benchmarks]]
+id = "A16"
+title = "Van-Hove density-of-states singularity"
+scientific_question = "Does the square-lattice free spectrum recover the analytic van-Hove singularity and band-edge weight?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "Square-lattice thermodynamic DOS requires an independently controlled quadrature/size adapter."
+
+[[benchmarks]]
+id = "A17"
+title = "Decoupled orbital thermal correlations"
+scientific_question = "Do uncoupled local orbitals avoid artificial interorbital magnetism?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://doi.org/10.1103/PhysRevB.111.L020401"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "Native two-orbital atomic Hamiltonian is not exercised by this one-orbital tranche."
+
+[[benchmarks]]
+id = "A18"
+title = "Bethe-ansatz thermodynamic energy"
+scientific_question = "Does the finite-chain sequence approach the exact interacting bulk energy?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/pdf/cond-mat/0207529"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "Thermodynamic energy requires controlled finite-size extrapolation; a tiny-chain equality would be false."
+
+[[benchmarks]]
+id = "A19"
+title = "Bethe-ansatz Mott charge gap"
+scientific_question = "Does the calculated charge gap approach the exact repulsive-chain gap?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/pdf/cond-mat/0207529"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "Bulk Mott gap requires charged-sector size extrapolation and independent integral control."
+
+[[benchmarks]]
+id = "A20"
+title = "Bethe-ansatz double occupancy"
+scientific_question = "Does the interacting ground-state local charge fluctuation match the exact bulk derivative?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/pdf/cond-mat/0207529"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "Bulk double occupancy requires derivative quadrature and size-error control."
+
+[[benchmarks]]
+id = "A21"
+title = "Heisenberg spin-correlation limit"
+scientific_question = "Does strong coupling produce the correct nearest-neighbor spin correlation?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://doi.org/10.1016/0375-9601(77)90702-2", "https://arxiv.org/pdf/cond-mat/0207529"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "Both finite-U and finite-size corrections must be controlled before the Heisenberg comparison."
+
+[[benchmarks]]
+id = "A22"
+title = "Exact eta-pairing excited states"
+scientific_question = "Can the solver reproduce exact non-ground states with off-diagonal pair order?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://doi.org/10.1103/PhysRevLett.63.2144"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "L=4,t=1,PBC; U=1,4; m=1,2,3 eta pairs; exact excited eigenspace/residual plus full staggered pair density matrix"
+
+[[benchmarks]]
+id = "A23"
+title = "Lieb ground-state spin theorem"
+scientific_question = "Does half-filled ground-state spin follow sublattice imbalance?"
+implementation = "RUNNABLE_ADAPTER"
+execution_status = "NOT_RUN"
+source_urls = ["https://doi.org/10.1103/PhysRevLett.62.1201"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Open L=3,t=1,half-filled N=3; U=0.5,2,8; entire fixed-N sector, both ground multiplet components, S^2=3/4; PBC/APBC average removes seam"
+
+[[benchmarks]]
+id = "A24"
+title = "Gapless spin sector of the repulsive chain"
+scientific_question = "Does the spin gap vanish while the charge gap remains finite?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://arxiv.org/pdf/cond-mat/0207529"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "A vanishing bulk spin gap cannot be certified on one small cluster."
+
+[[benchmarks]]
+id = "A25"
+title = "Free flux stiffness and persistent current"
+scientific_question = "Does the flux response reproduce independently differentiated band energies?"
+implementation = "NOT_IMPLEMENTED"
+execution_status = "NOT_RUN"
+source_urls = ["https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html"]
+acceptance = "All declared scalar/matrix errors <=1e-9 or tighter; A11 full-spectrum L1<=1e-9; raw tolerances are recorded per comparison."
+grid = "Not run in this tranche"
+not_run_reason = "The imported source supports only real PBC/APBC seams; arbitrary complex flux is unavailable."

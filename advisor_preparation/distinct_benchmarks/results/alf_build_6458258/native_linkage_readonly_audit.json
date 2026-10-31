@@ -1,0 +1,35 @@
+{
+  "schema": "alf_native_linkage_readonly_v1",
+  "status": "PINNED_SINGLE_PROVIDER_PASS",
+  "native_binary_sha256": "24aae816f4428affdee1c2b0a305fd3d5f7919aa822daccbc9e5623572bac790",
+  "binary_matches_build_receipt": true,
+  "provider": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so",
+  "provider_sha256": "3cadb0f797c5bba7310ea042213601cdfd1f8cacf2fb104c2f972b822bc262c0",
+  "provider_matches_pinned_metadata": true,
+  "resolved_libraries": [
+    {
+      "ldd_line": "libopenblas.so.0 => /spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas.so.0 (0x00007f69b6712000)",
+      "realpath": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so"
+    }
+  ],
+  "build_blas_lapack_alias_realpaths": {
+    "libblas.so": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so",
+    "liblapack.so": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so"
+  },
+  "needed": [
+    "0x0000000000000001 (NEEDED)             Shared library: [libopenblas.so.0]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libgfortran.so.5]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libgomp.so.1]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libquadmath.so.0]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+  ],
+  "ldd": "\tlinux-vdso.so.1 (0x00007fff4d4d3000)\n\tlibopenblas.so.0 => /spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas.so.0 (0x00007f69b6712000)\n\tlibgfortran.so.5 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgfortran.so.5 (0x00007f69b625b000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007f69b5ed9000)\n\tlibgomp.so.1 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgomp.so.1 (0x00007f69b5c9a000)\n\tlibgcc_s.so.1 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgcc_s.so.1 (0x00007f69b5a82000)\n\tlibquadmath.so.0 => /sw/isaac/compilers/gcc/10.2.0/lib64/libquadmath.so.0 (0x00007f69b583b000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007f69b561b000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f69b5245000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f69b74cd000)\n\tlibdl.so.2 => /lib64/libdl.so.2 (0x00007f69b5041000)\n",
+  "LD_LIBRARY_PATH_for_ldd": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib:/sw/isaac/compilers/gcc/10.2.0/lib64",
+  "scientific_samples": 0,
+  "P21_status": "NOT_RUN",
+  "remote_files_modified": false,
+  "binary_or_libraries_downloaded": false
+}

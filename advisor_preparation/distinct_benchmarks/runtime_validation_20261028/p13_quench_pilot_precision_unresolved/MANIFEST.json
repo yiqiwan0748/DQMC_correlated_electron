@@ -1,0 +1,68 @@
+{
+  "schema": "P13_ORIGINAL_UNRESOLVED_PILOT_PUBLIC_SCIENTIFIC_PROJECTION_V1",
+  "status": "UNRESOLVED_PRECISION_ELIGIBILITY_OR_NONEXERCISING_FIXED_FIXTURE",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "original_comparison": {
+    "bytes": 2123796,
+    "sha256": "d61218228886a7f493169dc962f91e499036301a4ab14bb11b6f2c6a24a4d0eb"
+  },
+  "projection_removed_top_level_fields": [
+    "runtime_before",
+    "runtime_after"
+  ],
+  "all_remaining_JSON_values_exact": true,
+  "gates": {
+    "total": 8887,
+    "PASS": 8872,
+    "FAIL": 15
+  },
+  "raw_producer_payloads_published": false,
+  "complete_standalone_reproduction": false,
+  "files": {
+    "README.md": {
+      "bytes": 3717,
+      "sha256": "5215566d4dcd8a34c8d3ae7cf75be92e8ebf3dd68255ab8ee9668029f77e9d3f"
+    },
+    "comparison_scientific_projection.json": {
+      "bytes": 1337843,
+      "sha256": "f711a2b66e257b7449234f0f07066cb88ce71d173c1647b40986768716afcc0a"
+    },
+    "failed_gates.json": {
+      "bytes": 3551,
+      "sha256": "11239bbdf9e8e81bc3b36556aed170054375aaebd33acd40193a4f2ee594794f"
+    },
+    "source/PROTOCOL.json": {
+      "bytes": 9816,
+      "sha256": "a5057c8bcab56564890355a02ec63e0bbc760205d34d12039a00dbb841b7e222"
+    },
+    "source/comparator.py": {
+      "bytes": 47830,
+      "sha256": "a1784cac62b2423c01d5598f2742df9fb003e2a839765c7cb1e645cfb579b8d9"
+    },
+    "source/evolution_bounds.py": {
+      "bytes": 4702,
+      "sha256": "53bede2b304d07cee75da41eb4298f20e5f74f4a33ea1791ebdf0d2fa9b1b885"
+    },
+    "source/inherited_p17_certificate.py": {
+      "bytes": 14086,
+      "sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    "source/native_producer_core.jl": {
+      "bytes": 9710,
+      "sha256": "fda7ec19080ef823f6000693fa78c7ca0a8da24ee0f204340fe85ad658515ff9"
+    },
+    "source/protocol_helpers.py": {
+      "bytes": 1523,
+      "sha256": "950525ba84b706d9e55824cebfb344484295a44f904ef3f652d364efd98b34a3"
+    },
+    "source/source_snapshot/compute_s2_itensor_dmrg.jl": {
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    "source/tenpy_producer_core.py": {
+      "bytes": 14971,
+      "sha256": "65835eb811f9f836cbccfc17a0e94d9de83056aadf48aff3baa8aad0f96ba99a"
+    }
+  }
+}

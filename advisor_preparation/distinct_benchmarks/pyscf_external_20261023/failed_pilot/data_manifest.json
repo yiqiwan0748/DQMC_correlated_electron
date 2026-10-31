@@ -1,0 +1,76 @@
+{
+  "archive": "data.tar.gz",
+  "archive_bytes": 127083,
+  "archive_sha256": "d88918312b009f6d44c149772bbf3fe64b57404222eddd57e4450d64234427b5",
+  "file_count": 13,
+  "files": [
+    {
+      "bytes": 1334,
+      "path": "comparator.resources.txt",
+      "sha256": "9b8119900bcd003b36c3cb2437434e8fb5fd1b34e84c1966aaa12f02c8e13617"
+    },
+    {
+      "bytes": 2111,
+      "path": "comparator.stderr.txt",
+      "sha256": "8deb4a79bc441c302b4578fa22e0ff69f709e85a46c088b27950cb9b5d06a639"
+    },
+    {
+      "bytes": 0,
+      "path": "comparator.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4100,
+      "path": "execution.json",
+      "sha256": "79d012c9311dfb2d85fe731eb2167ad59eee6d00f7e81f07f478d85314ac3ca1"
+    },
+    {
+      "bytes": 209898,
+      "path": "reference.json",
+      "sha256": "99cb46eff25608f224549515b4abbfe2ea8e4f0a1b9670ae659cff7e44862835"
+    },
+    {
+      "bytes": 1055,
+      "path": "reference.resources.txt",
+      "sha256": "9551ae32b7d3d0de391790d4269ae4e10b931daca7afabfeab191335b5e4d231"
+    },
+    {
+      "bytes": 0,
+      "path": "reference.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reference.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 276,
+      "path": "scheduler_own_job.txt",
+      "sha256": "8f710b65154734afeee7427390235302fa2351478a90f863f87a3ad4c3ccfd1a"
+    },
+    {
+      "bytes": 1060,
+      "path": "target.resources.txt",
+      "sha256": "691776562bbad0dc59e9db9597cc9c9d97e1c0bb12abe8854c450853dfd0529b"
+    },
+    {
+      "bytes": 0,
+      "path": "target.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "target.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 220824,
+      "path": "target.toml",
+      "sha256": "4ab5ba212ba5d75373c7b4133192273f0e3f468204890b12cb439d16ed246ca0"
+    }
+  ],
+  "links_or_binaries_included": false,
+  "schema": "scientific_text_archive_v1",
+  "scientific_text_only": true
+}

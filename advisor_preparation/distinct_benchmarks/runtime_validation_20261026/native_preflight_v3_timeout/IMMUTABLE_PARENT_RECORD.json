@@ -1,0 +1,64 @@
+{
+  "schema": "P17_NATIVE_SUPPLEMENT_IMMUTABLE_PARENT_RECORD_V1",
+  "parent_commit": "8fd8f7d4f348d187871835489afa69ebddb4cb5b",
+  "parent_record": "advisor_preparation/distinct_benchmarks/runtime_validation_20261026",
+  "parent_selection_manifest_sha256": "ec83b83386d3ee344b42f890d7a874ed9ada9dc7b45d9042cd37627506e1e811",
+  "files": [
+    {
+      "path": "DIAGNOSTIC_AGGREGATES.json",
+      "bytes": 3955,
+      "sha256": "37432a5e06e4ac062cdeef1cc16a65ba88aac5653621869de01d117fd69f1359"
+    },
+    {
+      "path": "NATIVE_V3_STAGED_SNAPSHOT.json",
+      "bytes": 1254,
+      "sha256": "41ae9a9c3c022e90f0c602db4056a74ef65b80affb7d8bf65cf234299ebeaaf3"
+    },
+    {
+      "path": "PRIMARY_SOURCES.json",
+      "bytes": 1755,
+      "sha256": "dff96a17f76960d79d70a566f0feb6e8121189cd4deb9e26f8474ffbce385bd5"
+    },
+    {
+      "path": "PRIOR_RUNTIME_AGGREGATES.json",
+      "bytes": 5424,
+      "sha256": "eb6d45662e554c1d6475bc1da9f2c2de87eed00f5f9c91d01fbac24fba674685"
+    },
+    {
+      "path": "PUBLICATION_AUDIT.json",
+      "bytes": 551,
+      "sha256": "f62e9d4b38145600991379c2ec92d9975f0b255378d7a90687f85442be96666c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2305,
+      "sha256": "fce5770e3ca29eee027c8e28f6b3418448071944cb24f34bddd3638ba687012a"
+    },
+    {
+      "path": "SELECTION_MANIFEST.json",
+      "bytes": 4159,
+      "sha256": "ec83b83386d3ee344b42f890d7a874ed9ada9dc7b45d9042cd37627506e1e811"
+    },
+    {
+      "path": "source/maps_parser.jl",
+      "bytes": 1650,
+      "sha256": "f0048b64555f3ab6712ebd4e267ed983591320d65f01684d466c6ecfed8019da"
+    },
+    {
+      "path": "source/postprocess.py",
+      "bytes": 8414,
+      "sha256": "c5f98ac02ee2225a54839ea822e3de6568dfb2e680aeeea1efe47afe3693151d"
+    },
+    {
+      "path": "source/stat_batch.py",
+      "bytes": 3298,
+      "sha256": "94803235150dbe182797a13b67bad82efc6045cbe984c11d55e76a102da410f9"
+    },
+    {
+      "path": "source/stat_helper.c",
+      "bytes": 1594,
+      "sha256": "7df6dad2584fc4c58c3ba5cbdcd41e0174b84e3e8767d2c6ef2846b467ee0fe4"
+    }
+  ],
+  "scientific_completions": 0
+}

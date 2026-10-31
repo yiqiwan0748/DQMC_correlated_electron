@@ -1,0 +1,512 @@
+{
+  "schema": "scientific_text_archive_v1",
+  "archive": "proof_v5_data.tar.gz",
+  "archive_sha256": "42b2913a623fa9584e88c8dc881d66bcac17acdb6fec71a003bcf02ac76c63e0",
+  "archive_bytes": 341130,
+  "files": [
+    {
+      "path": "native_alf_observer/Prog/Hamiltonian_main_mod.F90",
+      "bytes": 33205,
+      "sha256": "ed458b2d02b1c6ba833c9b2ef7b7165a4719d98643f05adb13f89f8627c961e1"
+    },
+    {
+      "path": "native_alf_observer/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "bytes": 42258,
+      "sha256": "fa6be71c1008d80ec2a6b052c341fd6e125089ecec2583316db08702459a8e5c"
+    },
+    {
+      "path": "native_alf_observer/Prog/Hop_mod.F90",
+      "bytes": 10034,
+      "sha256": "9cba68f11e840e3597f498717c7c9598c317d17756728d798ac156bf9369ba84"
+    },
+    {
+      "path": "native_alf_observer/Prog/Operator_mod.F90",
+      "bytes": 32580,
+      "sha256": "eab7b788ff08b1b4f83bf75976376b90652a9c627fd8706e6f8a8805df1fb7bf"
+    },
+    {
+      "path": "native_alf_observer/Prog/Predefined_Int_mod.F90",
+      "bytes": 12737,
+      "sha256": "651f77f7416f4cda318960b4272f3610e248bb9ca60aff357986c67e6af6a73b"
+    },
+    {
+      "path": "native_alf_observer/Prog/Set_random_mod.F90",
+      "bytes": 4048,
+      "sha256": "96338df481961e6466cd0a523789311f1f03cdce4ed9e60bc5abc1a75610d0ab"
+    },
+    {
+      "path": "native_alf_observer/Prog/main.F90",
+      "bytes": 49990,
+      "sha256": "1eacb29d94a127bd45fd45a3147979e80fcb0be098d4f52dcf6c2bd6e01a1183"
+    },
+    {
+      "path": "native_alf_observer/Prog/observables_mod.F90",
+      "bytes": 37236,
+      "sha256": "4d64d20aa84ea82f3e7bcf9206ac357f9b861db9c4d8350f205c2aad00744760"
+    },
+    {
+      "path": "native_alf_observer/Prog/tau_m_mod.F90",
+      "bytes": 11052,
+      "sha256": "0ba01c9095d670b527fa3e42bd7b6cdc6ca8c8315c584ff291a057238c365614"
+    },
+    {
+      "path": "native_alf_observer/license.additional",
+      "bytes": 1007,
+      "sha256": "b6f280768a4be6593de9768f720cb36a6efe50701e916e64de07fe9684c8c619"
+    },
+    {
+      "path": "native_alf_observer/license.gpl",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "native_alf_original/Prog/Hamiltonian_main_mod.F90",
+      "bytes": 33205,
+      "sha256": "ed458b2d02b1c6ba833c9b2ef7b7165a4719d98643f05adb13f89f8627c961e1"
+    },
+    {
+      "path": "native_alf_original/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "bytes": 38771,
+      "sha256": "555b291628a80dd94796c59242993933f700096f4af45cbce3dd419da7885cd7"
+    },
+    {
+      "path": "native_alf_original/Prog/Hop_mod.F90",
+      "bytes": 10034,
+      "sha256": "9cba68f11e840e3597f498717c7c9598c317d17756728d798ac156bf9369ba84"
+    },
+    {
+      "path": "native_alf_original/Prog/Operator_mod.F90",
+      "bytes": 32580,
+      "sha256": "eab7b788ff08b1b4f83bf75976376b90652a9c627fd8706e6f8a8805df1fb7bf"
+    },
+    {
+      "path": "native_alf_original/Prog/Predefined_Int_mod.F90",
+      "bytes": 12737,
+      "sha256": "651f77f7416f4cda318960b4272f3610e248bb9ca60aff357986c67e6af6a73b"
+    },
+    {
+      "path": "native_alf_original/Prog/Set_random_mod.F90",
+      "bytes": 4048,
+      "sha256": "96338df481961e6466cd0a523789311f1f03cdce4ed9e60bc5abc1a75610d0ab"
+    },
+    {
+      "path": "native_alf_original/Prog/main.F90",
+      "bytes": 45911,
+      "sha256": "9b08c61719c57a8beb249bfde5a77f68098ea25563b001aebec19727db8cbf2c"
+    },
+    {
+      "path": "native_alf_original/Prog/observables_mod.F90",
+      "bytes": 37236,
+      "sha256": "4d64d20aa84ea82f3e7bcf9206ac357f9b861db9c4d8350f205c2aad00744760"
+    },
+    {
+      "path": "native_alf_original/Prog/tau_m_mod.F90",
+      "bytes": 11052,
+      "sha256": "0ba01c9095d670b527fa3e42bd7b6cdc6ca8c8315c584ff291a057238c365614"
+    },
+    {
+      "path": "native_alf_original/license.additional",
+      "bytes": 1007,
+      "sha256": "b6f280768a4be6593de9768f720cb36a6efe50701e916e64de07fe9684c8c619"
+    },
+    {
+      "path": "native_alf_original/license.gpl",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "native_source/Manifest.toml",
+      "bytes": 61818,
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+    },
+    {
+      "path": "native_source/Project.toml",
+      "bytes": 950,
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+    },
+    {
+      "path": "native_source/run/run_lambda_node.jl",
+      "bytes": 18477,
+      "sha256": "5d7f7a1ff45a8cf69f061d009ca258d829eb4bbbdd36d5b5acf649d76c246e21"
+    },
+    {
+      "path": "native_source/src/HubbardRenyiDQMC.jl",
+      "bytes": 488,
+      "sha256": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721"
+    },
+    {
+      "path": "native_source/src/dqmc_kernel.jl",
+      "bytes": 19621,
+      "sha256": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be"
+    },
+    {
+      "path": "native_source/src/grover_rank1_update.jl",
+      "bytes": 18019,
+      "sha256": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+    },
+    {
+      "path": "results/alf_adapter_proof.json",
+      "bytes": 2677,
+      "sha256": "1bf70cb6be15f4bddd63c561b47008b27843f02ab35d608b6c0b8c99bfdf43fc"
+    },
+    {
+      "path": "results/alf_adapter_proof.log",
+      "bytes": 2677,
+      "sha256": "1bf70cb6be15f4bddd63c561b47008b27843f02ab35d608b6c0b8c99bfdf43fc"
+    },
+    {
+      "path": "results/alf_adapter_proof_independent_replay.json",
+      "bytes": 2677,
+      "sha256": "1bf70cb6be15f4bddd63c561b47008b27843f02ab35d608b6c0b8c99bfdf43fc"
+    },
+    {
+      "path": "results/build.log",
+      "bytes": 19571,
+      "sha256": "fe25a248d092b94b3821e0892aff57b3ae9ccc3bbe5264d03038532c9ee3fa56"
+    },
+    {
+      "path": "results/clean.log",
+      "bytes": 4288,
+      "sha256": "25a4e5b93b393c5e388dfbd1323a0b62901b06f540d050370a22bc9f14f7b4bd"
+    },
+    {
+      "path": "results/configure.log",
+      "bytes": 322,
+      "sha256": "c61dc9bc0a27bd3d525eda6be2733b8fff0fa9b06c05523037fcfa0de94448c4"
+    },
+    {
+      "path": "results/effective_build.txt",
+      "bytes": 587,
+      "sha256": "a19e0352a59b690d4bdbd56b4b343f34246d0ccbde603e1a5e393400735ce8b6"
+    },
+    {
+      "path": "results/fixed_configuration/P21_Counts_scal",
+      "bytes": 631,
+      "sha256": "cc24a0bc9ef371e35e8f9365af3031325ee708cb5307ddaf0515a0ae4b6aaf50"
+    },
+    {
+      "path": "results/fixed_configuration/P21_Counts_scal_info",
+      "bytes": 37,
+      "sha256": "e52794e015d7e6629e434eaf4ce67fe5c3e5bd5a385e21a8bc9be1a8e96fc3fa"
+    },
+    {
+      "path": "results/fixed_configuration/P21_G0T_scal",
+      "bytes": 19045,
+      "sha256": "97d7b25602fb4fe3c4cd6a9f4ca1a69abb799073cfed56d13efbd4d433f30472"
+    },
+    {
+      "path": "results/fixed_configuration/P21_G0T_scal_info",
+      "bytes": 37,
+      "sha256": "e52794e015d7e6629e434eaf4ce67fe5c3e5bd5a385e21a8bc9be1a8e96fc3fa"
+    },
+    {
+      "path": "results/fixed_configuration/P21_GT0_scal",
+      "bytes": 19045,
+      "sha256": "1c7e3cfcc57ff1ee2256c8d3089864887ff4dabec5f00af9b57dfe0c8633da22"
+    },
+    {
+      "path": "results/fixed_configuration/P21_GT0_scal_info",
+      "bytes": 37,
+      "sha256": "e52794e015d7e6629e434eaf4ce67fe5c3e5bd5a385e21a8bc9be1a8e96fc3fa"
+    },
+    {
+      "path": "results/fixed_configuration/P21_native_propagators.tsv",
+      "bytes": 76760,
+      "sha256": "8ae30aa39f4e600e3e768c8f28730b83fbec736f43f4b7ad8aae77ed98348202"
+    },
+    {
+      "path": "results/fixed_configuration/info",
+      "bytes": 1449,
+      "sha256": "91ff258ff226a1e02d7691035d800e11f4bf940608d0bab8aa368cd1debea79e"
+    },
+    {
+      "path": "results/fixed_configuration/info_git",
+      "bytes": 414,
+      "sha256": "78f1ae69108eff4425f6523f82e3273b69a6ebca97ec998c390b3dc082259624"
+    },
+    {
+      "path": "results/fixed_configuration/parameters",
+      "bytes": 889,
+      "sha256": "691fc8164339b77b96e79f2792417195ec31a03110ec28279ec054f2a2f034a0"
+    },
+    {
+      "path": "results/fixed_configuration/seeds",
+      "bytes": 9,
+      "sha256": "622c1d1526b4244f434120df690f5c81f1d475e308ad99726fb89370a4f1e7c4"
+    },
+    {
+      "path": "results/known_compiler_module_cleanup.json",
+      "bytes": 657,
+      "sha256": "977cb832d5b70ea50c6d9f7a5003c39aa5f31162adbfe1189ac325608c67788c"
+    },
+    {
+      "path": "results/known_compiler_module_cleanup.log",
+      "bytes": 657,
+      "sha256": "977cb832d5b70ea50c6d9f7a5003c39aa5f31162adbfe1189ac325608c67788c"
+    },
+    {
+      "path": "results/linkage.log",
+      "bytes": 1738,
+      "sha256": "917647c20dd01a7d478d03d426f37809383450f561d6ef2c34a1a5411e2266b9"
+    },
+    {
+      "path": "results/native_fixed_configuration.log",
+      "bytes": 311,
+      "sha256": "ad00a322d6b71bc979c2951680405b8c06f50cb9f8610cf2d8a32ba9d7ae9a7c"
+    },
+    {
+      "path": "results/native_linkage.json",
+      "bytes": 1738,
+      "sha256": "97c088e54d8191eb8f46a899ae82bf5823fb1fe1e7fe3ea34576b7a6681f02f7"
+    },
+    {
+      "path": "results/native_startup_seed_sha256.txt",
+      "bytes": 72,
+      "sha256": "5f0c617e75cf1bc63de31f63c019dedd3fee5c2742d4483d6e331110c0a526d1"
+    },
+    {
+      "path": "results/observer_linkage_audit.json",
+      "bytes": 1738,
+      "sha256": "917647c20dd01a7d478d03d426f37809383450f561d6ef2c34a1a5411e2266b9"
+    },
+    {
+      "path": "results/overlay.log",
+      "bytes": 1769,
+      "sha256": "5e950b4ca5c88243995e10c797ce2a013f8b001fdc1819160b71d96e3b30bc15"
+    },
+    {
+      "path": "results/overlay/alf/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "bytes": 42258,
+      "sha256": "fa6be71c1008d80ec2a6b052c341fd6e125089ecec2583316db08702459a8e5c"
+    },
+    {
+      "path": "results/overlay/alf/Prog/main.F90",
+      "bytes": 49990,
+      "sha256": "1eacb29d94a127bd45fd45a3147979e80fcb0be098d4f52dcf6c2bd6e01a1183"
+    },
+    {
+      "path": "results/overlay/alf_Hamiltonian_Hubbard_smod.F90.patch",
+      "bytes": 5601,
+      "sha256": "d362254cd5dee2052c995bb0281869f26f5c7ce06793e1360da3ed1f315ba401"
+    },
+    {
+      "path": "results/overlay/alf_main.F90.patch",
+      "bytes": 4947,
+      "sha256": "efd57a4c4e1333b0b539514592bea021b5bfd2d776b1b44934ec15bc264fb27c"
+    },
+    {
+      "path": "results/overlay/overlay_receipt.json",
+      "bytes": 1769,
+      "sha256": "5e950b4ca5c88243995e10c797ce2a013f8b001fdc1819160b71d96e3b30bc15"
+    },
+    {
+      "path": "results/overlay/user/src/dqmc_kernel.jl",
+      "bytes": 20615,
+      "sha256": "911a61642b23a4465639c3b3e4c63ff9d7cf05d51da288f3224f1775c0aba891"
+    },
+    {
+      "path": "results/overlay/user_dqmc_kernel.jl.patch",
+      "bytes": 2470,
+      "sha256": "80ff5fe819f93ec5b99aaa36b50bda04971af5b682b54c1885d7467a21721587"
+    },
+    {
+      "path": "results/slurm.log",
+      "bytes": 1945,
+      "sha256": "723a434ae7adc5bfa84eed8223b45b9d3f2c6f9d76d935fbd26276e8b23c130b"
+    },
+    {
+      "path": "results/status.txt",
+      "bytes": 51,
+      "sha256": "9c87f56fe5bdcc52ac9804f649889282eced913cc0706bdf9e60f45765c8a51a"
+    },
+    {
+      "path": "results/user_adapter_proof.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/user_adapter_proof.toml",
+      "bytes": 196466,
+      "sha256": "714ff6527552a9720e66ff2113e84f7f2dea3fe4660e9474570a4bdfcedf5aa6"
+    },
+    {
+      "path": "scheduler.txt",
+      "bytes": 318,
+      "sha256": "50c54408bea15010d5dbba037536371f4ab9fdf44298ae1fc2618352d377f7b2"
+    },
+    {
+      "path": "source/COMPILE_FAILURE_AND_FIX.md",
+      "bytes": 5254,
+      "sha256": "d476edc93cf297cbe0ea95477940f8efb3e29c5c37b714eaf5b2342778a86c7f"
+    },
+    {
+      "path": "source/CORRESPONDENCE.md",
+      "bytes": 8542,
+      "sha256": "19ee3dd1b1a9b588b7642e0a5cf598901d802bd1151e6d28a7efbd9771f0ab98"
+    },
+    {
+      "path": "source/README.md",
+      "bytes": 3019,
+      "sha256": "b6ebb0448dcb52ef45890a0e1daeef968f89e3e3db9084ae3755f26485af4913"
+    },
+    {
+      "path": "source/UserMatrixObserver.jl",
+      "bytes": 2782,
+      "sha256": "c6e3462ccaa54d2f19a0c58202f222da4f099aa431712247545608933e2fa807"
+    },
+    {
+      "path": "source/V4_STARTUP_FAILURE_AND_FIX.md",
+      "bytes": 2582,
+      "sha256": "2f667daed88daa17a93932a420ae6d0d235a57cf3baf3a2e271764bdb553278f"
+    },
+    {
+      "path": "source/check_alf_proof.py",
+      "bytes": 7330,
+      "sha256": "85e45b34b75d4ebedf905017534a099a655fbe41b9fdede686de2450807b37ef"
+    },
+    {
+      "path": "source/check_native_linkage.py",
+      "bytes": 1269,
+      "sha256": "bee9da236262f3aa03f21560603d1fbdee0ff3781e3bc898de60c6714c7430a5"
+    },
+    {
+      "path": "source/license.additional",
+      "bytes": 1007,
+      "sha256": "b6f280768a4be6593de9768f720cb36a6efe50701e916e64de07fe9684c8c619"
+    },
+    {
+      "path": "source/license.gpl",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "source/manifest.toml",
+      "bytes": 3147,
+      "sha256": "e18518ff65e5f6090dc86ec6bb374e89ccd31d1b0c7e328bb0815fd223d62286"
+    },
+    {
+      "path": "source/overlay_v1/alf/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "bytes": 42258,
+      "sha256": "fa6be71c1008d80ec2a6b052c341fd6e125089ecec2583316db08702459a8e5c"
+    },
+    {
+      "path": "source/overlay_v1/alf/Prog/main.F90",
+      "bytes": 49990,
+      "sha256": "1eacb29d94a127bd45fd45a3147979e80fcb0be098d4f52dcf6c2bd6e01a1183"
+    },
+    {
+      "path": "source/overlay_v1/alf_Hamiltonian_Hubbard_smod.F90.patch",
+      "bytes": 5601,
+      "sha256": "d362254cd5dee2052c995bb0281869f26f5c7ce06793e1360da3ed1f315ba401"
+    },
+    {
+      "path": "source/overlay_v1/alf_main.F90.patch",
+      "bytes": 4947,
+      "sha256": "efd57a4c4e1333b0b539514592bea021b5bfd2d776b1b44934ec15bc264fb27c"
+    },
+    {
+      "path": "source/overlay_v1/overlay_receipt.json",
+      "bytes": 1875,
+      "sha256": "fe4d5c494fab45db23dd3d5baedc5a83879f34ade019e5ac343a20183a7163f3"
+    },
+    {
+      "path": "source/overlay_v1/user/src/dqmc_kernel.jl",
+      "bytes": 20615,
+      "sha256": "911a61642b23a4465639c3b3e4c63ff9d7cf05d51da288f3224f1775c0aba891"
+    },
+    {
+      "path": "source/overlay_v1/user_dqmc_kernel.jl.patch",
+      "bytes": 2470,
+      "sha256": "80ff5fe819f93ec5b99aaa36b50bda04971af5b682b54c1885d7467a21721587"
+    },
+    {
+      "path": "source/parameters_proof",
+      "bytes": 889,
+      "sha256": "691fc8164339b77b96e79f2792417195ec31a03110ec28279ec054f2a2f034a0"
+    },
+    {
+      "path": "source/pre_execution_receipt.json",
+      "bytes": 4497,
+      "sha256": "6c85b6f6f968485043f654b524edd21331b0cd0a6da37b91b129695a416b33b8"
+    },
+    {
+      "path": "source/prepare_observers.py",
+      "bytes": 13448,
+      "sha256": "65b1f9bb319b1e5df4af6118046ebfe933d4c37c396fbdb802c75623822d283a"
+    },
+    {
+      "path": "source/run_adapter_proofs.sh",
+      "bytes": 6972,
+      "sha256": "a204531d417347a9b2a1688adcc34143520e7b58b1b7cfb0165e3a32131e626b"
+    },
+    {
+      "path": "source/seeds_proof",
+      "bytes": 9,
+      "sha256": "622c1d1526b4244f434120df690f5c81f1d475e308ad99726fb89370a4f1e7c4"
+    },
+    {
+      "path": "source/upstream_files.json",
+      "bytes": 4176,
+      "sha256": "43d925cfee9c99d4c818e292198889a581099403e16fdbbf3ca3e1d2c90b4da4"
+    },
+    {
+      "path": "source/upstream_reference/Prog/Hamiltonian_main_mod.F90",
+      "bytes": 33205,
+      "sha256": "ed458b2d02b1c6ba833c9b2ef7b7165a4719d98643f05adb13f89f8627c961e1"
+    },
+    {
+      "path": "source/upstream_reference/Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "bytes": 38771,
+      "sha256": "555b291628a80dd94796c59242993933f700096f4af45cbce3dd419da7885cd7"
+    },
+    {
+      "path": "source/upstream_reference/Prog/Hop_mod.F90",
+      "bytes": 10034,
+      "sha256": "9cba68f11e840e3597f498717c7c9598c317d17756728d798ac156bf9369ba84"
+    },
+    {
+      "path": "source/upstream_reference/Prog/Operator_mod.F90",
+      "bytes": 32580,
+      "sha256": "eab7b788ff08b1b4f83bf75976376b90652a9c627fd8706e6f8a8805df1fb7bf"
+    },
+    {
+      "path": "source/upstream_reference/Prog/Predefined_Int_mod.F90",
+      "bytes": 12737,
+      "sha256": "651f77f7416f4cda318960b4272f3610e248bb9ca60aff357986c67e6af6a73b"
+    },
+    {
+      "path": "source/upstream_reference/Prog/Set_random_mod.F90",
+      "bytes": 4048,
+      "sha256": "96338df481961e6466cd0a523789311f1f03cdce4ed9e60bc5abc1a75610d0ab"
+    },
+    {
+      "path": "source/upstream_reference/Prog/main.F90",
+      "bytes": 45911,
+      "sha256": "9b08c61719c57a8beb249bfde5a77f68098ea25563b001aebec19727db8cbf2c"
+    },
+    {
+      "path": "source/upstream_reference/Prog/observables_mod.F90",
+      "bytes": 37236,
+      "sha256": "4d64d20aa84ea82f3e7bcf9206ac357f9b861db9c4d8350f205c2aad00744760"
+    },
+    {
+      "path": "source/upstream_reference/Prog/tau_m_mod.F90",
+      "bytes": 11052,
+      "sha256": "0ba01c9095d670b527fa3e42bd7b6cdc6ca8c8315c584ff291a057238c365614"
+    },
+    {
+      "path": "source/user_buffer_probe.jl",
+      "bytes": 6425,
+      "sha256": "b2614a1ce60c0e31fc411c4d8dcf94f15ece63b9e0d06180cec7fa2b327a0ffb"
+    },
+    {
+      "path": "transfer.json",
+      "bytes": 37339,
+      "sha256": "0ba123d3745e841df526ffeef804fd93f916150f20d175da2b489e4d0ed6c4bb"
+    }
+  ],
+  "file_count": 100,
+  "uncompressed_bytes": 1633821,
+  "source_bytes_changed": false,
+  "runtime_binaries_included": false
+}

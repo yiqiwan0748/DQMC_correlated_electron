@@ -1,0 +1,14 @@
+{
+  "release": "p16-production-retest-v1",
+  "files": {
+    "packages/p16_diagnosis/compute_s2_ed_v2.jl": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "packages/p16_diagnosis/compute_s2_ed_v2.patch": "da3fe6cde8c390f7dfb0dede91f8a04ea8e2afc04ae5c9448afe10d2b9c8c34f",
+    "packages/p16_diagnosis/production_patch_receipt.json": "dfbd3b0d3d048960a8a0ff7d926b4b09deaa4ed131ea07d3d18332bef6237cb4",
+    "packages/p16_diagnosis/prepare_retest.py": "1b71caba85c00ad7f01f57e5a12b2ebb7e99c7a1a552b6b739bf973ad7c7f563",
+    "packages/p16_diagnosis/recheck_production_subsets.jl": "5d944d56288e3d8460c9d1f89b6a24ff2a4475014596106889b205d0a255a590",
+    "packages/p16_diagnosis/retest_production.sbatch": "bf817b3b9fe6d74f97b796e5b6c724aa8ed58e570bcbb7742be46c29b645c09a",
+    "packages/p16_diagnosis/README.md": "e665b1932e2b967d14a7eddc9ab4a6f4205c1125ca188f9061a7d1e17b4777b8"
+  },
+  "archive_sha256": "caf185fa1710d9d0d384c8ae69d1e4d36a6ec12b0f844f42cd584a1aeeb278fb",
+  "acceptance": "original seven-package gates unchanged; all16 actual-source subsets <=1e-8 vs independent QuSpin; original sign proof must PASS first"
+}

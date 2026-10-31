@@ -1,0 +1,85 @@
+{
+  "schema": "P17_PROFILED_SAVED_COMPARISON_V1_TIMEOUT_PUBLIC_V1",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "status": "UNRESOLVED_RUN_CAP_REACHED_PROFILE_AND_PARTIAL_EVIDENCE_SAVED",
+  "scheduler_state": "FAILED",
+  "scheduler_exit_code": "2:0",
+  "scheduler_elapsed_seconds": 427,
+  "child_status": "TIME_CAP_EXCEEDED",
+  "child_returncode": 2,
+  "child_run_cap_seconds": 420,
+  "child_elapsed_including_cleanup_seconds": 422.8239688389003,
+  "parent_final_elapsed_seconds": 425.0030434653163,
+  "resources": {
+    "cpus": 1,
+    "memory_mb": 3500,
+    "comparison_seconds": 420,
+    "combined_inner_seconds": 810,
+    "outer_guard_seconds": 870,
+    "allocation_seconds": 900,
+    "timeout_SIGINT_grace_seconds": 30,
+    "timeout_SIGTERM_grace_seconds": 3,
+    "timeout_SIGKILL_wait_seconds": 2,
+    "timeout_cleanup_reserve_seconds": 35,
+    "non_timeout_cleanup_reserve_seconds": 5,
+    "outer_finalization_reserve_seconds": 10
+  },
+  "actual_cleanup": {
+    "timeout_cap_already_reached": true,
+    "signals": [
+      {
+        "signal": "SIGINT",
+        "status": "SENT",
+        "wait_at_most_seconds": 30
+      }
+    ],
+    "cleanup_reserve_seconds": 35,
+    "returncode": 2,
+    "cleanup_elapsed_seconds": 2.78826966509223,
+    "remaining_live_group_pids": []
+  },
+  "reported_partial_gates": {
+    "PASS": 690,
+    "FAIL": 0
+  },
+  "completed_state_certificates": {
+    "native": 4,
+    "tenpy": 0
+  },
+  "comparison_run_completed": false,
+  "conditional_floating_certificate_not_interval_arithmetic": true,
+  "independent_saved_evidence_audit": {
+    "checks": 243,
+    "failed_checks": 0,
+    "sha256": "b2f0f947096a57f207722d7f311047fbc4e1f690ea4e2a18360f8a608b844c8f",
+    "scope": "Actual saved source/input/approval/archive identity, partial gate census, resource/cleanup and passive timing/counter records. No quantum recomputation."
+  },
+  "separate_saved_runtime_metadata_audit": {
+    "checks": 29,
+    "failed_checks": 0,
+    "sha256": "282d2131f2117086621ae2e28c39305c2b45870659f183c027fbec2dbbf78bc6",
+    "before_and_after": {
+      "mapped_segments": 173,
+      "mapped_files": 33,
+      "loaded_modules": 191
+    },
+    "scope": "Reparse saved before/after maps and module records against pinned identities; no fresh provider hashing/restat or runtime execution."
+  },
+  "analysis_source_freeze_sha256": "49ee4b61f97a01b1a99fe5de2baddae8851213b01406a5dc3eeaad605d523394",
+  "upstream_v8_source_freeze_sha256": "da9af9ad26b0692149e77ddea5088b2b3856a0de8b78da2777fd5cd17b2741f0",
+  "execution_sha256": "2bcd62c662b9c887734a5499ee24c2a8d1b6945a5b3d043959798ac53ef597d3",
+  "partial_report_sha256": "64c5d656f69731febcbbabb1b2cff743ca182cb36736321b64370c904bf084a9",
+  "profile_JSONL_sha256": "7fe1953a0a82bd4bf70aa77342677783a94b8999381f8a54e3d622b03c529164",
+  "private_terminal_archive_sha256": "83db01d7008999e9483e34651d51e6054a3b0802e529e72069182c9c79d6fe3f",
+  "after_terminal_identity_proof_sha256": "97c85f00eae999eb1640eefc2a4787dc1b75868511508815d1966bc04d8f31fd",
+  "original_global_v8_and_earlier_timeouts_remain": "UNRESOLVED",
+  "full_production_admission": false,
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  }
+}

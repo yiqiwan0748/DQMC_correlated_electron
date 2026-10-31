@@ -1,0 +1,70 @@
+{
+  "schema": "ground_precision_revision_v2",
+  "status": "PRE_EXECUTION_NOT_RUN",
+  "predecessor_source_archive_sha256": "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4",
+  "predecessor_job_id": "6458708",
+  "predecessor_scientific_status": {
+    "X09": "UNRESOLVED",
+    "X12": "PASS"
+  },
+  "predecessor_independent_audit_sha256": "1568351e7e61800c05ba06532c5f47a7cb4c77c9fdb97959c70f540acd2470b8",
+  "precision_changes": {
+    "sweeps": [
+      8,
+      16
+    ],
+    "eigsolve_tol": [
+      1e-12,
+      1e-14
+    ],
+    "eigsolve_krylovdim": [
+      3,
+      10
+    ],
+    "eigsolve_maxiter": [
+      1,
+      4
+    ],
+    "old_krylov_controls_were_native_defaults": true,
+    "extra_sweeps": {
+      "maxdim": 32,
+      "noise": 0.0
+    }
+  },
+  "unchanged": [
+    "all scientific acceptance gates",
+    "Hubbard model and ensembles",
+    "all five user source/environment pins",
+    "native package versions",
+    "four starts and seeds",
+    "first eight dimension/noise schedule entries",
+    "cutoff1e-13",
+    "initial link dimension4",
+    "maximum bond dimension32",
+    "all manufactured excited-MPS controls",
+    "all X12 prescriptions, beta values and RDM cuts",
+    "independent oracle source bytes"
+  ],
+  "native_api_primary_source": {
+    "url": "https://raw.githubusercontent.com/ITensor/ITensorMPS.jl/v0.4.1/src/dmrg.jl",
+    "declaration_lines": [
+      142,
+      158
+    ],
+    "forwarding_lines": [
+      217,
+      226
+    ],
+    "supported_keywords": [
+      "eigsolve_tol",
+      "eigsolve_krylovdim",
+      "eigsolve_maxiter"
+    ],
+    "checked_native_defaults": {
+      "eigsolve_tol": 1e-14,
+      "eigsolve_krylovdim": 3,
+      "eigsolve_maxiter": 1
+    }
+  },
+  "no_scientific_completion_from_preparation": true
+}

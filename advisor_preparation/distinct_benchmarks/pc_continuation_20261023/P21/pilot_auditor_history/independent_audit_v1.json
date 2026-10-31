@@ -1,0 +1,12 @@
+{
+  "schema": "P21_SAMPLED_PILOT_INDEPENDENT_AUDIT_V1",
+  "status": "UNRESOLVED",
+  "job_id": "6460727",
+  "catalogue_id": "P21",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "reason": "ValueError: Independent raw component 35.difference_over_descriptive_standard_error: beyond64-epsilon arithmetic allowance",
+  "checks": 679810,
+  "no_scientific_solver_executed": true,
+  "auditor_sha256": "923d429af85682066c34372eb6b36ae330fcdca756746b289489865a683822c0"
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "pyscf_setup_submission_v1",
+  "job_id": "6465769",
+  "status": "SUBMITTED_SETUP_ONLY",
+  "scientific_completions": 0,
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_minutes": 10,
+  "reference_freeze": "../pyscf_setup_v1/freeze.json",
+  "announced_estimated_minutes_after_start": [
+    1,
+    4
+  ],
+  "announced_EDT_checkpoint": "2026-10-23 13:40",
+  "admission": "One unrelated one-CPU3500M job6465647 running atsubmission; ours is second job. Unrelated jobs untouched.",
+  "result": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/pyscf_setup_v1_6465769",
+  "log": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/logs/pyscf_setup_v1_6465769.log",
+  "new_environment": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/pyscf-venv",
+  "source_and_wheel_hashes_verified_before_submission": true
+}

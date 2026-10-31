@@ -1,0 +1,35 @@
+{
+  "schema": "p21_observer_overlay_v1",
+  "status": "GENERATED_NOT_COMPILED_NOT_SCIENTIFICALLY_RUN",
+  "alf_commit": "f4c500cc5d7bcf089400c63e4e75382c558a4ed3",
+  "generator_sha256": "b4e69a700bac91180fbbb2caba8618da09c6a10f84ef4c2c78bb9e88fa934b60",
+  "files": [
+    {
+      "origin": "alf",
+      "path": "Prog/main.F90",
+      "original_sha256": "9b08c61719c57a8beb249bfde5a77f68098ea25563b001aebec19727db8cbf2c",
+      "observer_sha256": "673179f9ecd0863a94bd6c2af4345d9c640f00c49903d9c603a2c1027c2470aa",
+      "patch": "alf_main.F90.patch",
+      "patch_sha256": "b984ca1f082757b638dfcfa1ebd5fcde1547f5e892112b09ded6ff0bf6042097"
+    },
+    {
+      "origin": "alf",
+      "path": "Prog/Hamiltonians/Hamiltonian_Hubbard_smod.F90",
+      "original_sha256": "555b291628a80dd94796c59242993933f700096f4af45cbce3dd419da7885cd7",
+      "observer_sha256": "a4e204cc639003de0912b47aa866cdf94914dddc220ff9666088be29379f86f8",
+      "patch": "alf_Hamiltonian_Hubbard_smod.F90.patch",
+      "patch_sha256": "3970b7822d5a58f8be1e60a2a38d992f4e89f59ed6cb2c23be4e7c7f0169b2de"
+    },
+    {
+      "origin": "user",
+      "path": "src/dqmc_kernel.jl",
+      "original_sha256": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+      "observer_sha256": "911a61642b23a4465639c3b3e4c63ff9d7cf05d51da288f3224f1775c0aba891",
+      "patch": "user_dqmc_kernel.jl.patch",
+      "patch_sha256": "80ff5fe819f93ec5b99aaa36b50bda04971af5b682b54c1885d7467a21721587"
+    }
+  ],
+  "sampling_kernel_changes": false,
+  "user_original_preserved": "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive/\u6587\u6863/ChatGPT/Idea/advisor_preparation/validated_package/HubbardRenyiDQMC",
+  "alf_original_preserved": "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive/\u6587\u6863/ChatGPT/Idea/advisor_preparation/distinct_benchmarks/alf_preparation/measurement_preparation/upstream_reference"
+}

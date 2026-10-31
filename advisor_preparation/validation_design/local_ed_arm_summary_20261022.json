@@ -1,0 +1,26 @@
+{
+  "execution_host": "LOCAL, not ISAAC",
+  "ed_arms_passed": 88,
+  "ed_arms_failed": 0,
+  "pending_arms": 100,
+  "complete_multimethod_cases_certified": 0,
+  "families": {
+    "QuSpin_ground": {
+      "count": 64,
+      "max_absolute_error": 3.772537837676282e-13,
+      "max_error_id": "QG-56"
+    },
+    "QuSpin_thermal_trotter": {
+      "count": 16,
+      "max_absolute_error": 2.220446049250313e-14,
+      "max_error_id": "QT-09"
+    },
+    "analytic_atom": {
+      "count": 8,
+      "max_absolute_error": 7.993605777301127e-15,
+      "max_error_id": "ATOM-06"
+    }
+  },
+  "receipt": "local_ed_arm_results_20261022.toml",
+  "receipt_sha256": "8698da499f70ddb9c2b7cb9425bcc06faa11ea6d2f4b0cc23c59f5ed62a6d562"
+}

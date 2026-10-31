@@ -1,0 +1,15 @@
+{
+  "job_id": "6458709",
+  "dependency": "afterany:6458708",
+  "status": "SUBMITTED_ELIGIBILITY_ONLY",
+  "P21_status": "NOT_RUN_AS_DEFINED",
+  "source_freeze": "../source_releases/alf-measurement-proof-v4-submission-freeze.json",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "estimated_minutes_after_start": [
+    2,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 16:25"
+}

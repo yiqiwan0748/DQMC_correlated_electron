@@ -1,0 +1,20 @@
+{
+  "status": "OPENBLAS_LP64_METADATA_PASS",
+  "provider": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so",
+  "provider_sha256": "3cadb0f797c5bba7310ea042213601cdfd1f8cacf2fb104c2f972b822bc262c0",
+  "config": "OpenBLAS 0.3.12 NO_AFFINITY SKYLAKEX SINGLE_THREADED",
+  "threads": 1,
+  "required_symbols": [
+    "ddot_",
+    "dgemm_",
+    "zgemm_",
+    "zheev_"
+  ],
+  "python": "3.8.8",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "scientific_samples": 0
+}

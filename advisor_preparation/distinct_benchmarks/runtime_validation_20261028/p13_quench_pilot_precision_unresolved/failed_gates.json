@@ -1,0 +1,122 @@
+[
+  {
+    "name": "native:k0:primary:primary total entropy radius",
+    "status": "FAIL",
+    "kind": "precision",
+    "value_upper": 5.0080253575820165e-08,
+    "limit": 4e-08,
+    "qualified_longdouble_value": "5.0080253575820159448e-08"
+  },
+  {
+    "name": "native:k1:primary:primary total entropy radius",
+    "status": "FAIL",
+    "kind": "precision",
+    "value_upper": 5.243757936347722e-08,
+    "limit": 4e-08,
+    "qualified_longdouble_value": "5.243757936347721106e-08"
+  },
+  {
+    "name": "native:k2:primary:primary total entropy radius",
+    "status": "FAIL",
+    "kind": "precision",
+    "value_upper": 5.84264117482145e-08,
+    "limit": 4e-08,
+    "qualified_longdouble_value": "5.842641174821449813e-08"
+  },
+  {
+    "name": "native:k3:primary:primary total entropy radius",
+    "status": "FAIL",
+    "kind": "precision",
+    "value_upper": 6.546275561755458e-08,
+    "limit": 4e-08,
+    "qualified_longdouble_value": "6.5462755617554563014e-08"
+  },
+  {
+    "name": "native:k4:primary:primary total entropy radius",
+    "status": "FAIL",
+    "kind": "precision",
+    "value_upper": 7.051160537393116e-08,
+    "limit": 4e-08,
+    "qualified_longdouble_value": "7.0511605373931156744e-08"
+  },
+  {
+    "name": "k0:complete primary purity cross-backend",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 2.404599084140872e-08,
+    "limit": 1e-08,
+    "qualified_longdouble_value": "2.4045990841408718105e-08"
+  },
+  {
+    "name": "native:k0:primary/coarse S2 stability",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 1.0016050715181238e-07,
+    "limit": 1e-07,
+    "qualified_longdouble_value": "1.001605071518123758e-07"
+  },
+  {
+    "name": "k1:complete primary purity cross-backend",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 2.410962368323672e-08,
+    "limit": 1e-08,
+    "qualified_longdouble_value": "2.4109623683236719637e-08"
+  },
+  {
+    "name": "native:k1:primary/coarse S2 stability",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 1.0487515872713593e-07,
+    "limit": 1e-07,
+    "qualified_longdouble_value": "1.0487515872713592173e-07"
+  },
+  {
+    "name": "k2:complete primary purity cross-backend",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 2.4173157005880878e-08,
+    "limit": 1e-08,
+    "qualified_longdouble_value": "2.417315700588087416e-08"
+  },
+  {
+    "name": "native:k2:primary/coarse S2 stability",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 1.1685282349663343e-07,
+    "limit": 1e-07,
+    "qualified_longdouble_value": "1.16852823496633416866e-07"
+  },
+  {
+    "name": "k3:complete primary purity cross-backend",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 2.4236669838913396e-08,
+    "limit": 1e-08,
+    "qualified_longdouble_value": "2.4236669838913393484e-08"
+  },
+  {
+    "name": "native:k3:primary/coarse S2 stability",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 1.309255112353377e-07,
+    "limit": 1e-07,
+    "qualified_longdouble_value": "1.3092551123533767669e-07"
+  },
+  {
+    "name": "k4:complete primary purity cross-backend",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 2.4300238632750912e-08,
+    "limit": 1e-08,
+    "qualified_longdouble_value": "2.430023863275090887e-08"
+  },
+  {
+    "name": "native:k4:primary/coarse S2 stability",
+    "status": "FAIL",
+    "kind": "physical",
+    "value_upper": 1.4102321074810649e-07,
+    "limit": 1e-07,
+    "qualified_longdouble_value": "1.4102321074810644769e-07"
+  }
+]

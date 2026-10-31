@@ -1,0 +1,4 @@
+sweep,raw_norm2,energy_raw_numerator_real,energy_raw_numerator_imag,energy_norm2_denominator,same_state_energy_real,same_state_energy_imag
+3,0.9999999999999998,0.0,0.0,0.9999999999999998,0.0,0.0
+6,1.0,0.0,0.0,1.0,0.0,0.0
+12,1.0,0.0,0.0,1.0,0.0,0.0

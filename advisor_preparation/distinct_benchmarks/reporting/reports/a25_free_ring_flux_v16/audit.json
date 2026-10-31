@@ -1,0 +1,49 @@
+{
+  "schema": "public_A25_leaf_closure_audit_v16",
+  "status": "PASS",
+  "ledger_sha256": "728f0a1642dfc4ac4c099478ec033f40981871c11101ee76bc7e299918d2b74c",
+  "counts": {
+    "PASS": 47,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 51
+  },
+  "changed_ids": [
+    "A25"
+  ],
+  "preserved_unaffected_row_objects": 99,
+  "preserved_prior_PASS_rows": 46,
+  "preserved_prior_UNRESOLVED_rows": 2,
+  "public_inputs_checked": 32,
+  "prior_bindings_checked": 348,
+  "archives": [
+    {
+      "path": "sources/a25-free-ring-flux-v1-source.tar.gz",
+      "sha256": "76be7b3b22ee26da1ae91dde516ed458446aa6a0c6c2a4ef7e86759d5ec921ec",
+      "members": 30
+    },
+    {
+      "path": "sources/source_archive.tar.gz",
+      "sha256": "33b59a5909ca7c2b7e47d15a1af71c2b5ba03b921532f4023ba2d78a11c338bc",
+      "members": 14
+    },
+    {
+      "path": "sources/a25-full-saved-audit-v1-source.tar.gz",
+      "sha256": "853bc747612b3954982ef93fcacd416f2398f7e82a0c4667c8653db039fe3936",
+      "members": 7
+    },
+    {
+      "path": "pilot/data.tar.gz",
+      "sha256": "13c2f9537363c2b2a07258c68873ac7385e276fae260e08ebe06a806fea7f314",
+      "members": 22
+    },
+    {
+      "path": "production/data.tar.gz",
+      "sha256": "f6834063ae416f40eb6164a9851fdda358f883cc776dc285f43aba2f4491d003",
+      "members": 19
+    }
+  ],
+  "regular_text_archive_members": 92,
+  "pilot_or_analysis_credit": 0,
+  "scientific_producer_executed": false
+}

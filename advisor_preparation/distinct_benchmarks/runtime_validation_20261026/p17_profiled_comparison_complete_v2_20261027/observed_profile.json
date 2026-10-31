@@ -1,0 +1,155 @@
+{
+  "schema": "P17_OBSERVED_COMPLETE_COMPONENT_PROFILE_PUBLIC_V2",
+  "status": "COMPLETE_SAVED_COMPONENT_PENDING_FULL_RECONCILIATION",
+  "recorded_events": 1758,
+  "actual_Arithmetic_function_calls": {
+    "multiply": 215781,
+    "add": 110841,
+    "matmul": 1062,
+    "divide": 141,
+    "sum": 91422
+  },
+  "actual_Arithmetic_total_function_calls": 419247,
+  "calls_are_not_hardware_FLOPs": true,
+  "original_logical_call_ceiling": 5000000,
+  "completed_MPO_contraction_scopes": {
+    "completed_intervals": 56,
+    "wall_seconds": 339.1360658146441,
+    "self_cpu_seconds": 335.99945969299984,
+    "actual_bump_calls": 399168
+  },
+  "selected_completed_INCLUSIVE_scopes": {
+    "runtime_inventory_bulk_hash": {
+      "completed_intervals": 1,
+      "wall_seconds": 88.41206579096615,
+      "self_cpu_seconds": 1.9491376300000003,
+      "actual_bump_calls": 0
+    },
+    "numpy_import": {
+      "completed_intervals": 1,
+      "wall_seconds": 2.2977183777838945,
+      "self_cpu_seconds": 0.06221051700000002,
+      "actual_bump_calls": 0
+    },
+    "runtime_provider_qualification": {
+      "completed_intervals": 1,
+      "wall_seconds": 0.6572122015058994,
+      "self_cpu_seconds": 0.6335243889999993,
+      "actual_bump_calls": 0
+    },
+    "input_parse": {
+      "completed_intervals": 1,
+      "wall_seconds": 1.1958698816597462,
+      "self_cpu_seconds": 1.1919007919999993,
+      "actual_bump_calls": 0
+    },
+    "all_reference_work": {
+      "completed_intervals": 1,
+      "wall_seconds": 12.755025712773204,
+      "self_cpu_seconds": 12.33839678,
+      "actual_bump_calls": 630
+    },
+    "state_qualify_operators": {
+      "completed_intervals": 12,
+      "wall_seconds": 341.93065005913377,
+      "self_cpu_seconds": 338.11292312500007,
+      "actual_bump_calls": 399441
+    },
+    "state_reconstruct_mps": {
+      "completed_intervals": 12,
+      "wall_seconds": 258.86681653931737,
+      "self_cpu_seconds": 257.59109809899996,
+      "actual_bump_calls": 1428
+    },
+    "mps_extended_contraction": {
+      "completed_intervals": 12,
+      "wall_seconds": 129.040451483801,
+      "self_cpu_seconds": 128.54259086600004,
+      "actual_bump_calls": 600
+    },
+    "mps_binary64_export_budget_contraction": {
+      "completed_intervals": 12,
+      "wall_seconds": 129.26270374655724,
+      "self_cpu_seconds": 128.56892815100002,
+      "actual_bump_calls": 600
+    },
+    "state_energy_residual": {
+      "completed_intervals": 12,
+      "wall_seconds": 3.623232115060091,
+      "self_cpu_seconds": 3.570462180999897,
+      "actual_bump_calls": 2700
+    },
+    "profile_pair_gates": {
+      "completed_intervals": 1,
+      "wall_seconds": 0.048889296129345894,
+      "self_cpu_seconds": 0.04845240300005571,
+      "actual_bump_calls": 108
+    },
+    "linear_window_gates": {
+      "completed_intervals": 1,
+      "wall_seconds": 0.027609210461378098,
+      "self_cpu_seconds": 0.027260909000005995,
+      "actual_bump_calls": 72
+    },
+    "response_pair_gates": {
+      "completed_intervals": 1,
+      "wall_seconds": 0.016705892980098724,
+      "self_cpu_seconds": 0.016407184999934543,
+      "actual_bump_calls": 36
+    },
+    "runtime_after_qualification": {
+      "completed_intervals": 1,
+      "wall_seconds": 2.65980863571167,
+      "self_cpu_seconds": 0.7006022399999665,
+      "actual_bump_calls": 0
+    },
+    "unchanged_comparison_run": {
+      "completed_intervals": 1,
+      "wall_seconds": 622.8830788079649,
+      "self_cpu_seconds": 617.068203553,
+      "actual_bump_calls": 419247
+    }
+  },
+  "nesting_warning": "The extended-MPS and binary64-export-budget contractions are included within state_reconstruct_mps. Operator-sector contractions are nested within state_qualify_operators. Reference, operator, state and cross-state scopes are nested within unchanged_comparison_run. Never add a parent interval and its children; selected intervals do not exhaust total elapsed time.",
+  "interrupted_scope": null,
+  "component_coverage": {
+    "recorded_gates": {
+      "PASS": 1393,
+      "FAIL": 0
+    },
+    "gate_groups": {
+      "reference": 277,
+      "spectral": 6,
+      "native": 513,
+      "tenpy": 429,
+      "cross_state": 168
+    },
+    "completed_state_certificates": {
+      "native": 6,
+      "tenpy": 6
+    },
+    "reference_sector_certificates": 21,
+    "zero_field_spectral_responses": 6,
+    "unique_operator_payloads_qualified": 6,
+    "completed_cross_state_gates": {
+      "profile_pairs": 108,
+      "linear_windows": 24,
+      "response_pairs": 36
+    }
+  },
+  "arithmetic_interpretation": {
+    "real_long_double_fraction_bits": 63,
+    "conditional_error_accounting": true,
+    "directed_rounding_interval_arithmetic": false,
+    "complex_representation": "Separate real components with conditional error accounting."
+  },
+  "measurement_limits": [
+    "These timings describe analysis and verification of saved solver outputs, not production DMRG solver timing. None of the three producers was rerun.",
+    "Wall and self-CPU times are inclusive annotated intervals and include instrumentation overhead.",
+    "No matched baseline, isolated low-level hotspot, instrumentation-overhead estimate or speedup experiment was performed.",
+    "The bulk-hash wall/CPU difference does not identify an exclusive waiting or storage cause.",
+    "Complete coverage applies to this frozen saved-input component. It does not admit the full production workflow or complete a distinct catalogue idea.",
+    "Earlier unresolved global-pilot and profiling attempts remain preserved."
+  ],
+  "scientific_credit": 0
+}

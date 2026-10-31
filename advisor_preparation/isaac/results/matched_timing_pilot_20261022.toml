@@ -1,0 +1,150 @@
+comparison = "WITH versus WITHOUT rank-one Grover caching in the same locally lazy two-replica Renyi lambda-node workflow"
+scope = "Node-loop times include two replica updates, the same ratio measurements and sweep-boundary snapshots; initialization/common warmup/deepcopy/explicit GC/compilation are excluded and separately described. This is not a full lambda-grid entropy campaign."
+blas_config = "LBTConfig([ILP64] libopenblas64_.so)"
+created_utc = "2026-10-22T17:18:43.018"
+runner_sha256 = "56ce5e3c395df4aeb1fe0b7654e315a81e280c74b2f65bb0b0ab65a010d06c49"
+finished_utc = "2026-10-22T17:18:51.286"
+registered_sizes = [8]
+julia_threads = 1
+julia_version = "1.12.1"
+primary_statistic = "ratio of median node-loop elapsed times at each preregistered size; all sizes retained"
+host = "clr1450"
+cpu = "model name\t: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz"
+slurm_job_id = "6456993"
+seeds = [940031, 940032]
+source_root = "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/renyi_corrected"
+timing_uncertainty = "Paired bootstrap interval describes repeat-to-repeat timing jitter on this host, not hardware-independent performance uncertainty"
+compilation_and_initial_probe_seconds_excluded = 4.549059152603149
+blas_threads = 1
+soft_budget_seconds = 600.0
+
+[[results]]
+initialization_seconds_excluded = 0.04122304916381836
+nA = 4
+delta_lambda = 0.125
+L = 8
+boundary = "pbc"
+n_stab = 5
+paired_bootstrap_95pct_ratio_interval = [1.255477518173913, 1.3893194360372383]
+status = "PASS"
+t = 1.0
+lambda = 0.5
+dtau = 0.05
+completed_repeats = 3
+Ltau = 40
+common_warmup_seconds_excluded = 0.004438877105712891
+warmup_rounds_excluded = 2
+median_with_optimization_seconds = 0.003182295
+two_replica_update_rounds = 2
+mu_centered = 0.0
+beta = 2.0
+U = 2.0
+requested_repeats = 3
+ratio_of_median_node_times = 1.313016863615724
+median_without_optimization_seconds = 0.004178407
+ratio_of_median_update_kernel_times = 1.315151162842128
+
+    [[results.raw_timings]]
+    measurement_seconds = 4.9270000000000004e-6
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 0.0
+    repeat = 1
+    node_loop_seconds = 0.004161112
+    update_kernel_seconds = 0.004146393999999999
+    allocated_bytes = 4748448
+    execution_order = 1
+    other_loop_seconds = 9.79100000000037e-6
+    [[results.raw_timings]]
+    measurement_seconds = 1.1968e-5
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 1
+    node_loop_seconds = 0.003314366
+    update_kernel_seconds = 0.0032914
+    allocated_bytes = 201280
+    execution_order = 2
+    other_loop_seconds = 1.0998000000000133e-5
+    [[results.raw_timings]]
+    measurement_seconds = 5.623e-6
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 0.0
+    repeat = 2
+    node_loop_seconds = 0.004178407
+    update_kernel_seconds = 0.004162798
+    allocated_bytes = 4748448
+    execution_order = 2
+    other_loop_seconds = 9.986000000000629e-6
+    [[results.raw_timings]]
+    measurement_seconds = 8.759e-6
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 2
+    node_loop_seconds = 0.003182295
+    update_kernel_seconds = 0.0031652620000000003
+    allocated_bytes = 201248
+    execution_order = 1
+    other_loop_seconds = 8.273999999999631e-6
+    [[results.raw_timings]]
+    measurement_seconds = 6.876e-6
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 0.0
+    repeat = 3
+    node_loop_seconds = 0.004402167
+    update_kernel_seconds = 0.004384648
+    allocated_bytes = 4748448
+    execution_order = 1
+    other_loop_seconds = 1.0643000000000562e-5
+    [[results.raw_timings]]
+    measurement_seconds = 9.661000000000001e-6
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 3
+    node_loop_seconds = 0.003168578
+    update_kernel_seconds = 0.0031519010000000004
+    allocated_bytes = 201248
+    execution_order = 2
+    other_loop_seconds = 7.015999999999663e-6
+
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 8.387388006347862e-15
+    maximum_logdet_absolute_error = 0.0
+    repeat = 1
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 8.387388006347862e-15
+    maximum_logdet_absolute_error = 0.0
+    repeat = 2
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 8.387388006347862e-15
+    maximum_logdet_absolute_error = 0.0
+    repeat = 3
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+
+[source_hashes]
+"src/HubbardRenyiDQMC.jl" = "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721"
+"Project.toml" = "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+"src/dqmc_kernel.jl" = "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be"
+"Manifest.toml" = "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+"src/grover_rank1_update.jl" = "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"

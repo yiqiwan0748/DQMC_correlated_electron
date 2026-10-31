@@ -1,0 +1,27 @@
+{
+  "as_of_utc": "2026-10-26T03:59:52.719864+00:00",
+  "catalogue_changes": [],
+  "frozen_source_member_count": 32,
+  "future_qualification_requires": "One actual source-bound native-only v3 PASS; v2 Python PASS roles remain retained.",
+  "independent_source_review_sha256": "aca1fcd3bfe66f450e1d95920ba867f276cf147a468d6c0cb1095851b5a56077",
+  "receipt_binding": {
+    "bytes": 1009,
+    "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+    "role": "private_frozen_staged_resource_hold",
+    "sha256": "801066d62071e1f530677f380f60a20ee8390fbebe7bca1093092a8d3626e5aa"
+  },
+  "resource_hold": {
+    "CPUs_per_running_unrelated_job": 1,
+    "maximum_total_running_jobs": 2,
+    "total_running_unrelated_jobs": 2,
+    "unrelated_jobs_modified": false
+  },
+  "retained_v2_Python_roles_pass": true,
+  "schema": "P17_PUBLIC_NATIVE_V3_STAGED_SNAPSHOT_V1",
+  "scientific_completions": 0,
+  "scope": "Recorded resource-hold snapshot, not a live queue claim. The native-only probe has not run at this checkpoint; no final native helpers are included.",
+  "source_freeze_sha256": "1bef39d501048f3a114904f0e1c17009e9bf8826e1f9fb4a245ade5ac14809b8",
+  "status": "SOURCE_REVIEWED_FROZEN_STAGED_NOT_RUN",
+  "submission_command_called": false,
+  "submitted_jobs": 0
+}

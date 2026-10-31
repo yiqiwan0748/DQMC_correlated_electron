@@ -1,0 +1,9 @@
+{
+  "package": "JDQMCFramework.jl",
+  "version": "1.2.6",
+  "git_blob_sha1": "d7cb41e1c15a018e3c85a2acdaa6f42ac3e05190",
+  "url": "https://github.com/SmoQySuite/JDQMCFramework.jl/blob/v1.2.6/src/Propagators.jl",
+  "encoding": "utf-8",
+  "source_read_status": "Versioned primary source read through GitHub connector before protocol implementation; source inspected only, not executed.",
+  "reviewed_convention": "AsymExactPropagator represents exp(-dtau V)exp(-dtau K); native initializer symmetric=false,checkerboard=false. Derivation applies to HS-summed onsite interaction, not each sampled HS configuration."
+}

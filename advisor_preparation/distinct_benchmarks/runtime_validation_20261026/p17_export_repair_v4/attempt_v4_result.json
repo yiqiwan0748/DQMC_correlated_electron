@@ -1,0 +1,36 @@
+{
+  "schema": "P17_V4_EXCLUDED_PILOT_EXPORT_FAILURE_PUBLIC_V1",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "scheduler_status": "FAILED",
+  "scheduler_exit_code": "2:0",
+  "elapsed_seconds": 587.5625334586948,
+  "native": {
+    "producer_status": "COMPLETE_NOT_COMPARISON_PASS",
+    "samples": 6,
+    "elapsed_seconds": 217.90421683713794
+  },
+  "tenpy": {
+    "status": "FAILED",
+    "elapsed_seconds": 89.37038947083056,
+    "error": "TypeError: Object of type Config is not JSON serializable",
+    "final_report_persisted": false,
+    "partial_checkpoint_persisted": false,
+    "exact_Config_leaf": "NOT_OBSERVED",
+    "actual_NaN_tag_records": "NOT_OBSERVED"
+  },
+  "quspin": "NOT_RUN",
+  "comparison": "NOT_RUN",
+  "source_members_verified_after_terminal": 56,
+  "freeze_sha256": "f41eb84bc07ab262e0a1d591663952e2cc729a0566ca06d9695b95b2d9544022",
+  "execution_sha256": "701940d760402ef6b49697694b599bc0593f7a9fb4d53ea163498fbb9a7244a3",
+  "terminal_archive_sha256": "4d32c74626059a244c2d69d5cf771ba07c4e929580f5c35927a74079524ae47c",
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  },
+  "scope": "The new failure does not demonstrate successful end-to-end export repair or physical agreement. Both attempts are preserved; no retry or full-run admission. Job ended before user-disconnect stop; attempted administrative time-limit shortening was rejected as already finished and changed nothing."
+}

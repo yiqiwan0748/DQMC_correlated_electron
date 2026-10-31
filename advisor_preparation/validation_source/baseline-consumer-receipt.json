@@ -1,0 +1,7 @@
+{
+  "archive": "baseline-consumer-20261022.tar.gz",
+  "sha256": "d25375c07acd2aea687d38da84dd506490135e2bfc4d63388a13f7fd1928888f",
+  "archive_members": 15,
+  "original_runner_sha256": "a2feffc81b5f202522fce5e8d46f766fd7660ab9f80f2953fc80ee25d892e898",
+  "retrieved_from": "ISAAC source/validation_design after initial execution, before modification (corrected consumer uses separate directory)"
+}

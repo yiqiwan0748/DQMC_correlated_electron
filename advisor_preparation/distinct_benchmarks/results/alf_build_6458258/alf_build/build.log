@@ -1,0 +1,132 @@
+Compiling Libraries
+cd Libraries && make
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries'
+(cd Modules;  make )
+make[2]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules'
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math runtime_error_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math mymats_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math random_wrap_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math errors_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math files_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math maxent_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math maxent_stoch_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math matrix_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math fourier_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math histograms_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math log_mesh_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math histograms_v2_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math lattices_v3_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math mpi_shared_mem_mod_v2.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math natural_constants_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math precdef_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math Mat_subroutines_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math entanglement_mod.F90
+entanglement_mod.F90:35:2:
+
+   35 | #warning "You are compiling entanglement without MPI. No Renyi entropy results possible, all other observables still work!"
+      |  1~~~~~~
+Warning: #warning "You are compiling entanglement without MPI. No Renyi entropy results possible, all other observables still work!" [-Wcpp]
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math alf_hdf5_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math check_omp_num_threads_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math iso8601_datetime_mod.F90
+ar -r modules_90.a runtime_error_mod.o errors_mod.o files_mod.o   fourier_mod.o histograms_mod.o histograms_v2_mod.o lattices_v3_mod.o log_mesh_mod.o mymats_mod.o matrix_mod.o maxent_mod.o   maxent_stoch_mod.o   mpi_shared_mem_mod_v2.o natural_constants_mod.o precdef_mod.o random_wrap_mod.o Mat_subroutines_mod.o entanglement_mod.o   alf_hdf5_mod.o check_omp_num_threads_mod.o   iso8601_datetime_mod.o
+ar: creating modules_90.a
+make[2]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules'
+(cd libqrref; make )
+make[2]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref'
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zgeqr2.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zgeqrf.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zlarf.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zlarfb.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zlarfg.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zlarft.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zung2r.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zungqr.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math zlapmr.f 
+ar -r libqrref.a zgeqr2.o zgeqrf.o zlarf.o zlarfb.o zlarfg.o zlarft.o zung2r.o zungqr.o  zlapmr.o
+ar: creating libqrref.a
+make[2]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref'
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries'
+Compiling Program
+cd Prog && make program
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Prog'
+./Git_config.sh
+Parsing Hamiltonian parameters
+./parse_ham.py --create_read_write_par
+filenames: Hamiltonians/Hamiltonian_Kondo_smod.F90 Hamiltonians/Hamiltonian_Kondo_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Hubbard_smod.F90 Hamiltonians/Hamiltonian_Hubbard_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_smod.F90 Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_tV_smod.F90 Hamiltonians/Hamiltonian_tV_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_LRC_smod.F90 Hamiltonians/Hamiltonian_LRC_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Z2_Matter_smod.F90 Hamiltonians/Hamiltonian_Z2_Matter_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Spin_Peierls_smod.F90 Hamiltonians/Hamiltonian_Spin_Peierls_read_write_parameters.F90
+Compiling program modules
+gfortran -c -o Hamiltonians/LRC_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/LRC_mod.F90
+gfortran -c -o control_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math control_mod.F90
+gfortran -c -o Fields_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Fields_mod.F90
+gfortran -c -o Operator_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Operator_mod.F90
+gfortran -c -o WaveFunction_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math WaveFunction_mod.F90
+gfortran -c -o observables_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math observables_mod.F90
+gfortran -c -o ContainerElementBase_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math ContainerElementBase_mod.F90
+gfortran -c -o DynamicMatrixArray_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math DynamicMatrixArray_mod.F90
+gfortran -c -o OpTTypes_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math OpTTypes_mod.F90
+gfortran -c -o OpT_time_dependent.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math OpT_time_dependent.F90
+./parse_ham.py --create_hamiltonians_interface
+./parse_ham.py --create_hamiltonians_case
+gfortran -c -o Hamiltonian_main_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonian_main_mod.F90
+gfortran -c -o QDRP_decompose_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math QDRP_decompose_mod.F90
+gfortran -c -o udv_state_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math udv_state_mod.F90
+gfortran -c -o Hop_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hop_mod.F90
+gfortran -c -o UDV_WRAP_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math UDV_WRAP_mod.F90
+gfortran -c -o Predefined_Int_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Predefined_Int_mod.F90
+gfortran -c -o Predefined_Obs_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Predefined_Obs_mod.F90
+gfortran -c -o Predefined_Latt_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Predefined_Latt_mod.F90
+gfortran -c -o Predefined_Hop_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Predefined_Hop_mod.F90
+gfortran -c -o Predefined_Trial_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Predefined_Trial_mod.F90
+gfortran -c -o wrapul_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math wrapul_mod.F90
+gfortran -c -o cgr1_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math cgr1_mod.F90
+gfortran -c -o wrapur_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math wrapur_mod.F90
+gfortran -c -o cgr2_2_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math cgr2_2_mod.F90
+gfortran -c -o upgrade_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math upgrade_mod.F90
+gfortran -c -o Set_random_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Set_random_mod.F90
+gfortran -c -o Global_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Global_mod.F90
+gfortran -c -o Langevin_HMC_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Langevin_HMC_mod.F90
+gfortran -c -o Wrapgr_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Wrapgr_mod.F90
+gfortran -c -o tau_m_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math tau_m_mod.F90
+gfortran -c -o tau_p_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math tau_p_mod.F90
+gfortran -c -o main.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math main.F90
+make `./parse_ham.py --print_obj_list`
+make[2]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Prog'
+gfortran -c -o Hamiltonians/Hamiltonian_Kondo_smod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/Hamiltonian_Kondo_smod.F90
+gfortran -c -o Hamiltonians/Hamiltonian_Hubbard_smod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/Hamiltonian_Hubbard_smod.F90
+gfortran -c -o Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_smod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_smod.F90
+gfortran -c -o Hamiltonians/Hamiltonian_tV_smod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/Hamiltonian_tV_smod.F90
+gfortran -c -o Hamiltonians/Hamiltonian_LRC_smod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/Hamiltonian_LRC_smod.F90
+gfortran -c -o Hamiltonians/Hamiltonian_Z2_Matter_smod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/Hamiltonian_Z2_Matter_smod.F90
+gfortran -c -o Hamiltonians/Hamiltonian_Spin_Peierls_smod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Hamiltonians/Hamiltonian_Spin_Peierls_smod.F90
+make[2]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Prog'
+Link program
+gfortran -o "ALF.out" Hamiltonians/LRC_mod.o control_mod.o Fields_mod.o Operator_mod.o WaveFunction_mod.o observables_mod.o ContainerElementBase_mod.o DynamicMatrixArray_mod.o OpTTypes_mod.o OpT_time_dependent.o Hamiltonian_main_mod.o QDRP_decompose_mod.o udv_state_mod.o Hop_mod.o UDV_WRAP_mod.o Predefined_Int_mod.o Predefined_Obs_mod.o Predefined_Latt_mod.o Predefined_Hop_mod.o  Predefined_Trial_mod.o wrapul_mod.o   cgr1_mod.o   wrapur_mod.o   cgr2_2_mod.o   upgrade_mod.o   Set_random_mod.o Global_mod.o Langevin_HMC_mod.o Wrapgr_mod.o tau_m_mod.o tau_p_mod.o main.o `./parse_ham.py --print_obj_list` /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Prog'
+Compiling Analysis
+cd Analysis && make
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Analysis'
+gfortran -c -o Predefined_Latt_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math ../Prog/Predefined_Latt_mod.F90
+gfortran -c -o maxent_wrapper_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math maxent_wrapper_mod.F90
+gfortran -c -o ana_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math ana_mod.F90
+gfortran -c -o cov_scal.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math cov_scal.F90
+gfortran -o cov_scal.out Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o cov_scal.o /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+gfortran -c -o cov_tau.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math cov_tau.F90
+gfortran -o cov_tau.out Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o cov_tau.o /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+gfortran -c -o cov_tau_ph.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math -DPartHole cov_tau.F90
+gfortran -o cov_tau_ph.out Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o cov_tau_ph.o /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+gfortran -c -o Max_SAC.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math Max_SAC.F90
+gfortran -o Max_SAC.out Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o Max_SAC.o /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+gfortran -c -o cov_eq.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math cov_eq.F90
+gfortran -o cov_eq.out Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o cov_eq.o /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+gfortran -c -o cov_mut.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math cov_mut.F90
+gfortran -o cov_mut.out Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o cov_mut.o /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+gfortran -c -o ana.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math ana.F90
+gfortran -o ana.out Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o ana.o /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+rm ana_mod.o cov_eq.o ana.o cov_mut.o cov_tau.o cov_scal.o
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Analysis'

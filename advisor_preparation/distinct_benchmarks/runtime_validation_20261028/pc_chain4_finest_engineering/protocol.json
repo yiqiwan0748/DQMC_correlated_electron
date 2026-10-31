@@ -1,0 +1,87 @@
+{
+  "Hamiltonian_convention": "uncentered U*Nupdn, mu0",
+  "arm": {
+    "chi_cap": 64,
+    "cutoff": 1e-12,
+    "eigsolve_krylovdim": 20,
+    "eigsolve_maxiter": 20,
+    "eigsolve_tol": 1e-12,
+    "fresh_start": true,
+    "initial_labels": [
+      "Up",
+      "Dn",
+      "Up",
+      "Dn"
+    ],
+    "initial_linkdims": 4,
+    "maxdim": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "noise": [
+      1e-06,
+      1e-07,
+      1e-08,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nsweeps": 12,
+    "seed": 698071,
+    "snapshot_sweeps": [
+      3,
+      6,
+      12
+    ],
+    "start": "A",
+    "warm_start_other_arm": false
+  },
+  "catalogue_credit": 0,
+  "catalogue_status": "NOT_RUN",
+  "local_order": [
+    "Emp",
+    "Up",
+    "Dn",
+    "UpDn"
+  ],
+  "model": {
+    "M": 4,
+    "N": 4,
+    "Ndown": 2,
+    "Nup": 2,
+    "U": 4.0,
+    "boundary": "obc",
+    "cuts": [
+      1,
+      2,
+      3
+    ],
+    "id": "chain4_U4",
+    "mu": 0.0,
+    "t": 1.0
+  },
+  "norm_and_sector_gate": "Engineering V2 conservatively requires vector L2 <= 1e-10 using squared mass <= 1e-20; original full protocol units were implicit.",
+  "prefix_cuts": [
+    1,
+    2,
+    3
+  ],
+  "publication_status": "PRIVATE_CANDIDATE_PENDING_INDEPENDENT_SAVED_SCIENCE_AUDIT_AND_ROOT_REVIEW",
+  "reference_sector_order": "up0,up1,up2,up3,down0,down1,down2,down3"
+}

@@ -1,0 +1,367 @@
+{
+  "status": "PASS",
+  "scientific_completions": 3,
+  "catalogue_ids": [
+    "A15",
+    "A16",
+    "A17"
+  ],
+  "source_archive_sha256": "3ac8111fcbf2b04e8201cd4602da80f55b94b672ff335562942671cb3c06d983",
+  "benchmarks": {
+    "A15": {
+      "status": "PASS",
+      "frozen_check_count": 236,
+      "failed_checks": 0,
+      "max_physical_energies_error": 1.199040866595169e-14,
+      "max_projector_error": 4.052314039881821e-15,
+      "max_site_probabilities_error": 4.052314039881821e-15,
+      "max_orbital_weights_error": 2.6645352591003757e-15,
+      "max_native_ground_energy_error": 7.549516567451064e-15,
+      "fixture_count": 6,
+      "independent_H_projector_residual_max": 6.661338147750939e-16
+    },
+    "A16": {
+      "status": "PASS",
+      "frozen_check_count": 47,
+      "failed_checks": 0,
+      "metric_gates": [
+        {
+          "name": "oracle_bin_identity",
+          "value": 1.2655111333859104e-13,
+          "bound": 1e-09,
+          "passed": true,
+          "eligibility": true
+        },
+        {
+          "name": "oracle_quad_error",
+          "value": 9.07942343068452e-13,
+          "bound": 1e-09,
+          "passed": true,
+          "eligibility": true
+        },
+        {
+          "name": "oracle_total_mass",
+          "value": 0.0,
+          "bound": 1e-10,
+          "passed": true,
+          "eligibility": true
+        },
+        {
+          "name": "0.12_full_curve",
+          "value": 8.121488589696302e-05,
+          "bound": 0.002,
+          "passed": true,
+          "eligibility": false
+        },
+        {
+          "name": "0.12_last_mesh_change",
+          "value": 9.706420821198325e-05,
+          "bound": 0.001,
+          "passed": true,
+          "eligibility": true
+        },
+        {
+          "name": "0.12_peak_location",
+          "value": 0.0078125,
+          "bound": 0.03125,
+          "passed": true,
+          "eligibility": false
+        },
+        {
+          "name": "0.24_full_curve",
+          "value": 2.1095666205811492e-05,
+          "bound": 0.002,
+          "passed": true,
+          "eligibility": false
+        },
+        {
+          "name": "0.24_last_mesh_change",
+          "value": 2.4294941503300027e-05,
+          "bound": 0.001,
+          "passed": true,
+          "eligibility": true
+        },
+        {
+          "name": "0.24_peak_location",
+          "value": 0.0078125,
+          "bound": 0.03125,
+          "passed": true,
+          "eligibility": false
+        },
+        {
+          "name": "narrower_broadening_peak_growth",
+          "value": 0.033221935735378905,
+          "bound": 0.01,
+          "passed": true,
+          "eligibility": false
+        },
+        {
+          "name": "lower_edge_mass_continuum",
+          "value": 1.6844066089566345e-06,
+          "bound": 0.001,
+          "passed": true,
+          "eligibility": false
+        },
+        {
+          "name": "lower_edge_mass_last_mesh",
+          "value": 2.384185791015625e-07,
+          "bound": 0.001,
+          "passed": true,
+          "eligibility": true
+        },
+        {
+          "name": "upper_edge_mass_continuum",
+          "value": 1.6844066089566345e-06,
+          "bound": 0.001,
+          "passed": true,
+          "eligibility": false
+        },
+        {
+          "name": "upper_edge_mass_last_mesh",
+          "value": 2.384185791015625e-07,
+          "bound": 0.001,
+          "passed": true,
+          "eligibility": true
+        }
+      ],
+      "meshes": [
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "held_out_mesh": 2048,
+      "curves_per_mesh": 2,
+      "bins_per_curve": 512,
+      "independent_raw_mass_convolution_max_error": 1.6653345369377348e-16,
+      "recomputed_area_max_error": 4.440892098500626e-16,
+      "recomputed_peak_metadata_max_error": 0.0
+    },
+    "A17": {
+      "status": "PASS",
+      "frozen_check_count": 513,
+      "failed_checks": 0,
+      "fixture_count": 27,
+      "sector_count_per_fixture": 9,
+      "states_per_fixture": 16,
+      "spin_connected_components_per_fixture": 9,
+      "independent_analytic_errors": {
+        "probabilities": 5.551115123125783e-16,
+        "density": 1.7763568394002505e-15,
+        "double_occupancy": 8.881784197001252e-16,
+        "density_connected": 1.7763568394002505e-15,
+        "spin_connected": 1.925929944387236e-34,
+        "local_spin_squared": 2.220446049250313e-16,
+        "local_density_variance": 1.7763568394002505e-15,
+        "S_alm_q0": 3.885780586188048e-16,
+        "delta_alm": 2.42861286636753e-17,
+        "native_density": 2.220446049250313e-15,
+        "native_double_occupancy": 1.5543122344752192e-15,
+        "native_S_alm_q0": 6.661338147750939e-16,
+        "native_delta_alm": 0.0
+      }
+    }
+  },
+  "unsupported": [
+    {
+      "id": "A25",
+      "status": "NOT_RUN"
+    }
+  ],
+  "source_closure": {
+    "frozen_members": 14,
+    "verbatim_user_source_members": 4,
+    "archive_sha256": "3ac8111fcbf2b04e8201cd4602da80f55b94b672ff335562942671cb3c06d983",
+    "original_source_archive_sha256": "11c3c33adaa70a78b8ab10437fba04651e3951c040bb289c4a3ce7ec293420aa"
+  },
+  "independent_comparator_replay": "BYTE_IDENTICAL",
+  "resources": {
+    "target": {
+      "elapsed_wall_text": "1:19.81",
+      "maximum_rss_kib": 587952,
+      "adapter_compute_elapsed_seconds": 9.17911410331726
+    },
+    "oracle": {
+      "elapsed_wall_text": "0:36.74",
+      "maximum_rss_kib": 70424,
+      "adapter_compute_elapsed_seconds": 1.3135051727294922
+    },
+    "scheduler_elapsed_seconds": 125
+  },
+  "inputs": [
+    {
+      "path": "results/two_orbital_analytic_full_6458671/comparison.json",
+      "bytes": 152400,
+      "sha256": "0e79a01cd4f09d4b35ecf9d501ac5dbfde62a71ff93751f409d811e5e9b5c82a"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/comparison_independent_replay_attempt01.json",
+      "bytes": 152400,
+      "sha256": "0e79a01cd4f09d4b35ecf9d501ac5dbfde62a71ff93751f409d811e5e9b5c82a"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/end_utc.txt",
+      "bytes": 21,
+      "sha256": "9d9af28818d17f927314e143ff1a80996fc5f6a19e562c906d38067c39520b06"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/oracle.json",
+      "bytes": 99657,
+      "sha256": "bb245da6b13404459f145b8dbc6e3faefa61ad4b22046dc54b3c421256b20fdd"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/oracle.resources.txt",
+      "bytes": 955,
+      "sha256": "9e5170a62e68da93fdf76a21e2712f9a01ef5b3253ddd1cd765b153b71544b93"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/receipts.sha256",
+      "bytes": 584,
+      "sha256": "4ceda898467ffe0543038a52bc4c824de663988d146f8749abd688f00c95d9d8"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/remote_transfer_metadata.json",
+      "bytes": 1815,
+      "sha256": "d49cedaf4abc2ac0e1f77dc71a016f0db26680149b0b3e9e76a468c49c64d7b6"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/start_utc.txt",
+      "bytes": 21,
+      "sha256": "6215c17b6b4f48ff431eec8bb52e0c8d452dc0789c5be8e6989b0f21dc0e5ed8"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/target.resources.txt",
+      "bytes": 864,
+      "sha256": "4e96b1b4f58a83fda3a9b7db2d1e520abe96607b8516337330c0ac04f9eb307d"
+    },
+    {
+      "path": "results/two_orbital_analytic_full_6458671/target.toml",
+      "bytes": 203618,
+      "sha256": "dd68eec9b659df9e465d252f673a97e689e1acae1b56bafb91f5de1997ed230d"
+    },
+    {
+      "path": "logs/two_orbital_analytic_full_6458671.log",
+      "bytes": 411,
+      "sha256": "fc7deb0ad05d0cca27ef821736afe3e6b14620c6d0dd6487a66584c4ac75f945"
+    },
+    {
+      "path": "source_releases/two-orbital-analytic-v1-freeze.json",
+      "bytes": 2195,
+      "sha256": "713582323c240fa37ae4393544d895be76577a975769621aeba850ec069cbd18"
+    },
+    {
+      "path": "source_releases/two-orbital-analytic-v1-source.tar.gz",
+      "bytes": 33163,
+      "sha256": "3ac8111fcbf2b04e8201cd4602da80f55b94b672ff335562942671cb3c06d983"
+    },
+    {
+      "path": "baseline-source.tar.gz",
+      "bytes": 1074464,
+      "sha256": "11c3c33adaa70a78b8ab10437fba04651e3951c040bb289c4a3ce7ec293420aa"
+    },
+    {
+      "path": "two_orbital_analytic/README.md",
+      "bytes": 9946,
+      "sha256": "faf76620ffb4d32adbf3253ab1230fd1e779e957cb8b722f3a0c39d640a0e7a9"
+    },
+    {
+      "path": "two_orbital_analytic/SHA256SUMS",
+      "bytes": 1164,
+      "sha256": "66d5773537d89dfca7953317e54dc70fd02b3f912ea0b6b71311a1e0700fe623"
+    },
+    {
+      "path": "two_orbital_analytic/compare.py",
+      "bytes": 9484,
+      "sha256": "0bfff45b088840ea29ec9ee8bdb87ac08db02a8d1f23f916c0e7e736b22d343d"
+    },
+    {
+      "path": "two_orbital_analytic/manifest.toml",
+      "bytes": 4419,
+      "sha256": "e12f69632caa1649415d7792a7e6f09c5fafcb54029f97b3028f252e7e634654"
+    },
+    {
+      "path": "two_orbital_analytic/oracle.py",
+      "bytes": 5833,
+      "sha256": "f1bc0d31e680a15d5e09852e721de4ea4a794dc98aaa7150a56087ec8bac98cf"
+    },
+    {
+      "path": "two_orbital_analytic/pilot_summary.py",
+      "bytes": 2637,
+      "sha256": "218e3235028c9c78195003d184623ff55bfadefce1710edece3d601765dca48c"
+    },
+    {
+      "path": "two_orbital_analytic/run.sbatch",
+      "bytes": 1528,
+      "sha256": "edb66793c6d64a92695c9a13a9d2e7ce23390c366539c0ddb4adf7df26e0b7a9"
+    },
+    {
+      "path": "two_orbital_analytic/source_provenance.json",
+      "bytes": 1197,
+      "sha256": "b4440cadf74986e5f33556480fac10649cf9bb5f39022efb4f3064632a8aee2d"
+    },
+    {
+      "path": "two_orbital_analytic/source_snapshot/scripts/two_orbital_atom_ed.jl",
+      "bytes": 7024,
+      "sha256": "0771bfdc6c1080a26e682590d6cb664cf649a800c1aab2fe4cb2875ea105334f"
+    },
+    {
+      "path": "two_orbital_analytic/source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "bytes": 28563,
+      "sha256": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751"
+    },
+    {
+      "path": "two_orbital_analytic/source_snapshot/src/noninteracting.jl",
+      "bytes": 16055,
+      "sha256": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568"
+    },
+    {
+      "path": "two_orbital_analytic/source_snapshot/src/realspace_kinetic.jl",
+      "bytes": 6705,
+      "sha256": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6"
+    },
+    {
+      "path": "two_orbital_analytic/static_review.json",
+      "bytes": 2350,
+      "sha256": "e3729bbbf4f42209c595cda2f4dff499652da5f27c7987417d9802f7fc700362"
+    },
+    {
+      "path": "two_orbital_analytic/target.jl",
+      "bytes": 7905,
+      "sha256": "79cde07e82f86ea38cb2679648e7665f5e8b51fe2782e45c2588adaf0aad5d4a"
+    }
+  ],
+  "input_sha256": {
+    "results/two_orbital_analytic_full_6458671/comparison.json": "0e79a01cd4f09d4b35ecf9d501ac5dbfde62a71ff93751f409d811e5e9b5c82a",
+    "results/two_orbital_analytic_full_6458671/comparison_independent_replay_attempt01.json": "0e79a01cd4f09d4b35ecf9d501ac5dbfde62a71ff93751f409d811e5e9b5c82a",
+    "results/two_orbital_analytic_full_6458671/end_utc.txt": "9d9af28818d17f927314e143ff1a80996fc5f6a19e562c906d38067c39520b06",
+    "results/two_orbital_analytic_full_6458671/oracle.json": "bb245da6b13404459f145b8dbc6e3faefa61ad4b22046dc54b3c421256b20fdd",
+    "results/two_orbital_analytic_full_6458671/oracle.resources.txt": "9e5170a62e68da93fdf76a21e2712f9a01ef5b3253ddd1cd765b153b71544b93",
+    "results/two_orbital_analytic_full_6458671/receipts.sha256": "4ceda898467ffe0543038a52bc4c824de663988d146f8749abd688f00c95d9d8",
+    "results/two_orbital_analytic_full_6458671/remote_transfer_metadata.json": "d49cedaf4abc2ac0e1f77dc71a016f0db26680149b0b3e9e76a468c49c64d7b6",
+    "results/two_orbital_analytic_full_6458671/start_utc.txt": "6215c17b6b4f48ff431eec8bb52e0c8d452dc0789c5be8e6989b0f21dc0e5ed8",
+    "results/two_orbital_analytic_full_6458671/target.resources.txt": "4e96b1b4f58a83fda3a9b7db2d1e520abe96607b8516337330c0ac04f9eb307d",
+    "results/two_orbital_analytic_full_6458671/target.toml": "dd68eec9b659df9e465d252f673a97e689e1acae1b56bafb91f5de1997ed230d",
+    "logs/two_orbital_analytic_full_6458671.log": "fc7deb0ad05d0cca27ef821736afe3e6b14620c6d0dd6487a66584c4ac75f945",
+    "source_releases/two-orbital-analytic-v1-freeze.json": "713582323c240fa37ae4393544d895be76577a975769621aeba850ec069cbd18",
+    "source_releases/two-orbital-analytic-v1-source.tar.gz": "3ac8111fcbf2b04e8201cd4602da80f55b94b672ff335562942671cb3c06d983",
+    "baseline-source.tar.gz": "11c3c33adaa70a78b8ab10437fba04651e3951c040bb289c4a3ce7ec293420aa",
+    "two_orbital_analytic/README.md": "faf76620ffb4d32adbf3253ab1230fd1e779e957cb8b722f3a0c39d640a0e7a9",
+    "two_orbital_analytic/SHA256SUMS": "66d5773537d89dfca7953317e54dc70fd02b3f912ea0b6b71311a1e0700fe623",
+    "two_orbital_analytic/compare.py": "0bfff45b088840ea29ec9ee8bdb87ac08db02a8d1f23f916c0e7e736b22d343d",
+    "two_orbital_analytic/manifest.toml": "e12f69632caa1649415d7792a7e6f09c5fafcb54029f97b3028f252e7e634654",
+    "two_orbital_analytic/oracle.py": "f1bc0d31e680a15d5e09852e721de4ea4a794dc98aaa7150a56087ec8bac98cf",
+    "two_orbital_analytic/pilot_summary.py": "218e3235028c9c78195003d184623ff55bfadefce1710edece3d601765dca48c",
+    "two_orbital_analytic/run.sbatch": "edb66793c6d64a92695c9a13a9d2e7ce23390c366539c0ddb4adf7df26e0b7a9",
+    "two_orbital_analytic/source_provenance.json": "b4440cadf74986e5f33556480fac10649cf9bb5f39022efb4f3064632a8aee2d",
+    "two_orbital_analytic/source_snapshot/scripts/two_orbital_atom_ed.jl": "0771bfdc6c1080a26e682590d6cb664cf649a800c1aab2fe4cb2875ea105334f",
+    "two_orbital_analytic/source_snapshot/scripts/two_orbital_open_cluster_ed.jl": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751",
+    "two_orbital_analytic/source_snapshot/src/noninteracting.jl": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568",
+    "two_orbital_analytic/source_snapshot/src/realspace_kinetic.jl": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6",
+    "two_orbital_analytic/static_review.json": "e3729bbbf4f42209c595cda2f4dff499652da5f27c7987417d9802f7fc700362",
+    "two_orbital_analytic/target.jl": "79cde07e82f86ea38cb2679648e7665f5e8b51fe2782e45c2588adaf0aad5d4a"
+  },
+  "limits": "Audit replays immutable postprocessing and independently recomputes spectral-projector identities, raw-bin broadening and atomic formulas. It executes no band mesh, eigensolver, Monte Carlo or new model. A16 continuum integral generation remains the pinned independent SciPy oracle, whose mathematical normalization and reduced-BZ identity were reviewed.",
+  "schema": "two_orbital_independent_receipt_audit_v1",
+  "auditor_sha256": "070737427a86b5984bb4f75b82b4bb3b4e26f700e59db9dad85631b2cc968fc9",
+  "no_physics_executed": true
+}

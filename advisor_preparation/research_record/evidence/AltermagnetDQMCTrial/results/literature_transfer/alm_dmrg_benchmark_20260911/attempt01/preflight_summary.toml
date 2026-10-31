@@ -1,0 +1,9 @@
+max_action_error = 2.1316282072803006e-14
+action_fixtures = 14
+full_support_per_sector = 3
+random_seeds = [94871, 94872]
+action_tolerance = 2.0e-10
+status = "PASS"
+kinetic_entry_tolerance = 2.0e-12
+algorithm = "naive MPO-MPS contraction, cutoff0,maxdim256; full QN tensor mapping"
+max_roundtrip_error = 4.510281037539698e-16

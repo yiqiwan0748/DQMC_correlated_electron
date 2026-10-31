@@ -1,0 +1,4 @@
+"benchmark","L","beta","dtau","N_burnin","N_measurements_or_updates","repeats","mean_wall_seconds","relative_to_current","note"
+"current_renyi_lambda_node","8","32","0.05","500","1000","3","58.043667","1","Full current two-replica Renyi lambda-node wall time, k=2, Ninc=4"
+"smoqy_highlevel_hubbard_chain_example","8","32","0.1","500","1000","3","27.130667","2.139412","Unmodified high-level SmoQyDQMC examples/hubbard_chain.jl; dtau hardcoded to 0.10"
+"trimmed_jdqmc_hubbard_kernel","8","32","0.05","500","1000","3","2.396","24.225237","Ordinary one-replica Hubbard local-update kernel only; not full Renyi estimator"

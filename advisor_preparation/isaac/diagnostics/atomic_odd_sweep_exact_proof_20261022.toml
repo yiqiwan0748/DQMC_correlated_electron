@@ -1,0 +1,99 @@
+derivation = "At t=0 the per-site HS target is W(q)=2exp(beta*mu)[cosh(beta*mu)+cosh(alpha*q)]. Alternating odd-length fields remain |q|=1 under every systematic local flip, so each flip accepts with probability1 and cannot leave the orbit."
+runner_sha256 = "f9b922702ab28b55b7c5a83d01bab3442bdb1342a8cc3b1eed131cbffe4fd7cc"
+lazy_minimum_diagonal_probability = 0.02326439841853247
+correct_closed_class_mass = 0.037415239588219025
+julia_version = "1.12.6"
+uniform_initialization_closed_mass = 0.0625
+slurm_job_id = "LOCAL"
+ordinary_stationarity_max_error = 2.7755575615628914e-17
+created_utc = "2026-10-22T17:03:22.125"
+lazy_stationarity_max_error = 6.938893903907228e-18
+
+[exact_target_totals]
+energy_centered = -1.830793928648643
+density_total = 4.161481159434525
+double_occupancy_total = 0.6230420975551019
+
+[parameters]
+Ltau = 5
+U = 4.0
+t = 0.0
+dtau = 0.1
+L = 4
+mu_centered = 0.3
+beta = 0.5
+
+[[ordinary_fullcycle_classes]]
+closed = true
+masks = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+size = 30
+[[ordinary_fullcycle_classes]]
+closed = true
+masks = [21]
+size = 1
+[[ordinary_fullcycle_classes]]
+closed = true
+masks = [10]
+size = 1
+
+[[lazy_local_fullcycle_classes]]
+closed = true
+masks = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+size = 32
+
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.6068057489379294
+predicted_density_total = 4.1572729937102935
+frozen_sites_1based = []
+seed = 1009
+initial_masks = [31, 5, 11, 23]
+predicted_energy_centered = -1.8873229916688716
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.6068057489379294
+predicted_density_total = 4.1572729937102935
+frozen_sites_1based = []
+seed = 2011
+initial_masks = [16, 11, 11, 1]
+predicted_energy_centered = -1.8873229916688716
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.6068057489379294
+predicted_density_total = 4.1572729937102935
+frozen_sites_1based = []
+seed = 3011
+initial_masks = [23, 27, 29, 22]
+predicted_energy_centered = -1.8873229916688716
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.7152932850052176
+predicted_density_total = 4.18539098634207
+frozen_sites_1based = [3]
+seed = 4001
+initial_masks = [3, 3, 21, 25]
+predicted_energy_centered = -1.509608832663271
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.7152932850052176
+predicted_density_total = 4.18539098634207
+frozen_sites_1based = [2]
+seed = 5003
+initial_masks = [26, 21, 0, 15]
+predicted_energy_centered = -1.509608832663271
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.6068057489379294
+predicted_density_total = 4.1572729937102935
+frozen_sites_1based = []
+seed = 6007
+initial_masks = [27, 9, 20, 20]
+predicted_energy_centered = -1.8873229916688716
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.6068057489379294
+predicted_density_total = 4.1572729937102935
+frozen_sites_1based = []
+seed = 7001
+initial_masks = [29, 13, 25, 18]
+predicted_energy_centered = -1.8873229916688716
+[[seed_predictions]]
+predicted_double_occupancy_total = 0.6068057489379294
+predicted_density_total = 4.1572729937102935
+frozen_sites_1based = []
+seed = 8009
+initial_masks = [23, 29, 19, 6]
+predicted_energy_centered = -1.8873229916688716

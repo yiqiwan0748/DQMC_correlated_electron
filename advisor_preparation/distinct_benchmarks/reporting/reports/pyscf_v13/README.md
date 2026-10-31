@@ -1,0 +1,7 @@
+# Independent PySCF finite-cluster checkpoint
+
+**44 PASS, 2 UNRESOLVED and 54 NOT_RUN** across exactly 100 distinct catalogue IDs. Only P23 and P24 change from the immutable [42-question checkpoint](../pc_reconciliation_v12/README.md); all 98 other row objects, all 42 previous passing rows and both unresolved histories are preserved exactly.
+
+Seven full-production fixtures compare the existing native two-orbital Hamiltonian with actual PySCF FCI contractions. P23 covers complete low-energy energy manifolds, invariant projectors and spin labels. P24 covers directed orbital-transition strengths, their reverse and sum rules, including a deliberately asymmetric analytic witness. The model includes intraorbital Hubbard U only. New dense eigensystem and observable adapters are explicitly attributed; the result concerns selected finite clusters, without a whole-package or thermodynamic claim.
+
+The original pilot's comparator serialization failure remains in the [scientific packet](../../../pyscf_external_20261023/README.md), with both successful scientific producer outputs and its failed execution receipt. The analysis-only Boolean repair changes no scientific formula or gate and receives no credit. Full production and independent public-payload mathematical replay establish the two new statuses. The [closure audit](audit.json) verifies pinned source/raw archives and predecessor receipts.

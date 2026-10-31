@@ -1,0 +1,114 @@
+{
+  "schema": "P17_NATIVE_V3_TIMEOUT_PUBLIC_SELECTION_MANIFEST_V1",
+  "parent_commit": "8fd8f7d4f348d187871835489afa69ebddb4cb5b",
+  "parent_record": "advisor_preparation/distinct_benchmarks/runtime_validation_20261026",
+  "parent_selection_manifest_sha256": "ec83b83386d3ee344b42f890d7a874ed9ada9dc7b45d9042cd37627506e1e811",
+  "parent_files_unchanged": 11,
+  "files": [
+    {
+      "path": "IMMUTABLE_PARENT_RECORD.json",
+      "bytes": 2099,
+      "sha256": "97297faaf8e3783cac9780fdaca4b68b62c3befa6864468f89dd8e8d9ac50d98"
+    },
+    {
+      "path": "NATIVE_V3_TIMEOUT_AGGREGATES.json",
+      "bytes": 4464,
+      "sha256": "2ea0514beedaa1e167e0e6076e451c86b4435539e9223b8055bd539be8f8fc65"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2208,
+      "sha256": "7cdc211a094bb0f391f93f53befddcbbf69133b586102af24d411182d318f6ee"
+    }
+  ],
+  "original_input_identities": {
+    "execution": {
+      "bytes": 917,
+      "sha256": "285dada1de9d7446df861a8b2b2c65544a59d82eef6209b27ff4f9a969cc7ee8",
+      "body_included": false
+    },
+    "terminal_retrieval": {
+      "bytes": 943,
+      "sha256": "3174ce1d145f668201bc4264dd274e8434b01863ee6fbdab3d4ea22829874a86",
+      "body_included": false
+    },
+    "terminal_accounting": {
+      "bytes": 124,
+      "sha256": "f46b896805e2941bc0815da3502933054a56c48861e4c82afa8d57eca155fc79",
+      "body_included": false
+    },
+    "source_freeze": {
+      "bytes": 5649,
+      "sha256": "1bef39d501048f3a114904f0e1c17009e9bf8826e1f9fb4a245ade5ac14809b8",
+      "body_included": false
+    },
+    "independent_failure_review": {
+      "bytes": 7967,
+      "sha256": "8c1a97ecf035f84883ad995f6fe5683dfa929c1269f66154ced8122f260b3ed9",
+      "body_included": false
+    },
+    "retained_python_actual_review": {
+      "bytes": 204830,
+      "sha256": "91005f036ebfd9fcbc905c37411af342a719c0f882dba7463d0e1c4d524c991a",
+      "body_included": false
+    }
+  },
+  "transformations": [
+    {
+      "output": "NATIVE_V3_TIMEOUT_AGGREGATES.json",
+      "input_role": "execution",
+      "selected_JSON_pointers": [
+        "/status",
+        "/started_utc",
+        "/finished_utc",
+        "/processes/0",
+        "/elapsed_seconds",
+        "/source_freeze_sha256",
+        "/source_after_verified",
+        "/automatic_retry",
+        "/scientific_completions",
+        "/solver_or_fixture_executed"
+      ],
+      "operation": "Copy selected exact observations; place zero-credit and no-qualification conclusions in explicit aggregate fields. Omit original admission binding and other body context."
+    },
+    {
+      "output": "NATIVE_V3_TIMEOUT_AGGREGATES.json",
+      "input_role": "terminal_retrieval",
+      "selected_JSON_pointers": [
+        "/directories",
+        "/files/native.stdout.txt/bytes",
+        "/files/native.stderr.txt/bytes",
+        "/files/native.resources.txt/bytes"
+      ],
+      "operation": "Verify every retained file digest privately; publish only file count, empty-stream byte counts and absent native directory/report. Omit job identifier and queue content."
+    },
+    {
+      "output": "NATIVE_V3_TIMEOUT_AGGREGATES.json",
+      "input_role": "terminal_accounting",
+      "operation": "Select allocation and batch state, exit, duration, CPU, requested memory and sampled MaxRSS columns; omit identifier columns and all raw text. Convert 00:03:04 to 184 seconds and 405108K to 405108 KiB without substituting a GNU peak measurement."
+    },
+    {
+      "output": "NATIVE_V3_TIMEOUT_AGGREGATES.json",
+      "input_roles": [
+        "independent_failure_review",
+        "retained_python_actual_review"
+      ],
+      "operation": "Select exact outcome/check counts, retained role statuses and receipt hashes. Publish no private review body or detailed identity inventory."
+    },
+    {
+      "output": "IMMUTABLE_PARENT_RECORD.json",
+      "operation": "Exact copy of the eleven-file parent inventory; preserve every listed parent byte count and SHA-256."
+    }
+  ],
+  "excluded_categories": [
+    "all original private receipt bodies",
+    "job/process/host/filesystem identifiers",
+    "queue/environment/maps rows",
+    "controllers and admissions",
+    "unqualified native helper source",
+    "whole source or result archives"
+  ],
+  "scientific_completions_added": 0,
+  "scientific_failures_added": 0,
+  "runtime_qualified": false
+}

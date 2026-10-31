@@ -1,0 +1,33 @@
+{
+  "schema": "p21_v4_named_startup_text_transfer_v1",
+  "status": "ALL4_REMOTE_SHA_MATCH",
+  "job_id": "6458709",
+  "files": [
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/fixed_configuration/parameters",
+      "file": "fixed_configuration/parameters",
+      "bytes": 889,
+      "sha256": "691fc8164339b77b96e79f2792417195ec31a03110ec28279ec054f2a2f034a0"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/fixed_configuration/info",
+      "file": "fixed_configuration/info",
+      "bytes": 820,
+      "sha256": "240723e2a475341fc969e1be42a8e71e8186c7afae27c884513d8e27beae9df3"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/fixed_configuration/info_git",
+      "file": "fixed_configuration/info_git",
+      "bytes": 414,
+      "sha256": "78f1ae69108eff4425f6523f82e3273b69a6ebca97ec998c390b3dc082259624"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/fixed_configuration/RUNNING",
+      "file": "fixed_configuration/RUNNING",
+      "bytes": 16,
+      "sha256": "fb378a55ad6005ed57f6498d85d3e99ee2580c6393eda524cdcb18ae5926aaca"
+    }
+  ],
+  "raw_remote_sha256": "691fc8164339b77b96e79f2792417195ec31a03110ec28279ec054f2a2f034a0  /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/fixed_configuration/parameters\n240723e2a475341fc969e1be42a8e71e8186c7afae27c884513d8e27beae9df3  /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/fixed_configuration/info\n78f1ae69108eff4425f6523f82e3273b69a6ebca97ec998c390b3dc082259624  /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/fixed_configuration/info_git\nfb378a55ad6005ed57f6498d85d3e99ee2580c6393eda524cdcb18ae5926aaca  /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/fixed_configuration/RUNNING\n",
+  "binary_or_library_transfer": false
+}

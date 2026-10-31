@@ -1,0 +1,21 @@
+{
+  "schema": "J23_RETAINED_ORIGINAL_SAVED_ANALYSIS_SOURCES_V1",
+  "roles": {
+    "pilot": {
+      "archive": "pilot-analysis-source.tar.gz",
+      "archive_sha256": "e1c9e438050f35fa2475915854ee42b3fd3604ec6f7b5db6cd1a158e05159f46",
+      "source_freeze": "pilot-analysis-freeze.json",
+      "source_freeze_sha256": "745d9e1851a6ed4ff03ec111ddf2d57071f9493839f211aa300bc8e702fb5878",
+      "original_replay_execution_sha256": "784d5f2d82d86fb55fb268d145693ad55a9ca4dcfcdcec82ba2c0ed87122e462",
+      "job_id": "6466655"
+    },
+    "production": {
+      "archive": "production-analysis-source.tar.gz",
+      "archive_sha256": "ed3d3de7f0eefca354022a34261c6f4e6f88b14327e52a2306a6b51566acbeea",
+      "source_freeze": "production-analysis-freeze.json",
+      "source_freeze_sha256": "8d52534517e5d9c719c1ebcf32fbc23e76d50e30e0ab6cb941c8c330084a873c",
+      "original_replay_execution_sha256": "a4d8eae1a3f099240258ff929a8cac69c57b6453af8ef50e5241c74af8112cb7",
+      "job_id": "6466878"
+    }
+  }
+}

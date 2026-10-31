@@ -1,0 +1,11 @@
+# Native Julia preflight: bounded attempt timed out
+
+On 26 October 2026, the native-only runtime preflight reached its 180-second process limit after 180.040 seconds. The wrapper recorded **UNRESOLVED**, verified that frozen source was unchanged, and finished after 181.611 seconds. Slurm recorded **FAILED, exit 2**, a 184-second allocation, one CPU, 3500 MiB requested memory, and a sampled batch maximum resident set of **405108 KiB**. The GNU process resource file was empty, so no GNU peak-memory value is available.
+
+The attempt produced no native report or native output directory. Its initial imports and helper includes precede output-directory creation; the saved evidence cannot identify which import or compilation stage consumed the time. No native mapping, full-width identity, provider, dispatch, or metadata-fixture qualification is established. The full-width helper source remains excluded from this supplement.
+
+An independent review passed 51 checks of the failed attempt and its immutable receipts. A separate 2110-check review confirms the two earlier successful Python import preflights. Those results remain separate prerequisites; this native timeout establishes no numerical result. **The scientific ledger remains 49 PASS, 0 FAIL, 2 UNRESOLVED, and 49 NOT_RUN across 100 distinct ideas, with zero scientific completions or failures added.**
+
+This supplement preserves all eleven files of parent commit `8fd8f7d4f348d187871835489afa69ebddb4cb5b`, including its original selection manifest and dated snapshot showing the native attempt had not yet run. `IMMUTABLE_PARENT_RECORD.json` binds every parent file. The later timeout is recorded here without rewriting that history.
+
+`NATIVE_V3_TIMEOUT_AGGREGATES.json` is a selective projection, not an original execution receipt. Private receipt bodies, job and process identifiers, paths, queue contents, environment details, raw maps, admission records, and controller state are omitted. Their original byte counts and SHA-256 identities bind the selected observations. This packet supports public inspection of the recorded outcome and integrity bindings; it is not a standalone runtime replay. No physics acceptance gate has changed.

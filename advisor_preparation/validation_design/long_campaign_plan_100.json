@@ -1,0 +1,3073 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-22",
+  "purpose": "Supporting internal regression and extended numerical campaign design, excluded from the canonical 100 external scientific comparisons; no test execution is asserted.",
+  "included_in_external_100": false,
+  "source_roots": {
+    "alm": "/home/yiqiwan/code/AltermagnetDQMCTrial",
+    "renyi_inspected_extraction": "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC",
+    "renyi_portable_snapshot": "../source_snapshot/HubbardRenyiDQMC"
+  },
+  "status_definitions": {
+    "existing_test": "A corresponding assertion/fixture was inspected in an existing test or validation entrypoint; the current campaign must still run it and retain evidence.",
+    "existing_capability": "Existing solver or suite supports the quantity, but the full stated acceptance specification needs an adapter or additional evidence.",
+    "planned_adapter": "Case is specified; implementation and execution remain pending."
+  },
+  "fixtures": {
+    "ALM_FREE": {
+      "Hamiltonian": "centered two-orbital intraorbital Hubbard, U=0",
+      "hoppings": [
+        -1,
+        -1.75,
+        -0.85,
+        -0.65
+      ],
+      "boundary": "pbc",
+      "beta": 0.6,
+      "dtau": 0.1,
+      "mu": -1.897
+    },
+    "ALM_FIELD": {
+      "L": 2,
+      "hoppings": [
+        -1,
+        -1.75,
+        -0.85,
+        -0.65
+      ],
+      "boundary": "pbc",
+      "beta": 0.2,
+      "dtau": 0.1,
+      "U": 2,
+      "mu": -1.897
+    },
+    "CHAIN_THERMAL_SMALL": {
+      "L": 4,
+      "t": 1,
+      "U": 2,
+      "mu_centered": 0,
+      "beta": 2,
+      "dtau": 0.05,
+      "boundary": "pbc"
+    },
+    "ALM_DMRG": {
+      "physical_cells": [
+        2,
+        2
+      ],
+      "spinful_orbital_modes": 8,
+      "boundary": "fully_open",
+      "hoppings": [
+        -1,
+        -1.75,
+        -0.85,
+        -0.65
+      ],
+      "U": 20,
+      "N": 6,
+      "sectors": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "interaction": "U*(nup-1/2)*(ndown-1/2)",
+      "seeds": [
+        314159,
+        271828
+      ],
+      "caps": [
+        32,
+        64,
+        128,
+        256,
+        256
+      ],
+      "cutoff": 1e-12
+    }
+  },
+  "runtime_tiers": {
+    "T0": "Initial budget <=2 CPU minutes per case, excluding Julia compilation; unmeasured.",
+    "T1": "Initial budget 2-15 CPU minutes per case, excluding compilation; unmeasured.",
+    "T2": "Initial budget 15-120 CPU minutes per case; pilot timing required.",
+    "T3": "Initial budget 2-24 CPU hours per multi-arm case; pilot timing and convergence may require revision. These are planning budgets, not measured finish estimates."
+  },
+  "statistical_policy": {
+    "familywise_alpha": 0.01,
+    "multiple_testing": "Let C be the full preregistered number of scalar stochastic comparisons, including all matrix entries/parameter arms. Use Bonferroni alpha=0.01/C and Student-t or a validated simultaneous block-bootstrap interval, not a fixed two-sigma gate. C must be frozen in the execution manifest.",
+    "equivalence": "PASS only when the entire simultaneous CI for estimate minus independent oracle lies inside the stated +/- margin after separately accounting for bounded systematic errors. A wide CI, unstable blocking, low ESS, unresolved denominator, missing result or timeout is UNRESOLVED.",
+    "sampling": "At least 8 independent seeds for new Monte Carlo benchmarks, >=32 effectively independent blocks and estimated ESS>=1000 per scalar; select block length >=10 estimated integrated autocorrelation times using a pilot excluded from validation. Record raw numerator and denominator bins.",
+    "paired_data": "Keep sign numerator/denominator and within-node plus/minus bins paired during jackknife/bootstrap. Preserve covariance for common seeds or coupled methods. Independent nodes may combine variances only after independence has been established.",
+    "fixed_protocol": "Register stopping rule, burn-in, fit order, run length, error margins, seeds and comparison count before looking at validation data. Do not rerun until a p-value passes or inflate errors after disagreement.",
+    "bias": "Thermal, finite-dtau, incomplete optimization, truncation, sign and sampling error are distinct. Compare finite-dtau DQMC with the same thermal action; extrapolate to continuum or show a separate bias bound before comparing to ground-state ED/DMRG."
+  },
+  "execution_group_notes": {
+    "alm_suite": "julia --project=. --startup-file=no test/runtests.jl from ALM root; source-level subcases must be mapped to actually executed assertions.",
+    "renyi_suite": "julia --project=. --startup-file=no test/runtests.jl from complete Aug28 Renyi snapshot. June Downloads scaffold is obsolete.",
+    "renyi_rank1": "julia --project=. --startup-file=no analysis/validate_grover_rank1_update.jl from complete Renyi snapshot; inspect CLI defaults and retain its output.",
+    "alm_dmrg_preflight": "Use the isolated pinned experiments/alm_dmrg_20260911 environment and its registered reference; preflight only, no sweeps.",
+    "alm_dmrg_run": "Registered isolated DMRG run includes preflight; reuse one campaign for multiple audited quantities without multiplying execution counts.",
+    "alm_enum_single": "Existing single-slice exhaustive HS script; retain generated table and separately assess new simultaneous-equivalence margins.",
+    "alm_enum_multi": "Existing two-slice exhaustive HS script; retain generated table and separately assess new simultaneous-equivalence margins.",
+    "new_*_adapter": "No executable implementation is claimed. Missing adapters must be reported as planned, never counted as passed."
+  },
+  "sources": [
+    {
+      "title": "Grover, Quantum Entanglement of Interacting Fermions in Monte Carlo",
+      "url": "https://arxiv.org/abs/1307.1486",
+      "use": "Reduced density matrices as sums of Gaussian operators; determinant Rényi estimators at ground and finite temperature."
+    },
+    {
+      "title": "Broecker and Trebst, Rényi Entropies of Interacting Fermions from DQMC",
+      "url": "https://arxiv.org/abs/1404.3027",
+      "use": "Independent replica method and zero versus finite temperature Hubbard benchmarks."
+    },
+    {
+      "title": "Assaad, Lang and Parisen Toldin, Entanglement Spectra of Interacting Fermions in QMC",
+      "url": "https://arxiv.org/abs/1311.5851",
+      "use": "Stabilization of fermion Rényi calculations."
+    },
+    {
+      "title": "ITensorMPS DMRG FAQ",
+      "url": "https://itensor.github.io/ITensorMPS.jl/stable/faq/DMRG.html",
+      "use": "Compare with ED, vary sweeps and bond capacity; variance alone certifies an eigenstate, not the ground state."
+    }
+  ],
+  "tests": [
+    {
+      "id": "DQMC-01",
+      "method": "DQMC",
+      "title": "Parameter and imaginary-time-grid rejection",
+      "fixture": {
+        "model": "ALM",
+        "L": [
+          2,
+          3,
+          4
+        ],
+        "beta": 1,
+        "dtau_invalid": 0.3,
+        "U_invalid": -1
+      },
+      "independent_oracle": "Integer arithmetic for M=2L^2 and Ltau=beta/dtau; explicitly invalid inputs",
+      "acceptance": "Reject nonintegral grids, nonfinite inputs, U<0, zero stabilization period; dimensions exact",
+      "thresholds": {
+        "dimension_error": 0
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-02",
+      "method": "DQMC",
+      "title": "Four-state Hubbard-Stratonovich identity",
+      "fixture": {
+        "U": 2.3,
+        "dtau": 0.1,
+        "occupations": [
+          0,
+          1
+        ]
+      },
+      "independent_oracle": "Explicit four-state exponential of U(nup-1/2)(ndn-1/2)",
+      "acceptance": "The weighted sum over both HS fields reproduces every onsite Boltzmann factor",
+      "thresholds": {
+        "atol": 1.8e-15,
+        "rtol": 1.8e-15
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-03",
+      "method": "DQMC",
+      "title": "Kinetic Fourier assembly and periodic bond multiplicity",
+      "fixture": {
+        "model": "ALM",
+        "L": [
+          2,
+          3
+        ],
+        "boundary": "pbc",
+        "hoppings": [
+          -1,
+          -1.75,
+          -0.85,
+          -0.65
+        ]
+      },
+      "independent_oracle": "Independent analytic 2x2 Bloch Hamiltonian, finite Fourier sum",
+      "acceptance": "Every momentum block equals analytic h(k); explicitly detect t4 cancellation at L2 and survival at L3",
+      "thresholds": {
+        "atol": 1e-12,
+        "rtol": 0
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/realspace_kinetic_tests.jl",
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-04",
+      "method": "DQMC",
+      "title": "Free equal-time Green matrix",
+      "fixture": {
+        "fixture": "ALM_FREE",
+        "L": [
+          2,
+          3,
+          4
+        ]
+      },
+      "independent_oracle": "Independent Hermitian eigendecomposition of K-mu I and scalar Fermi factors",
+      "acceptance": "G equals I-C with convention transposes recorded, for every matrix element",
+      "thresholds": {
+        "atol": 1e-10,
+        "rtol": 0
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-05",
+      "method": "DQMC",
+      "title": "Free grand-canonical thermodynamic trace",
+      "fixture": {
+        "fixture": "ALM_FREE"
+      },
+      "independent_oracle": "Sum independent one-particle eigenmode occupancies and log(1+exp(-beta epsilon))",
+      "acceptance": "Density, kinetic/internal/grand energy agree; U=0 double occupancy factorizes",
+      "thresholds": {
+        "atol": 1e-10,
+        "rtol": 0
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-06",
+      "method": "DQMC",
+      "title": "Fixed-field cyclic propagator at every time slice",
+      "fixture": {
+        "fixture": "ALM_FIELD",
+        "hs_field": "seeded nonuniform +/-1"
+      },
+      "independent_oracle": "Direct short dense B products and inverse(I+product)",
+      "acceptance": "Stabilized G agrees at all cyclic origins",
+      "thresholds": {
+        "atol": 1e-11,
+        "rtol": 0
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-07",
+      "method": "DQMC",
+      "title": "Local HS flip determinant ratio",
+      "fixture": {
+        "fixture": "ALM_FIELD",
+        "sites": "all",
+        "slices": "all"
+      },
+      "independent_oracle": "Recompute det(I+B_L...B_1) before and after one flip separately for both spins",
+      "acceptance": "Local ratio and sign match full determinant division",
+      "thresholds": {
+        "atol": 1e-10,
+        "rtol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-08",
+      "method": "DQMC",
+      "title": "Accepted rank-one Green update",
+      "fixture": {
+        "fixture": "ALM_FIELD",
+        "force_accept": true
+      },
+      "independent_oracle": "Rebuild both spin Green matrices from the changed field",
+      "acceptance": "Accepted state, signs and log determinants equal full recomputation",
+      "thresholds": {
+        "atol": 1e-09,
+        "rtol": 1e-09
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-09",
+      "method": "DQMC",
+      "title": "Rejected update leaves physical state unchanged",
+      "fixture": {
+        "fixture": "ALM_FIELD",
+        "force_reject": true
+      },
+      "independent_oracle": "Bytewise snapshot of fields, propagators, Green matrices and determinant state",
+      "acceptance": "All physical state arrays identical after rejection; RNG advancement handled explicitly",
+      "thresholds": {
+        "physical_state_changes": 0
+      },
+      "execution_group": "new_alm_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/src/two_orbital_dqmc.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-10",
+      "method": "DQMC",
+      "title": "Full sweep direction and stabilization consistency",
+      "fixture": {
+        "fixture": "ALM_FIELD",
+        "stabilization_period": [
+          1,
+          2
+        ],
+        "complete_sweeps": 20
+      },
+      "independent_oracle": "Dense cyclic reconstruction after each complete sweep",
+      "acceptance": "Sweep counters, field shape and G rebuild consistency hold for both sweep directions",
+      "thresholds": {
+        "max_green_error": 1e-09
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-11",
+      "method": "DQMC",
+      "title": "Stabilization-period independence with fixed fields",
+      "fixture": {
+        "model": "ALM",
+        "L": 3,
+        "U": 4,
+        "beta": 2,
+        "dtau": 0.05,
+        "periods": [
+          1,
+          2,
+          5,
+          10
+        ]
+      },
+      "independent_oracle": "One shared fixed field configuration and independent high precision short-product reference",
+      "acceptance": "Changing stabilization grouping preserves G and log weight",
+      "thresholds": {
+        "max_green_error": 1e-09,
+        "log_weight_atol": 1e-08
+      },
+      "execution_group": "new_alm_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/src/two_orbital_dqmc.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-12",
+      "method": "DQMC",
+      "title": "Centered-interaction and chemical-potential energy identities",
+      "fixture": {
+        "fixture": "ALM_FIELD"
+      },
+      "independent_oracle": "Independent scalar contractions of density, double occupancy and K",
+      "acceptance": "Eint=U sum(D-n/2+1/4); Egrand=Einternal-mu N, with per-cell normalization explicit",
+      "thresholds": {
+        "atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_dqmc_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-13",
+      "method": "DQMC",
+      "title": "Onsite spin contact identity",
+      "fixture": {
+        "fixture": "ALM_FIELD"
+      },
+      "independent_oracle": "Fock-space identity S_i^2=3/4(n_i-2D_i), and Sz_i^2=(n_i-2D_i)/4",
+      "acceptance": "Contact terms in spin matrices match separately computed density and D",
+      "thresholds": {
+        "atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/altermagnetic_observables_tests.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-14",
+      "method": "DQMC",
+      "title": "Exactly-once sign reweighting and covariance",
+      "fixture": {
+        "synthetic_bins": true,
+        "include_negative_signs": true
+      },
+      "independent_oracle": "Hand computed ratio sum(sO)/sum(s), delete-one-block resampling with numerator/denominator kept paired",
+      "acceptance": "No repeated sign weighting; real/imaginary covariance matches independent arithmetic",
+      "thresholds": {
+        "atol": 1e-12
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/dqmc_sign_feasibility_tests.jl",
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/unequal_time_greens_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-15",
+      "method": "DQMC",
+      "title": "Zero or unresolved sign denominator is withheld",
+      "fixture": {
+        "synthetic_signs": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "nonfinite_observation": true
+      },
+      "independent_oracle": "Known vanishing or invalid sign sums",
+      "acceptance": "Return explicit invalid/unresolved result; never finite numerical accuracy claim",
+      "thresholds": {
+        "false_valid_results": 0
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/dqmc_sign_feasibility_tests.jl",
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/unequal_time_greens_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-16",
+      "method": "DQMC",
+      "title": "Free unequal-time Green function",
+      "fixture": {
+        "fixture": "ALM_FREE",
+        "tau": "all measurement grid points"
+      },
+      "independent_oracle": "Independent exp(-tau(K-mu I)) times free Fermi kernel",
+      "acceptance": "Every real-space and momentum matrix matches the exact finite-beta kernel",
+      "thresholds": {
+        "atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/unequal_time_greens_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-17",
+      "method": "DQMC",
+      "title": "Fermionic endpoint discontinuity",
+      "fixture": {
+        "fixture": "ALM_FREE",
+        "tau": [
+          0,
+          "beta"
+        ]
+      },
+      "independent_oracle": "Canonical anticommutation relation with declared G(tau)=<c(tau)c†(0)> convention",
+      "acceptance": "Endpoint discontinuity equals identity and beta endpoint equals occupied density matrix",
+      "thresholds": {
+        "atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/unequal_time_greens_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-18",
+      "method": "DQMC",
+      "title": "Finite spatial Fourier normalization and orbital rotation",
+      "fixture": {
+        "fixture": "ALM_FREE",
+        "L": 3
+      },
+      "independent_oracle": "Explicit double real-space Fourier sum and analytic orbital-swapped h(ky,kx)",
+      "acceptance": "Transform and C4 covariance match including normalization and orbital ordering",
+      "thresholds": {
+        "atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/unequal_time_greens_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-19",
+      "method": "DQMC",
+      "title": "Single-slice Monte Carlo versus exact HS enumeration",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "beta": 0.1,
+        "dtau": 0.1,
+        "mu": -1.897,
+        "configurations": 256
+      },
+      "independent_oracle": "Enumerate all 2^8 HS fields with full determinant weights, same finite-dtau action",
+      "acceptance": "Simultaneous CI contained within oracle +/-0.01 for energy/cell and +/-0.005 for density/cell",
+      "thresholds": {
+        "energy_equivalence_margin": 0.01,
+        "density_equivalence_margin": 0.005
+      },
+      "execution_group": "alm_enum_single",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/scripts/validate_dqmc_u2_sampling.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-20",
+      "method": "DQMC",
+      "title": "Two-slice Monte Carlo versus exact HS enumeration",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "beta": 0.2,
+        "dtau": 0.1,
+        "mu": -1.897,
+        "configurations": 65536
+      },
+      "independent_oracle": "Enumerate all 2^16 two-slice fields with full determinant weights",
+      "acceptance": "Simultaneous CI within oracle +/-0.01 energy/cell and +/-0.005 density/cell; include signed denominator",
+      "thresholds": {
+        "energy_equivalence_margin": 0.01,
+        "density_equivalence_margin": 0.005
+      },
+      "execution_group": "alm_enum_multi",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/scripts/validate_dqmc_u2_multislice_sampling.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-21",
+      "method": "DQMC",
+      "title": "Exhaustive local detailed balance",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "beta": 0.1,
+        "dtau": 0.1,
+        "mu": -1.897,
+        "configurations": 256
+      },
+      "independent_oracle": "Full determinant absolute target probabilities and symmetric single-bit proposals",
+      "acceptance": "For every neighboring configuration pair pi(x)P(x,y)=pi(y)P(y,x); sign handled only in measurement",
+      "thresholds": {
+        "absolute_flux_atol": 1e-12,
+        "relative_flux_rtol": 1e-10
+      },
+      "execution_group": "new_alm_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/src/two_orbital_dqmc.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-22",
+      "method": "DQMC",
+      "title": "Finite-temperature ED thermodynamics at matched ensemble",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "beta": 1,
+        "mu": -1.897,
+        "dtau": [
+          0.1,
+          0.05,
+          0.025
+        ]
+      },
+      "independent_oracle": "Independent grand-canonical ED trace of the same Hamiltonian; separately quantify finite-dtau bias",
+      "acceptance": "Continuum extrapolated density, E and D satisfy simultaneous equivalence margins; same beta, mu and boundary",
+      "thresholds": {
+        "density_margin": 0.005,
+        "energy_margin": 0.01,
+        "double_occupancy_margin": 0.005
+      },
+      "execution_group": "new_alm_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/scripts/two_orbital_cluster_ed.jl",
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/src/two_orbital_dqmc.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T3",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-23",
+      "method": "DQMC",
+      "title": "Trotter extrapolation versus finite-dtau thermal oracle",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 4,
+        "beta": 16,
+        "mu_centered": 0,
+        "nA": 2,
+        "dtau": [
+          0.1,
+          0.05,
+          0.025
+        ]
+      },
+      "independent_oracle": "Full Fock exp(-beta H) and asymmetric product [exp(-dtau V)exp(-dtau K)]^Ltau",
+      "acceptance": "Each finite-dtau target matches its product; extrapolated S2 within 0.01 of exact thermal value. Register asymptotic fit order and stability to dropping coarsest point",
+      "thresholds": {
+        "thermal_S2_at_dtau_005": 0.7689951876109,
+        "thermal_S2_exact": 0.7712028368091,
+        "continuum_margin": 0.01
+      },
+      "execution_group": "new_chain_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T3",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": "Ground-state value 0.7521220360017 is a different target. Never enlarge error bars to hide ensemble bias."
+    },
+    {
+      "id": "DQMC-24",
+      "method": "DQMC",
+      "title": "Independent-chain equilibration and blocked-error calibration",
+      "fixture": {
+        "fixture": "CHAIN_THERMAL_SMALL",
+        "seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601,
+          701,
+          809
+        ],
+        "initial_fields": [
+          "uniform_plus",
+          "uniform_minus",
+          "random"
+        ],
+        "minimum_effective_samples": 1000
+      },
+      "independent_oracle": "Exact finite-dtau small-system expectation, chain means, integrated autocorrelation estimate and doubled block length",
+      "acceptance": "All chain contrasts fit simultaneous margin 0.01; doubling block size changes SE by <=20%; adequate ESS or UNRESOLVED",
+      "thresholds": {
+        "equivalence_margin": 0.01,
+        "maximum_SE_relative_change": 0.2,
+        "min_ESS": 1000
+      },
+      "execution_group": "new_chain_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/src/dqmc_kernel.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T3",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": ""
+    },
+    {
+      "id": "DQMC-25",
+      "method": "DQMC",
+      "title": "Low-temperature numerical stability stress",
+      "fixture": {
+        "model": "chain",
+        "L": 8,
+        "U": 0,
+        "beta": [
+          8,
+          40,
+          80
+        ],
+        "dtau": 0.05,
+        "n_stab": [
+          2,
+          5,
+          10
+        ]
+      },
+      "independent_oracle": "High precision diagonal Fermi kernel and log-sum-exp free partition function",
+      "acceptance": "All outputs finite, G within tolerance and correct occupied/empty eigenvalue limits",
+      "thresholds": {
+        "max_green_error": 1e-09,
+        "log_partition_atol": 1e-08
+      },
+      "execution_group": "new_chain_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/src/dqmc_kernel.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-01",
+      "method": "ED",
+      "title": "Particle-sector basis completeness",
+      "fixture": {
+        "model": "chain",
+        "L": [
+          2,
+          4,
+          6
+        ],
+        "Nup": "0:L",
+        "Ndown": "0:L"
+      },
+      "independent_oracle": "Binomial coefficients and complete bit-mask enumeration",
+      "acceptance": "Unique masks and dimension binom(L,Nup)binom(L,Ndown); total full-Fock dimension 4^L",
+      "thresholds": {
+        "count_error": 0
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-02",
+      "method": "ED",
+      "title": "Canonical fermion anticommutation",
+      "fixture": {
+        "spin_orbitals": 6,
+        "states": "all Fock states"
+      },
+      "independent_oracle": "Independent Kronecker Jordan-Wigner operators",
+      "acceptance": "{c_i,c†_j}=delta_ij I and {c_i,c_j}=0; include boundary operators",
+      "thresholds": {
+        "max_abs_error": 1e-14
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/prl_101_237004_interaction_oracle_tests.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-03",
+      "method": "ED",
+      "title": "Full Hubbard dimer spectrum",
+      "fixture": {
+        "model": "single_bond_dimer",
+        "U": [
+          0,
+          2,
+          7.5,
+          20
+        ],
+        "t": [
+          1,
+          -1.25
+        ]
+      },
+      "independent_oracle": "Analytic 16-level centered Hubbard dimer spectrum",
+      "acceptance": "All sorted eigenvalues and multiplicities match; single-bond convention explicit",
+      "thresholds": {
+        "atol": 5e-13,
+        "rtol": 5e-13
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/hubbard_ed_benchmark_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-04",
+      "method": "ED",
+      "title": "Dimer singlet-triplet gap",
+      "fixture": {
+        "model": "single_bond_dimer",
+        "U": 4,
+        "t": 1
+      },
+      "independent_oracle": "Exact gap (sqrt(U^2+16t^2)-U)/2",
+      "acceptance": "Spin labels and gap match analytic values",
+      "thresholds": {
+        "atol": 5e-13,
+        "rtol": 5e-13
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/hubbard_ed_benchmark_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-05",
+      "method": "ED",
+      "title": "Dimer ground-state double occupancy",
+      "fixture": {
+        "model": "single_bond_dimer",
+        "U": [
+          4,
+          20
+        ],
+        "t": 1
+      },
+      "independent_oracle": "Exact total D=(1-U/sqrt(U^2+16t^2))/2",
+      "acceptance": "Eigenvector expectation equals formula, including per-site factor 1/2",
+      "thresholds": {
+        "atol": 5e-13,
+        "rtol": 5e-13
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/hubbard_ed_benchmark_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-06",
+      "method": "ED",
+      "title": "Atomic four-state grand partition function",
+      "fixture": {
+        "model": "ALM_atomic",
+        "U": [
+          0,
+          2,
+          8
+        ],
+        "beta": [
+          0.2,
+          2
+        ],
+        "mu": [
+          -1,
+          0,
+          1
+        ]
+      },
+      "independent_oracle": "Explicit empty/up/down/double Boltzmann weights for centered interaction",
+      "acceptance": "Partition function, density, D and thermal energy match independent four-term sum",
+      "thresholds": {
+        "atol": 1e-12
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_cluster_ed_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-07",
+      "method": "ED",
+      "title": "Noninteracting many-body energies",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 0,
+        "Nup": 2,
+        "Ndown": 2,
+        "boundary": [
+          "pbc",
+          "apbc"
+        ]
+      },
+      "independent_oracle": "Sums of occupied analytic one-particle levels -2t cos(k), shifted APBC momenta",
+      "acceptance": "Entire fixed-sector spectrum equals combinatorial sums, including degeneracy",
+      "thresholds": {
+        "atol": 1e-11
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-08",
+      "method": "ED",
+      "title": "Independent Jordan-Wigner Hamiltonian action",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "mu": 0,
+        "boundary": [
+          "pbc",
+          "apbc"
+        ],
+        "random_vectors": 8,
+        "seed": 1701
+      },
+      "independent_oracle": "Dense full-Fock Kronecker Jordan-Wigner Hamiltonian, restricted only after construction",
+      "acceptance": "Matrix-free Hv matches independent dense action for all random vectors and seam sign fixtures",
+      "thresholds": {
+        "max_abs_error": 1e-11,
+        "relative_action_error": 1e-11
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-09",
+      "method": "ED",
+      "title": "Hermiticity of dense and matrix-free operator",
+      "fixture": {
+        "model": "chain",
+        "L": [
+          4,
+          6
+        ],
+        "U": [
+          0,
+          2,
+          4
+        ],
+        "boundary": [
+          "pbc",
+          "apbc"
+        ],
+        "random_vectors": 10
+      },
+      "independent_oracle": "Independent bilinear relation <x,Hy>=<Hx,y> and dense H-H†",
+      "acceptance": "No asymmetric hopping or wrong seam conjugation",
+      "thresholds": {
+        "atol": 1e-11
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-10",
+      "method": "ED",
+      "title": "Centered and uncentered energy conversion",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 4,
+        "Nup": 2,
+        "Ndown": 2,
+        "mu_centered": 0,
+        "mu_uncentered": 2
+      },
+      "independent_oracle": "Hc(mu_c)=Hu(mu_c+U/2)+UL/4; in same fixed N at same numeric mu, Eu-Ec=UN/2-UL/4",
+      "acceptance": "Spectra differ by exact declared constant; eigenvectors and fixed-N entropy agree",
+      "thresholds": {
+        "atol": 1e-11
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": "Renyi ED/DMRG use uncentered U D at fixed N. Centered DQMC mu=0 corresponds to uncentered grand-canonical mu=U/2."
+    },
+    {
+      "id": "ED-11",
+      "method": "ED",
+      "title": "Dense versus Lanczos low eigenvalues",
+      "fixture": {
+        "model": "chain",
+        "L": [
+          4,
+          6
+        ],
+        "U": [
+          0,
+          2,
+          4
+        ],
+        "boundary": [
+          "pbc",
+          "apbc"
+        ],
+        "starts": [
+          137,
+          991
+        ]
+      },
+      "independent_oracle": "Dense eigensolver independently built H on the same fixed sector",
+      "acceptance": "Converged lowest Ritz values agree; insufficient iterations must fail",
+      "thresholds": {
+        "energy_atol": 1e-09
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-12",
+      "method": "ED",
+      "title": "Lanczos residual and nonconvergence reporting",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "maxiter_failure": 1,
+        "tolerance_failure": 1e-300
+      },
+      "independent_oracle": "Explicit norm(Hpsi-Epsi), independent of Lanczos recurrence estimate",
+      "acceptance": "Residual finite and <= requested tolerance for accepted state; deliberately underconverged run rejected",
+      "thresholds": {
+        "accepted_residual": 1e-09,
+        "false_success_count": 0
+      },
+      "execution_group": "renyi_suite",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/test/runtests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-13",
+      "method": "ED",
+      "title": "Degenerate eigenspace rotation invariance",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 0,
+        "boundary": "pbc",
+        "degenerate_subspace": "complete lowest-energy manifold"
+      },
+      "independent_oracle": "Projector P=VV† before and after random unitary rotation",
+      "acceptance": "Projector and equal-mixture rho=P/r invariant; arbitrary pure-state entropies not conflated with mixture entropy",
+      "thresholds": {
+        "projector_atol": 1e-11,
+        "mixture_entropy_atol": 1e-11
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-14",
+      "method": "ED",
+      "title": "Particle-number conservation",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "boundary": [
+          "pbc",
+          "apbc"
+        ]
+      },
+      "independent_oracle": "Full-Fock diagonal Nup,Ndown matrices",
+      "acceptance": "[H,Nup]=[H,Ndown]=0 and all projected Hv remain inside requested sector",
+      "thresholds": {
+        "commutator_atol": 1e-12,
+        "leakage_norm": 1e-12
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-15",
+      "method": "ED",
+      "title": "Spin SU(2) symmetry",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 4,
+        "field": 0
+      },
+      "independent_oracle": "Explicit full-Fock S+,S-,Sz and S^2",
+      "acceptance": "[H,S^2]=0 and spin partners have equal energy; compare complete multiplets",
+      "thresholds": {
+        "commutator_atol": 1e-10,
+        "partner_energy_atol": 1e-10
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-16",
+      "method": "ED",
+      "title": "Momentum projectors and fermionic translations",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "boundary": "pbc"
+      },
+      "independent_oracle": "Explicit signed Fock translation, finite-group projectors",
+      "acceptance": "Projectors orthogonal and sum to identity; projected union reproduces full spectrum",
+      "thresholds": {
+        "atol": 1e-11
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_cluster_ed_tests.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-17",
+      "method": "ED",
+      "title": "Local spin contact expectation",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "independent_oracle": "Fock diagonal n,D and direct Sx,Sy,Sz products",
+      "acceptance": "S_i^2=3/4(n_i-2D_i) at every site",
+      "thresholds": {
+        "atol": 1e-12
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-18",
+      "method": "ED",
+      "title": "Spin correlation sum equals total S squared",
+      "fixture": {
+        "model": "ALM_open",
+        "cells": [
+          2,
+          2
+        ],
+        "U": 20,
+        "Nup": 3,
+        "Ndown": 3
+      },
+      "independent_oracle": "Independent total-spin operator applied to eigenvectors",
+      "acceptance": "sum_ij <Si.Sj> equals <S^2>; contacts retained and scalar versus z normalization documented",
+      "thresholds": {
+        "atol": 1e-09
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_ground_observables_tests.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-19",
+      "method": "ED",
+      "title": "One-body density matrix representability",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": [
+          0,
+          4
+        ],
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "independent_oracle": "Explicit c†_i c_j contractions from Fock vector",
+      "acceptance": "C=C†, eigenvalues in [0,1], trace equals particle number per spin",
+      "thresholds": {
+        "hermiticity_atol": 1e-12,
+        "eigenvalue_slack": 1e-12,
+        "trace_atol": 1e-12
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-20",
+      "method": "ED",
+      "title": "Hamiltonian energy from separate observables",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 4,
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "independent_oracle": "Independent K contraction plus U sumD -mu N, or centered form as declared",
+      "acceptance": "Decomposed total energy equals eigenvalue",
+      "thresholds": {
+        "atol": 1e-10
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-21",
+      "method": "ED",
+      "title": "Hellmann-Feynman interaction derivative",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "Nup": 2,
+        "Ndown": 2,
+        "dU": [
+          0.001,
+          0.0005
+        ]
+      },
+      "independent_oracle": "Centered finite-difference E0 derivative compared with independent sumD for uncentered H",
+      "acceptance": "Derivative converges with halved dU; error within tolerance away from level crossing",
+      "thresholds": {
+        "derivative_atol": 1e-06
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-22",
+      "method": "ED",
+      "title": "Grand-potential chemical-potential derivative",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "beta": 1,
+        "mu": -1.897,
+        "dmu": [
+          0.001,
+          0.0005
+        ]
+      },
+      "independent_oracle": "Finite-difference Omega=-logZ/beta and independently traced N",
+      "acceptance": "-dOmega/dmu equals N; centered interaction convention held fixed",
+      "thresholds": {
+        "derivative_atol": 1e-06
+      },
+      "execution_group": "new_ed_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/scripts/two_orbital_cluster_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-23",
+      "method": "ED",
+      "title": "Lehmann spectral zeroth moment",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": [
+          0,
+          2
+        ],
+        "beta": 1,
+        "mu": -1.897
+      },
+      "independent_oracle": "Anticommutation sum rule integrated over exact poles before broadening",
+      "acceptance": "Per spin-orbital spectral weight equals 1; removal/addition weights give correct occupation",
+      "thresholds": {
+        "atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_cluster_ed_tests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-24",
+      "method": "ED",
+      "title": "Spectral causality and imaginary-time reconstruction",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "beta": 1,
+        "eta": 0.05,
+        "tau": [
+          0,
+          0.25,
+          0.5,
+          1
+        ]
+      },
+      "independent_oracle": "Direct finite-Fock thermal correlator versus pole sum using stable fermionic kernel",
+      "acceptance": "-Im Gretarded>=-1e-12; reconstructed Gtau agrees with direct trace",
+      "thresholds": {
+        "causality_slack": 1e-12,
+        "Gtau_atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_cluster_ed_tests.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "ED-25",
+      "method": "ED",
+      "title": "Twist gauge equivalence and two-pi periodicity",
+      "fixture": {
+        "model": "ALM",
+        "L": 2,
+        "U": 2,
+        "twists": [
+          [
+            0.31,
+            -0.57
+          ],
+          [
+            6.593185307179586,
+            -0.57
+          ]
+        ],
+        "Nup": 2,
+        "Ndown": 2
+      },
+      "independent_oracle": "Unitary site-phase transformation between seam and uniform-vector-potential gauges",
+      "acceptance": "Gauge transformed H and full spectrum agree; theta and theta+2pi physically equivalent",
+      "thresholds": {
+        "hamiltonian_atol": 1e-11,
+        "energy_atol": 1e-10
+      },
+      "execution_group": "alm_suite",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/test/two_orbital_twisted_cluster_ed_tests.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-01",
+      "method": "DMRG",
+      "title": "Electron local-state and double-occupancy mapping",
+      "fixture": {
+        "model": "ALM_DMRG",
+        "local_states": [
+          "Emp",
+          "Up",
+          "Dn",
+          "UpDn"
+        ]
+      },
+      "independent_oracle": "Explicit local Nup,Ndn,Ntot,Sz and parity eigenvalues",
+      "acceptance": "All four states represented correctly; no accidental no-double-occupancy projection",
+      "thresholds": {
+        "operator_atol": 1e-12
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-02",
+      "method": "DMRG",
+      "title": "ED to MPS to ED coefficient round trip",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "sectors": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "random_full_support_vectors": 3,
+        "include_doublon_product": true
+      },
+      "independent_oracle": "Original normalized ED coefficient array and independently counted spin-order inversions",
+      "acceptance": "Round trip preserves every amplitude, including fermionic parity",
+      "thresholds": {
+        "component_atol": 2e-10,
+        "norm_leakage": 1e-08
+      },
+      "execution_group": "alm_dmrg_preflight",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-03",
+      "method": "DMRG",
+      "title": "Nonlocal up-spin hopping fermionic sign",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "spin": "up",
+        "occupied_intervening_modes": "odd"
+      },
+      "independent_oracle": "Hand count occupied up modes between source and destination",
+      "acceptance": "MPO action gives negative parity factor for explicitly chosen hopping entry",
+      "thresholds": {
+        "entry_atol": 2e-12
+      },
+      "execution_group": "alm_dmrg_preflight",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-04",
+      "method": "DMRG",
+      "title": "Nonlocal down-spin hopping fermionic sign",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "spin": "down",
+        "occupied_intervening_modes": "odd"
+      },
+      "independent_oracle": "Hand count occupied down modes plus conversion parity",
+      "acceptance": "MPO action reproduces explicitly chosen down-spin matrix entry",
+      "thresholds": {
+        "entry_atol": 2e-12
+      },
+      "execution_group": "alm_dmrg_preflight",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-05",
+      "method": "DMRG",
+      "title": "Independent real-space hopping reconstruction",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "boundary": "fully_open"
+      },
+      "independent_oracle": "Registered Bloch hopping coefficients assembled bond by bond independently of archived reference K",
+      "acceptance": "All K entries match; diagonal t4 terms survive open geometry",
+      "thresholds": {
+        "max_K_error": 2e-12
+      },
+      "execution_group": "alm_dmrg_preflight",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-06",
+      "method": "DMRG",
+      "title": "Random full-sector MPO action versus Fock Hamiltonian",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "vectors_per_sector": 7,
+        "sectors": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      "independent_oracle": "Independent dense ED H*v on 3 random and 4 explicit product fixtures per sector",
+      "acceptance": "Every recovered MPO action component and relative action error below bounds",
+      "thresholds": {
+        "component_atol": 2e-10,
+        "relative_action_error": 2e-11,
+        "norm_leakage": 1e-08
+      },
+      "execution_group": "alm_dmrg_preflight",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": "Fourteen vector actions are not every Hamiltonian basis column."
+    },
+    {
+      "id": "DMRG-07",
+      "method": "DMRG",
+      "title": "Onsite centered-interaction constant",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "M": 8,
+        "N": 6,
+        "U": 20
+      },
+      "independent_oracle": "Independent U D-U N/2+UM/4 on each product configuration",
+      "acceptance": "Centered energy is uncentered energy minus 20 at fixed N6; all onsite diagonal terms match",
+      "thresholds": {
+        "energy_atol": 1e-10
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-08",
+      "method": "DMRG",
+      "title": "MPS norm and gauge invariance",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "Nup": 2,
+        "Ndown": 2,
+        "orthogonality_center": "each site"
+      },
+      "independent_oracle": "Dense coefficient vector norm and gauge-invariant contractions",
+      "acceptance": "Norm within tolerance; moving orthogonality center preserves E and S2",
+      "thresholds": {
+        "norm_atol": 1e-10,
+        "energy_atol": 1e-09,
+        "S2_atol": 1e-09
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-09",
+      "method": "DMRG",
+      "title": "Particle-number QN and local density sum",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "sectors": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      "independent_oracle": "Known integer sector counts and independent dense-vector number operator",
+      "acceptance": "sum_i nup_i=Nup and sum_i ndn_i=Ndn with zero sector leakage",
+      "thresholds": {
+        "count_atol": 1e-09,
+        "norm_leakage": 1e-08
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-10",
+      "method": "DMRG",
+      "title": "Physical spin QN normalization",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "physical_Sz": [
+          0,
+          1
+        ]
+      },
+      "independent_oracle": "Physical Sz=(Nup-Ndown)/2 versus ITensor integer QN storing twice Sz",
+      "acceptance": "Sum measured Sz equals 0 or 1; never confuse QN integer with physical spin",
+      "thresholds": {
+        "spin_atol": 1e-09
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-11",
+      "method": "DMRG",
+      "title": "MPO energy versus dense coefficient contraction",
+      "fixture": {
+        "fixture": "ALM_DMRG"
+      },
+      "independent_oracle": "Recover ED vector and compute psi†Hpsi independently",
+      "acceptance": "Reported optimization E, MPO expectation and dense expectation agree",
+      "thresholds": {
+        "energy_atol": 1e-08
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-12",
+      "method": "DMRG",
+      "title": "Energy variance versus full residual norm",
+      "fixture": {
+        "fixture": "ALM_DMRG"
+      },
+      "independent_oracle": "Dense ||Hpsi-Epsi||^2 versus MPO <H^2>-<H>^2",
+      "acceptance": "Variances agree within numerical roundoff; accepted residual variance below threshold",
+      "thresholds": {
+        "variance_agreement_atol": 1e-07,
+        "accepted_variance_max": 1e-07
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": "Low variance certifies an approximate eigenstate, not that it is the ground state."
+    },
+    {
+      "id": "DMRG-13",
+      "method": "DMRG",
+      "title": "Ground-state energy against certified ED",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "seeds": [
+          314159,
+          271828
+        ],
+        "caps": [
+          32,
+          64,
+          128,
+          256,
+          256
+        ]
+      },
+      "independent_oracle": "Certified complete-sector ED ground energy and residual bound",
+      "acceptance": "E_MPS >= E_ED-1e-9 and E_MPS-E_ED <=1e-7 for each final arm",
+      "thresholds": {
+        "variational_slack": 1e-09,
+        "energy_error_max": 1e-07
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-14",
+      "method": "DMRG",
+      "title": "Ground-manifold overlap against certified ED",
+      "fixture": {
+        "fixture": "ALM_DMRG"
+      },
+      "independent_oracle": "Complete ED ground projector P, not overlap with one arbitrary degenerate vector",
+      "acceptance": "1-<psi|P|psi> <=1e-6 together with energy and residual gates",
+      "thresholds": {
+        "ground_subspace_infidelity": 1e-06
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-15",
+      "method": "DMRG",
+      "title": "Full local density profile against ED",
+      "fixture": {
+        "fixture": "ALM_DMRG"
+      },
+      "independent_oracle": "ED site-resolved up/down density from certified matching state/manifold",
+      "acceptance": "All site densities agree, not only total number",
+      "thresholds": {
+        "max_density_error": 1e-05
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-16",
+      "method": "DMRG",
+      "title": "Full double-occupancy profile against ED",
+      "fixture": {
+        "fixture": "ALM_DMRG"
+      },
+      "independent_oracle": "ED nup_i ndn_i at each orbital site",
+      "acceptance": "Every local double occupancy agrees",
+      "thresholds": {
+        "max_double_occupancy_error": 1e-05
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-17",
+      "method": "DMRG",
+      "title": "Full spin correlation matrix against ED",
+      "fixture": {
+        "fixture": "ALM_DMRG"
+      },
+      "independent_oracle": "Dense independent SzSz,S+S-,S-S+ contractions",
+      "acceptance": "All scalar spin matrix entries agree with matching ED state",
+      "thresholds": {
+        "max_spin_matrix_error": 2e-05
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-18",
+      "method": "DMRG",
+      "title": "Spin contact terms from local observables",
+      "fixture": {
+        "fixture": "ALM_DMRG"
+      },
+      "independent_oracle": "Independent density and double occupancy giving 3/4(n-2D)",
+      "acceptance": "Diagonal scalar spin correlations satisfy identity at every site",
+      "thresholds": {
+        "contact_atol": 1e-09
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-19",
+      "method": "DMRG",
+      "title": "Total spin from complete correlation sum",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "target_spin": [
+          0,
+          1
+        ]
+      },
+      "independent_oracle": "ED S(S+1) with singlet and triplet state labels",
+      "acceptance": "Full scalar spin sum equals expected total S squared; the factor 3 relating z and scalar correlators is imposed only for SU(2)-invariant singlets or rotationally averaged ensembles, not an individual Sz1 triplet",
+      "thresholds": {
+        "S2_atol": 1e-05
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-20",
+      "method": "DMRG",
+      "title": "Bond-dimension convergence of energy and entropy",
+      "fixture": {
+        "model": "chain",
+        "L": 8,
+        "U": 2,
+        "boundary": [
+          "pbc",
+          "apbc"
+        ],
+        "caps": [
+          32,
+          64,
+          128,
+          256
+        ],
+        "nsweeps": 12
+      },
+      "independent_oracle": "Fixed-sector ED E and S2 at same boundary; separately compare last two MPS caps",
+      "acceptance": "Final energy error <=1e-7 and S2 error <=1e-5; do not infer entropy convergence from E alone",
+      "thresholds": {
+        "energy_error_max": 1e-07,
+        "entropy_error_max": 1e-05,
+        "last_cap_entropy_change": 1e-05
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-21",
+      "method": "DMRG",
+      "title": "Extra-sweep convergence at fixed bond dimension",
+      "fixture": {
+        "model": "chain",
+        "L": 8,
+        "U": 4,
+        "boundary": "apbc",
+        "maxdim": 256,
+        "nsweeps": [
+          12,
+          24
+        ]
+      },
+      "independent_oracle": "Matched ED and last two sweep-stage observables",
+      "acceptance": "Extra sweeps change E <=1e-8 and S2 <=1e-5; both meet ED target",
+      "thresholds": {
+        "energy_change_max": 1e-08,
+        "entropy_change_max": 1e-05
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-22",
+      "method": "DMRG",
+      "title": "Cutoff tightening with ample bond capacity",
+      "fixture": {
+        "model": "chain",
+        "L": 8,
+        "U": 2,
+        "boundary": "apbc",
+        "maxdim": 256,
+        "cutoff": [
+          1e-08,
+          1e-10,
+          1e-12
+        ]
+      },
+      "independent_oracle": "Exact ED target and separately reported truncation history",
+      "acceptance": "Tightest two agree within E1e-8 and S2 1e-5; record actual maxlinkdim and truncation error",
+      "thresholds": {
+        "energy_change_max": 1e-08,
+        "entropy_change_max": 1e-05
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-23",
+      "method": "DMRG",
+      "title": "Independent initial MPS agreement",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "seeds": [
+          314159,
+          271828
+        ]
+      },
+      "independent_oracle": "Both optimized states compared with certified ED; mutual phase-invariant overlap or ground projector",
+      "acceptance": "Each start independently satisfies ground-state gates and observables agree",
+      "thresholds": {
+        "energy_difference_max": 1e-07,
+        "density_difference_max": 1e-05,
+        "spin_difference_max": 2e-05
+      },
+      "execution_group": "alm_dmrg_run",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-24",
+      "method": "DMRG",
+      "title": "Checkpoint serialization preserves the state",
+      "fixture": {
+        "fixture": "ALM_DMRG",
+        "artifacts": [
+          "finalstates.jls",
+          "checkpoint"
+        ]
+      },
+      "independent_oracle": "Pre-save coefficient vector and observables versus reloaded MPS",
+      "acceptance": "Round-trip norm, energy, QNs and all-cut S2 unchanged; corrupted or incompatible file rejected",
+      "thresholds": {
+        "norm_atol": 1e-12,
+        "energy_atol": 1e-10,
+        "S2_atol": 1e-10,
+        "false_valid_corrupt_files": 0
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/home/yiqiwan/code/AltermagnetDQMCTrial/experiments/alm_dmrg_20260911/run_benchmark.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "DMRG-25",
+      "method": "DMRG",
+      "title": "PBC versus APBC seam MPO and site-order permutation",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "boundary": [
+          "pbc",
+          "apbc"
+        ],
+        "orders": [
+          "natural",
+          "reversed"
+        ]
+      },
+      "independent_oracle": "Dense JW Hamiltonian with explicit seam sign and signed Fock permutation",
+      "acceptance": "Recovered MPO matrices equal dense H and transform by correct fermionic permutation; E and physical-subsystem S2 preserved",
+      "thresholds": {
+        "MPO_action_atol": 1e-10,
+        "energy_atol": 1e-09,
+        "S2_atol": 1e-09
+      },
+      "execution_group": "new_dmrg_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-01",
+      "method": "RENYI",
+      "title": "Zero entropy of product states",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "Nup": 2,
+        "Ndown": 2,
+        "state": "one occupation-basis product",
+        "subsystems": [
+          [
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "independent_oracle": "Rank-one reduced density matrix constructed independently",
+      "acceptance": "Every subset purity=1 and S2=0 with correct fermionic reordering",
+      "thresholds": {
+        "purity_atol": 1e-12,
+        "S2_atol": 1e-12
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-02",
+      "method": "RENYI",
+      "title": "Spin-singlet Bell pair entropy",
+      "fixture": {
+        "model": "two_sites",
+        "state": "(up,down)-(down,up) normalized",
+        "subsystem": [
+          1
+        ]
+      },
+      "independent_oracle": "Reduced eigenvalues [1/2,1/2,0,0]",
+      "acceptance": "Purity=1/2 and S2=log(2)",
+      "thresholds": {
+        "atol": 1e-12
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-03",
+      "method": "RENYI",
+      "title": "Maximally entangled spinful-site entropy",
+      "fixture": {
+        "model": "two_sites",
+        "state": "equal Schmidt superposition of (empty,double),(up,down),(down,up),(double,empty)",
+        "subsystem": [
+          1
+        ]
+      },
+      "independent_oracle": "Four reduced eigenvalues 1/4 in fixed total Nup=Ndown=1",
+      "acceptance": "Purity=1/4 and S2=log(4)",
+      "thresholds": {
+        "atol": 1e-12
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-04",
+      "method": "RENYI",
+      "title": "Maximally mixed thermal subsystem",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "rho": "I/256",
+        "subsystem": [
+          1,
+          2
+        ]
+      },
+      "independent_oracle": "rho_A=I16/16",
+      "acceptance": "Purity=1/16 and S2=4log(2)",
+      "thresholds": {
+        "S2_atol": 1e-12,
+        "purity_atol": 1e-14
+      },
+      "execution_group": "renyi_suite",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/test/runtests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-05",
+      "method": "RENYI",
+      "title": "Schmidt spectrum versus explicit partial trace",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "Nup": 2,
+        "Ndown": 2,
+        "subsystems": [
+          [
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "independent_oracle": "Independent full local-basis tensor reshape and rho_A=Tr_B |psi><psi|",
+      "acceptance": "S2 from sum(s^4)/(sum(s^2))^2 agrees with Tr rho_A^2; eigenvalues normalized and nonnegative",
+      "thresholds": {
+        "S2_atol": 1e-10,
+        "trace_atol": 1e-12,
+        "eigenvalue_slack": 1e-12
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-06",
+      "method": "RENYI",
+      "title": "Pure-state complement equality",
+      "fixture": {
+        "model": "chain",
+        "L": 6,
+        "U": 4,
+        "Nup": 3,
+        "Ndown": 3,
+        "subsystems": [
+          [
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "independent_oracle": "Same normalized pure-state Schmidt spectrum across A|B",
+      "acceptance": "S2(A)=S2(B), including unequal and noncontiguous subsets",
+      "thresholds": {
+        "S2_atol": 1e-10
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": "This identity is not imposed on a finite-temperature mixed state."
+    },
+    {
+      "id": "RENYI-07",
+      "method": "RENYI",
+      "title": "Empty subsystem and full thermal purity",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 4,
+        "beta": 2,
+        "mu_centered": 0,
+        "subsystems": [
+          "empty",
+          "all"
+        ]
+      },
+      "independent_oracle": "Empty purity 1; full purity Z(2beta)/Z(beta)^2 using exact same grand Hamiltonian",
+      "acceptance": "S2(empty)=0; S2(all)=-log[Z(2beta)/Z(beta)^2], generally positive at finite beta",
+      "thresholds": {
+        "S2_atol": 1e-10
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-08",
+      "method": "RENYI",
+      "title": "Fermionic subsystem sign and noncontiguous cut",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "Nup": 2,
+        "Ndown": 2,
+        "sitesA": [
+          1,
+          3
+        ],
+        "state": "complex seeded full-support vector"
+      },
+      "independent_oracle": "Explicit signed permutation from all-up/all-down bit basis to local interleaved tensor basis",
+      "acceptance": "rho_A and S2 agree with independent full-basis construction, including down-A crossing up-B parity",
+      "thresholds": {
+        "rho_atol": 1e-11,
+        "S2_atol": 1e-10
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-09",
+      "method": "RENYI",
+      "title": "Free-fermion correlation-matrix purity",
+      "fixture": {
+        "model": "chain",
+        "L": [
+          4,
+          8
+        ],
+        "U": 0,
+        "beta": [
+          1,
+          8
+        ],
+        "boundary": [
+          "pbc",
+          "apbc"
+        ],
+        "nA": "L/2"
+      },
+      "independent_oracle": "Eigenvalues nu of restricted C: S2=-sum log(nu^2+(1-nu)^2), both spins counted",
+      "acceptance": "Grover determinant and independent thermal full-Fock partial trace at L4 match analytic free formula",
+      "thresholds": {
+        "S2_atol": 1e-10
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/src/dqmc_kernel.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-10",
+      "method": "RENYI",
+      "title": "Interacting ED and DMRG ground-state entropy",
+      "fixture": {
+        "model": "chain",
+        "L": [
+          4,
+          8
+        ],
+        "U": [
+          2,
+          4
+        ],
+        "boundary": [
+          "pbc",
+          "apbc"
+        ],
+        "Nup": "L/2",
+        "Ndown": "L/2",
+        "nA": "L/2"
+      },
+      "independent_oracle": "Independent ED ground vector partial trace versus DMRG Schmidt singular values",
+      "acceptance": "Energy residual and state identity gates pass first; S2 agrees with matched ED",
+      "thresholds": {
+        "S2_atol": 1e-05,
+        "energy_atol": 1e-07
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T2",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-11",
+      "method": "RENYI",
+      "title": "Known finite-temperature and Trotter ensemble separation",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 4,
+        "beta": 16,
+        "dtau": 0.05,
+        "mu_centered": 0,
+        "nA": 2
+      },
+      "independent_oracle": "Independent full-Fock thermal density, asymmetric product density and fixed-N ground vector",
+      "acceptance": "Reproduce three distinct reference entropies; regression must retain distinctions",
+      "thresholds": {
+        "ground_S2": 0.7521220360017,
+        "thermal_S2": 0.7712028368091,
+        "trotter_S2": 0.7689951876109,
+        "atol": 5e-11
+      },
+      "execution_group": "renyi_suite",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/test/runtests.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-12",
+      "method": "RENYI",
+      "title": "Grover rank-one determinant lemma",
+      "fixture": {
+        "nC": "1:8",
+        "draws_per_size": 50,
+        "seed": "0x5eed"
+      },
+      "independent_oracle": "Dense determinants of g(G1+p qT,G2) and g(G1,G2)",
+      "acceptance": "determinant ratio equals 1+rT g^-1 p, r=(2G2-I)^T q; transpose not conjugate for this real implementation",
+      "thresholds": {
+        "atol": 5e-11,
+        "rtol": 5e-10
+      },
+      "execution_group": "renyi_rank1",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/validate_grover_rank1_update.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-13",
+      "method": "RENYI",
+      "title": "Single-proposal Grover tracker determinant and inverse",
+      "fixture": {
+        "N": "4:8",
+        "draws_per_size": 40,
+        "seed": "0x71ac",
+        "subsystem": "odd site indices"
+      },
+      "independent_oracle": "Explicit dense reconstruction and logabsdet for each proposed updated G1 block",
+      "acceptance": "At least 100 fast-path cases; proposal logdet and accepted tracker match independent dense result",
+      "thresholds": {
+        "proposal_atol": 5e-11,
+        "proposal_rtol": 5e-10,
+        "tracker_atol": 2e-09,
+        "tracker_rtol": 2e-08,
+        "minimum_fast_cases": 100
+      },
+      "execution_group": "renyi_rank1",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/validate_grover_rank1_update.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-14",
+      "method": "RENYI",
+      "title": "Sequential accepted Grover updates and rebuild clock",
+      "fixture": {
+        "N": 8,
+        "C": [
+          1,
+          3,
+          6,
+          8
+        ],
+        "updates": 16,
+        "seed": "0x5e91"
+      },
+      "independent_oracle": "Full Grover reconstruction after each accepted rank-one step",
+      "acceptance": "Track cumulative drift and determinant; periodic rebuild resets counter at registered cadence",
+      "thresholds": {
+        "atol": 2e-09,
+        "rtol": 2e-08
+      },
+      "execution_group": "renyi_rank1",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/validate_grover_rank1_update.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-15",
+      "method": "RENYI",
+      "title": "Rejected Grover proposal preserves accepted state",
+      "fixture": {
+        "fixture": "existing_rejection_fixture"
+      },
+      "independent_oracle": "Pre-proposal copied G1C, Grover matrix, inverse and logdet",
+      "acceptance": "Rejected candidate never mutates accepted tracker arrays",
+      "thresholds": {
+        "accepted_array_changes": 0
+      },
+      "execution_group": "renyi_rank1",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/validate_grover_rank1_update.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-16",
+      "method": "RENYI",
+      "title": "Explicit fallback on singular or ill-conditioned Grover matrix",
+      "fixture": {
+        "fixture": "existing_forced_fallback_and_illconditioned_cases"
+      },
+      "independent_oracle": "Dense trial reconstruction with logabsdet, no inverse shortcut",
+      "acceptance": "Unsafe inverse path disabled; accepted fallback matches dense state or explicit singular status",
+      "thresholds": {
+        "atol": 1e-11,
+        "rtol": 1e-10,
+        "false_usable_inverse_count": 0
+      },
+      "execution_group": "renyi_rank1",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/validate_grover_rank1_update.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-17",
+      "method": "RENYI",
+      "title": "Direct and optimized same-seed Markov trajectory",
+      "fixture": {
+        "fixture": "registered_same_seed_validation",
+        "lambda": "registered validation node",
+        "updates": "registered finite sequence"
+      },
+      "independent_oracle": "Direct full-Grover recomputation using identical proposals and RNG state",
+      "acceptance": "Acceptance decisions, HS fields, signs, Green matrices and next RNG outputs agree",
+      "thresholds": {
+        "green_atol": 2e-09,
+        "green_rtol": 2e-08,
+        "deltaG_atol": 2e-10,
+        "RNG_mismatches": 0
+      },
+      "execution_group": "renyi_rank1",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/validate_grover_rank1_update.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": "Agreement with baseline establishes optimization equivalence; independent physical oracles are separate tests."
+    },
+    {
+      "id": "RENYI-18",
+      "method": "RENYI",
+      "title": "Replica stream reproducibility and independence",
+      "fixture": {
+        "root_seeds": [
+          7,
+          1234
+        ],
+        "nodes": [
+          0,
+          1,
+          4,
+          8
+        ],
+        "replicas": [
+          1,
+          2
+        ]
+      },
+      "independent_oracle": "Specified deterministic derived_seed mapping and first RNG draws",
+      "acceptance": "Same tuple reproduces stream; distinct replica/node tuples have distinct derived seeds for registered set",
+      "thresholds": {
+        "reproducibility_mismatches": 0,
+        "registered_seed_collisions": 0
+      },
+      "execution_group": "renyi_suite",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/test/runtests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": "Distinct seeds are a construction check, not a statistical proof of independence."
+    },
+    {
+      "id": "RENYI-19",
+      "method": "RENYI",
+      "title": "Adjacent lambda-ratio telescoping and endpoint rules",
+      "fixture": {
+        "Ninc": [
+          1,
+          4,
+          8
+        ],
+        "synthetic_Zlambda": "positive exactly known sequence",
+        "nodes": "0:Ninc"
+      },
+      "independent_oracle": "Exact Rplus(k)=Z(k+1)/Z(k); Rminus(k)=Z(k-1)/Z(k)",
+      "acceptance": "Product of forward ratios equals Z1/Z0; S2=-sum logRplus; undefined endpoint columns rejected",
+      "thresholds": {
+        "ratio_atol": 1e-12,
+        "S2_atol": 1e-12,
+        "invalid_endpoint_acceptances": 0
+      },
+      "execution_group": "renyi_suite",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/test/runtests.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/summarize_grid.jl"
+      ],
+      "implementation_status": "existing_capability",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-20",
+      "method": "RENYI",
+      "title": "Bidirectional lambda consistency in Monte Carlo",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "beta": 4,
+        "dtau": 0.05,
+        "nA": 2,
+        "Ninc": 4,
+        "independent_root_seeds": 8
+      },
+      "independent_oracle": "Exact paired-node identity Rplus(k)Rminus(k+1)=1; full covariance retained when sharing data",
+      "acceptance": "Every registered product passes simultaneous equivalence interval +/-0.02 with adequate ESS",
+      "thresholds": {
+        "product_equivalence_margin": 0.02,
+        "minimum_ESS": 1000
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/run/run_lambda_node.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/summarize_grid.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T3",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-21",
+      "method": "RENYI",
+      "title": "Small interacting entropy versus exact replicated thermal target",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 2,
+        "beta": 2,
+        "dtau": 0.05,
+        "nA": 2,
+        "Ninc": [
+          4,
+          8
+        ]
+      },
+      "independent_oracle": "Full-Fock same finite-dtau density partial trace and/or exhaustive two-replica HS sums on shorter beta grid",
+      "acceptance": "Both lambda grids agree with same finite-dtau purity within +/-0.02 S2; low sign/poor overlap yields UNRESOLVED",
+      "thresholds": {
+        "entropy_equivalence_margin": 0.02,
+        "minimum_ESS": 1000
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/run/run_lambda_node.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T3",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-22",
+      "method": "RENYI",
+      "title": "Nonlinear entropy uncertainty and shared-node covariance",
+      "fixture": {
+        "synthetic_bins": true,
+        "ratio_values": "positive correlated numerator/denominator with exact finite fixture",
+        "repeat_ensembles": 200
+      },
+      "independent_oracle": "Independent delete-one-block jackknife of full entropy estimator and covariance-aware bootstrap across independent chains",
+      "acceptance": "Paired deterministic jackknife matches 1e-12; predeclared 99% interval coverage is compatible with binomial uncertainty; reject nonpositive or unresolved ratios",
+      "thresholds": {
+        "jackknife_atol": 1e-12,
+        "nominal_coverage": 0.99,
+        "negative_ratio_false_acceptances": 0
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/summarize_grid.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T1",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": "Do not take log(abs(ratio)) to conceal sign failure; do not silently drop nonfinite bins."
+    },
+    {
+      "id": "RENYI-23",
+      "method": "RENYI",
+      "title": "Strict raw-data schema and complete grid provenance",
+      "fixture": {
+        "mutations": [
+          "missing node",
+          "missing bin",
+          "duplicate tuple",
+          "wrong beta",
+          "wrong boundary",
+          "wrong root seed",
+          "NaN",
+          "invalid endpoint",
+          "mixed run_name"
+        ],
+        "valid_fixture": "existing strict CSV fixtures"
+      },
+      "independent_oracle": "Known complete configuration and immutable expected row-key set",
+      "acceptance": "All malformed variants fail before summary; complete fixture accepted; physical metadata preserved",
+      "thresholds": {
+        "false_valid_invalid_fixtures": 0,
+        "false_invalid_valid_fixtures": 0
+      },
+      "execution_group": "renyi_suite",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/test/runtests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-24",
+      "method": "RENYI",
+      "title": "Launcher resume and atomic-output integrity",
+      "fixture": {
+        "states": [
+          "absent pair",
+          "valid complete pair",
+          "partial pair",
+          "invalid pair",
+          "existing final reference output"
+        ],
+        "force": false
+      },
+      "independent_oracle": "Explicit filesystem fixture state machine and original file hashes",
+      "acceptance": "Schedule only absent valid work; skip complete pairs; halt on partial/invalid; never overwrite accepted raw/reference snapshots",
+      "thresholds": {
+        "unexpected_scheduled_jobs": 0,
+        "overwritten_existing_files": 0
+      },
+      "execution_group": "renyi_suite",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/test/runtests.jl"
+      ],
+      "implementation_status": "existing_test",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T0",
+      "uncertainty_policy": "DETERMINISTIC",
+      "notes": ""
+    },
+    {
+      "id": "RENYI-25",
+      "method": "RENYI",
+      "title": "Low-temperature three-method entropy bridge",
+      "fixture": {
+        "model": "chain",
+        "L": 4,
+        "U": 4,
+        "boundary": "pbc",
+        "beta": [
+          8,
+          16,
+          32,
+          64
+        ],
+        "dtau": [
+          0.05,
+          0.025
+        ],
+        "Nup": 2,
+        "Ndown": 2,
+        "nA": 2
+      },
+      "independent_oracle": "Full grand-canonical thermal ED at each beta plus fixed-N ED and DMRG ground state; exact gap/weight audit",
+      "acceptance": "At each beta compare DQMC with finite-dtau thermal target first. Ground comparison allowed only when thermal and Trotter bias each <=0.005; final S2 equivalence margin 0.02",
+      "thresholds": {
+        "thermal_bias_budget": 0.005,
+        "trotter_bias_budget": 0.005,
+        "final_entropy_margin": 0.02
+      },
+      "execution_group": "new_renyi_adapter",
+      "evidence": [
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+        "/tmp/advisor_renyi_evidence_20261022/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+      ],
+      "implementation_status": "planned_adapter",
+      "execution_status": "NOT_RUN",
+      "runtime_tier": "T3",
+      "uncertainty_policy": "SIMULTANEOUS_EQUIVALENCE",
+      "notes": "If charge/spin ground manifold differs or bias budget fails, bridge remains UNRESOLVED, not failed physics."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "p21_adapter_failure_audit_v1",
+  "generated_utc": "2026-10-22T19:22:35.532341+00:00",
+  "job_id": "6458532",
+  "status": "SETUP_FAILED_BEFORE_PROOFS",
+  "catalogue_id": "P21",
+  "catalogue_status": "NOT_RUN",
+  "slurm_state": "FAILED",
+  "slurm_exit_code": "1:0",
+  "elapsed": "00:01:02",
+  "stage": "strict stale-artifact assertion after cleanall; before observer rebuild or buffer/configuration proofs",
+  "leftover_path": "Prog/opt_time_dependent_mod.mod",
+  "evidence": "The cleanup log removes opt_time_dependent.mod; the subsequent strict guard reports actual remaining opt_time_dependent_mod.mod. Upstream cleanup misses that compiler module filename.",
+  "native_linkage_preflight": "PASS for original native executable only; not observer-proof completion",
+  "proofs_executed": {
+    "native_fixed_configuration": false,
+    "user_buffer_updates": false,
+    "external_statistical_comparison": false
+  },
+  "scope": "Setup/cleanup failure is not a scientific discrepancy and never a P21 PASS. Existing 35-question checkpoint is unaffected.",
+  "preservation": "Seven original UTF-8 text files copied with matching remote SHA256, plus SHA metadata and read-only Slurm status; no binary, library, symlink or compiled/source-tree copy retrieved.",
+  "source_release_archive_sha256": "755ce801cb4b60d08607121f6d1077421dca21c008fdb8b1373c58d99fc569d6",
+  "source_wrapper_sha256": "08724a0fb195b1c85fa4fe25fdb0c72e306821a03cf65edc7ecc90fc1c75f5f4",
+  "input_files": {
+    "alf_measurement_proof_v2_6458532.log": {
+      "sha256": "4363e67ca2f3b8e4199ea373b71c66c4473feb20f36f1252f78fb7ac420b2d52",
+      "bytes": 2074
+    },
+    "clean.log": {
+      "sha256": "f14f0e05a3af5c94da9f48a54e720478298977fc6b7547dfcecced61499de5b6",
+      "bytes": 4288
+    },
+    "configure.log": {
+      "sha256": "68784a1fa0d23b7f1b63b663b3ea09dfc75895df3df5b214dd21885056df7971",
+      "bytes": 322
+    },
+    "effective_build.txt": {
+      "sha256": "d4ed830861648abc9bee35ee97dd8efb08c74b1d5ce3697fdfab5f5335378ffc",
+      "bytes": 587
+    },
+    "overlay.log": {
+      "sha256": "8dba4b5c4a21f1449b679f19ecbeae8a142cf7d0ab8ef347a00d639d358c748d",
+      "bytes": 1769
+    },
+    "overlay_receipt.json": {
+      "sha256": "8dba4b5c4a21f1449b679f19ecbeae8a142cf7d0ab8ef347a00d639d358c748d",
+      "bytes": 1769
+    },
+    "p21_native_linkage_v2_attempt01.json": {
+      "sha256": "e3bd623ebc12215f71ec27ee90614d05711557be88e2598cf5e06563d84c7166",
+      "bytes": 1738
+    },
+    "remote_sha256.txt": {
+      "sha256": "1a2cbb627b746d3dfeca70ebbf7f19c6a32e7278ed3ad870d8eb44c09c1fd669",
+      "bytes": 1256
+    },
+    "slurm_status.txt": {
+      "sha256": "8af6bcfaac293163ea800f575aeac10f0d3e9f0eea51c9c87664b64b59f7911f",
+      "bytes": 109
+    }
+  },
+  "next_step": "Review separate v3 targeted removal of this one known module in the NEW copy, preserving strict assertion and all previous versions; no execution authorized by this audit."
+}

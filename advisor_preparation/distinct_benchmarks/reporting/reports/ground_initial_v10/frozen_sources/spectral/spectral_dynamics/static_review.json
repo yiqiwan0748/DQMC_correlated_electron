@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_NOT_RUN",
+  "numerical_physics_executed": false,
+  "job_submitted": false,
+  "earlier_tranches_or_user_sources_modified": false,
+  "python_syntax": "PASS; AST only",
+  "julia_syntax": "PASS; Meta.parseall only with Julia 1.12.6 syntax checker; execution pinned to Julia 1.12.1",
+  "shell_syntax": "PASS; bash -n",
+  "manifest_parse": "PASS",
+  "user_source_hashes": {
+    "ed_source_sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "thermal_source_sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+  },
+  "independent_review": {
+    "reviewer": "validation_design",
+    "status": "No blocking physics/API issue after final additions",
+    "checked": [
+      "Official QuSpin exp_op source/API and Ns-by-time output shape",
+      "Actual user ED application and basis embedding",
+      "Addition/removal frequencies and degeneracy-safe residue grouping",
+      "Fourier normalization, moments and full-Fock fermionic parity",
+      "Full-Fock cross-spin annihilation and mixed-adjoint CAR at frozen momenta [0,1]",
+      "Connected longitudinal-spin factor 1/2 and Fourier factor 1/sqrtL",
+      "Grand-canonical physical/centered chemical-potential conversion",
+      "Thermal Lehmann indices, bosonic KMS, equal-time endpoints and local-moment sum rule"
+    ],
+    "numerical_physics_executed": false
+  },
+  "scope": "Actual existing ED Hamiltonian/ground-state and thermal-density APIs, with additive observable/time adapters. Native DQMC dynamics not tested.",
+  "launch_owner": "root; one CPU, 3500 MB, ten-minute unmeasured cap; chooses serial scheduling"
+}

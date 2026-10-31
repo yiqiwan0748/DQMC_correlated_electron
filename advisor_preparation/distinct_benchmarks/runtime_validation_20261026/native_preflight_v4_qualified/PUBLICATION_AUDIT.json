@@ -1,0 +1,17 @@
+{
+  "schema": "P17_PUBLIC_QUALIFIED_NATIVE_PROJECTION_PRIVACY_AUDIT_V1",
+  "status": "PASS_RUNTIME_ONLY_NO_SCIENTIFIC_CREDIT",
+  "independent_check_count": 193,
+  "selected_manifest_sha256": "d161d12b3a8895c147fb7cbe3fd431510c0783fc7043ce1c9b22b93cb00cb540",
+  "independent_projection_review_receipt": {
+    "bytes": 18515,
+    "sha256": "5494c06d858cd0a6448de66877386789cc18438b111862bb9e649e1ad542f768",
+    "body": "PRIVATE_BODY_EXCLUDED"
+  },
+  "independent_actual_runtime_review_sha256": "ea8f8b6e9788edc4b46a5e6cc635e00fe1d0cd013ccb7f2454ad3fef8750bbd8",
+  "independent_actual_runtime_checks": 424,
+  "immutable_parent_files": 16,
+  "catalogue_rows_changed": 0,
+  "scientific_completions": 0,
+  "runtime_qualified_scope": "Exactnativeimport/metadataobservations andretainedPythonpreflightprocesses only; nopilot/fullscientificPASS."
+}

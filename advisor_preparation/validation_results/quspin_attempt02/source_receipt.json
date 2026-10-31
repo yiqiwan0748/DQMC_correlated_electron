@@ -1,0 +1,57 @@
+{
+  "oracle_implementation": "QuSpin Hamiltonian and fermionic partial trace; NumPy/SciPy dense spectral arithmetic",
+  "primary_sources": [
+    "https://quspin.github.io/QuSpin/examples/example6.html",
+    "https://quspin.github.io/QuSpin/generated/quspin.basis.spinful_fermion_basis_1d.html",
+    "https://arxiv.org/abs/1804.06782"
+  ],
+  "manifest_sha256": "2915162073afffc532de40a87439f1d2f3735ffdb92ab663de035bb15362e0d4",
+  "python_version": "3.11.11 (main, Dec 11 2024, 16:28:39) [GCC 11.2.0]",
+  "platform": "Linux-4.18.0-553.137.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "distributions": {
+    "quspin": "1.0.1",
+    "quspin-extensions": "0.1.8",
+    "parallel-sparse-tools": "0.2.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "installed_distribution_RECORD_sha256": {
+    "quspin": "1209d5760e265cf1dbd45f54590fd67a4a4808d1134671cad58e3880b2cdb59a",
+    "quspin-extensions": "618bc3ab6ecd0512c3c8235767c06628a63e0f78b28996474a782eb61319a02a",
+    "parallel-sparse-tools": "3ac88e1ba8534fd3deb669bfa8e123f3642b7609281f49e7f8898d3059b2f2d4",
+    "numpy": "5fc0a2bd405f5c190849e5142885725810bb61cb2bfbdf6294e83796d5950a5b",
+    "scipy": "485fe4ad92e86f03501d939dff29a16350947458d449264d313e506b3a47fde4"
+  },
+  "source_paths": {
+    "exporter": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/external_oracles/quspin_export.py",
+    "quspin_entry": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/quspin-venv/lib/python3.11/site-packages/quspin/__init__.py"
+  },
+  "source_sha256": {
+    "exporter": "3c469a7004e53c3dc360d503cf2de9bb6d2c4bb51eca1d4baeed8514ddad654c",
+    "quspin_entry": "bd85bbdcc80ec234b15db9b5b5bd47b13cdfc3006b17c49ede43fa39ddaa1199"
+  },
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "slurm_job_id": "6456511",
+  "user_implementation_imported": false,
+  "selfcheck": {
+    "analytic_dimer_energy_abs_error": 1.1102230246251565e-16,
+    "analytic_dimer_double_abs_error": 1.1102230246251565e-16,
+    "analytic_dimer_onebody_abs_error": 5.551115123125783e-17,
+    "analytic_dimer_Czz_abs_error": 2.7755575615628914e-17,
+    "analytic_dimer_S2_abs_error": 0.0
+  },
+  "elapsed_seconds": 0.6514586731791496,
+  "case_count": 80,
+  "ready_count": 80,
+  "unresolved_count": 0,
+  "status": "PASS_ORACLE_EXPORT",
+  "output_sha256": {
+    "oracle_results.jsonl": "d96e103ff4297c5ec539b2dc4fdc5a8e52b922e51ce8c81cb9836cbe6399cc87",
+    "oracle_values.toml": "12eb9b383888a45219b0edd0fbef85aab0fb7b1a4e2a7c701bcbf788238c2571"
+  },
+  "note": "ORACLE_READY means an independent reference is available; it is not a passing result for the user package."
+}

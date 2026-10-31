@@ -1,0 +1,52 @@
+Anaconda3 version 2024.06
+Collecting physics-tenpy==1.1.1 (from -r /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/tenpy/requirements.txt (line 1))
+  Downloading physics_tenpy-1.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (9.6 kB)
+Collecting numpy==2.4.6 (from -r /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/tenpy/requirements.txt (line 2))
+  Using cached numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting scipy==1.17.1 (from -r /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/tenpy/requirements.txt (line 3))
+  Using cached scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Downloading physics_tenpy-1.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (2.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 580.0 kB/s eta 0:00:00
+Using cached numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+Using cached scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+Installing collected packages: numpy, scipy, physics-tenpy
+Successfully installed numpy-2.4.6 physics-tenpy-1.1.1 scipy-1.17.1
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+After sweep 1 energy=-5.828376103599597  maxlinkdim=16 maxerr=5.09E-03 time=30.095
+After sweep 2 energy=-5.928759790071756  maxlinkdim=32 maxerr=9.58E-06 time=0.250
+After sweep 3 energy=-5.93008897653724  maxlinkdim=64 maxerr=1.33E-08 time=0.264
+After sweep 4 energy=-5.930092227366039  maxlinkdim=100 maxerr=9.72E-13 time=1.176
+After sweep 5 energy=-5.930092234144834  maxlinkdim=94 maxerr=9.02E-13 time=0.223
+After sweep 6 energy=-5.930092234160684  maxlinkdim=92 maxerr=7.73E-13 time=0.223
+After sweep 7 energy=-5.930092234160782  maxlinkdim=92 maxerr=6.70E-13 time=0.223
+After sweep 8 energy=-5.930092234160772  maxlinkdim=92 maxerr=6.70E-13 time=0.212
+After sweep 9 energy=-5.9300922341607665  maxlinkdim=92 maxerr=6.70E-13 time=0.224
+After sweep 10 energy=-5.930092234160776  maxlinkdim=92 maxerr=6.70E-13 time=0.224
+{
+  "schema": "tenpy_itensor_distinct_v1",
+  "manifest_sha256": "7e5e557648f764ef438cc1092b3d5bb2316c1fac035514b4576b86b7034d9b5e",
+  "rows": [
+    {
+      "id": "P11",
+      "status": "UNRESOLVED",
+      "reason": "Incomplete/pilot/failed execution; no scientific completion counted"
+    },
+    {
+      "id": "P12",
+      "status": "UNRESOLVED",
+      "reason": "Incomplete/pilot/failed execution; no scientific completion counted"
+    },
+    {
+      "id": "P15",
+      "status": "UNRESOLVED",
+      "reason": "Incomplete/pilot/failed execution; no scientific completion counted"
+    }
+  ],
+  "distinct_ideas_passed": 0,
+  "catalogue_ids": [
+    "P11",
+    "P12",
+    "P15"
+  ]
+}

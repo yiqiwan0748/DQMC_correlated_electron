@@ -1,0 +1,20 @@
+{
+  "schema": "PUBLIC_WEEKEND_LEAF_CLOSURE_AUDIT_V17",
+  "status": "PASS",
+  "ledger_sha256": "3f5c83a7566aa754dea836b7501de14f157acff25e9945b620c23e03013ee304",
+  "counts": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  },
+  "changed_ids": [
+    "X14",
+    "X19"
+  ],
+  "source_data_archives": 7,
+  "regular_UTF8_members": 164,
+  "all98other_rows_preserved": true,
+  "pilot_analysis_setup_credit": 0,
+  "producer_or_new_scientific_job_executed": false
+}

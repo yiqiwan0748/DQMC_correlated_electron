@@ -1,0 +1,69 @@
+{
+  "schema": "P13_RAYLEIGH_RECOMPARISON_PUBLIC_SCIENTIFIC_RECORD_V1",
+  "publication_status": "AUDITED_SAVED_ASSOCIATIONS_PUBLIC_RECORD",
+  "status": "PASS_PILOT_ZERO_CREDIT_PENDING_INDEPENDENT_AUDIT",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "original_comparison": {
+    "bytes": 2128652,
+    "sha256": "7186d7f51616e6e7886d41bd50b666317801882f882f33b84db379f2223cf9c3"
+  },
+  "projection_removed_top_level_fields": [
+    "runtime_before",
+    "runtime_after"
+  ],
+  "all_remaining_JSON_values_exact": true,
+  "reported_gates": {
+    "total": 8889,
+    "PASS": 8889,
+    "FAIL": 0
+  },
+  "original_failed_record_retained": "../p13_quench_pilot_precision_unresolved",
+  "complete_standalone_reproduction": false,
+  "files": {
+    "AUDIT.json": {
+      "bytes": 1513,
+      "sha256": "a9e98e1e83990ba976237a12df4e33ada8d98cb8d809db732246d2e4dbae2f26"
+    },
+    "README.md": {
+      "bytes": 4483,
+      "sha256": "076ee00968ba23d773dd003d759da485e7c90d5e9ac27a96d6b35ab398644910"
+    },
+    "comparison_scientific_projection.json": {
+      "bytes": 1338924,
+      "sha256": "e9c955a994947d6ccf267f120987ed6066c6ad747245a7b6d59ba7995d432008"
+    },
+    "source/PROTOCOL.json": {
+      "bytes": 9816,
+      "sha256": "a5057c8bcab56564890355a02ec63e0bbc760205d34d12039a00dbb841b7e222"
+    },
+    "source/comparator.py": {
+      "bytes": 49045,
+      "sha256": "ed2f0172df1fd361fde3cc6951feacc68118308c2f5c1f500c9919f5453a0ff0"
+    },
+    "source/evolution_bounds.py": {
+      "bytes": 6662,
+      "sha256": "dbfae6bcc8e98965160438911230f4cb6fc803583a7c895b052964bbd01fdbe9"
+    },
+    "source/inherited_p17_certificate.py": {
+      "bytes": 14086,
+      "sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    "source/native_producer_core.jl": {
+      "bytes": 9710,
+      "sha256": "fda7ec19080ef823f6000693fa78c7ca0a8da24ee0f204340fe85ad658515ff9"
+    },
+    "source/protocol_helpers.py": {
+      "bytes": 1523,
+      "sha256": "950525ba84b706d9e55824cebfb344484295a44f904ef3f652d364efd98b34a3"
+    },
+    "source/source_snapshot/compute_s2_itensor_dmrg.jl": {
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    "source/tenpy_producer_core.py": {
+      "bytes": 14971,
+      "sha256": "65835eb811f9f836cbccfc17a0e94d9de83056aadf48aff3baa8aad0f96ba99a"
+    }
+  }
+}

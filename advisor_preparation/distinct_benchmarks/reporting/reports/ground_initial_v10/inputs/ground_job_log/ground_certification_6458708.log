@@ -1,0 +1,159 @@
+manifest.toml: OK
+oracle_quspin.py: OK
+target.jl: OK
+compare.py: OK
+README.md: OK
+run.sbatch: OK
+pre_execution_receipt.json: OK
+Anaconda3 version 2024.06
+After sweep 1 energy=-1.7135927121224088  maxlinkdim=4 maxerr=1.13E-01 time=31.113
+After sweep 2 energy=-1.9297128191232682  maxlinkdim=8 maxerr=1.78E-02 time=0.761
+After sweep 3 energy=-2.0873312139465927  maxlinkdim=16 maxerr=0.00E+00 time=1.267
+After sweep 4 energy=-2.1016256142338907  maxlinkdim=16 maxerr=0.00E+00 time=0.018
+After sweep 5 energy=-2.1026691380907128  maxlinkdim=16 maxerr=0.00E+00 time=0.023
+After sweep 6 energy=-2.1027428731141775  maxlinkdim=16 maxerr=0.00E+00 time=0.028
+After sweep 7 energy=-2.1027480861307755  maxlinkdim=16 maxerr=0.00E+00 time=0.025
+After sweep 8 energy=-2.102748455286573  maxlinkdim=16 maxerr=0.00E+00 time=0.057
+After sweep 1 energy=-1.588574415102447  maxlinkdim=4 maxerr=9.45E-02 time=0.016
+After sweep 2 energy=-1.9220766484148992  maxlinkdim=8 maxerr=1.80E-02 time=0.023
+After sweep 3 energy=-2.086644717498711  maxlinkdim=16 maxerr=0.00E+00 time=0.018
+After sweep 4 energy=-2.1014952071012925  maxlinkdim=16 maxerr=0.00E+00 time=0.023
+After sweep 5 energy=-2.10265411743592  maxlinkdim=16 maxerr=0.00E+00 time=0.055
+After sweep 6 energy=-2.1027413761703873  maxlinkdim=16 maxerr=0.00E+00 time=0.023
+After sweep 7 energy=-2.102747947275425  maxlinkdim=16 maxerr=0.00E+00 time=0.022
+After sweep 8 energy=-2.102748442955731  maxlinkdim=16 maxerr=0.00E+00 time=0.022
+After sweep 1 energy=-0.6457733895763065  maxlinkdim=4 maxerr=1.43E-01 time=0.044
+After sweep 2 energy=-1.842094817511325  maxlinkdim=8 maxerr=4.89E-02 time=0.052
+After sweep 3 energy=-2.1021638867205965  maxlinkdim=16 maxerr=0.00E+00 time=0.021
+After sweep 4 energy=-2.102711645468557  maxlinkdim=16 maxerr=0.00E+00 time=0.020
+After sweep 5 energy=-2.10274526875787  maxlinkdim=16 maxerr=0.00E+00 time=0.024
+After sweep 6 energy=-2.1027481981854272  maxlinkdim=16 maxerr=0.00E+00 time=0.041
+After sweep 7 energy=-2.1027484578470172  maxlinkdim=16 maxerr=0.00E+00 time=0.023
+After sweep 8 energy=-2.1027484811465795  maxlinkdim=16 maxerr=0.00E+00 time=0.023
+After sweep 1 energy=-1.1267730649531336  maxlinkdim=4 maxerr=1.15E-01 time=0.043
+After sweep 2 energy=-1.9284639787505293  maxlinkdim=8 maxerr=1.92E-02 time=0.047
+After sweep 3 energy=-2.087559509950342  maxlinkdim=16 maxerr=0.00E+00 time=0.028
+After sweep 4 energy=-2.1015034288570025  maxlinkdim=16 maxerr=0.00E+00 time=0.028
+After sweep 5 energy=-2.102649293220299  maxlinkdim=16 maxerr=0.00E+00 time=0.024
+After sweep 6 energy=-2.102740570026329  maxlinkdim=16 maxerr=0.00E+00 time=0.035
+After sweep 7 energy=-2.102747850649738  maxlinkdim=16 maxerr=0.00E+00 time=0.018
+After sweep 8 energy=-2.1027484327675765  maxlinkdim=16 maxerr=0.00E+00 time=0.019
+{
+  "schema": "ground_certification_v1",
+  "manifest_sha256": "96e4d336d4cd82b485d0b4c4796caec26db5ede4688012cee692f2e747d5236a",
+  "rows": [
+    {
+      "id": "X09",
+      "status": "UNRESOLVED",
+      "max_abs_errors": {
+        "Hamiltonian": 0.0,
+        "MPO_qn_Hamiltonian": 6.661338147750939e-16,
+        "MPO_dense_Hamiltonian": 6.661338147750939e-16,
+        "MPO_qn_max_imaginary": 0.0,
+        "MPO_dense_max_imaginary": 0.0,
+        "physical_energy": 8.881784197001252e-16,
+        "physical_second_moment": 2.842170943040401e-14,
+        "physical_variance": 2.842170943040401e-14,
+        "challenge_energy_vs_source": 6.661338147750939e-16
+      },
+      "eligibility_reasons": [
+        "charge_density_wave: native DMRG variance unresolved",
+        "neel: native DMRG variance unresolved",
+        "shuffled: native DMRG variance unresolved"
+      ],
+      "candidate_certificates": [
+        {
+          "label": "neel",
+          "kind": "native_dmrg",
+          "external_ground_fidelity": 0.9999999095019717,
+          "external_energy_excess": 2.817548461209185e-08,
+          "variance": 1.856057885163409e-08,
+          "low_variance_gate_pass": false,
+          "external_ground_certificate_pass": false
+        },
+        {
+          "label": "charge_density_wave",
+          "kind": "native_dmrg",
+          "external_ground_fidelity": 0.9999998703715703,
+          "external_energy_excess": 4.05063276254225e-08,
+          "variance": 2.8478204683324293e-08,
+          "low_variance_gate_pass": false,
+          "external_ground_certificate_pass": false
+        },
+        {
+          "label": "spin_domains",
+          "kind": "native_dmrg",
+          "external_ground_fidelity": 0.9999999928247536,
+          "external_energy_excess": 2.3154775874445477e-09,
+          "variance": 2.316166813898235e-09,
+          "low_variance_gate_pass": true,
+          "external_ground_certificate_pass": true
+        },
+        {
+          "label": "shuffled",
+          "kind": "native_dmrg",
+          "external_ground_fidelity": 0.9999998381513738,
+          "external_energy_excess": 5.0694482833790744e-08,
+          "variance": 3.5563285649686804e-08,
+          "low_variance_gate_pass": false,
+          "external_ground_certificate_pass": false
+        },
+        {
+          "label": "first_excited_eigenvector",
+          "kind": "manufactured_excited_mps",
+          "external_ground_fidelity": 3.27408752990026e-18,
+          "external_energy_excess": 0.2963246316389554,
+          "variance": 0.0,
+          "low_variance_gate_pass": true,
+          "external_ground_certificate_pass": false
+        },
+        {
+          "label": "highest_eigenvector",
+          "kind": "manufactured_excited_mps",
+          "external_ground_fidelity": 1.1050292098706027e-18,
+          "external_energy_excess": 12.205496966924137,
+          "variance": -2.842170943040401e-14,
+          "low_variance_gate_pass": true,
+          "external_ground_certificate_pass": false
+        }
+      ],
+      "scope": "Four actual native-DMRG starts must be independently ground certified. Two manufactured excited MPS diagnostic states must be rejected; they do not demonstrate natural optimizer failure."
+    },
+    {
+      "id": "X12",
+      "status": "PASS",
+      "max_abs_errors": {
+        "analytic_canonical_eigenvalues": 8.881784197001252e-16,
+        "analytic_energy": 8.881784197001252e-16,
+        "analytic_trace": 4.440892098500626e-16,
+        "analytic_Nmean": 8.881784197001252e-16,
+        "analytic_Czz": 0.0,
+        "analytic_connected_Czz": 2.7755575615628914e-17,
+        "analytic_distance_to_equal_ground": 4.440892098500626e-16,
+        "analytic_spin_z_means": 1.1102230246251565e-16,
+        "analytic_spin_xyz_means": 1.1102230246251565e-16,
+        "analytic_spectrum_L1": 9.097468326486019e-16,
+        "analytic_purity": 4.440892098500626e-16,
+        "analytic_S2": 8.881784197001252e-16,
+        "cross_energy": 1.3322676295501878e-15,
+        "cross_trace": 2.220446049250313e-16,
+        "cross_Nmean": 8.881784197001252e-16,
+        "cross_spin_z_means": 1.6653345369377348e-16,
+        "cross_spin_xyz_means": 1.6653345369377348e-16,
+        "cross_Czz": 0.0,
+        "cross_connected_Czz": 4.163336342344337e-17,
+        "cross_distance_to_equal_ground": 3.3306690738754696e-16,
+        "cross_purity": 8.881784197001252e-16,
+        "cross_S2": 8.881784197001252e-16,
+        "cross_spectrum_L1": 5.689893001203926e-16
+      },
+      "eligibility_reasons": [],
+      "prescription_count": 10,
+      "scope": "Canonical total-N3 interacting dimer; pure vector, coherent spin rotation, equal ground mixture, basis-rotated mixture and finite-beta trace each compared with its own oracle. No arbitrary eigenvector gauge is compared."
+    }
+  ],
+  "distinct_ideas_passed": 1,
+  "target_sha256": "f5b2d115cd127522bebb2fdd232f96ab57bfe3ff3d496c361947a60f34f6bb42",
+  "oracle_sha256": "c41d18eba752608b6b7a415ec3736fbafcc4bff854c267d89ca28c20d6fbde67",
+  "comparator_sha256": "46a01ccf16265b704bf297634f55a654f2996d32cd0f5cd2fdf502b87f64b938"
+}

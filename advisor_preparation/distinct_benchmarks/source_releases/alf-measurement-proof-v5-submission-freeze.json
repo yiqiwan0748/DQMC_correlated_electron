@@ -1,0 +1,39 @@
+{
+  "schema": "p21_proof_submission_freeze_v5",
+  "created_utc": "2026-10-22T20:09:11.949525+00:00",
+  "status": "FROZEN_INDEPENDENTLY_REVIEWED_NOT_SUBMITTED_NOT_EXECUTED",
+  "catalogue_status": "NOT_RUN_AS_DEFINED",
+  "scientific_completions": 0,
+  "archive_sha256": "7b304bef60801ba71ede97117d26a49f0ab71ec14e7d3ac0c5fff26af7a4103d",
+  "wrapper_sha256": "27ffa617b50b4191197585d28ab7d815122240020f92c88d34fee088123b0ddb",
+  "inner_wrapper_sha256": "a204531d417347a9b2a1688adcc34143520e7b58b1b7cfb0165e3a32131e626b",
+  "files": {
+    "postprocessing/alf_measurement_proof_v5.sbatch": "27ffa617b50b4191197585d28ab7d815122240020f92c88d34fee088123b0ddb",
+    "alf_preparation/measurement_execution_plan_v5/PLAN.md": "3bd70ff5a64c0d3da41eb56726758764ac3df2534ccb6c9dc84b058d64a9e989",
+    "alf_preparation/measurement_execution_plan_v5/bundle_receipt.json": "131fb95f7a606c38d13a57173e56df380dc5c9b229e9ebdbcc5b3144fdba0cf1",
+    "alf_preparation/measurement_execution_plan_v5/alf-measurement-observers-v5-source.tar.gz": "7b304bef60801ba71ede97117d26a49f0ab71ec14e7d3ac0c5fff26af7a4103d",
+    "alf_preparation/measurement_preparation_v5/pre_execution_receipt.json": "6c85b6f6f968485043f654b524edd21331b0cd0a6da37b91b129695a416b33b8",
+    "alf_preparation/measurement_execution_plan_v5/independent_startup_seed_review.json": "cb6a7f2fceb59c0b06a36a2ef674c46c4560232a5d9f6163c6e0f57b6ab9ea0a",
+    "alf_preparation/measurement_execution_plan_v5/static_review_receipt.json": "189e5569da832e4b01b8ed9121bfadac6d842ea86327a3e1e802f4a26e7c8bd0"
+  },
+  "native_startup_seed": 20261022,
+  "seed_sha256": "622c1d1526b4244f434120df690f5c81f1d475e308ad99726fb89370a4f1e7c4",
+  "required_dependency": "afterany:6458711",
+  "root_fresh_resource_check_and_announcement_EDT_checkpoint_required": true,
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "unmeasured_runtime_estimate_minutes": [
+    2,
+    6
+  ],
+  "remote_paths": {
+    "archive": "source_releases/alf-measurement-observers-v5-source.tar.gz",
+    "extract_root": "source/p21_measurement_proof_v5",
+    "result_root": "results/p21_adapter_proof_v5_attempt01",
+    "wrapper": "source/distinct_benchmarks/postprocessing/alf_measurement_proof_v5.sbatch",
+    "log_candidate": "logs/alf_measurement_proof_v5_%j.log"
+  },
+  "submissions_by_preparing_agent": 0,
+  "all_v1_v2_v3_v4_preserved": true
+}

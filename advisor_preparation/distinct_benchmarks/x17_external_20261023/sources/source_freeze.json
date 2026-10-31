@@ -1,0 +1,44 @@
+{
+  "schema": "X17_SOURCE_FREEZE_V1",
+  "release": "orbital_entanglement_v1",
+  "created_utc": "2026-10-23T18:22:21.528759+00:00",
+  "catalogue_ids": [
+    "X17"
+  ],
+  "status": "FROZEN_NOT_EXECUTED",
+  "archive": "orbital-entanglement-v1-source.tar.gz",
+  "archive_sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958",
+  "archive_bytes": 48726,
+  "files": {
+    "PROTOCOL.md": "229bdde7ca2b2acb9b169bd2af50b170259416d296715371631d66db91736ad1",
+    "README.md": "9a48720a18efa35235193c35fed5312eb91fe624ccc6aba83b0843364333acf2",
+    "SHA256SUMS": "18be5ef442271ee2cabb155ca3f0354d8d702691fbb3b2ea2a1dcfd727a38450",
+    "admit_production.py": "2908faebf20e8cac85baeeff026f1f2dd1a11b05db16fcc937876520171dbd58",
+    "audit_pilot.py": "bbd479f0e3a028f6c6d122ad2ad7e9aa24c4c55d8ed21aacbc5eee8de0ec7766",
+    "catalogue_X17.json": "edfab71e23503416ba99a8a056de5005f080841232330b5020875173fda15c0d",
+    "compare.py": "43ebd1bc62e2c9f6e8b189d5f647e03c5dfe79bc1ea69260cc3938a059158b16",
+    "freeze_release.py": "5a5bc3dd5e77725cb821ba0306451e600a5f7cc9ac6ed1a831e21968ab7e5097",
+    "manifest.toml": "c1e6a63fc78d839c969eed8addb930ffd1f1e0c37dd5b8cb6b853014e87526cc",
+    "native_source_pins.json": "e030002519ff8d95a698e9254e9a46dea517355c2fc92fa2b427fd33fcf5d24c",
+    "oracle_quspin.py": "8d5f8253d88777ad1dd928e6b9fe0e50297ae2170aefb0fc50637a529670bf8c",
+    "pilot.sbatch": "e9ddee8eae428e420ec0cca8db06eef42a616ae6e8136db1d2a04a914d96a6ed",
+    "production.sbatch": "b4f0c81eada1a5f17a49d3018c47e2995fca5a4bb82e30f6ee08f2f8f3554e0b",
+    "reference_library_pins.json": "734f5adc84fd931b56b7274d67b1ed9f7c724bdc90e454dfc863696a3140d888",
+    "run_campaign.py": "fa803f2a3009e082ace5e2a0822321b3348491140c8d1931f48dbe8ed4ca7834",
+    "source_snapshot/analysis/compute_s2_ed.jl": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "source_snapshot/scripts/two_orbital_open_cluster_ed.jl": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751",
+    "source_snapshot/src/noninteracting.jl": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568",
+    "source_snapshot/src/realspace_kinetic.jl": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6",
+    "target.jl": "32f200f3ee9c2875b429f64d4b30bf686145f9208f73b8ba2fe4b590876af018"
+  },
+  "native_source_sha256": {
+    "scripts/two_orbital_open_cluster_ed.jl": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751",
+    "src/noninteracting.jl": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568",
+    "src/realspace_kinetic.jl": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6",
+    "analysis/compute_s2_ed.jl": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+  },
+  "reference_library_pins_sha256": "734f5adc84fd931b56b7274d67b1ed9f7c724bdc90e454dfc863696a3140d888",
+  "all_modes": "100644",
+  "runtime_binaries_included": false,
+  "scientific_jobs_submitted": false
+}

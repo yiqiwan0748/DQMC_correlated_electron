@@ -1,0 +1,3 @@
+ALF_FC=gfortran
+ALF_LIB=/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/libqrref/libqrref.a
+ALF_FLAGS_PROG=-std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY

@@ -1,0 +1,24 @@
+{
+  "job_id": 6458253,
+  "scope": "Only scientific TOML/JSON/TXT pilot receipts and named Slurm log; no binary or private files",
+  "remote_sha256": {
+    "L12_half_coarse.toml": "eda07401bc9ce62a4602c159c9312bb880caf74911b4d2a16f50057d7382cf41",
+    "L12_half_refined.toml": "ead31075a8ec132171b2c2d1cb57737c4a96d38401eeb725e8f5f9e339d3662e",
+    "L12_minus_coarse.toml": "ff145ac4c330a1ddad5be1e100c5204beefdc9e22e29b84761663dd6ea3bb5de",
+    "L12_minus_refined.toml": "9518b08ce0011951bf6a0c55f664cd77630d6fd58c60bbf426f4f6dc5e02c16e",
+    "L12_plus_coarse.toml": "094d73e8637513ab8898ca64388f77df0882ec610eb6cf304bd604a84e6e70df",
+    "L12_plus_refined.toml": "038f4049795730baba6fb119452ad77cc9d9b34f4e375dd98f644d349c2c9bb3",
+    "L8_half_coarse.toml": "7c63f81fa251c5e0181a21ea99cba61b85567f00819820b7a716bc93aeef0821",
+    "L8_half_refined.toml": "10c482876b01fcbfef18ce6d04c63f2351cf58073a7a67ee3af2c2a19be30560",
+    "L8_minus_coarse.toml": "108537495a8aabbae5be95bd6a45e40095d813c5ea45dce51c6bc01592f8fba8",
+    "L8_minus_refined.toml": "80780465f373bc494cb50fcc87872ad217635371ee54ed641216a71ce0d06d61",
+    "L8_plus_coarse.toml": "d2c6baa58226b13309b656968109208cb8bc0b7b88e5d709c6977e4b9cd0043b",
+    "L8_plus_refined.toml": "e915db86f642949e366070e7611465a3ba8d222606ab74391f025005a1ab01ed",
+    "target.toml": "dfd5f494f476c5063317eb13599222944b0994a6bf983b44b9ca0ff26697b723",
+    "oracle.json": "ba0e05a60b82623a10c41a7cddcb4efccf335c9c3ee627c2495cb75de084b2ab",
+    "summary.json": "1ac938a6d19e2269743a4d7eed34a1ff37c687c311c63e3ef32bf3fbd6d0e779",
+    "oracle.resources.txt": "01fffd0cc762ac8aa175b0132ade4511b61a4053453b1597f1f0d906ec7c207a",
+    "target.resources.txt": "0b4827b1db2ab1d97e6cb84da2c1a8611d0aae966f79a2e028427a5f4f63e072",
+    "bethe_pilot_6458253.log": "b3f9baeaec248f4e6ae0b799b6cab0931ceb589217f2b42a94549c7ffdbe3264"
+  }
+}

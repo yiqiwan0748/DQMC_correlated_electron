@@ -1,0 +1,79 @@
+candidate_sha256 = "016c0438d6f0df62c08551d87df79699a8e804b14d3ab235359269ca83ecd5e1"
+oracle_sha256 = "709a1a8303ecde7803283b7392e8fa7844ad4752c7c0ead7f3525cc5f1a0828b"
+energy = -2.1027484834620633
+source_sha256 = "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd"
+status = "PASS"
+values = [0.37697628110284237, 0.3769762811028425, 0.19215599964073338, 0.30169827799638194]
+id = "P16"
+old_values = [0.3769762811028424, 0.3769762811028425, 0.18328212068756122, 0.25441734656873716]
+scope = "Actual frozen user ED ground state plus isolated candidate regrouping_v2 adapter; canonical source unchanged"
+maximum_absolute_error = 2.7755575615628914e-16
+ground_residual = 2.0430565126387644e-14
+oracle_values = [0.3769762811028421, 0.3769762811028422, 0.19215599964073315, 0.30169827799638216]
+job_id = "6457709"
+driver_sha256 = "faff62239befc076d4ee1c36e39edc4745ace196151fc58f91e8efb0a6ee13cf"
+
+[[all_subset_purities]]
+sites = []
+old_purity = 1.0000000000000004
+corrected_purity = 1.0000000000000004
+[[all_subset_purities]]
+sites = [0]
+old_purity = 0.3769762811028424
+corrected_purity = 0.37697628110284237
+[[all_subset_purities]]
+sites = [1]
+old_purity = 0.3769762811028425
+corrected_purity = 0.3769762811028424
+[[all_subset_purities]]
+sites = [0, 1]
+old_purity = 0.4713652367002053
+corrected_purity = 0.4713652367002053
+[[all_subset_purities]]
+sites = [2]
+old_purity = 0.3769762811028425
+corrected_purity = 0.3769762811028425
+[[all_subset_purities]]
+sites = [0, 2]
+old_purity = 0.18328212068756122
+corrected_purity = 0.19215599964073338
+[[all_subset_purities]]
+sites = [1, 2]
+old_purity = 0.471365236700204
+corrected_purity = 0.47136523670020397
+[[all_subset_purities]]
+sites = [0, 1, 2]
+old_purity = 0.3769762811028424
+corrected_purity = 0.3769762811028424
+[[all_subset_purities]]
+sites = [3]
+old_purity = 0.3769762811028426
+corrected_purity = 0.37697628110284254
+[[all_subset_purities]]
+sites = [0, 3]
+old_purity = 0.4713652367002041
+corrected_purity = 0.47136523670020397
+[[all_subset_purities]]
+sites = [1, 3]
+old_purity = 0.18328212068756122
+corrected_purity = 0.19215599964073338
+[[all_subset_purities]]
+sites = [0, 1, 3]
+old_purity = 0.37697628110284254
+corrected_purity = 0.37697628110284254
+[[all_subset_purities]]
+sites = [2, 3]
+old_purity = 0.47136523670020536
+corrected_purity = 0.4713652367002053
+[[all_subset_purities]]
+sites = [0, 2, 3]
+old_purity = 0.3769762811028425
+corrected_purity = 0.3769762811028425
+[[all_subset_purities]]
+sites = [1, 2, 3]
+old_purity = 0.3769762811028424
+corrected_purity = 0.3769762811028424
+[[all_subset_purities]]
+sites = [0, 1, 2, 3]
+old_purity = 1.0000000000000002
+corrected_purity = 1.0000000000000002

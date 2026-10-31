@@ -1,0 +1,1126 @@
+{
+  "schema": "BETHE_L48_OBSERVER_DIAGNOSTIC_SEMANTICS_V1",
+  "created_utc": "2026-10-23T19:24:38.377273+00:00",
+  "status": "SOURCE_SEMANTICS_IDENTIFIED",
+  "ITensorMPS_version": "0.4.1",
+  "source_sha256": {
+    "src/observer.jl": "0a7997815ddd0c1f42af052f98d7512e671c97d84df92a138eaf743ff131944a",
+    "src/dmrg.jl": "f3a9a9963898e468c140f49c0ad535aa49a8d488aff0213183bcdf36c6d8cd4a",
+    "Project.toml": "07825277582d287221b1b3fbb7ae07b84c4ae138d170c6ac0cf7e7c54c07d0b7"
+  },
+  "source_inventory_sha256": "1a263dad644a986af255bbfa3f134acc8946a3c3fe93bf6a57f8bb42feac4e4d",
+  "raw_target_sha256": "804ee52cd1536b714fb4612ba53aca767b206f3dd2a7928da2ab672b985191c5",
+  "raw_log_sha256": "32d3494031f956e9524c2cf5aebb65329d549c326bed566e053165dd3a514ca1",
+  "frozen_target_source_sha256": "e3f5d54d6fe9ae60dcd40d8beffb167e1a077c51ff6bb10cc2f9f43f87a439d2",
+  "findings": [
+    "Installed DMRGObserver.measure! records truncerrors only under half_sweep==2, initialized at bondN\u22121 and maximized across that leftward half sweep.",
+    "Installed dmrg resets maxtruncerr once before BOTH half sweeps, updates it after every bond and prints that full-sweep maximum.",
+    "Frozen pilot stores truncerrors(observer), so final_truncerr is the final LEFTWARD-half maximum, not the console maximum over both passes. Console values are additionally rounded to3significant digits.",
+    "This is a diagnostic-semantics distinction. Original source, raw values and gates remain unchanged; the complete pilot audit applies their frozen stored-observer gate honestly.",
+    "Charged-sector energy variance, particle-hole and refinement failures remain regardless of truncation interpretation. No retry, changed gate, source repair or larger-size admission is proposed."
+  ],
+  "line_references": {
+    "observer.jl": [
+      147,
+      154,
+      161,
+      175
+    ],
+    "dmrg.jl": [
+      204,
+      206,
+      218,
+      294,
+      324,
+      340
+    ],
+    "pilot_target.jl": [
+      51,
+      57,
+      64
+    ]
+  },
+  "all_six_rows": [
+    {
+      "sector": "half",
+      "arm": "coarse",
+      "sweeps": 18,
+      "stored_final_left_half_sweep_max": 1.530191144226982e-09,
+      "console_final_both_half_sweeps_max_rounded": "1.53E-09",
+      "ratio_console_rounded_to_stored": 0.9998750847384635,
+      "variance_per_site": 3.277190074868486e-08
+    },
+    {
+      "sector": "half",
+      "arm": "refined",
+      "sweeps": 24,
+      "stored_final_left_half_sweep_max": 8.060426532375278e-11,
+      "console_final_both_half_sweeps_max_rounded": "8.06E-11",
+      "ratio_console_rounded_to_stored": 0.9999470831508029,
+      "variance_per_site": 3.492004907457158e-09
+    },
+    {
+      "sector": "minus",
+      "arm": "coarse",
+      "sweeps": 18,
+      "stored_final_left_half_sweep_max": 3.602889451892661e-09,
+      "console_final_both_half_sweeps_max_rounded": "7.81E-08",
+      "ratio_console_rounded_to_stored": 21.677045894087232,
+      "variance_per_site": 7.694324399191525e-05
+    },
+    {
+      "sector": "minus",
+      "arm": "refined",
+      "sweeps": 24,
+      "stored_final_left_half_sweep_max": 1.0105266100977475e-09,
+      "console_final_both_half_sweeps_max_rounded": "1.28E-09",
+      "ratio_console_rounded_to_stored": 1.266666297759528,
+      "variance_per_site": 1.4195310408619358e-08
+    },
+    {
+      "sector": "plus",
+      "arm": "coarse",
+      "sweeps": 18,
+      "stored_final_left_half_sweep_max": 6.284017559125991e-08,
+      "console_final_both_half_sweeps_max_rounded": "6.28E-08",
+      "ratio_console_rounded_to_stored": 0.9993606702896373,
+      "variance_per_site": 2.132996222314887e-06
+    },
+    {
+      "sector": "plus",
+      "arm": "refined",
+      "sweeps": 24,
+      "stored_final_left_half_sweep_max": 6.446556593584387e-10,
+      "console_final_both_half_sweeps_max_rounded": "1.91E-09",
+      "ratio_console_rounded_to_stored": 2.9628220465803894,
+      "variance_per_site": 8.88769520202004e-08
+    }
+  ],
+  "original_sweep_groups": [
+    [
+      {
+        "sweep": 1,
+        "energy": -23.68501058214296,
+        "maxdim": 16,
+        "console_maxerr_text": "2.67E-03",
+        "console_maxerr": 0.00267,
+        "seconds": 27.224
+      },
+      {
+        "sweep": 2,
+        "energy": -25.896088291566755,
+        "maxdim": 32,
+        "console_maxerr_text": "8.38E-06",
+        "console_maxerr": 8.38e-06,
+        "seconds": 2.081
+      },
+      {
+        "sweep": 3,
+        "energy": -26.716552396499342,
+        "maxdim": 64,
+        "console_maxerr_text": "1.55E-07",
+        "console_maxerr": 1.55e-07,
+        "seconds": 3.292
+      },
+      {
+        "sweep": 4,
+        "energy": -26.975088589793604,
+        "maxdim": 128,
+        "console_maxerr_text": "2.27E-09",
+        "console_maxerr": 2.27e-09,
+        "seconds": 5.135
+      },
+      {
+        "sweep": 5,
+        "energy": -27.081070936879815,
+        "maxdim": 256,
+        "console_maxerr_text": "7.41E-11",
+        "console_maxerr": 7.41e-11,
+        "seconds": 7.624
+      },
+      {
+        "sweep": 6,
+        "energy": -27.127024722545425,
+        "maxdim": 256,
+        "console_maxerr_text": "1.64E-10",
+        "console_maxerr": 1.64e-10,
+        "seconds": 8.42
+      },
+      {
+        "sweep": 7,
+        "energy": -27.149413685504598,
+        "maxdim": 256,
+        "console_maxerr_text": "1.94E-10",
+        "console_maxerr": 1.94e-10,
+        "seconds": 8.296
+      },
+      {
+        "sweep": 8,
+        "energy": -27.16116446539365,
+        "maxdim": 256,
+        "console_maxerr_text": "2.47E-10",
+        "console_maxerr": 2.47e-10,
+        "seconds": 8.12
+      },
+      {
+        "sweep": 9,
+        "energy": -27.16758119909456,
+        "maxdim": 256,
+        "console_maxerr_text": "6.75E-10",
+        "console_maxerr": 6.75e-10,
+        "seconds": 8.329
+      },
+      {
+        "sweep": 10,
+        "energy": -27.170707238128593,
+        "maxdim": 256,
+        "console_maxerr_text": "1.14E-09",
+        "console_maxerr": 1.14e-09,
+        "seconds": 8.28
+      },
+      {
+        "sweep": 11,
+        "energy": -27.172093222330716,
+        "maxdim": 256,
+        "console_maxerr_text": "1.32E-09",
+        "console_maxerr": 1.32e-09,
+        "seconds": 8.054
+      },
+      {
+        "sweep": 12,
+        "energy": -27.172605882429263,
+        "maxdim": 256,
+        "console_maxerr_text": "6.09E-10",
+        "console_maxerr": 6.09e-10,
+        "seconds": 8.249
+      },
+      {
+        "sweep": 13,
+        "energy": -27.1728307723693,
+        "maxdim": 256,
+        "console_maxerr_text": "3.36E-09",
+        "console_maxerr": 3.36e-09,
+        "seconds": 7.933
+      },
+      {
+        "sweep": 14,
+        "energy": -27.172863450143044,
+        "maxdim": 256,
+        "console_maxerr_text": "1.25E-09",
+        "console_maxerr": 1.25e-09,
+        "seconds": 8.568
+      },
+      {
+        "sweep": 15,
+        "energy": -27.17287070929781,
+        "maxdim": 256,
+        "console_maxerr_text": "2.74E-09",
+        "console_maxerr": 2.74e-09,
+        "seconds": 7.871
+      },
+      {
+        "sweep": 16,
+        "energy": -27.172871717570317,
+        "maxdim": 256,
+        "console_maxerr_text": "2.56E-09",
+        "console_maxerr": 2.56e-09,
+        "seconds": 7.979
+      },
+      {
+        "sweep": 17,
+        "energy": -27.172871756673047,
+        "maxdim": 256,
+        "console_maxerr_text": "1.58E-09",
+        "console_maxerr": 1.58e-09,
+        "seconds": 8.266
+      },
+      {
+        "sweep": 18,
+        "energy": -27.172871758158347,
+        "maxdim": 256,
+        "console_maxerr_text": "1.53E-09",
+        "console_maxerr": 1.53e-09,
+        "seconds": 7.772
+      }
+    ],
+    [
+      {
+        "sweep": 1,
+        "energy": -24.54127386583892,
+        "maxdim": 16,
+        "console_maxerr_text": "3.62E-03",
+        "console_maxerr": 0.00362,
+        "seconds": 1.222
+      },
+      {
+        "sweep": 2,
+        "energy": -26.454991913511204,
+        "maxdim": 32,
+        "console_maxerr_text": "3.90E-06",
+        "console_maxerr": 3.9e-06,
+        "seconds": 2.044
+      },
+      {
+        "sweep": 3,
+        "energy": -26.768867848321246,
+        "maxdim": 64,
+        "console_maxerr_text": "1.03E-07",
+        "console_maxerr": 1.03e-07,
+        "seconds": 3.477
+      },
+      {
+        "sweep": 4,
+        "energy": -26.93729891122437,
+        "maxdim": 128,
+        "console_maxerr_text": "1.13E-09",
+        "console_maxerr": 1.13e-09,
+        "seconds": 3.99
+      },
+      {
+        "sweep": 5,
+        "energy": -27.050465982054476,
+        "maxdim": 256,
+        "console_maxerr_text": "7.70E-11",
+        "console_maxerr": 7.7e-11,
+        "seconds": 7.453
+      },
+      {
+        "sweep": 6,
+        "energy": -27.1096180380969,
+        "maxdim": 512,
+        "console_maxerr_text": "8.90E-12",
+        "console_maxerr": 8.9e-12,
+        "seconds": 15.627
+      },
+      {
+        "sweep": 7,
+        "energy": -27.1363975018193,
+        "maxdim": 512,
+        "console_maxerr_text": "2.65E-11",
+        "console_maxerr": 2.65e-11,
+        "seconds": 22.184
+      },
+      {
+        "sweep": 8,
+        "energy": -27.149670271605164,
+        "maxdim": 512,
+        "console_maxerr_text": "2.72E-11",
+        "console_maxerr": 2.72e-11,
+        "seconds": 23.262
+      },
+      {
+        "sweep": 9,
+        "energy": -27.15758710839328,
+        "maxdim": 512,
+        "console_maxerr_text": "3.46E-11",
+        "console_maxerr": 3.46e-11,
+        "seconds": 22.884
+      },
+      {
+        "sweep": 10,
+        "energy": -27.162821988451526,
+        "maxdim": 512,
+        "console_maxerr_text": "3.82E-11",
+        "console_maxerr": 3.82e-11,
+        "seconds": 22.675
+      },
+      {
+        "sweep": 11,
+        "energy": -27.166472682742004,
+        "maxdim": 512,
+        "console_maxerr_text": "3.40E-11",
+        "console_maxerr": 3.4e-11,
+        "seconds": 22.886
+      },
+      {
+        "sweep": 12,
+        "energy": -27.168984298391802,
+        "maxdim": 512,
+        "console_maxerr_text": "3.24E-11",
+        "console_maxerr": 3.24e-11,
+        "seconds": 22.395
+      },
+      {
+        "sweep": 13,
+        "energy": -27.17060814440547,
+        "maxdim": 512,
+        "console_maxerr_text": "2.74E-11",
+        "console_maxerr": 2.74e-11,
+        "seconds": 21.663
+      },
+      {
+        "sweep": 14,
+        "energy": -27.1716035641606,
+        "maxdim": 512,
+        "console_maxerr_text": "2.49E-11",
+        "console_maxerr": 2.49e-11,
+        "seconds": 21.724
+      },
+      {
+        "sweep": 15,
+        "energy": -27.172191060681403,
+        "maxdim": 512,
+        "console_maxerr_text": "2.63E-11",
+        "console_maxerr": 2.63e-11,
+        "seconds": 21.017
+      },
+      {
+        "sweep": 16,
+        "energy": -27.172521918123095,
+        "maxdim": 512,
+        "console_maxerr_text": "2.51E-11",
+        "console_maxerr": 2.51e-11,
+        "seconds": 20.702
+      },
+      {
+        "sweep": 17,
+        "energy": -27.172699826957007,
+        "maxdim": 512,
+        "console_maxerr_text": "2.46E-11",
+        "console_maxerr": 2.46e-11,
+        "seconds": 20.299
+      },
+      {
+        "sweep": 18,
+        "energy": -27.17278766619345,
+        "maxdim": 512,
+        "console_maxerr_text": "2.01E-11",
+        "console_maxerr": 2.01e-11,
+        "seconds": 19.983
+      },
+      {
+        "sweep": 19,
+        "energy": -27.1728317807795,
+        "maxdim": 512,
+        "console_maxerr_text": "1.36E-11",
+        "console_maxerr": 1.36e-11,
+        "seconds": 20.369
+      },
+      {
+        "sweep": 20,
+        "energy": -27.172853324558933,
+        "maxdim": 512,
+        "console_maxerr_text": "1.17E-11",
+        "console_maxerr": 1.17e-11,
+        "seconds": 19.619
+      },
+      {
+        "sweep": 21,
+        "energy": -27.172864070525552,
+        "maxdim": 512,
+        "console_maxerr_text": "1.30E-11",
+        "console_maxerr": 1.3e-11,
+        "seconds": 34.986
+      },
+      {
+        "sweep": 22,
+        "energy": -27.172869544598978,
+        "maxdim": 512,
+        "console_maxerr_text": "2.70E-11",
+        "console_maxerr": 2.7e-11,
+        "seconds": 32.724
+      },
+      {
+        "sweep": 23,
+        "energy": -27.172871552003,
+        "maxdim": 512,
+        "console_maxerr_text": "4.48E-11",
+        "console_maxerr": 4.48e-11,
+        "seconds": 18.412
+      },
+      {
+        "sweep": 24,
+        "energy": -27.172871904893874,
+        "maxdim": 512,
+        "console_maxerr_text": "8.06E-11",
+        "console_maxerr": 8.06e-11,
+        "seconds": 18.603
+      }
+    ],
+    [
+      {
+        "sweep": 1,
+        "energy": -24.810182709902758,
+        "maxdim": 16,
+        "console_maxerr_text": "1.00E-02",
+        "console_maxerr": 0.01,
+        "seconds": 1.38
+      },
+      {
+        "sweep": 2,
+        "energy": -26.584796900965472,
+        "maxdim": 32,
+        "console_maxerr_text": "4.49E-06",
+        "console_maxerr": 4.49e-06,
+        "seconds": 2.095
+      },
+      {
+        "sweep": 3,
+        "energy": -27.255511243759795,
+        "maxdim": 64,
+        "console_maxerr_text": "1.70E-06",
+        "console_maxerr": 1.7e-06,
+        "seconds": 3.539
+      },
+      {
+        "sweep": 4,
+        "energy": -27.637031874953575,
+        "maxdim": 128,
+        "console_maxerr_text": "1.49E-08",
+        "console_maxerr": 1.49e-08,
+        "seconds": 4.11
+      },
+      {
+        "sweep": 5,
+        "energy": -27.852255038261557,
+        "maxdim": 256,
+        "console_maxerr_text": "2.27E-10",
+        "console_maxerr": 2.27e-10,
+        "seconds": 7.402
+      },
+      {
+        "sweep": 6,
+        "energy": -28.01936835695868,
+        "maxdim": 256,
+        "console_maxerr_text": "7.31E-10",
+        "console_maxerr": 7.31e-10,
+        "seconds": 8.559
+      },
+      {
+        "sweep": 7,
+        "energy": -28.12132583826048,
+        "maxdim": 256,
+        "console_maxerr_text": "1.03E-09",
+        "console_maxerr": 1.03e-09,
+        "seconds": 8.392
+      },
+      {
+        "sweep": 8,
+        "energy": -28.183617468017005,
+        "maxdim": 256,
+        "console_maxerr_text": "1.07E-09",
+        "console_maxerr": 1.07e-09,
+        "seconds": 8.585
+      },
+      {
+        "sweep": 9,
+        "energy": -28.2386489978363,
+        "maxdim": 256,
+        "console_maxerr_text": "1.56E-09",
+        "console_maxerr": 1.56e-09,
+        "seconds": 8.207
+      },
+      {
+        "sweep": 10,
+        "energy": -28.29661480219427,
+        "maxdim": 256,
+        "console_maxerr_text": "1.77E-09",
+        "console_maxerr": 1.77e-09,
+        "seconds": 8.618
+      },
+      {
+        "sweep": 11,
+        "energy": -28.348683293190437,
+        "maxdim": 256,
+        "console_maxerr_text": "2.20E-09",
+        "console_maxerr": 2.2e-09,
+        "seconds": 8.442
+      },
+      {
+        "sweep": 12,
+        "energy": -28.38510493163442,
+        "maxdim": 256,
+        "console_maxerr_text": "1.83E-09",
+        "console_maxerr": 1.83e-09,
+        "seconds": 8.666
+      },
+      {
+        "sweep": 13,
+        "energy": -28.410513237822922,
+        "maxdim": 256,
+        "console_maxerr_text": "1.74E-09",
+        "console_maxerr": 1.74e-09,
+        "seconds": 8.64
+      },
+      {
+        "sweep": 14,
+        "energy": -28.43085459000951,
+        "maxdim": 256,
+        "console_maxerr_text": "2.00E-09",
+        "console_maxerr": 2e-09,
+        "seconds": 8.504
+      },
+      {
+        "sweep": 15,
+        "energy": -28.45148461150008,
+        "maxdim": 256,
+        "console_maxerr_text": "1.18E-08",
+        "console_maxerr": 1.18e-08,
+        "seconds": 8.267
+      },
+      {
+        "sweep": 16,
+        "energy": -28.466739811667193,
+        "maxdim": 256,
+        "console_maxerr_text": "5.60E-09",
+        "console_maxerr": 5.6e-09,
+        "seconds": 8.757
+      },
+      {
+        "sweep": 17,
+        "energy": -28.477877020784277,
+        "maxdim": 256,
+        "console_maxerr_text": "4.31E-09",
+        "console_maxerr": 4.31e-09,
+        "seconds": 8.186
+      },
+      {
+        "sweep": 18,
+        "energy": -28.487253517425177,
+        "maxdim": 256,
+        "console_maxerr_text": "7.81E-08",
+        "console_maxerr": 7.81e-08,
+        "seconds": 8.276
+      }
+    ],
+    [
+      {
+        "sweep": 1,
+        "energy": -22.725430665472523,
+        "maxdim": 16,
+        "console_maxerr_text": "4.84E-03",
+        "console_maxerr": 0.00484,
+        "seconds": 1.226
+      },
+      {
+        "sweep": 2,
+        "energy": -26.544106436092903,
+        "maxdim": 32,
+        "console_maxerr_text": "1.81E-05",
+        "console_maxerr": 1.81e-05,
+        "seconds": 2.034
+      },
+      {
+        "sweep": 3,
+        "energy": -27.607538467227943,
+        "maxdim": 64,
+        "console_maxerr_text": "2.32E-07",
+        "console_maxerr": 2.32e-07,
+        "seconds": 3.531
+      },
+      {
+        "sweep": 4,
+        "energy": -27.974103729359456,
+        "maxdim": 128,
+        "console_maxerr_text": "3.51E-09",
+        "console_maxerr": 3.51e-09,
+        "seconds": 4.085
+      },
+      {
+        "sweep": 5,
+        "energy": -28.12868625149736,
+        "maxdim": 256,
+        "console_maxerr_text": "2.98E-10",
+        "console_maxerr": 2.98e-10,
+        "seconds": 7.699
+      },
+      {
+        "sweep": 6,
+        "energy": -28.245926475278228,
+        "maxdim": 512,
+        "console_maxerr_text": "1.80E-11",
+        "console_maxerr": 1.8e-11,
+        "seconds": 16.216
+      },
+      {
+        "sweep": 7,
+        "energy": -28.32829487073585,
+        "maxdim": 512,
+        "console_maxerr_text": "4.62E-11",
+        "console_maxerr": 4.62e-11,
+        "seconds": 21.148
+      },
+      {
+        "sweep": 8,
+        "energy": -28.37700218295746,
+        "maxdim": 512,
+        "console_maxerr_text": "5.52E-11",
+        "console_maxerr": 5.52e-11,
+        "seconds": 21.094
+      },
+      {
+        "sweep": 9,
+        "energy": -28.40853986803572,
+        "maxdim": 512,
+        "console_maxerr_text": "6.56E-11",
+        "console_maxerr": 6.56e-11,
+        "seconds": 21.202
+      },
+      {
+        "sweep": 10,
+        "energy": -28.43419527381996,
+        "maxdim": 512,
+        "console_maxerr_text": "9.05E-11",
+        "console_maxerr": 9.05e-11,
+        "seconds": 20.886
+      },
+      {
+        "sweep": 11,
+        "energy": -28.454359212742034,
+        "maxdim": 512,
+        "console_maxerr_text": "9.74E-11",
+        "console_maxerr": 9.74e-11,
+        "seconds": 20.725
+      },
+      {
+        "sweep": 12,
+        "energy": -28.469650515301883,
+        "maxdim": 512,
+        "console_maxerr_text": "1.21E-10",
+        "console_maxerr": 1.21e-10,
+        "seconds": 20.132
+      },
+      {
+        "sweep": 13,
+        "energy": -28.480121234662374,
+        "maxdim": 512,
+        "console_maxerr_text": "1.41E-10",
+        "console_maxerr": 1.41e-10,
+        "seconds": 20.412
+      },
+      {
+        "sweep": 14,
+        "energy": -28.486972590055554,
+        "maxdim": 512,
+        "console_maxerr_text": "1.64E-10",
+        "console_maxerr": 1.64e-10,
+        "seconds": 19.486
+      },
+      {
+        "sweep": 15,
+        "energy": -28.491281749428637,
+        "maxdim": 512,
+        "console_maxerr_text": "2.78E-10",
+        "console_maxerr": 2.78e-10,
+        "seconds": 19.988
+      },
+      {
+        "sweep": 16,
+        "energy": -28.493735570289587,
+        "maxdim": 512,
+        "console_maxerr_text": "2.82E-10",
+        "console_maxerr": 2.82e-10,
+        "seconds": 19.409
+      },
+      {
+        "sweep": 17,
+        "energy": -28.495096243452977,
+        "maxdim": 512,
+        "console_maxerr_text": "2.32E-10",
+        "console_maxerr": 2.32e-10,
+        "seconds": 19.243
+      },
+      {
+        "sweep": 18,
+        "energy": -28.495864206832955,
+        "maxdim": 512,
+        "console_maxerr_text": "2.01E-10",
+        "console_maxerr": 2.01e-10,
+        "seconds": 19.083
+      },
+      {
+        "sweep": 19,
+        "energy": -28.49627425561375,
+        "maxdim": 512,
+        "console_maxerr_text": "2.76E-10",
+        "console_maxerr": 2.76e-10,
+        "seconds": 19.005
+      },
+      {
+        "sweep": 20,
+        "energy": -28.496477431624175,
+        "maxdim": 512,
+        "console_maxerr_text": "2.92E-10",
+        "console_maxerr": 2.92e-10,
+        "seconds": 19.033
+      },
+      {
+        "sweep": 21,
+        "energy": -28.496566460109598,
+        "maxdim": 512,
+        "console_maxerr_text": "4.01E-10",
+        "console_maxerr": 4.01e-10,
+        "seconds": 18.951
+      },
+      {
+        "sweep": 22,
+        "energy": -28.49659249344151,
+        "maxdim": 512,
+        "console_maxerr_text": "1.73E-09",
+        "console_maxerr": 1.73e-09,
+        "seconds": 19.112
+      },
+      {
+        "sweep": 23,
+        "energy": -28.496596846919903,
+        "maxdim": 512,
+        "console_maxerr_text": "1.90E-09",
+        "console_maxerr": 1.9e-09,
+        "seconds": 19.01
+      },
+      {
+        "sweep": 24,
+        "energy": -28.4965974860584,
+        "maxdim": 512,
+        "console_maxerr_text": "1.28E-09",
+        "console_maxerr": 1.28e-09,
+        "seconds": 50.238
+      }
+    ],
+    [
+      {
+        "sweep": 1,
+        "energy": -20.782105500624663,
+        "maxdim": 16,
+        "console_maxerr_text": "4.10E-03",
+        "console_maxerr": 0.0041,
+        "seconds": 1.472
+      },
+      {
+        "sweep": 2,
+        "energy": -22.533947656988374,
+        "maxdim": 32,
+        "console_maxerr_text": "2.44E-05",
+        "console_maxerr": 2.44e-05,
+        "seconds": 2.214
+      },
+      {
+        "sweep": 3,
+        "energy": -23.181553194483485,
+        "maxdim": 64,
+        "console_maxerr_text": "9.52E-07",
+        "console_maxerr": 9.52e-07,
+        "seconds": 3.51
+      },
+      {
+        "sweep": 4,
+        "energy": -23.639429351683376,
+        "maxdim": 128,
+        "console_maxerr_text": "8.16E-09",
+        "console_maxerr": 8.16e-09,
+        "seconds": 4.358
+      },
+      {
+        "sweep": 5,
+        "energy": -23.999384902610565,
+        "maxdim": 256,
+        "console_maxerr_text": "5.20E-10",
+        "console_maxerr": 5.2e-10,
+        "seconds": 7.2
+      },
+      {
+        "sweep": 6,
+        "energy": -24.208301640789944,
+        "maxdim": 256,
+        "console_maxerr_text": "8.78E-10",
+        "console_maxerr": 8.78e-10,
+        "seconds": 8.244
+      },
+      {
+        "sweep": 7,
+        "energy": -24.324877604680633,
+        "maxdim": 256,
+        "console_maxerr_text": "6.36E-10",
+        "console_maxerr": 6.36e-10,
+        "seconds": 9.318
+      },
+      {
+        "sweep": 8,
+        "energy": -24.392125298558962,
+        "maxdim": 256,
+        "console_maxerr_text": "7.60E-10",
+        "console_maxerr": 7.6e-10,
+        "seconds": 8.583
+      },
+      {
+        "sweep": 9,
+        "energy": -24.432439457029748,
+        "maxdim": 256,
+        "console_maxerr_text": "9.90E-10",
+        "console_maxerr": 9.9e-10,
+        "seconds": 8.198
+      },
+      {
+        "sweep": 10,
+        "energy": -24.457794132580254,
+        "maxdim": 256,
+        "console_maxerr_text": "1.61E-09",
+        "console_maxerr": 1.61e-09,
+        "seconds": 8.711
+      },
+      {
+        "sweep": 11,
+        "energy": -24.47337635564294,
+        "maxdim": 256,
+        "console_maxerr_text": "2.45E-09",
+        "console_maxerr": 2.45e-09,
+        "seconds": 8.251
+      },
+      {
+        "sweep": 12,
+        "energy": -24.482774630767313,
+        "maxdim": 256,
+        "console_maxerr_text": "4.93E-09",
+        "console_maxerr": 4.93e-09,
+        "seconds": 8.746
+      },
+      {
+        "sweep": 13,
+        "energy": -24.488429799050824,
+        "maxdim": 256,
+        "console_maxerr_text": "9.64E-09",
+        "console_maxerr": 9.64e-09,
+        "seconds": 8.514
+      },
+      {
+        "sweep": 14,
+        "energy": -24.492025452842334,
+        "maxdim": 256,
+        "console_maxerr_text": "1.87E-08",
+        "console_maxerr": 1.87e-08,
+        "seconds": 8.336
+      },
+      {
+        "sweep": 15,
+        "energy": -24.49421060826236,
+        "maxdim": 256,
+        "console_maxerr_text": "3.90E-08",
+        "console_maxerr": 3.9e-08,
+        "seconds": 8.297
+      },
+      {
+        "sweep": 16,
+        "energy": -24.495653092585734,
+        "maxdim": 256,
+        "console_maxerr_text": "2.29E-07",
+        "console_maxerr": 2.29e-07,
+        "seconds": 8.816
+      },
+      {
+        "sweep": 17,
+        "energy": -24.496231190081918,
+        "maxdim": 256,
+        "console_maxerr_text": "2.70E-07",
+        "console_maxerr": 2.7e-07,
+        "seconds": 8.292
+      },
+      {
+        "sweep": 18,
+        "energy": -24.49646353961395,
+        "maxdim": 256,
+        "console_maxerr_text": "6.28E-08",
+        "console_maxerr": 6.28e-08,
+        "seconds": 8.37
+      }
+    ],
+    [
+      {
+        "sweep": 1,
+        "energy": -22.16411038730139,
+        "maxdim": 16,
+        "console_maxerr_text": "8.76E-03",
+        "console_maxerr": 0.00876,
+        "seconds": 1.283
+      },
+      {
+        "sweep": 2,
+        "energy": -23.8677127886274,
+        "maxdim": 32,
+        "console_maxerr_text": "1.94E-05",
+        "console_maxerr": 1.94e-05,
+        "seconds": 2.176
+      },
+      {
+        "sweep": 3,
+        "energy": -24.179831081054555,
+        "maxdim": 64,
+        "console_maxerr_text": "5.32E-07",
+        "console_maxerr": 5.32e-07,
+        "seconds": 3.517
+      },
+      {
+        "sweep": 4,
+        "energy": -24.298768455380483,
+        "maxdim": 128,
+        "console_maxerr_text": "2.59E-09",
+        "console_maxerr": 2.59e-09,
+        "seconds": 4.282
+      },
+      {
+        "sweep": 5,
+        "energy": -24.358358056178307,
+        "maxdim": 256,
+        "console_maxerr_text": "5.90E-11",
+        "console_maxerr": 5.9e-11,
+        "seconds": 7.403
+      },
+      {
+        "sweep": 6,
+        "energy": -24.394806916578432,
+        "maxdim": 512,
+        "console_maxerr_text": "6.24E-12",
+        "console_maxerr": 6.24e-12,
+        "seconds": 16.434
+      },
+      {
+        "sweep": 7,
+        "energy": -24.42070267687561,
+        "maxdim": 512,
+        "console_maxerr_text": "3.54E-11",
+        "console_maxerr": 3.54e-11,
+        "seconds": 22.268
+      },
+      {
+        "sweep": 8,
+        "energy": -24.441429138554213,
+        "maxdim": 512,
+        "console_maxerr_text": "7.30E-11",
+        "console_maxerr": 7.3e-11,
+        "seconds": 22.467
+      },
+      {
+        "sweep": 9,
+        "energy": -24.458025303076496,
+        "maxdim": 512,
+        "console_maxerr_text": "1.31E-10",
+        "console_maxerr": 1.31e-10,
+        "seconds": 22.056
+      },
+      {
+        "sweep": 10,
+        "energy": -24.4706281598655,
+        "maxdim": 512,
+        "console_maxerr_text": "1.94E-10",
+        "console_maxerr": 1.94e-10,
+        "seconds": 22.314
+      },
+      {
+        "sweep": 11,
+        "energy": -24.479550160317068,
+        "maxdim": 512,
+        "console_maxerr_text": "2.53E-10",
+        "console_maxerr": 2.53e-10,
+        "seconds": 21.869
+      },
+      {
+        "sweep": 12,
+        "energy": -24.4856922752957,
+        "maxdim": 512,
+        "console_maxerr_text": "2.98E-10",
+        "console_maxerr": 2.98e-10,
+        "seconds": 21.97
+      },
+      {
+        "sweep": 13,
+        "energy": -24.489837619560152,
+        "maxdim": 512,
+        "console_maxerr_text": "3.03E-10",
+        "console_maxerr": 3.03e-10,
+        "seconds": 21.317
+      },
+      {
+        "sweep": 14,
+        "energy": -24.492526970865125,
+        "maxdim": 512,
+        "console_maxerr_text": "3.61E-10",
+        "console_maxerr": 3.61e-10,
+        "seconds": 21.315
+      },
+      {
+        "sweep": 15,
+        "energy": -24.49426850300756,
+        "maxdim": 512,
+        "console_maxerr_text": "4.15E-10",
+        "console_maxerr": 4.15e-10,
+        "seconds": 21.111
+      },
+      {
+        "sweep": 16,
+        "energy": -24.495340503980138,
+        "maxdim": 512,
+        "console_maxerr_text": "7.22E-10",
+        "console_maxerr": 7.22e-10,
+        "seconds": 20.913
+      },
+      {
+        "sweep": 17,
+        "energy": -24.495959664392515,
+        "maxdim": 512,
+        "console_maxerr_text": "8.09E-10",
+        "console_maxerr": 8.09e-10,
+        "seconds": 20.633
+      },
+      {
+        "sweep": 18,
+        "energy": -24.496238609616512,
+        "maxdim": 512,
+        "console_maxerr_text": "3.82E-10",
+        "console_maxerr": 3.82e-10,
+        "seconds": 19.989
+      },
+      {
+        "sweep": 19,
+        "energy": -24.496408966662795,
+        "maxdim": 512,
+        "console_maxerr_text": "3.03E-10",
+        "console_maxerr": 3.03e-10,
+        "seconds": 20.055
+      },
+      {
+        "sweep": 20,
+        "energy": -24.496512808377712,
+        "maxdim": 512,
+        "console_maxerr_text": "2.20E-10",
+        "console_maxerr": 2.2e-10,
+        "seconds": 19.594
+      },
+      {
+        "sweep": 21,
+        "energy": -24.4965629635173,
+        "maxdim": 512,
+        "console_maxerr_text": "1.17E-09",
+        "console_maxerr": 1.17e-09,
+        "seconds": 19.509
+      },
+      {
+        "sweep": 22,
+        "energy": -24.496582458019464,
+        "maxdim": 512,
+        "console_maxerr_text": "1.41E-09",
+        "console_maxerr": 1.41e-09,
+        "seconds": 19.779
+      },
+      {
+        "sweep": 23,
+        "energy": -24.4965914296857,
+        "maxdim": 512,
+        "console_maxerr_text": "4.35E-10",
+        "console_maxerr": 4.35e-10,
+        "seconds": 19.073
+      },
+      {
+        "sweep": 24,
+        "energy": -24.49659547259558,
+        "maxdim": 512,
+        "console_maxerr_text": "1.91E-09",
+        "console_maxerr": 1.91e-09,
+        "seconds": 19.982
+      }
+    ]
+  ],
+  "science_executed": false,
+  "source_modifications": false,
+  "new_job_admitted": false,
+  "retrospective_gate_changes": false,
+  "scientific_completions": 0
+}

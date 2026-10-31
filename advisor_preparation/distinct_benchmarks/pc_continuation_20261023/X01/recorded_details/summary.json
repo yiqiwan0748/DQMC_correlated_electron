@@ -1,0 +1,342 @@
+{
+  "audit_scope": "Original scientific source/raw/statistics and explicit public selection; PC administration and transport are provenance-only",
+  "audit_status": "PASS",
+  "auditor_sha256": "72918b4038aedec5b081c71d3f52a17c0ca523043dcfad0c3d7cf86af39249e8",
+  "catalogue_id": "X01",
+  "check_count": 4857,
+  "created_utc": "2026-10-23T17:39:39.714618+00:00",
+  "existing_sources_modified": false,
+  "failure_count": 0,
+  "failures": [],
+  "independent_math_auditor_sha256": "6d68b99f06eeea2834f72e386e7b91fbe63bf8aa62f265c95947361eb761910c",
+  "job_submission": false,
+  "limitations": [
+    "Nominal fixed three-look/26-interval family uses approximate normal independent bundle contrasts; this audit does not prove normality, rare-tail coverage or equilibrium.",
+    "Rhat, ESS and64/32binblocking are rejection diagnostics only.",
+    "The native sampler is byte-pinned, not independently reimplemented.",
+    "Historical absolute path prefixes are role-mapped with exact original file SHA checks; no original bytes are rewritten.",
+    "All pilot, failed mechanical analysis and incomplete/cancelled final-stage histories are retained; scientific status is UNRESOLVED despite integrity audit PASS."
+  ],
+  "new_scientific_completions": 0,
+  "original_full_audit_sha256": "4eecab1e48c0164b43833c5f0f63e5004a0b16436f0f487c0c30ae7383000f38",
+  "public_administrative_exclusions": [
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\independent_audit_v1.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "f8534ea15a0ce410675509cbd67c945b9ccaa3c5603e16555e96c5e6d762ece7"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\root_logs\\x01_continuum_stage2_v2_analysis_6460996.log",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "f8c9b19b7e945c91092b6af2ed0ec6967573eeda5e08a87b7f59f4a105699c35"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\scontrol.txt",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "99f8b43caaa72289cf4b538ae74261176ed5f036e26316932b9f36fd723b64fd"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\PREEXEC_LF_CORRECTION.md",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "fdeeacb2ec77601b3c8753dd9f32d8b82dcbab8727655839606de399ec549ab9"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\PROTOCOL.md",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "3d9bce9a8d59ef8a77fb78b3b461fab1e573fb8672316f02ea3ab65e4d24beaf"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\SHA256SUMS",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "72f01b0ab2b53c18a9de6b3079b96954191f1eaeb82004e7b3f62608e90632e3"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\catalogue_X01.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "2291cf54315833de69cb28040dc9b4f23b8fe3a615b97fa3e31931850de595af"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\chunk1.sbatch",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "b259cc0adbc2afcdfea905bb662d3ae4e330a7e8187a1dd6b33277beaa5b92f9"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\chunk2.sbatch",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "3887d192881ca5b8fac485e608c357dd48e52ba7fe84fb626b59883629b66721"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\chunk3.sbatch",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "fe1ad33530ee3f2bf3b1c508e6d4c9fce4eff8fc050876c83759a7b94e15cd4a"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\chunk4.sbatch",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "ada4d8393abb2446857b66be6099c8175bc4ec62e9dcb35dc8a1db0f67cc8611"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\compare_production.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "fd7636a5523921da0e6a901423e19b4b6e8be194d757c048ea9ae35a950d7f07"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\excluded_pilot_seeds.toml",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "092fdc4d6075ee754b9079fbad5d9096aa4276661780456831c63fc8693f492d"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\freeze_release.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "e6601d9ba568802cea85610d1db65206b86bba4a2c843b6df12058aa6b29b100"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\generate_seeds.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "bf69754789ef0990e4a996f3099d835054d1bbd3344b77add98a4180d8bd59d7"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\manifest.toml",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "8bf4f1d7e7e56a5528cf9a6e4592c5585225331806a1f8c12ab89f1818000d9d"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\mechanical_lf_changes.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "44fdf5d965e4ea5de88dad0a1d48e9a9344654d326ece955fbefed3a559828d8"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\merge_analysis.sbatch",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "37386b784f9898af1971c955b0f3c1b8ae4ca561a0ceb7db71a9bb6af8927f41"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\merge_parts.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "f1a27613729a3e481b5dd4806408ebcee784f366596f5746e4ef4a8c74ce0fef"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\mixing_diagnostics.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "bc4496b44ea537cfb8310b7fae181a3dfd5b2a1093cf165d8c9c21bda04d8451"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\oracle_quspin.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "0fc7863c22b18599498a15ec8733e567116c627effd04ef6057a740e9ce9a40f"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\record_chunk.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "a0fc604fa6e4e3f92bc4d399089d170968d6da464ef3459186cf47bdf458e0b0"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\run_analysis.sh",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "850929d580834efc1b3f72e5d6e9aa3057be1f50492fa017f19781270ce3e294"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\seeds.toml",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "881904a19cc9375c7d141169fb9ddae1a249905dd74fd842198f2f589bc4d109"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\source_freeze.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "4615a3c7aed3c2989c9ac4c0b3f0078a2b87050a4d96a0a166eff9c49420bdb2"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\static_review.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "1a7e5ea408c8bda92a5658fb1b8cb013f57e6c9805d1f3fe32ff7ed19769e2fd"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\target_production.jl",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "70313f58cc0f9f6e34b67dfc381dbcce64461e1eefb8697bd3f6bfab4ec61480"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\test_stage2.py",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "fbba778055fbbbd3b9394499a384a9deb55ed9c5282ab50f3abcb5c51179b1d0"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\source\\timing_basis.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "fa566d996f9613a21a0580f4d12fb22bd869e37148d505977e2053103e13337b"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\submissions\\intent.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "43fb7d3b78493e1a039f7e1541127990d77edb3dcd46482daa2c451832d32636"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\submissions\\receipt.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "3379a08d00754090aebdb236b3000f578aa834f42505456ba354c91a05f87333"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\submissions\\sbatch_result.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "111695b8de9e66b90958c9aaee78878901088aa212ce4e0edd362a6987749d13"
+    },
+    {
+      "original_key": "C:\\Users\\YQW\\OneDrive - University of Tennessee\\Documents\\ChatGPT\\Hubbard Altermagnetism 4\\isaac_benchmark_resume_20261022\\x01s2a_6460996\\transfer.json",
+      "reason": "Explicit public administrative/duplicate selection exclusion",
+      "sha256": "8c7d8567f45f2b6b5ef3ef7f4de24d34f5acad46872d0c161075ea9c892ec894"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p1_6462170/results/admission_guard.json",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "c21384eb1fb5cb222da29402d30dc7a4a1936cb478a3bf1204f43dee91497496"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p1_6462170/results/admission_guard_pre_module.json",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "64e7f019212549c8c59c5bc5a5ffa50bb954dcff73a8518a48bb16919eae2aea"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p1_6462170/results/queue_native.txt",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "c77dd18bc07bceb35ecbf54fbb16e311c0245cc4d547a45b104c04243a6e57e3"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p1_6462170/results/queue_pre_module.txt",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "c77dd18bc07bceb35ecbf54fbb16e311c0245cc4d547a45b104c04243a6e57e3"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p2_6462171/results/admission_guard.json",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "2030b019bde46db23ffaf9998eb8bef3738e1c8b58f52eb2d17d4d0c48faaf2c"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p2_6462171/results/admission_guard_pre_module.json",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "2030b019bde46db23ffaf9998eb8bef3738e1c8b58f52eb2d17d4d0c48faaf2c"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p2_6462171/results/queue_native.txt",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "3a262a2e8507ccd577a4e1bc477208d8e67cb54a18140545be21752a8b517d6c"
+    },
+    {
+      "original_key": "/tmp/x01-public-replay-20261023-attempt02/data/raw/restored/x01s3p2_6462171/results/queue_pre_module.txt",
+      "reason": "Explicit stage3 administrative guard/queue exclusion",
+      "sha256": "3a262a2e8507ccd577a4e1bc477208d8e67cb54a18140545be21752a8b517d6c"
+    }
+  ],
+  "public_mutation": false,
+  "raw_original_files": 720,
+  "reason": "Fixed quartic S2 continuum halfwidth exceeds predeclared precision threshold. Incomplete final stage3 adds no result; no pooling, fourth look, retry, or gate relaxation.",
+  "remote_calls": false,
+  "schema": "X01_PUBLIC_SCIENTIFIC_SELECTION_RECONCILIATION_V1",
+  "scientific_sampling": false,
+  "scientific_status": "UNRESOLVED",
+  "selected_stage": 2,
+  "selection_sha256": "87812d3da63b77de262036cb51c8228cb46e93d096eec4b4f8b2c27df5f949a1",
+  "stages": {
+    "1": {
+      "audit_path": "output/stage1_audit.json",
+      "status": "UNRESOLVED"
+    },
+    "2": {
+      "audit_path": "output/stage2_audit.json",
+      "decision_components": {
+        "continuum_equivalent": true,
+        "finite_h_equivalent": true,
+        "finite_step_bias_demonstrated": true,
+        "fit_adequate": true,
+        "precision_adequate": false,
+        "raw_source_numerical_mixing_eligible": true
+      },
+      "endpoint_precision": [
+        {
+          "eligible": true,
+          "halfwidth": 0.003312432575464532,
+          "maximum": 0.01,
+          "name": "energy_primary_continuum"
+        },
+        {
+          "eligible": true,
+          "halfwidth": 0.0038769429191790245,
+          "maximum": 0.01,
+          "name": "energy_fine_continuum"
+        },
+        {
+          "eligible": true,
+          "halfwidth": 0.003960455793908307,
+          "maximum": 0.01,
+          "name": "energy_quartic_continuum"
+        },
+        {
+          "eligible": true,
+          "halfwidth": 0.0021814890479966665,
+          "maximum": 0.005,
+          "name": "S2_primary_continuum"
+        },
+        {
+          "eligible": true,
+          "halfwidth": 0.004849239130150259,
+          "maximum": 0.005,
+          "name": "S2_fine_continuum"
+        },
+        {
+          "eligible": false,
+          "halfwidth": 0.005131899946927717,
+          "maximum": 0.005,
+          "name": "S2_quartic_continuum"
+        }
+      ],
+      "status": "UNRESOLVED"
+    },
+    "3": {
+      "no_comparator_replay": true,
+      "no_ledger_promotion": true,
+      "no_primary_reconstruction": true,
+      "parts": [
+        {
+          "energy_rows": 8,
+          "entropy_nodes": 32,
+          "job_id": "6462170",
+          "native_exit": 0,
+          "part": 1,
+          "part_receipt_sha256": "32aa0443d3fadc142e93943ed9dd53c2f4071572d4f52c52cff623785ff12575",
+          "side_files": 40,
+          "status": "COMPLETE",
+          "target_sha256": "3df49833ea2c6756fee6731c9c488a4d33d40f610b8e157715bc6eedd25ca85a"
+        },
+        {
+          "energy_rows": 8,
+          "entropy_nodes": 28,
+          "job_id": "6462171",
+          "native_exit": 137,
+          "part": 2,
+          "part_receipt_sha256": "037f1fcc1fab9a914e339e2aed37a3bd0e09ec44a9b0549683d2205f96942342",
+          "side_files": 36,
+          "status": "EXECUTION_INCOMPLETE",
+          "target_sha256": "1238677e76775d44a6b73b39dcd0d401bc3d69297ad1f4512f324a2df6a0af8a"
+        },
+        {
+          "energy_rows": 0,
+          "entropy_nodes": 0,
+          "job_id": "6462172",
+          "native_exit": null,
+          "part": 3,
+          "side_files": 0,
+          "status": "CANCELLED_BEFORE_ALLOCATION"
+        },
+        {
+          "energy_rows": 0,
+          "entropy_nodes": 0,
+          "job_id": "6462173",
+          "native_exit": null,
+          "part": 4,
+          "side_files": 0,
+          "status": "CANCELLED_BEFORE_ALLOCATION"
+        }
+      ],
+      "status": "INCOMPLETE_CLOSED_FINAL_RESERVED_LOOK"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "release": "bethe_l32_pilot_v3",
+  "status": "FROZEN_NOT_RUN",
+  "predecessor_manifest_sha256": "cb0566e9228aa8ea08a66488ea870a9e20d4a143b8e97215b07f3e5e3f3b5fe3",
+  "manifest_changes": [
+    {
+      "field": "L",
+      "before": [
+        24
+      ],
+      "after": [
+        32
+      ]
+    },
+    {
+      "field": "engineering_prerequisite",
+      "before": null,
+      "after": {
+        "L24_job_id": "6458547",
+        "L24_job_elapsed_seconds": 991,
+        "L24_peak_rss_kib": 1484548,
+        "maximum_L24_wall_seconds": 1800,
+        "maximum_L24_peak_rss_MiB": 2300,
+        "audit_relative": "engineering_prerequisite_audit.json",
+        "audit_sha256": "fbdb45d74d59895196799b5af3d8c87b6de6cddce9733a33d77a3d646189f176",
+        "preexecution_engineering_anchor_commit": "66950c791f7f939ca176e5427be62cd8dfca8348",
+        "preexecution_engineering_anchor_sha256": "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6",
+        "anchor_relative": "engineering_gate_anchor_66950c7.md"
+      }
+    },
+    {
+      "field": "predecessor_manifest_sha256",
+      "before": "0293c9e608dfb0ab827782533f6ab8173d2e16bf694b5a8ca37c441898e510c9",
+      "after": "cb0566e9228aa8ea08a66488ea870a9e20d4a143b8e97215b07f3e5e3f3b5fe3"
+    },
+    {
+      "field": "release",
+      "before": "bethe_l24_pilot_v2",
+      "after": "bethe_l32_pilot_v3"
+    },
+    {
+      "field": "resources.estimated_after_start_minutes",
+      "before": [
+        15,
+        40
+      ],
+      "after": [
+        20,
+        50
+      ]
+    },
+    {
+      "field": "resources.runtime_status",
+      "before": "L24 UNMEASURED; 6 finite-chain DMRG solves. Preliminary 15-40 minute engineering range from prior L8/L12 pilot, not a measured L24 prediction. Scheduler wait separate; pilot can establish runtime/quality only.",
+      "after": "L32 UNMEASURED; 6 finite-chain DMRG solves. Empirical engineering range20-50min after start uses audited L24 job6458547 wall16m31s and fixed-chi length factor4/3 (about22min before guard). QN blocks, entanglement, contractions, convergence and filesystem wait may change scaling. Scheduler wait separate; caps are not a runtime guarantee or scientific result."
+    },
+    {
+      "field": "resources.target_command_cap_seconds",
+      "before": 2400,
+      "after": 3300
+    },
+    {
+      "field": "resources.wall_cap_minutes",
+      "before": 45,
+      "after": 60
+    }
+  ],
+  "executable_changes": {
+    "pilot_target.jl": "BYTE_IDENTICAL to frozen L24 and original v1; generic even-L initializer and six-solve loop unchanged",
+    "oracle_lieb_wu.py": "BYTE_IDENTICAL to frozen L24 and original v1",
+    "summarize_pilot.py": "Only planning_limit prose L24/L32->L32/L48 changed; all AST arithmetic and gates unchanged",
+    "pilot.sbatch": "Separate job/output prefix; wall45->60min, target timeout2400->3300sec; SHA256 closure and copied predeclared engineering prerequisite audit/anchor checked before numerical processes; no submission"
+  },
+  "all_quality_gates_per_arm_thresholds_seeds_oracle_versions_and_source_hashes_unchanged": true,
+  "full_programme_or_L48_execution_included": false,
+  "new_evidence_copies": {
+    "engineering_prerequisite_audit.json": "Exact portable L24 audit, SHA fbdb45d74d59895196799b5af3d8c87b6de6cddce9733a33d77a3d646189f176",
+    "engineering_gate_anchor_66950c7.md": "Exact published pre-execution engineering criteria, SHA 0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6"
+  }
+}

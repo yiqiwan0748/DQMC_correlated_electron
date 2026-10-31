@@ -1,0 +1,31 @@
+{
+  "schema": "P13_RAYLEIGH_PILOT_PUBLIC_AUDIT_SCOPE_V1",
+  "status": "PASS_EXCLUDED_PILOT_SAVED_ASSOCIATIONS",
+  "scientific_credit": 0,
+  "catalogue_status": "NOT_RUN",
+  "reported_physical_gates": {
+    "PASS": 8889,
+    "FAIL": 0
+  },
+  "saved_association_checks": 12375,
+  "failed_saved_association_checks": 0,
+  "original_gate_occurrences_preserved": 8887,
+  "added_Hermitian_Rayleigh_eligibility_gates": 2,
+  "immutable_producer_input_files": 192,
+  "checkpoint_to_final_records": 50,
+  "fresh_runtime_records": 2,
+  "total_queue_observations": 28,
+  "periodic_queue_watches": 24,
+  "original_20_centers_bit_identical": true,
+  "original_15_failures_preserved_in_separate_record": true,
+  "complete_physical_certificate_recomputations_by_saved_audit": 0,
+  "arithmetic": "CONDITIONAL_FLOATING_ERROR_BUDGETS_NOT_DIRECTED_INTERVALS",
+  "authorship": "Saved-association audit code and certification adapters share an author; separate independent math/source/projection reviews are used.",
+  "limitations": [
+    "No full33timecurve/ninepointgrowthrate or catalogue credit.",
+    "Runtime/provider/host/controller records and raw producer tensors remain private.",
+    "No hardwareinstruction, uniquecreator, atomic-snapshot or complete standalone reproduction claim.",
+    "Binary64 report serialization does not independently reconstruct internal extended-precision certificate arithmetic."
+  ],
+  "complete_private_audit_receipt_sha256": "54d65f227c9717b1dec8a6ca70aabaaa96a2f6c8352a82069809300b4464a6cb"
+}

@@ -1,0 +1,15 @@
+Test Summary:                        | Pass  Total  Time
+Grover rank-one determinant identity |  400    400  0.1s
+Test Summary:                            | Pass  Total  Time
+Grover rank-one tracker single proposals | 1401   1401  0.1s
+Test Summary:                        | Pass  Total  Time
+Sequential accepted rank-one updates |  116    116  0.0s
+Test Summary:                              | Pass  Total  Time
+Rejected proposal leaves tracker unchanged |   10     10  0.0s
+Test Summary:                                | Pass  Total  Time
+Forced explicit fallback accepts exact state |    6      6  0.0s
+Test Summary:                                           | Pass  Total  Time
+Ill-conditioned Grover matrix disables inverse shortcut |   10     10  0.0s
+Test Summary:                           | Pass  Total  Time
+Same-seed direct versus rank-one update |  375    375  0.5s
+Grover rank-one validation completed.

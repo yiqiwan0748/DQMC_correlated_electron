@@ -1,0 +1,30 @@
+{
+  "release": "ground-certification-precision-v2",
+  "distinct_ids": [
+    "X09",
+    "X12"
+  ],
+  "status": "HIGHER_PRECISION_RETEST_SAME_QUESTIONS_AND_GATES",
+  "files": {
+    "ground_certification_precision_v2/README.md": "6cb1cffa55f8990b3b8652d0d51ebc5f08895e9f34adfd98f7a4741ec8256975",
+    "ground_certification_precision_v2/SHA256SUMS": "dcd2ad07995a131ae8c4af965c1bbb91422c4524b44b37d6c4c0057e0bcc5827",
+    "ground_certification_precision_v2/compare.py": "e3d95287e270813ae786566f9bb7dfb8e796052a79ac43a87565bbe906468b88",
+    "ground_certification_precision_v2/manifest.toml": "2a543304f53c44842aac75eacd4b8800e3cc7573c6bcc04495fad5fbfc24986a",
+    "ground_certification_precision_v2/oracle_quspin.py": "77cf51e2915e1741e01a3a00ace6e6b6ff7291eac6b0f0aec405847a9a0d1c58",
+    "ground_certification_precision_v2/pre_execution_receipt.json": "af4f8bed12014ecc76f93ecd953bf22d88b41f8c509f5e6fc46c8dbe747375b9",
+    "ground_certification_precision_v2/precision_changes.diff": "cc35b33a6a298fbbb8beec0d8e16abc14483ffed4fd084847e5a211256d7bdb1",
+    "ground_certification_precision_v2/precision_changes.json": "eb9baf1351bff3364e058df8cec584d13c5dbc6c3b09979868f27158d9caa430",
+    "ground_certification_precision_v2/run.sbatch": "4326a60026160e869294ff81c4a8181149cd06af30b9e6cd8818c5fee155e3a4",
+    "ground_certification_precision_v2/target.jl": "b7f8e424c5487fcef12317f3c9620e39ef34a9941a2639253880dfcd79988841"
+  },
+  "archive_sha256": "78dd8f5cd33b35d4acba0d7857c0c75824d023039d8c0412946c5cdbfae72489",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 15,
+  "estimated_minutes_after_start": [
+    1,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 17:15",
+  "prior_attempts_preserved": true
+}

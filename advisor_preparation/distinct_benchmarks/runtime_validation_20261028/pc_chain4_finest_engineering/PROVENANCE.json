@@ -1,0 +1,37 @@
+{
+  "attribution": {
+    "ITensorMPS": "Library DMRG/MPS optimizer and observer; no authored optimizer claim",
+    "new_campaign_work": "Measurement, finite-data capture, checkpoint adapters and independently authored exact algebraic replay in code/EngineeringCompare.jl",
+    "user": "Hubbard MPO builder and renyi2_bond_entropy in code/compute_s2_itensor_dmrg.jl"
+  },
+  "catalogue_credit": 0,
+  "catalogue_id": "X08",
+  "catalogue_status": "NOT_RUN",
+  "code": {
+    "code/EngineeringCompare.jl": {
+      "bytes": 36420,
+      "sha256": "54e3477f59aa102254495c54a247a5a555c3b699d6f841e3c267e72354f33c62"
+    },
+    "code/compute_s2_itensor_dmrg.jl": {
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    }
+  },
+  "numeric_preservation": "Retained numeric leaves have identical IEEE754 binary64 bits or identical integer values. CSV values use round-trip decimal text including signed -0.0. No clipping, phase fitting, averaging or symmetrizing.",
+  "preparation_history": {
+    "projection_revision": "Only README/PROVENANCE status/scope, a new sanitized audit summary and the manifest changed. All code/data/protocol/data-dictionary bytes and the previous candidate remain unchanged.",
+    "protocol_publication_status": "The byte-identical protocol.json publication_status records earlier candidate preparation. Current saved-record audit status appears in AUDIT_SUMMARY.json."
+  },
+  "reproduction_limitation": "The original guarded measurement/capture/checkpoint runner and opaque serialized snapshots are private. The scientific raw projection, original user builder/entropy source and unchanged exact reference source are supplied for inspection. No standalone reproduction driver or tested public replay command is supplied. This projection has not been executed as a new experiment or reference replay.",
+  "saved_record_audit": {
+    "check_count": 23898,
+    "failed_checks": 0,
+    "private_complete_result_sha256": "905148b29d6ae295250796946c09643fc6f779d2a65f971f416249666a44a72b",
+    "scope": "Saved source/byte/runtime/protocol/journal and recorded finite-data certificates; independently checks stored rational inequalities/log enclosures and callback/scalar associations without physical recomputation.",
+    "status": "PASS",
+    "summary": "AUDIT_SUMMARY.json"
+  },
+  "schema": "SANITIZED_FINEST_SCIENTIFIC_PACKET_PROVENANCE_V2",
+  "source_record_scope": "One completed original chi64/cutoff1e-12/startA/seed698071 12-sweep engineering parameter arm with initial linkdims4 and saved states at sweeps3,6,12. The original execution recorded2799passingchecks/17states/21entropy-cutrecords. The separate saved-record audit passed23898checks with0failures. Full X08 remains NOT_RUN and adds zero idea/catalogue credit.",
+  "transformation": "Read stored JSON/JSONL and source text only; no solver, captured code, binary snapshot, tensor contraction, norm, energy, entropy or algebraic replay executed during packet preparation."
+}

@@ -1,0 +1,9 @@
+# Native Julia preflight v4: saved terminal evidence
+
+The native Julia import and metadata preflight passed its complete runtime guard: 235 file-backed segments across 62 files, 48 loaded-library providers, 1 BLAS provider, and one exact method-dispatch record. All 10 process-map parser checks and 8 full-width identity checks passed. The native process took 190.978 seconds and the wrapper took 192.277 seconds. The full-width guard uses exact decimal identities and rejects a matching low-32-bit alias. The aggregate records the immutable execution, terminal accounting, bounded stage timing and independent saved-data review. Native, whole-wrapper and allocation caps were prospectively set to 420, 480 and 540 seconds; these are resource limits, not performance estimates or physics tolerances.
+
+The two selected helper files are exact frozen source. Their eight synthetic filesystem regressions exercise full-width integer identity and rejection behavior; they are metadata tests, not physics benchmarks. No scientific solver or fixture was called. The scientific ledger stays at 49 PASS, 0 FAIL, 2 UNRESOLVED and 49 NOT_RUN across 100 distinct ideas. This adds zero scientific completions or failures and does not approve a P17 scientific pilot.
+
+All sixteen runtime-record files from parent commit `17d1cb24c0cbd90f6ad8cd924da7a3c8aecb4278` and the 100-idea ledger retain their exact bytes. Earlier failures and dated snapshots remain unchanged.
+
+This is a selective public projection. Original private bodies, identifiers, file paths, raw maps, process metadata, environment details, queues, controllers and admission records are omitted. Selected source is explicitly identified when present; receipt bodies are represented only by exact byte counts and SHA-256 identities. The packet supports inspection and integrity checking, not standalone complete runtime replay.

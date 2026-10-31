@@ -1,0 +1,1326 @@
+{
+  "status": "UNRESOLVED",
+  "audit_integrity": "PASS",
+  "pilot_quality": "PILOT_QUALITY_UNRESOLVED",
+  "quality_failures": [
+    "Original signed variance gates minus/coarse",
+    "Original signed variance gates minus/refined",
+    "Original final truncation gate minus/refined",
+    "Original signed variance gates plus/coarse",
+    "Original final truncation gate plus/coarse",
+    "Original signed variance gates plus/refined",
+    "Original final truncation gate plus/refined",
+    "Particle-hole Nplus/Nminus identity coarse",
+    "Particle-hole Nplus/Nminus identity refined",
+    "Unchanged coarse/refined stability charge_gap"
+  ],
+  "original_quality_reasons": [
+    "L48/minus/coarse: energy variance",
+    "L48/minus/refined: energy variance",
+    "L48/minus/refined: final truncation error",
+    "L48/plus/coarse: energy variance",
+    "L48/plus/coarse: final truncation error",
+    "L48/plus/refined: energy variance",
+    "L48/plus/refined: final truncation error",
+    "L48/coarse: particle-hole energy identity",
+    "L48/refined: particle-hole energy identity",
+    "L48: charge_gap truncation/seed stability"
+  ],
+  "refined": {
+    "energy_per_site": -0.5661014980186241,
+    "charge_gap": 1.3525508511338344,
+    "double_occupancy": 0.09885049703519445
+  },
+  "coarse_refined_errors": {
+    "energy_per_site": 3.0569952125247823e-09,
+    "charge_gap": 0.009475608143489467,
+    "double_occupancy": 3.301019579904363e-08
+  },
+  "resources": {
+    "job_elapsed_seconds": 1908,
+    "target_adapter_seconds": 1801.1574261188507,
+    "target_process_peak_rss_KiB": 1684840,
+    "batch_MaxRSS_original": "1615280K",
+    "frozen_source_wall_minutes": 60,
+    "actual_scheduler_wall_minutes": 60,
+    "target_cap_seconds": 3300,
+    "no_new_size_admission": true
+  },
+  "source_archive_sha256": "b1ebb51e6d6daa140e711fa08307d2384cceccdc78fcfa85db72d5ab778444ff",
+  "source_freeze_sha256": "4edfc75eff3e6b7b298e447999d72fbc6bddf0e70f2964242cf8e2129affe185",
+  "source_members": 12,
+  "raw_text_files": 27,
+  "native_source_environment_pins": 3,
+  "runtime_hash_scope": "Observed read-only postexecution runtime inventory plus source-checked native Project/Manifest and recorded actual versions; no retrospective preexecution binary-pin claim.",
+  "schema": "BETHE_L48_COMPLETE_PORTABLE_PILOT_AUDIT_V2",
+  "checks": [
+    {
+      "name": "Exact original L48 source freeze/archive",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Full12-member original source closure",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity README.md",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity SHA256SUMS",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity engineering_gate_anchor_66950c7.md",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity engineering_prerequisite_audit.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity oracle_lieb_wu.py",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity pilot.sbatch",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity pilot.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity pilot_target.jl",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity protocol_changes.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity root_review.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity static_preparation_review.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Safe source archive member",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Frozen archive/source identity summarize_pilot.py",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "L48-only excluded pilot",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Preserved reviewed L32 auditor predecessor",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Exact prior L32 manifest",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All unchanged prior model/precision/oracle/runtime gates",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original job and remote-after transfer",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/L48_half_coarse.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/L48_half_coarse.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/L48_half_refined.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/L48_half_refined.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/L48_minus_coarse.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/L48_minus_coarse.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/L48_minus_refined.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/L48_minus_refined.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/L48_plus_coarse.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/L48_plus_coarse.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/L48_plus_refined.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/L48_plus_refined.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/oracle.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/oracle.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/oracle.resources.txt",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/oracle.resources.txt",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/summary.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/summary.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/target.resources.txt",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/target.resources.txt",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash results/target.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged results/target.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/README.md",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/README.md",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/SHA256SUMS",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/SHA256SUMS",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/engineering_gate_anchor_66950c7.md",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/engineering_gate_anchor_66950c7.md",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/engineering_prerequisite_audit.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/engineering_prerequisite_audit.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/oracle_lieb_wu.py",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/oracle_lieb_wu.py",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/pilot.sbatch",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/pilot.sbatch",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/pilot.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/pilot.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/pilot_target.jl",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/pilot_target.jl",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/protocol_changes.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/protocol_changes.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/root_review.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/root_review.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/static_preparation_review.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/static_preparation_review.json",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash source/summarize_pilot.py",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged source/summarize_pilot.py",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash native/analysis/compute_s2_itensor_dmrg.jl",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged native/analysis/compute_s2_itensor_dmrg.jl",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash native/Project.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged native/Project.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash native/Manifest.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged native/Manifest.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Transferred bytes/hash outer_logs/bethe_l48_pilot_6466266.log",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Remote unchanged outer_logs/bethe_l48_pilot_6466266.log",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Read-only post-run runtime hash inventory Julia_executable",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Read-only post-run runtime hash inventory Python_executable",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Read-only post-run runtime hash inventory NumPy_wheel_RECORD",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Read-only post-run runtime hash inventory SciPy_wheel_RECORD",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Read-only post-run runtime hash inventory SciPy_quadpack_module",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Read-only post-run runtime hash inventory SciPy_special_ufuncs_module",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Read-only post-run runtime hash inventory Julia_libjulia",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Finite complete numeric receipts",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Manifest bindings",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Actual target/oracle/summarizer source hashes",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Actual user MPO/environment analysis/compute_s2_itensor_dmrg.jl",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Actual user MPO/environment Project.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Actual user MPO/environment Manifest.toml",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Native actual runtime versions",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Independent numerical runtime versions",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original engineering prerequisite hashes",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Preserved177-check finiteL32 audit",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Preserved published engineering anchor identity",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original published engineering criterion unchanged",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Actual prior L32 elapsed/criterion",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Actual prior L32 memory/criterion",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Complete finiteL48 pilot, no thermodynamic claim",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All six sector/precision solves",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Individual/aggregate exact identity half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Expected fixed particle/spin sector half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original seed algorithm half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Norm half/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Actual particle/spin projection half/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Reported/contracted physical energy half/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Original signed variance gates half/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Per-site units half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Complete unchanged sweep/truncation records half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original final truncation gate half/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Declared bond cap half/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Half double-occupancy range coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "All48 local values/normalization site_Nup/half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_Ndown/half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_double_occupancy/half/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Individual/aggregate exact identity half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Expected fixed particle/spin sector half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original seed algorithm half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Norm half/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Actual particle/spin projection half/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Reported/contracted physical energy half/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Original signed variance gates half/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Per-site units half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Complete unchanged sweep/truncation records half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original final truncation gate half/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Declared bond cap half/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Half double-occupancy range refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "All48 local values/normalization site_Nup/half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_Ndown/half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_double_occupancy/half/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Individual/aggregate exact identity minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Expected fixed particle/spin sector minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original seed algorithm minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Norm minus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Actual particle/spin projection minus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Reported/contracted physical energy minus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Original signed variance gates minus/coarse",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Per-site units minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Complete unchanged sweep/truncation records minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original final truncation gate minus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Declared bond cap minus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "All48 local values/normalization site_Nup/minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_Ndown/minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_double_occupancy/minus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Individual/aggregate exact identity minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Expected fixed particle/spin sector minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original seed algorithm minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Norm minus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Actual particle/spin projection minus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Reported/contracted physical energy minus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Original signed variance gates minus/refined",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Per-site units minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Complete unchanged sweep/truncation records minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original final truncation gate minus/refined",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Declared bond cap minus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "All48 local values/normalization site_Nup/minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_Ndown/minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_double_occupancy/minus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Individual/aggregate exact identity plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Expected fixed particle/spin sector plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original seed algorithm plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Norm plus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Actual particle/spin projection plus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Reported/contracted physical energy plus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Original signed variance gates plus/coarse",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Per-site units plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Complete unchanged sweep/truncation records plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original final truncation gate plus/coarse",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Declared bond cap plus/coarse",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "All48 local values/normalization site_Nup/plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_Ndown/plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_double_occupancy/plus/coarse",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Individual/aggregate exact identity plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Expected fixed particle/spin sector plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original seed algorithm plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Norm plus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Actual particle/spin projection plus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Reported/contracted physical energy plus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Original signed variance gates plus/refined",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Per-site units plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Complete unchanged sweep/truncation records plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original final truncation gate plus/refined",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Declared bond cap plus/refined",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "All48 local values/normalization site_Nup/plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_Ndown/plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "All48 local values/normalization site_double_occupancy/plus/refined",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Particle-hole Nplus/Nminus identity coarse",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Particle-hole Nplus/Nminus identity refined",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Unchanged coarse/refined stability energy_per_site",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Unchanged coarse/refined stability charge_gap",
+      "passed": false,
+      "kind": "quality"
+    },
+    {
+      "name": "Unchanged coarse/refined stability double_occupancy",
+      "passed": true,
+      "kind": "quality"
+    },
+    {
+      "name": "Original thermodynamic numerical reference eligible",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Numerical reference error budget energy",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Adaptive/Gauss receipt agreement energy",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Numerical reference error budget gap_integral",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Adaptive/Gauss receipt agreement gap_integral",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Numerical reference error budget double_occupancy",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Adaptive/Gauss receipt agreement double_occupancy",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Numerical reference error budget charge_gap",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Adaptive/Gauss receipt agreement charge_gap",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Physical reference conventions",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Preserved derivative/D receipt identity",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Byte-identical unchanged frozen summarizer replay",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Pilot quality and allthermodynamic IDs unexecuted",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Bounded successful native process",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "One original scheduler job record",
+      "passed": true,
+      "kind": "integrity"
+    },
+    {
+      "name": "Original scheduler completion/cpu/memory/allocation",
+      "passed": true,
+      "kind": "integrity"
+    }
+  ],
+  "check_count": 215,
+  "quality_failure_count": 10,
+  "scientific_completions": 0,
+  "catalogue_status": {
+    "A18": "NOT_RUN",
+    "A19": "NOT_RUN",
+    "A20": "NOT_RUN"
+  },
+  "input_sha256": {
+    "native/Manifest.toml": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+    "native/Project.toml": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "native/analysis/compute_s2_itensor_dmrg.jl": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+    "outer_logs/bethe_l48_pilot_6466266.log": "32d3494031f956e9524c2cf5aebb65329d549c326bed566e053165dd3a514ca1",
+    "predecessor_auditor.py": "8c93bb6fe7f1128cc168f79b56d8b4366a7773058605aa0c3f2bba4b23914291",
+    "predecessor_manifest.toml": "733de42c0d7cf1e1efe2eab96c5d849f8177d69fd700dd3942b9fc87dc603893",
+    "release_freeze.json": "4edfc75eff3e6b7b298e447999d72fbc6bddf0e70f2964242cf8e2129affe185",
+    "results/L48_half_coarse.toml": "aab40d9a79765279e4fa53f50c3fa8800b2ebd3b4a20fe9baa37498da12b53ec",
+    "results/L48_half_refined.toml": "4f3b56f239f3161e55071297d01cd1abb3ae71d606899c2effa0c1159050d8f1",
+    "results/L48_minus_coarse.toml": "68cfe976c4d63609a328c198d357c165e43a993785f5343a2c582aaa918a4fd7",
+    "results/L48_minus_refined.toml": "f2738ebfcca3df0e4e52ebc99e536a14080e0da1a28168fbdb6f48e39848408a",
+    "results/L48_plus_coarse.toml": "ddae1a318473537f49ee8f28bf2a20ffbf95c1a1e09adc34e624ca9cfac8d9a5",
+    "results/L48_plus_refined.toml": "1c21832dc118202be663547ff58215428a79dbcb41ca7623931ffa8f7df0d545",
+    "results/oracle.json": "13011c628b66a7563120b1b6886d7d00095201527c0694a6276b71c3bb9aa3fc",
+    "results/oracle.resources.txt": "1a0a766290dd8f70714e54290ebb5276b7eee4cf2ec1f0d70f2079cde0f34007",
+    "results/summary.json": "70500527781c01054a859b6d8e39ef74621c5d88d360d19b3fda9f679b236c0d",
+    "results/target.resources.txt": "91ee21d6d90d940152bd8e2fea86dffb65a992cd3513f1732cbb02cbc58f544a",
+    "results/target.toml": "804ee52cd1536b714fb4612ba53aca767b206f3dd2a7928da2ab672b985191c5",
+    "sacct_fresh.txt": "7f7e1cb25b88d8db503e5e51cea6f085bfccaed04737de7f7ab1c093f6fded13",
+    "scontrol_fresh.txt": "e7cbc19b304ce7fb323ea1ccae489c74fbc1bdf5635781d0999740708566b8df",
+    "source/README.md": "c5a8f57a87dad3a7d00190e786b23a4c53692bf727d61a0258bb0d559f3fe4bf",
+    "source/SHA256SUMS": "9be8212fc391c90937eb33406bd3e96e01de3fadb4894bfce79a07d962d41f14",
+    "source/engineering_gate_anchor_66950c7.md": "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6",
+    "source/engineering_prerequisite_audit.json": "dd93d8b8adaa4d8e99d5da305ae505e1eec5fe653fba337bfedc6b0f42e32095",
+    "source/oracle_lieb_wu.py": "c9ed6807fe3391e34159afe0c2bcbb3b3ed8d68d64b38708aaa45f9c5f72ad26",
+    "source/pilot.sbatch": "d97258d1efb8b3ac827ed7555673cda8702acd89d56fa6d2ecb249558e8df6e5",
+    "source/pilot.toml": "a3f5cdfba3e14adc036ed3e568e29e914e300d4213966740d58ddd885c755298",
+    "source/pilot_target.jl": "e3f5d54d6fe9ae60dcd40d8beffb167e1a077c51ff6bb10cc2f9f43f87a439d2",
+    "source/protocol_changes.json": "f17dc2493d4439981848cab4d8b0468de9ea978f9f1d2be75ae291b2ada27c62",
+    "source/root_review.json": "eb5f4a84fe0ac017cb36cf142cb6ca7988eaee70a79df87dfbda410e3ea2a0a6",
+    "source/static_preparation_review.json": "d93f229210d5f82c6b21228c3bd6c9834d1f97e0a778814e55e6c16b56af0df3",
+    "source/summarize_pilot.py": "f93e6ee281c1ff17fe9e97559e8d9559f07f1de9c076138137f0613240331777",
+    "source_archive.tar.gz": "b1ebb51e6d6daa140e711fa08307d2384cceccdc78fcfa85db72d5ab778444ff",
+    "transfer_after.json": "2d03669fad1eaa9d962d5ad376e4f6e29fb65899c6df850a83878f8fc9cd484a",
+    "transfer_before.json": "9320c6ac55525164af1c18dfd6098479301deaa10675db9a7a93bf7e2b7e2e5b"
+  },
+  "inputs": {
+    "native/Manifest.toml": {
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+      "bytes": 61818
+    },
+    "native/Project.toml": {
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+      "bytes": 950
+    },
+    "native/analysis/compute_s2_itensor_dmrg.jl": {
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+      "bytes": 10719
+    },
+    "outer_logs/bethe_l48_pilot_6466266.log": {
+      "sha256": "32d3494031f956e9524c2cf5aebb65329d549c326bed566e053165dd3a514ca1",
+      "bytes": 13393
+    },
+    "predecessor_auditor.py": {
+      "sha256": "8c93bb6fe7f1128cc168f79b56d8b4366a7773058605aa0c3f2bba4b23914291",
+      "bytes": 13911
+    },
+    "predecessor_manifest.toml": {
+      "sha256": "733de42c0d7cf1e1efe2eab96c5d849f8177d69fd700dd3942b9fc87dc603893",
+      "bytes": 2722
+    },
+    "release_freeze.json": {
+      "sha256": "4edfc75eff3e6b7b298e447999d72fbc6bddf0e70f2964242cf8e2129affe185",
+      "bytes": 1871
+    },
+    "results/L48_half_coarse.toml": {
+      "sha256": "aab40d9a79765279e4fa53f50c3fa8800b2ebd3b4a20fe9baa37498da12b53ec",
+      "bytes": 3903
+    },
+    "results/L48_half_refined.toml": {
+      "sha256": "4f3b56f239f3161e55071297d01cd1abb3ae71d606899c2effa0c1159050d8f1",
+      "bytes": 4045
+    },
+    "results/L48_minus_coarse.toml": {
+      "sha256": "68cfe976c4d63609a328c198d357c165e43a993785f5343a2c582aaa918a4fd7",
+      "bytes": 3910
+    },
+    "results/L48_minus_refined.toml": {
+      "sha256": "f2738ebfcca3df0e4e52ebc99e536a14080e0da1a28168fbdb6f48e39848408a",
+      "bytes": 4054
+    },
+    "results/L48_plus_coarse.toml": {
+      "sha256": "ddae1a318473537f49ee8f28bf2a20ffbf95c1a1e09adc34e624ca9cfac8d9a5",
+      "bytes": 3896
+    },
+    "results/L48_plus_refined.toml": {
+      "sha256": "1c21832dc118202be663547ff58215428a79dbcb41ca7623931ffa8f7df0d545",
+      "bytes": 4045
+    },
+    "results/oracle.json": {
+      "sha256": "13011c628b66a7563120b1b6886d7d00095201527c0694a6276b71c3bb9aa3fc",
+      "bytes": 2386
+    },
+    "results/oracle.resources.txt": {
+      "sha256": "1a0a766290dd8f70714e54290ebb5276b7eee4cf2ec1f0d70f2079cde0f34007",
+      "bytes": 1128
+    },
+    "results/summary.json": {
+      "sha256": "70500527781c01054a859b6d8e39ef74621c5d88d360d19b3fda9f679b236c0d",
+      "bytes": 2480
+    },
+    "results/target.resources.txt": {
+      "sha256": "91ee21d6d90d940152bd8e2fea86dffb65a992cd3513f1732cbb02cbc58f544a",
+      "bytes": 1275
+    },
+    "results/target.toml": {
+      "sha256": "804ee52cd1536b714fb4612ba53aca767b206f3dd2a7928da2ab672b985191c5",
+      "bytes": 24788
+    },
+    "sacct_fresh.txt": {
+      "sha256": "7f7e1cb25b88d8db503e5e51cea6f085bfccaed04737de7f7ab1c093f6fded13",
+      "bytes": 279
+    },
+    "scontrol_fresh.txt": {
+      "sha256": "e7cbc19b304ce7fb323ea1ccae489c74fbc1bdf5635781d0999740708566b8df",
+      "bytes": 48
+    },
+    "source/README.md": {
+      "sha256": "c5a8f57a87dad3a7d00190e786b23a4c53692bf727d61a0258bb0d559f3fe4bf",
+      "bytes": 2907
+    },
+    "source/SHA256SUMS": {
+      "sha256": "9be8212fc391c90937eb33406bd3e96e01de3fadb4894bfce79a07d962d41f14",
+      "bytes": 954
+    },
+    "source/engineering_gate_anchor_66950c7.md": {
+      "sha256": "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6",
+      "bytes": 6992
+    },
+    "source/engineering_prerequisite_audit.json": {
+      "sha256": "dd93d8b8adaa4d8e99d5da305ae505e1eec5fe653fba337bfedc6b0f42e32095",
+      "bytes": 11413
+    },
+    "source/oracle_lieb_wu.py": {
+      "sha256": "c9ed6807fe3391e34159afe0c2bcbb3b3ed8d68d64b38708aaa45f9c5f72ad26",
+      "bytes": 4159
+    },
+    "source/pilot.sbatch": {
+      "sha256": "d97258d1efb8b3ac827ed7555673cda8702acd89d56fa6d2ecb249558e8df6e5",
+      "bytes": 2734
+    },
+    "source/pilot.toml": {
+      "sha256": "a3f5cdfba3e14adc036ed3e568e29e914e300d4213966740d58ddd885c755298",
+      "bytes": 2821
+    },
+    "source/pilot_target.jl": {
+      "sha256": "e3f5d54d6fe9ae60dcd40d8beffb167e1a077c51ff6bb10cc2f9f43f87a439d2",
+      "bytes": 5163
+    },
+    "source/protocol_changes.json": {
+      "sha256": "f17dc2493d4439981848cab4d8b0468de9ea978f9f1d2be75ae291b2ada27c62",
+      "bytes": 590
+    },
+    "source/root_review.json": {
+      "sha256": "eb5f4a84fe0ac017cb36cf142cb6ca7988eaee70a79df87dfbda410e3ea2a0a6",
+      "bytes": 1877
+    },
+    "source/static_preparation_review.json": {
+      "sha256": "d93f229210d5f82c6b21228c3bd6c9834d1f97e0a778814e55e6c16b56af0df3",
+      "bytes": 375
+    },
+    "source/summarize_pilot.py": {
+      "sha256": "f93e6ee281c1ff17fe9e97559e8d9559f07f1de9c076138137f0613240331777",
+      "bytes": 7078
+    },
+    "source_archive.tar.gz": {
+      "sha256": "b1ebb51e6d6daa140e711fa08307d2384cceccdc78fcfa85db72d5ab778444ff",
+      "bytes": 16709
+    },
+    "transfer_after.json": {
+      "sha256": "2d03669fad1eaa9d962d5ad376e4f6e29fb65899c6df850a83878f8fc9cd484a",
+      "bytes": 12353
+    },
+    "transfer_before.json": {
+      "sha256": "9320c6ac55525164af1c18dfd6098479301deaa10675db9a7a93bf7e2b7e2e5b",
+      "bytes": 17182
+    }
+  },
+  "auditor_sha256": "085a17a43f967a5c4c99c251bdfb8d8bcbaa1db37fbd972ad15b2a6082537c40",
+  "adapted_from_preserved_L32_auditor_sha256": "8c93bb6fe7f1128cc168f79b56d8b4366a7773058605aa0c3f2bba4b23914291",
+  "physics_executed": false,
+  "oracle_or_DMRG_rerun": false,
+  "future_growth_permission": false,
+  "scope": "Postprocessing only. Allquality/resource checks concern only this finiteL48 pilot; no thermodynamic equality/extrapolation/heldout validation and noL56/L64 admission."
+}
