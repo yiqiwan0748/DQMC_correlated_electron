@@ -1,0 +1,48 @@
+{
+  "reference_kind": "Content hashes of logical frozen snapshot members. Implementations and execution environment are not bundled in this scalar projection.",
+  "references": [
+    {
+      "bytes": 28563,
+      "logical_snapshot_filename": "scripts/two_orbital_open_cluster_ed.jl",
+      "role": "unchanged native API",
+      "sha256": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751"
+    },
+    {
+      "bytes": 16055,
+      "logical_snapshot_filename": "src/noninteracting.jl",
+      "role": "unchanged native model support",
+      "sha256": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568"
+    },
+    {
+      "bytes": 6705,
+      "logical_snapshot_filename": "src/realspace_kinetic.jl",
+      "role": "unchanged native model support",
+      "sha256": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6"
+    },
+    {
+      "bytes": 8694,
+      "logical_snapshot_filename": "native_producer.jl",
+      "role": "pilot adapter",
+      "sha256": "cea95822723c27f3c8cbb2adfe5b49758c9e01a1cec81e3eaa00036a471aa522"
+    },
+    {
+      "bytes": 4390,
+      "logical_snapshot_filename": "target.jl",
+      "role": "observer baseline",
+      "sha256": "feeeebf99e803493e3cdb0f4cdab5d8299df4ec35d7116a163856b973d709116"
+    },
+    {
+      "bytes": 6767,
+      "logical_snapshot_filename": "manifest.json",
+      "role": "frozen model and criteria",
+      "sha256": "4abf602fd8f837d194a6719aadbee778cb24321e4b06c1fd0946ef3a93749ce4"
+    },
+    {
+      "bytes": 13240,
+      "logical_snapshot_filename": "compare.py",
+      "role": "frozen comparison scope",
+      "sha256": "f8b39ca051340acb46c8d62e750a821c9d9b45b81d8b14cba05eb12f3b0f6183"
+    }
+  ],
+  "schema": "X25_NATIVE15_LOGICAL_SOURCE_REFERENCES_V1"
+}

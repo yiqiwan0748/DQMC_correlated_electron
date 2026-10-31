@@ -1,0 +1,304 @@
+{
+  "criteria": [
+    {
+      "checks": 15,
+      "criterion": "storedH real Hermitian",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-11,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "centeredU6 andfieldnegativehO diagonal",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-11,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "original savedh1 singlehop fermionparity coefficients",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-11,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "savedH trace centeredinteraction identity",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-11,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "original native convergence method no averaging",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": null,
+      "maximum_observed": null
+    },
+    {
+      "checks": 15,
+      "criterion": "original reported residual",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-11,
+      "maximum_observed": 1.92330347614013e-12
+    },
+    {
+      "checks": 15,
+      "criterion": "original direct action residual",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-11,
+      "maximum_observed": 1.92330347614013e-12
+    },
+    {
+      "checks": 15,
+      "criterion": "original norm",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-12,
+      "maximum_observed": 2.220446049250313e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "original reported vsaction residual closure",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-11,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "independently summed savedHvector residual threshold",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-11,
+      "maximum_observed": 1.9233110162151666e-12
+    },
+    {
+      "checks": 15,
+      "criterion": "savedvector norm agrees record",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-12,
+      "maximum_observed": 2.220446049250313e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "savedH Rayleigh energy agrees record",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-09,
+      "maximum_observed": 3.552713678800501e-15
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer density_up",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 1.6653345369377348e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer density_down",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 1.6653345369377348e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer Sz",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 1.1102230246251565e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer q",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 1.6653345369377348e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer O",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 2.220446049250313e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer O2",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 2.220446049250313e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer M",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 5.551115123125783e-17
+    },
+    {
+      "checks": 15,
+      "criterion": "savedstate bitmask observer total_Sz",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 3.3306690738754696e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "original APIextensiveO reproduced",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-10,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "original API O2 reproduced",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-10,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "original field-energy normalization",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-10,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "original spatialO sumq closure",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-10,
+      "maximum_observed": 2.220446049250313e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "original Mper4cells closure",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-10,
+      "maximum_observed": 0
+    },
+    {
+      "checks": 15,
+      "criterion": "normalized actual number/spin conservation",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 4.440892098500626e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "actual centeredinteraction fromsavedprobabilities",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 6.661338147750939e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "actual Ovariance convention",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 2.220446049250313e-16
+    },
+    {
+      "checks": 15,
+      "criterion": "actual energycomponent closure",
+      "failed": 0,
+      "kind": "saved_array_consistency_diagnostic",
+      "limit": 1e-10,
+      "maximum_observed": 1.5122282495238365e-15
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balancedh0 allspatialspin0",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-10,
+      "maximum_observed": 2.015184724548768e-14
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balanced spinflip energy even",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-09,
+      "maximum_observed": 3.552713678800501e-15
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balanced spinflip odd Sz",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-09,
+      "maximum_observed": 2.3558737426154774e-14
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balanced spinflip odd q",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-09,
+      "maximum_observed": 3.723096050206598e-14
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balanced spinflip odd M",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-09,
+      "maximum_observed": 1.3404641979741783e-14
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balancedtotalSz0 0.0",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-09,
+      "maximum_observed": 7.572474548453445e-19
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balancedtotalSz0 -0.02",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-09,
+      "maximum_observed": 4.4181238528784306e-18
+    },
+    {
+      "checks": 1,
+      "criterion": "Original balancedtotalSz0 0.02",
+      "failed": 0,
+      "kind": "frozen_native_gate",
+      "limit": 1e-09,
+      "maximum_observed": 1.0869126779167182e-17
+    }
+  ],
+  "external_comparison": "NOT_RUN",
+  "schema": "X25_AVAILABLE_NATIVE_CRITERIA_SUMMARY_V1",
+  "scientific_credit": 0,
+  "status": "SAVED_NATIVE_SUBSET_AND_ARRAY_CONSISTENCY_PASS_ONLY"
+}
