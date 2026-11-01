@@ -1,0 +1,92 @@
+{
+  "active_ledger_updated_by_packet": false,
+  "catalogue_id": "P13",
+  "complete_standalone_reproduction": false,
+  "distinct_scientific_questions": 1,
+  "final_scientific_PASS_decision": true,
+  "independent_full_132_case_artifact_and_raw_purity_audit": {
+    "all133_original_durable_files_byte_verified": true,
+    "physical_case_outputs_in_this_final_packet": 132,
+    "pilot_is_not_full_audit": true,
+    "private_receipt_published": false,
+    "root_final_reconciliation_complete": true,
+    "scientific_summary_and_all132case_projections_in_this_final_packet": true,
+    "status": "PASS_P13_A03_INDEPENDENT_ARTIFACT_AND_RAW_S2_AUDIT_PENDING_ROOT_RECONCILIATION"
+  },
+  "original_comparison": {
+    "bytes": 3070439,
+    "schema": "P13_FULL_STATE_ENTROPY_COMPARISON_CORE_V1",
+    "sha256": "f939e63df4409c113c7092947615eb670f592d7591d94d801c2e674c77efccae",
+    "status": "PASS_FULL_PENDING_INDEPENDENT_AUDIT"
+  },
+  "original_reported_coverage": {
+    "growth_rate_certificates": 4,
+    "growth_window_points": 9,
+    "initial_state_certificates": 2,
+    "model_certificates": 4,
+    "primary_coarse_curve_checks": 66,
+    "primary_cross_backend_S2_checks": 33,
+    "primary_cross_backend_purity_checks": 33,
+    "primary_growth_slope_checks": 1,
+    "state_certificates": 132,
+    "times_per_backend_arm": 33
+  },
+  "original_reported_gates": {
+    "FAIL": 0,
+    "PASS": 11692,
+    "total": 11692
+  },
+  "original_workflow": {
+    "all_roles_complete": true,
+    "catalogue_status": "NOT_RUN",
+    "cleanup": [],
+    "errors": [],
+    "phase": "FINAL_CAPTURE_COMPLETE",
+    "roles": [
+      {
+        "elapsed_seconds": 469.9210053831339,
+        "returncode": 0,
+        "role": "native",
+        "status": "COMPLETE_ROLE_PENDING_INDEPENDENT_AUDIT"
+      },
+      {
+        "elapsed_seconds": 96.14374693110585,
+        "returncode": 0,
+        "role": "reference",
+        "status": "COMPLETE_ROLE_PENDING_INDEPENDENT_AUDIT"
+      },
+      {
+        "elapsed_seconds": 1704.2832729127258,
+        "returncode": 0,
+        "role": "comparison",
+        "status": "COMPLETE_ROLE_PENDING_INDEPENDENT_AUDIT"
+      }
+    ],
+    "scientific_credit": 0,
+    "status": "PASS_FULL_PENDING_INDEPENDENT_AUDIT"
+  },
+  "proposed_publication_credit": 1,
+  "public_transformation": {
+    "CSV_rows_copied_from_original_state_certificates": 132,
+    "actual_complete_raw_state_scientific_cases": 132,
+    "all_remaining_scientific_JSON_values_preserved": true,
+    "new_scientific_calculations_for_packet": 0,
+    "numerical_source_references": 8,
+    "pure_audit_source_files": 4,
+    "removed_comparison_top_level_fields": [
+      "runtime_before",
+      "runtime_after"
+    ]
+  },
+  "publication_method": [
+    "Independent scientific accuracy/privacy review checks the exact final packet bytes.",
+    "The reviewed scientific record is hosted in the existing research record and public bytes are read back against the prepared pins.",
+    "The active catalogue is reconciled separately after reviewed scientific publication; this artifact does not write a ledger."
+  ],
+  "publication_receipt_scope": "Public commit/readback evidence and the active ledger are maintained separately; this artifact does not itself claim upload completion.",
+  "record_creation_stage": "FINAL_SCIENTIFIC_RECORD",
+  "root_final_reconciliation_complete": true,
+  "schema": "P13_A03_FINAL_REVIEWABLE_SCIENTIFIC_RECORD_STATUS_V2",
+  "scientific_scope": "One finite six-site fixed-sector interaction-quench entanglement benchmark; source-qualified conditional physical certificates plus a complete independent artifact/raw-vector audit. Repeated times, arms and gate occurrences are not new benchmark questions.",
+  "scientific_status": "PASS_ROOT_RECONCILED_FINITE_SCOPE"
+}

@@ -1,0 +1,77 @@
+{
+  "active_ledger_updated_by_packet": false,
+  "additional_raw_physical_check_scope": "Exact-integer quantization of all4096 raw-export amplitudes, a full Gram purity calculation and directed128-bit fixed-point logarithm enclosure, with explicit quantization bounds. A separate conditional join uses the original source-bound tensor/export-identity error. It does not freshly recompute original MPS tensors, eigensystems, evolution or longdouble radii.",
+  "attribution_limits": [
+    "No existing user native real-time solver is claimed.",
+    "No user DMRG time evolution, new optimizer, large-system scaling, speedup, DQMC sampling reliability or whole-package reliability is established.",
+    "The two arms,33times,132states and11692gates are coverage of one catalogue question.",
+    "The initial ground state is claimed only within fixed(Nup,Ndown)=(3,3).",
+    "The four OLS slopes use the fixed0.5..1.5 window and are finite-window rates, not universal/asymptotic rates."
+  ],
+  "catalogue_id": "P13",
+  "complete_standalone_reproduction": false,
+  "conditional_arithmetic": "Original eigenpair/phase/tensor/purity/log/evolution uncertainty budgets use source-bound conditional floating arithmetic; they are not directed-rounding interval arithmetic. Serialized binary64 centers/radii alone do not reproduce the original extended-precision calculations.",
+  "current_initial_ray_certificate": "Rayleigh-residual identification of the normalized actual-used initial ground ray, with unchanged complete-eigensystem/Weyl excited-band separation and explicit raw-used normalization distance. The old global recorded-column bound remains a diagnostic, not the active initial-state distance.",
+  "distinct_scientific_questions": 1,
+  "failure_history": "Keep the original15precision-gate failures, versioned Rayleigh repair, earlier final-census workflow failure and later monitoring-timeout/UNRESOLVED record. The current completed original a03 workflow does not erase those earlier attempts. The versioned audit-reader pilot stopped on a missing runtime-context version field before numerical reconciliation; a new reader version used the authenticated frozen native Manifest, passed fresh qualification/analytical fixtures and a new20casepilot before this full132caseaudit.",
+  "frozen_method": "User Hubbard MPO and Renyi entropy APIs, with new balanced-sector dense spectral evolution/complex-MPS conversion/export/validation adapters; independently constructed TeNPy model, initial state, exponential evolution and Schmidt entropy.",
+  "full_original_comparison": "The original producers and comparator completed all registered times/arms and emitted11692 passing gate occurrences. The complete artifact/raw-vector audit and final Root scope reconciliation passed. This packet transformation repeats no physical calculation and performs no active catalogue update.",
+  "independent_full_artifact_and_raw_purity_audit": "Completed separate full audit covers all132 raw-export cases, all414 original callback/checkpoint payload associations, all11692 ordered gate occurrences, four exact point OLS fits, original source/context/admission/runtime records and final census. Final association/scope review passed1890checks with zero failures; Root accepted the conditional finite-cluster scope. Public upload/readback evidence is maintained separately from this scientific result.",
+  "proposed_publication_credit": 1,
+  "public_omissions": [
+    "Raw producer tensors/eigensystems and4096component vectors.",
+    "Dependency locks and execution drivers.",
+    "Host/runtime/provider maps, scheduler/controller/connection records, contacts and CV.",
+    "Private full audit receipt/runtime inventories; only a public scientific reconciliation summary and evidence fingerprints are included."
+  ],
+  "publication_receipt_scope": "Public commit/readback evidence and the active ledger are maintained separately; this artifact does not itself claim upload completion.",
+  "record_creation_stage": "FINAL_SCIENTIFIC_RECORD",
+  "saved_pack_association_limitations": [
+    {
+      "actual_library_and_normalization_associations": 66,
+      "backend": "native",
+      "checked_pack_scope": [
+        "Hamiltonian",
+        "eigenvectors",
+        "eigenvalues",
+        "sample_raw_and_normalized400states",
+        "sample_complete4096amplitudes",
+        "sample_MPS_site_tensors"
+      ],
+      "models": 2,
+      "not_checked_pack_scope": [
+        "actual_initial_state",
+        "represented_MPO",
+        "local_operator_tables",
+        "TeNPy_pipe_phase_exports",
+        "Schmidt_value_exports"
+      ],
+      "numerical_eigensystem_or_tensor_recompute": false,
+      "samples": 66
+    },
+    {
+      "actual_library_and_normalization_associations": 66,
+      "backend": "tenpy",
+      "checked_pack_scope": [
+        "Hamiltonian",
+        "eigenvectors",
+        "eigenvalues",
+        "sample_raw_and_normalized400states",
+        "sample_complete4096amplitudes",
+        "sample_MPS_site_tensors"
+      ],
+      "models": 2,
+      "not_checked_pack_scope": [
+        "actual_initial_state",
+        "represented_MPO",
+        "local_operator_tables",
+        "TeNPy_pipe_phase_exports",
+        "Schmidt_value_exports"
+      ],
+      "numerical_eigensystem_or_tensor_recompute": false,
+      "samples": 66
+    }
+  ],
+  "schema": "P13_A03_FINAL_REVIEWABLE_PUBLIC_AUDIT_SCOPE_V2",
+  "scientific_status": "PASS_ROOT_RECONCILED_FINITE_SCOPE"
+}
