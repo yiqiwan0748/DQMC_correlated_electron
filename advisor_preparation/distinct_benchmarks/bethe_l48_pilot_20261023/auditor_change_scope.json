@@ -1,0 +1,14 @@
+{
+  "schema": "L48_PUBLIC_AUDITOR_CHANGE_SCOPE_V1",
+  "original_auditor_sha256": "085a17a43f967a5c4c99c251bdfb8d8bcbaa1db37fbd972ad15b2a6082537c40",
+  "public_auditor_sha256": "5d6e2e1aa18b53c94380f8605c792e8a39dae5089b93f7577f903ea19b6f044f",
+  "changes": [
+    "Explicit --public-inputs flag",
+    "Public selection hashes instead of private transport/inode checks in that mode",
+    "Original transfer count obtained from explicitly named publication inventory",
+    "Public schema/disclosure/docstring"
+  ],
+  "quality_statements_changed": false,
+  "original_source_or_raw_changed": false,
+  "scientific_completions": 0
+}

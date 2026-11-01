@@ -1,0 +1,86 @@
+{
+  "schema": "WEEKEND_SCIENTIFIC_PROMOTION_ELIGIBILITY_REVIEW_V1",
+  "status": "PASS_SCIENTIFIC_ELIGIBILITY_SUBJECT_TO_ROOT_PROVENANCE_PUBLIC_CLOSURE",
+  "completed_utc": "2026-10-26T03:00:02.905697+00:00",
+  "reviewer_role": "Independent science review, no ISAAC mutations/jobs/public writes",
+  "eligible_distinct_questions": [
+    "X14",
+    "X19"
+  ],
+  "scientific_credit_per_question": 1,
+  "maximum_credit_from_these_results": 2,
+  "previous_public_passes": 47,
+  "maximum_resulting_passes_if_root_closure_succeeds": 49,
+  "untouched_ids": 98,
+  "local_reports": {
+    "x14_local_saved_math_replay.json": {
+      "sha256": "cae8ff79874a2a4a4543e9b3b6b3e0c9192f7864af4ef7cfb52b6465221da93b",
+      "bytes": 1684978
+    },
+    "x19_independent_review.json": {
+      "sha256": "1633b1845bcd43452ae7be11ae82775df08dfb9a65d5d22a8620811a247595b2",
+      "bytes": 1406249
+    }
+  },
+  "bindings": {
+    "reconciliation_20261025/weekend_state/snapshot/results/x19_full_saved_audit_v4_pc1_20261024/audit.json": "63d6490dc1b9224ae3c1ef53be31abb56704d6fad242e55a32b7676753d5057b",
+    "reconciliation_20261025/weekend_state/snapshot/results/x14_saved_compare_recovery_v1_pc1_20261024/comparison.json": "fad0e1f41adb991b07a7d5cb9369d7ce2f1abf5e591804ce9f702ba92d7b2f17",
+    "reconciliation_20261025/weekend_state/snapshot/results/x14_full_independent_saved_audit_v1_pc1_20261024/audit.json": "285613cd21ac3c285eb8905cd2c83612da73726ed5f01606cabc915b6fd23300",
+    "reconciliation_20261025/weekend_state/snapshot/source/x14_saved_compare_recovery_v1_pc1_20261024/original_source/manifest.toml": "953b483b8550012fc81d1db8b843ec8d867c0a615d0ffa8503add927d93ae1fc",
+    "reconciliation_20261025/weekend_state/snapshot/analysis_inputs/x19_full_packet_6466825_v1/source/manifest.toml": "e385dba167dfdc51d3ac075f94955734bf063f2c5614bd0498f0d053fc191c47",
+    "reconciliation_20261025/weekend_state/snapshot/analysis_inputs/x19_full_packet_6466825_v1/results/target.toml": "8010547a4b806e67ff4d73cec742473efe8eaf64bbad3af1d6d3d11757a47c47",
+    "reconciliation_20261025/weekend_state/snapshot/analysis_inputs/x19_full_packet_6466825_v1/results/reference.json": "9d2483e045306f6bb3f045cd4b7525a38110d6612069d8011255db3b3477621c",
+    "results/x14_full_v3_cancelled_6467601/results/native.json": "f585f2e86296b26472ba30eb70a3458a072e9a0969560e65ba25e7c7b2a7ccb5",
+    "results/x14_full_v3_cancelled_6467601/results/reference.json": "b1e466e0b64fbb57219d38b9935f120ff13fed5001f532ceec6cf48ee7808e1f",
+    "results/x14_full_v3_cancelled_6467601/results/reference_sign_proof.jsonl": "97d0ee40ecaab625fc05dad2ff00d83c9f94e5e74aa7c1460703971341a30cea"
+  },
+  "x14": {
+    "status": "ELIGIBLE_ONE_QUESTION",
+    "old_job": "6467601",
+    "old_job_state": "CANCELLED_ZERO_CREDIT_PRESERVED",
+    "new_recovery_job": "6469838",
+    "new_independent_saved_audit_job": "6469951",
+    "rows": 140,
+    "physical_rows": 120,
+    "control_rows": 20,
+    "full_mesh_points": 65537,
+    "complete_sign_requests": 33769,
+    "exact_fallback_requests": 1226,
+    "exact_zeros": 458,
+    "unique_independently_exact_points": 18267,
+    "reference_source": "Previously audited native/QuSpin unique fixed(2,2) L4 Hubbard U4 Lehmann data; new broadening/peak rendering only.",
+    "frozen_physical_gates_unchanged": true,
+    "retained_qualification": "PADDED_BINARY64_OR_INDEPENDENT_EXACT_RATIONAL_POINT_SIGN_V2",
+    "qualification_limit": "Every point sign is checked exactly for binary64 rational inputs; interval/root census still conditional on the disclosed binary64 padded enclosure arithmetic. No formal hardware-directed interval proof.",
+    "local_postprocessing": "Python3.12 stdlib saved-data replay of preserved independent census/math plus direct Fraction check of all18267points; not pinned ISAAC runtime replay.",
+    "scope_limit": "No new eigenstate/eigensolver/sampling run, physical-gap claim, algorithm speedup claim or extra benchmark credit for repeated channels/etas/controls/pilots/audits."
+  },
+  "x19": {
+    "status": "ELIGIBLE_ONE_QUESTION",
+    "original_job": "6466825",
+    "new_independent_saved_audit_job": "6468775",
+    "cases": 12,
+    "geometry_count": 3,
+    "spin_sectors_per_case": 5,
+    "total_backend_sector_blocks": 120,
+    "complete_eigenenergies_per_case_per_backend": 1820,
+    "actual_saved_matrix_eigh_calls": 144,
+    "source_change": "All17mathhelpers plus main scientific Try AST-identical to failed-v3; only explicit one-file prospective grp provider pin/provenance and reporting metadata added.",
+    "physical_gates_unchanged": true,
+    "failed_audits_preserved": [
+      "6467037",
+      "6467245",
+      "6467556"
+    ],
+    "local_postprocessing": "Fresh stdlib exact rational quarter-character K; complete sparse Fock-H+basis reconstruction of120matrices/509376COOentries; all1820saved-energy canonical weights/logZ/energy and sum rules.",
+    "max_local_K_abs": 0.0,
+    "max_local_H_abs": 3.552713678800501e-15,
+    "scope_limit": "Finite matched open2x2/periodic2x2/tilted4 geometry and orbital mixing question; independent QuSpin comparison and analytical controls. No quantitative journal phase-diagram reproduction, interacting Lehmann spectrum or bulk/ground-state inference."
+  },
+  "required_root_closure": [
+    "Fresh owned job terminal accounting and complete immutable source/raw/receipt transfer",
+    "Review public projected queue-only omissions and source/data archive membership; no private CV/contact/controllers/maps/environments/whole handoff",
+    "Preserve both previous UNRESOLVED rows and all98other catalogue records exactly",
+    "Update existing draft PR9 only with frozen evidence and one credit per X14/X19 question"
+  ]
+}

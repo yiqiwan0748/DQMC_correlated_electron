@@ -1,0 +1,23 @@
+{
+  "schema": "p21_statistical_design_readonly_review_v1",
+  "recorded_utc": "2026-10-22T19:50:30.560158+00:00",
+  "reviewer": "validation_design",
+  "reported_status": "NO_BLOCKING_DESIGN_ISSUE",
+  "scope": "Read-only formulas/1408componentclosure/32SHAseedclosure. No execution or scientific completion.",
+  "prerequisite_status": "Referencedv3proof knowinglyunsatisfied; futurev4proof requiresnew explicit eligibility/sourceprotocolreceipt; frozenv1notrelabeledready.",
+  "findings": [
+    "All1408fullgridlabels verified",
+    "All32positiveInt32seeds independentlySHArecomputed andunique",
+    "Pairedratiochainestimator+independentWelchSEanddf+Bonferroni1408 equivalencemargin consistent",
+    "Pilotvarianceonly onefinal-look budgetselection consistent",
+    "ConditionalMonteCarlointerval caveat explicit"
+  ],
+  "files_reviewed": {
+    "PROTOCOL.md": "55e88b2fde860e0d07131aa9bf250cfd650a92253d0b8fa18bf69f9ce45bac4d",
+    "components.csv": "eb7846b1f9b8e0fe99b14584f34367ea60c41edb46d937cc6b52b2b9fc5c18a7",
+    "generate_design_tables.py": "1818e1efa6b0a9a9c657550eb50410b70c330597512db40870aeb245d6189239",
+    "manifest.toml": "3c6358dfe64a69cc275588415224db8b00291e3d9b0a7b5f62275fe830f220e3",
+    "pre_execution_receipt.json": "05283089df36f5fe45394c34d3d695ce6f67372a5e92a6c25e4b28c07c2b416d",
+    "seeds.json": "96e7f3ce1c71a072c0951751fba88db75429819117494b9feed1b36df35d7680"
+  }
+}

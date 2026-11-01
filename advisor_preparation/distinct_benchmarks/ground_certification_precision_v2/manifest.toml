@@ -1,0 +1,88 @@
+schema = "ground_certification_v1"
+execution_status = "NOT_RUN"
+release = "ground_certification_precision_v2"
+predecessor_archive_sha256 = "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4"
+predecessor_job_id = "6458708"
+revision_scope = "Controlled higher-effort precision retest; v1 X12PASS/X09UNRESOLVED retained. Same model, gates, starts, seeds, controls and source."
+catalogue_ids = ["X09", "X12"]
+quspin_version = "1.0.1"
+numpy_version = "2.4.6"
+scipy_version = "1.17.1"
+julia_version = "1.12.1"
+itensors_version = "0.9.30"
+itensormps_version = "0.4.1"
+ed_source_sha256 = "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+thermal_source_sha256 = "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+dmrg_source_sha256 = "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+project_sha256 = "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+environment_manifest_sha256 = "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+physical_energy = "Uncentered H=-t sum_periodic_edges(cdag_i c_j+h.c.)+U sum_i nup_i ndn_i; physical mu zero"
+
+[X09]
+L = 4
+t = 1.0
+U = 4.0
+boundary = "pbc"
+Nup = 2
+Ndown = 2
+seeds = [921001, 921002, 921003, 921004]
+starts = ["neel", "charge_density_wave", "spin_domains", "shuffled"]
+maxdim_schedule = [4, 8, 16, 16, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+cutoff = 1e-13
+eigsolve_tol = 1e-14
+eigsolve_krylovdim = 10
+eigsolve_maxiter = 4
+noise = [1e-8, 1e-9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+initial_link_dimension = 4
+challenge_states = ["first_excited_eigenvector", "highest_eigenvector"]
+challenge_source = "Full eigensystem materialized through actual user apply_hamiltonian!; MPS constructed without truncation; these are manufactured diagnostic states, not natural DMRG failures"
+ground_projector = "QuSpin unique lowest eigenspace in exactly Nup=Ndown=2; compare the whole projector, not eigenvector phase"
+stress_requirement = "Both exact excited MPS challenges must pass the low-variance gate and fail ground certification; every actual DMRG start must pass external ground certification"
+
+[X12]
+L = 2
+t = 0.5
+effective_dimer_hopping = 1.0
+U = 4.0
+boundary = "pbc"
+N_total = 3
+pure_Nup = 2
+pure_Ndown = 1
+native_lanczos_seed = 1234
+expected_ground_dimension = 2
+expected_ground_energy = 3.0
+expected_excited_energy = 5.0
+expected_gap = 2.0
+rotation_theta_pi_denominator = 7
+rotation_phi_pi_denominator = 5
+beta = [0.5, 1.0, 2.0, 4.0, 8.0, 16.0]
+prescriptions = ["pure_up", "pure_rotated", "equal_ground_mixture", "rotated_basis_ground_mixture"]
+subsystem_sizes = [1, 2]
+conventions = "L2 periodic source enumerates two identical bonds, so t=0.5 gives one physical dimer bond of hopping1. Canonical total N3 includes all Sz. Source centered energy is restored to uncentered physical H."
+rotation = "psi_down=Sminus_total*psi_up normalized; pure_rotated=cos(theta)*psi_up+exp(i*phi)*sin(theta)*psi_down. Rotate any orthonormal ground basis by a fixed 2x2 unitary before re-forming its equal mixture."
+analytic_reference = "Ground/excited doublets at3/5. epsilon=1/(1+exp(2beta)); Ebeta=3+2epsilon; trace_norm(rho_beta-P0/2)=2epsilon. One-site pure spectrum(1/2,1/2,0,0), mixed(1/2,1/4,1/4,0); connected Czz pure_up=-1/16, pure_rotated=-cos(2theta)^2/16, mixtures0. Rotated local spin=(sin(2theta)cos(phi),sin(2theta)sin(phi),cos(2theta))/4."
+
+[gates]
+matrix_abs = 1e-10
+eigen_residual_max = 1e-10
+ground_cluster_abs = 1e-9
+ground_gap_min = 1e-6
+norm_abs = 1e-9
+sector_abs = 1e-9
+variance_min = -1e-9
+variance_max = 1e-8
+energy_abs = 1e-8
+ground_fidelity_min = 0.99999999
+challenge_fidelity_max = 1e-8
+observable_abs = 1e-8
+rdm_trace_abs = 1e-10
+rdm_eigenvalue_min = -1e-10
+pure_mixed_entropy_separation_min = 0.1
+pure_mixed_connected_separation_min = 0.01
+last_beta_trace_distance_max = 1e-10
+
+[resources]
+cpus = 1
+memory_mb = 3500
+wall_cap_minutes = 15
+runtime_status = "UNMEASURED cap; four L4 sixteen-sweep DMRG solves plus two tiny manufactured MPS states and L2 exact traces. Root owns any pilot, execution and scheduling."

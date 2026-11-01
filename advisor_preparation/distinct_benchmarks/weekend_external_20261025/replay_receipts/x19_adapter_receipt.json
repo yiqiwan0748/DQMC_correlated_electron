@@ -1,0 +1,30 @@
+{
+  "completed_utc": "2026-10-26T03:05:10.739246+00:00",
+  "elapsed_seconds": 3.981240867999986,
+  "original_pinned_runtime_replay": false,
+  "packet_manifest_sha256": "8eeeda012f70e253cd4947e48363a3cace10e1238045e60ba194fe4a8ea06012",
+  "physical_gates_changed": false,
+  "python": "3.12.3",
+  "reviews": [
+    {
+      "all_retained_decoded_scientific_review_fields_equal": true,
+      "check_count": 4618,
+      "explicitly_omitted_private_runtime_metadata_checks": [
+        {
+          "name": "preserved runtime inventory current_observed75_registry_PRIVATE.json",
+          "reason": "Private captured process registry is intentionally absent. Its historical ISAAC qualification is preserved by hash/report; this portable replay does not requalify any runtime. No physical check is omitted."
+        }
+      ],
+      "original_review_report_sha256": "1633b1845bcd43452ae7be11ae82775df08dfb9a65d5d22a8620811a247595b2",
+      "original_script_sha256": "203214e1fc29df88e8a4fc28ea5130c2b1bff3c84d3b2a0cd039b569d43788f1",
+      "output_sha256": "4d4eb33485fcb89f90fbd7227636c67f1608c19b181354d4a354c3e4b3d4afd0",
+      "role": "x19",
+      "status": "PASS"
+    }
+  ],
+  "role": "x19",
+  "schema": "WEEKEND_PUBLIC_SAVED_MATH_ADAPTER_V1",
+  "scientific_completions": 0,
+  "status": "PASS",
+  "verified_regular_UTF8_members": 164
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "PUBLIC_X14_FAILURE_PACKET_INPUT_MANIFEST_V1",
+  "catalogue_id": "X14",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "files": {
+    "README.md": {
+      "sha256": "b42adbd2a3aba28ec40145291069d4478f5ff262f13de8ab11edfde132d16d10",
+      "bytes": 4180
+    },
+    "SOURCE_ATTRIBUTION.md": {
+      "sha256": "2cc2d82e8f5409cc52dd68fcd92916bdf2baa20e8edc0154c5db0a46588ead8d",
+      "bytes": 734
+    },
+    "archive_members.json": {
+      "sha256": "563d3893ca324bea1e9ad54ce7403cc977a224c3668ad853a23e24d7c135ee00",
+      "bytes": 40435
+    },
+    "archives/x14-diagnostic-source-scientific-selection.tar.gz": {
+      "sha256": "f3ed4c7cdc3ea0fd1e925b056c0ba11406732b75f272e0bd5116471bcc7ad6ba",
+      "bytes": 119470
+    },
+    "archives/x14-original-failure-scientific-data.tar.gz": {
+      "sha256": "defcffd67cfcbaccc0a71d2112da08056faeafc73af8466df2a8beb8f08fd7c8",
+      "bytes": 99405
+    },
+    "archives/x14-original-scientific-source.tar.gz": {
+      "sha256": "8e75f69cb68b8c08998627aa1218e2ca5311719428ff42d7c5085af2fb47d275",
+      "bytes": 103028
+    },
+    "archives/x14-trace-diagnostic-scientific-data.tar.gz": {
+      "sha256": "c3c3d194f05207d531d637fde48259a87f63635a1849bc3ff50b00377c7a77f1",
+      "bytes": 15997
+    },
+    "conditioning/analysis_release_v1/PROTOCOL.md": {
+      "sha256": "d3833f62e9caf8d87df18c5149743968bd7c4add7b9b5bf8d24b1c6c59ba3142",
+      "bytes": 2785
+    },
+    "conditioning/analysis_release_v1/analyze_saved_context.py": {
+      "sha256": "a90ea75f54752c5a883ebe8b0e663a34443166e24591067317881b49bc64f9bc",
+      "bytes": 7042
+    },
+    "conditioning/analysis_release_v1/peer_review.json": {
+      "sha256": "9def67625ade705cabc728ff23e76926fb22785277ee187fc5e8520da38329c1",
+      "bytes": 2805
+    },
+    "conditioning/analysis_release_v1/source_freeze.json": {
+      "sha256": "4f2e4f2d16891907fbfbdb7e3adbaa060ecdf91ff05fb6cf5ee594bceed80e85",
+      "bytes": 623
+    },
+    "conditioning/conditional_conditioning_v1.json": {
+      "sha256": "49852efe9f022232f067ee9abe36eab85801fdb6e8d69b232de97a151ad16a8a",
+      "bytes": 133496
+    },
+    "conditioning/independent_replay_review.json": {
+      "sha256": "4d2ceea3cc105e8b096dee2b65bc70cdf2ba4b5a1ac9c70bc16a07ee2f954cd0",
+      "bytes": 2367
+    },
+    "derived/exception_projections.json": {
+      "sha256": "827b55ccceca431e7ce22ddf9f0f9ecafd429692571d979b943f50f7b633adf8",
+      "bytes": 5193
+    },
+    "freezes/original_full_diagnostic_freeze.json": {
+      "sha256": "df530a8e6b4c5739aa507314865efdc653ec21f7b9ca0c3f52cf6e076e39e59f",
+      "bytes": 2304
+    },
+    "freezes/original_source_freeze.json": {
+      "sha256": "371c4e6e4ac9efa0f05ec90333c5252765535cf14925b5c9cdea08cad992c3e8",
+      "bytes": 5577
+    },
+    "selection.json": {
+      "sha256": "a95db4157dd96049b5d063db184bc02ffc9413a37ed701f7216624ff433dfcd8",
+      "bytes": 58204
+    },
+    "tools/replay_integrity.py": {
+      "sha256": "397f4c8912bc291a24cd8e7b360f6be72f7b952e02661b74b3ce15a82e54b4e1",
+      "bytes": 9952
+    },
+    "tools/replay_saved_conditioning.py": {
+      "sha256": "ffd031ba3cc218c52afd002a32d26f9f657e00c775a86349baac00d1c796f5a4",
+      "bytes": 4132
+    }
+  },
+  "original_failure_job": "6466312",
+  "trace_diagnostic_job": "6466728",
+  "source39_complete": true,
+  "diagnostic12of13_selection_only": true,
+  "full_original_guard_or_scientific_comparison_replay_claimed": false,
+  "separate_frozen_conditional_fraction_analysis_included": true
+}

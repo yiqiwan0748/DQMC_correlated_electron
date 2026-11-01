@@ -1,0 +1,3 @@
+The prior P09 native pole data came from the user's actual ED API and the independent QuSpin adapter. The Lorentzian renderers are new X14 adapters. The diagnostic adds observation of the original reference code; it is not a native broadening or dynamics capability and makes no solver invention claim.
+
+The selected scientific source and generated scientific data retain their existing project ownership and notices; this packet adds no license grant. NumPy, SciPy and QuSpin binaries and publisher PDFs are not distributed. Dependency versions, source references and critical file hashes remain in the original scientific provenance. Nested archives here contain original project scientific source, not installed runtime libraries.

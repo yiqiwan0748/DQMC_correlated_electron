@@ -1,0 +1,72 @@
+branch_selection = "Lowest F among detected positive-field minima within each line at Nk=384,T=0.0125; h=0 PM is an unstable stationary reference. Negative h is spin-reversed and degenerate."
+density_per_cell = 1.5
+helper_sha256 = "8dac8275eb89bb0731015096b60f2284acd4ed1de98d15b135f35c47ecb74623"
+checks_passed = 109
+status = "completed"
+t = [-1.0, -1.75, -0.85, -0.65]
+field_scan = "128 positive-field intervals to U*n/4+0.05; empirical sign-change search cannot exclude arbitrarily narrow stationary root pairs"
+elapsed_seconds = 30.37148904800415
+branch_restriction = "Uniform collinear AM and FM lines with equal orbital total densities n_x=n_y=n/2; PM also shown. No mixed FM+AM, orbital-charge order, finite-q orders, phase separation or global HF minimum is established."
+created_utc = "2026-09-28T16:16:51.055"
+density_mesh = "Midpoint periodic 384x384 over [-pi,pi)^2; spin and orbital populations sum to 1.5 per cell"
+U = 20.0
+fermi_surface_definition = "Zero contours of real HF eigenvalues minus the finite-temperature density-matched chemical potential; not a zero-temperature extrapolation or an ED result."
+hartree_shift = -2.5
+path_convention = "Gamma-X-M-Y-Gamma-M with actual cumulative Euclidean momentum distance in radians"
+energy_convention = "Centered U(n_up-1/2)(n_down-1/2); plotted energy is E_source-mu_source = E_centered-mu_centered"
+helper_source = "/home/yiqiwan/code/AltermagnetDQMCTrial/scripts/literature_transfer/hf_check.jl"
+driver_sha256 = "178ee8689a3fd30f79cc3ceb7984ba67e2a0ebe929f2f02434cf3f955442929c"
+
+[branches.FM]
+nk = 384
+T = 0.0125
+orbital1_up = 0.750000000000036
+h = 7.499999999971745
+N_up_per_cell = 1.5000000000000706
+orbital2_up = 0.7500000000000346
+orbital1_down = 8.774055251573e-275
+entropy_per_cell = 0.004375877713353732
+orbital2_down = 8.774055251573058e-275
+mu_centered = -7.696133026188997
+N_down_per_cell = 1.7548110503146056e-274
+m = 0.7499999999972123
+mu_source = -5.196133026188997
+F_per_cell = -7.638249439991917
+kinetic_per_cell = -2.6381947415204894
+n = 1.5
+
+[branches.PM]
+nk = 384
+T = 0.0125
+orbital1_up = 0.37500000000000855
+h = 0.0
+N_up_per_cell = 0.7500000000000228
+orbital2_up = 0.3750000000000142
+orbital1_down = 0.37500000000000855
+entropy_per_cell = 0.0512162156669384
+orbital2_down = 0.3750000000000142
+mu_centered = -4.366913032920186
+N_down_per_cell = 0.7500000000000228
+m = 2.245060826697523e-18
+mu_source = -1.8669130329201864
+F_per_cell = -4.276642562362429
+kinetic_per_cell = -4.901002359666862
+n = 1.5
+
+[branches.AM]
+nk = 384
+T = 0.0125
+orbital1_up = 0.7439299010973073
+h = 7.378598021946566
+N_up_per_cell = 0.7499999999999842
+orbital2_up = 0.006070098902676925
+orbital1_down = 0.00607009890267679
+entropy_per_cell = 0.0041410989309242155
+orbital2_down = 0.7439299010973025
+mu_centered = -8.1949092961171
+N_down_per_cell = 0.7499999999999793
+m = 0.737859802194664
+mu_source = -5.694909296117101
+F_per_cell = -7.676642768677091
+kinetic_per_cell = -2.8572201279932807
+n = 1.5

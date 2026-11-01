@@ -1,0 +1,16 @@
+{
+  "execution_status": "NOT_RUN",
+  "python_syntax": "PASS; AST only",
+  "julia_syntax": "PASS; Meta.parseall only, Julia 1.12.6 syntax checker; execution requires pinned 1.12.1",
+  "shell_syntax": "PASS; bash -n",
+  "manifest_parse": "PASS",
+  "target_source_hash": "PASS",
+  "independent_review": "validation_design: no blocking physics issue; physical-prefix charge mapping, SVD ordering, parity and ED hopping reviewed against official TeNPy v1.1.1 source. No simulations.",
+  "launch_owner": "root; serial dependency afterany:6457686",
+  "numerical_results_executed": false,
+  "distinct_ideas": [
+    "P11",
+    "P12",
+    "P15"
+  ]
+}

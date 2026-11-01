@@ -1,0 +1,10 @@
+{
+  "status": "PASS_EXACT_QUANTITATIVE_CASE_PROTOCOL_MATCH",
+  "matched_oracle_rows": 80,
+  "canonical_ground_rows": 64,
+  "grand_canonical_trotter_rows": 16,
+  "oracle_cases_sha256": "2915162073afffc532de40a87439f1d2f3735ffdb92ab663de035bb15362e0d4",
+  "consumer_manifest_sha256": "f87b5942223f255c2282852686f112bcd32260d71bfd77e61878c4ed5793c52e",
+  "errors": [],
+  "note": "Case-parameter and observable mapping check only; no scientific calculation run."
+}

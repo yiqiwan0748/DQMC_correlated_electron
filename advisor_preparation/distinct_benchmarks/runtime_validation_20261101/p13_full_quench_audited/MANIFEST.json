@@ -1,0 +1,73 @@
+{
+  "active_ledger_updated_by_packet": false,
+  "catalogue_id": "P13",
+  "distinct_scientific_questions": 1,
+  "files": {
+    "AUDIT_SCOPE.json": {
+      "bytes": 5452,
+      "sha256": "30fbdaed5b3e40502181d0abe25404eb08397302bb047b48eae4513232cd839a"
+    },
+    "AUDIT_SOURCE_REFERENCES.json": {
+      "bytes": 1612,
+      "sha256": "b9f731f8e6d5c7b147453cc61cd7707fde640165b904c6ade6969a467cd22896"
+    },
+    "FINAL_RECONCILIATION.json": {
+      "bytes": 3744,
+      "sha256": "0493608b26d75dfc532c0b95ff41e2b7798bf496941277a7337a1fdb74de3962"
+    },
+    "README.md": {
+      "bytes": 6742,
+      "sha256": "36581ce4a2addb1ba94e82bf20058f2629ccb973a9b000f44c4caed51c9393b8"
+    },
+    "SOURCE_REFERENCES.json": {
+      "bytes": 4755,
+      "sha256": "d48db9f97be26be956f431b3122fef8990b913d71d6a55bbeb7545d229561e0a"
+    },
+    "WORKFLOW_STATUS.json": {
+      "bytes": 3752,
+      "sha256": "55ce5c16a024ce1045cbbb827b80bed4f043136015b769cb1a7d16e091915652"
+    },
+    "audit_source/analytic_fixtures_source_only.py": {
+      "bytes": 5689,
+      "sha256": "e9a2d8d379dd265d2254bcfaad7486c89a339dd1e114eacfde43e1061049a954"
+    },
+    "audit_source/ordered_gate_schedule.py": {
+      "bytes": 12704,
+      "sha256": "61bde954b542831df1a696b2abfcd9309e1ee3280faa92eaf2b381dea062f64c"
+    },
+    "audit_source/physical_reconciliation_core.py": {
+      "bytes": 18715,
+      "sha256": "e34b1e986e9c0688517be89d1f2552021f9f6a468a22e06be073502b0423b374"
+    },
+    "audit_source/scalar_reconciliation_core.py": {
+      "bytes": 20140,
+      "sha256": "16f3d0270565cabce303178b74d569d48e06d62e9ce1a057773dfb9e65c7edfc"
+    },
+    "comparison_scientific_projection.json": {
+      "bytes": 2276400,
+      "sha256": "e23ea5c0868889a3d863840101b51a383160f32a03e2654f931563d212e034ba"
+    },
+    "independent_audit_scientific_summary.json": {
+      "bytes": 6940,
+      "sha256": "db6bd24ae5ea964a964822f926429482779d62b1385999898fa0a2912d41f19e"
+    },
+    "independent_raw_state_checks.json": {
+      "bytes": 869359,
+      "sha256": "d08c5fcc6495ca43f2a0480ba98dffd4f8016a6f60dfab7996225f7fcd780f33"
+    },
+    "time_series.csv": {
+      "bytes": 12708,
+      "sha256": "da0cd74c8c1fe83046d7b09ab089cadf30a87110772f4f832a953af7102dd3c4"
+    },
+    "verify_packet.py": {
+      "bytes": 11455,
+      "sha256": "451d09edc6d402cdf57d787179cdba527ba95700ea91dd9d7fdf971a9e970671"
+    }
+  },
+  "proposed_publication_credit": 1,
+  "publication_receipt_scope": "Public commit/readback evidence and the active ledger are maintained separately; this artifact does not itself claim upload completion.",
+  "record_creation_stage": "FINAL_SCIENTIFIC_RECORD",
+  "schema": "P13_FINAL_PUBLIC_SCIENTIFIC_PACKET_MANIFEST_V3",
+  "scientific_status": "PASS_ROOT_RECONCILED_FINITE_SCOPE",
+  "scope": "Closed final scientific record byte pins. Public commit/readback evidence and the active ledger are separate records. Original pending and zero-credit source/subroutine fields remain unchanged."
+}

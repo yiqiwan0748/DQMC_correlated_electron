@@ -1,0 +1,23 @@
+{
+  "schema": "ROOT_WEEKEND_PUBLIC_SCIENTIFIC_CLOSURE_V1",
+  "status": "PASS",
+  "completed_utc": "2026-10-26T03:08:09.930043+00:00",
+  "eligible_distinct_ids": [
+    "X14",
+    "X19"
+  ],
+  "previous_public_pass_count": 47,
+  "resulting_pass_count": 49,
+  "independent_selected_original_byte_and_queue_projection_checks": 164,
+  "independent_scientific_review_sha256": "aee0b6fc9e638e84595e1428f475e7d2fbf47ae14248a926aedc63521face10e",
+  "independent_reporter_peer_review_sha256": "2cfc9496b912153c35335b93468acb9a87a689f908b0277fc15d05eb90a1875e",
+  "original_math_reports_retained_exact": true,
+  "archive_scientific_members_unchanged_after_portable_runs": true,
+  "portable_runtime_qualification_claimed": false,
+  "one_private_runtime_metadata_check_explicitly_excluded_from_portable_X19": true,
+  "original_cancelled_X14_remains_zero_credit": true,
+  "all_three_failed_X19_audits_retained": true,
+  "all98other_rows_to_remain_exact": true,
+  "only_two_X14_queue_fields_projected": true,
+  "private_controller_admission_map_environment_CV_contact_bodies_excluded": true
+}

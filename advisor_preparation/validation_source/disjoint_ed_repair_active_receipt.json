@@ -1,0 +1,11 @@
+{
+  "active_package": "validated_package/HubbardRenyiDQMC",
+  "changed_file": "analysis/compute_s2_ed.jl",
+  "previous_sha256": "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd",
+  "active_sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+  "actual_source_retest_job": "6457716",
+  "independent_audit": "distinct_benchmarks/reporting/reports/tranche01_repaired_v4",
+  "preserved_original": "validation_source/ed_before_disjoint_repair/analysis/compute_s2_ed.jl",
+  "sampler_kernels_unchanged_by_this_patch": true,
+  "active_remote_release": "source/renyi_disjoint_corrected"
+}

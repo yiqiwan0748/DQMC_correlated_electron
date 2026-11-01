@@ -1,0 +1,87 @@
+{
+  "schema": "scientific_text_archive_v1",
+  "archive": "data.tar.gz",
+  "archive_sha256": "014a51cb9e654d6e88c72b158ffafe40b1b72a5aafd79c7645390e7f39a15e0b",
+  "archive_bytes": 194101,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "outer_logs/j23_mean_field_pilot_6466377.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/comparator.log",
+      "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+      "bytes": 5
+    },
+    {
+      "path": "results/comparator.resources.txt",
+      "sha256": "70d45f90e48405c495b29ac4a0afbb7048656f1b6785fc5a81ec44b07d0ab725",
+      "bytes": 1412
+    },
+    {
+      "path": "results/comparison.json",
+      "sha256": "a5b8aef23c66b3fc5cb92ed346c4007736dac6cf4bc4a343d2f1c52b20ab7612",
+      "bytes": 43625
+    },
+    {
+      "path": "results/execution.json",
+      "sha256": "48a20dc9086f39a23aa36d3b50ee3f3262866d6d9d15dd0f00ce3b4407c0a9f1",
+      "bytes": 6877
+    },
+    {
+      "path": "results/native16.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/native16.resources.txt",
+      "sha256": "e1932d7c0ca934d56b1a83f0dc33318fcf456e5b410b2b17e88a37a0add1c467",
+      "bytes": 1097
+    },
+    {
+      "path": "results/native16.toml",
+      "sha256": "a4ec0c35dc9d3c9ddef06922f63b36b4fbb0dacc1a353da813c1a038cbdc0c9c",
+      "bytes": 193324
+    },
+    {
+      "path": "results/native32.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/native32.resources.txt",
+      "sha256": "5b3e7bf6479d1462cb29a02dfbb24528eddc1bd6ba6b8ea12390b23e84cefa0a",
+      "bytes": 1089
+    },
+    {
+      "path": "results/native32.toml",
+      "sha256": "f9de0530db3c6df1bddd07af6134f043962c3c9645c445f88a5a2d592739b3f5",
+      "bytes": 751263
+    },
+    {
+      "path": "results/reference.json",
+      "sha256": "a84be5efd2b6a17d51d3303089b620ff717c8b2ebde4d657c75b923a3d6ff558",
+      "bytes": 1085723
+    },
+    {
+      "path": "results/reference.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/reference.resources.txt",
+      "sha256": "223e127e2edb6f09634356d77c5e62de5515713bc86a41db5908834fb79ad068",
+      "bytes": 1034
+    },
+    {
+      "path": "scheduler_own_job.txt",
+      "sha256": "19428313fa2103f079f88acc440dabddef7be2480eda6500ee1ff028e67c0a00",
+      "bytes": 266
+    }
+  ],
+  "uncompressed_bytes": 2085715,
+  "source_bytes_changed": false,
+  "runtime_binaries_included": false
+}

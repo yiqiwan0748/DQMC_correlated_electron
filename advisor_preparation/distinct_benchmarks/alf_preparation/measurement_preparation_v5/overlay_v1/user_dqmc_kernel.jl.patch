@@ -1,0 +1,68 @@
+--- a/src/dqmc_kernel.jl
++++ b/src/dqmc_kernel.jl
+@@ -437,7 +437,7 @@
+     Gdn::Matrix{T}, logdetGdn, sgndetGdn, Bdn, fermion_greens_calc_dn,
+     Gup_00, Gup_τ0, Gup_0τ,
+     Gdn_00, Gdn_τ0, Gdn_0τ,
+-    s, μ, α, Δτ, δG, rng
++    s, μ, α, Δτ, δG, rng; observer = nothing
+ ) where {T<:Number}
+ 
+     Lτ = length(Bup)
+@@ -451,6 +451,12 @@
+ 
+     jdqmcf.initialize_unequaltime_greens!(Gup_τ0, Gup_0τ, Gup, Gup_00)
+     jdqmcf.initialize_unequaltime_greens!(Gdn_τ0, Gdn_0τ, Gdn, Gdn_00)
++
++        if observer !== nothing && fermion_greens_calc_up.forward
++            observer((; tau=0, stage="initial", forward=fermion_greens_calc_up.forward,
++            phase=sgndetGup*sgndetGdn, Gup_00,Gup_τ0,Gup_0τ,Gup_ττ=Gup,
++            Gdn_00,Gdn_τ0,Gdn_0τ,Gdn_ττ=Gdn, Bup,Bdn,s))
++        end
+ 
+     for l in fermion_greens_calc_up
+         jdqmcf.propagate_unequaltime_greens!(
+@@ -473,6 +479,12 @@
+             s_l, μ, α, Δτ, rng, perm, u, v
+         )
+ 
++        if observer !== nothing && fermion_greens_calc_up.forward
++            observer((; tau=l, stage="pre_stabilization", forward=fermion_greens_calc_up.forward,
++            phase=sgndetGup*sgndetGdn, Gup_00,Gup_τ0,Gup_0τ,Gup_ττ=Gup,
++            Gdn_00,Gdn_τ0,Gdn_0τ,Gdn_ττ=Gdn, Bup,Bdn,s))
++        end
++
+         acceptance_rate += acceptance_rate_l / Lτ
+ 
+         logdetGup, sgndetGup, δGup, δθup = jdqmcf.stabilize_unequaltime_greens!(
+@@ -488,6 +500,12 @@
+             fermion_greens_calc_dn, Bdn,
+             update_B̄ = true
+         )
++
++        if observer !== nothing && fermion_greens_calc_up.forward
++            observer((; tau=l, stage="post_stabilization", forward=fermion_greens_calc_up.forward,
++            phase=sgndetGup*sgndetGdn, Gup_00,Gup_τ0,Gup_0τ,Gup_ττ=Gup,
++            Gdn_00,Gdn_τ0,Gdn_0τ,Gdn_ττ=Gdn, Bup,Bdn,s))
++        end
+ 
+         δG = max(δG, δGup, δGdn)
+ 
+@@ -566,7 +584,7 @@
+     return logdetGup, sgndetGup, logdetGdn, sgndetGdn, δG, acceptance_rate
+ end
+ 
+-function update_replica!(replica, δG)
++function update_replica!(replica, δG; observer = nothing)
+     logdetGup, sgndetGup,
+     logdetGdn, sgndetGdn,
+     δG, acceptance_rate = local_update_replica!(
+@@ -580,7 +598,7 @@
+         replica.Gdn_00, replica.Gdn_τ0, replica.Gdn_0τ,
+ 
+         replica.s, replica.μ, replica.α, replica.Δτ,
+-        δG, replica.rng
++        δG, replica.rng; observer = observer
+     )
+ 
+     replica = merge(replica, (

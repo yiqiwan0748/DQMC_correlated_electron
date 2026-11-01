@@ -1,0 +1,43 @@
+{
+  "schema": "P13_FRESH_THREE_ROLE_PILOT_PUBLIC_SCIENTIFIC_RECORD_V1",
+  "publication_status": "AUDITED_SAVED_ASSOCIATIONS_EXCLUDED_PILOT",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "original_comparison": {
+    "bytes": 2121992,
+    "sha256": "7be3d45d8bfc68130ab03094a88c3a85f86f095db8a3d9475e0c812b3bb52b53"
+  },
+  "projection_removed_top_level_fields": [
+    "runtime_before",
+    "runtime_after"
+  ],
+  "all_remaining_JSON_values_exact": true,
+  "reported_gates": {
+    "total": 8889,
+    "PASS": 8889,
+    "FAIL": 0
+  },
+  "complete_standalone_reproduction": false,
+  "files": {
+    "AUDIT_SCOPE.json": {
+      "bytes": 5225,
+      "sha256": "565d79e25734009b7978edf11e14c5b961cf2318f18c2ea8c2ec2f4ac26eb748"
+    },
+    "README.md": {
+      "bytes": 2915,
+      "sha256": "06d295ff63ff474e57e4eed7ab8cfef234f646709d7ac0ca6a5d2f6d5a4f5f6d"
+    }
+  },
+  "references": {
+    "scientific_projection": {
+      "path": "../p13_quench_pilot_rayleigh_recomparison/comparison_scientific_projection.json",
+      "bytes": 1338924,
+      "sha256": "e9c955a994947d6ccf267f120987ed6066c6ad747245a7b6d59ba7995d432008"
+    }
+  },
+  "publication_files": [
+    "README.md",
+    "AUDIT_SCOPE.json",
+    "MANIFEST.json"
+  ]
+}

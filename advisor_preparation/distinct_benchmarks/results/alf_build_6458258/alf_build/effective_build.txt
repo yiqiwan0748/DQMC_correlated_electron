@@ -1,0 +1,9 @@
+ALF_FC=gfortran
+ALF_LIB=/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules/modules_90.a -llapack -lblas -fopenmp /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/libqrref/libqrref.a
+ALF_FLAGS_PROG=-std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_build_attempt01/alf_build/ALF/Libraries/Modules -fno-fast-math
+ALF_FLAGS_MODULES=-cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math
+GNU Fortran (GCC) 10.2.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

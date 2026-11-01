@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-22T18:08:18.346708+00:00",
+  "status": "FROZEN_BEFORE_PILOT",
+  "files": {
+    "final_shard.sbatch": "856951967f6b98e9832c1fe0e07e9bc674e9f5d29aaf58f5043392a555f81dd2",
+    "manifest.toml": "ba4282ba512f9889a5f5dc55ca39a4f67ddf78b837026d2646d8df7c7215ef81",
+    "pilot.sbatch": "982036f8606996093f7a0b7d5e6433e9260461e49be5a4282d4af80a916d7faf",
+    "PROTOCOL.md": "5cb51b55a93f6a6b779324f27e0caac9da8477f285560d6611a096f44ef30c41",
+    "README.md": "d4ace035dd85c38eab377fc654b423ae370e019bedda25ca5f257a66f06c5e5d",
+    "run_coverage.jl": "ee622572c2b285dfea9d03495e9a38e5158478ca2d2b1674f3daa60d4ad658de",
+    "seeds.toml": "8bf488cab02f71ab147d86c595f941b984e7490e615146e38398fec221e9a0ce",
+    "source_hashes.toml": "4fd440f02054443affbef55689081ca4d7284b47ad96fe20716e373a20215493",
+    "summarize_coverage.py": "a5cac4bc69f120c7cfe55530dc67d6c9bee3fbf19317c2804c7986f035cffd3b"
+  },
+  "unique_seed_count": 3232,
+  "local_scientific_runs": 0
+}

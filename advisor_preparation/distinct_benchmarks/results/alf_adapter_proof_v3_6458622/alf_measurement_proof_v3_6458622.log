@@ -1,0 +1,19 @@
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source_releases/alf-measurement-observers-v3-source.tar.gz: OK
+Prog/ALF.out: OK
+Analysis/ana.out: OK
+{
+  "schema": "p21_alf_linkage_audit_v1",
+  "status": "PINNED_SINGLE_PROVIDER_PASS",
+  "binary_sha256": "24aae816f4428affdee1c2b0a305fd3d5f7919aa822daccbc9e5623572bac790",
+  "provider": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so",
+  "provider_sha256": "3cadb0f797c5bba7310ea042213601cdfd1f8cacf2fb104c2f972b822bc262c0",
+  "resolved_libraries": [
+    {
+      "ldd_line": "libopenblas.so.0 => /spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas.so.0 (0x00007f8aaecf8000)",
+      "realpath": "/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas_skylakex-r0.3.12.so"
+    }
+  ],
+  "ldd": "\tlinux-vdso.so.1 (0x00007fffc2f75000)\n\tlibopenblas.so.0 => /spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib/libopenblas.so.0 (0x00007f8aaecf8000)\n\tlibgfortran.so.5 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgfortran.so.5 (0x00007f8aae841000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007f8aae4bf000)\n\tlibgomp.so.1 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgomp.so.1 (0x00007f8aae280000)\n\tlibgcc_s.so.1 => /sw/isaac/compilers/gcc/10.2.0/lib64/libgcc_s.so.1 (0x00007f8aae068000)\n\tlibquadmath.so.0 => /sw/isaac/compilers/gcc/10.2.0/lib64/libquadmath.so.0 (0x00007f8aade21000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007f8aadc01000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f8aad82b000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f8aafab3000)\n\tlibdl.so.2 => /lib64/libdl.so.2 (0x00007f8aad627000)\n",
+  "scientific_samples": 0
+}
+COPIED_OBJECTS_MODULES_ARCHIVES_REMOVED_PASS

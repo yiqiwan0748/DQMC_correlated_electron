@@ -1,0 +1,89 @@
+{
+  "archive": "data.tar.gz",
+  "archive_bytes": 323670,
+  "archive_sha256": "fbc561365e22b172560671bc8e6033c68dcde0c74c86979c054f556673e5bef7",
+  "file_count": 16,
+  "files": [
+    {
+      "bytes": 4602,
+      "path": "recorded_frozen_pilot_audit/admission.json",
+      "sha256": "583b67d872f80244b4db9f2b9c117a56e94ac07fcdc86fb7eafe8a99039645b2"
+    },
+    {
+      "bytes": 146788,
+      "path": "recorded_frozen_pilot_audit/comparison_replay.json",
+      "sha256": "185acdaefd917610f608fd6c6610492df3da6dd1fdc2c4fa8ea4882c2aef7267"
+    },
+    {
+      "bytes": 1294,
+      "path": "results/comparator.resources.txt",
+      "sha256": "cc559f2fd4caada5a42419e3c5f5a7f740e0741a7f436bb3d5fbf070f7d8bc09"
+    },
+    {
+      "bytes": 0,
+      "path": "results/comparator.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 79,
+      "path": "results/comparator.stdout.txt",
+      "sha256": "ef716c54d90dd5c6739db74356d306ccc41e0e7799a060721c3ee1d8c577195d"
+    },
+    {
+      "bytes": 146790,
+      "path": "results/comparison.json",
+      "sha256": "9f41e63dfe0d67b61abd5aa5eed2ce6caa88284e571ffdbce2a747874bbe6d7f"
+    },
+    {
+      "bytes": 4460,
+      "path": "results/execution.json",
+      "sha256": "92edac958ae002c88303451374e02701b7c1e08b2498791b489db95bc41f1d05"
+    },
+    {
+      "bytes": 3690951,
+      "path": "results/reference.json",
+      "sha256": "fd7526a3200620f9f17625f258782e1e9f605f449a714ed977ad6d83953e320c"
+    },
+    {
+      "bytes": 1050,
+      "path": "results/reference.resources.txt",
+      "sha256": "e6f8d731f7051258509b71396ee918cf29d356a0504000e786a37c29855d6720"
+    },
+    {
+      "bytes": 0,
+      "path": "results/reference.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "results/reference.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1066,
+      "path": "results/target.resources.txt",
+      "sha256": "a9f91c4e0f1d8496dcf3642a7e638b2968735b3b143799971f04ab29980730ee"
+    },
+    {
+      "bytes": 0,
+      "path": "results/target.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "results/target.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1209432,
+      "path": "results/target.toml",
+      "sha256": "c5bf2e56c7adbba332570e94d82716a16077b3fcc8b82f9b65586c09ec0d975d"
+    },
+    {
+      "bytes": 276,
+      "path": "scheduler_own_job.txt",
+      "sha256": "960a5d7b04fd48b6e4beb35a0720fe1dc555e84ac758ff4009e4d5b22be6d3ec"
+    }
+  ],
+  "schema": "scientific_text_archive_v1"
+}

@@ -1,0 +1,13 @@
+{
+  "job_id": "6458622",
+  "dependency": "afterany:6458547",
+  "status": "FAILED_BUILD_BEFORE_PHYSICS",
+  "P21_status": "NOT_RUN_AS_DEFINED",
+  "source_freeze": "../source_releases/alf-measurement-proof-v3-submission-freeze.json",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "elapsed_seconds": 48,
+  "failure": "Cleanup guard passed; full observer compilation fails main.F90 direct Obs_scal visibility",
+  "checkpoint_EDT": "2026-10-22 16:00"
+}

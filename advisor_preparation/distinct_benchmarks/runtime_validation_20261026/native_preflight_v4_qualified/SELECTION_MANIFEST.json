@@ -1,0 +1,129 @@
+{
+  "schema": "P17_NATIVE_V4_PUBLIC_SELECTION_MANIFEST_V1",
+  "parent_commit": "17d1cb24c0cbd90f6ad8cd924da7a3c8aecb4278",
+  "parent_files_unchanged": 16,
+  "scientific_ledger_unchanged": true,
+  "runtime_qualified": true,
+  "files": [
+    {
+      "path": "IMMUTABLE_PARENT_RECORD.json",
+      "bytes": 3176,
+      "sha256": "d61dc2eee8f058576a2e3b482646b2e3860bef3647d14f843005fb2306f627e6"
+    },
+    {
+      "path": "NATIVE_V4_AGGREGATES.json",
+      "bytes": 23300,
+      "sha256": "37a0584c3dc11790e8cc3a69df430db135c2fa6eaafa32c09f1c5c0c81c4641c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1879,
+      "sha256": "4a405dcf1e5c972dacf777fe39a7dc8a59b731d3a0e1d651ef0057f400806943"
+    },
+    {
+      "path": "source/full_file_identity.jl",
+      "bytes": 4747,
+      "sha256": "9811f6714573f115cb5dc556a91c48293b1a1ee87016ac6c390a7c29ce5082cb"
+    },
+    {
+      "path": "source/full_identity_fixtures.jl",
+      "bytes": 2882,
+      "sha256": "b26e369c7837c4cc751289bd2fca74315a03912aabb8de320e949d304242c263"
+    }
+  ],
+  "original_input_identities": {
+    "execution": {
+      "bytes": 11477,
+      "sha256": "623b32b8c7756d367b34d2cc6932710bfc12aa48f015a5019a241664cadbc774",
+      "original_body_included": false
+    },
+    "source_freeze": {
+      "bytes": 6015,
+      "sha256": "d7defaecd8ecebcb1501b038290c6bb2a3913972cb88ae263190e67698c6b65e",
+      "original_body_included": false
+    },
+    "terminal_accounting": {
+      "bytes": 130,
+      "sha256": "e95123e762d5fc536f7ec5e435e97934d376001e0a7b9aab7746d6a52beb3833",
+      "original_body_included": false
+    },
+    "independent_actual_review": {
+      "bytes": 48384,
+      "sha256": "ea8f8b6e9788edc4b46a5e6cc635e00fe1d0cd013ccb7f2454ad3fef8750bbd8",
+      "original_body_included": false
+    },
+    "native_report": {
+      "bytes": 335551,
+      "sha256": "869db75ddb004591dc0934c5fc514e1053e8e084a4077d291fb708b6eedd36fa",
+      "original_body_included": false
+    },
+    "terminal_retrieval": {
+      "bytes": 10197,
+      "sha256": "2f11b903e91163d16ba5bbed25e1b247a72ea7a88afced687ec5a1565ad29cfe",
+      "original_body_included": false
+    },
+    "GNU_resource_receipt": {
+      "bytes": 1275,
+      "sha256": "0f5e01f69bc9553f020b13ba49e2873d24ea49c063ef91bf63d59b70bb320520",
+      "original_body_included": false
+    }
+  },
+  "projection_allowlist": {
+    "execution": [
+      "status",
+      "scientific_completions",
+      "solver_or_fixture_executed",
+      "automatic_retry",
+      "source_after_verified",
+      "started_utc",
+      "finished_utc",
+      "elapsed_seconds",
+      "final_measured_whole_seconds",
+      "selected numeric wrapper-only resource fields",
+      "selected role status/timing/sample-count fields"
+    ],
+    "stage_receipts": [
+      "sequence",
+      "label",
+      "event",
+      "elapsed_seconds",
+      "original byte count and SHA-256"
+    ],
+    "native_report": [
+      "qualification status",
+      "version/thread counts",
+      "metadata fixture names/pass flags",
+      "nonempty map/stat/provider counts and completion flags",
+      "dispatch signature/line/source SHA only"
+    ],
+    "accounting": [
+      "state",
+      "exit",
+      "duration",
+      "CPU",
+      "memory",
+      "sampled batch MaxRSS"
+    ],
+    "reviews": [
+      "exact status/check count/receipt identities"
+    ]
+  },
+  "transformations": [
+    "Copy only allowlisted observations; never copy arbitrary error strings, argv, process metadata, raw maps, paths, identifiers, environment or queue bodies.",
+    "Strip PID and epoch fields from every exact-hash-bound stage marker. Pair BEGIN/END elapsed values without interpolating missing stages.",
+    "Native report aggregates and exact generic helper source are selectable only after actual complete execution and independent runtime-qualified endorsement.",
+    "Separate all memory/resource scopes; no extrapolation from passive process samples.",
+    "Preserve old public files and ledger; this runtime prerequisite always adds zero scientific credit."
+  ],
+  "selected_exact_source": {
+    "full_file_identity.jl": {
+      "bytes": 4747,
+      "sha256": "9811f6714573f115cb5dc556a91c48293b1a1ee87016ac6c390a7c29ce5082cb"
+    },
+    "full_identity_fixtures.jl": {
+      "bytes": 2882,
+      "sha256": "b26e369c7837c4cc751289bd2fca74315a03912aabb8de320e949d304242c263"
+    }
+  },
+  "scientific_completions_added": 0
+}

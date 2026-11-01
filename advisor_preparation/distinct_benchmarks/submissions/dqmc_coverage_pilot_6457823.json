@@ -1,0 +1,11 @@
+{
+  "job_id": "6457823",
+  "dependency": "afterany:6457724",
+  "release": "../source_releases/dqmc-coverage-pilot-v2-freeze.json",
+  "archive_sha256": "70750c7ef0d9409b63f48cc5678d3c160d1b092e041c28ed58ca749c426dcf1d",
+  "scope": "Four pilot replicates, excluded from the 400 final coverage trials; timing/quality pilot only",
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 10,
+  "no_final_campaign_submitted": true
+}

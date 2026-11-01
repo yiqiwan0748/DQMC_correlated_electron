@@ -1,0 +1,22 @@
+# Same-state quench pilot: sharper initial-state error bound
+
+**Audited excluded pilot; zero catalogue credit.** The ledger stays **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**, and full P13 remains **NOT_RUN**.
+
+This re-comparison uses the exact same saved native and independent TeNPy states as the [original precision-unresolved pilot](../p13_quench_pilot_precision_unresolved/README.md). It changes the mathematical error bound for identifying the initial ground state. The physical model, five times, two controls, numerical producer outputs and every original acceptance limit stay unchanged. All twenty original entropy centers remain bit-identical. The original 15 failed gates and original source remain preserved in that separate record.
+
+The new report contains **8,889 PASS / 0 FAIL**: all 8,887 original gate occurrences, with their categories and limits retained, plus two Hermitian-Rayleigh eligibility gates. Coverage is four model certificates and twenty state certificates for the open six-site Hubbard chain with three up-spin and three down-spin electrons, hopping one, repulsion changed from eight to four, central cut after site three, and times 0,1/8,1/4,3/8,1/2. Complete dense spectra supply time evolution; MPS routines measure the represented states. This checks small dense validation adapters, not production DMRG time evolution or scalability.
+
+| Saved native primary entropy uncertainty radius | Minimum | Maximum | Unchanged limit |
+|---|---:|---:|---:|
+| Original global-eigensystem bound | 5.008e-8 | 7.051e-8 | 4e-8 |
+| Sharper initial-state bound | 8.225e-12 | 6.959e-10 | 4e-8 |
+
+The new method uses the normalized actual initial vector w, its Rayleigh energy mu and a bound r on the residual norm ||(H-mu)w||. The unchanged complete-spectrum certificate supplies a lower bound L on the first excited energy. For Delta=L-mu_upper>0, the excited-state weight is at most (r/Delta)^2, so the ground-ray distance is at most sqrt(2)*r/Delta. The bound also includes the actual raw-used to normalized-used distance. Old global bounds, norm/column/gap diagnostics, original residuals and all propagated physical-state/entropy budgets remain visible. The proof requires no observed cross-backend phase fit, solver replacement or tolerance change.
+
+The arithmetic remains conditional floating error accounting, not directed-rounding interval arithmetic. Saved Rayleigh energy centers are serialized as binary64, so this public report alone does not independently reconstruct the internal extended-precision enclosures. A close center comparison or a small residual alone is not the acceptance rule.
+
+`comparison_scientific_projection.json` removes only the original two private runtime dictionaries. Every remaining scientific JSON value, gate, certificate, old-bound diagnostic, coverage flag and zero-credit/full-NOT_RUN status is retained. `source/` contains byte-identical numerical sources used by the re-comparison and unchanged original producer/entropy sources. Private host, provider, runtime and controller records and raw producer tensors/eigensystems are omitted. This packet is not a complete standalone reproduction. The new physical certificates were computed in the guarded numerical run; saved-record audits check source/byte/runtime/input/chunk/serialization associations and do not independently repeat all physical calculations.
+
+The saved-record association audit passed **12,375 checks with zero failures**, covering the complete captured source/results, immutable producer inputs, fifty checkpoints, two fresh runtime records and twenty-eight queue observations. Separate source/math and public projection reviews support the method and data association. The association auditor also authored the certification adapters; its saved-relationship checks are not an independent physical recomputation. All audit-reader correction histories remain preserved privately.
+
+The full 33-time curve, nine-point growth-rate fits and full-case eligibility were not run. This re-comparison is a precision-certificate repair of the same excluded pilot and adds no distinct benchmark idea or speedup claim. TeNPy's [Hubbard-chain model](https://tenpy.readthedocs.io/en/v1.1.1/reference/tenpy.models.hubbard.FermiHubbardChain.html) and [exact-diagonalization API](https://tenpy.readthedocs.io/en/v1.1.1/reference/tenpy.algorithms.exact_diag.ExactDiag.html) document the reference interfaces; the archived producer source records the actual calls.

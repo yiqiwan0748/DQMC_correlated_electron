@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive/\u6587\u6863/ChatGPT/Idea/advisor_preparation/distinct_benchmarks/reporting/reports/two_orbital_v9/frozen_sources/two_orbital/two_orbital_analytic/compare.py",
+    "--target",
+    "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive/\u6587\u6863/ChatGPT/Idea/advisor_preparation/distinct_benchmarks/reporting/reports/two_orbital_v9/inputs/two_orbital_target_toml/target.toml",
+    "--oracle",
+    "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive/\u6587\u6863/ChatGPT/Idea/advisor_preparation/distinct_benchmarks/reporting/reports/two_orbital_v9/inputs/two_orbital_oracle_json/oracle.json",
+    "--output",
+    "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive/\u6587\u6863/ChatGPT/Idea/advisor_preparation/distinct_benchmarks/reporting/reports/two_orbital_v9/analysis/two_orbital_comparator_replay.json"
+  ],
+  "returncode": 0,
+  "stdout": "A15 PASS\nA16 PASS\nA17 PASS\n",
+  "stderr": "",
+  "physics_executed": false
+}

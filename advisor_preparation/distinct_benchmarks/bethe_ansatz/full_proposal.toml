@@ -1,0 +1,37 @@
+schema = "bethe_ansatz_full_design_proposal_v1"
+status = "NOT_AUTHORIZED_NOT_IMPLEMENTED; requires pilot quality/runtime review and separate full release"
+catalogue_ids = ["A18", "A19", "A20"]
+U = 4.0
+t = 1.0
+mu_physical = 0.0
+boundary = "obc"
+training_sizes = [16, 24, 32, 40, 48]
+held_out_sizes = [56, 64]
+pilot_sizes_excluded = [8, 12]
+sectors = ["half", "minus", "plus"]
+primary_fit = "OLS y=a0+a1*(32/L)+a2*(32/L)^2 on training sizes only"
+alternative_fit = "OLS cubic in32/L on all five training sizes"
+size_stability_fit = "OLS quadratic in32/L dropping smallest training size16"
+held_out_policy = "Both sizes56,64 must be predicted by every fit within the declared observable tolerance; never used to refit"
+uncertainty_policy = "Deterministic empirical envelope: fit-model intercept spread, leave-one-training-size-out intercept spread, training residuals, held-out prediction errors, and propagated DMRG arm uncertainty; no statistical confidence-level claim"
+failure_policy = "Any quality, held-out, model-stability or precision failure is UNRESOLVED. No size exclusion, polynomial change, margin widening or reuse of held-out points after seeing results. A new protocol is required for extension."
+dmrg_proposal = "two independently seeded arms, chi256/512 and cutoff1e-12/1e-13, 18/24 sweeps; not frozen execution settings until feasibility review"
+resource_status = "UNKNOWN; 42 sector/arm solves, no full allocation estimate from small pilot. Bridge-size timing needed, plus max-bond/RSS estimate under3500MB."
+
+[A18]
+observable = "half-filled uncentered E0(L)/L"
+held_out_prediction_abs = 5e-5
+maximum_empirical_uncertainty = 1e-4
+equivalence_margin = 2e-4
+
+[A19]
+observable = "E0(L+1)+E0(L-1)-2E0(L), same chain length L"
+held_out_prediction_abs = 0.01
+maximum_empirical_uncertainty = 0.02
+equivalence_margin = 0.03
+
+[A20]
+observable = "sum_i<Nupdn_i>/L in half-filled ground state, full-chain mean including boundaries"
+held_out_prediction_abs = 3e-5
+maximum_empirical_uncertainty = 1e-4
+equivalence_margin = 2e-4

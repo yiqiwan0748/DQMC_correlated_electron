@@ -1,0 +1,68 @@
+{
+  "catalogue": {
+    "original_path": "external_benchmark_roadmap/benchmark_ideas_100.json",
+    "evidence_copy": "inputs/catalogue_benchmark_ideas_100.json",
+    "bytes": 144066,
+    "sha256": "59a780c5994db50a56da260fc51ae639f22b674b3bc24f878cde1a6e7bc31818"
+  },
+  "frozen_release": {
+    "original_path": "distinct_benchmarks/source_releases/tranche01-freeze.json",
+    "evidence_copy": "inputs/frozen_release_tranche01-freeze.json",
+    "bytes": 2090,
+    "sha256": "dcb7e8ca0a48f1578c93049f90d3129df5cceede019e41fcc1343d903d439ba9"
+  },
+  "frozen_archive": {
+    "original_path": "distinct_benchmarks/source_releases/tranche01-source.tar.gz",
+    "evidence_copy": "inputs/frozen_archive_tranche01-source.tar.gz",
+    "bytes": 33740,
+    "sha256": "a5c95efd46268165a9556a7a56371651257f2e66da63850d2ba35a9bcec9d09c"
+  },
+  "user_ed_source": {
+    "original_path": "validated_package/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+    "evidence_copy": "inputs/user_ed_source_compute_s2_ed.jl",
+    "bytes": 16741,
+    "sha256": "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd"
+  },
+  "user_thermal_source": {
+    "original_path": "validated_package/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl",
+    "evidence_copy": "inputs/user_thermal_source_audit_u4_l4_thermal_ed.jl",
+    "bytes": 11032,
+    "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+  },
+  "analytic": {
+    "original_path": "distinct_benchmarks/results/tranche01_attempt01/analytic.toml",
+    "evidence_copy": "inputs/analytic_analytic.toml",
+    "bytes": 301410,
+    "sha256": "02df06113d552f25376365826aaf3b238acb1722c35f1ef1806076cd78a224b2"
+  },
+  "packages": {
+    "original_path": "distinct_benchmarks/results/tranche01_attempt01/packages.json",
+    "evidence_copy": "inputs/packages_packages.json",
+    "bytes": 35634,
+    "sha256": "f6697318eb71ae846825c8ff1a1bc3e6b2bbc1505c47c73c13aedfd926f7b2c8"
+  },
+  "package_target": {
+    "original_path": "distinct_benchmarks/results/tranche01_attempt01/target.toml",
+    "evidence_copy": "inputs/package_target_target.toml",
+    "bytes": 6551,
+    "sha256": "33d36e43dbc8134fa7288473606df4213f6c21a26bdde88bcd92a3c17282a264"
+  },
+  "package_oracle": {
+    "original_path": "distinct_benchmarks/results/tranche01_attempt01/oracle/oracle.toml",
+    "evidence_copy": "inputs/package_oracle_oracle.toml",
+    "bytes": 6001,
+    "sha256": "709a1a8303ecde7803283b7392e8fa7844ad4752c7c0ead7f3525cc5f1a0828b"
+  },
+  "journal": {
+    "original_path": "distinct_benchmarks/results/tranche01_attempt01/journal.toml",
+    "evidence_copy": "inputs/journal_journal.toml",
+    "bytes": 7660,
+    "sha256": "e970c09f686f3e9454d4d1fc25fe9029f4ac36978e3de06e52a511260be20c7d"
+  },
+  "process_status": {
+    "original_path": "distinct_benchmarks/results/tranche01_attempt01/process_status.txt",
+    "evidence_copy": "inputs/process_status_process_status.txt",
+    "bytes": 74,
+    "sha256": "f63ef1f253274923ea8aa94fa2672fd103b3282b9dcbf5547f6e263827bb335d"
+  }
+}

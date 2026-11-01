@@ -1,0 +1,2 @@
+LIBRARY_PATH=/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/external/alf_linker_probe01/compat:/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib
+LD_LIBRARY_PATH=/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib:/spack/spack-0.16.3/apps/linux-rhel8-cascadelake/gcc-10.2.0/openblas-0.3.12-c4x3eon3lkfddumq466n3n6b5gpqdbvh/lib:/sw/isaac/compilers/gcc/10.2.0/lib64

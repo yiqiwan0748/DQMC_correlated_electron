@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "active_package": "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive/\u6587\u6863/ChatGPT/Idea/advisor_preparation/validated_package/HubbardRenyiDQMC",
+  "original_snapshot_unchanged": true,
+  "archived_kernel_unchanged": true,
+  "no_patched_kernel_simulations_executed_by_this_agent": true,
+  "exact_analytical_transition_graph_executed": true,
+  "proposal_loops_patched": [
+    "_local_update_replica!",
+    "_local_update_replica_fused!",
+    "_local_update_replica_rank1_fused!"
+  ],
+  "local_idle_probability": 0.5,
+  "acceptance_semantics": "accepted moves divided by scheduled spatial slots, including idle slots",
+  "runtime_regressions_status": "WRITTEN_NOT_RUN; root will stage and execute on ISAAC",
+  "changed_files": [
+    {
+      "path": "src/dqmc_kernel.jl",
+      "original_sha256": "4cd70c95f78a7a1f85e9648a6addbb58242791c2b16093ed6f33012ddbf8ac31",
+      "patched_sha256": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be"
+    },
+    {
+      "path": "src/grover_rank1_update.jl",
+      "original_sha256": "e74e95d537333a91f98c68139cc032cf8286beafad55dd242f07ec1c12aeed33",
+      "patched_sha256": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+    },
+    {
+      "path": "test/runtests.jl",
+      "original_sha256": "363f8a82dd2b0ce53c2b13230a79f39667c28ff4e6d4b38205595334616b4ba1",
+      "patched_sha256": "63ab76eb3d6d184c38c1da5ac3769fac57ee3b046f5821a13eb35dbfacd0eed3"
+    }
+  ],
+  "new_files": [
+    {
+      "path": "test/atomic_lazy_scan_tests.jl",
+      "sha256": "2845b6cb418a23345af503ec8f77b1591fd662a207247f59718c751d251d29cb"
+    },
+    {
+      "path": "analysis/atomic_odd_sweep_proof.jl",
+      "sha256": "f4dfe3b30a9a8a3515f962475caf6186fca5ea9ae5db98a3fb4f84595aea2253"
+    },
+    {
+      "path": "docs/atomic_odd_scan_fix.md",
+      "sha256": "49d24b0c0b9df3010d2cf888765db78bb34f10fd1d8c84c2ab8c2e61ee171a1b"
+    }
+  ],
+  "optional_kernel_diagnostic_import": "Package source is loaded at top level only when --kernel is selected; avoids world-age issues."
+}

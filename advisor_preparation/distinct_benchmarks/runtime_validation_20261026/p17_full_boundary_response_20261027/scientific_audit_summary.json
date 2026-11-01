@@ -1,0 +1,36 @@
+{
+  "schema": "P17_FULL_SCIENTIFIC_RECONCILIATION_PUBLIC_SUMMARY_V1",
+  "status": "PASS_ONE_FINITE_SCIENTIFIC_QUESTION",
+  "scientific_credit_added": 1,
+  "original_frozen_gates": {
+    "PASS": 6578,
+    "FAIL": 0
+  },
+  "independent_checks": {
+    "capture": 807,
+    "saved_metadata": 963,
+    "saved_runtime": 9688,
+    "saved_scientific_relationships": 17002
+  },
+  "failed_independent_checks": 0,
+  "full_before_after_runtime_observations": 8,
+  "negative_subtractive_variances_preserved": 22,
+  "metadata_only_binary64_normalizations": 28,
+  "recorded_gate_relationship_classes": {
+    "scalar_threshold": 3973,
+    "boolean_only_no_scalar_receipt": 2548,
+    "elementwise_maxima_necessary_only": 56,
+    "coverage": 1
+  },
+  "manual_scope_obligations": [
+    "Review the frozen conditional extended-arithmetic proof and its normality, rounding and provider assumptions; these receipts are not rigorous interval arithmetic.",
+    "Boolean-only CAR/local-state/reference-number/raw-norm/Rayleigh-imaginary/fixed-charge gates have no scalar intermediate in the receipt. Source/runtime association is checked; independent numerical replay is not performed.",
+    "Complete-export identity records separate maxima. Their necessary ordering cannot reproduce the elementwise inequality used by the frozen comparator.",
+    "The ground-distance denominator and full Rayleigh/residual intermediate balls are not recorded. Necessary residual bounds and exact gate/certificate associations do not independently reproduce their derivation.",
+    "Default TeNPy diagonalization is a source-bound hybrid policy (ED_block below its local-size threshold, otherwise Lanczos); per-update chosen branches and native noise values are not raw receipt fields.",
+    "Review the actual complete terminal evidence, preserved failures, runtime audit limitations and scientific controls before any ledger or public scientific-result decision."
+  ],
+  "whole_auditor_sources_verified_before_after": true,
+  "physical_recomputation_in_audits": false,
+  "scope": "Recorded source-bound conditional certificates and scalar/control/configuration relationships, with explicit unrecorded or elementwise proof limits; not a new complete numerical replay or a rigorous interval proof."
+}

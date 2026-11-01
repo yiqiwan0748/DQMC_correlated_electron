@@ -1,0 +1,64 @@
+{
+  "schema": "P13_FULL_CURVE_UNCHANGED_PUBLIC_NUMERICAL_SOURCE_REFERENCES_V1",
+  "status": "EIGHT_PREVIOUSLY_PUBLIC_FILES_BYTE_IDENTICAL_TO_THIS_COMPARISON",
+  "complete_standalone_reproduction": false,
+  "reference_rule": "These numerical sources and the frozen protocol are already present in the research-record branch. Verify their byte pins before use. No execution driver, dependency lock, raw producer tensors/eigensystems or private execution qualification is supplied.",
+  "files": [
+    {
+      "name": "PROTOCOL.json",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/PROTOCOL.json",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/PROTOCOL.json",
+      "bytes": 9816,
+      "sha256": "a5057c8bcab56564890355a02ec63e0bbc760205d34d12039a00dbb841b7e222"
+    },
+    {
+      "name": "protocol_helpers.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/protocol_helpers.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/protocol_helpers.py",
+      "bytes": 1523,
+      "sha256": "950525ba84b706d9e55824cebfb344484295a44f904ef3f652d364efd98b34a3"
+    },
+    {
+      "name": "native_producer_core.jl",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/native_producer_core.jl",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/native_producer_core.jl",
+      "bytes": 9710,
+      "sha256": "fda7ec19080ef823f6000693fa78c7ca0a8da24ee0f204340fe85ad658515ff9"
+    },
+    {
+      "name": "tenpy_producer_core.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/tenpy_producer_core.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/tenpy_producer_core.py",
+      "bytes": 14971,
+      "sha256": "65835eb811f9f836cbccfc17a0e94d9de83056aadf48aff3baa8aad0f96ba99a"
+    },
+    {
+      "name": "comparator.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/comparator.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/comparator.py",
+      "bytes": 49045,
+      "sha256": "ed2f0172df1fd361fde3cc6951feacc68118308c2f5c1f500c9919f5453a0ff0"
+    },
+    {
+      "name": "evolution_bounds.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/evolution_bounds.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/evolution_bounds.py",
+      "bytes": 6662,
+      "sha256": "dbfae6bcc8e98965160438911230f4cb6fc803583a7c895b052964bbd01fdbe9"
+    },
+    {
+      "name": "inherited_p17_certificate.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/inherited_p17_certificate.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/inherited_p17_certificate.py",
+      "bytes": 14086,
+      "sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    {
+      "name": "source_snapshot/compute_s2_itensor_dmrg.jl",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/source_snapshot/compute_s2_itensor_dmrg.jl",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/source_snapshot/compute_s2_itensor_dmrg.jl",
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    }
+  ]
+}

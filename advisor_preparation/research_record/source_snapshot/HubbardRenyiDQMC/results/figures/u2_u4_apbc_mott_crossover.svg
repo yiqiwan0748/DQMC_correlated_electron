@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="540" viewBox="0 0 820 540" role="img" aria-labelledby="title desc">
+<title id="title">Closed-shell APBC Mott crossover from U=2 to U=4</title>
+<desc id="desc">Exact ED effective central charge falls from 1.989 at U=2 to 1.108 at U=4. DQMC screening estimates with error bars show the same direction.</desc>
+<rect width="820" height="540" fill="white"/>
+<text x="410.0" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Closed-shell APBC Mott crossover</text>
+<text x="410.0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#444">two-point slope from L=8 and L=12</text>
+<line x1="92.0" y1="437.8" x2="786.0" y2="437.8" stroke="#e3e3e3"/>
+<text x="82.0" y="437.8" text-anchor="end" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12">0.75</text>
+<line x1="92.0" y1="387.3" x2="786.0" y2="387.3" stroke="#e3e3e3"/>
+<text x="82.0" y="387.3" text-anchor="end" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12">1</text>
+<line x1="92.0" y1="286.2" x2="786.0" y2="286.2" stroke="#e3e3e3"/>
+<text x="82.0" y="286.2" text-anchor="end" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12">1.5</text>
+<line x1="92.0" y1="185.2" x2="786.0" y2="185.2" stroke="#e3e3e3"/>
+<text x="82.0" y="185.2" text-anchor="end" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12">2</text>
+<line x1="92.0" y1="84.1" x2="786.0" y2="84.1" stroke="#e3e3e3"/>
+<text x="82.0" y="84.1" text-anchor="end" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12">2.5</text>
+<line x1="92.0" y1="387.3" x2="786.0" y2="387.3" stroke="#777" stroke-width="1.4" stroke-dasharray="7 6"/>
+<text x="779.0" y="380.3" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#555">c = 1</text>
+<line x1="92.0" y1="185.2" x2="786.0" y2="185.2" stroke="#777" stroke-width="1.4" stroke-dasharray="7 6"/>
+<text x="779.0" y="178.2" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#555">c = 2</text>
+<rect x="92.0" y="74.0" width="694.0" height="384.0" fill="none" stroke="#222" stroke-width="1.2"/>
+<line x1="207.7" y1="458.0" x2="207.7" y2="464.0" stroke="#222"/>
+<text x="207.7" y="482.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13">2</text>
+<line x1="670.3" y1="458.0" x2="670.3" y2="464.0" stroke="#222"/>
+<text x="670.3" y="482.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13">4</text>
+<text x="439.0" y="514.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">U/t</text>
+<text x="25" y="266.0" text-anchor="middle" transform="rotate(-90 25 266.0)" font-family="Arial, sans-serif" font-size="15">c_eff diagnostic</text>
+<polyline points="197.7,187.5 660.3,365.5" fill="none" stroke="#0072B2" stroke-width="2.5"/>
+<circle cx="197.7" cy="187.5" r="6" fill="#0072B2" stroke="white" stroke-width="1.5"/>
+<text x="187.7" y="177.5" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0072B2">1.989</text>
+<circle cx="660.3" cy="365.5" r="6" fill="#0072B2" stroke="white" stroke-width="1.5"/>
+<text x="670.3" y="355.5" text-anchor="start" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0072B2">1.108</text>
+<line x1="217.7" y1="141.0" x2="217.7" y2="193.3" stroke="#D55E00" stroke-width="2"/>
+<line x1="211.7" y1="141.0" x2="223.7" y2="141.0" stroke="#D55E00" stroke-width="2"/>
+<line x1="211.7" y1="193.3" x2="223.7" y2="193.3" stroke="#D55E00" stroke-width="2"/>
+<polygon points="217.7,160.2 224.7,167.2 217.7,174.2 210.7,167.2" fill="#D55E00" stroke="white" stroke-width="1.5"/>
+<text x="229.7" y="172.2" text-anchor="start" font-family="Arial, sans-serif" font-size="12" fill="#D55E00">2.09 ± 0.13</text>
+<line x1="680.3" y1="188.3" x2="680.3" y2="338.2" stroke="#D55E00" stroke-width="2"/>
+<line x1="674.3" y1="188.3" x2="686.3" y2="188.3" stroke="#D55E00" stroke-width="2"/>
+<line x1="674.3" y1="338.2" x2="686.3" y2="338.2" stroke="#D55E00" stroke-width="2"/>
+<polygon points="680.3,256.3 687.3,263.3 680.3,270.3 673.3,263.3" fill="#D55E00" stroke="white" stroke-width="1.5"/>
+<text x="692.3" y="268.3" text-anchor="start" font-family="Arial, sans-serif" font-size="12" fill="#D55E00">1.61 ± 0.37</text>
+<circle cx="258.0" cy="94.0" r="5" fill="#0072B2"/>
+<text x="270.0" y="94.0" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12">Exact ED</text>
+<polygon points="396.0,88.0 402.0,94.0 396.0,100.0 390.0,94.0" fill="#D55E00"/>
+<text x="410.0" y="94.0" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="12">Ninc=8 DQMC screening</text>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "schema": "ground_initial_v10_leaf_independent_review_v1",
+  "recorded_utc": "2026-10-22T20:08:27.711616+00:00",
+  "reviewer": "cv_evidence",
+  "status": "READ_ONLY_NO_BLOCKER",
+  "counts": {
+    "PASS": 39,
+    "FAIL": 0,
+    "UNRESOLVED": 1,
+    "NOT_RUN": 60
+  },
+  "ledger_sha256": "abee1b7af4263979880d24afc679d1553567e2141caf16c41888c7c46cf2e228",
+  "manifest_sha256": "57d57bfa8ff27e6792fba4530cac0130c423d1605ebd27b5a054daad0c983bce",
+  "input_files_verified": 121,
+  "analysis_receipts_verified": 18,
+  "unchanged_other_row_objects": 98,
+  "unchanged_prior_PASS": 38,
+  "scientific_statuses": {
+    "X09": "UNRESOLVED",
+    "X12": "PASS"
+  },
+  "X09_failed_detailed_gates": 15,
+  "X12_failed_detailed_gates": 0,
+  "actual_inequality_directions_verified": true,
+  "frozen_comparator_replay": "EXACT_JSON_AGREEMENT",
+  "independent_review_check_count": 719,
+  "physics_or_cluster_execution": false,
+  "reporter_sha256": "e1772163bca3bae21cadb1a8048fd30b0ee90bedc1f56152f7a76bb638cb470a",
+  "helper_sha256": "f2211fcb1fc59c811ccda68587d2abea855b1cde933d9abea97119b064278a38"
+}

@@ -1,0 +1,14 @@
+{
+  "release": "alf-setup-v2",
+  "mode": "COMPILER_ABI_PROBE_OR_BUILD_ONLY_NO_SCIENCE",
+  "files": {
+    "alf_preparation/setup_v2/README.md": "d0f69f7b03c020492b8126d05a3f49a23374435603ca204d8d5b6bb75d1a3bcf",
+    "alf_preparation/setup_v2/__pycache__/check_openblas.cpython-312.pyc": "ec8156b16175b5065e224b4cc458c37e01987c5fccbdcbb60e5b330402f5bc09",
+    "alf_preparation/setup_v2/check_openblas.py": "b04fb94dbf2395982fc96c0d91254fed007f9b72d1ba712d5d70207c6ca75d6b",
+    "alf_preparation/setup_v2/lp64_probe.f90": "30fd2044762d26796595d77683e99cfa6ecb5d61268f7e5e8c1e0730b67971b7",
+    "alf_preparation/setup_v2/pre_execution_receipt.json": "bd9f8004caf8535daa7121fbbcde4ab21cff091aed2626fbf19f5369eff715a2",
+    "alf_preparation/setup_v2/prepare_and_build.sh": "bf77d9467c81503948faf9cfb81a6852340e303980c3f96cf001687e25118cbc",
+    "alf_preparation/setup_v2/probe_and_build_candidate.sbatch": "e072c3ca658641f459ec40c462046367e5c7be3c72e2635e587882905109696f"
+  },
+  "archive_sha256": "6e60e88166ed3d4bedb4dd8c8f14ca2c93485602182cf42db6622ba928ca2d1e"
+}

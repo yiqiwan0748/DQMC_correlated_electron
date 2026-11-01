@@ -1,0 +1,43 @@
+{
+  "schema": "X17_COMPRESSED_PUBLIC_REPLAY_V1",
+  "role": "pilot",
+  "audit_status": "PASS",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "pilot_completion_credit": 0,
+  "source_archive_sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958",
+  "source_freeze_sha256": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb",
+  "original_audit_sha256": "59688ee4187434bea7f72e790015107bd95d47d593e3790b31410c9b6f0b76bd",
+  "auditor_sha256": "d3220adf8d731925e4a52ac00fb3175c37e6121c45d2ea15ade7e951e5f57c5c",
+  "data_archive_sha256": "fbc561365e22b172560671bc8e6033c68dcde0c74c86979c054f556673e5bef7",
+  "original_execution_sha256": "92edac958ae002c88303451374e02701b7c1e08b2498791b489db95bc41f1d05",
+  "public_independent_audit_sha256": "7c009d42a6f2eccfec9d373149eff401d40a98f77ccf26f1931cf57b8ffa8bea",
+  "public_input_manifest_sha256": "d83f0c322f98be81ae53a922039920755419455a09bb159d36f2336d09c2a2bf",
+  "independent_check_count": 81,
+  "original_independent_check_count": 173,
+  "frozen_gate_count": 185,
+  "complete_case_count": 1,
+  "complete_spin_sector_count": 5,
+  "case_metrics": [
+    {
+      "case_id": "U6_hybrid",
+      "complete_spin_sectors": 5,
+      "balanced_native_ground_fidelity": 0.9999999999999996,
+      "independent_global_gap": 1.007455003388019,
+      "independent_conditional_gap_lower": 1.0074550024728506,
+      "explicit_permutation_amplitudes": 784,
+      "orbital_levels_per_cut": 256,
+      "entropy_A": 0.11892881668128231,
+      "max_abs_connected_density": 0.010385157458477234,
+      "max_abs_connected_Sdot": 0.011901695737615074
+    }
+  ],
+  "case_metric_differences": [],
+  "case_metrics_bitwise_identical": true,
+  "all_frozen_gates_pass": true,
+  "scientific_producer_rerun": false,
+  "postprocessing_eigendecomposition": true,
+  "remote_transport_checks_replayed": false,
+  "projected_full_seconds": 1474.640973329544,
+  "projected_full_peak_rss_KiB": 619398.9541015625
+}

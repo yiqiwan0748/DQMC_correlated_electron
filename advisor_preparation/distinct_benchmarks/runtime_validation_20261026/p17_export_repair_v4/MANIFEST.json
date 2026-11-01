@@ -1,0 +1,34 @@
+{
+  "schema": "P17_STRICT_EXPORT_V4_PUBLIC_SOURCE_PACKET_V1",
+  "status": "SOURCE_AND_METADATA_FIXTURES_PASS_SCIENTIFIC_VERDICT_NOT_INCLUDED",
+  "scientific_completions_added": 0,
+  "metadata_fixture_checks": 39,
+  "complete_source_delta_review_checks": 146,
+  "independent_source_review_sha256": "662809d1cb3f0f2d4e06e52237523e04f270a83dc0f4d4d8ff33cdefb0a5c190",
+  "pinned_TeNPy_dmrg_source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32",
+  "files": {
+    "README.md": {
+      "sha256": "3b68b9a51c67eadfd595b5b85306bc747acfbb446c9cb7ed728149a8263a2567",
+      "bytes": 2916
+    },
+    "metadata_fixture_receipt.json": {
+      "sha256": "ac3ec95acedfe26b853e5d71b3f8fc2b01cf42156dc177ecc777ab5f9a082907",
+      "bytes": 2120
+    },
+    "strict_export.py": {
+      "sha256": "18b4ca249a71309c701c68a703be072eb919dfb542c9247456020ba1d29a22d5",
+      "bytes": 3611
+    },
+    "strict_export_fixtures.py": {
+      "sha256": "0e191d82e6ae6cdcb8afb30dcd65558feac3f1b960ef9aad1edc9109df3d8d60",
+      "bytes": 4408
+    }
+  },
+  "ledger_sha256_unchanged": "3f5c83a7566aa754dea836b7501de14f157acff25e9945b620c23e03013ee304",
+  "campaign_counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  }
+}

@@ -1,0 +1,23 @@
+	Command being timed: "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/quspin-venv/bin/python /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/spectral_dynamics_v1/spectral_dynamics/oracle_quspin.py --manifest /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/spectral_dynamics_v1/spectral_dynamics/manifest.toml --output /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/spectral_dynamics_6458468/oracle.json"
+	User time (seconds): 1.93
+	System time (seconds): 1.04
+	Percent of CPU this job got: 3%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:30.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 189500
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5225
+	Minor (reclaiming a frame) page faults: 38943
+	Voluntary context switches: 12458
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 279104
+	File system outputs: 184
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,25 @@
+Cleaning up Prog/
+cd Prog && make clean 
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Prog'
+rm -f Hamiltonians/LRC_mod.o control_mod.o Fields_mod.o Operator_mod.o WaveFunction_mod.o observables_mod.o ContainerElementBase_mod.o DynamicMatrixArray_mod.o OpTTypes_mod.o OpT_time_dependent.o Hamiltonian_main_mod.o QDRP_decompose_mod.o udv_state_mod.o Hop_mod.o UDV_WRAP_mod.o Predefined_Int_mod.o Predefined_Obs_mod.o Predefined_Latt_mod.o Predefined_Hop_mod.o  Predefined_Trial_mod.o wrapul_mod.o   cgr1_mod.o   wrapur_mod.o   cgr2_2_mod.o   upgrade_mod.o   Set_random_mod.o Global_mod.o Langevin_HMC_mod.o Wrapgr_mod.o tau_m_mod.o tau_p_mod.o main.o `./parse_ham.py --print_obj_list` control.mod fields_mod.mod global_mod.mod hop_mod.mod lrc_mod.mod observables.mod operator_mod.mod predefined_int.mod predefined_lattices.mod predefined_obs.mod predefined_hoppings.mod  predefined_trial.mod qdrp_mod.mod tau_m_mod.mod tau_p_mod.mod udv_state_mod.mod udv_wrap_mod.mod wavefunction_mod.mod wrapgr_mod.mod hamiltonian.mod opt_time_dependent.mod containerelementbase_mod.mod opttypes_mod.mod dynamicmatrixarray_mod.mod langevin_hmc_mod.mod wrapul_mod.mod cgr1_mod.mod wrapur_mod.mod cgr2_2_mod.mod upgrade_mod.mod set_random.mod hamiltonian*.mod hamiltonian*.smod
+rm -f git.h Hamiltonians_interface.h Hamiltonians_case.h Hamiltonians/Hamiltonian_*_read_write_parameters.F90
+rm -f "ALF.out"
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Prog'
+Cleaning up Libraries/
+cd Libraries && make clean
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Libraries'
+cd Modules; make clean
+make[2]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Libraries/Modules'
+rm -f runtime_error_mod.o errors_mod.o files_mod.o   fourier_mod.o histograms_mod.o histograms_v2_mod.o lattices_v3_mod.o log_mesh_mod.o mymats_mod.o matrix_mod.o maxent_mod.o   maxent_stoch_mod.o   mpi_shared_mem_mod_v2.o natural_constants_mod.o precdef_mod.o random_wrap_mod.o Mat_subroutines_mod.o entanglement_mod.o   alf_hdf5_mod.o check_omp_num_threads_mod.o   iso8601_datetime_mod.o runtime_error_mod.mod errors.mod   files_mod.mod fourier.mod   histograms.mod   histograms_v2.mod   lattices_v3.mod log_mesh.mod   mymats.mod   matrix.mod   maxent_mod.mod maxent_stoch_mod.mod mpi_shared_memory.mod natural_constants.mod   precdef.mod   random_wrap.mod   mat_subroutines.mod   entanglement_mod.mod alf_hdf5.mod check_omp_num_threads_mod.mod iso8601_datetime_mod.mod modules_90.a
+make[2]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Libraries/Modules'
+cd libqrref; make clean
+make[2]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Libraries/libqrref'
+rm -f zgeqr2.o zgeqrf.o zlarf.o zlarfb.o zlarfg.o zlarft.o zung2r.o zungqr.o  zlapmr.o libqrref.a
+make[2]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Libraries/libqrref'
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Libraries'
+Cleaning up Analysis/
+cd Analysis && make clean
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Analysis'
+rm -f cov_scal.o   cov_tau.o   cov_tau_ph.o   Max_SAC.o   cov_eq.o   cov_mut.o   ana.o ana_hdf5.o Predefined_Latt_mod.o ana_mod.o maxent_wrapper_mod.o predefined_lattices.mod ana_mod.mod maxent_wrapper_mod.mod cov_tau_ph.F90
+rm -f cov_scal.out cov_tau.out cov_tau_ph.out Max_SAC.out cov_eq.out cov_mut.out ana.out ana_hdf5.out convert_scal.out convert_latt.out convert_local.out
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v4_attempt01/ALF_observer/Analysis'

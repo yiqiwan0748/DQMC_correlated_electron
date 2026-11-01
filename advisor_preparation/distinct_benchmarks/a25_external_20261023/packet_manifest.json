@@ -1,0 +1,174 @@
+{
+  "schema": "PUBLIC_A25_SCIENTIFIC_PACKET_V1",
+  "frozen_utc": "2026-10-23T20:34:29.004547+00:00",
+  "base_ledger_sha256": "9aed58c07be2ba5fe6aefa4994c8ed35164a6ab9494ad9c25b8ff2315b4b4d95",
+  "pilot_completion_credit": 0,
+  "original_scientific_source_sha256": "76be7b3b22ee26da1ae91dde516ed458446aa6a0c6c2a4ef7e86759d5ec921ec",
+  "actual_full_audit_sha256": "a3396cb84f3553d38d90f5c2277ca01c19e6f6d4f68d600f0d9db12085404be4",
+  "files": [
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/PORTABLE_RECEIPT_POLICY.json",
+      "sha256": "6af9c537a8febf1a8abe2b9f9acc6e537902726cf90814d904a96a42d89c8aa8",
+      "bytes": 1345
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/PRIVATE_BOUNDARY.json",
+      "sha256": "7b8d408c46207f549c16674cedd10bfa8d4e81846e832fb0d15efe19020b0e55",
+      "bytes": 651
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/README.md",
+      "sha256": "cc8942e69a52b858963779ec4478426115690628f66ba1ba44224c629225d0db",
+      "bytes": 2599
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/SOURCE_ATTRIBUTION.md",
+      "sha256": "199059f531ae441fd1bfc50602cb06901b223181394cfb2215ac3063ca28fedd",
+      "bytes": 910
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/independent/full_actual_independent_review.json",
+      "sha256": "7df23095ca834c92dc5449326c324a442583a24f41c6b58a7bd9e53640786951",
+      "bytes": 999837
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/independent/pilot_actual_independent_review.json",
+      "sha256": "7ef9cbf9f5667c6a9a7ee7cdbb133525e9e18a1a6eb09864d665e30641416495",
+      "bytes": 98678
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/data.tar.gz",
+      "sha256": "13c2f9537363c2b2a07258c68873ac7385e276fae260e08ebe06a806fea7f314",
+      "bytes": 161012
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/data_manifest.json",
+      "sha256": "133ae90adbe51972fb88346bad0e2bde8e177c6e62e336611ac7d393c5e57abf",
+      "bytes": 3520
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/original_comparison.json",
+      "sha256": "caf5b52bffd21c1e1ba087e9df2158c3fd3e0ee80c89eed34053b266ff40e79e",
+      "bytes": 124646
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/original_independent_audit.json",
+      "sha256": "7c23588be8ffe7dd7a470760805ba846615796c2f3040030d1c70a3f0298d95f",
+      "bytes": 255588
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/original_pinned_frozen_comparator_replay.json",
+      "sha256": "caf5b52bffd21c1e1ba087e9df2158c3fd3e0ee80c89eed34053b266ff40e79e",
+      "bytes": 124646
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/original_pinned_resource_assessment.json",
+      "sha256": "7b3216e5e8d9135ed1dfdeda40356988131556e1d559905bca9c141dbd02b1bd",
+      "bytes": 1266
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/public_replay_receipt.json",
+      "sha256": "03a911ff344edb863ea21560bcd25282276cea52f4e42dedaad6159a5163289e",
+      "bytes": 138380
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/pilot/scientific_selection.json",
+      "sha256": "f83be0c1f892e3f267a093e65d54819ba913c4deb2e654dd698ebd5d97588205",
+      "bytes": 10891
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/production/data.tar.gz",
+      "sha256": "f6834063ae416f40eb6164a9851fdda358f883cc776dc285f43aba2f4491d003",
+      "bytes": 1052203
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/production/data_manifest.json",
+      "sha256": "7ee7c8816555e3650f701cc8010ad0be1774d2e64e9dc66396f4e7a7ff002003",
+      "bytes": 3043
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/production/original_comparison.json",
+      "sha256": "2d8d606fb3e9aaeec61aff32e9f628336e130dfee349227946bdb965864ca020",
+      "bytes": 1475199
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/production/original_independent_audit.json",
+      "sha256": "a3396cb84f3553d38d90f5c2277ca01c19e6f6d4f68d600f0d9db12085404be4",
+      "bytes": 2452275
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/production/original_pinned_frozen_comparator_replay.json",
+      "sha256": "2d8d606fb3e9aaeec61aff32e9f628336e130dfee349227946bdb965864ca020",
+      "bytes": 1475199
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/production/public_replay_receipt.json",
+      "sha256": "da1dd73de7b16e1e6d2217787a13927fc31416a8f8189eaf0b3bb6506775f5c2",
+      "bytes": 2350508
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/production/scientific_selection.json",
+      "sha256": "85eb4205b32c8c20c75351bc2c44159a86ed51fbe8c84fac28df8860b6377171",
+      "bytes": 9205
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/replay.py",
+      "sha256": "2ea576779c65655fceebc64e9c334ef6662b25a24c7ff7cb3676155678851f72",
+      "bytes": 12024
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/sources/a25-free-ring-flux-v1-source.tar.gz",
+      "sha256": "76be7b3b22ee26da1ae91dde516ed458446aa6a0c6c2a4ef7e86759d5ec921ec",
+      "bytes": 74410
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/sources/a25-full-saved-audit-v1-source.tar.gz",
+      "sha256": "853bc747612b3954982ef93fcacd416f2398f7e82a0c4667c8653db039fe3936",
+      "bytes": 12442
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/sources/full_analysis_freeze.json",
+      "sha256": "3bab40c042047f4fe0b79b7be7ce33008501fa70d48a2cc359d542449341a15c",
+      "bytes": 1527
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/sources/index.json",
+      "sha256": "01a0200b730210696a3f65b858e0f6fb2adafaca8b88d1136e47cf8f23a47ff1",
+      "bytes": 1442
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/sources/pilot_analysis_freeze.json",
+      "sha256": "0fda42fcb284d45725902b41f27cec78cee6fe5c789602ce26739c5af555a864",
+      "bytes": 2991
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/sources/scientific_freeze.json",
+      "sha256": "9ce63aad259c091a40bf2af4668213b7c446df74c0aa93e73a70a16a65216ba7",
+      "bytes": 4696
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/a25_external_20261023/sources/source_archive.tar.gz",
+      "sha256": "33b59a5909ca7c2b7e47d15a1af71c2b5ba03b921532f4023ba2d78a11c338bc",
+      "bytes": 22335
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/reporting/merge_a25_tranche.py",
+      "sha256": "529836a007a6e4c5ed59eb19dcd4bbcd26efdb28e5606f2d1a32df43971bc3d1",
+      "bytes": 12289
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/reporting/merge_pyscf_tranche.py",
+      "sha256": "5ebea85599df367236fb45403731c3094388abe0af3d5f28afbef14791fc2645",
+      "bytes": 16493
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/reporting/merge_x17_tranche.py",
+      "sha256": "92e3f57abffa3df6e7c2c41852964c01a70c694a654b0750d87d710f26e8ccb4",
+      "bytes": 17357
+    }
+  ],
+  "private_transfer_controller_admission_or_queue_bodies_included": false,
+  "runtime_binary_bodies_included": false,
+  "mathematical_helpers_unchanged": true,
+  "portable_receipt_roundoff_scope": "Fresh derived point/response receipt floats only; all original physical gates remain literal and mandatory. Original metric/report/raw bytes retained exact."
+}

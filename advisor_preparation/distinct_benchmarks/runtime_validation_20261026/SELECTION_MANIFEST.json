@@ -1,0 +1,111 @@
+{
+  "catalogue_changes": [],
+  "current_diagnostic_included": true,
+  "excluded_categories": [
+    "All raw process mappings and captured file/PID/device/inode identifiers",
+    "Private host/user paths, environments and queues",
+    "Operational controllers, source admission bodies and complete historical result bodies",
+    "Whole historical archives and personal/CV/contact files"
+  ],
+  "files": [
+    {
+      "bytes": 3955,
+      "path": "DIAGNOSTIC_AGGREGATES.json",
+      "sha256": "37432a5e06e4ac062cdeef1cc16a65ba88aac5653621869de01d117fd69f1359"
+    },
+    {
+      "bytes": 1254,
+      "path": "NATIVE_V3_STAGED_SNAPSHOT.json",
+      "sha256": "41ae9a9c3c022e90f0c602db4056a74ef65b80affb7d8bf65cf234299ebeaaf3"
+    },
+    {
+      "bytes": 1755,
+      "path": "PRIMARY_SOURCES.json",
+      "sha256": "dff96a17f76960d79d70a566f0feb6e8121189cd4deb9e26f8474ffbce385bd5"
+    },
+    {
+      "bytes": 5424,
+      "path": "PRIOR_RUNTIME_AGGREGATES.json",
+      "sha256": "eb6d45662e554c1d6475bc1da9f2c2de87eed00f5f9c91d01fbac24fba674685"
+    },
+    {
+      "bytes": 2305,
+      "path": "README.md",
+      "sha256": "fce5770e3ca29eee027c8e28f6b3418448071944cb24f34bddd3638ba687012a"
+    },
+    {
+      "bytes": 1650,
+      "path": "source/maps_parser.jl",
+      "sha256": "f0048b64555f3ab6712ebd4e267ed983591320d65f01684d466c6ecfed8019da"
+    },
+    {
+      "bytes": 8414,
+      "path": "source/postprocess.py",
+      "sha256": "c5f98ac02ee2225a54839ea822e3de6568dfb2e680aeeea1efe47afe3693151d"
+    },
+    {
+      "bytes": 3298,
+      "path": "source/stat_batch.py",
+      "sha256": "94803235150dbe182797a13b67bad82efc6045cbe984c11d55e76a102da410f9"
+    },
+    {
+      "bytes": 1594,
+      "path": "source/stat_helper.c",
+      "sha256": "7df6dad2584fc4c58c3ba5cbdcd41e0174b84e3e8767d2c6ef2846b467ee0fe4"
+    }
+  ],
+  "projection": "AGGREGATE_ONLY_ALLOWLIST_NO_RAW_OR_IDENTIFIER_VALUES",
+  "projection_label_clarifications": [
+    {
+      "file": "PRIOR_RUNTIME_AGGREGATES.json",
+      "json_pointer": "/preflight_v1/native/reported_parsed_file_backed_segment_count",
+      "previous_field": "file_backed_segment_count",
+      "unchanged_value": 0
+    },
+    {
+      "file": "PRIOR_RUNTIME_AGGREGATES.json",
+      "json_pointer": "/preflight_v2/native/reported_parsed_file_backed_segment_count",
+      "previous_field": "file_backed_segment_count",
+      "unchanged_value": 235
+    },
+    {
+      "derived_aggregate_value": 21,
+      "file": "PRIOR_RUNTIME_AGGREGATES.json",
+      "json_pointer": "/preflight_v1/native/raw_prefix_file_backed_row_count",
+      "scope": "Actual row count of the retained incomplete raw prefix; no original parsed-count claim is upgraded."
+    }
+  ],
+  "schema": "P17_PUBLIC_RUNTIME_PROGRESS_SELECTION_MANIFEST_V1",
+  "scientific_completions": 0,
+  "selected_source": [
+    {
+      "bytes": 1594,
+      "original_source_freeze_sha256": "ba10a08a3a435fe1d5fe1db12aa34c3e2d33a850a3d6b05b86878ebf1cc655c2",
+      "public_path": "source/stat_helper.c",
+      "sha256": "7df6dad2584fc4c58c3ba5cbdcd41e0174b84e3e8767d2c6ef2846b467ee0fe4",
+      "transformation": "BYTE_EXACT_SELECTED_SOURCE"
+    },
+    {
+      "bytes": 3298,
+      "original_source_freeze_sha256": "ba10a08a3a435fe1d5fe1db12aa34c3e2d33a850a3d6b05b86878ebf1cc655c2",
+      "public_path": "source/stat_batch.py",
+      "sha256": "94803235150dbe182797a13b67bad82efc6045cbe984c11d55e76a102da410f9",
+      "transformation": "BYTE_EXACT_SELECTED_SOURCE"
+    },
+    {
+      "bytes": 8414,
+      "original_source_freeze_sha256": "ba10a08a3a435fe1d5fe1db12aa34c3e2d33a850a3d6b05b86878ebf1cc655c2",
+      "public_path": "source/postprocess.py",
+      "sha256": "c5f98ac02ee2225a54839ea822e3de6568dfb2e680aeeea1efe47afe3693151d",
+      "transformation": "BYTE_EXACT_SELECTED_SOURCE"
+    },
+    {
+      "bytes": 1650,
+      "original_source_freeze_sha256": "ba10a08a3a435fe1d5fe1db12aa34c3e2d33a850a3d6b05b86878ebf1cc655c2",
+      "public_path": "source/maps_parser.jl",
+      "sha256": "f0048b64555f3ab6712ebd4e267ed983591320d65f01684d466c6ecfed8019da",
+      "transformation": "BYTE_EXACT_SELECTED_SOURCE"
+    }
+  ],
+  "status": "DIAGNOSTIC_RECORD_ZERO_SCIENTIFIC_CREDIT"
+}

@@ -1,0 +1,126 @@
+{
+  "status": "PASS_FILE_PROVENANCE_AND_CORRECTED_ATOMIC_RESULT_ARITHMETIC",
+  "scientific_jobs_started_by_audit": 0,
+  "receipt_sha256": "03e6a6383c36a409115610ac5d540f21fb46799cde1e5dca93b92c36dcc83720",
+  "diagnostic_receipt_sha256": "3af57c724ba4cddab2099040d600fb53cebaf0f515b643455c2ddbf28508a70e",
+  "corrected_source_hashes_match_frozen_archive": true,
+  "all_src_files_verified": 3,
+  "consumer_hash_matches_frozen_archive": true,
+  "job_id": "6457036",
+  "counts": {
+    "PASS": 7,
+    "FAIL": 0,
+    "UNRESOLVED": 1
+  },
+  "rows": [
+    {
+      "id": "ATOM-01",
+      "observable": "energy_centered",
+      "status_recomputed": "PASS",
+      "value": -0.9238238718924956,
+      "reference": -0.9242343145200196,
+      "absolute_error": 0.0004104426275239881,
+      "simultaneous_half_width": 0.012911931242624622,
+      "error_plus_half_width": 0.01332237387014861,
+      "equivalence_margin": 0.03,
+      "split_rhat_recomputed": 1.0
+    },
+    {
+      "id": "ATOM-02",
+      "observable": "density_total",
+      "status_recomputed": "PASS",
+      "value": 4.0,
+      "reference": 4.0,
+      "absolute_error": 0.0,
+      "simultaneous_half_width": 0.0,
+      "error_plus_half_width": 0.0,
+      "equivalence_margin": 0.03,
+      "split_rhat_recomputed": 1.0
+    },
+    {
+      "id": "ATOM-03",
+      "observable": "double_occupancy_total",
+      "status_recomputed": "PASS",
+      "value": 0.5380880640537562,
+      "reference": 0.5378828427399902,
+      "absolute_error": 0.00020522131376599084,
+      "simultaneous_half_width": 0.006455965621324796,
+      "error_plus_half_width": 0.006661186935090786,
+      "equivalence_margin": 0.03,
+      "split_rhat_recomputed": 1.0
+    },
+    {
+      "id": "ATOM-04",
+      "observable": "S2",
+      "status_recomputed": "PASS",
+      "value": 2.389070519696716,
+      "reference": 2.385485089106837,
+      "absolute_error": 0.003585430589879035,
+      "simultaneous_half_width": 0.04564211005053737,
+      "error_plus_half_width": 0.04922754064041641,
+      "equivalence_margin": 0.05,
+      "split_rhat_recomputed": 1.0053884042694503
+    },
+    {
+      "id": "ATOM-05",
+      "observable": "energy_centered",
+      "status_recomputed": "UNRESOLVED",
+      "value": -1.82057536938904,
+      "reference": -1.830793928648644,
+      "absolute_error": 0.010218559259604021,
+      "simultaneous_half_width": 0.024928706265788247,
+      "error_plus_half_width": 0.03514726552539227,
+      "equivalence_margin": 0.03,
+      "split_rhat_recomputed": 1.0
+    },
+    {
+      "id": "ATOM-06",
+      "observable": "density_total",
+      "status_recomputed": "PASS",
+      "value": 4.1622418547039715,
+      "reference": 4.161481159434526,
+      "absolute_error": 0.0007606952694452218,
+      "simultaneous_half_width": 0.0018557556352332197,
+      "error_plus_half_width": 0.0026164509046784417,
+      "equivalence_margin": 0.03,
+      "split_rhat_recomputed": 1.0
+    },
+    {
+      "id": "ATOM-07",
+      "observable": "double_occupancy_total",
+      "status_recomputed": "PASS",
+      "value": 0.6259770850047373,
+      "reference": 0.6230420975551021,
+      "absolute_error": 0.0029349874496351624,
+      "simultaneous_half_width": 0.007160054384098396,
+      "error_plus_half_width": 0.010095041833733559,
+      "equivalence_margin": 0.03,
+      "split_rhat_recomputed": 1.0
+    },
+    {
+      "id": "ATOM-08",
+      "observable": "S2",
+      "status_recomputed": "PASS",
+      "value": 2.389306012951309,
+      "reference": 2.3868119588046195,
+      "absolute_error": 0.0024940541466893507,
+      "simultaneous_half_width": 0.04219173887915658,
+      "error_plus_half_width": 0.04468579302584593,
+      "equivalence_margin": 0.05,
+      "split_rhat_recomputed": 1.0
+    }
+  ],
+  "actual_kernel_diagnostic_rows": 16,
+  "actual_kernel_maximum_errors": {
+    "maximum_G00_vs_exact_field_error": 5.551115123125783e-16,
+    "maximum_Gcurrent_vs_exact_field_error": 5.551115123125783e-16,
+    "maximum_G00_vs_fresh_stabilized_error": 0.0,
+    "maximum_propagator_vs_field_log_error": 4.440892098500626e-16,
+    "maximum_reported_deltaG": 7.110589951040836e-15
+  },
+  "all_nstab2_trajectories_match_nstab1": true,
+  "every_site_revisited_alternating_class": true,
+  "minimum_alternating_visits": 30,
+  "scope": "Audits saved new ISAAC receipts and their arithmetic/provenance. Seven atomic comparisons pass at4096; energy ATOM05 remains unresolved through precision. This does not certify untested regimes or rigorous finite-MCMC confidence coverage.",
+  "analysis_script_sha256": "f88014b6e97f61f2c7e479338fae84a443af76cdf14e61abdf6688551efd2cce"
+}

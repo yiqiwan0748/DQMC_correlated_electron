@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-22T19:45:58.024741+00:00",
+  "purpose": "Preserve original audit input bytes in the raw receipt directory; the portable auditor reads these sidecars and never opens historical temporary input paths.",
+  "first_auditor_sha256": "5c6321310db6d21055aa4a421b2987ee58ddee870046418b32e5367b06a95dc1",
+  "first_audit_json_sha256": "05022975319e675d3f14261d857bbefaf632436c4a8d1e377d0722510b9d4d6d",
+  "sidecars": [
+    {
+      "sidecar": "remote_sha256_and_scheduler_6458547.txt",
+      "sha256": "8f13f8927d49e918550360ded36db0840cadeabe2a283994662d210a5edac9e6",
+      "bytes": 1074,
+      "historical_temporary_source": "/tmp/l24_remote_hashes_6458547.txt",
+      "also_matches_first_audit_file": "advisor_preparation/distinct_benchmarks/reporting/reports/bethe_l24_audit_6458547/remote_sha256_and_scheduler.txt"
+    },
+    {
+      "sidecar": "frozen_summary_replay_6458547.json",
+      "sha256": "82fcbce021bcac1be43afbe0d08348dd36a67d064819ae77fdf47cca83c31b58",
+      "bytes": 2008,
+      "historical_temporary_source": "/tmp/l24_frozen_summary_6458547.json",
+      "also_matches_first_audit_file": "advisor_preparation/distinct_benchmarks/reporting/reports/bethe_l24_audit_6458547/frozen_summary_replay.json"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "J23_SAVED_DATA_REPLAY_SOURCE_FREEZE_V1",
+  "created_utc": "2026-10-23T19:31:33.492179+00:00",
+  "prefix": "j23_saved_replay_v1",
+  "files": {
+    "PLAN.md": "44ac12c1817e2ee5fa22477dd2d18a19e8c4e3d394da73ced9d3ccfdb1aa31f4",
+    "input_bindings.json": "19eb48219a14a33e7d43931ba301fc889a2e626a1606cafba21a1a2e87c0d1fe",
+    "plan_manifest.json": "0a353867b9971c6daec3b4933f7084e21b089c91a0e207eac795883773964fd3",
+    "replay.sbatch": "7d9db3dc713a1321393da86407c638b7e23ad9cc73c629c6570755e0d644a598",
+    "run_replay.py": "aef71528ec4c4a81f1c14da70839dd219f038a0100e77007fe07ea77cd685cac"
+  },
+  "archive_sha256": "e1c9e438050f35fa2475915854ee42b3fd3604ec6f7b5db6cd1a158e05159f46",
+  "archive_bytes": 9048,
+  "plan_sha256": "0a353867b9971c6daec3b4933f7084e21b089c91a0e207eac795883773964fd3",
+  "root_checks": [
+    "Plan exact PLAN.md",
+    "Plan exact input_bindings.json",
+    "Plan exact replay.sbatch",
+    "Plan exact run_replay.py",
+    "Pinned Python3.11.11 actualrealpath guard",
+    "oneCPU3500MB SLURM guard",
+    "Original73file before/afterclosure",
+    "Only unchanged assessor subprocess",
+    "150second processgroup timeout",
+    "Original source/raw no mutations",
+    "Analysis only0credit"
+  ],
+  "cpus": 1,
+  "memory_MB": 3500,
+  "wall_minutes": 3,
+  "inner_timeout_seconds": 150,
+  "original_pilot_job": "6466377",
+  "predecessor": "6466533",
+  "scientific_completions": 0,
+  "no_producer_execution": true,
+  "full_admission": false
+}

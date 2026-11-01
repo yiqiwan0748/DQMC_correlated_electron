@@ -1,0 +1,24 @@
+{
+  "job_id": "6458828",
+  "dependency": "afterany:6458826",
+  "status": "SUBMITTED_TIMING_ONLY_ZERO_CATALOGUE_COMPLETIONS",
+  "distinct_ids": [
+    "X01"
+  ],
+  "source_freeze": "../source_releases/continuum-bias-timing-pilot-v1-freeze.json",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 10,
+  "estimated_minutes_after_start": [
+    2,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 17:45",
+  "staged_tranche": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/continuum_bias_timing_pilot_v1/continuum_bias/pilot_v1",
+  "output": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/continuum_bias_pilot_6458828",
+  "log": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/logs/continuum_bias_timing_pilot_6458828.log",
+  "full_scientific_campaign_submitted": false,
+  "submitted_UTC": "2026-10-22 20:16:15",
+  "admission": "Fresh live queue had one running one-CPU campaign job and zero unrelated running jobs; all new stages serially dependent; unrelated pending jobs unchanged.",
+  "scheduler_verification": "scontrol confirmed PENDING Dependency, specified afterany predecessor, NumCPUs=1, ReqTRES mem=3500M, and 15/22/10-minute respective wall limits; no restart."
+}

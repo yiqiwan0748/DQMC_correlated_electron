@@ -1,0 +1,55 @@
+{
+  "catalogue": {
+    "additional_catalogue_credit": 0,
+    "additional_idea_credit": 0,
+    "id": "X08",
+    "status": "NOT_RUN"
+  },
+  "limitations": [
+    "One excluded original parameter arm. No independent-package/global fixed-particle-number ground-state oracle, ground-state accuracy, optimizer convergence, discarded-weight bias calibration or full registered X08 completion is established.",
+    "No speedup claim. Recorded whole-execution and native-role resource figures are not solver-only measurements.",
+    "Optimizer Ritz and original observer scalars remain separate from post-truncation saved-state energy. Their equality is not an acceptance condition.",
+    "Opaque snapshot byte authenticity and recorded serialized-replay/source hooks were checked. Separate independently observed returned-MPS vector equality was not exported and is not claimed.",
+    "Runtime associations depend on authenticated actual collection/guard source and stored byte/stat/provider/dispatch observations. Individual raw library-name to canonical-provider pairs were not exported; recorded raw names and the resolved aggregate do not establish those individual pairs independently. No audit-host path resolution or suffix fitting supplied that relationship.",
+    "The audit supplies no atomic filesystem snapshot or JIT instruction-identity proof.",
+    "Admission creation time was not exported or inferred from filesystem timestamps. Preflight creation time was not exported; the audit retains its saved hash binding only.",
+    "Execution infrastructure and opaque snapshots remain private. The scientific projection and complete original/reference source files are for inspection; no tested standalone public reproduction command is supplied."
+  ],
+  "original_executed_exact_reference": {
+    "description": "The independently authored exact finite-data reference ran during the original scientific execution. The saved-record audit authenticates its journals and independently checks stored certificate arithmetic and associations, without reconstructing the underlying physical residuals.",
+    "entropy_cut_records": 21,
+    "reported_failed_checks": 0,
+    "reported_passing_checks": 2799,
+    "snapshot_stages": [
+      3,
+      6,
+      12
+    ],
+    "state_records": 17
+  },
+  "preparation_history": {
+    "protocol_publication_status": "The preserved protocol.json publication_status records earlier candidate preparation. This summary carries current saved-record audit status."
+  },
+  "preservation": {
+    "binary_snapshots_deserialized_during_audit_or_projection": false,
+    "captured_code_executed_during_projection": false,
+    "clipping_phase_fitting_averaging_or_symmetrizing": false,
+    "code_data_protocol_and_dictionary_changed_from_prior_candidate": false,
+    "new_scientific_run_or_reference_replay_during_audit_or_projection": false,
+    "original_candidate_changed": false
+  },
+  "record_kind": "EXCLUDED_SINGLE_ORIGINAL_FINEST_PARAMETER_ENGINEERING_ARM",
+  "saved_record_audit": {
+    "check_count": 23898,
+    "coverage": [
+      "Complete retained-byte/source/protocol and authenticated executed-source runtime relationships.",
+      "Original journals, callback/scalar associations and opaque checkpoint size/hash/source associations.",
+      "Recorded rational inequalities and finite logarithm enclosures,17state records and21entropy-cut records."
+    ],
+    "failed_checks": 0,
+    "independent_physical_recomputation_on_audit_host": false,
+    "private_complete_result_sha256": "905148b29d6ae295250796946c09643fc6f779d2a65f971f416249666a44a72b",
+    "status": "PASS"
+  },
+  "schema": "SANITIZED_FINEST_EXCLUDED_ENGINEERING_SAVED_RECORD_AUDIT_SUMMARY_V1"
+}

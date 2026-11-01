@@ -1,0 +1,74 @@
+A01 PASS fixtures=18
+A02 PASS fixtures=8
+A03 PASS fixtures=8
+A04 PASS fixtures=8
+A05 PASS fixtures=8
+A06 PASS fixtures=18
+A07 PASS fixtures=8
+A08 PASS fixtures=9
+A09 PASS fixtures=4
+A10 PASS fixtures=8
+A11 PASS fixtures=24
+A12 PASS fixtures=18
+A13 PASS fixtures=8
+A14 PASS fixtures=12
+A15 NOT_RUN fixtures=0
+A16 NOT_RUN fixtures=0
+A17 NOT_RUN fixtures=0
+A18 NOT_RUN fixtures=0
+A19 NOT_RUN fixtures=0
+A20 NOT_RUN fixtures=0
+A21 NOT_RUN fixtures=0
+A22 PASS fixtures=6
+A23 PASS fixtures=3
+A24 NOT_RUN fixtures=0
+A25 NOT_RUN fixtures=0
+J20 PASS
+ERROR: LoadError: type `Irrational{:π}` is not a valid TOML type, pass a conversion function to `TOML.print`
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] to_toml_value(f::Nothing, value::Irrational{:π})
+    @ TOML.Internals.Printer /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:64
+  [3] printvalue(f::Nothing, io::IOStream, value::Irrational{:π}, sorted::Bool)
+    @ TOML.Internals.Printer /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:79
+  [4] printvalue(f::Nothing, io::IOStream, value::Vector{Irrational{:π}}, sorted::Bool)
+    @ TOML.Internals.Printer /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:87
+  [5] print_table(f::Nothing, io::IOStream, a::Dict{String, Any}, ks::Vector{String}; indent::Int64, first_block::Bool, sorted::Bool, inline_tables::IdSet{Dict{String}}, by::Function)
+    @ TOML.Internals.Printer /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:181
+  [6] #invokelatest_gr#232
+    @ ./reflection.jl:1282 [inlined]
+  [7] invokelatest_gr
+    @ ./reflection.jl:1274 [inlined]
+  [8] print_table(f::Nothing, io::IOStream, a::Dict{String, Any}, ks::Vector{String}; indent::Int64, first_block::Bool, sorted::Bool, inline_tables::IdSet{Dict{String}}, by::Function)
+    @ TOML.Internals.Printer /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:219
+  [9] #invokelatest_gr#232
+    @ ./reflection.jl:1282 [inlined]
+ [10] invokelatest_gr
+    @ ./reflection.jl:1274 [inlined]
+ [11] print_table(f::Nothing, io::IOStream, a::Dict{String, Any}, ks::Vector{String}; indent::Int64, first_block::Bool, sorted::Bool, inline_tables::IdSet{Dict{String}}, by::Function)
+    @ TOML.Internals.Printer /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:219
+ [12] print_table (repeats 2 times)
+    @ /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:149 [inlined]
+ [13] print
+    @ /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/share/julia/stdlib/v1.12/TOML/src/print.jl:233 [inlined]
+ [14] #main##2
+    @ /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/journal/run_raghu.jl:123 [inlined]
+ [15] open(::var"#main##2#main##3"{Dict{String, Any}}, ::String, ::Vararg{String}; kwargs::@Kwargs{})
+    @ Base ./io.jl:410
+ [16] open
+    @ ./io.jl:407 [inlined]
+ [17] main()
+    @ Main /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/journal/run_raghu.jl:123
+ [18] top-level scope
+    @ /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/journal/run_raghu.jl:128
+ [19] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [20] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [21] _start()
+    @ Base ./client.jl:550
+in expression starting at /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/journal/run_raghu.jl:128
+{"rows": ["P01", "P02", "P03", "P04", "P05", "P06", "P16"], "errors": {}, "seconds": 25.378843069076538}
+Wrote /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/distinct_tranche01_attempt01/target.toml
+{"counts": {"PASS": 6, "FAIL": 1, "UNRESOLVED": 0, "NOT_RUN": 3}, "rows": [["P01", "PASS", 1.0658141036401503e-14], ["P02", "PASS", 5.329070518200751e-15], ["P03", "PASS", 7.216449660063518e-15], ["P04", "PASS", 1.1934897514720433e-15], ["P05", "PASS", 9.992007221626409e-16], ["P06", "PASS", 3.4416913763379853e-15], ["P16", "FAIL", 0.047280931427645], ["P11", "NOT_RUN", null], ["P12", "NOT_RUN", null], ["P15", "NOT_RUN", null]]}

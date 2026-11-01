@@ -1,0 +1,1113 @@
+{
+  "schema": "PUBLIC_X14_FAILURE_SCIENTIFIC_SELECTION_V1",
+  "original_failed_job": "6466312",
+  "trace_only_job": "6466728",
+  "catalogue_id": "X14",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "original_source_archive_sha256": "8e75f69cb68b8c08998627aa1218e2ca5311719428ff42d7c5085af2fb47d275",
+  "original_source_members_published_exactly": 39,
+  "original_full_diagnostic_archive_sha256": "8025bdcabfea458cf8230cbf1ef9c6064edfa7191eb05a7fe3fbd1da249ce5d8",
+  "original_full_diagnostic_members": 13,
+  "selected_exact_diagnostic_source_members": 12,
+  "original_full_diagnostic_archive_published": false,
+  "full_original_diagnostic_guard_replay_supported": false,
+  "original_failed_reference_and_comparator_absent": true,
+  "private_root_controller_submission_and_fullqueue_bodies_not_selected": true,
+  "transport_bodies_published": false,
+  "original_failure_and_original_13_member_diagnostic_archives_unchanged": true,
+  "decisions": [
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/PREPARATION_SHA256SUMS",
+      "sha256": "2af90446a1be27bd295d7d579ff72d6d0101b4b9b25da155039cbc35c632851a",
+      "bytes": 1053,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/PROTOCOL.md",
+      "sha256": "755f1f757acbb42c196c248f1ef7a92e668c05907f3ad438e498a076e8f87a56",
+      "bytes": 2310,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/README.md",
+      "sha256": "51a8f835eb8b5cca5b6a501a229457bc430f4466ff7ad8a8ad5990dfc069814e",
+      "bytes": 1843,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/diagnose.py",
+      "sha256": "e4945f689f6d55a70a935fdc43329d11eda0d28116c286631c5d75cc41d95b3f",
+      "bytes": 10871,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/diagnostic.sbatch",
+      "sha256": "7fd3d4dae5c39862c3f22655c010fc2789ef74d79718599b881f09ad45d0ebfe",
+      "bytes": 967,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/plan.json",
+      "sha256": "66fd970b94f7db7e8d31ce51bb085d57764071a22dc6bceb2396d189fbfcf416",
+      "bytes": 2096,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/prior/original_execution.json",
+      "sha256": "6ea7ef80188c47fb6b0228db969e8d9808becc9972e6a9348a2c4764217a1867",
+      "bytes": 2314,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/prior/original_failure_closure.json",
+      "sha256": "818bde493c0301a8e2dd95d37d614e91c84617f048e76b8fb3b73bac11896c07",
+      "bytes": 21868,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/prior/original_freeze.json",
+      "sha256": "371c4e6e4ac9efa0f05ec90333c5252765535cf14925b5c9cdea08cad992c3e8",
+      "bytes": 5577,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/prior/original_reference.stderr.txt",
+      "sha256": "77b511d8e98b164fe4d3ffba420719ed46c743df290feb752cface0a957e62b2",
+      "bytes": 1524,
+      "decision": "OMIT_PRIVATE_TRACEBACK_BODY",
+      "derived_projection_index": 0
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/prior/original_sacct.txt",
+      "sha256": "5de4ad6ccf368001baff9d8cfe2d69a10b7854be6ddbfe390fb161a1cabb2fdd",
+      "bytes": 273,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/prior/original_source.tar.gz",
+      "sha256": "8e75f69cb68b8c08998627aa1218e2ca5311719428ff42d7c5085af2fb47d275",
+      "bytes": 103028,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_diagnostic_source",
+      "path": "spectral_peak_diagnostic_v1/run_workflow.py",
+      "sha256": "f53d1df3524d2c6be803633284e8051f97c57d7a25fdf264d3c5d20f2b33f0b5",
+      "bytes": 3588,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-diagnostic-source-scientific-selection.tar.gz"
+    },
+    {
+      "origin": "original_failure",
+      "path": "outer_logs/x14_spectral_peak_pilot_6466312.log",
+      "sha256": "fb7129dfc38c102dc7ba0fa1b7547250df69bd1035b50ab2e27f86e1f4fadc3d",
+      "bytes": 552,
+      "decision": "OMIT_PRIVATE_TRACEBACK_BODY",
+      "derived_projection_index": 1
+    },
+    {
+      "origin": "original_failure",
+      "path": "release_freeze.json",
+      "sha256": "371c4e6e4ac9efa0f05ec90333c5252765535cf14925b5c9cdea08cad992c3e8",
+      "bytes": 5577,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "remote_text_receipts.tar",
+      "sha256": "a6ed14075c26b081adcf8d035f7534e90ffd92213acb151653326a0ecc6c3a15",
+      "bytes": 1044480,
+      "decision": "OMIT_TRANSPORT_BODY",
+      "reason": "Private full transport and remote inode/path inventories; original SHA retained, not needed by public integrity replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/execution.json",
+      "sha256": "6ea7ef80188c47fb6b0228db969e8d9808becc9972e6a9348a2c4764217a1867",
+      "bytes": 2314,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/results/execution.json"
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/native.json",
+      "sha256": "f8b8824a32c0c16883331a7f706dddaadb7d075a4ee0856a4e1961179787d380",
+      "bytes": 522124,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/results/native.json"
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/native.resources.txt",
+      "sha256": "2c2f647c4724184b881ba15ad368ee3970a37353180f5d05adcf957518a0fff4",
+      "bytes": 1049,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/results/native.resources.txt"
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/native.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/results/native.stderr.txt"
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/native.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/results/native.stdout.txt"
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/reference.resources.txt",
+      "sha256": "c6b604d479d4a33a9ce7e5d078ee4415d046d2b33fb28ae7c20e0dccb3227718",
+      "bytes": 1092,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/results/reference.resources.txt"
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/reference.stderr.txt",
+      "sha256": "77b511d8e98b164fe4d3ffba420719ed46c743df290feb752cface0a957e62b2",
+      "bytes": 1524,
+      "decision": "OMIT_PRIVATE_TRACEBACK_BODY",
+      "derived_projection_index": 2
+    },
+    {
+      "origin": "original_failure",
+      "path": "results/reference.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/results/reference.stdout.txt"
+    },
+    {
+      "origin": "original_failure",
+      "path": "sacct_fresh.txt",
+      "sha256": "5de4ad6ccf368001baff9d8cfe2d69a10b7854be6ddbfe390fb161a1cabb2fdd",
+      "bytes": 273,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/sacct_fresh.txt"
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/PREPARATION_SHA256SUMS",
+      "sha256": "a02f1be995d015aa80a5cf23ad0c371854a0a3b50266be168e4238cb04935af5",
+      "bytes": 3588,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/PROTOCOL.md",
+      "sha256": "061ca064c9cc2a88e6edc03e7dfd47a3f03a9d38d6ce64a120d330da2407ae27",
+      "bytes": 14177,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/README.md",
+      "sha256": "2caf20d68ca2b4ad96c6b3f5eedab2dd9b52bbb1be60d2c0e233d0a115aedea9",
+      "bytes": 2182,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/SHA256SUMS",
+      "sha256": "0846c1ec1650b80e191311dbb9bb9c87e0cbe8e0c020d14098575330f2f7f3d6",
+      "bytes": 3677,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/assess_pilot.py",
+      "sha256": "4e8ea41b20fe3658cd65eec25d573e8925683dedb9382dc0436352aad2a7feca",
+      "bytes": 2230,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/catalogue_X14.json",
+      "sha256": "90146d2066689e19f55c7c9b1b0f8b4015b92b6abb63606646bcdf7590e06779",
+      "bytes": 1340,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/compare.py",
+      "sha256": "979b740cac58dbd7c0fd211499f4a1bcf39fb46cbaaf72ef0cd472230fa748de",
+      "bytes": 13230,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/io_contract.py",
+      "sha256": "d6d971844df8e02954b752664bbbd5267977eef1a87542b38afc6bb1f83481fb",
+      "bytes": 7300,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/manifest.toml",
+      "sha256": "953b483b8550012fc81d1db8b843ec8d867c0a615d0ffa8503add927d93ae1fc",
+      "bytes": 2813,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/pilot.sbatch",
+      "sha256": "048d7d60346504e5418c6fd6b89b5f80b66e449b159fcb778f36f66d126964d4",
+      "bytes": 539,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/primary_sources.json",
+      "sha256": "9aac965c406f1fb45061bf3e995961365fdfa6a547a31e04ece815e891c92d65",
+      "bytes": 925,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/comparison.json",
+      "sha256": "d55b83e6b809a952e41de8ea4ac8e6afebac0be6f3f32c9856914a33f01032af",
+      "bytes": 2010,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/comparison_independent_replay_attempt01.json",
+      "sha256": "d55b83e6b809a952e41de8ea4ac8e6afebac0be6f3f32c9856914a33f01032af",
+      "bytes": 2010,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/independent_audit_attempt01.json",
+      "sha256": "1ccbd313086027ab974f37255908dcb8da64bd5bd3cd78e292abb2dfe3bd13ae",
+      "bytes": 9175,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/native/audit_u4_l4_thermal_ed.jl",
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+      "bytes": 11032,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/native/compute_s2_ed.jl",
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+      "bytes": 17625,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/oracle.json",
+      "sha256": "31c75279dacfb753ce40723f8f6c11a8060a6a4fd08da4aafba360fde311a5b8",
+      "bytes": 86506,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/previous_compare.py",
+      "sha256": "42c545ab521b768ff7b0bf5a346403faea514b1275f9a92d2c237fa1f4d661a6",
+      "bytes": 13239,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/previous_independent_auditor.py",
+      "sha256": "30088a735570b2f68a263652a1f68fa27c2bb07e569420f418d758def2944dbe",
+      "bytes": 11773,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/previous_manifest.toml",
+      "sha256": "2db20b0e6b71e932bc8db1ae071007b328f3fca117e0590acbdde425aa8109a2",
+      "bytes": 2760,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/previous_oracle_quspin.py",
+      "sha256": "9d8c45b48fe2d140412949a96910e32447d7dfdefefc8e4ee2f1149138c63e99",
+      "bytes": 9157,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/previous_target_ed.jl",
+      "sha256": "2a4c97171ddbbfa718f69b217a159873f924fae91436796ce6ffc9a28bc58ef9",
+      "bytes": 9149,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/spectral-dynamics-v1-freeze.json",
+      "sha256": "8f7ad7607c618d4ca56684ee81c3dcdee825e8901c105fe5ed53ae36146686ff",
+      "bytes": 1291,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/spectral-dynamics-v1-source.tar.gz",
+      "sha256": "3fb6ce6accac61140ee21584dddbb79418b121f7d62ac9391b31996f1cf2239b",
+      "bytes": 17543,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior/target.toml",
+      "sha256": "308f528021a63b11b2f11fbf79cde70eb5efa96814f21f058b6a171392bae7df",
+      "bytes": 65345,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/prior_inputs.json",
+      "sha256": "008439cab723f05d726ea571bfb2cef70eff2d65bd14ffcfaa868a6869a05e5b",
+      "bytes": 4185,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/production.sbatch",
+      "sha256": "d676b91387fd3281f6fa710d4397b0c3039bc5e662589228fa83ea3fc0ad2a03",
+      "bytes": 774,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reference_library_pins.json",
+      "sha256": "b39d5eb29520dcc74dae7118750745deb0595e01d33307979127f31de2d643e9",
+      "bytes": 6868,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/render_native.py",
+      "sha256": "de89e5f1bd459b85b51e5d95329072f69dd47fc7b3b15d949c9b9cefa7263f9c",
+      "bytes": 3725,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/render_quspin_reference.py",
+      "sha256": "05a77d109916913bf8139c06e37141e614fd81307daab10a552fb65582a9ae39",
+      "bytes": 8486,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reviews/initial_peer_review.json",
+      "sha256": "a692ba00bcad60746044f8c9b933c20a3c6f1ab5cfcb47f810226b644375b690",
+      "bytes": 1062,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reviews/unexecuted_candidate_before_peer_fixes/PREPARATION_SHA256SUMS",
+      "sha256": "c43ebaf458edc069f99f95d0e0c1fea8d94cef34f936b46a90a7b3e80170afed",
+      "bytes": 2610,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reviews/unexecuted_candidate_before_peer_fixes/PROTOCOL.md",
+      "sha256": "dcbdf50216c1a8b5451cda0c76ac010ac84aa3c3dc8851d60f0ae78fc04da18b",
+      "bytes": 11922,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reviews/unexecuted_candidate_before_peer_fixes/compare.py",
+      "sha256": "63792d22a781735d6b25d33a6e27b7cbef642c3426a4ef1d94e18331a52076c5",
+      "bytes": 11406,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reviews/unexecuted_candidate_before_peer_fixes/io_contract.py",
+      "sha256": "b1ba7e574bdf15cedfa630cd2b7de17cd89bc65f7a68073d4d1431fc797564ae",
+      "bytes": 5300,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reviews/unexecuted_candidate_before_peer_fixes/render_quspin_reference.py",
+      "sha256": "6c9d964efe55fce8c51fe8aaa4790adb4ae61cf13815a1b07ab91e1e7a4c7555",
+      "bytes": 6007,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/reviews/unexecuted_candidate_before_peer_fixes/static_review.json",
+      "sha256": "acb374796954c838b6034522fd3fc78953d7460bd344a4ac397fcdc2e395c887",
+      "bytes": 4638,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/run_analysis.py",
+      "sha256": "6d7be0a863ee2368709c9edbbd5d9d3d2b382539983f29fb7b274039c6366ea7",
+      "bytes": 3745,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/source_freeze.json",
+      "sha256": "371c4e6e4ac9efa0f05ec90333c5252765535cf14925b5c9cdea08cad992c3e8",
+      "bytes": 5577,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "source/static_review.json",
+      "sha256": "4aaa766761c0926096b82de973898f312fd49e35e6b82c8ced517bbb41d66333",
+      "bytes": 6019,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "terminal_failure_closure.json",
+      "sha256": "818bde493c0301a8e2dd95d37d614e91c84617f048e76b8fb3b73bac11896c07",
+      "bytes": 21868,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-original-failure-scientific-data.tar.gz",
+      "public_member": "original_failure/terminal_failure_closure.json"
+    },
+    {
+      "origin": "original_failure",
+      "path": "transfer_after.json",
+      "sha256": "5094a6296ca1324e4d783b7c8985ef3b59c43e41a2e70b600de37646ab4ccc59",
+      "bytes": 26862,
+      "decision": "OMIT_TRANSPORT_BODY",
+      "reason": "Private full transport and remote inode/path inventories; original SHA retained, not needed by public integrity replay."
+    },
+    {
+      "origin": "original_failure",
+      "path": "transfer_before.json",
+      "sha256": "629d15319a19fef2eade6cc5bf196798c34901f9054accdbaf16445f4e300c03",
+      "bytes": 42394,
+      "decision": "OMIT_TRANSPORT_BODY",
+      "reason": "Private full transport and remote inode/path inventories; original SHA retained, not needed by public integrity replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/PREPARATION_SHA256SUMS",
+      "sha256": "a02f1be995d015aa80a5cf23ad0c371854a0a3b50266be168e4238cb04935af5",
+      "bytes": 3588,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/PROTOCOL.md",
+      "sha256": "061ca064c9cc2a88e6edc03e7dfd47a3f03a9d38d6ce64a120d330da2407ae27",
+      "bytes": 14177,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/README.md",
+      "sha256": "2caf20d68ca2b4ad96c6b3f5eedab2dd9b52bbb1be60d2c0e233d0a115aedea9",
+      "bytes": 2182,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/SHA256SUMS",
+      "sha256": "0846c1ec1650b80e191311dbb9bb9c87e0cbe8e0c020d14098575330f2f7f3d6",
+      "bytes": 3677,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/assess_pilot.py",
+      "sha256": "4e8ea41b20fe3658cd65eec25d573e8925683dedb9382dc0436352aad2a7feca",
+      "bytes": 2230,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/catalogue_X14.json",
+      "sha256": "90146d2066689e19f55c7c9b1b0f8b4015b92b6abb63606646bcdf7590e06779",
+      "bytes": 1340,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/compare.py",
+      "sha256": "979b740cac58dbd7c0fd211499f4a1bcf39fb46cbaaf72ef0cd472230fa748de",
+      "bytes": 13230,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/io_contract.py",
+      "sha256": "d6d971844df8e02954b752664bbbd5267977eef1a87542b38afc6bb1f83481fb",
+      "bytes": 7300,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/manifest.toml",
+      "sha256": "953b483b8550012fc81d1db8b843ec8d867c0a615d0ffa8503add927d93ae1fc",
+      "bytes": 2813,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/pilot.sbatch",
+      "sha256": "048d7d60346504e5418c6fd6b89b5f80b66e449b159fcb778f36f66d126964d4",
+      "bytes": 539,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/primary_sources.json",
+      "sha256": "9aac965c406f1fb45061bf3e995961365fdfa6a547a31e04ece815e891c92d65",
+      "bytes": 925,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/comparison.json",
+      "sha256": "d55b83e6b809a952e41de8ea4ac8e6afebac0be6f3f32c9856914a33f01032af",
+      "bytes": 2010,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/comparison_independent_replay_attempt01.json",
+      "sha256": "d55b83e6b809a952e41de8ea4ac8e6afebac0be6f3f32c9856914a33f01032af",
+      "bytes": 2010,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/independent_audit_attempt01.json",
+      "sha256": "1ccbd313086027ab974f37255908dcb8da64bd5bd3cd78e292abb2dfe3bd13ae",
+      "bytes": 9175,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/native/audit_u4_l4_thermal_ed.jl",
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+      "bytes": 11032,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/native/compute_s2_ed.jl",
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+      "bytes": 17625,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/oracle.json",
+      "sha256": "31c75279dacfb753ce40723f8f6c11a8060a6a4fd08da4aafba360fde311a5b8",
+      "bytes": 86506,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/previous_compare.py",
+      "sha256": "42c545ab521b768ff7b0bf5a346403faea514b1275f9a92d2c237fa1f4d661a6",
+      "bytes": 13239,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/previous_independent_auditor.py",
+      "sha256": "30088a735570b2f68a263652a1f68fa27c2bb07e569420f418d758def2944dbe",
+      "bytes": 11773,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/previous_manifest.toml",
+      "sha256": "2db20b0e6b71e932bc8db1ae071007b328f3fca117e0590acbdde425aa8109a2",
+      "bytes": 2760,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/previous_oracle_quspin.py",
+      "sha256": "9d8c45b48fe2d140412949a96910e32447d7dfdefefc8e4ee2f1149138c63e99",
+      "bytes": 9157,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/previous_target_ed.jl",
+      "sha256": "2a4c97171ddbbfa718f69b217a159873f924fae91436796ce6ffc9a28bc58ef9",
+      "bytes": 9149,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/spectral-dynamics-v1-freeze.json",
+      "sha256": "8f7ad7607c618d4ca56684ee81c3dcdee825e8901c105fe5ed53ae36146686ff",
+      "bytes": 1291,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/spectral-dynamics-v1-source.tar.gz",
+      "sha256": "3fb6ce6accac61140ee21584dddbb79418b121f7d62ac9391b31996f1cf2239b",
+      "bytes": 17543,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior/target.toml",
+      "sha256": "308f528021a63b11b2f11fbf79cde70eb5efa96814f21f058b6a171392bae7df",
+      "bytes": 65345,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/prior_inputs.json",
+      "sha256": "008439cab723f05d726ea571bfb2cef70eff2d65bd14ffcfaa868a6869a05e5b",
+      "bytes": 4185,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/production.sbatch",
+      "sha256": "d676b91387fd3281f6fa710d4397b0c3039bc5e662589228fa83ea3fc0ad2a03",
+      "bytes": 774,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reference_library_pins.json",
+      "sha256": "b39d5eb29520dcc74dae7118750745deb0595e01d33307979127f31de2d643e9",
+      "bytes": 6868,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/render_native.py",
+      "sha256": "de89e5f1bd459b85b51e5d95329072f69dd47fc7b3b15d949c9b9cefa7263f9c",
+      "bytes": 3725,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/render_quspin_reference.py",
+      "sha256": "05a77d109916913bf8139c06e37141e614fd81307daab10a552fb65582a9ae39",
+      "bytes": 8486,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reviews/initial_peer_review.json",
+      "sha256": "a692ba00bcad60746044f8c9b933c20a3c6f1ab5cfcb47f810226b644375b690",
+      "bytes": 1062,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reviews/unexecuted_candidate_before_peer_fixes/PREPARATION_SHA256SUMS",
+      "sha256": "c43ebaf458edc069f99f95d0e0c1fea8d94cef34f936b46a90a7b3e80170afed",
+      "bytes": 2610,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reviews/unexecuted_candidate_before_peer_fixes/PROTOCOL.md",
+      "sha256": "dcbdf50216c1a8b5451cda0c76ac010ac84aa3c3dc8851d60f0ae78fc04da18b",
+      "bytes": 11922,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reviews/unexecuted_candidate_before_peer_fixes/compare.py",
+      "sha256": "63792d22a781735d6b25d33a6e27b7cbef642c3426a4ef1d94e18331a52076c5",
+      "bytes": 11406,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reviews/unexecuted_candidate_before_peer_fixes/io_contract.py",
+      "sha256": "b1ba7e574bdf15cedfa630cd2b7de17cd89bc65f7a68073d4d1431fc797564ae",
+      "bytes": 5300,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reviews/unexecuted_candidate_before_peer_fixes/render_quspin_reference.py",
+      "sha256": "6c9d964efe55fce8c51fe8aaa4790adb4ae61cf13815a1b07ab91e1e7a4c7555",
+      "bytes": 6007,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/reviews/unexecuted_candidate_before_peer_fixes/static_review.json",
+      "sha256": "acb374796954c838b6034522fd3fc78953d7460bd344a4ac397fcdc2e395c887",
+      "bytes": 4638,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/run_analysis.py",
+      "sha256": "6d7be0a863ee2368709c9edbbd5d9d3d2b382539983f29fb7b274039c6366ea7",
+      "bytes": 3745,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/source_freeze.json",
+      "sha256": "371c4e6e4ac9efa0f05ec90333c5252765535cf14925b5c9cdea08cad992c3e8",
+      "bytes": 5577,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "original_source/static_review.json",
+      "sha256": "4aaa766761c0926096b82de973898f312fd49e35e6b82c8ced517bbb41d66333",
+      "bytes": 6019,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "release_freeze.json",
+      "sha256": "df530a8e6b4c5739aa507314865efdc653ec21f7b9ca0c3f52cf6e076e39e59f",
+      "bytes": 2304,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "remote_text_receipts.tar",
+      "sha256": "e2002647c2fe2cd2f977c13673ec6085882707190dc3a055c51a26c1fb5cbcfc",
+      "bytes": 849920,
+      "decision": "OMIT_TRANSPORT_BODY",
+      "reason": "Private full transport and remote inode/path inventories; original SHA retained, not needed by public integrity replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "results/diagnostic/diagnostic.json",
+      "sha256": "fe67ce63c4a1ad0ee365e8724df4909f694b700708577f73e3e998b1b0aad033",
+      "bytes": 155611,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-trace-diagnostic-scientific-data.tar.gz",
+      "public_member": "trace_diagnostic/results/diagnostic/diagnostic.json"
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "results/diagnostic/original_reference_traceback.txt",
+      "sha256": "1ef61ea5cad40c476d47212541a39587a35fe3e8b8830114ffbc8b8af3e80c0b",
+      "bytes": 1546,
+      "decision": "OMIT_PRIVATE_TRACEBACK_BODY",
+      "derived_projection_index": 3
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "results/execution.json",
+      "sha256": "34955456373f8f5f447c454f19fdb8ed164988d57a4b78c0f8ad7b2d45d9828a",
+      "bytes": 2514,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-trace-diagnostic-scientific-data.tar.gz",
+      "public_member": "trace_diagnostic/results/execution.json"
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "results/reference_diagnostic.resources.txt",
+      "sha256": "32a3870bb51de7de7c480d10b3eedcfc37697652cec604e5b8a6c89d6fc20f9d",
+      "bytes": 1293,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-trace-diagnostic-scientific-data.tar.gz",
+      "public_member": "trace_diagnostic/results/reference_diagnostic.resources.txt"
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "results/reference_diagnostic.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-trace-diagnostic-scientific-data.tar.gz",
+      "public_member": "trace_diagnostic/results/reference_diagnostic.stderr.txt"
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "results/reference_diagnostic.stdout.txt",
+      "sha256": "0820f910def92c7220efa9392fe2c7973c809f1b290b9614fae8b22e8f325e95",
+      "bytes": 26,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-trace-diagnostic-scientific-data.tar.gz",
+      "public_member": "trace_diagnostic/results/reference_diagnostic.stdout.txt"
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "sacct_fresh.txt",
+      "sha256": "6b6329760ea8aaafc7840bd1ea487191ad39d2b541746c42d5d3b2b30098f065",
+      "bytes": 291,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-trace-diagnostic-scientific-data.tar.gz",
+      "public_member": "trace_diagnostic/sacct_fresh.txt"
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/PREPARATION_SHA256SUMS",
+      "sha256": "2af90446a1be27bd295d7d579ff72d6d0101b4b9b25da155039cbc35c632851a",
+      "bytes": 1053,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/PROTOCOL.md",
+      "sha256": "755f1f757acbb42c196c248f1ef7a92e668c05907f3ad438e498a076e8f87a56",
+      "bytes": 2310,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/README.md",
+      "sha256": "51a8f835eb8b5cca5b6a501a229457bc430f4466ff7ad8a8ad5990dfc069814e",
+      "bytes": 1843,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/diagnose.py",
+      "sha256": "e4945f689f6d55a70a935fdc43329d11eda0d28116c286631c5d75cc41d95b3f",
+      "bytes": 10871,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/diagnostic.sbatch",
+      "sha256": "7fd3d4dae5c39862c3f22655c010fc2789ef74d79718599b881f09ad45d0ebfe",
+      "bytes": 967,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/plan.json",
+      "sha256": "66fd970b94f7db7e8d31ce51bb085d57764071a22dc6bceb2396d189fbfcf416",
+      "bytes": 2096,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/prior/original_execution.json",
+      "sha256": "6ea7ef80188c47fb6b0228db969e8d9808becc9972e6a9348a2c4764217a1867",
+      "bytes": 2314,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/prior/original_failure_closure.json",
+      "sha256": "818bde493c0301a8e2dd95d37d614e91c84617f048e76b8fb3b73bac11896c07",
+      "bytes": 21868,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/prior/original_freeze.json",
+      "sha256": "371c4e6e4ac9efa0f05ec90333c5252765535cf14925b5c9cdea08cad992c3e8",
+      "bytes": 5577,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/prior/original_reference.stderr.txt",
+      "sha256": "77b511d8e98b164fe4d3ffba420719ed46c743df290feb752cface0a957e62b2",
+      "bytes": 1524,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/prior/original_sacct.txt",
+      "sha256": "5de4ad6ccf368001baff9d8cfe2d69a10b7854be6ddbfe390fb161a1cabb2fdd",
+      "bytes": 273,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/prior/original_source.tar.gz",
+      "sha256": "8e75f69cb68b8c08998627aa1218e2ca5311719428ff42d7c5085af2fb47d275",
+      "bytes": 103028,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/run_workflow.py",
+      "sha256": "f53d1df3524d2c6be803633284e8051f97c57d7a25fdf264d3c5d20f2b33f0b5",
+      "bytes": 3588,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "source/source_freeze.json",
+      "sha256": "df530a8e6b4c5739aa507314865efdc653ec21f7b9ca0c3f52cf6e076e39e59f",
+      "bytes": 2304,
+      "decision": "DEDUPLICATED_SOURCE_OR_FREEZE",
+      "reason": "Relevant selected exact source/freezes are supplied separately. A private traceback source member is explicitly omitted above; do not infer a full13guard replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "terminal_closure.json",
+      "sha256": "d8a093f6450a549d2ac923617dba7a2db5f22a796792fff34605f8441d801d66",
+      "bytes": 18940,
+      "decision": "EXACT_SCIENTIFIC_MEMBER",
+      "public_archive": "archives/x14-trace-diagnostic-scientific-data.tar.gz",
+      "public_member": "trace_diagnostic/terminal_closure.json"
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "transfer_after.json",
+      "sha256": "f594ce7376f887c434a2ae01314cb63ec72798081930fa006f787c9392227742",
+      "bytes": 29678,
+      "decision": "OMIT_TRANSPORT_BODY",
+      "reason": "Private full transport and remote inode/path inventories; original SHA retained, not needed by public integrity replay."
+    },
+    {
+      "origin": "trace_diagnostic",
+      "path": "transfer_before.json",
+      "sha256": "7731897f0d873d6915b423fada9fe6b8361f3d0850bb2b1d60488b1b9228ed05",
+      "bytes": 48595,
+      "decision": "OMIT_TRANSPORT_BODY",
+      "reason": "Private full transport and remote inode/path inventories; original SHA retained, not needed by public integrity replay."
+    }
+  ],
+  "attribution": "Actual user ED pole data and original independent QuSpin pole data from prior P09. Original Lorentzian renderers are NEW X14 adapters; trace-only code adds instrumentation, not a root-search repair or native solver capability.",
+  "replay_scope": "Source/member/selection integrity and retained native35row pole/weight metadata only; no reconstruction of absent reference output/comparison, root census, scientific equivalence or new credit.",
+  "conditioning_diagnostic_included": true,
+  "conditioning_scope": "Separately frozen post-failure Fraction diagnostic of only the retained failed bracket, under explicit conditional normal-binary64 arithmetic assumptions. No original function/probe or original-runtime/census replay, gate/padding change or credit."
+}

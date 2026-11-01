@@ -1,0 +1,44 @@
+{
+  "schema": "X14_TRACE_DIAGNOSTIC_SOURCE_FREEZE_V1",
+  "created_utc": "2026-10-23T19:37:07.353981+00:00",
+  "prefix": "spectral_peak_diagnostic_v1",
+  "files": {
+    "PREPARATION_SHA256SUMS": "2af90446a1be27bd295d7d579ff72d6d0101b4b9b25da155039cbc35c632851a",
+    "PROTOCOL.md": "755f1f757acbb42c196c248f1ef7a92e668c05907f3ad438e498a076e8f87a56",
+    "README.md": "51a8f835eb8b5cca5b6a501a229457bc430f4466ff7ad8a8ad5990dfc069814e",
+    "diagnose.py": "e4945f689f6d55a70a935fdc43329d11eda0d28116c286631c5d75cc41d95b3f",
+    "diagnostic.sbatch": "7fd3d4dae5c39862c3f22655c010fc2789ef74d79718599b881f09ad45d0ebfe",
+    "plan.json": "66fd970b94f7db7e8d31ce51bb085d57764071a22dc6bceb2396d189fbfcf416",
+    "prior/original_execution.json": "6ea7ef80188c47fb6b0228db969e8d9808becc9972e6a9348a2c4764217a1867",
+    "prior/original_failure_closure.json": "818bde493c0301a8e2dd95d37d614e91c84617f048e76b8fb3b73bac11896c07",
+    "prior/original_freeze.json": "371c4e6e4ac9efa0f05ec90333c5252765535cf14925b5c9cdea08cad992c3e8",
+    "prior/original_reference.stderr.txt": "77b511d8e98b164fe4d3ffba420719ed46c743df290feb752cface0a957e62b2",
+    "prior/original_sacct.txt": "5de4ad6ccf368001baff9d8cfe2d69a10b7854be6ddbfe390fb161a1cabb2fdd",
+    "prior/original_source.tar.gz": "8e75f69cb68b8c08998627aa1218e2ca5311719428ff42d7c5085af2fb47d275",
+    "run_workflow.py": "f53d1df3524d2c6be803633284e8051f97c57d7a25fdf264d3c5d20f2b33f0b5"
+  },
+  "archive_sha256": "8025bdcabfea458cf8230cbf1ef9c6064edfa7191eb05a7fe3fbd1da249ce5d8",
+  "archive_bytes": 119796,
+  "peer_review_sha256": "813fdb05c8fd5e7d8d1ac9c85a66e5e024a4b547d4675cb9ed19ae506d7ed29a",
+  "original_source_archive_sha256": "8e75f69cb68b8c08998627aa1218e2ca5311719428ff42d7c5085af2fb47d275",
+  "nested_archive_members": [
+    "prior/original_source.tar.gz"
+  ],
+  "root_checks": [
+    "exact13memberclosure",
+    "AST syntax",
+    "trace observes existingcalls/locals only",
+    "originalrendererbyteexact via39membercheck",
+    "all30pins beforeimport+after",
+    "no native/eigen/sampler/probe/comparator",
+    "pinned3.11.11 separate1CPU3500",
+    "240second processgroupcap"
+  ],
+  "cpus": 1,
+  "memory_MB": 3500,
+  "wall_minutes": 5,
+  "inner_timeout_seconds": 240,
+  "scientific_completions": 0,
+  "new_algorithm": false,
+  "no_full_admission": true
+}

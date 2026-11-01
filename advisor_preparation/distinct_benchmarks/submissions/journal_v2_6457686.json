@@ -1,0 +1,16 @@
+{
+  "job_id": "6457686",
+  "dependency": "afterany:6457635",
+  "source": "journal/run_raghu_v2.jl",
+  "driver_sha256": "73f8e35d2c196f725ac959e54f710d1728dc0a904b3410cbb82a0ecacbb9faa0",
+  "repair_record": "journal/v2_repair.json",
+  "output": "distinct_journal_attempt02/journal.toml",
+  "physical_protocol_unchanged": true,
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 10,
+  "runtime_estimate_minutes_after_start": [
+    1,
+    3
+  ]
+}

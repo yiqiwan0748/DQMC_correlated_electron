@@ -1,0 +1,12 @@
+{
+  "schema": "P21_SAMPLED_PILOT_INDEPENDENT_AUDIT_V1",
+  "status": "UNRESOLVED",
+  "job_id": "6460727",
+  "catalogue_id": "P21",
+  "catalogue_status": "NOT_RUN",
+  "scientific_completions": 0,
+  "reason": "ValueError: Independent raw component 917.alf.chains[0].lag1_bin_ESS_estimate: beyond64-epsilon arithmetic allowance",
+  "checks": 1090533,
+  "no_scientific_solver_executed": true,
+  "auditor_sha256": "84c1d709b7a9e40148cb7733dd65e53c928ced3fde2698293984137bb95f11eb"
+}

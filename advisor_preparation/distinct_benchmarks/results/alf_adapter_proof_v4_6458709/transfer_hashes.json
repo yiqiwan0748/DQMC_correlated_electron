@@ -1,0 +1,81 @@
+{
+  "schema": "p21_v4_text_receipt_transfer_v1",
+  "created_utc": "2026-10-22T20:02:58.238617+00:00",
+  "status": "ALL12_TEXT_FILES_REMOTE_SHA_MATCH",
+  "job_id": "6458709",
+  "files": [
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/configure.log",
+      "file": "configure.log",
+      "bytes": 322,
+      "sha256": "945b9c5f99588554987fb08ac5db60b3b0d3761dcc4c1dd8ae0a2b78875f4510"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/effective_build.txt",
+      "file": "effective_build.txt",
+      "bytes": 587,
+      "sha256": "687b33b13d600bb3c5f31de94cc5c3c35b64a6ffe0e430e9fa05c3d47c0eb82f"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/linkage.log",
+      "file": "linkage.log",
+      "bytes": 1738,
+      "sha256": "ee39b5743f7f6b72d295381eb906e0251efbe2852f8ed0734fa04722f2ca5495"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/observer_linkage_audit.json",
+      "file": "observer_linkage_audit.json",
+      "bytes": 1738,
+      "sha256": "ee39b5743f7f6b72d295381eb906e0251efbe2852f8ed0734fa04722f2ca5495"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/build.log",
+      "file": "build.log",
+      "bytes": 19571,
+      "sha256": "3575c1a62588cc42f73abf818d4f47cc849da91efa87899b9a612ddf639a8ba5"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/native_fixed_configuration.log",
+      "file": "native_fixed_configuration.log",
+      "bytes": 622,
+      "sha256": "917cebdbfa0831ac6e80ad92af5994b3e81c64f6730b5d12ced6264ff38fd877"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/overlay.log",
+      "file": "overlay.log",
+      "bytes": 1769,
+      "sha256": "5e950b4ca5c88243995e10c797ce2a013f8b001fdc1819160b71d96e3b30bc15"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/known_compiler_module_cleanup.log",
+      "file": "known_compiler_module_cleanup.log",
+      "bytes": 657,
+      "sha256": "c4176884303d0c2a8c6c4944c447d3de7e4ac36ec0817ee7103c335a6d7a5f1b"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/clean.log",
+      "file": "clean.log",
+      "bytes": 4288,
+      "sha256": "76cfe524331f447600d99e07cb22e91a2036ff97ed0e1879f7f0100bcb7ea4da"
+    },
+    {
+      "source": "results/p21_adapter_proof_v4_attempt01/known_compiler_module_cleanup.json",
+      "file": "known_compiler_module_cleanup.json",
+      "bytes": 657,
+      "sha256": "c4176884303d0c2a8c6c4944c447d3de7e4ac36ec0817ee7103c335a6d7a5f1b"
+    },
+    {
+      "source": "logs/alf_measurement_proof_v4_6458709.log",
+      "file": "alf_measurement_proof_v4_6458709.log",
+      "bytes": 1945,
+      "sha256": "4077719f061235a16be49a0caa42d2cbffd826ad0a4684fd63ffb07a4e118a5c"
+    },
+    {
+      "source": "results/p21_native_linkage_v4_attempt01.json",
+      "file": "p21_native_linkage_v4_attempt01.json",
+      "bytes": 1738,
+      "sha256": "e326d53772f769a197f4a97913db0125c40d0dc3d46e10fa0c000a723fee86a4"
+    }
+  ],
+  "binaries_libraries_symlinks_or_source_tree_downloaded": false
+}

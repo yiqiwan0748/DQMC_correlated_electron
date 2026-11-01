@@ -1,0 +1,22 @@
+{
+  "schema": "P17_SAVED_COMPARISON_V1_PUBLIC_TIMEOUT_SELECTION_MANIFEST_V1",
+  "status": "UNRESOLVED_ATTEMPTED_COMPARISON_TIMEOUT_NO_PERSISTED_GATES",
+  "scientific_credit": 0,
+  "files": {
+    "README.md": {
+      "bytes": 2557,
+      "sha256": "ce5e429f91d02d1996dcc0de4321e518db9c5a8f289f871ff26c23e89dcc548a"
+    },
+    "attempt_result.json": {
+      "bytes": 4404,
+      "sha256": "877728aa1a6ec6a86f1ea71bc0b868712b4185b8e460c9105204847c3c447239"
+    }
+  },
+  "independent_saved_evidence_audit_sha256": "17b715baa16906e13607c4a7abcc2e9c8d5426aaa9e9ce3fcdcd3fa8e560f27d",
+  "diagnostic_freeze_sha256": "d46104f9ddcb187423a6f41736df1a93dec336dd70733c0e7615681b619ed2cd",
+  "upstream_freeze_sha256": "da9af9ad26b0692149e77ddea5088b2b3856a0de8b78da2777fd5cd17b2741f0",
+  "execution_sha256": "cf2bd30b9203e815c6fe746042488e8eac2a0f13dd9f52254aa92e97590e8b86",
+  "terminal_archive_sha256": "d1c3a0985541b27147d7a496960ead7b7a5298f72984fd417b2006321a6632be",
+  "after_terminal_proof_sha256": "420dc4410e0c8467dad60ce40120c1f41a5017425c3ef5767b32a07465f9761c",
+  "original_V8_global_failure_unchanged": true
+}

@@ -1,0 +1,612 @@
+pilot = false
+attribution = "User Hubbard MPO and DMRG workflow; ITensorMPS supplies the optimizer. This file adds doped initialization and observables."
+adapter_sha256 = "37d787a0653ca0ca00675784fb30b41d877534aa1daac8ce95fa659e4b709aa4"
+schema = "tenpy_itensor_distinct_v1"
+manifest_sha256 = "7e5e557648f764ef438cc1092b3d5bb2316c1fac035514b4576b86b7034d9b5e"
+target_source_sha256 = "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+backend = "ITensorMPS"
+julia_version = "1.12.1"
+status = "COMPLETED"
+elapsed_seconds = 141.96894788742065
+
+[library_versions]
+ITensorMPS = "0.4.1"
+ITensors = "0.9.30"
+
+[cases.half.arms.coarse]
+variance = 4.989573199054576e-10
+max_bond = 128
+rdm_trace = 1.0
+energy = -4.2358069990941125
+norm = 0.9999999999999999
+twoSz = 2.9221655111569354e-16
+final_truncerr = 1.4274434745715346e-12
+density = [1.0000000000037343, 0.9999999999991029, 1.0000000000044167, 0.999999999992719, 1.000000000001356, 0.9999999999983025, 0.9999999999323371, 1.0000000000680311]
+N = 7.999999999999999
+reported_energy = -4.235806999094109
+sectors = []
+elapsed_seconds = 4.558099985122681
+
+    [[cases.half.arms.coarse.strings]]
+    j = 1
+    value = 0.7131928656148352
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 2
+    value = 0.8247998108095886
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 3
+    value = 0.7118093100902962
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 4
+    value = 0.809277747338123
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 5
+    value = 0.7118093100825909
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 6
+    value = 0.8247998107748596
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 7
+    value = 0.713192864894378
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.9999999999999999
+    i = 1
+    [[cases.half.arms.coarse.strings]]
+    j = 2
+    value = 0.6038964621098897
+    i = 2
+    [[cases.half.arms.coarse.strings]]
+    j = 3
+    value = 0.5203671851666983
+    i = 2
+    [[cases.half.arms.coarse.strings]]
+    j = 4
+    value = 0.5779490367605775
+    i = 2
+    [[cases.half.arms.coarse.strings]]
+    j = 5
+    value = 0.5094872735997384
+    i = 2
+    [[cases.half.arms.coarse.strings]]
+    j = 6
+    value = 0.5881607188503504
+    i = 2
+    [[cases.half.arms.coarse.strings]]
+    j = 7
+    value = 0.5089605981746919
+    i = 2
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.7131928656148352
+    i = 2
+    [[cases.half.arms.coarse.strings]]
+    j = 3
+    value = 0.6085992913407068
+    i = 3
+    [[cases.half.arms.coarse.strings]]
+    j = 4
+    value = 0.6788001507985634
+    i = 3
+    [[cases.half.arms.coarse.strings]]
+    j = 5
+    value = 0.5884965729920203
+    i = 3
+    [[cases.half.arms.coarse.strings]]
+    j = 6
+    value = 0.6817165073395697
+    i = 3
+    [[cases.half.arms.coarse.strings]]
+    j = 7
+    value = 0.58816071457568
+    i = 3
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.8247998108095886
+    i = 3
+    [[cases.half.arms.coarse.strings]]
+    j = 4
+    value = 0.5997242904454043
+    i = 4
+    [[cases.half.arms.coarse.strings]]
+    j = 5
+    value = 0.5231345344638245
+    i = 4
+    [[cases.half.arms.coarse.strings]]
+    j = 6
+    value = 0.58849657334897
+    i = 4
+    [[cases.half.arms.coarse.strings]]
+    j = 7
+    value = 0.509487263761978
+    i = 4
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.7118093100902962
+    i = 4
+    [[cases.half.arms.coarse.strings]]
+    j = 5
+    value = 0.5997242904357002
+    i = 5
+    [[cases.half.arms.coarse.strings]]
+    j = 6
+    value = 0.678800151003577
+    i = 5
+    [[cases.half.arms.coarse.strings]]
+    j = 7
+    value = 0.5779490335127159
+    i = 5
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.809277747338123
+    i = 5
+    [[cases.half.arms.coarse.strings]]
+    j = 6
+    value = 0.6085992913087891
+    i = 6
+    [[cases.half.arms.coarse.strings]]
+    j = 7
+    value = 0.520367185396631
+    i = 6
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.7118093100825909
+    i = 6
+    [[cases.half.arms.coarse.strings]]
+    j = 7
+    value = 0.6038964613135112
+    i = 7
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.8247998107748596
+    i = 7
+    [[cases.half.arms.coarse.strings]]
+    j = 8
+    value = 0.713192864894378
+    i = 8
+
+[cases.half.arms.refined]
+variance = 1.7834622667578515e-11
+max_bond = 149
+rdm_trace = 1.0
+energy = -4.235806999128327
+norm = 1.0000000000000004
+twoSz = 1.0418833195253042e-15
+final_truncerr = 8.926815104180246e-14
+density = [1.0000000000000002, 1.0000000000000002, 1.0000000000000004, 1.0, 1.0000000000000007, 1.0000000000000004, 1.0000000000000007, 1.0000000000000004]
+N = 8.000000000000004
+reported_energy = -4.235806999128326
+sectors = []
+elapsed_seconds = 4.680588960647583
+
+    [[cases.half.arms.refined.strings]]
+    j = 1
+    value = 0.7131928655597247
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 2
+    value = 0.8247998107109723
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 3
+    value = 0.7118093100043617
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 4
+    value = 0.8092777472444534
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 5
+    value = 0.7118093100044918
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 6
+    value = 0.8247998107119885
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 7
+    value = 0.7131928655568797
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 1.0000000000000004
+    i = 1
+    [[cases.half.arms.refined.strings]]
+    j = 2
+    value = 0.6038964620978475
+    i = 2
+    [[cases.half.arms.refined.strings]]
+    j = 3
+    value = 0.5203671861029895
+    i = 2
+    [[cases.half.arms.refined.strings]]
+    j = 4
+    value = 0.5779490342143072
+    i = 2
+    [[cases.half.arms.refined.strings]]
+    j = 5
+    value = 0.5094873965717471
+    i = 2
+    [[cases.half.arms.refined.strings]]
+    j = 6
+    value = 0.5881607619260982
+    i = 2
+    [[cases.half.arms.refined.strings]]
+    j = 7
+    value = 0.5089607214633473
+    i = 2
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 0.7131928655597247
+    i = 2
+    [[cases.half.arms.refined.strings]]
+    j = 3
+    value = 0.6085992913293767
+    i = 3
+    [[cases.half.arms.refined.strings]]
+    j = 4
+    value = 0.6788001516479758
+    i = 3
+    [[cases.half.arms.refined.strings]]
+    j = 5
+    value = 0.588496564862396
+    i = 3
+    [[cases.half.arms.refined.strings]]
+    j = 6
+    value = 0.6817166173038828
+    i = 3
+    [[cases.half.arms.refined.strings]]
+    j = 7
+    value = 0.5881607622312525
+    i = 3
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 0.8247998107109723
+    i = 3
+    [[cases.half.arms.refined.strings]]
+    j = 4
+    value = 0.599724290427612
+    i = 4
+    [[cases.half.arms.refined.strings]]
+    j = 5
+    value = 0.5231345368107576
+    i = 4
+    [[cases.half.arms.refined.strings]]
+    j = 6
+    value = 0.588496564853615
+    i = 4
+    [[cases.half.arms.refined.strings]]
+    j = 7
+    value = 0.5094873966457
+    i = 4
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 0.7118093100043617
+    i = 4
+    [[cases.half.arms.refined.strings]]
+    j = 5
+    value = 0.5997242904290402
+    i = 5
+    [[cases.half.arms.refined.strings]]
+    j = 6
+    value = 0.6788001516498448
+    i = 5
+    [[cases.half.arms.refined.strings]]
+    j = 7
+    value = 0.5779490342108061
+    i = 5
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 0.8092777472444534
+    i = 5
+    [[cases.half.arms.refined.strings]]
+    j = 6
+    value = 0.6085992913285337
+    i = 6
+    [[cases.half.arms.refined.strings]]
+    j = 7
+    value = 0.5203671861056436
+    i = 6
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 0.7118093100044918
+    i = 6
+    [[cases.half.arms.refined.strings]]
+    j = 7
+    value = 0.6038964621007012
+    i = 7
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 0.8247998107119885
+    i = 7
+    [[cases.half.arms.refined.strings]]
+    j = 8
+    value = 0.7131928655568797
+    i = 8
+
+[cases.doped.arms.coarse]
+variance = 3.8245673295023153e-10
+max_bond = 92
+strings = []
+rdm_trace = 1.0000000000000004
+energy = -5.930092234160778
+norm = 0.9999999999999999
+twoSz = -4.1278698113923653e-16
+final_truncerr = 6.701990853361363e-13
+density = [0.7490629004079712, 0.7876667686869155, 0.6883598981618979, 0.7749104327433877, 0.7749104327364147, 0.68835989812969, 0.7876667687998429, 0.749062900333881]
+N = 6.000000000000001
+reported_energy = -5.930092234160776
+elapsed_seconds = 127.1160728931427
+
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 1.1298434334666968e-8
+    N = 0
+    twoSz = 0
+    probabilities = [1.1298434334666968e-8]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.00021468296444615564
+    N = 1
+    twoSz = -1
+    probabilities = [0.0002145887854529576, 9.357220956822994e-8, 6.036651252998551e-10, 3.1185045368161493e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.00021468296543330405
+    N = 1
+    twoSz = 1
+    probabilities = [0.00021458878643983877, 9.357220983185587e-8, 6.036651288638518e-10, 3.1185045503013364e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499650948325525
+    N = 2
+    twoSz = -2
+    probabilities = [0.0014440599748046434, 5.896460926941064e-6, 5.915830883629972e-9, 2.7390805271970026e-9, 4.1895572208404974e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.13321827415244444
+    N = 2
+    twoSz = 0
+    probabilities = [0.1309477179652667, 0.001444059980070149, 0.0008194211165422014, 5.8964609620012475e-6, 1.0793639822905516e-6, 8.946133108396049e-8, 5.91583090617937e-9, 2.739080543616322e-9, 9.361410977771084e-10, 2.0828400768471263e-10, 4.189557240793451e-12, 7.638494546321867e-13]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499651054334826
+    N = 2
+    twoSz = 2
+    probabilities = [0.00144405998533538, 5.896460997056568e-6, 5.9158309287261626e-9, 2.73908056004441e-9, 4.189557260741246e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 3.0653167829702385e-5
+    N = 3
+    twoSz = -3
+    probabilities = [3.064799025383453e-5, 5.177575867851472e-9]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.36342176475832333
+    N = 3
+    twoSz = -1
+    probabilities = [0.36149429628421464, 0.001105385025072431, 0.0007829040831022826, 3.064799039611319e-5, 5.471837643296501e-6, 2.9721321206099373e-6, 7.884475197108738e-8, 5.177575900145014e-9, 2.7041646590782395e-9, 5.989343136182982e-10, 6.310462383269148e-11, 1.579912728303955e-11, 1.4433482021065565e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.3634217657436056
+    N = 3
+    twoSz = 1
+    probabilities = [0.36149429726013316, 0.001105385029319137, 0.0007829040880359738, 3.0647990538387167e-5, 5.471837673507002e-6, 2.9721321305950133e-6, 7.884475276631387e-8, 5.1775759324330245e-9, 2.704164676942037e-9, 5.989343169188422e-10, 6.310462397021405e-11, 1.5799127100821397e-11, 1.4433482102152022e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 3.0653168256622244e-5
+    N = 3
+    twoSz = 3
+    probabilities = [3.064799068065753e-5, 5.177575964714431e-9]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 4
+    twoSz = -4
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499650949346664
+    N = 4
+    twoSz = -2
+    probabilities = [0.0014440599749222867, 5.8964609123957955e-6, 5.915830949026888e-9, 2.739078948643027e-9, 4.190086291027077e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.133218274152073
+    N = 4
+    twoSz = 0
+    probabilities = [0.13094771796223792, 0.001444059980146995, 0.0008194211187149822, 5.896460946678741e-6, 1.079364381578343e-6, 8.946136321000497e-8, 5.9158309747578165e-9, 2.739078968268487e-9, 9.361373562461475e-10, 2.082779948973106e-10, 4.190086313641361e-12, 7.662627378314398e-13]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499651054527215
+    N = 4
+    twoSz = 2
+    probabilities = [0.0014440599853716867, 5.896460980959949e-6, 5.9158310004855655e-9, 2.7390789878849193e-9, 4.190086336270353e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 4
+    twoSz = 4
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 5
+    twoSz = -3
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0002146829645299103
+    N = 5
+    twoSz = -1
+    probabilities = [0.00021458878549226228, 9.357224232594516e-8, 6.036756361299274e-10, 3.1196859267287304e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.000214682965486545
+    N = 5
+    twoSz = 1
+    probabilities = [0.00021458878644858273, 9.357224263534134e-8, 6.036756409610957e-10, 3.1196859482422764e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 5
+    twoSz = 3
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 6
+    twoSz = -2
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 1.1298483597708981e-8
+    N = 6
+    twoSz = 0
+    probabilities = [1.1298483597708981e-8]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 6
+    twoSz = 2
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 7
+    twoSz = -1
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 7
+    twoSz = 1
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 8
+    twoSz = 0
+    probabilities = []
+
+[cases.doped.arms.refined]
+variance = 2.1870505406695884e-11
+max_bond = 95
+strings = []
+rdm_trace = 1.0
+energy = -5.9300922341864695
+norm = 1.0
+twoSz = 6.519318387875097e-17
+final_truncerr = 7.867244929806593e-14
+density = [0.7490629004102126, 0.7876667687012875, 0.6883598981503303, 0.7749104327386224, 0.7749104327380444, 0.6883598981446151, 0.787666768711525, 0.7490629004053614]
+N = 5.999999999999999
+reported_energy = -5.930092234186467
+elapsed_seconds = 4.043499946594238
+
+    [[cases.doped.arms.refined.sectors]]
+    weight = 1.1298504016695904e-8
+    N = 0
+    twoSz = 0
+    probabilities = [1.1298504016695904e-8]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0002146829661273954
+    N = 1
+    twoSz = -1
+    probabilities = [0.00021458878679474975, 9.357252252524205e-8, 6.03670130301166e-10, 3.139990120440435e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.00021468296608561697
+    N = 1
+    twoSz = 1
+    probabilities = [0.00021458878675437076, 9.357252076196972e-8, 6.036703855069598e-10, 3.140098735059383e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0014499651004832006
+    N = 2
+    twoSz = -2
+    probabilities = [0.0014440599804388325, 5.896460912539259e-6, 5.915865836188657e-9, 2.739070851882467e-9, 4.195140807015039e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.1332182741736638
+    N = 2
+    twoSz = 0
+    probabilities = [0.1309477179774722, 0.0014440599805067569, 0.0008194211209979547, 5.8964609324419805e-6, 1.0793672290599555e-6, 8.946183245010903e-8, 5.915868055412722e-9, 2.7390722965339156e-9, 9.36171320081936e-10, 2.0836940555409137e-10, 4.193933845323368e-12, 7.608411679125156e-13, 2.571308443296677e-13]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0014499651006643157
+    N = 2
+    twoSz = 2
+    probabilities = [0.001444059980574852, 5.8964609527078316e-6, 5.9158702954884625e-9, 2.7390737345079565e-9, 4.19272573698584e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 3.065316779120697e-5
+    N = 3
+    twoSz = -3
+    probabilities = [3.064799021046686e-5, 5.177580740110109e-9]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.3634217652255992
+    N = 3
+    twoSz = -1
+    probabilities = [0.36149429673670125, 0.0011053850341494534, 0.0007829040858924045, 3.0647990164248865e-5, 5.471837443591578e-6, 2.9721350057712473e-6, 7.884483838823089e-8, 5.177581998925533e-9, 2.704138158342457e-9, 5.989322711758554e-10, 6.347153043937339e-11, 1.5793101691764304e-11, 1.451836107153984e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.3634217652274867
+    N = 3
+    twoSz = 1
+    probabilities = [0.3614942967389014, 0.001105385034004849, 0.0007829040858295866, 3.064799011821697e-5, 5.471837413219168e-6, 2.9721350114323514e-6, 7.884483099796476e-8, 5.177583255128234e-9, 2.704141387436209e-9, 5.989350609088951e-10, 6.347122171525593e-11, 1.579364773876418e-11, 1.4524478394301665e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 3.065316765688021e-5
+    N = 3
+    twoSz = 3
+    probabilities = [3.0647990072371506e-5, 5.177584508709644e-9]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 4
+    twoSz = -4
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0014499651005525063
+    N = 4
+    twoSz = -2
+    probabilities = [0.0014440599804718315, 5.896460946600754e-6, 5.915868154726496e-9, 2.7390705111838027e-9, 4.195408031904454e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.13321827417398038
+    N = 4
+    twoSz = 0
+    probabilities = [0.13094771797767574, 0.0014440599805248245, 0.000819421121035004, 5.896460957887036e-6, 1.0793672638955878e-6, 8.946183338140557e-8, 5.9158674226344704e-9, 2.7390703262786837e-9, 9.361704852944737e-10, 2.0836903518881749e-10, 4.1943823214776794e-12, 7.60423021608877e-13, 2.575586054634743e-13]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0014499651006757396
+    N = 4
+    twoSz = 2
+    probabilities = [0.0014440599805763338, 5.896460969183317e-6, 5.915866719461741e-9, 2.7390701492105965e-9, 4.193353641983282e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 4
+    twoSz = 4
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 5
+    twoSz = -3
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.00021468296608306205
+    N = 5
+    twoSz = -1
+    probabilities = [0.00021458878675644004, 9.357251306892158e-8, 6.036735990522137e-10, 3.1399540396538847e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.00021468296610919089
+    N = 5
+    twoSz = 1
+    probabilities = [0.00021458878679349558, 9.357250234605979e-8, 6.036733049291209e-10, 3.1400443287666866e-12]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 5
+    twoSz = 3
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 6
+    twoSz = -2
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 1.1298536156925951e-8
+    N = 6
+    twoSz = 0
+    probabilities = [1.1298536156925951e-8]
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 6
+    twoSz = 2
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 7
+    twoSz = -1
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 7
+    twoSz = 1
+    probabilities = []
+    [[cases.doped.arms.refined.sectors]]
+    weight = 0.0
+    N = 8
+    twoSz = 0
+    probabilities = []

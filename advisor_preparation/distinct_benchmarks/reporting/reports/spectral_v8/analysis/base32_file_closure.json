@@ -1,0 +1,584 @@
+[
+  {
+    "base_relative_path": "PUBLIC_SOURCE_REPLAY.json",
+    "evidence_copy": "inputs/base32_metadata/PUBLIC_SOURCE_REPLAY.json",
+    "sha256": "d4e1d89c07b16daebb920de539cf1b63e7d7039cb01873ef8d0ab3a7cbaf77ef",
+    "bytes": 754
+  },
+  {
+    "base_relative_path": "README.md",
+    "evidence_copy": "inputs/base32_metadata/README.md",
+    "sha256": "1f0e434a6acd7cdbd0b36945ed7b32110c30b5ccbd5f55506128940f7112c0bd",
+    "bytes": 1306
+  },
+  {
+    "base_relative_path": "analysis/coverage_process.json",
+    "evidence_copy": "analysis/coverage_process.json",
+    "sha256": "336e0372a82d2058c93f62766333f0aae11ab3efe53bfd8050a6bfbc0968431c",
+    "bytes": 1197
+  },
+  {
+    "base_relative_path": "analysis/coverage_recomputed.json",
+    "evidence_copy": "analysis/coverage_recomputed.json",
+    "sha256": "d6fde3f9dd2ad4640880e29eacbdb05f679d3442ad10120398d2a5812318860e",
+    "bytes": 156537
+  },
+  {
+    "base_relative_path": "analysis/tenpy_process.json",
+    "evidence_copy": "analysis/tenpy_process.json",
+    "sha256": "a6217243920a6984bc0e4bea22d62b71f31f42a9387c2496b02631abb44ea23b",
+    "bytes": 1595
+  },
+  {
+    "base_relative_path": "analysis/tenpy_recomputed.json",
+    "evidence_copy": "analysis/tenpy_recomputed.json",
+    "sha256": "04f69419e8fa48b6d9e53b591bb62eefeadadc1dff709708244e4bc9d01e212a",
+    "bytes": 1413
+  },
+  {
+    "base_relative_path": "analysis/thermal_process.json",
+    "evidence_copy": "analysis/thermal_process.json",
+    "sha256": "54f7284feb24fc789ecf612f10fbb6c8dc17330a678b8a1e3020cde51317eaf4",
+    "bytes": 4597
+  },
+  {
+    "base_relative_path": "analysis/thermal_recomputed.json",
+    "evidence_copy": "analysis/thermal_recomputed.json",
+    "sha256": "06774d06392fd4ca62e841eeb94356a3211846e11413d8b25bd0b29b7a9aa72a",
+    "bytes": 4216
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/PROTOCOL.md",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/PROTOCOL.md",
+    "sha256": "5cb51b55a93f6a6b779324f27e0caac9da8477f285560d6611a096f44ef30c41",
+    "bytes": 6195
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/README.md",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/README.md",
+    "sha256": "d4ace035dd85c38eab377fc654b423ae370e019bedda25ca5f257a66f06c5e5d",
+    "bytes": 1988
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/final_shard.sbatch",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/final_shard.sbatch",
+    "sha256": "856951967f6b98e9832c1fe0e07e9bc674e9f5d29aaf58f5043392a555f81dd2",
+    "bytes": 1273
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/freeze_history/README.md",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/freeze_history/README.md",
+    "sha256": "68ecc1113bfa1d1ef7539a4609810eb947c6c3b8833110502def1255d1af5ab3",
+    "bytes": 731
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/freeze_history/initial_before_review.json",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/freeze_history/initial_before_review.json",
+    "sha256": "00ec53e5a66b9c486961a637f8fa2d8dc58a51dc8e047b5d81bd5c56bda3cd97",
+    "bytes": 978
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/freeze_history/run_coverage_initial.jl",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/freeze_history/run_coverage_initial.jl",
+    "sha256": "ee622572c2b285dfea9d03495e9a38e5158478ca2d2b1674f3daa60d4ad658de",
+    "bytes": 5848
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/freeze_history/summarize_coverage_initial.py",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/freeze_history/summarize_coverage_initial.py",
+    "sha256": "a5cac4bc69f120c7cfe55530dc67d6c9bee3fbf19317c2804c7986f035cffd3b",
+    "bytes": 7617
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/frozen_inputs.json",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/frozen_inputs.json",
+    "sha256": "373a206026cb15cc23a6e51caca7e6ee6255d34e49f8be8d80730e163c4f123d",
+    "bytes": 1166
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/manifest.toml",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/manifest.toml",
+    "sha256": "ba4282ba512f9889a5f5dc55ca39a4f67ddf78b837026d2646d8df7c7215ef81",
+    "bytes": 2309
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/pilot.sbatch",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/pilot.sbatch",
+    "sha256": "982036f8606996093f7a0b7d5e6433e9260461e49be5a4282d4af80a916d7faf",
+    "bytes": 1108
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/run_coverage.jl",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/run_coverage.jl",
+    "sha256": "de708356be7aa79d45ff3329211c4af88c092f373b1f479ce722f28af7308404",
+    "bytes": 5923
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/seeds.toml",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/seeds.toml",
+    "sha256": "8bf488cab02f71ab147d86c595f941b984e7490e615146e38398fec221e9a0ce",
+    "bytes": 71031
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/source_hashes.toml",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/source_hashes.toml",
+    "sha256": "4fd440f02054443affbef55689081ca4d7284b47ad96fe20716e373a20215493",
+    "bytes": 460
+  },
+  {
+    "base_relative_path": "frozen_sources/coverage/dqmc_coverage/summarize_coverage.py",
+    "evidence_copy": "frozen_sources/coverage/dqmc_coverage/summarize_coverage.py",
+    "sha256": "81d75e70684b3e93e2a112423ffa81a026b07ac5186bf8b2e3f4886ced8fa015",
+    "bytes": 7772
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/README.md",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/README.md",
+    "sha256": "6d3fa49bccf32c48584b0242f9789879d0312756d87ee9f925f521d341b501b8",
+    "bytes": 5398
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/SHA256SUMS",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/SHA256SUMS",
+    "sha256": "4f3a4857333523cb6e3b0a5e82554abe5cb6b8756b98f4955fad6bfe5f69a781",
+    "bytes": 730
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/compare.py",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/compare.py",
+    "sha256": "4b5fd7a2d160a2ede4e3058c29a0c7988f0656ecde9a7eeb23d6b2c57ac22d68",
+    "bytes": 7627
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/full.sbatch",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/full.sbatch",
+    "sha256": "2baeff27b54e582d07dec5e9757f33962968e28c29e66cd985d8b10209fdc2a0",
+    "bytes": 1475
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/manifest.toml",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/manifest.toml",
+    "sha256": "7e5e557648f764ef438cc1092b3d5bb2316c1fac035514b4576b86b7034d9b5e",
+    "bytes": 1705
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/oracle_tenpy.py",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/oracle_tenpy.py",
+    "sha256": "4253d5b5c335cc4ac55947bdced80d7cad513f0e29f04932ec76979bcc00652e",
+    "bytes": 9574
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/requirements.txt",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/requirements.txt",
+    "sha256": "4cc3e91a699a33b938ec5f6888ff576af68a9b3c76831f2404a1f9d2768f9ce6",
+    "bytes": 48
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/setup_pilot.sbatch",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/setup_pilot.sbatch",
+    "sha256": "028399470ec6479ffcc76eebf691340b7b611347ea5c087377d4350d15c6c1be",
+    "bytes": 1764
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/static_review.json",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/static_review.json",
+    "sha256": "b76aa4f5655125cf6458ec79fb6604de4bf435ba14031f84014f67cdc49c0c94",
+    "bytes": 641
+  },
+  {
+    "base_relative_path": "frozen_sources/tenpy/tenpy/target_itensor.jl",
+    "evidence_copy": "frozen_sources/tenpy/tenpy/target_itensor.jl",
+    "sha256": "37d787a0653ca0ca00675784fb30b41d877534aa1daac8ce95fa659e4b709aa4",
+    "bytes": 5354
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/README.md",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/README.md",
+    "sha256": "ad39194d6947bbc5f8cfa94690ba17373fb7201f48c141fdf2de417209f3191d",
+    "bytes": 8600
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/SHA256SUMS",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/SHA256SUMS",
+    "sha256": "0f89527af9680416b552efc4df7185ab7ccbb37f9cb29e35cd8a1cf90291cb41",
+    "bytes": 562
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/compare.py",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/compare.py",
+    "sha256": "0cd9b5111d4e00ad732e5911caebbb98ced6df92fd0025234069e78a47711ae0",
+    "bytes": 9056
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/manifest.toml",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/manifest.toml",
+    "sha256": "efe81aa56cf15f729ff569399c8158b6164ac0182873ece2db0fa334a4d9f772",
+    "bytes": 2231
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/oracle_quspin.py",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/oracle_quspin.py",
+    "sha256": "0fffa047063a4e6523d88f3bc701f53f21e00a0248b4f09b416c29694ff21afa",
+    "bytes": 8635
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/run.sbatch",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/run.sbatch",
+    "sha256": "1a9620f137c3fa6d7ad81086875363ce81628b0e2f1a0cdc01e9a2514b9a9d04",
+    "bytes": 1552
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/static_review.json",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/static_review.json",
+    "sha256": "a30ed845afe2e0d3a3761c24aa73a24169405efdd6f660f6f158e1ebe3d8ee86",
+    "bytes": 1058
+  },
+  {
+    "base_relative_path": "frozen_sources/thermal/thermal_bridges/target_thermal.jl",
+    "evidence_copy": "frozen_sources/thermal/thermal_bridges/target_thermal.jl",
+    "sha256": "e5713f18d6df88b9a1f59720594da9f3848b7af73c288ebe56813b162584ad7b",
+    "bytes": 8297
+  },
+  {
+    "base_relative_path": "input_manifest.json",
+    "evidence_copy": "inputs/base32_metadata/input_manifest.json",
+    "sha256": "1d434cc1a38577eb9500a3818d5edf67fcf00ed83bd3ca18cfec7913493c8ee8",
+    "bytes": 17461
+  },
+  {
+    "base_relative_path": "inputs/base_analytic/analytic_analytic.toml",
+    "evidence_copy": "inputs/base_analytic/analytic_analytic.toml",
+    "sha256": "02df06113d552f25376365826aaf3b238acb1722c35f1ef1806076cd78a224b2",
+    "bytes": 301410
+  },
+  {
+    "base_relative_path": "inputs/base_catalogue/catalogue_benchmark_ideas_100.json",
+    "evidence_copy": "inputs/base_catalogue/catalogue_benchmark_ideas_100.json",
+    "sha256": "59a780c5994db50a56da260fc51ae639f22b674b3bc24f878cde1a6e7bc31818",
+    "bytes": 144066
+  },
+  {
+    "base_relative_path": "inputs/base_frozen_archive/frozen_archive_tranche01-source.tar.gz",
+    "evidence_copy": "inputs/base_frozen_archive/frozen_archive_tranche01-source.tar.gz",
+    "sha256": "a5c95efd46268165a9556a7a56371651257f2e66da63850d2ba35a9bcec9d09c",
+    "bytes": 33740
+  },
+  {
+    "base_relative_path": "inputs/base_frozen_release/frozen_release_tranche01-freeze.json",
+    "evidence_copy": "inputs/base_frozen_release/frozen_release_tranche01-freeze.json",
+    "sha256": "dcb7e8ca0a48f1578c93049f90d3129df5cceede019e41fcc1343d903d439ba9",
+    "bytes": 2090
+  },
+  {
+    "base_relative_path": "inputs/base_journal/journal_journal.toml",
+    "evidence_copy": "inputs/base_journal/journal_journal.toml",
+    "sha256": "a75694f6ea0321ddcbc0b223fbb1a3981927679f2480ea0cd44b9a8986ec3614",
+    "bytes": 159142
+  },
+  {
+    "base_relative_path": "inputs/base_journal_predecessor_01/journal_predecessor_01_journal.toml",
+    "evidence_copy": "inputs/base_journal_predecessor_01/journal_predecessor_01_journal.toml",
+    "sha256": "e970c09f686f3e9454d4d1fc25fe9029f4ac36978e3de06e52a511260be20c7d",
+    "bytes": 7660
+  },
+  {
+    "base_relative_path": "inputs/base_ledger/ledger_100.json",
+    "evidence_copy": "inputs/base_ledger/ledger_100.json",
+    "sha256": "d32231a48f54a46d5233af6df9d7c0d275adec4f0d0134ee8cf4f2f21d696de0",
+    "bytes": 133912
+  },
+  {
+    "base_relative_path": "inputs/base_p16-diagnosis_archive/p16-diagnosis_archive_p16-diagnosis-source.tar.gz",
+    "evidence_copy": "inputs/base_p16-diagnosis_archive/p16-diagnosis_archive_p16-diagnosis-source.tar.gz",
+    "sha256": "9998a60a70155d9c37647135e7e1da3b2031fb488e5fd9330ebe8f62308274da",
+    "bytes": 4277
+  },
+  {
+    "base_relative_path": "inputs/base_p16-diagnosis_freeze/p16-diagnosis_freeze_p16-diagnosis-freeze.json",
+    "evidence_copy": "inputs/base_p16-diagnosis_freeze/p16-diagnosis_freeze_p16-diagnosis-freeze.json",
+    "sha256": "272a6473320bab43bcc2e23295a8d51c9db18f75e77543112a569d58a45960bd",
+    "bytes": 810
+  },
+  {
+    "base_relative_path": "inputs/base_p16-production-retest_archive/p16-production-retest_archive_p16-production-retest-source.tar.gz",
+    "evidence_copy": "inputs/base_p16-production-retest_archive/p16-production-retest_archive_p16-production-retest-source.tar.gz",
+    "sha256": "caf185fa1710d9d0d384c8ae69d1e4d36a6ec12b0f844f42cd584a1aeeb278fb",
+    "bytes": 10089
+  },
+  {
+    "base_relative_path": "inputs/base_p16-production-retest_freeze/p16-production-retest_freeze_p16-production-retest-freeze.json",
+    "evidence_copy": "inputs/base_p16-production-retest_freeze/p16-production-retest_freeze_p16-production-retest-freeze.json",
+    "sha256": "7ed2801bd33a442f341249dec39afcea05b445f38047f9524f7030652200d26d",
+    "bytes": 1144
+  },
+  {
+    "base_relative_path": "inputs/base_p16_independent_proof/p16_independent_proof_permutation_proof.json",
+    "evidence_copy": "inputs/base_p16_independent_proof/p16_independent_proof_permutation_proof.json",
+    "sha256": "2f3086981d2bf5db66acf515cffa5dac22a55c6549e2fc9145cc16453bf56d3f",
+    "bytes": 4381
+  },
+  {
+    "base_relative_path": "inputs/base_package_oracle/package_oracle_oracle.toml",
+    "evidence_copy": "inputs/base_package_oracle/package_oracle_oracle.toml",
+    "sha256": "709a1a8303ecde7803283b7392e8fa7844ad4752c7c0ead7f3525cc5f1a0828b",
+    "bytes": 6001
+  },
+  {
+    "base_relative_path": "inputs/base_package_source_release/package_source_release_source_release_receipt.json",
+    "evidence_copy": "inputs/base_package_source_release/package_source_release_source_release_receipt.json",
+    "sha256": "690357cc318498d5b78a5505a3d16068b402f1088c09c6fc08d3983cff467a68",
+    "bytes": 25215
+  },
+  {
+    "base_relative_path": "inputs/base_package_target/package_target_target.toml",
+    "evidence_copy": "inputs/base_package_target/package_target_target.toml",
+    "sha256": "f2d2e21b3784f4cc76f362e0af86eeb218f3d373d7ff183532aa463b7f27b50d",
+    "bytes": 6559
+  },
+  {
+    "base_relative_path": "inputs/base_packages/packages_packages.json",
+    "evidence_copy": "inputs/base_packages/packages_packages.json",
+    "sha256": "f02f2b6c9a81c9d8b640cc56d9cad4de7c01f00167476aeeb441bbc7154e9704",
+    "bytes": 35651
+  },
+  {
+    "base_relative_path": "inputs/base_packages_predecessor_02/packages_predecessor_02_packages.json",
+    "evidence_copy": "inputs/base_packages_predecessor_02/packages_predecessor_02_packages.json",
+    "sha256": "f6697318eb71ae846825c8ff1a1bc3e6b2bbc1505c47c73c13aedfd926f7b2c8",
+    "bytes": 35634
+  },
+  {
+    "base_relative_path": "inputs/base_process_status/process_status_process_status.txt",
+    "evidence_copy": "inputs/base_process_status/process_status_process_status.txt",
+    "sha256": "f63ef1f253274923ea8aa94fa2672fd103b3282b9dcbf5547f6e263827bb335d",
+    "bytes": 74
+  },
+  {
+    "base_relative_path": "inputs/base_production_subsets/production_subsets_production_subsets.toml",
+    "evidence_copy": "inputs/base_production_subsets/production_subsets_production_subsets.toml",
+    "sha256": "a07fda137f3a463df373756c2e5055f2090e127bc3264434dd776111b9752a34",
+    "bytes": 1093
+  },
+  {
+    "base_relative_path": "inputs/base_production_subsets_comparison/production_subsets_comparison_production_subsets_comparison.json",
+    "evidence_copy": "inputs/base_production_subsets_comparison/production_subsets_comparison_production_subsets_comparison.json",
+    "sha256": "5a0558fb26244f69fa11e94e277a1279b1c4cc8c32e934767e862cb5b97ab7df",
+    "bytes": 3443
+  },
+  {
+    "base_relative_path": "inputs/base_reporting_tool/reporting_tool_merge_status_ledger.py",
+    "evidence_copy": "inputs/base_reporting_tool/reporting_tool_merge_status_ledger.py",
+    "sha256": "22d9253987517a5350c08e38ac4f12c85652e5664e802a81adfd905a24cfc10e",
+    "bytes": 34214
+  },
+  {
+    "base_relative_path": "inputs/base_selected_journal_driver/selected_journal_driver_run_raghu_v2.jl",
+    "evidence_copy": "inputs/base_selected_journal_driver/selected_journal_driver_run_raghu_v2.jl",
+    "sha256": "73f8e35d2c196f725ac959e54f710d1728dc0a904b3410cbb82a0ecacbb9faa0",
+    "bytes": 7936
+  },
+  {
+    "base_relative_path": "inputs/base_selected_package_ED_patch/selected_package_ED_patch_compute_s2_ed_v2.patch",
+    "evidence_copy": "inputs/base_selected_package_ED_patch/selected_package_ED_patch_compute_s2_ed_v2.patch",
+    "sha256": "da3fe6cde8c390f7dfb0dede91f8a04ea8e2afc04ae5c9448afe10d2b9c8c34f",
+    "bytes": 2042
+  },
+  {
+    "base_relative_path": "inputs/base_selected_package_ED_source/selected_package_ED_source_compute_s2_ed_v2.jl",
+    "evidence_copy": "inputs/base_selected_package_ED_source/selected_package_ED_source_compute_s2_ed_v2.jl",
+    "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "bytes": 17625
+  },
+  {
+    "base_relative_path": "inputs/base_user_ed_source/user_ed_source_compute_s2_ed.jl",
+    "evidence_copy": "inputs/base_user_ed_source/user_ed_source_compute_s2_ed.jl",
+    "sha256": "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd",
+    "bytes": 16741
+  },
+  {
+    "base_relative_path": "inputs/base_user_thermal_source/user_thermal_source_audit_u4_l4_thermal_ed.jl",
+    "evidence_copy": "inputs/base_user_thermal_source/user_thermal_source_audit_u4_l4_thermal_ed.jl",
+    "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+    "bytes": 11032
+  },
+  {
+    "base_relative_path": "inputs/coverage_archive/dqmc-coverage-pilot-v2-source.tar.gz",
+    "evidence_copy": "inputs/coverage_archive/dqmc-coverage-pilot-v2-source.tar.gz",
+    "sha256": "70750c7ef0d9409b63f48cc5678d3c160d1b092e041c28ed58ca749c426dcf1d",
+    "bytes": 52209
+  },
+  {
+    "base_relative_path": "inputs/coverage_external_oracle/oracle_values.toml",
+    "evidence_copy": "inputs/coverage_external_oracle/oracle_values.toml",
+    "sha256": "12eb9b383888a45219b0edd0fbef85aab0fb7b1a4e2a7c701bcbf788238c2571",
+    "bytes": 2431
+  },
+  {
+    "base_relative_path": "inputs/coverage_freeze/dqmc-coverage-pilot-v2-freeze.json",
+    "evidence_copy": "inputs/coverage_freeze/dqmc-coverage-pilot-v2-freeze.json",
+    "sha256": "61c33d124237e803bf15f1b6eb1863a7a5a998156e8c72baf9cb9ab8373a7fc1",
+    "bytes": 1784
+  },
+  {
+    "base_relative_path": "inputs/coverage_raw_001/shard_1_400.toml",
+    "evidence_copy": "inputs/coverage_raw_001/shard_1_400.toml",
+    "sha256": "0fbdcf9dd1b72604b6f8cfde4ae8414b5002d0b8aeb54ff30965ccf942713e43",
+    "bytes": 6224863
+  },
+  {
+    "base_relative_path": "inputs/coverage_user_source_Manifest.toml/Manifest.toml",
+    "evidence_copy": "inputs/coverage_user_source_Manifest.toml/Manifest.toml",
+    "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+    "bytes": 61818
+  },
+  {
+    "base_relative_path": "inputs/coverage_user_source_Project.toml/Project.toml",
+    "evidence_copy": "inputs/coverage_user_source_Project.toml/Project.toml",
+    "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "bytes": 950
+  },
+  {
+    "base_relative_path": "inputs/coverage_user_source_src_HubbardRenyiDQMC.jl/HubbardRenyiDQMC.jl",
+    "evidence_copy": "inputs/coverage_user_source_src_HubbardRenyiDQMC.jl/HubbardRenyiDQMC.jl",
+    "sha256": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721",
+    "bytes": 488
+  },
+  {
+    "base_relative_path": "inputs/coverage_user_source_src_dqmc_kernel.jl/dqmc_kernel.jl",
+    "evidence_copy": "inputs/coverage_user_source_src_dqmc_kernel.jl/dqmc_kernel.jl",
+    "sha256": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+    "bytes": 19621
+  },
+  {
+    "base_relative_path": "inputs/coverage_user_source_src_grover_rank1_update.jl/grover_rank1_update.jl",
+    "evidence_copy": "inputs/coverage_user_source_src_grover_rank1_update.jl/grover_rank1_update.jl",
+    "sha256": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e",
+    "bytes": 18019
+  },
+  {
+    "base_relative_path": "inputs/predecessor_001/comparison.json",
+    "evidence_copy": "inputs/predecessor_001/comparison.json",
+    "sha256": "a973bd691f766bb147a0a0a684d5c3e732afbbeffd08a243e68333a5cf61e5cf",
+    "bytes": 680
+  },
+  {
+    "base_relative_path": "inputs/predecessor_002/summary.json",
+    "evidence_copy": "inputs/predecessor_002/summary.json",
+    "sha256": "9e2ed11e9b4a5ed29123593eae591422d13ac48533e86b3a9b4226bf80bd83d6",
+    "bytes": 3755
+  },
+  {
+    "base_relative_path": "inputs/reporting_tool/merge_later_tranches.py",
+    "evidence_copy": "inputs/reporting_tool/merge_later_tranches.py",
+    "sha256": "c3f0b8434510421061fbfc89f89d0320f76bf04160039d9224a79565b47581ba",
+    "bytes": 25153
+  },
+  {
+    "base_relative_path": "inputs/tenpy_archive/tenpy-tranche-source.tar.gz",
+    "evidence_copy": "inputs/tenpy_archive/tenpy-tranche-source.tar.gz",
+    "sha256": "cc00d51fc99cf2d265a1fe2c75f59e649a35ff3116c69211511bb83f4987bbed",
+    "bytes": 13531
+  },
+  {
+    "base_relative_path": "inputs/tenpy_freeze/tenpy-tranche-freeze.json",
+    "evidence_copy": "inputs/tenpy_freeze/tenpy-tranche-freeze.json",
+    "sha256": "688846e930d5ca2e3e3fe71e0108d90ef37d8277ede4978697eba514e3c51278",
+    "bytes": 1178
+  },
+  {
+    "base_relative_path": "inputs/tenpy_oracle/oracle.json",
+    "evidence_copy": "inputs/tenpy_oracle/oracle.json",
+    "sha256": "019477d7f9beb11868e71df2adf1d4173916aaf9f897b4aea2b36d42fc7fe8a7",
+    "bytes": 45085
+  },
+  {
+    "base_relative_path": "inputs/tenpy_reported_comparison/comparison.json",
+    "evidence_copy": "inputs/tenpy_reported_comparison/comparison.json",
+    "sha256": "04f69419e8fa48b6d9e53b591bb62eefeadadc1dff709708244e4bc9d01e212a",
+    "bytes": 1413
+  },
+  {
+    "base_relative_path": "inputs/tenpy_target/target.toml",
+    "evidence_copy": "inputs/tenpy_target/target.toml",
+    "sha256": "565a06cb17e24da547ecca68da4578d61383db166edaef6989f0d9f06a4c70b9",
+    "bytes": 19027
+  },
+  {
+    "base_relative_path": "inputs/tenpy_user_source_Manifest.toml/Manifest.toml",
+    "evidence_copy": "inputs/tenpy_user_source_Manifest.toml/Manifest.toml",
+    "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+    "bytes": 61818
+  },
+  {
+    "base_relative_path": "inputs/tenpy_user_source_Project.toml/Project.toml",
+    "evidence_copy": "inputs/tenpy_user_source_Project.toml/Project.toml",
+    "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "bytes": 950
+  },
+  {
+    "base_relative_path": "inputs/tenpy_user_source_analysis_compute_s2_itensor_dmrg.jl/compute_s2_itensor_dmrg.jl",
+    "evidence_copy": "inputs/tenpy_user_source_analysis_compute_s2_itensor_dmrg.jl/compute_s2_itensor_dmrg.jl",
+    "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+    "bytes": 10719
+  },
+  {
+    "base_relative_path": "inputs/thermal_archive/thermal-bridges-v1-source.tar.gz",
+    "evidence_copy": "inputs/thermal_archive/thermal-bridges-v1-source.tar.gz",
+    "sha256": "73e34d1c706f302b79523559bdac0faf7b4c84a62ed9e840f153ad15ac29d826",
+    "bytes": 14544
+  },
+  {
+    "base_relative_path": "inputs/thermal_freeze/thermal-bridges-v1-freeze.json",
+    "evidence_copy": "inputs/thermal_freeze/thermal-bridges-v1-freeze.json",
+    "sha256": "31555adcda87e515a141bac770baec785f3deecf6c888f40e4d39c2cbce904dc",
+    "bytes": 1069
+  },
+  {
+    "base_relative_path": "inputs/thermal_oracle/oracle.json",
+    "evidence_copy": "inputs/thermal_oracle/oracle.json",
+    "sha256": "d9ede5c627105d92b3ae30e4f7929b424fa840e35c03c9278747c97b5ec71cd6",
+    "bytes": 14686
+  },
+  {
+    "base_relative_path": "inputs/thermal_reported_comparison/comparison.json",
+    "evidence_copy": "inputs/thermal_reported_comparison/comparison.json",
+    "sha256": "06774d06392fd4ca62e841eeb94356a3211846e11413d8b25bd0b29b7a9aa72a",
+    "bytes": 4216
+  },
+  {
+    "base_relative_path": "inputs/thermal_target/target.toml",
+    "evidence_copy": "inputs/thermal_target/target.toml",
+    "sha256": "61a65997c2a078bf1a3e5f09a24df961fad0ca7d60833f04b88433057719454d",
+    "bytes": 12015
+  },
+  {
+    "base_relative_path": "inputs/thermal_user_source_analysis_audit_u4_l4_thermal_ed.jl/audit_u4_l4_thermal_ed.jl",
+    "evidence_copy": "inputs/thermal_user_source_analysis_audit_u4_l4_thermal_ed.jl/audit_u4_l4_thermal_ed.jl",
+    "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+    "bytes": 11032
+  },
+  {
+    "base_relative_path": "inputs/thermal_user_source_analysis_compute_s2_ed.jl/compute_s2_ed.jl",
+    "evidence_copy": "inputs/thermal_user_source_analysis_compute_s2_ed.jl/compute_s2_ed.jl",
+    "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "bytes": 17625
+  },
+  {
+    "base_relative_path": "ledger_100.csv",
+    "evidence_copy": "inputs/base32_metadata/ledger_100.csv",
+    "sha256": "4a0c7258c68ad95140a612559b550ca81020c9ddee3b6f9280c43410387c2422",
+    "bytes": 26331
+  },
+  {
+    "base_relative_path": "ledger_100.json",
+    "evidence_copy": "inputs/base32_metadata/ledger_100.json",
+    "sha256": "219abfcee07899eba7f6c6501d463b2afd32816999cb7944c58a149ddd5fabe5",
+    "bytes": 338785
+  },
+  {
+    "base_relative_path": "replay32_resources.txt",
+    "evidence_copy": "inputs/base32_metadata/replay32_resources.txt",
+    "sha256": "371d073098a0b28dadf250cb04a087c0533d3d07a069e401a2655a226d6c6287",
+    "bytes": 1909
+  }
+]

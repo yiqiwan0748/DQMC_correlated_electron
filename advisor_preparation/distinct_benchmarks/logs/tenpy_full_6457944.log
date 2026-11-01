@@ -1,0 +1,111 @@
+Anaconda3 version 2024.06
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/algorithms/dmrg.py:1198: UserWarning: H is zero in the given block, nothing to diagonalize.We just return the initial state again.
+  warnings.warn(
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/algorithms/dmrg.py:1198: UserWarning: H is zero in the given block, nothing to diagonalize.We just return the initial state again.
+  warnings.warn(
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/networks/mps.py:1629: UserWarning: unit_cell_width is a new argument for MPS and similar classes. It is optional for now, but will become mandatory in a future release. The default value (unit_cell_width=len(sites)) is correct, iff the lattice is a Chain. For other lattices, it is incorrect. It is used for dipolar charges and correlation_function2.
+  super().__init__(sites, bc, unit_cell_width)
+/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/tenpy-venv/lib/python3.11/site-packages/tenpy/algorithms/dmrg.py:1198: UserWarning: H is zero in the given block, nothing to diagonalize.We just return the initial state again.
+  warnings.warn(
+After sweep 1 energy=-5.828376103599597  maxlinkdim=16 maxerr=5.09E-03 time=33.241
+After sweep 2 energy=-5.928759790071756  maxlinkdim=32 maxerr=9.58E-06 time=0.292
+After sweep 3 energy=-5.93008897653724  maxlinkdim=64 maxerr=1.33E-08 time=0.288
+After sweep 4 energy=-5.930092227366039  maxlinkdim=100 maxerr=9.72E-13 time=1.287
+After sweep 5 energy=-5.930092234144834  maxlinkdim=94 maxerr=9.02E-13 time=0.268
+After sweep 6 energy=-5.930092234160684  maxlinkdim=92 maxerr=7.73E-13 time=0.235
+After sweep 7 energy=-5.930092234160782  maxlinkdim=92 maxerr=6.70E-13 time=0.243
+After sweep 8 energy=-5.930092234160772  maxlinkdim=92 maxerr=6.70E-13 time=0.253
+After sweep 9 energy=-5.9300922341607665  maxlinkdim=92 maxerr=6.70E-13 time=0.243
+After sweep 10 energy=-5.930092234160776  maxlinkdim=92 maxerr=6.70E-13 time=0.227
+After sweep 1 energy=-5.7772966370138175  maxlinkdim=16 maxerr=1.77E-03 time=0.212
+After sweep 2 energy=-5.921803960085776  maxlinkdim=32 maxerr=1.06E-05 time=0.242
+After sweep 3 energy=-5.929844945807332  maxlinkdim=64 maxerr=2.37E-08 time=0.296
+After sweep 4 energy=-5.930090351299788  maxlinkdim=119 maxerr=9.71E-14 time=0.235
+After sweep 5 energy=-5.930092227692499  maxlinkdim=104 maxerr=8.96E-14 time=0.257
+After sweep 6 energy=-5.930092234169471  maxlinkdim=98 maxerr=7.59E-14 time=0.240
+After sweep 7 energy=-5.930092234186432  maxlinkdim=95 maxerr=8.06E-14 time=0.243
+After sweep 8 energy=-5.9300922341864695  maxlinkdim=95 maxerr=7.88E-14 time=0.229
+After sweep 9 energy=-5.930092234186469  maxlinkdim=95 maxerr=7.87E-14 time=0.242
+After sweep 10 energy=-5.930092234186465  maxlinkdim=95 maxerr=7.87E-14 time=0.254
+After sweep 11 energy=-5.930092234186463  maxlinkdim=95 maxerr=7.87E-14 time=0.236
+After sweep 12 energy=-5.930092234186464  maxlinkdim=95 maxerr=7.87E-14 time=0.243
+After sweep 13 energy=-5.930092234186464  maxlinkdim=95 maxerr=7.87E-14 time=0.255
+After sweep 14 energy=-5.930092234186469  maxlinkdim=95 maxerr=7.87E-14 time=0.238
+After sweep 15 energy=-5.930092234186463  maxlinkdim=95 maxerr=7.87E-14 time=0.250
+After sweep 16 energy=-5.930092234186467  maxlinkdim=95 maxerr=7.87E-14 time=0.248
+After sweep 1 energy=-4.0465834402483445  maxlinkdim=16 maxerr=2.37E-04 time=0.168
+After sweep 2 energy=-4.216626587125788  maxlinkdim=32 maxerr=3.12E-06 time=0.265
+After sweep 3 energy=-4.235072141147898  maxlinkdim=64 maxerr=4.07E-08 time=0.316
+After sweep 4 energy=-4.235804089689594  maxlinkdim=128 maxerr=6.58E-11 time=0.331
+After sweep 5 energy=-4.2358069983711335  maxlinkdim=128 maxerr=1.01E-11 time=0.282
+After sweep 6 energy=-4.23580699909341  maxlinkdim=128 maxerr=1.46E-12 time=0.273
+After sweep 7 energy=-4.235806999094114  maxlinkdim=128 maxerr=1.43E-12 time=0.295
+After sweep 8 energy=-4.235806999094115  maxlinkdim=128 maxerr=1.43E-12 time=0.287
+After sweep 9 energy=-4.235806999094106  maxlinkdim=128 maxerr=1.43E-12 time=0.290
+After sweep 10 energy=-4.235806999094109  maxlinkdim=128 maxerr=1.43E-12 time=0.288
+After sweep 1 energy=-3.4338236240000146  maxlinkdim=16 maxerr=1.66E-04 time=0.158
+After sweep 2 energy=-4.145979332005406  maxlinkdim=32 maxerr=9.78E-06 time=0.210
+After sweep 3 energy=-4.22834451104525  maxlinkdim=64 maxerr=1.19E-07 time=0.302
+After sweep 4 energy=-4.235747109895501  maxlinkdim=128 maxerr=1.81E-10 time=0.279
+After sweep 5 energy=-4.235806921692813  maxlinkdim=179 maxerr=9.88E-14 time=0.300
+After sweep 6 energy=-4.235806999087641  maxlinkdim=172 maxerr=9.57E-14 time=0.279
+After sweep 7 energy=-4.2358069991282985  maxlinkdim=149 maxerr=9.70E-14 time=0.300
+After sweep 8 energy=-4.235806999128329  maxlinkdim=149 maxerr=8.93E-14 time=0.285
+After sweep 9 energy=-4.235806999128328  maxlinkdim=149 maxerr=8.93E-14 time=0.302
+After sweep 10 energy=-4.235806999128322  maxlinkdim=149 maxerr=8.93E-14 time=0.281
+After sweep 11 energy=-4.235806999128325  maxlinkdim=149 maxerr=8.93E-14 time=0.299
+After sweep 12 energy=-4.235806999128325  maxlinkdim=149 maxerr=8.93E-14 time=0.286
+After sweep 13 energy=-4.235806999128325  maxlinkdim=149 maxerr=8.93E-14 time=0.294
+After sweep 14 energy=-4.235806999128322  maxlinkdim=149 maxerr=8.93E-14 time=0.274
+After sweep 15 energy=-4.235806999128324  maxlinkdim=149 maxerr=8.93E-14 time=0.287
+After sweep 16 energy=-4.235806999128326  maxlinkdim=149 maxerr=8.93E-14 time=0.271
+{
+  "schema": "tenpy_itensor_distinct_v1",
+  "manifest_sha256": "7e5e557648f764ef438cc1092b3d5bb2316c1fac035514b4576b86b7034d9b5e",
+  "rows": [
+    {
+      "id": "P11",
+      "status": "PASS",
+      "metrics": {
+        "probability_abs": 8.924497807427656e-10,
+        "sector_weight_abs": 8.984472610329419e-10,
+        "entanglement_energy_abs": 5.737733843602655e-09
+      },
+      "coarse_refined_max_probability_or_observable_change": 9.046187493533253e-08,
+      "scope": "Frozen finite-size fixture only; parameter arms and gates are not extra ideas."
+    },
+    {
+      "id": "P12",
+      "status": "PASS",
+      "metrics": {
+        "density_abs": 8.738010315312295e-12,
+        "fourier_amplitude_abs": 2.009923043339191e-12,
+        "TeNPy_peak_grid_index": 7,
+        "ITensor_peak_grid_index": 7
+      },
+      "coarse_refined_max_probability_or_observable_change": 6.041758204844427e-10,
+      "scope": "Frozen finite-size fixture only; parameter arms and gates are not extra ideas."
+    },
+    {
+      "id": "P15",
+      "status": "PASS",
+      "metrics": {
+        "parity_string_abs": 5.856135576465249e-10
+      },
+      "coarse_refined_max_probability_or_observable_change": 1.328837220260226e-07,
+      "scope": "Frozen finite-size fixture only; parameter arms and gates are not extra ideas."
+    }
+  ],
+  "distinct_ideas_passed": 3,
+  "catalogue_ids": [
+    "P11",
+    "P12",
+    "P15"
+  ]
+}

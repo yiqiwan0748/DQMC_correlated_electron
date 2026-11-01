@@ -1,0 +1,20 @@
+{
+  "schema": "P17_PROFILE_PUBLIC_PACKET_MANIFEST_V1",
+  "files": {
+    "README.md": {
+      "bytes": 3888,
+      "sha256": "1eaae3c9de031fb92b94a9c69c7e7f3e5fa26d8d95d7e8b04e08b26e23ba16d5"
+    },
+    "attempt_result.json": {
+      "bytes": 3249,
+      "sha256": "40ca74df6a94909bb2bb2a42f7931b3afc0cbfc303e95bdd8411235bcd800237"
+    },
+    "observed_profile.json": {
+      "bytes": 4424,
+      "sha256": "34f00f1ebf7de8993ce0cdfde7aa1c3a7a2d59631429f279ade7dc7afe39d1d9"
+    }
+  },
+  "scientific_credit": 0,
+  "counts_unchanged": true,
+  "private_runtime_paths_maps_and_approval_bodies_excluded": true
+}

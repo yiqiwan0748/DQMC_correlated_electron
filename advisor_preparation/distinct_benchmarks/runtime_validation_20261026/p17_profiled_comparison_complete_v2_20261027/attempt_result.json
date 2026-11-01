@@ -1,0 +1,88 @@
+{
+  "schema": "P17_COMPLETE_SAVED_PROFILE_COMPONENT_PUBLIC_V2",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "classification": "COMPLETE_SAVED_COMPONENT_PENDING_FULL_RECONCILIATION",
+  "status": "PROFILE_DIAGNOSTIC_PASSED_PENDING_RECONCILIATION",
+  "comparison_status": "PROFILE_COMPARISON_COMPLETE_PENDING_RECONCILIATION",
+  "scheduler_state": "COMPLETED",
+  "scheduler_exit_code": "0:0",
+  "scheduler_elapsed_seconds": 728,
+  "child_status": "COMPLETE",
+  "child_returncode": 0,
+  "child_run_cap_seconds": 1500,
+  "child_elapsed_seconds": 720.0966725032777,
+  "parent_final_elapsed_seconds": 727.0482866112143,
+  "comparison_report_elapsed_seconds": 719.8081591054797,
+  "resources": {
+    "cpus": 1,
+    "memory_mb": 3500,
+    "comparison_seconds": 1500,
+    "combined_inner_seconds": 1680,
+    "outer_guard_seconds": 1740,
+    "allocation_seconds": 1800
+  },
+  "comparison_run_completed": true,
+  "component_coverage": {
+    "recorded_gates": {
+      "PASS": 1393,
+      "FAIL": 0
+    },
+    "gate_groups": {
+      "reference": 277,
+      "spectral": 6,
+      "native": 513,
+      "tenpy": 429,
+      "cross_state": 168
+    },
+    "completed_state_certificates": {
+      "native": 6,
+      "tenpy": 6
+    },
+    "reference_sector_certificates": 21,
+    "zero_field_spectral_responses": 6,
+    "unique_operator_payloads_qualified": 6,
+    "completed_cross_state_gates": {
+      "profile_pairs": 108,
+      "linear_windows": 24,
+      "response_pairs": 36
+    }
+  },
+  "conditional_floating_certificate_not_interval_arithmetic": true,
+  "independent_saved_evidence_audit": {
+    "checks": 251,
+    "failed_checks": 0,
+    "sha256": "f3fa2516c0afa7d7eb0badd407c37922b16dce4fcf2ab9c62347daafbdb73ff6",
+    "scope": "Saved source and original-input identities, exact frozen gate/state/reference census, actual terminal success, resource observations and passive timing/counter records. No quantum recomputation."
+  },
+  "separate_saved_runtime_metadata_audit": {
+    "checks": 29,
+    "failed_checks": 0,
+    "sha256": "03d3ccf276207782bb85ae5061899311ec9789ce0b0e04218c037b7deac030b3",
+    "before_and_after": {
+      "mapped_segments": 173,
+      "mapped_files": 33,
+      "loaded_modules": 191
+    },
+    "scope": "Reparse saved before/after runtime evidence against source-bound identities; no fresh remote hashing, file restat or runtime execution by this audit."
+  },
+  "analysis_source_freeze_sha256": "e8e7c5abe9f84be22e17cdf6d189ccbcb6b2d0b36c95c8f46d225577dfee6ebe",
+  "upstream_producer_source_freeze_sha256": "da9af9ad26b0692149e77ddea5088b2b3856a0de8b78da2777fd5cd17b2741f0",
+  "comparison_source_sha256": "a0326b18c95de65fdfc0eca4a817343e5002c3d54239fe0e0c06d5d128c41667",
+  "execution_sha256": "50d11b2655e5bd73734fe3b747d26e724645a351ef544048c46e1fd4a73b2e83",
+  "completed_report_sha256": "f309ab9a9ea7aca8478ef9f855adc736a8f9f5e71c094531f6e93edc789ab70d",
+  "timing_event_JSONL_sha256": "59b2292a3008c8ed9c1c092bdc956083fcb11ffeb7d273d1a7adac6b7cb58ac1",
+  "terminal_evidence_archive_sha256": "ed348197d75604e273d878fa5815cea5f286ffdcd1dda4e8d42f93c0a5242483",
+  "after_terminal_identity_proof_sha256": "6800b3c078d914098a3233beb8112d273317dc60fdda9ee736a8b0c75f84cdd2",
+  "original_global_pilot_and_earlier_timeouts_remain": "UNRESOLVED",
+  "earlier_420_second_profile_remains_unresolved": true,
+  "full_production_admission": false,
+  "full_production_resource_caps_set": false,
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  }
+}

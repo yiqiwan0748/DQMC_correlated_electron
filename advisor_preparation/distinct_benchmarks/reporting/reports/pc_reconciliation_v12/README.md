@@ -1,0 +1,9 @@
+# Reconciled scientific checkpoint: 23 October 2026
+
+**42 PASS, 2 UNRESOLVED and 56 NOT_RUN** across exactly 100 distinct catalogue IDs. The [ledger](ledger_100.json) retains all 95 unaffected row objects and all 39 prior passing rows from the immutable [39-question checkpoint](../ground_initial_v10/README.md). Only X09, X13, X16, P21 and X01 are updated.
+
+X09 now passes the original finite four-site ground-certificate gates with the frozen sixteen-sweep precision release; all earlier failed gates remain in the prior leaf. X13 passes complete charged thresholds/operator visibility over 128 channels. X16 passes eight finite-fixture binding intervals under its explicitly conditional binary64 numerical budget. Its pilot remains excluded; no thermodynamic pairing claim follows.
+
+P21 remains UNRESOLVED: two real components fail the individual-chain ESS gate, 376 complex intervals miss precision and 170 rectangles are not wholly contained in the equivalence disk. Its actual production protocol explicitly supersedes the older unexecuted Welch/pilot candidate. X01 remains UNRESOLVED at stage 2 because quartic entropy halfwidth 0.0051318999469 exceeds 0.005; its incomplete final stage 3 contributes no primary estimate or credit. All original failed analyses, repairs, partial outputs and cancellations remain scientific history.
+
+The [scientific packets](../../../pc_continuation_20261023/README.md) contain byte-exact selected source/raw text in safe archives, complete member manifests, unchanged mathematical auditors, frozen comparators and fresh portable replay receipts. Original import/PC-ledger hashes are provenance only; no private ZIP, controller, CV or contact data is required. The [closure audit](audit.json) verifies complete archives and all prior receipt bindings. This leaf adds no new scientific execution.

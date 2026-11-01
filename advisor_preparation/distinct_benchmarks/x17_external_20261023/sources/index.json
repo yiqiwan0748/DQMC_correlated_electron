@@ -1,0 +1,9 @@
+{
+  "archive": "orbital-entanglement-v1-source.tar.gz",
+  "archive_bytes": 48726,
+  "archive_sha256": "5dfe6b1718a9af77fbfde134d09194c7594c1a144ce0d3bb6314fabaa3b13958",
+  "file_count": 20,
+  "prefix": "orbital_entanglement_v1/",
+  "schema": "X17_SINGLE_UNCHANGED_SOURCE_RELEASE_V1",
+  "source_freeze_sha256": "171c58736e7f0e59443b4429848827e35e81e0fa44c84ac2eb53dddd15e8fbcb"
+}

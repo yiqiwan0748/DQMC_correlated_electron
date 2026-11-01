@@ -1,0 +1,87 @@
+{
+  "schema": "scientific_text_archive_v1",
+  "archive": "data.tar.gz",
+  "archive_sha256": "863ebef38e6c225856c783a89f9508fada6ef0b602ae86143f4750b9994a633d",
+  "archive_bytes": 50386,
+  "files": [
+    {
+      "path": "fresh_comparison_replay.json",
+      "bytes": 4862,
+      "sha256": "a2fefdcafd4a3834bf6603e18f1993902abf4b4031736b33baa5827a204cec8a"
+    },
+    {
+      "path": "fresh_comparison_stdout.txt",
+      "bytes": 4863,
+      "sha256": "78e076fb108ba8e8747854c2eb26267ae176cdabe4a88d1d185b460c0cc3f647"
+    },
+    {
+      "path": "fresh_remote_transfer.json",
+      "bytes": 4067,
+      "sha256": "731d5ad2e89364a3a5708b4f6ba90827b2c653aeb1867800f6b6e0f55988bd8e"
+    },
+    {
+      "path": "native_source/Manifest.toml",
+      "bytes": 61818,
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+    },
+    {
+      "path": "native_source/Project.toml",
+      "bytes": 950,
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+    },
+    {
+      "path": "native_source/analysis/audit_u4_l4_thermal_ed.jl",
+      "bytes": 11032,
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+    },
+    {
+      "path": "native_source/analysis/compute_s2_ed.jl",
+      "bytes": 17625,
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+    },
+    {
+      "path": "native_source/analysis/compute_s2_itensor_dmrg.jl",
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    {
+      "path": "pc_transfer.json",
+      "bytes": 3887,
+      "sha256": "27533f527ec5e29093bc11a56b1c3421d1ba555c0888d96f671abe33ffb5d890"
+    },
+    {
+      "path": "results/comparison.json",
+      "bytes": 4862,
+      "sha256": "a2fefdcafd4a3834bf6603e18f1993902abf4b4031736b33baa5827a204cec8a"
+    },
+    {
+      "path": "results/oracle.json",
+      "bytes": 76612,
+      "sha256": "041f9b944870f8bb4cc132b59f06ae1f194b94446f58d4c0d4d6a65521218693"
+    },
+    {
+      "path": "results/oracle.resources.txt",
+      "bytes": 1259,
+      "sha256": "b558d6bfa3e3c83589752927b0f2ec8b4b3589970b102ae524490903878db1dc"
+    },
+    {
+      "path": "results/slurm.log",
+      "bytes": 10383,
+      "sha256": "ed6556bd6924031794ef5854326c86e89ef70b6109fd5aa9fffc375c686cd5a7"
+    },
+    {
+      "path": "results/target.resources.txt",
+      "bytes": 1371,
+      "sha256": "e7f72ffa559545ae0379cec0be91eff98290f373ed18a976d1803b7774219710"
+    },
+    {
+      "path": "results/target.toml",
+      "bytes": 45682,
+      "sha256": "bd6890987519e6a8749ba26b04b18bf62851e2eb419ecea3e6ba4f971ba67122"
+    }
+  ],
+  "file_count": 15,
+  "uncompressed_bytes": 259992,
+  "source_bytes_changed": false,
+  "runtime_binaries_included": false
+}

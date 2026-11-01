@@ -1,0 +1,25 @@
+{
+  "frozen_utc": "2026-10-22T17:51:36.991495+00:00",
+  "scientific_jobs_started": 0,
+  "ready_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P16"
+  ],
+  "not_run_ids": [
+    "P11",
+    "P12",
+    "P15"
+  ],
+  "files": {
+    "manifest.toml": "6d3fd97ee4e83be6914416d2b645c3cb237f614638c4dfbb509516fbc14e71fe",
+    "PROTOCOL.md": "6528dcb495999f45b487892010ad01a386e363112336a68a4cd2a9c4a2243ef3",
+    "quspin_distinct.py": "9becd439d816875a0f08576ea7d6d238f0c7268c28d32163d78cad7cde57ee76",
+    "user_ed_distinct.jl": "d84fb923d3b29f2b978ae79378e0a59192b856c16c8218856b04fa63a1c50178",
+    "compare.py": "6a4b6bcc42a798cff152d4a5372935dbf6afcfc7e43eb30b787d1d2396d1ce50"
+  }
+}

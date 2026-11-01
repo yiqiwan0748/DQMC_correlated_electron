@@ -1,0 +1,70 @@
+schema = "tenpy_itensor_distinct_v1"
+execution_status = "NOT_RUN"
+catalogue_ids = ["P11", "P12", "P15"]
+source_relative = "../../validated_package/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+source_sha256 = "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+tenpy_version = "1.1.1"
+boundary = "obc"
+hamiltonian = "-t sum_<ij>,sigma (cdag_i c_j+h.c.) + U sum_i nup_i ndn_i; no centered shift, mu=0"
+site_index_output = "one_based"
+entropy_log = "natural"
+schmidt_probability_floor = 1e-13
+
+[fixtures.doped]
+L = 8
+Nup = 3
+Ndown = 3
+t = 1.0
+U = 4.0
+cut = 4
+catalogue_ids = ["P11", "P12"]
+
+[fixtures.half]
+L = 8
+Nup = 4
+Ndown = 4
+t = 1.0
+U = 4.0
+cut = 4
+catalogue_ids = ["P15"]
+
+[arms.coarse]
+chi_max = 128
+nsweeps = 10
+cutoff = 1e-12
+seed = 730021
+
+[arms.refined]
+chi_max = 256
+nsweeps = 16
+cutoff = 1e-13
+seed = 730022
+
+[gates]
+norm_abs = 1e-9
+sector_abs = 1e-8
+variance_min = -1e-9
+variance_max = 1e-8
+energy_vs_ed_abs = 1e-8
+energy_between_packages_abs = 1e-8
+ed_residual_max = 1e-9
+ed_gap_min = 1e-4
+energy_error_fraction_of_gap = 0.05
+convergence_observable_abs = 1e-5
+probability_abs = 2e-7
+sector_weight_abs = 2e-7
+entanglement_energy_abs = 1e-3
+entanglement_energy_probability_min = 1e-5
+density_abs = 2e-7
+fourier_amplitude_abs = 2e-7
+parity_string_abs = 2e-7
+native_rdm_probability_abs = 1e-9
+
+[resources]
+cpus = 1
+memory_mb = 3500
+pilot_wall_limit_minutes = 8
+full_wall_limit_minutes = 20
+timing_status = "UNMEASURED; pilot first; these are hard caps, not measured runtime predictions"
+pilot = "doped/coarse only; neither a complete P11/P12 nor P15 completion"
+scope = "two finite fixtures, two convergence arms, three distinct observables; no thermodynamic-limit claim"

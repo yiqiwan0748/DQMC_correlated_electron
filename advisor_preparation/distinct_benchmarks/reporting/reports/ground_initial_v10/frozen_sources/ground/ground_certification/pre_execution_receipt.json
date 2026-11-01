@@ -1,0 +1,51 @@
+{
+  "schema": "ground_certification_pre_execution_v1",
+  "created_utc": "2026-10-22T19:49:11.758050+00:00",
+  "status": "FROZEN_NOT_EXECUTED",
+  "catalogue_ids": [
+    "X09",
+    "X12"
+  ],
+  "scientific_completions": 0,
+  "files": {
+    "manifest.toml": "96e4d336d4cd82b485d0b4c4796caec26db5ede4688012cee692f2e747d5236a",
+    "oracle_quspin.py": "77cf51e2915e1741e01a3a00ace6e6b6ff7291eac6b0f0aec405847a9a0d1c58",
+    "target.jl": "d988f3feb305caaeac7b1d318dea8fe760f540c19ff911bf442c7bb87088a791",
+    "compare.py": "46a01ccf16265b704bf297634f55a654f2996d32cd0f5cd2fdf502b87f64b938",
+    "README.md": "6a1a17a540b472ecc5353b3cd9e63124810c2a47a1895e14a4afd25137d2c0e7",
+    "run.sbatch": "6b38c66997fdcce3916406ce3f83147ec7acc5a00905eca3aff255dc173d2f26"
+  },
+  "user_source_pins": {
+    "ed_source_sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+    "thermal_source_sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5",
+    "dmrg_source_sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+    "project_sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "environment_manifest_sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+  },
+  "checks": {
+    "python_ast": "PASS both scripts",
+    "toml_parse": "PASS",
+    "julia_recursive_Meta_parseall": "PASS noerrororincomplete AST nodes; syntax only with localJulia1.12.6",
+    "bash_syntax": "PASS",
+    "all_five_user_source_environment_hashes": "PASS",
+    "missing_input_comparator": "PASS returns2UNRESOLVED0PASS",
+    "local_physics_executed": false,
+    "jobs_submitted": 0
+  },
+  "independent_review": {
+    "reviewer": "cv_evidence agent",
+    "scope": "X09/X12 physical ensembles; centered energy restoration; full canonicalN3 trace; site_map fermionic inversion sign and first-index-fastest tensor ordering; pinned MPS constructor/random initialization APIs; Sminus doublet phase; analytic pure/mixed/coherent/Gibbs formulas",
+    "result": "No blocking issue found; read-only without numerical execution"
+  },
+  "added_phase_sensitive_check": "Both producers and comparator retain localSx,Sy,Sz; coherent rotation phi appears in transverse components. MPO imaginary maxima retained and gated.",
+  "counting": "Exactly two distinct ideas maximum. Four optimizer starts,two manufactured diagnostic states,four ensemble prescriptions,sixbeta values andtwoRDMcuts do not multiply catalogue count. X08/X10 native two-orbital scope remainsunrun.",
+  "stress_scope": "Manufactured excited MPS challenges demonstrate rejection bycertificate; do not establish natural native-DMRG failure. All four actual native-DMRG starts must independently satisfy QuSpin groundprojector andenergy gates.",
+  "execution_owner": "Root alone stages, admits resources and submits. No pilot/full receipt exists atfreeze.",
+  "sources": [
+    "https://arxiv.org/abs/1804.06782",
+    "https://quspin.github.io/QuSpin/basis.html",
+    "https://itensor.github.io/ITensorMPS.jl/stable/DMRG.html",
+    "https://raw.githubusercontent.com/ITensor/ITensorMPS.jl/v0.4.1/src/abstractmps.jl",
+    "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.045125"
+  ]
+}

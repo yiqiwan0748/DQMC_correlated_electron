@@ -1,0 +1,71 @@
+{
+  "status": "PASS_FINAL_QUANTITATIVE_ORACLE_AUDIT",
+  "slurm_job_id": "6456511",
+  "oracle_rows": 80,
+  "ground_rows": 64,
+  "finite_dtau_thermal_rows": 16,
+  "receipt_sha256": "d89600acb9450757dffa914244b5ea97fe44399da5a95f23f61cbfd81d00a39b",
+  "exporter_source_sha256": "3c469a7004e53c3dc360d503cf2de9bb6d2c4bb51eca1d4baeed8514ddad654c",
+  "case_manifest_sha256": "2915162073afffc532de40a87439f1d2f3735ffdb92ab663de035bb15362e0d4",
+  "results_jsonl_sha256": "d96e103ff4297c5ec539b2dc4fdc5a8e52b922e51ce8c81cb9836cbe6399cc87",
+  "values_toml_sha256": "12eb9b383888a45219b0edd0fbef85aab0fb7b1a4e2a7c701bcbf788238c2571",
+  "original_mixed_rdm_shapes": {
+    "QT-07": {
+      "0": [
+        1,
+        4,
+        4
+      ],
+      "0,1": [
+        1,
+        16,
+        16
+      ]
+    },
+    "QT-08": {
+      "0": [
+        1,
+        4,
+        4
+      ],
+      "0,1": [
+        1,
+        16,
+        16
+      ]
+    },
+    "QT-15": {
+      "0": [
+        1,
+        4,
+        4
+      ],
+      "0,1": [
+        1,
+        16,
+        16
+      ]
+    },
+    "QT-16": {
+      "0": [
+        1,
+        4,
+        4
+      ],
+      "0,1": [
+        1,
+        16,
+        16
+      ]
+    }
+  },
+  "max_analytic_dimer_guard_error": 1.1102230246251565e-16,
+  "package_versions": {
+    "quspin": "1.0.1",
+    "quspin-extensions": "0.1.8",
+    "parallel-sparse-tools": "0.2.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "caveat": "Independent reference export and integrity only; user ED, DMRG and DQMC comparisons have separate results."
+}

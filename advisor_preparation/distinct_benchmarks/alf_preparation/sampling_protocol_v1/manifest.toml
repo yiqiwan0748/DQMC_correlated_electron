@@ -1,0 +1,103 @@
+schema = "p21_sampling_protocol_candidate_v1"
+catalogue_id = "P21"
+status = "FROZEN_DESIGN_GATED_NO_EXECUTION"
+scientific_status = "NOT_RUN_AS_DEFINED"
+ready_for_submission = false
+sampling_drivers_implemented = false
+requires_both_v3_proof_pass = true
+requires_source_closed_drivers_and_independent_review = true
+requires_independent_pilot = true
+requires_prefinal_selected_budget_receipt = true
+alf_commit = "f4c500cc5d7bcf089400c63e4e75382c558a4ed3"
+proof_archive_sha256 = "eaff11972ff34831893d51132ad805b6e415703a3dc10edc97a910dea050bf06"
+protocol = "PROTOCOL.md"
+component_family = "components.csv"
+seed_list = "seeds.json"
+spin_spatial_time_averaging = false
+full_complex_components = 704
+full_real_components = 1408
+structural_zero_imaginary_components = 704
+
+[fixture]
+L = 4
+t = 1.0
+U = 2.0
+mu_centered = 0.0
+beta = 1.0
+dtau = 0.1
+Ltau = 10
+boundary = "pbc"
+ensemble = "grand_canonical"
+symm = false
+checkerboard = false
+slice_order = "V_K"
+n_stab_or_wrap = 2
+measurement = "native ALF Tau_m/ObserT and actual user ordinary maintained forward pre-stabilization buffers"
+cycle = "One forward+reverse scan; two user update_replica! calls; one native NSweep iteration"
+
+[pilot]
+scientific_completions = 0
+chains_per_package = 8
+burn_cycles_per_chain = 256
+measured_cycles_per_chain = 512
+measured_bins_per_chain = 32
+native_NSweep = 16
+native_NBin_including_burn = 48
+native_discard_initial_whole_bins = 16
+candidate_wall_minutes = 10
+runtime_estimate = "Unmeasured; one bounded sequential pilot required after both proofs"
+
+[final_budget_menu]
+chains_per_package = 8
+burn_cycles_per_chain = 4096
+measured_cycles_per_chain_options = [16384,65536,262144]
+measured_bins_per_chain = 64
+native_NSweep_options = [256,1024,4096]
+native_burn_bins_options = [16,4,1]
+native_total_NBin_options = [80,68,65]
+select_before_final_samples = true
+selection_uses_package_mean_difference = false
+pilot_variance_inflation = 4.0
+projected_max_halfwidth = 0.01
+planning_t7_critical_approximate = 11.803638771296455
+runtime_projection_safety_factor = 2.0
+runtime_startup_reserve_seconds = 120
+projected_wall_max_minutes_per_package = 120
+final_looks = 1
+precision_extensions_allowed = false
+
+[statistics]
+estimator = "paired delete-one-bin ratio jackknife chain means"
+independent_package_difference = "user minus ALF"
+chains_per_package = 8
+variance = "independent-chain Welch; no equal-variance pooling"
+alpha_family = 0.01
+bonferroni_real_components = 1408
+component_equivalence_margin_absolute = 0.02
+interval_pass = "whole simultaneous interval lies inside[-margin,+margin]"
+coverage_interpretation = "Nominal conditional Monte Carlo intervals; mixing/normality/chain independence assumed, not proven"
+scipy_version = "1.17.1"
+structural_imaginary_raw_numerator_per_sample_max = 1e-10
+nonstructural_degenerate_variance = "UNRESOLVED"
+
+[quality]
+split_rhat_max = 1.05
+blocking_relative_change_max = 0.5
+blocking_denominator_floor = 1e-12
+effective_bins_sum_min = 128.0
+paired_denominator_absolute_min = 1e-12
+sign_mean_min = 0.999999999999
+sign_imaginary_absolute_max = 1e-12
+endpoint_contemporaneous_error_max = 5e-10
+user_stabilization_green_discrepancy_max = 1e-8
+native_stability_metric_frozen_before_execution = "REQUIRED_NOT_YET_IMPLEMENTED"
+drop_failed_chains = false
+drop_components = false
+quality_failure = "UNRESOLVED; retain estimates and intervals"
+
+[resources]
+cpus = 1
+memory_mb = 3500
+packages_in_pilot = "sequential"
+submit_automatically = false
+root_fresh_resource_admission_required = true

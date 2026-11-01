@@ -1,0 +1,21 @@
+{
+  "schema": "p21_execution_plan_v5_static_review",
+  "created_utc": "2026-10-22T20:09:11.936603+00:00",
+  "status": "STATIC_AND_INDEPENDENT_REVIEW_PASS_NOT_EXECUTED",
+  "archive_sha256": "7b304bef60801ba71ede97117d26a49f0ab71ec14e7d3ac0c5fff26af7a4103d",
+  "archive_member_count": 33,
+  "root_wrapper_sha256": "27ffa617b50b4191197585d28ab7d815122240020f92c88d34fee088123b0ddb",
+  "inner_wrapper_sha256": "a204531d417347a9b2a1688adcc34143520e7b58b1b7cfb0165e3a32131e626b",
+  "body_exact_PLAN": true,
+  "body_sha256": "7080e208a6411dda03c5119df5d333ef2f8da01f8af70b7afebdf2890f661ab9",
+  "root_wrapper_and_PLAN_bashsyntax": "PASS",
+  "all33archive_entries_and_local_closure": "PASS",
+  "prior_versions_preserved": true,
+  "required_dependency": "afterany:6458711",
+  "resources": {
+    "cpu": 1,
+    "memory_mb": 3500,
+    "wall_limit_minutes": 22
+  },
+  "scientific_or_cluster_execution_by_agent": 0
+}

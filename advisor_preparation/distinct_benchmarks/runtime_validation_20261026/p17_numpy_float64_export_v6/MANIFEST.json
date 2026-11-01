@@ -1,0 +1,34 @@
+{
+  "schema": "P17_V6_PUBLIC_SOURCE_ONLY_SELECTION_MANIFEST_V1",
+  "scientific_credit": 0,
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "files": {
+    "README.md": {
+      "bytes": 4561,
+      "sha256": "a5db7b449da60f1cda846f270694a62500fed9ca4c264b529a0311ab16475600"
+    },
+    "metadata_fixture_receipt.json": {
+      "bytes": 8357,
+      "sha256": "ed298ee897e8b8d852d967132a1aa9796e41e4b904b3fc7c1e67de8b5b5971bc"
+    },
+    "source_only_status.json": {
+      "bytes": 1094,
+      "sha256": "2985c17a7997e7453d35e66149bf98d6d4e19bbe109228184026e07606264aab"
+    },
+    "strict_export.py": {
+      "bytes": 11787,
+      "sha256": "444fa02c33874964e85857788052e8026b9f14f8c5174c9d9eff6f9ecde66ecf"
+    },
+    "strict_export_fixtures.py": {
+      "bytes": 17510,
+      "sha256": "efb22f0a43453ea8b970e495f3e1f63cf15e6cc12c3530c0f790534256a37d05"
+    }
+  },
+  "independent_source_review_sha256": "0fecfd9c330cb87a542fcb4f98ec35e0e138c41e0aef1a867438769d29d73f10",
+  "selected_frozen_source_members": {
+    "strict_export.py": "strict_export.py",
+    "strict_export_fixtures.py": "strict_export_fixtures.py",
+    "metadata_fixture_receipt.json": "metadata/strict_export_fixture_receipt_v6.json"
+  },
+  "selected_sources_match_frozen_and_reviewed_bytes": true
+}

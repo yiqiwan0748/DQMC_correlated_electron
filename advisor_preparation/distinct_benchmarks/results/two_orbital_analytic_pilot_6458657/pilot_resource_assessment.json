@@ -1,0 +1,22 @@
+{
+  "release": "two_orbital_analytic_v1",
+  "assessment": "RESOURCE_ELIGIBLE_FOR_SEPARATE_REVIEW",
+  "scientific_completions": 0,
+  "catalogue_statuses": {
+    "A15": "NOT_RUN",
+    "A16": "NOT_RUN",
+    "A17": "NOT_RUN",
+    "A25": "NOT_RUN"
+  },
+  "target_sha256": "1053ef021b0bc39e99c0b66b382ecd7e7590b2a5adf7e8c7e4dc021a493f8b7a",
+  "manifest_sha256": "e12f69632caa1649415d7792a7e6f09c5fafcb54029f97b3028f252e7e634654",
+  "pilot_512_mesh_seconds": 0.08275198936462402,
+  "measured_pilot_max_rss_kib": 599796,
+  "projected_full_target_seconds": 123.51695954799652,
+  "projection_is_empirical": true,
+  "limits": {
+    "seconds": 600,
+    "pilot_rss_kib": 1500000
+  },
+  "limitation": "Separate root review/submission required. No full2048 mesh, independent oracle, scientific PASS or guaranteed full memory/runtime follows from this pilot."
+}

@@ -1,0 +1,1326 @@
+{
+  "benchmark_ideas_added": 0,
+  "campaign_ledger": {
+    "FAIL": 0,
+    "NOT_RUN": 48,
+    "PASS": 50,
+    "UNRESOLVED": 2
+  },
+  "case_count": 15,
+  "cases": [
+    {
+      "M_per_cell": 1.3552527156068805e-18,
+      "N_down": 4,
+      "N_up": 0,
+      "O_extensive": 5.421010862427522e-18,
+      "actual_native_observables": {
+        "Sz": -2.0,
+        "centered_interaction_energy": 0.0,
+        "field_energy": -0.0,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -7.151548460377916,
+        "oalm": 5.421010862427522e-18,
+        "oalm2": 0.026455854727614303,
+        "oalm_variance": 0.026455854727614303
+      },
+      "case_id": "01",
+      "dimension": 70,
+      "h": 0.0,
+      "iterations": 23,
+      "native_converged": true,
+      "native_energy": -7.151548460377916,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.764685838085756e-15,
+      "residual_norm": 1.764685838085756e-15,
+      "spatial_observer": {
+        "M": 1.3552527156068805e-18,
+        "O": 5.421010862427522e-18,
+        "O2": 0.026455854727614303,
+        "Sz": [
+          -0.24999999999999983,
+          -0.2500000000000001,
+          -0.25000000000000017,
+          -0.2499999999999999,
+          -0.25000000000000017,
+          -0.2499999999999999,
+          -0.2499999999999998,
+          -0.2500000000000001
+        ],
+        "density_down": [
+          0.49999999999999967,
+          0.5000000000000002,
+          0.5000000000000004,
+          0.49999999999999983,
+          0.5000000000000003,
+          0.4999999999999999,
+          0.49999999999999967,
+          0.5000000000000002
+        ],
+        "density_up": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          3.0531133177191805e-16,
+          -3.1848438816761693e-16,
+          -2.8032047169612717e-16,
+          2.706168622523819e-16
+        ],
+        "total_Sz": -2.0
+      }
+    },
+    {
+      "M_per_cell": -0.12373917956984509,
+      "N_down": 3,
+      "N_up": 1,
+      "O_extensive": -0.49495671827938037,
+      "actual_native_observables": {
+        "Sz": -1.0,
+        "centered_interaction_energy": 0.5575935714209548,
+        "field_energy": 0.0,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -9.238019748475008,
+        "oalm": -0.49495671827938037,
+        "oalm2": 0.8665912085624508,
+        "oalm_variance": 0.6216090555925569
+      },
+      "case_id": "02",
+      "dimension": 448,
+      "h": 0.0,
+      "iterations": 56,
+      "native_converged": true,
+      "native_energy": -8.680426177054054,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.3809805014595825e-12,
+      "residual_norm": 1.3809805014595825e-12,
+      "spatial_observer": {
+        "M": -0.12373917956984509,
+        "O": -0.49495671827938037,
+        "O2": 0.8665912085624508,
+        "Sz": [
+          -0.16859845013312783,
+          -0.044859270563259446,
+          -0.2051407294367206,
+          -0.08140154986691378,
+          -0.2051407294367183,
+          -0.08140154986684728,
+          -0.16859845013312333,
+          -0.04485927056328939
+        ],
+        "density_down": [
+          0.4082598904258192,
+          0.30533341252105173,
+          0.4446665874789348,
+          0.34174010957423173,
+          0.4446665874789252,
+          0.3417401095741328,
+          0.4082598904258305,
+          0.30533341252107393
+        ],
+        "density_up": [
+          0.07106299015956358,
+          0.2156148713945329,
+          0.034385128605493503,
+          0.17893700984040414,
+          0.03438512860548852,
+          0.17893700984043837,
+          0.07106299015958382,
+          0.21561487139449514
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -0.12373917956986837,
+          -0.12373917956980687,
+          -0.12373917956987111,
+          -0.12373917956983399
+        ],
+        "total_Sz": -1.0
+      }
+    },
+    {
+      "M_per_cell": 6.762168949792091e-15,
+      "N_down": 2,
+      "N_up": 2,
+      "O_extensive": 2.7048675799168365e-14,
+      "actual_native_observables": {
+        "Sz": 0.0,
+        "centered_interaction_energy": 0.7996230308468695,
+        "field_energy": -0.0,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -10.487504211288968,
+        "oalm": 2.7048675799168365e-14,
+        "oalm2": 0.05927271989618397,
+        "oalm_variance": 0.05927271989618397
+      },
+      "case_id": "03",
+      "dimension": 784,
+      "h": 0.0,
+      "iterations": 58,
+      "native_converged": true,
+      "native_energy": -9.6878811804421,
+      "native_method": "lanczos",
+      "native_norm": 1.0000000000000002,
+      "native_recomputed_residual": 1.5469774992115372e-12,
+      "residual_norm": 1.5469774992115372e-12,
+      "spatial_observer": {
+        "M": 6.762168949792091e-15,
+        "O": 2.7048675799168365e-14,
+        "O2": 0.05927271989618397,
+        "Sz": [
+          7.566863802210833e-15,
+          -1.254508480332938e-14,
+          3.956578988051351e-15,
+          -2.536382562312589e-15,
+          -3.945628546109248e-15,
+          2.4828771851004294e-15,
+          5.931344825016449e-15,
+          -9.113261360826908e-16
+        ],
+        "density_down": [
+          0.2499999999999838,
+          0.25000000000001066,
+          0.25000000000000683,
+          0.24999999999999925,
+          0.24999999999999453,
+          0.2499999999999999,
+          0.25000000000000644,
+          0.24999999999999872
+        ],
+        "density_up": [
+          0.24999999999999897,
+          0.2499999999999855,
+          0.25000000000001477,
+          0.24999999999999406,
+          0.24999999999998668,
+          0.25000000000000483,
+          0.2500000000000183,
+          0.24999999999999686
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          2.015184724548768e-14,
+          6.510634045775454e-15,
+          -6.4602728548635024e-15,
+          6.864571844983347e-15
+        ],
+        "total_Sz": -7.572474548453445e-19
+      }
+    },
+    {
+      "M_per_cell": -0.184721350612379,
+      "N_down": 1,
+      "N_up": 3,
+      "O_extensive": -0.738885402449516,
+      "actual_native_observables": {
+        "Sz": 1.0,
+        "centered_interaction_energy": 0.5575935714210267,
+        "field_energy": 0.0,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -9.23801974847508,
+        "oalm": -0.738885402449516,
+        "oalm2": 0.866591208562477,
+        "oalm_variance": 0.3206395706094938
+      },
+      "case_id": "04",
+      "dimension": 448,
+      "h": 0.0,
+      "iterations": 55,
+      "native_converged": true,
+      "native_energy": -8.680426177054054,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.92330347614013e-12,
+      "residual_norm": 1.92330347614013e-12,
+      "spatial_observer": {
+        "M": -0.184721350612379,
+        "O": -0.738885402449516,
+        "O2": 0.866591208562477,
+        "Sz": [
+          0.0224907486437379,
+          0.2072120992560628,
+          0.04278790074392553,
+          0.2275092513563289,
+          0.04278790074390175,
+          0.22750925135628072,
+          0.02249074864367669,
+          0.20721209925608555
+        ],
+        "density_down": [
+          0.24308180061152476,
+          0.02729065969641538,
+          0.2227093403035576,
+          0.0069181993884743775,
+          0.22270934030363077,
+          0.0069181993884722985,
+          0.24308180061151943,
+          0.027290659696405175
+        ],
+        "density_up": [
+          0.28806329789900065,
+          0.44171485820854073,
+          0.30828514179140876,
+          0.4619367021011322,
+          0.3082851417914343,
+          0.46193670210103394,
+          0.28806329789887286,
+          0.44171485820857626
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -0.1847213506123247,
+          -0.18472135061240333,
+          -0.18472135061237901,
+          -0.18472135061240888
+        ],
+        "total_Sz": 0.9999999999999999
+      }
+    },
+    {
+      "M_per_cell": -1.3552527156068805e-18,
+      "N_down": 0,
+      "N_up": 4,
+      "O_extensive": -5.421010862427522e-18,
+      "actual_native_observables": {
+        "Sz": 2.0,
+        "centered_interaction_energy": 0.0,
+        "field_energy": 0.0,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -7.151548460377916,
+        "oalm": -5.421010862427522e-18,
+        "oalm2": 0.026455854727614303,
+        "oalm_variance": 0.026455854727614303
+      },
+      "case_id": "05",
+      "dimension": 70,
+      "h": 0.0,
+      "iterations": 23,
+      "native_converged": true,
+      "native_energy": -7.151548460377916,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.764685838085756e-15,
+      "residual_norm": 1.764685838085756e-15,
+      "spatial_observer": {
+        "M": -1.3552527156068805e-18,
+        "O": -5.421010862427522e-18,
+        "O2": 0.026455854727614303,
+        "Sz": [
+          0.24999999999999983,
+          0.2500000000000001,
+          0.25000000000000017,
+          0.2499999999999999,
+          0.25000000000000017,
+          0.2499999999999999,
+          0.2499999999999998,
+          0.2500000000000001
+        ],
+        "density_down": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "density_up": [
+          0.49999999999999967,
+          0.5000000000000002,
+          0.5000000000000004,
+          0.49999999999999983,
+          0.5000000000000003,
+          0.4999999999999999,
+          0.49999999999999967,
+          0.5000000000000002
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -3.0531133177191805e-16,
+          3.1848438816761693e-16,
+          2.8032047169612717e-16,
+          -2.706168622523819e-16
+        ],
+        "total_Sz": 2.0
+      }
+    },
+    {
+      "M_per_cell": -4.681278721342861e-05,
+      "N_down": 4,
+      "N_up": 0,
+      "O_extensive": -0.00018725114885371444,
+      "actual_native_observables": {
+        "Sz": -2.0,
+        "centered_interaction_energy": 0.0,
+        "field_energy": -3.745022977074289e-06,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -7.151546587844528,
+        "oalm": -0.00018725114885371444,
+        "oalm2": 0.02645681364266789,
+        "oalm_variance": 0.026456778579675145
+      },
+      "case_id": "06",
+      "dimension": 70,
+      "h": -0.02,
+      "iterations": 32,
+      "native_converged": true,
+      "native_energy": -7.151550332867505,
+      "native_method": "lanczos",
+      "native_norm": 0.9999999999999999,
+      "native_recomputed_residual": 1.4750208098658492e-13,
+      "residual_norm": 1.4750208098658492e-13,
+      "spatial_observer": {
+        "M": -4.681278721342861e-05,
+        "O": -0.00018725114885371444,
+        "O2": 0.02645681364266789,
+        "Sz": [
+          -0.25002340639360654,
+          -0.24997659360639402,
+          -0.2500234063936071,
+          -0.24997659360639252,
+          -0.25002340639360693,
+          -0.24997659360639266,
+          -0.2500234063936063,
+          -0.24997659360639385
+        ],
+        "density_down": [
+          0.500046812787213,
+          0.49995318721278803,
+          0.5000468127872142,
+          0.49995318721278514,
+          0.5000468127872137,
+          0.49995318721278525,
+          0.5000468127872126,
+          0.49995318721278775
+        ],
+        "density_up": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -4.681278721249682e-05,
+          -4.681278721451642e-05,
+          -4.681278721427009e-05,
+          -4.6812787212413554e-05
+        ],
+        "total_Sz": -1.9999999999999998
+      }
+    },
+    {
+      "M_per_cell": -0.2071785777598435,
+      "N_down": 3,
+      "N_up": 1,
+      "O_extensive": -0.828714311039374,
+      "actual_native_observables": {
+        "Sz": -1.0,
+        "centered_interaction_energy": 0.5550650322570863,
+        "field_energy": -0.01657428622078748,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -9.235451876868211,
+        "oalm": -0.828714311039374,
+        "oalm2": 0.8703407252676301,
+        "oalm_variance": 0.18357331594616577
+      },
+      "case_id": "07",
+      "dimension": 448,
+      "h": -0.02,
+      "iterations": 67,
+      "native_converged": true,
+      "native_energy": -8.696961130831912,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.3639356921991824e-12,
+      "residual_norm": 1.3639356921991824e-12,
+      "spatial_observer": {
+        "M": -0.2071785777598435,
+        "O": -0.828714311039374,
+        "O2": 0.8703407252676301,
+        "Sz": [
+          -0.2285892888799234,
+          -0.021410711120082773,
+          -0.22858928887994703,
+          -0.021410711120082093,
+          -0.22858928887990948,
+          -0.021410711120073547,
+          -0.22858928887990704,
+          -0.021410711120074553
+        ],
+        "density_down": [
+          0.46165165305418987,
+          0.2883483469458117,
+          0.4616516530542545,
+          0.28834834694582806,
+          0.4616516530541835,
+          0.28834834694578737,
+          0.4616516530541587,
+          0.28834834694578615
+        ],
+        "density_up": [
+          0.0044730752943431835,
+          0.2455269247056462,
+          0.004473075294360562,
+          0.24552692470566387,
+          0.0044730752943644685,
+          0.2455269247056402,
+          0.004473075294344512,
+          0.24552692470563697
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -0.20717857775984064,
+          -0.20717857775986487,
+          -0.20717857775983597,
+          -0.2071785777598325
+        ],
+        "total_Sz": -0.9999999999999999
+      }
+    },
+    {
+      "M_per_cell": -0.00012536676374016878,
+      "N_down": 2,
+      "N_up": 2,
+      "O_extensive": -0.0005014670549606751,
+      "actual_native_observables": {
+        "Sz": 0.0,
+        "centered_interaction_energy": 0.7996215090271059,
+        "field_energy": -1.0029341099213502e-05,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -10.487497674677178,
+        "oalm": -0.0005014670549606751,
+        "oalm2": 0.059276626003062355,
+        "oalm_variance": 0.05927637453385515
+      },
+      "case_id": "08",
+      "dimension": 784,
+      "h": -0.02,
+      "iterations": 58,
+      "native_converged": true,
+      "native_energy": -9.687886194991172,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.6070467531133584e-12,
+      "residual_norm": 1.6070467531133584e-12,
+      "spatial_observer": {
+        "M": -0.00012536676374016878,
+        "O": -0.0005014670549606751,
+        "O2": 0.059276626003062355,
+        "Sz": [
+          -6.268338186938682e-05,
+          6.26833818640407e-05,
+          -6.268338187310292e-05,
+          6.268338187653355e-05,
+          -6.268338187057825e-05,
+          6.268338187219018e-05,
+          -6.268338186726232e-05,
+          6.268338186757029e-05
+        ],
+        "density_down": [
+          0.2500626833818613,
+          0.24993731661813345,
+          0.25006268338188375,
+          0.24993731661812146,
+          0.25006268338186066,
+          0.2499373166181304,
+          0.2500626833818789,
+          0.24993731661812946
+        ],
+        "density_up": [
+          0.24993731661812257,
+          0.2500626833818615,
+          0.2499373166181376,
+          0.2500626833818745,
+          0.24993731661811958,
+          0.25006268338187476,
+          0.24993731661814436,
+          0.2500626833818646
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -0.00012536676373341363,
+          -0.00012536676374965826,
+          -0.00012536676374275919,
+          -0.00012536676373486741
+        ],
+        "total_Sz": 4.4181238528784306e-18
+      }
+    },
+    {
+      "M_per_cell": -0.20717857775977908,
+      "N_down": 1,
+      "N_up": 3,
+      "O_extensive": -0.8287143110391163,
+      "actual_native_observables": {
+        "Sz": 1.0,
+        "centered_interaction_energy": 0.5550650322573367,
+        "field_energy": -0.016574286220782327,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -9.235451876868469,
+        "oalm": -0.8287143110391163,
+        "oalm2": 0.8703407252673454,
+        "oalm_variance": 0.1835733159463082
+      },
+      "case_id": "09",
+      "dimension": 448,
+      "h": -0.02,
+      "iterations": 66,
+      "native_converged": true,
+      "native_energy": -8.696961130831914,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.3934931746762878e-12,
+      "residual_norm": 1.3934931746762878e-12,
+      "spatial_observer": {
+        "M": -0.20717857775977908,
+        "O": -0.8287143110391163,
+        "O2": 0.8703407252673454,
+        "Sz": [
+          0.021410711120105383,
+          0.22858928887989452,
+          0.021410711120088313,
+          0.2285892888798914,
+          0.02141071112012309,
+          0.22858928887988653,
+          0.02141071112012506,
+          0.2285892888798857
+        ],
+        "density_down": [
+          0.24552692470564344,
+          0.00447307529434707,
+          0.24552692470565438,
+          0.004473075294345776,
+          0.2455269247056608,
+          0.004473075294348359,
+          0.2455269247056409,
+          0.004473075294359451
+        ],
+        "density_up": [
+          0.2883483469458542,
+          0.4616516530541361,
+          0.28834834694583095,
+          0.4616516530541287,
+          0.288348346945907,
+          0.46165165305412165,
+          0.28834834694589107,
+          0.4616516530541309
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -0.2071785777597891,
+          -0.2071785777598031,
+          -0.20717857775976342,
+          -0.20717857775976073
+        ],
+        "total_Sz": 0.9999999999999999
+      }
+    },
+    {
+      "M_per_cell": -4.681278722112948e-05,
+      "N_down": 0,
+      "N_up": 4,
+      "O_extensive": -0.00018725114888451793,
+      "actual_native_observables": {
+        "Sz": 2.0,
+        "centered_interaction_energy": 0.0,
+        "field_energy": -3.7450229776903585e-06,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -7.151546587844529,
+        "oalm": -0.00018725114888451793,
+        "oalm2": 0.026456813642670603,
+        "oalm_variance": 0.026456778579677844
+      },
+      "case_id": "10",
+      "dimension": 70,
+      "h": -0.02,
+      "iterations": 31,
+      "native_converged": true,
+      "native_energy": -7.151550332867507,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.3905965206903124e-12,
+      "residual_norm": 1.3905965206903124e-12,
+      "spatial_observer": {
+        "M": -4.681278722112948e-05,
+        "O": -0.00018725114888451793,
+        "O2": 0.026456813642670603,
+        "Sz": [
+          0.24997659360638205,
+          0.25002340639361403,
+          0.2499765936063889,
+          0.25002340639360615,
+          0.24997659360639624,
+          0.25002340639360293,
+          0.24997659360639038,
+          0.25002340639361903
+        ],
+        "density_down": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "density_up": [
+          0.4999531872127641,
+          0.5000468127872282,
+          0.49995318721277776,
+          0.5000468127872122,
+          0.4999531872127925,
+          0.5000468127872059,
+          0.49995318721278076,
+          0.5000468127872381
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          -4.681278723201593e-05,
+          -4.6812787217189356e-05,
+          -4.681278720668734e-05,
+          -4.681278722861934e-05
+        ],
+        "total_Sz": 1.9999999999999998
+      }
+    },
+    {
+      "M_per_cell": 4.681278722112948e-05,
+      "N_down": 4,
+      "N_up": 0,
+      "O_extensive": 0.00018725114888451793,
+      "actual_native_observables": {
+        "Sz": -2.0,
+        "centered_interaction_energy": 0.0,
+        "field_energy": -3.7450229776903585e-06,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -7.151546587844529,
+        "oalm": 0.00018725114888451793,
+        "oalm2": 0.026456813642670603,
+        "oalm_variance": 0.026456778579677844
+      },
+      "case_id": "11",
+      "dimension": 70,
+      "h": 0.02,
+      "iterations": 31,
+      "native_converged": true,
+      "native_energy": -7.151550332867507,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.3905965206903124e-12,
+      "residual_norm": 1.3905965206903124e-12,
+      "spatial_observer": {
+        "M": 4.681278722112948e-05,
+        "O": 0.00018725114888451793,
+        "O2": 0.026456813642670603,
+        "Sz": [
+          -0.24997659360638205,
+          -0.25002340639361403,
+          -0.2499765936063889,
+          -0.25002340639360615,
+          -0.24997659360639624,
+          -0.25002340639360293,
+          -0.24997659360639038,
+          -0.25002340639361903
+        ],
+        "density_down": [
+          0.4999531872127641,
+          0.5000468127872282,
+          0.49995318721277776,
+          0.5000468127872122,
+          0.4999531872127925,
+          0.5000468127872059,
+          0.49995318721278076,
+          0.5000468127872381
+        ],
+        "density_up": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          4.681278723201593e-05,
+          4.6812787217189356e-05,
+          4.681278720668734e-05,
+          4.681278722861934e-05
+        ],
+        "total_Sz": -1.9999999999999998
+      }
+    },
+    {
+      "M_per_cell": 0.2071785777597675,
+      "N_down": 3,
+      "N_up": 1,
+      "O_extensive": 0.82871431103907,
+      "actual_native_observables": {
+        "Sz": -1.0,
+        "centered_interaction_energy": 0.5550650322573687,
+        "field_energy": -0.0165742862207814,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -9.235451876868504,
+        "oalm": 0.82871431103907,
+        "oalm2": 0.8703407252673115,
+        "oalm_variance": 0.18357331594635107
+      },
+      "case_id": "12",
+      "dimension": 448,
+      "h": 0.02,
+      "iterations": 68,
+      "native_converged": true,
+      "native_energy": -8.696961130831916,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.4645681240503284e-12,
+      "residual_norm": 1.4645681240503284e-12,
+      "spatial_observer": {
+        "M": 0.2071785777597675,
+        "O": 0.82871431103907,
+        "O2": 0.8703407252673115,
+        "Sz": [
+          -0.021410711120118553,
+          -0.22858928887988447,
+          -0.021410711120129586,
+          -0.22858928887988447,
+          -0.02141071112010325,
+          -0.22858928887988073,
+          -0.02141071112011354,
+          -0.22858928887988508
+        ],
+        "density_down": [
+          0.28834834694589934,
+          0.46165165305412376,
+          0.2883483469458894,
+          0.46165165305410377,
+          0.2883483469458544,
+          0.4616516530541066,
+          0.28834834694589784,
+          0.4616516530541245
+        ],
+        "density_up": [
+          0.24552692470566223,
+          0.004473075294354674,
+          0.24552692470563017,
+          0.004473075294334834,
+          0.245526924705648,
+          0.00447307529434497,
+          0.2455269247056707,
+          0.004473075294354188
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          0.207178577759766,
+          0.2071785777597548,
+          0.20717857775977766,
+          0.2071785777597716
+        ],
+        "total_Sz": -0.9999999999999997
+      }
+    },
+    {
+      "M_per_cell": 0.00012536676375357342,
+      "N_down": 2,
+      "N_up": 2,
+      "O_extensive": 0.0005014670550142937,
+      "actual_native_observables": {
+        "Sz": 0.0,
+        "centered_interaction_energy": 0.7996215090271219,
+        "field_energy": -1.0029341100285875e-05,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -10.487497674677199,
+        "oalm": 0.0005014670550142937,
+        "oalm2": 0.05927662600306793,
+        "oalm_variance": 0.059276374533860664
+      },
+      "case_id": "13",
+      "dimension": 784,
+      "h": 0.02,
+      "iterations": 58,
+      "native_converged": true,
+      "native_energy": -9.687886194991176,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.5002517978386017e-12,
+      "residual_norm": 1.5002517978386017e-12,
+      "spatial_observer": {
+        "M": 0.00012536676375357342,
+        "O": 0.0005014670550142937,
+        "O2": 0.05927662600306793,
+        "Sz": [
+          6.268338188302651e-05,
+          -6.268338188759943e-05,
+          6.268338187970853e-05,
+          -6.268338187991865e-05,
+          6.26833818639155e-05,
+          -6.268338186871521e-05,
+          6.268338188049891e-05,
+          -6.26833818709053e-05
+        ],
+        "density_down": [
+          0.24993731661810809,
+          0.2500626833818863,
+          0.24993731661813023,
+          0.25006268338187565,
+          0.24993731661812785,
+          0.2500626833818706,
+          0.249937316618132,
+          0.2500626833818692
+        ],
+        "density_up": [
+          0.2500626833818741,
+          0.24993731661811103,
+          0.25006268338188964,
+          0.24993731661811577,
+          0.25006268338185567,
+          0.24993731661813318,
+          0.2500626833818931,
+          0.24993731661812743
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          0.0001253667637706446,
+          0.0001253667637596093,
+          0.0001253667637326435,
+          0.00012536676375141093
+        ],
+        "total_Sz": 1.0869126779167182e-17
+      }
+    },
+    {
+      "M_per_cell": 0.20717857775983461,
+      "N_down": 1,
+      "N_up": 3,
+      "O_extensive": 0.8287143110393385,
+      "actual_native_observables": {
+        "Sz": 1.0,
+        "centered_interaction_energy": 0.5550650322571062,
+        "field_energy": -0.016574286220786768,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -9.235451876868236,
+        "oalm": 0.8287143110393385,
+        "oalm2": 0.8703407252675902,
+        "oalm_variance": 0.18357331594618476
+      },
+      "case_id": "14",
+      "dimension": 448,
+      "h": 0.02,
+      "iterations": 69,
+      "native_converged": true,
+      "native_energy": -8.696961130831916,
+      "native_method": "lanczos",
+      "native_norm": 1.0,
+      "native_recomputed_residual": 1.3040875931700565e-12,
+      "residual_norm": 1.3040875931700565e-12,
+      "spatial_observer": {
+        "M": 0.20717857775983461,
+        "O": 0.8287143110393385,
+        "O2": 0.8703407252675902,
+        "Sz": [
+          0.22858928887989252,
+          0.021410711120104745,
+          0.2285892888799101,
+          0.021410711120065293,
+          0.22858928887993354,
+          0.02141071112008397,
+          0.22858928887993313,
+          0.021410711120076822
+        ],
+        "density_down": [
+          0.004473075294345464,
+          0.24552692470563353,
+          0.00447307529435739,
+          0.24552692470566678,
+          0.004473075294368811,
+          0.2455269247056416,
+          0.0044730752943396655,
+          0.24552692470564674
+        ],
+        "density_up": [
+          0.46165165305413053,
+          0.288348346945843,
+          0.4616516530541775,
+          0.2883483469457974,
+          0.46165165305423583,
+          0.2883483469458095,
+          0.4616516530542058,
+          0.2883483469458003
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          0.2071785777597879,
+          0.20717857775984486,
+          0.2071785777598495,
+          0.20717857775985637
+        ],
+        "total_Sz": 1.0000000000000002
+      }
+    },
+    {
+      "M_per_cell": 4.681278721342861e-05,
+      "N_down": 0,
+      "N_up": 4,
+      "O_extensive": 0.00018725114885371444,
+      "actual_native_observables": {
+        "Sz": 2.0,
+        "centered_interaction_energy": 0.0,
+        "field_energy": -3.745022977074289e-06,
+        "ground_subspace_averaged": false,
+        "kinetic_energy": -7.151546587844528,
+        "oalm": 0.00018725114885371444,
+        "oalm2": 0.02645681364266789,
+        "oalm_variance": 0.026456778579675145
+      },
+      "case_id": "15",
+      "dimension": 70,
+      "h": 0.02,
+      "iterations": 32,
+      "native_converged": true,
+      "native_energy": -7.151550332867505,
+      "native_method": "lanczos",
+      "native_norm": 0.9999999999999999,
+      "native_recomputed_residual": 1.4750208098658492e-13,
+      "residual_norm": 1.4750208098658492e-13,
+      "spatial_observer": {
+        "M": 4.681278721342861e-05,
+        "O": 0.00018725114885371444,
+        "O2": 0.02645681364266789,
+        "Sz": [
+          0.25002340639360654,
+          0.24997659360639402,
+          0.2500234063936071,
+          0.24997659360639252,
+          0.25002340639360693,
+          0.24997659360639266,
+          0.2500234063936063,
+          0.24997659360639385
+        ],
+        "density_down": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "density_up": [
+          0.500046812787213,
+          0.49995318721278803,
+          0.5000468127872142,
+          0.49995318721278514,
+          0.5000468127872137,
+          0.49995318721278525,
+          0.5000468127872126,
+          0.49995318721278775
+        ],
+        "observer_normalizes_actual_state": true,
+        "q": [
+          4.681278721249682e-05,
+          4.681278721451642e-05,
+          4.681278721427009e-05,
+          4.6812787212413554e-05
+        ],
+        "total_Sz": 1.9999999999999998
+      }
+    }
+  ],
+  "catalogue_status": "NOT_RUN",
+  "external_ground_state_or_response_certificates": "NOT_RUN",
+  "full_X25_status": "NOT_RUN",
+  "independent_QuSpin_reference": "NOT_RUN",
+  "model": {
+    "Lx": 2,
+    "Ly": 2,
+    "M_convention": "M=O/4",
+    "O_convention": "O=sum_cells(Sz_x-Sz_y)=0.5*sum_modes eta_i*(n_up_i-n_down_i), eta_even_zero_based=+1, eta_odd=-1",
+    "U": 6.0,
+    "cells": 4,
+    "field_convention": "H(h)=H(0)-h*O",
+    "geometry": "open",
+    "h1": [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.75,
+        0.0,
+        0.0,
+        -0.65
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.75,
+        0.0,
+        1.0,
+        -0.65,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.65,
+        1.75,
+        0.0
+      ],
+      [
+        0.0,
+        1.75,
+        0.0,
+        0.0,
+        0.65,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.75,
+        0.0,
+        0.0,
+        0.65,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.65,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.75
+      ],
+      [
+        0.0,
+        -0.65,
+        1.75,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.65,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.75,
+        0.0,
+        0.0
+      ]
+    ],
+    "spatial_orbital_modes": 8,
+    "t1": -1.0,
+    "t2": -1.75,
+    "t3": 0.0,
+    "t4": -0.65,
+    "total_particles": 4
+  },
+  "native_solver": {
+    "atol": 1e-13,
+    "ground_subspace_average": false,
+    "maxiter": "sector_dimension",
+    "method": "lanczos",
+    "require_convergence": true,
+    "rtol": 1e-13,
+    "software": "Julia",
+    "version": "1.12.1"
+  },
+  "resources": {
+    "OOM_observed": false,
+    "cpu_limit": 1,
+    "memory_limit_bytes": 3499999232,
+    "per_Julia_or_per_case_RSS": "NOT_RECORDED",
+    "unit_aggregate_peak_MiB": 723.73828125,
+    "unit_aggregate_peak_bytes": 758894592
+  },
+  "saved_audit_scope": {
+    "independent_model_or_solver_run_by_saved_audits": false,
+    "independent_saved_array_consistency_checks": 285,
+    "maximum_native_norm_error": 2.220446049250313e-16,
+    "maximum_reported_residual": 1.92330347614013e-12,
+    "original_native_subset_checks": 158,
+    "original_native_subset_failed": 0,
+    "runtime_lifecycle_checkpoint_checks": 2405,
+    "runtime_lifecycle_checkpoint_failed": 0,
+    "saved_array_consistency_failed": 0
+  },
+  "schema": "X25_NATIVE15_PUBLIC_PILOT_V1",
+  "scientific_credit": 0,
+  "status": "PILOT_SAVED_AUDITS_PASS_ZERO_CREDIT",
+  "timing": {
+    "compilation_separately_measured": false,
+    "native_ground_API_is_Lanczos_only": false,
+    "native_producer_seconds": 9.136321249,
+    "per_case": [
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 2.172608046,
+        "case_id": "01",
+        "dense_materialization_seconds": 0.022788238,
+        "hamiltonian_seconds": 0.007568061,
+        "native_ground_api_seconds": 0.775649803,
+        "serialize_flush_close_readback_seconds": 0.102598636,
+        "spatial_observer_seconds": 0.868504784
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.001250932,
+        "case_id": "02",
+        "dense_materialization_seconds": 5.054e-05,
+        "hamiltonian_seconds": 0.00010603,
+        "native_ground_api_seconds": 0.000810171,
+        "serialize_flush_close_readback_seconds": 0.001244402,
+        "spatial_observer_seconds": 4.45e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.001879533,
+        "case_id": "03",
+        "dense_materialization_seconds": 0.00018261,
+        "hamiltonian_seconds": 0.00015392,
+        "native_ground_api_seconds": 0.001123191,
+        "serialize_flush_close_readback_seconds": 0.002159283,
+        "spatial_observer_seconds": 5.3681e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.001145112,
+        "case_id": "04",
+        "dense_materialization_seconds": 4.551e-05,
+        "hamiltonian_seconds": 0.000111011,
+        "native_ground_api_seconds": 0.000743611,
+        "serialize_flush_close_readback_seconds": 0.001174942,
+        "spatial_observer_seconds": 3.774e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.000325611,
+        "case_id": "05",
+        "dense_materialization_seconds": 3e-06,
+        "hamiltonian_seconds": 2.795e-05,
+        "native_ground_api_seconds": 0.00012714,
+        "serialize_flush_close_readback_seconds": 0.00019989,
+        "spatial_observer_seconds": 1.127e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.00029392,
+        "case_id": "06",
+        "dense_materialization_seconds": 2.18e-06,
+        "hamiltonian_seconds": 2.253e-05,
+        "native_ground_api_seconds": 0.00018112,
+        "serialize_flush_close_readback_seconds": 0.000185991,
+        "spatial_observer_seconds": 1.073e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.007477493,
+        "case_id": "07",
+        "dense_materialization_seconds": 4.009e-05,
+        "hamiltonian_seconds": 0.000110921,
+        "native_ground_api_seconds": 0.007126542,
+        "serialize_flush_close_readback_seconds": 0.001273212,
+        "spatial_observer_seconds": 3.987e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.001847542,
+        "case_id": "08",
+        "dense_materialization_seconds": 0.00017897,
+        "hamiltonian_seconds": 0.00015578,
+        "native_ground_api_seconds": 0.001107871,
+        "serialize_flush_close_readback_seconds": 0.002202144,
+        "spatial_observer_seconds": 5.301e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.001449113,
+        "case_id": "09",
+        "dense_materialization_seconds": 4.588e-05,
+        "hamiltonian_seconds": 9.932e-05,
+        "native_ground_api_seconds": 0.001046412,
+        "serialize_flush_close_readback_seconds": 0.001189772,
+        "spatial_observer_seconds": 4.0271e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.00038041,
+        "case_id": "10",
+        "dense_materialization_seconds": 2.54e-06,
+        "hamiltonian_seconds": 3.041e-05,
+        "native_ground_api_seconds": 0.00017495,
+        "serialize_flush_close_readback_seconds": 0.000234551,
+        "spatial_observer_seconds": 1.185e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.00028134,
+        "case_id": "11",
+        "dense_materialization_seconds": 1.94e-06,
+        "hamiltonian_seconds": 2.764e-05,
+        "native_ground_api_seconds": 0.00016757,
+        "serialize_flush_close_readback_seconds": 0.000184451,
+        "spatial_observer_seconds": 1.139e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.001525832,
+        "case_id": "12",
+        "dense_materialization_seconds": 4.034e-05,
+        "hamiltonian_seconds": 0.00013529,
+        "native_ground_api_seconds": 0.001090562,
+        "serialize_flush_close_readback_seconds": 0.001211522,
+        "spatial_observer_seconds": 4.123e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.001724553,
+        "case_id": "13",
+        "dense_materialization_seconds": 0.00014692,
+        "hamiltonian_seconds": 0.00015119,
+        "native_ground_api_seconds": 0.001112572,
+        "serialize_flush_close_readback_seconds": 0.002418744,
+        "spatial_observer_seconds": 5.324e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.002466634,
+        "case_id": "14",
+        "dense_materialization_seconds": 3.854e-05,
+        "hamiltonian_seconds": 9.635e-05,
+        "native_ground_api_seconds": 0.002092734,
+        "serialize_flush_close_readback_seconds": 0.001165102,
+        "spatial_observer_seconds": 4.036e-05
+      },
+      {
+        "case_elapsed_excluding_final_serialization_seconds": 0.000380221,
+        "case_id": "15",
+        "dense_materialization_seconds": 2.13e-06,
+        "hamiltonian_seconds": 3.049e-05,
+        "native_ground_api_seconds": 0.000177801,
+        "serialize_flush_close_readback_seconds": 0.0002001,
+        "spatial_observer_seconds": 1.176e-05
+      }
+    ],
+    "syntax_only_seconds": 0.4515212860000002,
+    "whole_external_seconds": 41.063506921000226,
+    "whole_native_Julia_entry_seconds": 33.876808775
+  }
+}

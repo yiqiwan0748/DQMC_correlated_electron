@@ -1,0 +1,38 @@
+{
+  "files": {
+    "AUDIT_SCOPE.md": {
+      "bytes": 4204,
+      "sha256": "1718f5a9f43ad14732103f43d538575ad801673f534115b27f9b9d30a4f4d352"
+    },
+    "README.md": {
+      "bytes": 3357,
+      "sha256": "97f47009eb0b8910435dd61664ac4a9eedb1eb36923c97b79ad5da330923e3c3"
+    },
+    "check_public_packet.py": {
+      "bytes": 6222,
+      "sha256": "9e3fa107d20b409d328336982ef8b29514ff701304026795bd50cb67eba209c2"
+    },
+    "component_timings.csv": {
+      "bytes": 1251,
+      "sha256": "068ed9b7642815c5a05fc9ee8395ae918d79d11b779cbbe128d31f16d6c41f5a"
+    },
+    "native_criteria.json": {
+      "bytes": 8264,
+      "sha256": "4a19da05f47edb44f96783c285027b985f4fca1628e021ecbc2b155c53c65f99"
+    },
+    "results.json": {
+      "bytes": 38927,
+      "sha256": "291be402a21a08e7115f6863b94a2867a603540192bcdc654340cfc6dc894ed1"
+    },
+    "scientific_cases.csv": {
+      "bytes": 1661,
+      "sha256": "f61ce6f69dae1b994d53049ad18e89d17c618e2bed9675ba19b40eb3abdf341c"
+    },
+    "sources.json": {
+      "bytes": 1753,
+      "sha256": "c9a55a5b31bc2e4466986786ae3fd2a572429fb82be071eeb13399311484e5f7"
+    }
+  },
+  "schema": "X25_NATIVE15_PUBLIC_PACKET_MANIFEST_V1",
+  "scope": "PUBLIC_SCIENTIFIC_PROJECTION_ONLY"
+}

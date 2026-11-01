@@ -1,0 +1,208 @@
+{
+  "audit_status": "PASS_INDEPENDENT_SINGLET_TERMINAL_AUDIT",
+  "scientific_state_accepted": true,
+  "job_id": 6411516,
+  "terminal_status": "PASS_VERIFIED_S0_ORIGINAL_H_EIGENSTATE",
+  "scheduler_state": "COMPLETED",
+  "scheduler_exit": "0:0",
+  "allocation_evidence_source": "fresh scontrol record",
+  "snapshot": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/isaac_20261014/moreo_configurations/singlet_search/snapshot_20261015T183320Z",
+  "submission_json": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/isaac_20261014/moreo_configurations/singlet_search/solve003_submission.json",
+  "source_release": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/isaac_20261014/moreo_configurations/singlet_search/release_v1",
+  "verified_utc": "2026-10-15T18:33:27.382636+00:00",
+  "checks_passed": 199,
+  "collected_files_verified": 13,
+  "source_files_verified": 22,
+  "native_tests_passed": 93,
+  "source_manifest_sha256": "176d5db86503ffa3eab24cea93b6c1f671d963eb04aa4e4831170bc3b3cd8115",
+  "model": {
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -2
+      ]
+    ],
+    "Ndown": 6,
+    "a2": [
+      -2,
+      2
+    ],
+    "a1": [
+      2,
+      2
+    ],
+    "density_per_cell": 1.5,
+    "target_total_spin": 0,
+    "Nup": 6,
+    "boundary": "periodic tilted torus",
+    "temperature": 0.0,
+    "N": 12,
+    "kx": 3.141592653589793,
+    "hoppings": [
+      -1.0,
+      -1.75,
+      -0.85,
+      -0.65
+    ],
+    "constant_shift": -40.0,
+    "Hamiltonian": "T + U sum_(cell,orbital) (n_up-1/2)(n_down-1/2)",
+    "sector_dimension": 8015616,
+    "coefficient_type": "Float64",
+    "momenta_units": "radians; lattice spacing one",
+    "ncells": 8,
+    "state_prescription": "Selected Ritz eigenstates; initialization recorded in metadata.initial_state",
+    "momentum_index": 5,
+    "U": 20.0,
+    "ensemble": "No ground-manifold ensemble or spectral function computed",
+    "spin_scope": "Exact S0 polynomial restriction of unchanged zero-field H; no spin penalty or magnetic field",
+    "orbitals": [
+      "dxz",
+      "dyz"
+    ],
+    "ky": 0.0
+  },
+  "settings": {
+    "keep": 8,
+    "Ndown": 6,
+    "a2": [
+      -2,
+      2
+    ],
+    "mode": "solve",
+    "a1": [
+      2,
+      2
+    ],
+    "nev": 1,
+    "max_seconds": 3000.0,
+    "Nup": 6,
+    "resume_sha256": "1e3134cd395c0be908e771504b37a054a637025c07259f7e29ce80db3a9de3f9",
+    "max_matvecs": 64,
+    "out": "/lustre/isaac24/scratch/ywang287/prb111_l020401_20260928/results/moreo_singlet_resume_003/X/result-6411516",
+    "benchmark_actions": 2,
+    "solver_gib": 2.0,
+    "basis_gib": 0.25,
+    "operator_gib": 0.25,
+    "resume": "/lustre/isaac24/scratch/ywang287/prb111_l020401_20260928/results/moreo_singlet_resume_002/X/result-6410911/checkpoint.jls",
+    "momentum_index": 5,
+    "krylovdim": 28,
+    "U": 20.0,
+    "seed": 197121,
+    "atol": 1e-09
+  },
+  "projected_solver_converged": true,
+  "projected_values": [
+    -65.59824971805807
+  ],
+  "projected_residuals": [
+    1.136555156310393e-10
+  ],
+  "fresh_physical_acceptance": {
+    "gram_error": 0.0,
+    "solver_projected_convergence": true,
+    "gram_tolerance": 1e-09,
+    "accepted": true,
+    "projected_residual_cannot_accept": true,
+    "full_original_H_and_S2": {
+      "h_residual": 1.1365542933084897e-10,
+      "spin_imaginary_part": 0.0,
+      "expected_spin": 0,
+      "spin_valid": true,
+      "spin_applications": 1,
+      "norm_error": 0.0,
+      "energy": -65.59824971805813,
+      "reference_energy": -65.59824971805807,
+      "h_imaginary_part": 0.0,
+      "spin_quantization_error": 7.435249612479386e-18,
+      "norm_valid": true,
+      "h_valid": true,
+      "vector_norm": 1.0,
+      "s_seconds": 2.155896027,
+      "spin_residual": 3.987806681587894e-14,
+      "cached_energy_difference": 5.684341886080802e-14,
+      "h_seconds": 3.195716741,
+      "spin_squared": 7.435249612479386e-18,
+      "accepted": true,
+      "total_spin": 0,
+      "h_applications": 1
+    }
+  },
+  "last_reported_progress": {
+    "projected_H_actions": 29,
+    "projected_values": [
+      -65.59824971805807
+    ],
+    "projected_residuals": [
+      1.136555156310393e-10
+    ],
+    "residual_estimates": [
+      1.136555456169279e-10
+    ],
+    "polynomial_S2_actions": 180
+  },
+  "last_reported_measured_projected_residual": {
+    "projected_H_actions": 29,
+    "projected_values": [
+      -65.59824971805807
+    ],
+    "projected_residuals": [
+      1.136555156310393e-10
+    ],
+    "residual_estimates": [
+      1.136555456169279e-10
+    ],
+    "polynomial_S2_actions": 180
+  },
+  "progress_note": "Progress may precede terminal interruption; it is not a replacement for final counters or physical acceptance.",
+  "counters": {
+    "projected_H_actions": 29,
+    "projected_H_seconds": 492.5032956600189,
+    "physical_H_actions": 29,
+    "polynomial_S2_seconds": 406.45155314899995,
+    "filtered_directions": 1,
+    "physical_H_seconds": 97.11465336400002,
+    "minimum_retained_weight": 1.0,
+    "absent_directions": 0,
+    "projection_calls": 30,
+    "projection_seconds": 407.88026094436646,
+    "polynomial_S2_actions": 180
+  },
+  "mean_projected_action_seconds": 16.982872264138585,
+  "elapsed_seconds": 530.3813121318817,
+  "process_peak_rss_bytes": 2807975936,
+  "native_scheduler_elapsed": "00:09:24",
+  "checkpoint_available": true,
+  "native_vectors_revalidated_locally": false,
+  "native_vectors_note": "Native Julia1.11.3 JLS stays remote; this verifier audits pinned small receipts and reported fresh native actions, not local deserialization or large operator actions.",
+  "global_ground_state_certified": false,
+  "sector_minimum_certified": false,
+  "ALM_order_proved": false
+}

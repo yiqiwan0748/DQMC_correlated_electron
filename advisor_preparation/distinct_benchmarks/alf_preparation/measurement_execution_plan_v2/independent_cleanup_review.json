@@ -1,0 +1,15 @@
+{
+  "reviewer": "validation_design",
+  "status": "STATIC_REVIEW_PASS_NOT_EXECUTED",
+  "wrapper_sha256": "08724a0fb195b1c85fa4fe25fdb0c72e306821a03cf65edc7ecc90fc1c75f5f4",
+  "archive_sha256": "755ce801cb4b60d08607121f6d1077421dca21c008fdb8b1373c58d99fc569d6",
+  "checked": [
+    "Clean occurs only in NEW ALF_observer copy",
+    "clean.log retained; all stale .o/.mod/.smod/.a and ALF.out rejected",
+    "Full rebuild follows under declared flags",
+    "Bash syntax and archived wrapper bytes match",
+    "Original native and v1 files remain unchanged"
+  ],
+  "proof_executed": false,
+  "P21_status": "NOT_RUN_AS_DEFINED"
+}

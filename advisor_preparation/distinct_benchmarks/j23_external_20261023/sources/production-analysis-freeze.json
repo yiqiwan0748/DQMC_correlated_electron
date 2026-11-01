@@ -1,0 +1,33 @@
+{
+  "schema": "J23_FULL_SAVED_COMPARATOR_REPLAY_ROOT_REVIEWED_FREEZE_V1",
+  "created_utc": "2026-10-23T19:52:07.761439+00:00",
+  "prefix": "j23_full_saved_replay_v1",
+  "files": {
+    "PLAN.md": "92c4324f66ff0f5d87ea87648aeb246755f6771e5e37ad305b1812980641e396",
+    "input_bindings.json": "939c5299a2963348a9e440603d6af9a75341f7014c462ef5c2570b10ce84ec9b",
+    "plan_manifest.json": "5ccb1088d3fba93511ae076b701e4b1866bbddeb0eaf081c92b0adb8543e83be",
+    "replay.sbatch": "77e52de516e507ce9f7d4caf0d21686d72e87ed33e996f5b8e3c89fdc142858d",
+    "run_replay.py": "66cc3c8c1673448803aa14ab68558607008d34262854b5dddbb602d2f00a3fc6"
+  },
+  "archive_sha256": "ed3d3de7f0eefca354022a34261c6f4e6f88b14327e52a2306a6b51566acbeea",
+  "archive_bytes": 8667,
+  "cpus": 1,
+  "memory_MB": 3500,
+  "allocation_minutes": 3,
+  "inner_timeout_seconds": 150,
+  "original_job": "6466733",
+  "source_raw_runtime_roles": 72,
+  "root_checks": [
+    "exact5memberplansource",
+    "ASTsyntax",
+    "onlyunchangedcomparatorchild",
+    "actual3.11.11realpath",
+    "72inputbeforeafterclosure",
+    "oneCPU3500guard",
+    "150secprocessgroupcap",
+    "nooriginalvaluesmodified",
+    "noHF/quadrature/fixtureproducer",
+    "0credit"
+  ],
+  "scientific_completions": 0
+}

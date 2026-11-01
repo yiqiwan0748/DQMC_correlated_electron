@@ -1,0 +1,38 @@
+{
+  "schema": "J23_EXCLUDED_PILOT_ENGINEERING_V1",
+  "status": "ELIGIBLE_FOR_SEPARATE_ROOT_REVIEW",
+  "source_freeze_sha256": "7b763ad944dd745d604957bf25556fdad06b2ff733f09cb6c25230f7db7b4043",
+  "execution_sha256": "48a20dc9086f39a23aa36d3b50ee3f3262866d6d9d15dd0f00ce3b4407c0a9f1",
+  "comparison_sha256": "a5b8aef23c66b3fc5cb92ed346c4007736dac6cf4bc4a343d2f1c52b20ab7612",
+  "pilot_job_id": "6466377",
+  "scientific_completions": 0,
+  "SCF_executed": false,
+  "max_pilot_rss_KiB": 467880,
+  "projected_full_peak_rss_KiB": 2640582.697265625,
+  "projected_full_seconds": 843.089746069317,
+  "components_seconds": {
+    "native": 286.0013279914856,
+    "reference": 92.50263698041933,
+    "comparator": 434.5857810974121,
+    "reserve": 30
+  },
+  "projection_formula": "2*14*sum(N^2)/32^2*(warm32pair+grid)+2max(nativecoldprocesses); independent reference/comparator pointcount-scaled2x; +30s; maxRSS+6xprojectedraw bytes; conditional engineering only",
+  "replay_roundoff": [],
+  "input_sha256": {
+    "native32.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparison.json": "a5b8aef23c66b3fc5cb92ed346c4007736dac6cf4bc4a343d2f1c52b20ab7612",
+    "native16.toml": "a4ec0c35dc9d3c9ddef06922f63b36b4fbb0dacc1a353da813c1a038cbdc0c9c",
+    "comparator.resources.txt": "70d45f90e48405c495b29ac4a0afbb7048656f1b6785fc5a81ec44b07d0ab725",
+    "native32.resources.txt": "5b3e7bf6479d1462cb29a02dfbb24528eddc1bd6ba6b8ea12390b23e84cefa0a",
+    "reference.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparator.log": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "reference.resources.txt": "223e127e2edb6f09634356d77c5e62de5515713bc86a41db5908834fb79ad068",
+    "reference.json": "a84be5efd2b6a17d51d3303089b620ff717c8b2ebde4d657c75b923a3d6ff558",
+    "native16.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "execution.json": "48a20dc9086f39a23aa36d3b50ee3f3262866d6d9d15dd0f00ce3b4407c0a9f1",
+    "native32.toml": "f9de0530db3c6df1bddd07af6134f043962c3c9645c445f88a5a2d592739b3f5",
+    "native16.resources.txt": "e1932d7c0ca934d56b1a83f0dc33318fcf456e5b410b2b17e88a37a0add1c467"
+  },
+  "separate_root_current_queue_admission_required": true,
+  "automatic_submission": false
+}

@@ -1,0 +1,68 @@
+schema = "bethe_ansatz_pilot_v1"
+phase = "PILOT_ONLY"
+release = "bethe_l24_pilot_v2"
+predecessor_manifest_sha256 = "0293c9e608dfb0ab827782533f6ab8173d2e16bf694b5a8ca37c441898e510c9"
+catalogue_ids = ["A18", "A19", "A20"]
+scientific_completion_allowed = false
+L = [24]
+U = 4.0
+t = 1.0
+mu_physical = 0.0
+boundary = "obc"
+sectors = ["half", "minus", "plus"]
+source_relative = "../../validated_package/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl"
+source_sha256 = "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+project_sha256 = "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+manifest_sha256 = "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+julia_version = "1.12.1"
+itensors_version = "0.9.30"
+itensormps_version = "0.4.1"
+numpy_version = "2.4.6"
+scipy_version = "1.17.1"
+
+[oracle]
+cutoff_x = 40.0
+quad_epsabs = 1e-12
+quad_epsrel = 1e-12
+quad_limit = 400
+gauss_orders = [128, 256]
+error_floor = 1e-12
+maximum_estimated_absolute_error = 1e-9
+energy_derivative_h = 0.01
+energy_derivative_check_abs = 1e-8
+
+[arms.coarse]
+chi_max = 256
+nsweeps = 18
+cutoff = 1e-12
+seed_base = 841001
+variance_per_site_max = 1e-6
+final_truncerr_max = 1e-8
+
+[arms.refined]
+chi_max = 512
+nsweeps = 24
+cutoff = 1e-13
+seed_base = 841002
+variance_per_site_max = 1e-8
+final_truncerr_max = 1e-10
+
+[gates]
+norm_abs = 1e-9
+sector_abs = 1e-8
+reported_contracted_energy_abs = 1e-8
+variance_min = -1e-8
+particle_hole_energy_abs = 2e-6
+coarse_refined_energy_per_site_abs = 5e-7
+coarse_refined_double_occupancy_abs = 5e-6
+coarse_refined_charge_gap_abs = 1e-5
+double_occupancy_min = -1e-10
+double_occupancy_max = 0.2500000001
+
+[resources]
+cpus = 1
+memory_mb = 3500
+wall_cap_minutes = 45
+target_command_cap_seconds = 2400
+estimated_after_start_minutes = [15, 40]
+runtime_status = "L24 UNMEASURED; 6 finite-chain DMRG solves. Preliminary 15-40 minute engineering range from prior L8/L12 pilot, not a measured L24 prediction. Scheduler wait separate; pilot can establish runtime/quality only."

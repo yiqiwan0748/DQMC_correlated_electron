@@ -1,0 +1,60 @@
+{
+  "schema": "public_scientific_leaf_closure_audit_v12",
+  "status": "PASS",
+  "ledger_sha256": "976272652f95647c133eed9c6261edeedfcf0833b38cf8bc44095398474d6338",
+  "counts": {
+    "PASS": 42,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 56
+  },
+  "changed_ids": [
+    "P21",
+    "X01",
+    "X09",
+    "X13",
+    "X16"
+  ],
+  "preserved_row_objects": 95,
+  "preserved_prior_PASS_rows": 39,
+  "new_public_files_checked": 99,
+  "prior_leaf_input_files_checked": 121,
+  "prior_leaf_analysis_receipts_checked": 18,
+  "scientific_text_archives": [
+    {
+      "path": "advisor_preparation/distinct_benchmarks/pc_continuation_20261023/P21/excluded_pilot_data.tar.gz",
+      "sha256": "7ebb242d419d657ad1a8a69817071f180b1b520836ae71719c90865e08583a8b",
+      "regular_text_members": 152
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/pc_continuation_20261023/P21/production_data.tar.gz",
+      "sha256": "a33af7c01e4cacc2626ef9c1976febb097679e20a542ab40a55d7630487f202f",
+      "regular_text_members": 958
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/pc_continuation_20261023/P21/proof_v5_data.tar.gz",
+      "sha256": "42b2913a623fa9584e88c8dc881d66bcac17acdb6fec71a003bcf02ac76c63e0",
+      "regular_text_members": 100
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/pc_continuation_20261023/X01/data.tar.gz",
+      "sha256": "66c269a5698dfe78fac8b5ceb1cda2e82888f912039bc24b46b39d0f0354c203",
+      "regular_text_members": 820
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/pc_continuation_20261023/X09/data.tar.gz",
+      "sha256": "863ebef38e6c225856c783a89f9508fada6ef0b602ae86143f4750b9994a633d",
+      "regular_text_members": 15
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/pc_continuation_20261023/X13_X16/data.tar.gz",
+      "sha256": "ecc1e5c6f2c0de1f8aec3d58ef7aa0fb31b2a79b5df175867b7d95717f4fe4e7",
+      "regular_text_members": 113
+    }
+  ],
+  "archive_regular_text_members": 2158,
+  "scientific_runs_executed": false,
+  "private_import_required": false,
+  "statistical_gates_changed": false,
+  "source_bytes_changed": false
+}

@@ -1,0 +1,102 @@
+{
+  "schema": "P17_FULL_BOUNDARY_RESPONSE_PUBLIC_RESULT_V1",
+  "status": "PASS_FULL_BOUNDARY_SPIN_RESPONSE_ONE_SCIENTIFIC_QUESTION",
+  "catalogue_id": "P17",
+  "scientific_credit_added": 1,
+  "question": "Does a weak magnetic field at one end of a Hubbard chain induce the correct spin pattern throughout the chain?",
+  "model": {
+    "lattice": "Open six-site one-dimensional Hubbard chain",
+    "particles": 6,
+    "hopping": 1.0,
+    "repulsion": 4.0,
+    "physical_chemical_potential": 0.0,
+    "boundary_perturbation": "-h*(n_up-n_down)/2 on site1",
+    "ensemble": "Zero-temperature fixed total particle number; all seven spin sectors checked",
+    "fields": [
+      0.0,
+      0.02,
+      -0.02,
+      0.01,
+      -0.01,
+      0.005,
+      -0.005
+    ]
+  },
+  "methods": {
+    "target": "User Hubbard MPO with ITensorMPS optimizer and new boundary-field/state-export validation adapters",
+    "independent_references": [
+      "TeNPy FermiHubbardModel with independently constructed boundary field and DMRG",
+      "QuSpin complete independent exact eigensystems in all fixed-particle spin sectors"
+    ],
+    "attribution": "ITensorMPS and TeNPy supply their respective optimizers. Field/export/contraction/certificate adapters are new validation code."
+  },
+  "coverage": {
+    "native_states": 28,
+    "tenpy_states": 28,
+    "reference_field_sector_certificates": 49,
+    "h0_spectral_response_sites": 6,
+    "profile_pair_site_checks": 1176,
+    "central_response_pair_site_checks": 504,
+    "linear_window_site_checks": 144
+  },
+  "original_reported_gates": {
+    "PASS": 6578,
+    "FAIL": 0
+  },
+  "independent_audits": {
+    "saved_metadata": {
+      "checks": 963,
+      "failed": 0
+    },
+    "saved_runtime": {
+      "checks": 9688,
+      "failed": 0,
+      "before_after_observations": 8
+    },
+    "saved_scientific_relationships": {
+      "checks": 17002,
+      "failed": 0
+    }
+  },
+  "fixed_acceptance_limits": {
+    "ground_energy": 1e-08,
+    "spin_profile": 2e-07,
+    "central_response": 0.0001,
+    "linear_response_window": 0.001,
+    "spectral_response_radius": 1e-05,
+    "residual_norm": 1e-08,
+    "positive_residual_squared": 1e-14,
+    "ground_distance": 5e-08
+  },
+  "observed_maxima": {
+    "profile_difference_with_radii": 3.606783876276649e-13,
+    "central_response_difference_with_radii": 6.823637977368383e-11,
+    "linear_window_difference_with_radii": 0.0003590736270704542,
+    "positive_residual_norm_upper": 7.077446247768453e-14,
+    "positive_residual_squared_upper": 5.009024539005173e-27,
+    "ground_distance_upper": 1.773224481451632e-13
+  },
+  "runtime_seconds": {
+    "whole_scheduler_job": 4145,
+    "comparison_child": 3271.139742217958
+  },
+  "resources": {
+    "cpus": 1,
+    "requested_memory_MB": 3500
+  },
+  "scope_limits": [
+    "One finite-cluster ground-state response question, not thermodynamic magnetism or whole-package reliability.",
+    "Seven field values, two truncation arms and two initial states are coverage of P17, not additional benchmark ideas.",
+    "Uncertainty budgets are conditional floating arithmetic, not directed-rounding interval arithmetic.",
+    "Saved receipt auditing checks recorded relationships and source/runtime identity; it does not independently repeat all Hamiltonian/tensor/eigensystem calculations.",
+    "Original signed subtractive variances remain unchanged diagnostics. Positive H-residual squared is separate.",
+    "TeNPy uses its source-defined hybrid local diagonalization policy; no claim of uniform Lanczos updates.",
+    "Timings document verification work and do not establish a production-solver speedup.",
+    "All earlier failed or unresolved attempts remain recorded."
+  ],
+  "scientific_package_versions": {
+    "ITensorMPS": "0.4.1",
+    "TeNPy": "1.1.1",
+    "QuSpin": "1.0.1"
+  }
+}

@@ -1,0 +1,54 @@
+ground_residual = 2.0430565126387644e-14
+energy = -2.1027484834620633
+source_sha256 = "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+job_id = "6457716"
+driver_sha256 = "5d944d56288e3d8460c9d1f89b6a24ff2a4475014596106889b205d0a255a590"
+
+[[rows]]
+sites = []
+purity = 1.0000000000000004
+[[rows]]
+sites = [0]
+purity = 0.3769762811028424
+[[rows]]
+sites = [1]
+purity = 0.3769762811028425
+[[rows]]
+sites = [0, 1]
+purity = 0.4713652367002053
+[[rows]]
+sites = [2]
+purity = 0.3769762811028425
+[[rows]]
+sites = [0, 2]
+purity = 0.19215599964073338
+[[rows]]
+sites = [1, 2]
+purity = 0.471365236700204
+[[rows]]
+sites = [0, 1, 2]
+purity = 0.3769762811028424
+[[rows]]
+sites = [3]
+purity = 0.3769762811028426
+[[rows]]
+sites = [0, 3]
+purity = 0.4713652367002041
+[[rows]]
+sites = [1, 3]
+purity = 0.19215599964073338
+[[rows]]
+sites = [0, 1, 3]
+purity = 0.37697628110284254
+[[rows]]
+sites = [2, 3]
+purity = 0.47136523670020536
+[[rows]]
+sites = [0, 2, 3]
+purity = 0.3769762811028425
+[[rows]]
+sites = [1, 2, 3]
+purity = 0.3769762811028424
+[[rows]]
+sites = [0, 1, 2, 3]
+purity = 1.0000000000000002

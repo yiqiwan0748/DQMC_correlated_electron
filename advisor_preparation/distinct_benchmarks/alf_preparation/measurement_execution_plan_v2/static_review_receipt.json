@@ -1,0 +1,21 @@
+{
+  "schema": "p21_execution_plan_v2_static_review",
+  "created_utc": "2026-10-22T19:08:33.690157+00:00",
+  "status": "STATIC_CHECKS_PASS_NOT_EXECUTED",
+  "catalogue_status": "NOT_RUN_AS_DEFINED",
+  "v2_archive_sha256": "755ce801cb4b60d08607121f6d1077421dca21c008fdb8b1373c58d99fc569d6",
+  "archive_files_replayed": 28,
+  "wrapper_bash_syntax": "PASS",
+  "literal_plan_command_block_bash_syntax": "PASS",
+  "v1_frozen_files_and_archive": "UNCHANGED",
+  "only_v2_source_differences": [
+    "README.md",
+    "manifest.toml",
+    "run_adapter_proofs.sh",
+    "new pre_execution_receipt.json"
+  ],
+  "cleanup_scope": "NEW copied ALF_observer only; make-j1cleanall, reject stale.o/.mod/.smod/.a and copiedALF.out",
+  "statistical_or_physics_runs": 0,
+  "source_algebra_review": "validation_design: no blocking product/buffer/weight/endpoint issue",
+  "build_provenance_review": "v2 clean fix confirmation requested; no execution yet"
+}

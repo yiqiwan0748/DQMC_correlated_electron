@@ -1,0 +1,549 @@
+number_of_checks = 109
+status = "passed"
+tolerance_rationale = "Density, stationary root, independent energy and matrix checks allow solver/Float64 roundoff; the looser 2e-6 finite-difference derivative bound includes central-difference truncation. Mesh and temperature differences are reported separately and are not erased by solver residuals."
+
+[[checks]]
+name = "AM Nk=192 T=0.025 h=0.0 density"
+passed = true
+absolute_error = 3.4861002973229915e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM Nk=192 T=0.025 h=0.0 stationarity"
+passed = true
+absolute_error = 1.2370069161701802e-17
+tolerance = 2.0e-9
+[[checks]]
+name = "AM Nk=192 T=0.025 h=0.0 h=Um/2"
+passed = true
+absolute_error = 6.185034580850901e-17
+tolerance = 1.0e-8
+[[checks]]
+name = "AM Nk=192 T=0.025 h=0.0 free energy double counting"
+passed = true
+absolute_error = 2.007283228522283e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "AM Nk=192 T=0.025 h=0.0 free energy finite difference"
+passed = true
+absolute_error = 7.54951780445798e-11
+tolerance = 2.0e-6
+[[checks]]
+name = "AM Nk=192 T=0.025 h=7.37863132853368 density"
+passed = true
+absolute_error = 1.2212453270876722e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM Nk=192 T=0.025 h=7.37863132853368 stationarity"
+passed = true
+absolute_error = 5.684341886080802e-14
+tolerance = 2.0e-9
+[[checks]]
+name = "AM Nk=192 T=0.025 h=7.37863132853368 h=Um/2"
+passed = true
+absolute_error = 2.851052727237402e-13
+tolerance = 1.0e-8
+[[checks]]
+name = "AM Nk=192 T=0.025 h=7.37863132853368 free energy double counting"
+passed = true
+absolute_error = 2.824407374646398e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "AM Nk=192 T=0.025 h=7.37863132853368 free energy finite difference"
+passed = true
+absolute_error = 3.4633274026418803e-10
+tolerance = 2.0e-6
+[[checks]]
+name = "FM Nk=192 T=0.025 h=0.0 density"
+passed = true
+absolute_error = 5.995204332975845e-15
+tolerance = 2.0e-11
+[[checks]]
+name = "FM Nk=192 T=0.025 h=0.0 stationarity"
+passed = true
+absolute_error = 1.9207319111938514e-16
+tolerance = 2.0e-9
+[[checks]]
+name = "FM Nk=192 T=0.025 h=0.0 h=Um/2"
+passed = true
+absolute_error = 9.603659555969257e-16
+tolerance = 1.0e-8
+[[checks]]
+name = "FM Nk=192 T=0.025 h=0.0 free energy double counting"
+passed = true
+absolute_error = 1.0480505352461478e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "FM Nk=192 T=0.025 h=0.0 free energy finite difference"
+passed = true
+absolute_error = 2.6645544664194876e-11
+tolerance = 2.0e-6
+[[checks]]
+name = "FM Nk=192 T=0.025 h=7.50000000000775 density"
+passed = true
+absolute_error = 2.220446049250313e-15
+tolerance = 2.0e-11
+[[checks]]
+name = "FM Nk=192 T=0.025 h=7.50000000000775 stationarity"
+passed = true
+absolute_error = 6.283862319378386e-14
+tolerance = 2.0e-9
+[[checks]]
+name = "FM Nk=192 T=0.025 h=7.50000000000775 h=Um/2"
+passed = true
+absolute_error = 3.1441516057384433e-13
+tolerance = 1.0e-8
+[[checks]]
+name = "FM Nk=192 T=0.025 h=7.50000000000775 free energy double counting"
+passed = true
+absolute_error = 1.213074085626431e-11
+tolerance = 3.0e-10
+[[checks]]
+name = "FM Nk=192 T=0.025 h=7.50000000000775 free energy finite difference"
+passed = true
+absolute_error = 8.944622820195036e-12
+tolerance = 2.0e-6
+[[checks]]
+name = "AM Nk=384 T=0.025 h=0.0 density"
+passed = true
+absolute_error = 3.5083047578154947e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM Nk=384 T=0.025 h=0.0 stationarity"
+passed = true
+absolute_error = 5.172830208882012e-18
+tolerance = 2.0e-9
+[[checks]]
+name = "AM Nk=384 T=0.025 h=0.0 h=Um/2"
+passed = true
+absolute_error = 2.586415104441006e-17
+tolerance = 1.0e-8
+[[checks]]
+name = "AM Nk=384 T=0.025 h=0.0 free energy double counting"
+passed = true
+absolute_error = 1.1191048088221578e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "AM Nk=384 T=0.025 h=0.0 free energy finite difference"
+passed = true
+absolute_error = 2.398081681462036e-10
+tolerance = 2.0e-6
+[[checks]]
+name = "AM Nk=384 T=0.025 h=7.378605425746408 density"
+passed = true
+absolute_error = 3.1086244689504383e-15
+tolerance = 2.0e-11
+[[checks]]
+name = "AM Nk=384 T=0.025 h=7.378605425746408 stationarity"
+passed = true
+absolute_error = 2.4202861936828413e-14
+tolerance = 2.0e-9
+[[checks]]
+name = "AM Nk=384 T=0.025 h=7.378605425746408 h=Um/2"
+passed = true
+absolute_error = 1.2079226507921703e-13
+tolerance = 1.0e-8
+[[checks]]
+name = "AM Nk=384 T=0.025 h=7.378605425746408 free energy double counting"
+passed = true
+absolute_error = 4.769518113789672e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "AM Nk=384 T=0.025 h=7.378605425746408 free energy finite difference"
+passed = true
+absolute_error = 9.767542330507695e-11
+tolerance = 2.0e-6
+[[checks]]
+name = "FM Nk=384 T=0.025 h=0.0 density"
+passed = true
+absolute_error = 1.3500311979441904e-13
+tolerance = 2.0e-11
+[[checks]]
+name = "FM Nk=384 T=0.025 h=0.0 stationarity"
+passed = true
+absolute_error = 4.5814318051090597e-17
+tolerance = 2.0e-9
+[[checks]]
+name = "FM Nk=384 T=0.025 h=0.0 h=Um/2"
+passed = true
+absolute_error = 2.29071590255453e-16
+tolerance = 1.0e-8
+[[checks]]
+name = "FM Nk=384 T=0.025 h=0.0 free energy double counting"
+passed = true
+absolute_error = 3.241851231905457e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "FM Nk=384 T=0.025 h=0.0 free energy finite difference"
+passed = true
+absolute_error = 7.416289346352865e-10
+tolerance = 2.0e-6
+[[checks]]
+name = "FM Nk=384 T=0.025 h=7.499999999972007 density"
+passed = true
+absolute_error = 1.4432899320127035e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "FM Nk=384 T=0.025 h=7.499999999972007 stationarity"
+passed = true
+absolute_error = 1.0658141036401503e-14
+tolerance = 2.0e-9
+[[checks]]
+name = "FM Nk=384 T=0.025 h=7.499999999972007 h=Um/2"
+passed = true
+absolute_error = 5.240252676230739e-14
+tolerance = 1.0e-8
+[[checks]]
+name = "FM Nk=384 T=0.025 h=7.499999999972007 free energy double counting"
+passed = true
+absolute_error = 4.2016168322334124e-11
+tolerance = 3.0e-10
+[[checks]]
+name = "FM Nk=384 T=0.025 h=7.499999999972007 free energy finite difference"
+passed = true
+absolute_error = 2.6634694449967355e-11
+tolerance = 2.0e-6
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=0.0 density"
+passed = true
+absolute_error = 3.108624468950438e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=0.0 stationarity"
+passed = true
+absolute_error = 4.490121653395046e-18
+tolerance = 2.0e-9
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=0.0 h=Um/2"
+passed = true
+absolute_error = 2.245060826697523e-17
+tolerance = 1.0e-8
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=0.0 free energy double counting"
+passed = true
+absolute_error = 2.6911806116913795e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=0.0 free energy finite difference"
+passed = true
+absolute_error = 2.2648549253341028e-10
+tolerance = 2.0e-6
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=7.378598021946566 density"
+passed = true
+absolute_error = 3.9968028886505635e-15
+tolerance = 2.0e-11
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=7.378598021946566 stationarity"
+passed = true
+absolute_error = 1.4876988529977098e-14
+tolerance = 2.0e-9
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=7.378598021946566 h=Um/2"
+passed = true
+absolute_error = 7.37188088351104e-14
+tolerance = 1.0e-8
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=7.378598021946566 free energy double counting"
+passed = true
+absolute_error = 3.126388037344441e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "AM Nk=384 T=0.0125 h=7.378598021946566 free energy finite difference"
+passed = true
+absolute_error = 5.240401446116039e-10
+tolerance = 2.0e-6
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=0.0 density"
+passed = true
+absolute_error = 1.509903313490213e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=0.0 stationarity"
+passed = true
+absolute_error = 5.1358995723817247e-17
+tolerance = 2.0e-9
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=0.0 h=Um/2"
+passed = true
+absolute_error = 2.5679497861908623e-16
+tolerance = 1.0e-8
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=0.0 free energy double counting"
+passed = true
+absolute_error = 3.161915174132446e-13
+tolerance = 3.0e-10
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=0.0 free energy finite difference"
+passed = true
+absolute_error = 1.9539920097503183e-10
+tolerance = 2.0e-6
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=7.499999999971745 density"
+passed = true
+absolute_error = 7.527312106958561e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=7.499999999971745 stationarity"
+passed = true
+absolute_error = 7.571721027943568e-14
+tolerance = 2.0e-9
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=7.499999999971745 h=Um/2"
+passed = true
+absolute_error = 3.7836400679225335e-13
+tolerance = 1.0e-8
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=7.499999999971745 free energy double counting"
+passed = true
+absolute_error = 4.18252099620986e-11
+tolerance = 3.0e-10
+[[checks]]
+name = "FM Nk=384 T=0.0125 h=7.499999999971745 free energy finite difference"
+passed = true
+absolute_error = 1.783928560428194e-11
+tolerance = 2.0e-6
+[[checks]]
+name = "AM independent density"
+passed = true
+absolute_error = 3.6415315207705135e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM independent moment"
+passed = true
+absolute_error = 3.5860203695392556e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM independent canonical free energy"
+passed = true
+absolute_error = 3.0819791163594346e-13
+tolerance = 2.0e-10
+[[checks]]
+name = "AM orbital 1 total density"
+passed = true
+absolute_error = 1.5987211554602254e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM orbital 2 total density"
+passed = true
+absolute_error = 2.0539125955565396e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "AM 2x2 bands k=(0.0,0.0) spin=1"
+passed = true
+absolute_error = 3.552713678800501e-15
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(0.0,0.0) spin=-1"
+passed = true
+absolute_error = 3.552713678800501e-15
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(π,0.0) spin=1"
+passed = true
+absolute_error = 4.440892098500626e-16
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(π,0.0) spin=-1"
+passed = true
+absolute_error = 8.881784197001252e-16
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(π,π) spin=1"
+passed = true
+absolute_error = 1.7763568394002505e-15
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(π,π) spin=-1"
+passed = true
+absolute_error = 1.7763568394002505e-15
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(0.137,0.831) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(0.137,0.831) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(1.213,-2.44) spin=1"
+passed = true
+absolute_error = 3.552713678800501e-15
+tolerance = 2.0e-13
+[[checks]]
+name = "AM 2x2 bands k=(1.213,-2.44) spin=-1"
+passed = true
+absolute_error = 3.552713678800501e-15
+tolerance = 2.0e-13
+[[checks]]
+name = "AM rotated opposite-spin bands k=(0.137,0.831)"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "AM rotated opposite-spin bands k=(1.213,-2.44)"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "AM rotated opposite-spin bands k=(π,0.0)"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM independent density"
+passed = true
+absolute_error = 7.061018436615996e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "FM independent moment"
+passed = true
+absolute_error = 2.8229640847143855e-12
+tolerance = 2.0e-11
+[[checks]]
+name = "FM independent canonical free energy"
+passed = true
+absolute_error = 6.963318810448982e-13
+tolerance = 2.0e-10
+[[checks]]
+name = "FM orbital 1 total density"
+passed = true
+absolute_error = 3.597122599785507e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "FM orbital 2 total density"
+passed = true
+absolute_error = 3.4638958368304884e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "FM 2x2 bands k=(0.0,0.0) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(0.0,0.0) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(π,0.0) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(π,0.0) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(π,π) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(π,π) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(0.137,0.831) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(0.137,0.831) spin=-1"
+passed = true
+absolute_error = 3.552713678800501e-15
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(1.213,-2.44) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "FM 2x2 bands k=(1.213,-2.44) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "PM independent density"
+passed = true
+absolute_error = 4.551914400963142e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "PM independent moment"
+passed = true
+absolute_error = 2.245060826697523e-18
+tolerance = 2.0e-11
+[[checks]]
+name = "PM independent canonical free energy"
+passed = true
+absolute_error = 3.82804898890754e-13
+tolerance = 2.0e-10
+[[checks]]
+name = "PM orbital 1 total density"
+passed = true
+absolute_error = 1.709743457922741e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "PM orbital 2 total density"
+passed = true
+absolute_error = 2.842170943040401e-14
+tolerance = 2.0e-11
+[[checks]]
+name = "PM 2x2 bands k=(0.0,0.0) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(0.0,0.0) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(π,0.0) spin=1"
+passed = true
+absolute_error = 4.440892098500626e-16
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(π,0.0) spin=-1"
+passed = true
+absolute_error = 4.440892098500626e-16
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(π,π) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(π,π) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(0.137,0.831) spin=1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(0.137,0.831) spin=-1"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(1.213,-2.44) spin=1"
+passed = true
+absolute_error = 2.220446049250313e-16
+tolerance = 2.0e-13
+[[checks]]
+name = "PM 2x2 bands k=(1.213,-2.44) spin=-1"
+passed = true
+absolute_error = 2.220446049250313e-16
+tolerance = 2.0e-13
+[[checks]]
+name = "PM spin degeneracy"
+passed = true
+absolute_error = 0.0
+tolerance = 2.0e-13

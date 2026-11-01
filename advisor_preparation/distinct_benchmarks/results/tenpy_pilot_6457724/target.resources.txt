@@ -1,0 +1,23 @@
+	Command being timed: "timeout 240 /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/runtime/julia-1.12.1/bin/julia --project=/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/renyi_corrected /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/tenpy/target_itensor.jl --manifest /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/distinct_benchmarks/tenpy/manifest.toml --output /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/tenpy_pilot_6457724/target.toml --pilot"
+	User time (seconds): 129.77
+	System time (seconds): 1.84
+	Percent of CPU this job got: 78%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:48.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1124340
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 284
+	Minor (reclaiming a frame) page faults: 1015663
+	Voluntary context switches: 7915
+	Involuntary context switches: 458
+	Swaps: 0
+	File system inputs: 314104
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

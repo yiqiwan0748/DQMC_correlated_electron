@@ -1,0 +1,52 @@
+{
+  "catalogue": {
+    "additional_credit": 0,
+    "id": "X08",
+    "status": "NOT_RUN"
+  },
+  "limitations": [
+    "One excluded coarse engineering arm; no independent-package or global fixed-particle-number ground-state reference, full convergence-arm comparison, discarded-weight calibration, solver accuracy or X08 completion.",
+    "No speedup claim. Whole-execution resource figures in the README are not solver-only timings.",
+    "Returned optimizer Ritz scalar and final original observer scalar are distinct from saved post-truncation state expectation values; their equality is not an acceptance criterion.",
+    "Opaque binary snapshot authenticity and recorded replay/source hooks were checked. A separate returned-MPS vector equality observation was not exported and is not claimed.",
+    "Runtime/provider associations are authenticated executed-source observations, not proof of compiled instruction identity or an atomic filesystem snapshot.",
+    "The guarded measurement/capture runner and serialized snapshots remain private. The included scientific projection and original/reference source are not a tested standalone reproducibility release."
+  ],
+  "original_executed_exact_reference": {
+    "description": "Independent authored exact dyadic finite-data reference executed during the original scientific run. The saved-record audit authenticates its complete recorded checkpoints and independently checks stored certificate arithmetic, rather than recalculating the underlying physical residuals.",
+    "entropy_cut_records": 21,
+    "recorded_snapshot_stages": [
+      3,
+      6,
+      12
+    ],
+    "reported_failed_checks": 0,
+    "reported_passing_checks": 2799,
+    "state_records": 17
+  },
+  "preparation_history": {
+    "protocol_publication_status": "Preserved unchanged from the initial publication candidate; this summary carries the current saved-record audit status."
+  },
+  "preservation": {
+    "binary_snapshots_deserialized_during_audit_or_projection": false,
+    "captured_code_executed_during_projection": false,
+    "clipping_phase_fitting_averaging_or_symmetrizing": false,
+    "code_data_protocol_and_data_dictionary_changed_from_prior_candidate": false,
+    "earlier_schema_hold_records": "Two earlier stopped audit interpretations remain privately retained; final audit corrected schema assumptions only. Original scientific source/data and run were unchanged.",
+    "new_scientific_run_during_audit_or_projection": false
+  },
+  "record_kind": "EXCLUDED_SINGLE_ENGINEERING_ARM",
+  "saved_record_audit": {
+    "check_count": 19094,
+    "coverage": [
+      "Complete retained-byte/source/protocol and executed-source/runtime qualification records.",
+      "Original journals, callback/scalar associations and opaque checkpoint size/hash/source associations.",
+      "Recorded rational residual inequalities, finite logarithm enclosures,17state records and21entropy-cut records."
+    ],
+    "failed_checks": 0,
+    "independent_physical_recomputation_on_audit_host": false,
+    "private_complete_result_sha256": "abfdd14eebdd779629432e3f8ee8c94264c57651dc9334a96803d6d6037aff6a",
+    "status": "PASS"
+  },
+  "schema": "SANITIZED_EXCLUDED_ENGINEERING_SAVED_RECORD_AUDIT_SUMMARY_V1"
+}

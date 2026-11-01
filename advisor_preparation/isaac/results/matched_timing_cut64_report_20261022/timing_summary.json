@@ -1,0 +1,178 @@
+{
+  "generated_utc": "2026-10-22T17:29:25.882435+00:00",
+  "campaign_mode": "cut-exploration",
+  "receipt_path": "/mnt/c/Users/神通广大/OneDrive/文档/ChatGPT/Idea/advisor_preparation/isaac/results/matched_timing_cut64_20261022.toml",
+  "receipt_sha256": "00145bb4e312426df3fb956c06624ca6a27c3b81cc7eec92ded172b1b22328ec",
+  "analysis_script_sha256": "d0e7a6676450404fa02a8fdaa9bb10276acbffebdd3d62d6cd4a61ec7ea422f9",
+  "metadata": {
+    "created_utc": "2026-10-22T17:26:40.230",
+    "finished_utc": "2026-10-22T17:28:24.406",
+    "comparison": "WITH versus WITHOUT rank-one Grover caching in the same locally lazy two-replica Renyi lambda-node workflow",
+    "scope": "Node-loop times include two replica updates, the same ratio measurements and sweep-boundary snapshots; initialization/common warmup/deepcopy/explicit GC/compilation are excluded and separately described. This is not a full lambda-grid entropy campaign.",
+    "primary_statistic": "ratio of median node-loop elapsed times for the declared exploratory L,nA; all attempted cuts retained",
+    "timing_uncertainty": "Paired bootstrap interval describes repeat-to-repeat timing jitter on this host, not hardware-independent performance uncertainty",
+    "source_root": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/renyi_corrected",
+    "julia_version": "1.12.1",
+    "host": "il1348",
+    "cpu": "model name\t: Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz",
+    "julia_threads": 1,
+    "blas_threads": 1,
+    "blas_config": "LBTConfig([ILP64] libopenblas64_.so)",
+    "slurm_job_id": "6457169",
+    "seeds": [
+      940031,
+      940032
+    ],
+    "registered_sizes": [
+      64
+    ],
+    "soft_budget_seconds": 600.0,
+    "runner_sha256": "aefc720f6626f020b455b0eb80d398b96a910b627b17cb1968984ac3bd4c4e8d",
+    "source_hashes": {
+      "src/HubbardRenyiDQMC.jl": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721",
+      "Project.toml": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+      "src/dqmc_kernel.jl": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+      "Manifest.toml": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+      "src/grover_rank1_update.jl": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+    },
+    "compilation_and_initial_probe_seconds_excluded": 5.126614093780518,
+    "campaign_class": "post_primary_subsystem_exploration",
+    "subsystem_sizes": [
+      64
+    ],
+    "cut_selection": "64",
+    "primary_campaign_runner_sha256": "56ce5e3c395df4aeb1fe0b7654e315a81e280c74b2f65bb0b0ab65a010d06c49",
+    "selection_disclosure": "Cut-size exploration designed after observing the original half-chain scaling campaign. Original primary results are retained; this is not part of its preregistered grid.",
+    "entropy_scope": "nA<L is a subsystem at finite temperature; nA=L is full-system thermal Renyi purity, not pure-state bipartite entanglement. Only a lambda=.5 node is timed, not the final entropy."
+  },
+  "protocol_metadata_checks": {
+    "declared_campaign_grid": true,
+    "one_Julia_thread": true,
+    "one_BLAS_thread": true,
+    "frozen_benchmark_source": true,
+    "source_hashes_present": true,
+    "corrected_kernel_source_hashes": true,
+    "registered_seeds": true,
+    "exploration_class_declared": true,
+    "declared_exploratory_cut": true,
+    "original_primary_runner_identified": true
+  },
+  "status_counts": {
+    "PASS": 1
+  },
+  "rows": [
+    {
+      "row_index": 1,
+      "L": 64,
+      "nA": 64,
+      "status": "PASS",
+      "requested_repeats": 7,
+      "completed_repeats": 7,
+      "two_replica_rounds": 12,
+      "median_direct_node_seconds": 9.577303071,
+      "median_optimized_node_seconds": 3.346926583,
+      "node_loop_speedup": 2.861521707600599,
+      "reported_node_loop_speedup": 2.861521707600599,
+      "ratio_recomputed_consistent": true,
+      "bootstrap_ratio_low": 2.7094481132909305,
+      "bootstrap_ratio_high": 3.007055337610314,
+      "update_kernel_speedup": 2.865214638567749,
+      "reported_update_kernel_speedup": 2.865214638567749,
+      "median_direct_kernel_seconds": 9.573594514999998,
+      "median_optimized_kernel_seconds": 3.341318443,
+      "median_direct_measurement_seconds": 0.002897961,
+      "median_optimized_measurement_seconds": 0.0034438940000000003,
+      "median_direct_allocated_bytes": 24897103200,
+      "median_optimized_allocated_bytes": 40805472,
+      "allocation_reduction_ratio": 610.1412869332819,
+      "median_direct_gc_seconds": 1.717152942,
+      "median_optimized_gc_seconds": 0.0,
+      "initialization_seconds_excluded": 0.12330102920532227,
+      "common_warmup_seconds_excluded": 1.8950960636138916,
+      "exact_replay_checks": {
+        "sweep_boundary_HS_fields_exact": true,
+        "sweep_acceptance_rates_exact": true,
+        "determinant_signs_exact": true,
+        "next_RNG_draws_exact": true
+      },
+      "correctness_maxima": {
+        "maximum_Green_absolute_error": 0.0,
+        "maximum_logdet_absolute_error": 0.0,
+        "maximum_measurement_absolute_error": 0.0,
+        "maximum_measurement_relative_error": 0.0,
+        "maximum_reported_deltaG": 1.042502889569974e-12
+      },
+      "production_claim_eligible": true,
+      "notes": []
+    }
+  ],
+  "all_correctness_maxima": {
+    "maximum_Green_absolute_error": 0.0,
+    "maximum_logdet_absolute_error": 0.0,
+    "maximum_measurement_absolute_error": 0.0,
+    "maximum_measurement_relative_error": 0.0,
+    "maximum_reported_deltaG": 1.042502889569974e-12
+  },
+  "headline_selection_rule": "Exploration never replaces the primary headline; all explored cuts must be disclosed.",
+  "headline_case": null,
+  "exploratory_comparisons": [
+    {
+      "row_index": 1,
+      "L": 64,
+      "nA": 64,
+      "status": "PASS",
+      "requested_repeats": 7,
+      "completed_repeats": 7,
+      "two_replica_rounds": 12,
+      "median_direct_node_seconds": 9.577303071,
+      "median_optimized_node_seconds": 3.346926583,
+      "node_loop_speedup": 2.861521707600599,
+      "reported_node_loop_speedup": 2.861521707600599,
+      "ratio_recomputed_consistent": true,
+      "bootstrap_ratio_low": 2.7094481132909305,
+      "bootstrap_ratio_high": 3.007055337610314,
+      "update_kernel_speedup": 2.865214638567749,
+      "reported_update_kernel_speedup": 2.865214638567749,
+      "median_direct_kernel_seconds": 9.573594514999998,
+      "median_optimized_kernel_seconds": 3.341318443,
+      "median_direct_measurement_seconds": 0.002897961,
+      "median_optimized_measurement_seconds": 0.0034438940000000003,
+      "median_direct_allocated_bytes": 24897103200,
+      "median_optimized_allocated_bytes": 40805472,
+      "allocation_reduction_ratio": 610.1412869332819,
+      "median_direct_gc_seconds": 1.717152942,
+      "median_optimized_gc_seconds": 0.0,
+      "initialization_seconds_excluded": 0.12330102920532227,
+      "common_warmup_seconds_excluded": 1.8950960636138916,
+      "exact_replay_checks": {
+        "sweep_boundary_HS_fields_exact": true,
+        "sweep_acceptance_rates_exact": true,
+        "determinant_signs_exact": true,
+        "next_RNG_draws_exact": true
+      },
+      "correctness_maxima": {
+        "maximum_Green_absolute_error": 0.0,
+        "maximum_logdet_absolute_error": 0.0,
+        "maximum_measurement_absolute_error": 0.0,
+        "maximum_measurement_relative_error": 0.0,
+        "maximum_reported_deltaG": 1.042502889569974e-12
+      },
+      "production_claim_eligible": true,
+      "notes": []
+    }
+  ],
+  "cv_candidate": null,
+  "figure": {
+    "status": "UNAVAILABLE",
+    "reason": "No module named 'matplotlib'"
+  },
+  "limitations": [
+    "One lambda=.5 node loop, not the complete final-entropy lambda grid.",
+    "Timing is host/workload specific; repeat bootstrap does not represent hardware-independent uncertainty.",
+    "This measures Grover determinant caching and removal of redundant candidate matrix work, not an isolated ordinary equal/unequal-time Green-function speedup.",
+    "Initialization, common warmup, compilation, deep copies and explicit pre-run GC are excluded; allocation-triggered GC inside the loop is included.",
+    "Unresolved/failed/pilot cases remain in the public summary and cannot supply a production CV number.",
+    "Post-primary cut-size exploration, designed after seeing the original scaling results.",
+    "The nA=L cut is full-system finite-temperature thermal Renyi purity; it is not pure-state bipartite entanglement."
+  ]
+}

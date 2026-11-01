@@ -1,0 +1,95 @@
+{
+  "id": "X06",
+  "schema": "dqmc_external_coverage_v1",
+  "mode": "pilot",
+  "status": "PILOT_ONLY",
+  "manifest_sha256": "ba4282ba512f9889a5f5dc55ca39a4f67ddf78b837026d2646d8df7c7215ef81",
+  "inputs": {
+    "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/distinct_X06_pilot01/pilot.toml": "c0cbbaca35171f185d0c6b49914520ce7943b62a8cdeec1d90d6b6ef907c19ae"
+  },
+  "analysis_source_sha256": "81d75e70684b3e93e2a112423ffa81a026b07ac5186bf8b2e3f4886ced8fa015",
+  "scipy_version": "1.17.1",
+  "reference": -1.46507267276697,
+  "scope": "Single interacting hopping fixture and actual eight-chain95% interval; no universalcoverage or Bonferroni-tail calibration claim.",
+  "replicates": [
+    {
+      "id": 1,
+      "value": -1.4608971470370147,
+      "standard_error": 0.005140223131215864,
+      "half_width_95": 0.012154696274671231,
+      "covered": true,
+      "quality_pass": true,
+      "split_rhat": 1.0,
+      "blocking_max_relative_change": 0.14391170877663073,
+      "effective_bins": 487.60738678801056,
+      "elapsed_seconds": 10.035674095153809
+    },
+    {
+      "id": 2,
+      "value": -1.4650847956055983,
+      "standard_error": 0.006047853682517427,
+      "half_width_95": 0.014300901487765435,
+      "covered": true,
+      "quality_pass": true,
+      "split_rhat": 1.0,
+      "blocking_max_relative_change": 0.1886565462642348,
+      "effective_bins": 458.3513427474339,
+      "elapsed_seconds": 1.3919849395751953
+    },
+    {
+      "id": 3,
+      "value": -1.4707335385608555,
+      "standard_error": 0.003919209309433754,
+      "half_width_95": 0.009267457380155263,
+      "covered": true,
+      "quality_pass": true,
+      "split_rhat": 1.0,
+      "blocking_max_relative_change": 0.1680018694844384,
+      "effective_bins": 465.5217486016835,
+      "elapsed_seconds": 1.396941900253296
+    },
+    {
+      "id": 4,
+      "value": -1.4673381425336167,
+      "standard_error": 0.0022412813154497322,
+      "half_width_95": 0.005299788153154215,
+      "covered": true,
+      "quality_pass": true,
+      "split_rhat": 1.0014316165426411,
+      "blocking_max_relative_change": 0.10816674020659195,
+      "effective_bins": 455.8612080253028,
+      "elapsed_seconds": 1.4524619579315186
+    }
+  ],
+  "metadata": [
+    {
+      "catalogue_id": "X06",
+      "mode": "pilot",
+      "oracle_sha256": "12eb9b383888a45219b0edd0fbef85aab0fb7b1a4e2a7c701bcbf788238c2571",
+      "last_replicate": 4,
+      "first_replicate": 1,
+      "julia_version": "1.12.1",
+      "blas_threads": 1,
+      "reference": -1.46507267276697,
+      "created_utc": "2026-10-22T18:23:10.492",
+      "schema": "dqmc_external_coverage_v1",
+      "manifest_sha256": "ba4282ba512f9889a5f5dc55ca39a4f67ddf78b837026d2646d8df7c7215ef81",
+      "seeds_sha256": "8bf488cab02f71ab147d86c595f941b984e7490e615146e38398fec221e9a0ce",
+      "job_id": "6457823",
+      "driver_sha256": "de708356be7aa79d45ff3329211c4af88c092f373b1f479ce722f28af7308404",
+      "source_hashes": {
+        "src/HubbardRenyiDQMC.jl": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721",
+        "Project.toml": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+        "src/dqmc_kernel.jl": "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be",
+        "Manifest.toml": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+        "src/grover_rank1_update.jl": "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+      }
+    }
+  ],
+  "raw_audit": "PASS",
+  "quality_failures": [],
+  "mean_sampling_seconds_per_replicate": 3.5692657232284546,
+  "planning_full400_sampling_seconds": 1427.7062892913818,
+  "planning_full400_seconds_at3x_pilot": 4283.1188678741455,
+  "planning_wall_cap_seconds_per_shard": 7200
+}

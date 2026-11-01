@@ -1,0 +1,59 @@
+{
+  "schema": "public_pyscf_leaf_closure_audit_v13",
+  "status": "PASS",
+  "ledger_sha256": "95205b58d9f2dfac9bcbf9afeb161cc8469af898d4cacc5b6c1d542caff95259",
+  "counts": {
+    "PASS": 44,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 54
+  },
+  "changed_ids": [
+    "P23",
+    "P24"
+  ],
+  "preserved_row_objects": 98,
+  "preserved_prior_PASS_rows": 42,
+  "preserved_prior_UNRESOLVED_rows": 2,
+  "public_input_files_checked": 36,
+  "previous_leaf_input_files_checked": 99,
+  "original39_evidence_copies_checked": 121,
+  "original39_analysis_receipts_checked": 18,
+  "archives": [
+    {
+      "archive": "sources/pyscf-two-orbital-v1-source.tar.gz",
+      "members": 26,
+      "sha256": "3c4644711b744897ebfdb52c937001cf262e8e81f5930c78f4a1d9e6fa1055cc"
+    },
+    {
+      "archive": "sources/pyscf-pilot-analysis-v2-source.tar.gz",
+      "members": 8,
+      "sha256": "12bbb6dd20447ff1e3b2cab4bc69c773bcf9ceb119f30a31d5624a3b944e0c9e"
+    },
+    {
+      "archive": "sources/pyscf-two-orbital-production-v2-source.tar.gz",
+      "members": 29,
+      "sha256": "a92f18307173a500317563ed888ccc5c3d1b44c53ad8d6616a77a52e3558074f"
+    },
+    {
+      "archive": "failed_pilot/data.tar.gz",
+      "members": 13,
+      "sha256": "d88918312b009f6d44c149772bbf3fe64b57404222eddd57e4450d64234427b5"
+    },
+    {
+      "archive": "repaired_pilot/data.tar.gz",
+      "members": 9,
+      "sha256": "cc26b3926374384a881e87bc3ef29e591e358b0c9f23c0a31277832b40f1ba45"
+    },
+    {
+      "archive": "production/data.tar.gz",
+      "members": 15,
+      "sha256": "9164ede9db58f4286a74b16e43c83183368735ab85f9d142c1b68105a46df65f"
+    }
+  ],
+  "archive_regular_text_members": 100,
+  "scientific_runs_executed": false,
+  "source_bytes_changed": false,
+  "scientific_gates_changed": false,
+  "pilot_repair_completion_credit": 0
+}

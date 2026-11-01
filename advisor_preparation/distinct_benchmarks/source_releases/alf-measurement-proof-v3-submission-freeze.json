@@ -1,0 +1,45 @@
+{
+  "schema": "p21_proof_submission_freeze_v3",
+  "created_utc": "2026-10-22T19:33:56.631921+00:00",
+  "status": "FROZEN_NOT_SUBMITTED_NOT_EXECUTED",
+  "scientific_completions": 0,
+  "catalogue_id": "P21",
+  "catalogue_status": "NOT_RUN_AS_DEFINED",
+  "wrapper_sha256": "27f935aef59a60b3ef7623c840b3523c9c26200937fb6e1f8fe5f9e5eac5ffcf",
+  "body_source": "../alf_preparation/measurement_execution_plan_v3/PLAN.md exact bash block plus one terminal newline",
+  "body_sha256": "8f7e2838bd64599c6eb1a117660cf968f5d84c06078c661cd21e8bb8c7abbd78",
+  "body_matches_reviewed_PLAN": true,
+  "observer_archive_sha256": "eaff11972ff34831893d51132ad805b6e415703a3dc10edc97a910dea050bf06",
+  "observer_archive_members_verified": 28,
+  "observer_inner_wrapper_sha256": "96c2624be665a7fc18c5db8a8db787558ab9c8cb18bcfd9db1d0033b46676ab6",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "unmeasured_runtime_estimate_minutes": [
+    2,
+    6
+  ],
+  "queue_delay_excluded_from_estimate": true,
+  "required_dependency": "afterany:6458547",
+  "root_fresh_resource_check_required": true,
+  "root_announcement_EDT_checkpoint_required": true,
+  "submissions_by_preparing_agent": 0,
+  "wrapper_syntax_check": "PASS",
+  "files": {
+    "postprocessing/alf_measurement_proof_v3.sbatch": "27f935aef59a60b3ef7623c840b3523c9c26200937fb6e1f8fe5f9e5eac5ffcf",
+    "alf_preparation/measurement_execution_plan_v3/PLAN.md": "0a4c5a495c0a6d6d4a22763eb9247e20510fca1aac54fcf0929022f4576186a0",
+    "alf_preparation/measurement_execution_plan_v3/bundle_receipt.json": "db8e7dbf73a7b7b590e8913b88e99976244282e8f1f7f56f6c2556fa3b3716b4",
+    "alf_preparation/measurement_execution_plan_v3/alf-measurement-observers-v3-source.tar.gz": "eaff11972ff34831893d51132ad805b6e415703a3dc10edc97a910dea050bf06",
+    "alf_preparation/measurement_preparation_v3/pre_execution_receipt.json": "69ca080d5956c52e9d47627fa37c0a3816982aaaebd6e334fbf792b2d2217ee8",
+    "alf_preparation/measurement_execution_plan_v3/static_review_receipt.json": "04ac465f33f25e38fa2daf84420995c95756087bac06e5458ce293fa23bdf82e"
+  },
+  "remote_paths": {
+    "wrapper": "source/distinct_benchmarks/postprocessing/alf_measurement_proof_v3.sbatch",
+    "archive": "source_releases/alf-measurement-observers-v3-source.tar.gz",
+    "extract_root": "source/p21_measurement_proof_v3",
+    "result_root": "results/p21_adapter_proof_v3_attempt01",
+    "log_candidate": "logs/alf_measurement_proof_v3_%j.log"
+  },
+  "prior_versions_preserved": true,
+  "science_prerequisite": "Native fixed-configuration and actual-user maintained-buffer eligibility proofs both pass; any sampling needs separate frozen protocol."
+}

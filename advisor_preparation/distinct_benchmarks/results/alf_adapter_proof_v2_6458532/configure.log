@@ -1,0 +1,15 @@
+
+[0;32mTemporary directory /tmp/tmp.LTQkEnHuIu created[0m
+
+serial job.
+
+Using newest stabilization which seperates large and small scales
+
+HDF5 disabled
+
+Appending additional compiler flag '-fno-fast-math -DOBS_LEGACY'
+
+[0;32mTemporary directory /tmp/tmp.LTQkEnHuIu deleted[0m
+
+To compile your program use:    'make'
+

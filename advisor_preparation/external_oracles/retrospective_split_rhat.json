@@ -1,0 +1,332 @@
+{
+  "status": "RETROSPECTIVE_DIAGNOSTIC_ONLY_ORIGINAL_RECEIPTS_UNCHANGED",
+  "simulations_started": 0,
+  "diagnostic": "Classic split-Rhat on paired leave-one-bin-out jackknife pseudovalues, matching run_external_validation.jl; not rank-normalized/folded, not a proof of equilibration",
+  "limit": 1.05,
+  "source_inputs": [
+    {
+      "path": "isaac/results/external_atomic_mc_4096.toml",
+      "sha256": "a69af55fb680a1b44eec95cdbae8bdb77439a456e9352031c660ca7ab323e094",
+      "protocol": "ORIGINAL_NO_LAZY_LOCAL_PROPOSALS"
+    },
+    {
+      "path": "isaac/results/external_thermal_mc_4096.toml",
+      "sha256": "7ebe40ac08650bcbcb4bf157cd3be5c0dad52320325afa00f93b1c32c0847e0e",
+      "protocol": "ORIGINAL_NO_LAZY_LOCAL_PROPOSALS"
+    },
+    {
+      "path": "isaac/results/mc_runtime_pilot_512.toml",
+      "sha256": "d0f71418249a5c0c745f049885928b35e03f7ce2dc798c48da93b15ff0ce0531",
+      "protocol": "ORIGINAL_NO_LAZY_LOCAL_PROPOSALS"
+    }
+  ],
+  "rows": [
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-01",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0003887144313808,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-02",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-03",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0003887144313819,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-04",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0029055080880995,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-05",
+      "original_arm_status": "UNRESOLVED",
+      "split_rhat": 2.226920122542521,
+      "limit": 1.05,
+      "retrospective_mixing_status": "REJECT_MIXING",
+      "known_atomic_kernel_fault_affects_fixture": true,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-06",
+      "original_arm_status": "UNRESOLVED",
+      "split_rhat": 2.2269201225428024,
+      "limit": 1.05,
+      "retrospective_mixing_status": "REJECT_MIXING",
+      "known_atomic_kernel_fault_affects_fixture": true,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-07",
+      "original_arm_status": "UNRESOLVED",
+      "split_rhat": 2.2269201225425115,
+      "limit": 1.05,
+      "retrospective_mixing_status": "REJECT_MIXING",
+      "known_atomic_kernel_fault_affects_fixture": true,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_atomic_mc_4096.toml",
+      "slurm_job_id": "6456805",
+      "case_id": "ATOM-08",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.023078075217706,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": true,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-01",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0098516700061702,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-02",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0012286249433051,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-03",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0054106006724346,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-04",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0010299310082766,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-05",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0110846290130042,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-06",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0017912961674287,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-07",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-08",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-09",
+      "original_arm_status": "UNRESOLVED",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-10",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0092932182258225,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-11",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-12",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.004185277892091,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-13",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-14",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0056166654457377,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-15",
+      "original_arm_status": "PASS",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/external_thermal_mc_4096.toml",
+      "slurm_job_id": "6456804",
+      "case_id": "QT-16",
+      "original_arm_status": "UNRESOLVED",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    },
+    {
+      "receipt": "isaac/results/mc_runtime_pilot_512.toml",
+      "slurm_job_id": "6456751",
+      "case_id": "QT-01",
+      "original_arm_status": "UNRESOLVED",
+      "split_rhat": 1.0,
+      "limit": 1.05,
+      "retrospective_mixing_status": "PASS_DIAGNOSTIC_ONLY",
+      "known_atomic_kernel_fault_affects_fixture": false,
+      "eligible_for_corrected_sampler_summary": false,
+      "reason": ""
+    }
+  ],
+  "counts": {
+    "PASS_DIAGNOSTIC_ONLY": 22,
+    "REJECT_MIXING": 3,
+    "UNRESOLVED_DIAGNOSTIC": 0
+  },
+  "known_fault_rows": 4,
+  "reporting_rule": "No original arm, including an original PASS or retrospective diagnostic pass, is merged into a corrected-kernel validation summary."
+}

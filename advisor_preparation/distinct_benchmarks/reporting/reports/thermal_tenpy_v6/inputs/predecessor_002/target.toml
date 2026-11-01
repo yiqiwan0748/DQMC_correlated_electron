@@ -1,0 +1,154 @@
+pilot = true
+attribution = "User Hubbard MPO and DMRG workflow; ITensorMPS supplies the optimizer. This file adds doped initialization and observables."
+adapter_sha256 = "37d787a0653ca0ca00675784fb30b41d877534aa1daac8ce95fa659e4b709aa4"
+schema = "tenpy_itensor_distinct_v1"
+manifest_sha256 = "7e5e557648f764ef438cc1092b3d5bb2316c1fac035514b4576b86b7034d9b5e"
+target_source_sha256 = "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+backend = "ITensorMPS"
+julia_version = "1.12.1"
+status = "PILOT_PARTIAL"
+elapsed_seconds = 118.3605740070343
+
+[library_versions]
+ITensorMPS = "0.4.1"
+ITensors = "0.9.30"
+
+[cases.doped.arms.coarse]
+variance = 3.8245673295023153e-10
+max_bond = 92
+strings = []
+rdm_trace = 1.0000000000000004
+energy = -5.930092234160778
+norm = 0.9999999999999999
+twoSz = -4.1278698113923653e-16
+final_truncerr = 6.701990853361363e-13
+density = [0.7490629004079712, 0.7876667686869155, 0.6883598981618979, 0.7749104327433877, 0.7749104327364147, 0.68835989812969, 0.7876667687998429, 0.749062900333881]
+N = 6.000000000000001
+reported_energy = -5.930092234160776
+elapsed_seconds = 116.71416091918945
+
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 1.1298434334666968e-8
+    N = 0
+    twoSz = 0
+    probabilities = [1.1298434334666968e-8]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.00021468296444615564
+    N = 1
+    twoSz = -1
+    probabilities = [0.0002145887854529576, 9.357220956822994e-8, 6.036651252998551e-10, 3.1185045368161493e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.00021468296543330405
+    N = 1
+    twoSz = 1
+    probabilities = [0.00021458878643983877, 9.357220983185587e-8, 6.036651288638518e-10, 3.1185045503013364e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499650948325525
+    N = 2
+    twoSz = -2
+    probabilities = [0.0014440599748046434, 5.896460926941064e-6, 5.915830883629972e-9, 2.7390805271970026e-9, 4.1895572208404974e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.13321827415244444
+    N = 2
+    twoSz = 0
+    probabilities = [0.1309477179652667, 0.001444059980070149, 0.0008194211165422014, 5.8964609620012475e-6, 1.0793639822905516e-6, 8.946133108396049e-8, 5.91583090617937e-9, 2.739080543616322e-9, 9.361410977771084e-10, 2.0828400768471263e-10, 4.189557240793451e-12, 7.638494546321867e-13]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499651054334826
+    N = 2
+    twoSz = 2
+    probabilities = [0.00144405998533538, 5.896460997056568e-6, 5.9158309287261626e-9, 2.73908056004441e-9, 4.189557260741246e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 3.0653167829702385e-5
+    N = 3
+    twoSz = -3
+    probabilities = [3.064799025383453e-5, 5.177575867851472e-9]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.36342176475832333
+    N = 3
+    twoSz = -1
+    probabilities = [0.36149429628421464, 0.001105385025072431, 0.0007829040831022826, 3.064799039611319e-5, 5.471837643296501e-6, 2.9721321206099373e-6, 7.884475197108738e-8, 5.177575900145014e-9, 2.7041646590782395e-9, 5.989343136182982e-10, 6.310462383269148e-11, 1.579912728303955e-11, 1.4433482021065565e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.3634217657436056
+    N = 3
+    twoSz = 1
+    probabilities = [0.36149429726013316, 0.001105385029319137, 0.0007829040880359738, 3.0647990538387167e-5, 5.471837673507002e-6, 2.9721321305950133e-6, 7.884475276631387e-8, 5.1775759324330245e-9, 2.704164676942037e-9, 5.989343169188422e-10, 6.310462397021405e-11, 1.5799127100821397e-11, 1.4433482102152022e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 3.0653168256622244e-5
+    N = 3
+    twoSz = 3
+    probabilities = [3.064799068065753e-5, 5.177575964714431e-9]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 4
+    twoSz = -4
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499650949346664
+    N = 4
+    twoSz = -2
+    probabilities = [0.0014440599749222867, 5.8964609123957955e-6, 5.915830949026888e-9, 2.739078948643027e-9, 4.190086291027077e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.133218274152073
+    N = 4
+    twoSz = 0
+    probabilities = [0.13094771796223792, 0.001444059980146995, 0.0008194211187149822, 5.896460946678741e-6, 1.079364381578343e-6, 8.946136321000497e-8, 5.9158309747578165e-9, 2.739078968268487e-9, 9.361373562461475e-10, 2.082779948973106e-10, 4.190086313641361e-12, 7.662627378314398e-13]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0014499651054527215
+    N = 4
+    twoSz = 2
+    probabilities = [0.0014440599853716867, 5.896460980959949e-6, 5.9158310004855655e-9, 2.7390789878849193e-9, 4.190086336270353e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 4
+    twoSz = 4
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 5
+    twoSz = -3
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0002146829645299103
+    N = 5
+    twoSz = -1
+    probabilities = [0.00021458878549226228, 9.357224232594516e-8, 6.036756361299274e-10, 3.1196859267287304e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.000214682965486545
+    N = 5
+    twoSz = 1
+    probabilities = [0.00021458878644858273, 9.357224263534134e-8, 6.036756409610957e-10, 3.1196859482422764e-12]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 5
+    twoSz = 3
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 6
+    twoSz = -2
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 1.1298483597708981e-8
+    N = 6
+    twoSz = 0
+    probabilities = [1.1298483597708981e-8]
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 6
+    twoSz = 2
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 7
+    twoSz = -1
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 7
+    twoSz = 1
+    probabilities = []
+    [[cases.doped.arms.coarse.sectors]]
+    weight = 0.0
+    N = 8
+    twoSz = 0
+    probabilities = []

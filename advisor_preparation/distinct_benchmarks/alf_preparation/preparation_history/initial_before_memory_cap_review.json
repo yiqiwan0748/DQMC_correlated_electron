@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-22T18:22:24.293560+00:00",
+  "status": "PREPARED_NOT_EXECUTED",
+  "catalogue_id": "P21",
+  "install_attempts": 0,
+  "scientific_runs": 0,
+  "files": {
+    "ADAPTER_PROTOCOL.md": "3fc3d76de3cc66808d71185c11743497f3f0d9a1076ed6e1aae60ad366704b49",
+    "manifest_candidate.toml": "9eb21f3cc8fcd536b218c81ecbb887ad27d2fcf6550c80a7b5e1634a6fc4c75a",
+    "parameters_interacting_candidate": "dce7d0834fa775aaf788c40ed5acc83ecba132e3646879696695ea52411d88d2",
+    "primary_source_receipt.json": "0891a2b2a091d154cfb7888554919cdd85ca50c0cf5c084d4eaa184813b945d3",
+    "README.md": "cc32dc6e96ef9b154c42efbc755a004571951292600ce4d022db7b0e5e1b1549",
+    "setup_candidate.sbatch": "cf1fba4104f2615d88f122025ee9269f590ff68a59a9745342b10a993935e5f1",
+    "setup_candidate.sh": "915bad50ae59d6cbe26ee072e2e92d0c1ec07e087f41e5eff35b7585f24282f3"
+  }
+}

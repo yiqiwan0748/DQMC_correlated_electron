@@ -1,0 +1,14 @@
+{
+  "schema": "P17_PUBLIC_RUNTIME_PROJECTION_PRIVACY_AUDIT_V1",
+  "status": "PASS_SELECTED_DIAGNOSTIC_PACKET_NO_EXTRA_SCIENTIFIC_CREDIT",
+  "independent_check_count": 77,
+  "selected_manifest_sha256": "ec83b83386d3ee344b42f890d7a874ed9ada9dc7b45d9042cd37627506e1e811",
+  "independent_review_receipt": {
+    "bytes": 11311,
+    "sha256": "eac89eecfcb7774ae4c46e0d7e6d5f41551e06f2be04213f24552730161599b5",
+    "body": "PRIVATE_BODY_EXCLUDED"
+  },
+  "scientific_completions": 0,
+  "catalogue_rows_changed": 0,
+  "runtime_qualification_granted": false
+}

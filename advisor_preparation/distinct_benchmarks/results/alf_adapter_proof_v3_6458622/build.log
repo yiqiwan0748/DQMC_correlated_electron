@@ -1,0 +1,105 @@
+Compiling Libraries
+cd Libraries && make
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries'
+(cd Modules;  make )
+make[2]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules'
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY runtime_error_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY mymats_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY random_wrap_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY errors_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY files_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY maxent_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY maxent_stoch_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY matrix_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY fourier_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY histograms_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY log_mesh_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY histograms_v2_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY lattices_v3_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY mpi_shared_mem_mod_v2.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY natural_constants_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY precdef_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY Mat_subroutines_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY entanglement_mod.F90
+entanglement_mod.F90:35:2:
+
+   35 | #warning "You are compiling entanglement without MPI. No Renyi entropy results possible, all other observables still work!"
+      |  1~~~~~~
+Warning: #warning "You are compiling entanglement without MPI. No Renyi entropy results possible, all other observables still work!" [-Wcpp]
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY alf_hdf5_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY check_omp_num_threads_mod.F90
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -fno-fast-math -DOBS_LEGACY iso8601_datetime_mod.F90
+ar -r modules_90.a runtime_error_mod.o errors_mod.o files_mod.o   fourier_mod.o histograms_mod.o histograms_v2_mod.o lattices_v3_mod.o log_mesh_mod.o mymats_mod.o matrix_mod.o maxent_mod.o   maxent_stoch_mod.o   mpi_shared_mem_mod_v2.o natural_constants_mod.o precdef_mod.o random_wrap_mod.o Mat_subroutines_mod.o entanglement_mod.o   alf_hdf5_mod.o check_omp_num_threads_mod.o   iso8601_datetime_mod.o
+ar: creating modules_90.a
+make[2]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules'
+(cd libqrref; make )
+make[2]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/libqrref'
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zgeqr2.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zgeqrf.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zlarf.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zlarfb.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zlarfg.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zlarft.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zung2r.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zungqr.f 
+gfortran -c -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp -fno-fast-math -DOBS_LEGACY zlapmr.f 
+ar -r libqrref.a zgeqr2.o zgeqrf.o zlarf.o zlarfb.o zlarfg.o zlarft.o zung2r.o zungqr.o  zlapmr.o
+ar: creating libqrref.a
+make[2]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/libqrref'
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries'
+Compiling Program
+cd Prog && make program
+make[1]: Entering directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Prog'
+./Git_config.sh
+Parsing Hamiltonian parameters
+./parse_ham.py --create_read_write_par
+filenames: Hamiltonians/Hamiltonian_Kondo_smod.F90 Hamiltonians/Hamiltonian_Kondo_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Hubbard_smod.F90 Hamiltonians/Hamiltonian_Hubbard_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_smod.F90 Hamiltonians/Hamiltonian_Hubbard_Plain_Vanilla_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_tV_smod.F90 Hamiltonians/Hamiltonian_tV_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_LRC_smod.F90 Hamiltonians/Hamiltonian_LRC_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Z2_Matter_smod.F90 Hamiltonians/Hamiltonian_Z2_Matter_read_write_parameters.F90
+filenames: Hamiltonians/Hamiltonian_Spin_Peierls_smod.F90 Hamiltonians/Hamiltonian_Spin_Peierls_read_write_parameters.F90
+Compiling program modules
+gfortran -c -o Hamiltonians/LRC_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Hamiltonians/LRC_mod.F90
+gfortran -c -o control_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY control_mod.F90
+gfortran -c -o Fields_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Fields_mod.F90
+gfortran -c -o Operator_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Operator_mod.F90
+gfortran -c -o WaveFunction_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY WaveFunction_mod.F90
+gfortran -c -o observables_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY observables_mod.F90
+gfortran -c -o ContainerElementBase_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY ContainerElementBase_mod.F90
+gfortran -c -o DynamicMatrixArray_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY DynamicMatrixArray_mod.F90
+gfortran -c -o OpTTypes_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY OpTTypes_mod.F90
+gfortran -c -o OpT_time_dependent.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY OpT_time_dependent.F90
+./parse_ham.py --create_hamiltonians_interface
+./parse_ham.py --create_hamiltonians_case
+gfortran -c -o Hamiltonian_main_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Hamiltonian_main_mod.F90
+gfortran -c -o QDRP_decompose_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY QDRP_decompose_mod.F90
+gfortran -c -o udv_state_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY udv_state_mod.F90
+gfortran -c -o Hop_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Hop_mod.F90
+gfortran -c -o UDV_WRAP_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY UDV_WRAP_mod.F90
+gfortran -c -o Predefined_Int_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Predefined_Int_mod.F90
+gfortran -c -o Predefined_Obs_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Predefined_Obs_mod.F90
+gfortran -c -o Predefined_Latt_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Predefined_Latt_mod.F90
+gfortran -c -o Predefined_Hop_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Predefined_Hop_mod.F90
+gfortran -c -o Predefined_Trial_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Predefined_Trial_mod.F90
+gfortran -c -o wrapul_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY wrapul_mod.F90
+gfortran -c -o cgr1_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY cgr1_mod.F90
+gfortran -c -o wrapur_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY wrapur_mod.F90
+gfortran -c -o cgr2_2_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY cgr2_2_mod.F90
+gfortran -c -o upgrade_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY upgrade_mod.F90
+gfortran -c -o Set_random_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Set_random_mod.F90
+gfortran -c -o Global_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Global_mod.F90
+gfortran -c -o Langevin_HMC_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Langevin_HMC_mod.F90
+gfortran -c -o Wrapgr_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY Wrapgr_mod.F90
+gfortran -c -o tau_m_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY tau_m_mod.F90
+gfortran -c -o tau_p_mod.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY tau_p_mod.F90
+gfortran -c -o main.o -std=f2008 -cpp -O3 -ffree-line-length-none -ffast-math -fopenmp  -DSTAB3  -I/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Libraries/Modules -fno-fast-math -DOBS_LEGACY main.F90
+main.F90:804:33:
+
+  804 |               Call Print_bin_Vec(Obs_scal(I),Group_Comm)
+      |                                 1
+Error: Function ‘obs_scal’ at (1) has no IMPLICIT type; did you mean ‘op_is_real’?
+make[1]: *** [Makefile:41: main.o] Error 1
+make[1]: Leaving directory '/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v3_attempt01/ALF_observer/Prog'
+make: *** [Makefile:14: program] Error 2

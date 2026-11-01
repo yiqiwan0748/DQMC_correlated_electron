@@ -1,0 +1,76 @@
+schema = "p21_native_observer_preparation_v3"
+catalogue_id = "P21"
+scientific_status = "NOT_RUN_AS_DEFINED"
+adapter_status = "GENERATED; NOT_COMPILED; ELIGIBILITY_PROOFS_NOT_EXECUTED"
+independent_package = "ALF2.6"
+alf_commit = "f4c500cc5d7bcf089400c63e4e75382c558a4ed3"
+user_kernel_original_sha256 = "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be"
+user_kernel_observer_sha256 = "911a61642b23a4465639c3b3e4c63ff9d7cf05d51da288f3224f1775c0aba891"
+previous_v1_v2_setup_files_modified = false
+sampling_or_propagation_algebra_modified = false
+measurement_primary = "Actual native ALF ObserT and actual user's maintained forward buffers before stabilization"
+full_ordering = "tau-major;spin(up,down);row_i;column_j; zero-based external indices"
+complex_components_per_order = 352
+orders = ["GT0", "G0T"]
+real_components_total = 1408
+spin_or_spatial_averaging = false
+matsubara_overall_minus = false
+
+[fixture]
+L = 4
+t = 1.0
+U = 2.0
+mu_centered = 0.0
+beta = 1.0
+dtau = 0.1
+Ltau = 10
+n_stab_or_wrap = 2
+boundary = "pbc"
+ensemble = "grand_canonical"
+slice_order = "B_l=exp(V_HS_l)*exp(-dtau*K)"
+symm = false
+checkerboard = false
+flavors = 2
+colors_per_flavor = 1
+alf_hs = "native exact continuous Mz Gaussian"
+user_hs = "exact discrete Hirsch"
+
+[eligibility]
+is_scientific_comparison = false
+native_alf_monte_carlo_sweeps = 0
+native_alf_fixed_configurations = 1
+user_update_calls = 32
+user_forward_reverse_cycles = 16
+user_seed = 20261022021
+user_buffer_tolerance = 5e-10
+alf_buffer_tolerance = 5e-10
+alf_slice_tolerance = 5e-12
+alf_wrong_KV_order_min_discrepancy = 1e-5
+trajectory_and_rng_replay = "exact"
+requires_complete_time_grid = true
+requires_contemporaneous_endpoint_checks = true
+requires_noMPI_noHDF5_OBS_LEGACY = true
+
+[resources_candidate]
+cpus = 1
+memory_mb = 3500
+wall_limit_minutes = 22
+full_rebuild_timeout_minutes = 15
+clean_timeout_seconds = 60
+clean_copied_objects_before_rebuild = true
+known_untracked_compiler_module = "Prog/opt_time_dependent_mod.mod"
+known_artifact_sha_size_log_before_removal = true
+strict_stale_file_assertion_relaxed = false
+prior_v2_attempt = "6458532: clean guard stopped before physics"
+native_fixed_configuration_timeout_seconds = 90
+user_eligibility_timeout_seconds = 180
+submit_automatically = false
+scientific_run_automatically = false
+
+[later_science]
+readiness = "BLOCKED_UNTIL_NATIVE_BUILD_AND_BOTH_ELIGIBILITY_PROOFS_PASS_AND_STATISTICAL_FREEZE_IS_WRITTEN"
+independent_chains_candidate = 8
+alpha_family_candidate = 0.01
+equivalence_margin_candidate = 0.02
+all_1408_real_components_retained = true
+scope = "One interacting finite-dtau real-hopping chain; ordinary user replica-update path only"

@@ -1,0 +1,284 @@
+cut_selection = "64"
+finished_utc = "2026-10-22T17:28:24.406"
+cpu = "model name\t: Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz"
+compilation_and_initial_probe_seconds_excluded = 5.126614093780518
+timing_uncertainty = "Paired bootstrap interval describes repeat-to-repeat timing jitter on this host, not hardware-independent performance uncertainty"
+subsystem_sizes = [64]
+blas_threads = 1
+selection_disclosure = "Cut-size exploration designed after observing the original half-chain scaling campaign. Original primary results are retained; this is not part of its preregistered grid."
+comparison = "WITH versus WITHOUT rank-one Grover caching in the same locally lazy two-replica Renyi lambda-node workflow"
+entropy_scope = "nA<L is a subsystem at finite temperature; nA=L is full-system thermal Renyi purity, not pure-state bipartite entanglement. Only a lambda=.5 node is timed, not the final entropy."
+campaign_class = "post_primary_subsystem_exploration"
+blas_config = "LBTConfig([ILP64] libopenblas64_.so)"
+runner_sha256 = "aefc720f6626f020b455b0eb80d398b96a910b627b17cb1968984ac3bd4c4e8d"
+registered_sizes = [64]
+julia_version = "1.12.1"
+slurm_job_id = "6457169"
+seeds = [940031, 940032]
+soft_budget_seconds = 600.0
+scope = "Node-loop times include two replica updates, the same ratio measurements and sweep-boundary snapshots; initialization/common warmup/deepcopy/explicit GC/compilation are excluded and separately described. This is not a full lambda-grid entropy campaign."
+created_utc = "2026-10-22T17:26:40.230"
+julia_threads = 1
+primary_statistic = "ratio of median node-loop elapsed times for the declared exploratory L,nA; all attempted cuts retained"
+host = "il1348"
+source_root = "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/renyi_corrected"
+primary_campaign_runner_sha256 = "56ce5e3c395df4aeb1fe0b7654e315a81e280c74b2f65bb0b0ab65a010d06c49"
+
+[source_hashes]
+"src/HubbardRenyiDQMC.jl" = "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721"
+"Project.toml" = "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+"src/dqmc_kernel.jl" = "b72bbbf158381b0f776c1fa259d532b069094c47e361d3490c19ea0f43ada4be"
+"Manifest.toml" = "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+"src/grover_rank1_update.jl" = "79064a0aa868ff7b5c665876bc5dd6eeeee17da2684b7a04807891c81d0d358e"
+
+[[results]]
+initialization_seconds_excluded = 0.12330102920532227
+nA = 64
+delta_lambda = 0.125
+L = 64
+boundary = "pbc"
+n_stab = 5
+paired_bootstrap_95pct_ratio_interval = [2.7094481132909305, 3.007055337610314]
+status = "PASS"
+t = 1.0
+lambda = 0.5
+dtau = 0.05
+completed_repeats = 7
+Ltau = 40
+common_warmup_seconds_excluded = 1.8950960636138916
+warmup_rounds_excluded = 2
+median_with_optimization_seconds = 3.346926583
+two_replica_update_rounds = 12
+mu_centered = 0.0
+beta = 2.0
+U = 2.0
+requested_repeats = 7
+ratio_of_median_node_times = 2.861521707600599
+median_without_optimization_seconds = 9.577303071
+ratio_of_median_update_kernel_times = 2.865214638567749
+
+    [[results.raw_timings]]
+    measurement_seconds = 0.006748693
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 1.925189828
+    repeat = 1
+    node_loop_seconds = 10.310153849
+    update_kernel_seconds = 10.303051575000001
+    allocated_bytes = 24898999072
+    execution_order = 1
+    other_loop_seconds = 0.0003535809999992978
+    [[results.raw_timings]]
+    measurement_seconds = 0.005289413
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 1
+    node_loop_seconds = 3.346926583
+    update_kernel_seconds = 3.341318443
+    allocated_bytes = 40807488
+    execution_order = 2
+    other_loop_seconds = 0.00031872700000009496
+    [[results.raw_timings]]
+    measurement_seconds = 0.002897961
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 1.817575471
+    repeat = 2
+    node_loop_seconds = 10.064393446
+    update_kernel_seconds = 10.061114734
+    allocated_bytes = 24897258304
+    execution_order = 2
+    other_loop_seconds = 0.00038075100000018337
+    [[results.raw_timings]]
+    measurement_seconds = 0.005856726000000001
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 2
+    node_loop_seconds = 3.388053461
+    update_kernel_seconds = 3.38181976
+    allocated_bytes = 40805664
+    execution_order = 1
+    other_loop_seconds = 0.0003769750000002011
+    [[results.raw_timings]]
+    measurement_seconds = 0.002776027
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 1.692129139
+    repeat = 3
+    node_loop_seconds = 9.358058158
+    update_kernel_seconds = 9.354966204
+    allocated_bytes = 24897103616
+    execution_order = 1
+    other_loop_seconds = 0.0003159270000002855
+    [[results.raw_timings]]
+    measurement_seconds = 0.0031525489999999993
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 3
+    node_loop_seconds = 3.236016584
+    update_kernel_seconds = 3.232626622
+    allocated_bytes = 40805472
+    execution_order = 2
+    other_loop_seconds = 0.00023741299999996933
+    [[results.raw_timings]]
+    measurement_seconds = 0.0025687550000000003
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 1.665938576
+    repeat = 4
+    node_loop_seconds = 9.210960243
+    update_kernel_seconds = 9.208000795
+    allocated_bytes = 24897102624
+    execution_order = 2
+    other_loop_seconds = 0.000390693000000364
+    [[results.raw_timings]]
+    measurement_seconds = 0.0028630290000000004
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 4
+    node_loop_seconds = 3.233395162
+    update_kernel_seconds = 3.2303545120000003
+    allocated_bytes = 40805472
+    execution_order = 1
+    other_loop_seconds = 0.00017762099999953356
+    [[results.raw_timings]]
+    measurement_seconds = 0.002469439
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 1.544424346
+    repeat = 5
+    node_loop_seconds = 8.141504143
+    update_kernel_seconds = 8.138831728000001
+    allocated_bytes = 24897010944
+    execution_order = 1
+    other_loop_seconds = 0.00020297599999926199
+    [[results.raw_timings]]
+    measurement_seconds = 0.003024788
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 5
+    node_loop_seconds = 3.473258963
+    update_kernel_seconds = 3.469988475
+    allocated_bytes = 40805408
+    execution_order = 2
+    other_loop_seconds = 0.0002457000000000713
+    [[results.raw_timings]]
+    measurement_seconds = 0.0030350049999999995
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 1.761023357
+    repeat = 6
+    node_loop_seconds = 9.816148919
+    update_kernel_seconds = 9.812829989
+    allocated_bytes = 24897103200
+    execution_order = 2
+    other_loop_seconds = 0.00028392499999894353
+    [[results.raw_timings]]
+    measurement_seconds = 0.004476305
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 6
+    node_loop_seconds = 3.399570635
+    update_kernel_seconds = 3.394780484
+    allocated_bytes = 40805504
+    execution_order = 1
+    other_loop_seconds = 0.00031384599999990936
+    [[results.raw_timings]]
+    measurement_seconds = 0.0035071869999999997
+    variant = "without_Grover_cache_direct_fused"
+    gc_seconds = 1.717152942
+    repeat = 7
+    node_loop_seconds = 9.577303071
+    update_kernel_seconds = 9.573594514999998
+    allocated_bytes = 24897103008
+    execution_order = 1
+    other_loop_seconds = 0.0002013690000011955
+    [[results.raw_timings]]
+    measurement_seconds = 0.0034438940000000003
+    variant = "with_rank1_Grover_cache"
+    gc_seconds = 0.0
+    repeat = 7
+    node_loop_seconds = 3.334032084
+    update_kernel_seconds = 3.330316326
+    allocated_bytes = 40805472
+    execution_order = 2
+    other_loop_seconds = 0.0002718639999997911
+
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 1.042502889569974e-12
+    maximum_logdet_absolute_error = 0.0
+    repeat = 1
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 1.042502889569974e-12
+    maximum_logdet_absolute_error = 0.0
+    repeat = 2
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 1.042502889569974e-12
+    maximum_logdet_absolute_error = 0.0
+    repeat = 3
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 1.042502889569974e-12
+    maximum_logdet_absolute_error = 0.0
+    repeat = 4
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 1.042502889569974e-12
+    maximum_logdet_absolute_error = 0.0
+    repeat = 5
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 1.042502889569974e-12
+    maximum_logdet_absolute_error = 0.0
+    repeat = 6
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true
+    [[results.correctness_checks]]
+    maximum_measurement_relative_error = 0.0
+    maximum_reported_deltaG = 1.042502889569974e-12
+    maximum_logdet_absolute_error = 0.0
+    repeat = 7
+    status = "PASS"
+    sweep_acceptance_rates_exact = true
+    maximum_measurement_absolute_error = 0.0
+    determinant_signs_exact = true
+    maximum_Green_absolute_error = 0.0
+    next_RNG_draws_exact = true
+    sweep_boundary_HS_fields_exact = true

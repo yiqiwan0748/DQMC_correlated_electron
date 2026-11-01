@@ -1,0 +1,17 @@
+{
+  "schema": "PUBLIC_J23_ORIGINAL_AUDIT_BINDINGS_V1",
+  "frozen_utc": "2026-10-23T19:59:34.367273+00:00",
+  "original_independent_audits": {
+    "pilot": "e9f350cf0280ae9bde9bbe2eabf0972f4185a4c42bb057b9766b2982417df47c",
+    "production": "3a01256a59c09ea64938a5ed99901fc486bd4b5c0c838e1c934db926249eed3d"
+  },
+  "original_auditor_sha256": {
+    "pilot": "899360edd906a42ce6293a6b595dd9788314cdc41bbd6929907c6659b02b7416",
+    "production": "8260bffc667c060d322072c88c76161be0e59db0c5bc3f519f5753a8464a2b34"
+  },
+  "source_archive_sha256": "5b78ce7ea96a31aedb5ee2c2a27e3f128667ae0121cf410219a13a4ae6ae6bbe",
+  "source_freeze_sha256": "7b763ad944dd745d604957bf25556fdad06b2ff733f09cb6c25230f7db7b4043",
+  "full_scientific_completions": 1,
+  "pilot_completion_credit": 0,
+  "private_transport_checks_not_replayed": true
+}

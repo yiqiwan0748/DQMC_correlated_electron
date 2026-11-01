@@ -1,0 +1,23 @@
+{
+  "schema": "ground_initial_v10_leaf_reporting_freeze_v1",
+  "created_utc": "2026-10-22T20:08:27.736757+00:00",
+  "status": "POSTPROCESSING_COMPLETED_MIXED_SCIENTIFIC_OUTCOME",
+  "counts": {
+    "PASS": 39,
+    "FAIL": 0,
+    "UNRESOLVED": 1,
+    "NOT_RUN": 60
+  },
+  "files": {
+    "reporting/merge_ground_initial_attempt.py": "e1772163bca3bae21cadb1a8048fd30b0ee90bedc1f56152f7a76bb638cb470a",
+    "reporting/leaf_rollup_common_v1.py": "f2211fcb1fc59c811ccda68587d2abea855b1cde933d9abea97119b064278a38",
+    "reporting/reports/ground_initial_v10/ledger_100.json": "abee1b7af4263979880d24afc679d1553567e2141caf16c41888c7c46cf2e228",
+    "reporting/reports/ground_initial_v10/input_manifest.json": "57d57bfa8ff27e6792fba4530cac0130c423d1605ebd27b5a054daad0c983bce"
+  },
+  "all38priorPASS_and98other_rows_unchanged": true,
+  "original_v1_results_unaltered": true,
+  "failed_precision_gates_retained": 15,
+  "precision_repair_applied": false,
+  "scientific_or_cluster_execution_by_reporter": false,
+  "independent_review_receipt": "../reporting/ground_initial_v10_review_receipt.json"
+}

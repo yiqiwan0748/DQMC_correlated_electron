@@ -1,0 +1,4838 @@
+{
+  "schema": "PYSCF_TWO_ORBITAL_INDEPENDENT_AUDIT_V1",
+  "audit_status": "PASS",
+  "integrity": "PASS",
+  "catalogue_ids": [
+    "P23",
+    "P24"
+  ],
+  "catalogue_status": {
+    "P23": "PASS",
+    "P24": "PASS"
+  },
+  "scientific_completions": 2,
+  "pilot_completion_credit": 0,
+  "physics_solver_executed": false,
+  "check_count": 847,
+  "checks": [
+    {
+      "name": "exact registered source freeze",
+      "passed": true
+    },
+    {
+      "name": "source PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "source PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "source README.md",
+      "passed": true
+    },
+    {
+      "name": "source REPAIR_PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "source SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "source assess_pilot_resources.py",
+      "passed": true
+    },
+    {
+      "name": "source catalogue_P23_P24.json",
+      "passed": true
+    },
+    {
+      "name": "source compare.py",
+      "passed": true
+    },
+    {
+      "name": "source manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "source native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "source oracle_pyscf.py",
+      "passed": true
+    },
+    {
+      "name": "source pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "source primary_sources/LICENSE",
+      "passed": true
+    },
+    {
+      "name": "source primary_sources/SOURCES.json",
+      "passed": true
+    },
+    {
+      "name": "source primary_sources/addons.py",
+      "passed": true
+    },
+    {
+      "name": "source primary_sources/cistring.py",
+      "passed": true
+    },
+    {
+      "name": "source primary_sources/direct_spin1.py",
+      "passed": true
+    },
+    {
+      "name": "source primary_sources/rdm.py",
+      "passed": true
+    },
+    {
+      "name": "source primary_sources/spin_op.py",
+      "passed": true
+    },
+    {
+      "name": "source production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "source reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "source repair_static_review.json",
+      "passed": true
+    },
+    {
+      "name": "source run_workflow.py",
+      "passed": true
+    },
+    {
+      "name": "source serialization_only.patch",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "source source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "source static_review_receipt.json",
+      "passed": true
+    },
+    {
+      "name": "source target.jl",
+      "passed": true
+    },
+    {
+      "name": "producer source pin PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "producer source pin PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin README.md",
+      "passed": true
+    },
+    {
+      "name": "producer source pin REPAIR_PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin assess_pilot_resources.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin catalogue_P23_P24.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin compare.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "producer source pin native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin oracle_pyscf.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "producer source pin primary_sources/LICENSE",
+      "passed": true
+    },
+    {
+      "name": "producer source pin primary_sources/SOURCES.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin primary_sources/addons.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin primary_sources/cistring.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin primary_sources/direct_spin1.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin primary_sources/rdm.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin primary_sources/spin_op.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "producer source pin reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin repair_static_review.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin run_workflow.py",
+      "passed": true
+    },
+    {
+      "name": "producer source pin serialization_only.patch",
+      "passed": true
+    },
+    {
+      "name": "producer source pin source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "producer source pin source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "producer source pin source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "producer source pin static_review_receipt.json",
+      "passed": true
+    },
+    {
+      "name": "producer source pin target.jl",
+      "passed": true
+    },
+    {
+      "name": "public mode explicit integrity arguments",
+      "passed": true
+    },
+    {
+      "name": "pinned public input manifest",
+      "passed": true
+    },
+    {
+      "name": "public manifest schema",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/README.md",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/REPAIR_PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/assess_pilot_resources.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/catalogue_P23_P24.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/compare.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/native_source_pins.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/oracle_pyscf.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/pilot.sbatch",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/primary_sources/LICENSE",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/primary_sources/SOURCES.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/primary_sources/addons.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/primary_sources/cistring.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/primary_sources/direct_spin1.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/primary_sources/rdm.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/primary_sources/spin_op.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/production.sbatch",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/reference_library_pins.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/repair_static_review.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/run_workflow.py",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/serialization_only.patch",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/source_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/source_snapshot/src/noninteracting.jl",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/source_snapshot/src/realspace_kinetic.jl",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/static_review_receipt.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash source/target.jl",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/comparator.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/comparator.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/comparator.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/execution.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/reference.json",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/reference.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/target.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/target.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/target.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "public input hash results/target.toml",
+      "passed": true
+    },
+    {
+      "name": "public input hash independent_replay/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "public manifest covers scientific raw and source freeze",
+      "passed": true
+    },
+    {
+      "name": "public original execution covered",
+      "passed": true
+    },
+    {
+      "name": "production all processes complete",
+      "passed": true
+    },
+    {
+      "name": "workflow cap",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash reference.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash target.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash reference.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash target.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash target.toml",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash reference.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash target.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash comparator.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash comparator.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash reference.json",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash comparison.json",
+      "passed": true
+    },
+    {
+      "name": "execution raw hash comparator.stdout.txt",
+      "passed": true
+    },
+    {
+      "name": "all7 registered fixtures",
+      "passed": true
+    },
+    {
+      "name": "installed reference 9 critical files",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay schema",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay mode",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay catalogue_ids",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay rows",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay completion_count",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay pilot_excluded",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay numerically_eligible",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay checks",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay manifold_receipts",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay exception",
+      "passed": true
+    },
+    {
+      "name": "fresh frozen comparator replay resource_warm_postprocessing_seconds",
+      "passed": true
+    },
+    {
+      "name": "replay raw hashes",
+      "passed": true
+    },
+    {
+      "name": "complete science gates",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/complete basis",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/eigen residual",
+      "error": 4.884981308350689e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/orthogonality",
+      "error": 1.0344346281940686e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/physical centering",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/retained raising amplitudes",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/retained lowering amplitudes",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization0",
+      "error": 1.8488927466117464e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage0",
+      "error": 6.522560269672797e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization1",
+      "error": 6.661338147750939e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage1",
+      "error": 9.22879950514623e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization2",
+      "error": 6.661338147750939e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage2",
+      "error": 1.3600232051658168e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization3",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage3",
+      "error": 9.35321469954889e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization4",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage4",
+      "error": 3.111305809825517e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization5",
+      "error": 4.884981308350689e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage5",
+      "error": 2.831068712794149e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization6",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage6",
+      "error": 1.887379141862766e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin quantization7",
+      "error": 7.734534656659139e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/spin leakage7",
+      "error": 4.163336342344338e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U0/free ground energy",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/complete basis",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/eigen residual",
+      "error": 4.558853294867049e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/orthogonality",
+      "error": 2.4424906541753444e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/retained raising amplitudes",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/retained lowering amplitudes",
+      "error": 9.71445146547012e-17,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization0",
+      "error": 8.628166150854817e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage0",
+      "error": 3.6082248300317597e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization1",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage1",
+      "error": 2.9004576518332215e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization2",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage2",
+      "error": 2.7200464103316335e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization3",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage3",
+      "error": 1.3045120539345607e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization4",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage4",
+      "error": 4.5536897820205285e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization5",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage5",
+      "error": 3.571918633781808e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization6",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage6",
+      "error": 2.581268532253489e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin quantization7",
+      "error": 1.1906869288179647e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/spin leakage7",
+      "error": 1.290634266126746e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U0/free ground energy",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/complete external energies",
+      "error": 1.3322676295501878e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group0/external projector",
+      "error": 1.5959455978986625e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group0/external spin labels",
+      "error": 9.860761315262648e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group0/external raising strength",
+      "error": 4.3910187985662745e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group0/external lowering strength",
+      "error": 3.0357660829594733e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group0/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group1/external projector",
+      "error": 9.020562075079397e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group1/external spin labels",
+      "error": 3.1086244689504383e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group1/external raising strength",
+      "error": 4.431676380034063e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group1/external lowering strength",
+      "error": 1.1817803680092058e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group1/external excitation",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group2/external projector",
+      "error": 9.020562075079397e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group2/external spin labels",
+      "error": 2.4424906541753444e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group2/external raising strength",
+      "error": 1.3467823861345617e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group2/external lowering strength",
+      "error": 3.146727399049906e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group2/external excitation",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group3/external projector",
+      "error": 8.534839501805891e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group3/external spin labels",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group3/external raising strength",
+      "error": 3.8624702394803075e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group3/external lowering strength",
+      "error": 3.6862873864515324e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group3/external excitation",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group4/external projector",
+      "error": 1.9914625504213745e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group4/external spin labels",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group4/external raising strength",
+      "error": 8.326672684688674e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group4/external lowering strength",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group4/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group5/external projector",
+      "error": 2.8449465006019636e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group5/external spin labels",
+      "error": 4.884981308350689e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group5/external raising strength",
+      "error": 1.7211709488198805e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group5/external lowering strength",
+      "error": 1.2739375526668163e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group5/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group6/external projector",
+      "error": 1.3461454173580023e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group6/external spin labels",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group6/external raising strength",
+      "error": 1.3189997054643946e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group6/external lowering strength",
+      "error": 6.586528197849707e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group6/external excitation",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group7/external projector",
+      "error": 5.342948306008566e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group7/external spin labels",
+      "error": 1.1133415822513733e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group7/external raising strength",
+      "error": 1.843143693225895e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group7/external lowering strength",
+      "error": 8.45677694538777e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U0/group7/external excitation",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/complete basis",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/eigen residual",
+      "error": 1.1102230246251565e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/orthogonality",
+      "error": 2.379774325922147e-13,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/physical centering",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/retained raising amplitudes",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/retained lowering amplitudes",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization0",
+      "error": 7.642090019328552e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage0",
+      "error": 2.775557561562893e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization1",
+      "error": 1.9984014443252818e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage1",
+      "error": 8.326672684688674e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization2",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage2",
+      "error": 1.3433698597964394e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization3",
+      "error": 1.9689968194316455e-27,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage3",
+      "error": 1.1324274851176961e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization4",
+      "error": 3.6534822038198293e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage4",
+      "error": 2.2933044352413398e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization5",
+      "error": 3.478999851541103e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage5",
+      "error": 7.216449660063518e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization6",
+      "error": 2.1693674893577825e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage6",
+      "error": 6.661338147750941e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin quantization7",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U2/spin leakage7",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/complete basis",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/eigen residual",
+      "error": 3.7192471324942744e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/orthogonality",
+      "error": 1.5543122344752192e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/retained raising amplitudes",
+      "error": 6.938893903907228e-17,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/retained lowering amplitudes",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization0",
+      "error": 6.7053176943786e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage0",
+      "error": 8.604228440844972e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization1",
+      "error": 3.9968028886505635e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage1",
+      "error": 1.942890293094024e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization2",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage2",
+      "error": 8.143485885625523e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization3",
+      "error": 7.870938567933167e-26,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage3",
+      "error": 7.061018436617351e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization4",
+      "error": 7.098805474418826e-28,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage4",
+      "error": 5.995204332975969e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization5",
+      "error": 1.9357907057024985e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage5",
+      "error": 1.7590096046404824e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization6",
+      "error": 2.6007757969005233e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage6",
+      "error": 7.216449660063519e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin quantization7",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U2/spin leakage7",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/complete external energies",
+      "error": 1.2434497875801753e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group0/external projector",
+      "error": 2.5673907444456745e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group0/external spin labels",
+      "error": 5.941108692445745e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group0/external raising strength",
+      "error": 9.940722105454778e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group0/external lowering strength",
+      "error": 1.256645107010783e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group0/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group1/external projector",
+      "error": 5.620504062164855e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group1/external spin labels",
+      "error": 4.218847493575595e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group1/external raising strength",
+      "error": 1.382594905781123e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group1/external lowering strength",
+      "error": 2.0170159730409243e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group1/external excitation",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group2/external projector",
+      "error": 1.1976530878143876e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group2/external spin labels",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group2/external raising strength",
+      "error": 4.279952013071022e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group2/external lowering strength",
+      "error": 1.5212492804212424e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group2/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group3/external projector",
+      "error": 1.3815337762679292e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group3/external spin labels",
+      "error": 7.674038885990003e-26,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group3/external raising strength",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group3/external lowering strength",
+      "error": 3.191891195797325e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group3/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group4/external projector",
+      "error": 3.3514857555871913e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group4/external spin labels",
+      "error": 6.733457254036843e-28,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group4/external raising strength",
+      "error": 5.750730055771528e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group4/external lowering strength",
+      "error": 4.885167994418135e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group4/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group5/external projector",
+      "error": 5.898059818321144e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group5/external spin labels",
+      "error": 1.5878907205483882e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group5/external raising strength",
+      "error": 1.6411427712157904e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group5/external lowering strength",
+      "error": 3.8100260966137936e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group5/external excitation",
+      "error": 1.3322676295501878e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group6/external projector",
+      "error": 7.494005416219807e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group6/external spin labels",
+      "error": 4.314083075427408e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group6/external raising strength",
+      "error": 4.5912794778113815e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group6/external lowering strength",
+      "error": 7.693188225079657e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group6/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group7/external projector",
+      "error": 4.3368086899420177e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group7/external spin labels",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group7/external raising strength",
+      "error": 3.765776062462662e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group7/external lowering strength",
+      "error": 9.13650153364818e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U2/group7/external excitation",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/complete basis",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/eigen residual",
+      "error": 1.8207657603852567e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/orthogonality",
+      "error": 5.188693283247321e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/physical centering",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/retained raising amplitudes",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/retained lowering amplitudes",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization0",
+      "error": 6.803925307531227e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage0",
+      "error": 6.938893903907236e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization1",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage1",
+      "error": 1.1934897514720433e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization2",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage2",
+      "error": 5.218048215738236e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization3",
+      "error": 1.735493991486226e-28,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage3",
+      "error": 4.274358644806883e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization4",
+      "error": 2.4732647848164445e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage4",
+      "error": 1.8318679906315134e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization5",
+      "error": 4.061401066723803e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage5",
+      "error": 8.326672684688677e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization6",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage6",
+      "error": 9.992007221626409e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin quantization7",
+      "error": 8.011868568650901e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N2_U6/spin leakage7",
+      "error": 1.1102230246251581e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/complete basis",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/eigen residual",
+      "error": 3.9968028886505635e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/orthogonality",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/retained raising amplitudes",
+      "error": 7.806255641895632e-17,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/retained lowering amplitudes",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization0",
+      "error": 2.428212473883427e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage0",
+      "error": 5.273559366969497e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization1",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage1",
+      "error": 8.243405957841787e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization2",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage2",
+      "error": 4.385380947269368e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization3",
+      "error": 7.446846945286351e-28,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage3",
+      "error": 8.913009219568835e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization4",
+      "error": 3.4147426212989956e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage4",
+      "error": 1.9151347174784006e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization5",
+      "error": 1.8193104626659585e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage5",
+      "error": 1.6930901125533683e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization6",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage6",
+      "error": 1.4988010832439613e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin quantization7",
+      "error": 1.7749370367472766e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N2_U6/spin leakage7",
+      "error": 6.106226635438363e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/complete external energies",
+      "error": 1.7319479184152442e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group0/external projector",
+      "error": 2.949029909160572e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group0/external spin labels",
+      "error": 4.3757128336478e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group0/external raising strength",
+      "error": 2.3716601122595246e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group0/external lowering strength",
+      "error": 4.36749006775118e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group0/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group1/external projector",
+      "error": 1.6445178552260131e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group1/external spin labels",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group1/external raising strength",
+      "error": 2.9885945730303113e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group1/external lowering strength",
+      "error": 2.447482686039445e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group1/external excitation",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group2/external projector",
+      "error": 7.528699885739343e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group2/external spin labels",
+      "error": 1.9984014443252818e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group2/external raising strength",
+      "error": 2.974771949562596e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group2/external lowering strength",
+      "error": 2.06492357157256e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group2/external excitation",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group3/external projector",
+      "error": 1.8943180357666733e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group3/external spin labels",
+      "error": 5.7113529538001255e-28,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group3/external raising strength",
+      "error": 4.996003610813204e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group3/external lowering strength",
+      "error": 4.996003610813204e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group3/external excitation",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group4/external projector",
+      "error": 1.0755285551056204e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group4/external spin labels",
+      "error": 9.414778364825511e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group4/external raising strength",
+      "error": 4.085122795085352e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group4/external lowering strength",
+      "error": 5.22877232238919e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group4/external excitation",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group5/external projector",
+      "error": 7.563394355258879e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group5/external spin labels",
+      "error": 1.4131703559935782e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group5/external raising strength",
+      "error": 8.82911839682826e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group5/external lowering strength",
+      "error": 1.4968142236188527e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group5/external excitation",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group6/external projector",
+      "error": 6.591949208711867e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group6/external spin labels",
+      "error": 1.3322676295501878e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group6/external raising strength",
+      "error": 5.0191359614650576e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group6/external lowering strength",
+      "error": 8.267100346456806e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group6/external excitation",
+      "error": 1.3322676295501878e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group7/external projector",
+      "error": 2.636779683484747e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group7/external spin labels",
+      "error": 6.2369315319036246e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group7/external raising strength",
+      "error": 2.4954441919703347e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group7/external lowering strength",
+      "error": 1.1228604103173067e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N2_U6/group7/external excitation",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/complete basis",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/eigen residual",
+      "error": 5.440092820663267e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/orthogonality",
+      "error": 2.9091312692131055e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/physical centering",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/retained raising amplitudes",
+      "error": 6.661338147750939e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/retained lowering amplitudes",
+      "error": 6.661338147750939e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization0",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage0",
+      "error": 6.557254739192331e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization1",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage1",
+      "error": 7.979727989493313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization2",
+      "error": 3.2444702641488792e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage2",
+      "error": 3.4714203697896643e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization3",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage3",
+      "error": 1.061650767297806e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization4",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage4",
+      "error": 5.9109483337360175e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization5",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage5",
+      "error": 3.8880015872331585e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization6",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage6",
+      "error": 2.0539125955565396e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin quantization7",
+      "error": 8.883995092113029e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/spin leakage7",
+      "error": 1.7299818190437389e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U0/free ground energy",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/complete basis",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/eigen residual",
+      "error": 7.435024818036595e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/orthogonality",
+      "error": 6.661338147750939e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/retained raising amplitudes",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/retained lowering amplitudes",
+      "error": 5.551115123125783e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization0",
+      "error": 1.5543122344752192e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage0",
+      "error": 7.352794590519473e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization1",
+      "error": 4.218847493575595e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage1",
+      "error": 9.020562075079397e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization2",
+      "error": 3.806425037845513e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage2",
+      "error": 5.585277032786588e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization3",
+      "error": 3.1086244689504383e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage3",
+      "error": 1.7114644244856426e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization4",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage4",
+      "error": 8.604228440844963e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization5",
+      "error": 9.769962616701378e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage5",
+      "error": 7.874021067573272e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization6",
+      "error": 6.217248937900877e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage6",
+      "error": 4.08006961549745e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin quantization7",
+      "error": 3.1086244689504383e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/spin leakage7",
+      "error": 3.731868076592376e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U0/free ground energy",
+      "error": 5.329070518200751e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/complete external energies",
+      "error": 1.1546319456101628e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group0/external projector",
+      "error": 2.211772431870429e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group0/external spin labels",
+      "error": 1.5543122344752192e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group0/external raising strength",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group0/external lowering strength",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group0/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group1/external projector",
+      "error": 1.700029006457271e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group1/external spin labels",
+      "error": 4.218847493575595e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group1/external raising strength",
+      "error": 5.473909184592431e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group1/external lowering strength",
+      "error": 1.839235584462448e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group1/external excitation",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group2/external projector",
+      "error": 8.933825901280557e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group2/external spin labels",
+      "error": 5.619547736966335e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group2/external raising strength",
+      "error": 3.1391479882467e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group2/external lowering strength",
+      "error": 1.0890171289772324e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group2/external excitation",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group3/external projector",
+      "error": 1.7433970933566911e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group3/external spin labels",
+      "error": 1.3322676295501878e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group3/external raising strength",
+      "error": 8.09722362703273e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group3/external lowering strength",
+      "error": 2.4957009206293097e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group3/external excitation",
+      "error": 4.440892098500626e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group4/external projector",
+      "error": 8.829742492721948e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group4/external spin labels",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group4/external raising strength",
+      "error": 4.101149576619119e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group4/external lowering strength",
+      "error": 1.912519543625562e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group4/external excitation",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group5/external projector",
+      "error": 9.123495407585744e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group5/external spin labels",
+      "error": 1.0658141036401503e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group5/external raising strength",
+      "error": 4.924539084366606e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group5/external lowering strength",
+      "error": 1.4668679545738851e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group5/external excitation",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group6/external projector",
+      "error": 4.701100619897147e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group6/external spin labels",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group6/external raising strength",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group6/external lowering strength",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group6/external excitation",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group7/external projector",
+      "error": 3.157196726277789e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group7/external spin labels",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group7/external raising strength",
+      "error": 5.256826424115128e-20,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group7/external lowering strength",
+      "error": 2.8519709048384955e-20,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U0/group7/external excitation",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/complete basis",
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/eigen residual",
+      "error": 5.551115123125783e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/orthogonality",
+      "error": 1.4523232048323216e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/physical centering",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/retained raising amplitudes",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/retained lowering amplitudes",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization0",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization1",
+      "error": 5.551115123125783e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage1",
+      "error": 1.9984014443252818e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization2",
+      "error": 9.090142842397475e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage2",
+      "error": 1.865148387316613e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization3",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage3",
+      "error": 2.262313980333396e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization4",
+      "error": 1.3322676295501878e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage4",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization5",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage5",
+      "error": 7.062439262124798e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization6",
+      "error": 6.433756280896162e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage6",
+      "error": 4.5390300594726795e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin quantization7",
+      "error": 5.9445200082620105e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/DIR_N2_U1/spin leakage7",
+      "error": 1.5830794288560686e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/direction analytic E",
+      "error": 7.105427357601002e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/direction raising2",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/direction lowering0",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/complete basis",
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/eigen residual",
+      "error": 2.8468260572644225e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/orthogonality",
+      "error": 1.5543122344752192e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/retained raising amplitudes",
+      "error": 8.321251673826247e-17,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/retained lowering amplitudes",
+      "error": 9.860761315262648e-32,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization0",
+      "error": 7.889756939549784e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage0",
+      "error": 5.567033887094899e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization1",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage1",
+      "error": 4.801901391819469e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization2",
+      "error": 1.0719705366117169e-32,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage2",
+      "error": 7.957974397453988e-17,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization3",
+      "error": 5.551115123125783e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage3",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization4",
+      "error": 2.4424906541753444e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage4",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization5",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage5",
+      "error": 4.996003610813204e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization6",
+      "error": 1.0578002906682474e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage6",
+      "error": 6.759258843024454e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin quantization7",
+      "error": 2.4554997567998008e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/DIR_N2_U1/spin leakage7",
+      "error": 2.676472897255612e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/direction analytic E",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/direction raising2",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/direction lowering0",
+      "error": 5.777301316140586e-31,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/complete external energies",
+      "error": 9.325873406851315e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group0/external projector",
+      "error": 4.996003610813204e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group0/external spin labels",
+      "error": 7.889756939549784e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group0/external raising strength",
+      "error": 3.4642931888669682e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group0/external lowering strength",
+      "error": 3.464293188866968e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group0/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group1/external projector",
+      "error": 1.3877787807814457e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group1/external spin labels",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group1/external raising strength",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group1/external lowering strength",
+      "error": 2.5857338885394503e-33,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group1/external excitation",
+      "error": 1.2878587085651816e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group2/external projector",
+      "error": 1.0258208645975804e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group2/external spin labels",
+      "error": 9.079423137031358e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group2/external raising strength",
+      "error": 4.311529377175072e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group2/external lowering strength",
+      "error": 7.512997105095214e-65,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group2/external excitation",
+      "error": 8.215650382226158e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group3/external projector",
+      "error": 1.1379786002407855e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group3/external spin labels",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group3/external raising strength",
+      "error": 1.6888434579421545e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group3/external lowering strength",
+      "error": 7.99074546912692e-33,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group3/external excitation",
+      "error": 9.769962616701378e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group4/external projector",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group4/external spin labels",
+      "error": 3.3306690738754696e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group4/external raising strength",
+      "error": 7.040845018900258e-32,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group4/external lowering strength",
+      "error": 1.2966192333633988e-31,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group4/external excitation",
+      "error": 9.325873406851315e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group5/external projector",
+      "error": 3.0854576993445054e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group5/external spin labels",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group5/external raising strength",
+      "error": 3.121666577670632e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group5/external lowering strength",
+      "error": 7.990745469126916e-33,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group5/external excitation",
+      "error": 9.325873406851315e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group6/external projector",
+      "error": 2.9923834260839904e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group6/external spin labels",
+      "error": 6.327976251829337e-29,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group6/external raising strength",
+      "error": 1.814891160945607e-33,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group6/external lowering strength",
+      "error": 5.598865774945462e-32,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group6/external excitation",
+      "error": 7.993605777301127e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group7/external projector",
+      "error": 9.981493996207563e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group7/external spin labels",
+      "error": 5.6989700325820305e-30,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group7/external raising strength",
+      "error": 5.429973030582238e-32,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group7/external lowering strength",
+      "error": 3.2896067802501635e-64,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "DIR_N2_U1/group7/external excitation",
+      "error": 5.329070518200751e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/complete basis",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/eigen residual",
+      "error": 6.38961522020679e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/orthogonality",
+      "error": 2.962959738672666e-13,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/physical centering",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/retained raising amplitudes",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/retained lowering amplitudes",
+      "error": 3.3306690738754696e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization0",
+      "error": 7.297272987739916e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage0",
+      "error": 8.751264001451846e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization1",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage1",
+      "error": 1.0269562977782698e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization2",
+      "error": 7.021145053675333e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage2",
+      "error": 1.4023397433055296e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization3",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage3",
+      "error": 9.159339953157541e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization4",
+      "error": 4.060362249540503e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage4",
+      "error": 1.2767632815560312e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization5",
+      "error": 1.5234739529527775e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage5",
+      "error": 8.977193988179977e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization6",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage6",
+      "error": 6.328271240363392e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin quantization7",
+      "error": 8.427927109570329e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U2/spin leakage7",
+      "error": 8.465450562766819e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/complete basis",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/eigen residual",
+      "error": 5.329051248303122e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/orthogonality",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/retained raising amplitudes",
+      "error": 5.551115123125783e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/retained lowering amplitudes",
+      "error": 3.885780586188048e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization0",
+      "error": 1.1854415148265203e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage0",
+      "error": 4.98257480031369e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization1",
+      "error": 5.329070518200751e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage1",
+      "error": 1.2212453270876722e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization2",
+      "error": 5.322987409322027e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage2",
+      "error": 6.857025419008468e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization3",
+      "error": 5.551115123125783e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage3",
+      "error": 1.27675647831893e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization4",
+      "error": 1.8968260132820174e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage4",
+      "error": 1.783327515091877e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization5",
+      "error": 8.731807542520715e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage5",
+      "error": 1.484099301785058e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization6",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage6",
+      "error": 1.1291315105133037e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin quantization7",
+      "error": 2.075459075387133e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U2/spin leakage7",
+      "error": 9.992946262065423e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/complete external energies",
+      "error": 2.3092638912203256e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group0/external projector",
+      "error": 1.3097162243624894e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group0/external spin labels",
+      "error": 1.915168813600512e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group0/external raising strength",
+      "error": 3.1965014297700547e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group0/external lowering strength",
+      "error": 7.942746519415897e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group0/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group1/external projector",
+      "error": 1.1796119636642288e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group1/external spin labels",
+      "error": 5.329070518200751e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group1/external raising strength",
+      "error": 1.3260029803190018e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group1/external lowering strength",
+      "error": 1.017233610729813e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group1/external excitation",
+      "error": 1.2434497875801753e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group2/external projector",
+      "error": 2.3592239273284576e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group2/external spin labels",
+      "error": 1.6981576443533064e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group2/external raising strength",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group2/external lowering strength",
+      "error": 1.1102230246251565e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group2/external excitation",
+      "error": 9.769962616701378e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group3/external projector",
+      "error": 1.8388068845354155e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group3/external spin labels",
+      "error": 1.9984014443252818e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group3/external raising strength",
+      "error": 3.5417065713118896e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group3/external lowering strength",
+      "error": 8.119837872023304e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group3/external excitation",
+      "error": 8.881784197001252e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group4/external projector",
+      "error": 8.847089727481716e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group4/external spin labels",
+      "error": 2.3028622382360677e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group4/external raising strength",
+      "error": 1.1102230246251565e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group4/external lowering strength",
+      "error": 2.886579864025407e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group4/external excitation",
+      "error": 4.440892098500626e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group5/external projector",
+      "error": 3.1143707404646115e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group5/external spin labels",
+      "error": 1.7316791028843352e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group5/external raising strength",
+      "error": 4.596895288513484e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group5/external lowering strength",
+      "error": 4.6572261654782795e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group5/external excitation",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group6/external projector",
+      "error": 2.7994100093575724e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group6/external spin labels",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group6/external raising strength",
+      "error": 2.9071385239099636e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group6/external lowering strength",
+      "error": 1.2527155454234926e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group6/external excitation",
+      "error": 6.217248937900877e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group7/external projector",
+      "error": 6.505213034913027e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group7/external spin labels",
+      "error": 1.0503386184957462e-17,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group7/external raising strength",
+      "error": 9.992007221626409e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group7/external lowering strength",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U2/group7/external excitation",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/complete basis",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/eigen residual",
+      "error": 1.7319479184152442e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/orthogonality",
+      "error": 4.2039288716821943e-13,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/physical centering",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/retained raising amplitudes",
+      "error": 2.7755575615628914e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/retained lowering amplitudes",
+      "error": 5.551115123125783e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization0",
+      "error": 1.0849450596576128e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage0",
+      "error": 4.7199104838428e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization1",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage1",
+      "error": 8.916478666520788e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization2",
+      "error": 1.4935093924336385e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage2",
+      "error": 1.5542934989122896e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization3",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage3",
+      "error": 1.5543122344752192e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization4",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage4",
+      "error": 1.5543122344752192e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization5",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage5",
+      "error": 2.3314683517128287e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization6",
+      "error": 3.747082664198089e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage6",
+      "error": 3.3999380909800024e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin quantization7",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "target/N4_U6/spin leakage7",
+      "error": 1.942890293094024e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/complete basis",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/finite full arrays",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/independent geometry",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/independent Fock H",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/independent Fock C",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/independent Fock S2",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/eigen residual",
+      "error": 7.993605777301127e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/orthogonality",
+      "error": 2.886579864025407e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/H S2 commutator",
+      "error": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/complete8 clusters",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/ground multiplicity",
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/retained raising amplitudes",
+      "error": 4.996003610813204e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/retained lowering amplitudes",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization0",
+      "error": 8.461987440430752e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage0",
+      "error": 9.251298085076205e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization1",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage1",
+      "error": 2.4424906541753444e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization2",
+      "error": 6.172800815663981e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage2",
+      "error": 2.7258484174496586e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization3",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage3",
+      "error": 4.524158825347513e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization4",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage4",
+      "error": 6.8833827526759706e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization5",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage5",
+      "error": 1.6653345369377348e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization6",
+      "error": 4.667444340884035e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage6",
+      "error": 6.050864861470664e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin quantization7",
+      "error": 3.9968028886505635e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "reference/N4_U6/spin leakage7",
+      "error": 3.941291737419306e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/complete external energies",
+      "error": 3.552713678800501e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group0/external projector",
+      "error": 1.2836953722228372e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group0/external spin labels",
+      "error": 2.387463156145376e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group0/external raising strength",
+      "error": 4.231095159735548e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group0/external lowering strength",
+      "error": 6.952614677340721e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group0/external excitation",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group1/external projector",
+      "error": 1.93421667571414e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group1/external spin labels",
+      "error": 1.7763568394002505e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group1/external raising strength",
+      "error": 5.595358339835031e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group1/external lowering strength",
+      "error": 5.666723082211537e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group1/external excitation",
+      "error": 5.329070518200751e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group2/external projector",
+      "error": 1.214306433183765e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group2/external spin labels",
+      "error": 6.322151754907345e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group2/external raising strength",
+      "error": 6.106226635438361e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group2/external lowering strength",
+      "error": 4.996003610813204e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group2/external excitation",
+      "error": 4.440892098500626e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group3/external projector",
+      "error": 4.3368086899420177e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group3/external spin labels",
+      "error": 1.3322676295501878e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group3/external raising strength",
+      "error": 2.943331644637158e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group3/external lowering strength",
+      "error": 1.0205200729546403e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group3/external excitation",
+      "error": 8.881784197001252e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group4/external projector",
+      "error": 3.7643499428696714e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group4/external spin labels",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group4/external raising strength",
+      "error": 5.798753777687236e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group4/external lowering strength",
+      "error": 4.2589330040211127e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group4/external excitation",
+      "error": 8.881784197001252e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group5/external projector",
+      "error": 1.700029006457271e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group5/external spin labels",
+      "error": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group5/external raising strength",
+      "error": 5.597595780600909e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group5/external lowering strength",
+      "error": 3.929003872990765e-19,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group5/external excitation",
+      "error": 3.552713678800501e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group6/external projector",
+      "error": 4.852888924045118e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group6/external spin labels",
+      "error": 8.414527005082124e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group6/external raising strength",
+      "error": 7.771561172376096e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group6/external lowering strength",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group6/external excitation",
+      "error": 5.329070518200751e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group7/external projector",
+      "error": 3.5227095066778993e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group7/external spin labels",
+      "error": 2.220446049250313e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group7/external raising strength",
+      "error": 5.4481568486445085e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group7/external lowering strength",
+      "error": 2.2995308280014654e-18,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "N4_U6/group7/external excitation",
+      "error": 2.6645352591003757e-15,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "all56 manifold records",
+      "passed": true
+    }
+  ],
+  "complete_case_count": 7,
+  "complete_manifold_count": 56,
+  "case_metrics": [
+    {
+      "case_id": "N2_U0",
+      "dimension": 64,
+      "ground_energy": -4.499999999999999,
+      "ground_multiplicity": 1,
+      "manifolds": 8,
+      "total_raising": 1.0,
+      "total_lowering": 1.0
+    },
+    {
+      "case_id": "N2_U2",
+      "dimension": 64,
+      "ground_energy": -4.395831525580128,
+      "ground_multiplicity": 1,
+      "manifolds": 8,
+      "total_raising": 0.986497372151748,
+      "total_lowering": 0.9864973721517478
+    },
+    {
+      "case_id": "N2_U6",
+      "dimension": 64,
+      "ground_energy": -4.36306070887858,
+      "ground_multiplicity": 1,
+      "manifolds": 8,
+      "total_raising": 0.984871537923505,
+      "total_lowering": 0.9848715379235047
+    },
+    {
+      "case_id": "N4_U0",
+      "dimension": 784,
+      "ground_energy": -8.45154846037792,
+      "ground_multiplicity": 4,
+      "manifolds": 8,
+      "total_raising": 2.0,
+      "total_lowering": 2.0000000000000004
+    },
+    {
+      "case_id": "DIR_N2_U1",
+      "dimension": 16,
+      "ground_energy": -3.0355339059327306,
+      "ground_multiplicity": 1,
+      "manifolds": 8,
+      "total_raising": 1.9999999999999998,
+      "total_lowering": 0.0
+    },
+    {
+      "case_id": "N4_U2",
+      "dimension": 784,
+      "ground_energy": -7.956623442990157,
+      "ground_multiplicity": 1,
+      "manifolds": 8,
+      "total_raising": 2.8479514859023265,
+      "total_lowering": 2.8479514859023265
+    },
+    {
+      "case_id": "N4_U6",
+      "dimension": 784,
+      "ground_energy": -7.622488560366385,
+      "ground_multiplicity": 1,
+      "manifolds": 8,
+      "total_raising": 2.631418247054011,
+      "total_lowering": 2.6314182470540106
+    }
+  ],
+  "source_archive_sha256": "a92f18307173a500317563ed888ccc5c3d1b44c53ad8d6616a77a52e3558074f",
+  "source_freeze_sha256": "469eda04dfaf88287513fdf670871057cb0f4c24a65fd996ce8be9268ba58bc2",
+  "input_sha256": {
+    "independent_replay/comparison.json": "12d4a6dfb8e0c339ce028ee18e4d914c2455496b1c2e9d51eed326f52b8e132d",
+    "recorded_independent_replay/comparison.json": "c8dd0313c3634e09aea74af5861d346081cfe51a76033a8e86269fe8afe3d5ff",
+    "results/comparator.resources.txt": "4b937c05b1bddd392092ffe83ebd1d9e3af8ad7cadfa6c7d552b47eb62043713",
+    "results/comparator.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/comparator.stdout.txt": "c2938c9788d3cb3c1dc626908315dd45da8534d79a7988d008f3f22687f64fd0",
+    "results/comparison.json": "08124ba6764ea91ec445c41d8f5cc660627d7e9b82a1f8353915081b6533d715",
+    "results/execution.json": "96e30e674b6a5e3287a0480f097f1010c1cc6ef923bf07c4ada83a9fc3faea63",
+    "results/reference.json": "557efcada71d13b8c1eb60c8347adbc787d0ef598b9b261d0b3c6570eacd596f",
+    "results/reference.resources.txt": "6dcbbaad63e3a6a85429f431707bcc1ceb5254c520441eb5be0398f68b00a5f5",
+    "results/reference.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/reference.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.resources.txt": "1292d10d1433270c0bc7c7e2ed93ff944c27895eeefbc40628d8022846057229",
+    "results/target.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/target.toml": "6a1c161abc6443109660b7fc7856d7d610172701689fbc47300856e1d859d2eb",
+    "scheduler_own_job.txt": "a81ed3d5f984b2b0b4e47c57eb5d890812160349b0b0e60beb80a9ed9e2864d2",
+    "source/PROTOCOL.md": "78b79e2360a27d3e5f1376fd5922612c7f352a52bff9bcd89654a77321209947",
+    "source/PROVENANCE.json": "104bb49ea25c81c984fbf895641042b23d6a95a92bddac11cfa810fc6a6c0204",
+    "source/README.md": "f4fcb879a25c065e42c84efda8c4e6a0c979bb63590118fe02ab7d88874eeb60",
+    "source/REPAIR_PROVENANCE.json": "ff6e99e0a99b47e66cb12d3e04490e193f350e3a6dc200538e975344843dda48",
+    "source/SHA256SUMS": "0f70ad46c2c650824b80c052ed852843fe93786b8bdb914830fe910089fbaf5d",
+    "source/assess_pilot_resources.py": "dfeab078755631ba527c5b5a15a96531e69acc705b4089c4c32af62a11319b58",
+    "source/catalogue_P23_P24.json": "130093880d9dcde49a658ba09d203417f5a846fa4923ab70bcce10d0d97a6a4a",
+    "source/compare.py": "f3f4405ee861ec8d95b578a390bb34b4d2a7afbef384141d85d064e5f42ed6ac",
+    "source/manifest.toml": "c19550d7c8b22dd33b6f0eba75f1d3294eb11df6f63cd97ff881ad953fa12330",
+    "source/native_source_pins.json": "9403943a35d42f7adb49f49781b25cdcfa2d29d7c682e96d1ce9244827cf1437",
+    "source/oracle_pyscf.py": "0615b413919d26faf27df473719919210a789d36afd8cbf762fec8a99c5b8ba9",
+    "source/pilot.sbatch": "e7b661c57c0abf36aa6304bce79e0d86091c42f5e28a5d4dcd41233d0b9f44f0",
+    "source/primary_sources/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "source/primary_sources/SOURCES.json": "b06fdac75b1599b5dfecc3de4f3f141e85cc38cc52fb88ae8c04f40c43913d7f",
+    "source/primary_sources/addons.py": "a317adbe693172d8006bd4ded4355a1cfe004018d4dd9061e9b28f211e989517",
+    "source/primary_sources/cistring.py": "f06a025d3eee7895d9e33d3cf4f2fbb22fabb94b555aad4c18fe6783e99db1be",
+    "source/primary_sources/direct_spin1.py": "df00b56a8a4f996bbe4bddbb697db08b64c6f3110d68765ad5ac6798dff87d2d",
+    "source/primary_sources/rdm.py": "d66cd9412a6a44fb937a4b6d35e1393798a73e2809713637d985328591fd4a9b",
+    "source/primary_sources/spin_op.py": "a820086c0b58774dee42c7eb489fcafc118b89b8cfe208bae6573ffba09d0343",
+    "source/production.sbatch": "5e75de345dcd39f253e14301967b7568603f12c68c12ded6354372d7199e2ff0",
+    "source/reference_library_pins.json": "8944a79591e4c068ffe8db47d44f891d47fb4da84c5cc8b0b3b6e67f915cdc4b",
+    "source/repair_static_review.json": "3a48debeefcd18949ff95ffc61fb63f42ee1069ea4e9908f0ce0b90037cc8a4b",
+    "source/run_workflow.py": "22f4919e877cd0339cb07da1171e0d1019aeba839f9936470f8f5082d52fe592",
+    "source/serialization_only.patch": "f021ec54ce18472e56f840e33d3ed395d30bb072f723bc1f6d7272fe4bef470c",
+    "source/source_freeze.json": "469eda04dfaf88287513fdf670871057cb0f4c24a65fd996ce8be9268ba58bc2",
+    "source/source_snapshot/scripts/two_orbital_open_cluster_ed.jl": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751",
+    "source/source_snapshot/src/noninteracting.jl": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568",
+    "source/source_snapshot/src/realspace_kinetic.jl": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6",
+    "source/static_review_receipt.json": "4a0ca13e6da4a9b8eb747bf5749ccfab7b2db0a7255e3f5663a065962630d1c0",
+    "source/target.jl": "3c5e3032c4403b1ac7ad5044e25aeec1e01bb4dc6abadaef7a8c8ca32a0fcc50"
+  },
+  "auditor_sha256": "4b33bd92bbef0a719f47a11d65a0db0a297b0374096efde97ccb62f43d54b0b7",
+  "frozen_comparator_checks": 3503,
+  "local_vs_ISAAC_replay_max_float_difference": 4.440892098500626e-15,
+  "replay_roundoff_allowance": 1e-12,
+  "execution_original_sha256": "96e30e674b6a5e3287a0480f097f1010c1cc6ef923bf07c4ada83a9fc3faea63",
+  "execution_evidence_mode": "original_raw_public_manifest"
+}

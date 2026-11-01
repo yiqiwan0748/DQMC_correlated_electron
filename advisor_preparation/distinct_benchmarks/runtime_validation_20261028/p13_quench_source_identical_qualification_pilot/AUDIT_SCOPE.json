@@ -1,0 +1,115 @@
+{
+  "schema": "P13_FRESH_THREE_ROLE_QUALIFICATION_PILOT_PUBLIC_AUDIT_SCOPE_V1",
+  "publication_status": "AUDITED_SAVED_ASSOCIATIONS_EXCLUDED_PILOT",
+  "reported_numerical_process_status": "PASS_PILOT_ZERO_CREDIT_PENDING_INDEPENDENT_AUDIT",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "campaign_counts": {
+    "PASS": 50,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 48
+  },
+  "original_comparison": {
+    "bytes": 2121992,
+    "sha256": "7be3d45d8bfc68130ab03094a88c3a85f86f095db8a3d9475e0c812b3bb52b53"
+  },
+  "projection_removed_only_top_level_fields": [
+    "runtime_before",
+    "runtime_after"
+  ],
+  "all_remaining_JSON_values_and_float_bits_exact": true,
+  "scientific_projection_bit_identical_to_previous_public_recomparison": true,
+  "reported_gates": {
+    "total": 8889,
+    "PASS": 8889,
+    "FAIL": 0
+  },
+  "finite_coverage": {
+    "model_certificates": 4,
+    "initial_state_certificates": 2,
+    "state_certificates": 20,
+    "times_per_backend_arm": 5
+  },
+  "fresh_roles": [
+    "native",
+    "independent_reference",
+    "comparison"
+  ],
+  "all_three_roles_reexecuted": true,
+  "same_scientific_source_inventory_for_all_three_roles": true,
+  "saved_association_audit": {
+    "status": "PASS_SOURCE_CONDITIONED_SAVED_RECORD_ASSOCIATIONS_ONLY",
+    "check_count": 8991,
+    "failed_checks": 0,
+    "completed_before_after_process_record_pairs": 3,
+    "complete_checkpoint_journals": 3,
+    "checkpoint_chunks": {
+      "native": 14,
+      "independent_reference": 14,
+      "comparison": 50
+    },
+    "stored_scalar_limit_records": 296,
+    "physical_or_internal_certificate_recomputations": 0,
+    "original_audit_receipt_sha256": "84d7d9e7f1993f6e3aab489fb562a57962df7b9a819948110f28f4c77bd1e100"
+  },
+  "scientific_source_byte_links": {
+    "PROTOCOL.json": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/PROTOCOL.json",
+      "bytes": 9816,
+      "sha256": "a5057c8bcab56564890355a02ec63e0bbc760205d34d12039a00dbb841b7e222"
+    },
+    "comparator.py": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/comparator.py",
+      "bytes": 49045,
+      "sha256": "ed2f0172df1fd361fde3cc6951feacc68118308c2f5c1f500c9919f5453a0ff0"
+    },
+    "evolution_bounds.py": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/evolution_bounds.py",
+      "bytes": 6662,
+      "sha256": "dbfae6bcc8e98965160438911230f4cb6fc803583a7c895b052964bbd01fdbe9"
+    },
+    "inherited_p17_certificate.py": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/inherited_p17_certificate.py",
+      "bytes": 14086,
+      "sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    "native_producer_core.jl": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/native_producer_core.jl",
+      "bytes": 9710,
+      "sha256": "fda7ec19080ef823f6000693fa78c7ca0a8da24ee0f204340fe85ad658515ff9"
+    },
+    "protocol_helpers.py": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/protocol_helpers.py",
+      "bytes": 1523,
+      "sha256": "950525ba84b706d9e55824cebfb344484295a44f904ef3f652d364efd98b34a3"
+    },
+    "source_snapshot/compute_s2_itensor_dmrg.jl": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/source_snapshot/compute_s2_itensor_dmrg.jl",
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    "tenpy_producer_core.py": {
+      "reference": "../p13_quench_pilot_rayleigh_recomparison/source/tenpy_producer_core.py",
+      "bytes": 14971,
+      "sha256": "65835eb811f9f836cbccfc17a0e94d9de83056aadf48aff3baa8aad0f96ba99a"
+    }
+  },
+  "original_fifteen_failure_record_retained": "../p13_quench_pilot_precision_unresolved/",
+  "full_33_time_curve_status": "NOT_RUN",
+  "full_nine_point_growth_fit_status": "NOT_RUN",
+  "complete_standalone_reproduction": false,
+  "limitations": [
+    "The saved-record association auditor also authored certification adapters; separate source/math reviews support those adapters. This saved review does not independently recompute the physical certificates.",
+    "The certificate arithmetic is conditional floating error accounting, not directed-rounding interval arithmetic. Binary64-serialized centers do not independently reconstruct internal extended-precision bounds.",
+    "Recorded object/provider and process evidence is source-conditioned; the saved audit does not recreate live objects or establish a unique generated-code creator, JIT proof or atomic snapshot.",
+    "Complete dense spectra generate small-system time evolution. MPS routines measure represented states; production DMRG evolution and large-system scalability are not established.",
+    "Raw producer states, eigensystems and private host/runtime/controller records are omitted. No new catalogue completion or speedup claim follows from this repeated pilot."
+  ],
+  "scientific_data_reference": {
+    "path": "../p13_quench_pilot_rayleigh_recomparison/comparison_scientific_projection.json",
+    "bytes": 1338924,
+    "sha256": "e9c955a994947d6ccf267f120987ed6066c6ad747245a7b6d59ba7995d432008"
+  },
+  "scientific_data_duplicated_in_this_packet": false
+}

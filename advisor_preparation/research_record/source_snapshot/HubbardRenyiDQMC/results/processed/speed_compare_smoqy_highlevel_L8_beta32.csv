@@ -1,0 +1,4 @@
+"implementation","L","beta","dtau","U","mu","N_burnin","N_updates","N_bins","seed","wall_seconds","note"
+"smoqy_highlevel_example","8","32","0.1","2","0","500","1000","20","90002","27.226","Unmodified SmoQyDQMC examples/hubbard_chain.jl; dtau hardcoded to 0.10"
+"smoqy_highlevel_example","8","32","0.1","2","0","500","1000","20","90003","27.077","Unmodified SmoQyDQMC examples/hubbard_chain.jl; dtau hardcoded to 0.10"
+"smoqy_highlevel_example","8","32","0.1","2","0","500","1000","20","90004","27.089","Unmodified SmoQyDQMC examples/hubbard_chain.jl; dtau hardcoded to 0.10"

@@ -1,0 +1,61 @@
+{
+  "status": "PASS_EXPLORATORY_CUT_RAW_MEDIANS_SOURCE_AND_REPLAY_AUDIT",
+  "new_scientific_or_timing_jobs_started": 0,
+  "benchmark_runner_sha256": "aefc720f6626f020b455b0eb80d398b96a910b627b17cb1968984ac3bd4c4e8d",
+  "source_hashes_match_frozen_corrected_archive": true,
+  "paired_repetitions_checked": 14,
+  "rows": [
+    {
+      "L": 64,
+      "nA": 48,
+      "job_id": "6457169",
+      "receipt_sha256": "422bad66e000e1aadb122da9fd04e0f6a2b0d5d449c72a53c6b07f28aa9b1911",
+      "host": "il1348",
+      "cpu": "model name\t: Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz",
+      "paired_repeats": 7,
+      "two_replica_rounds": 12,
+      "direct_median_seconds": 6.448795337,
+      "optimized_median_seconds": 2.124673908,
+      "node_speedup_recomputed": 3.0351929831295315,
+      "update_kernel_speedup_recomputed": 3.038562223549073,
+      "cumulative_allocation_reduction_recomputed": 577.3542616386899,
+      "recorded_timing_jitter_interval": [
+        2.7588163765986633,
+        3.1121774649936618
+      ],
+      "interpretation": "Finite-temperature subsystem node",
+      "post_primary_disclosure": "Cut-size exploration designed after observing the original half-chain scaling campaign. Original primary results are retained; this is not part of its preregistered grid.",
+      "status": "PASS_RECORDED_MATCHED_TIMING_CHECKS"
+    },
+    {
+      "L": 64,
+      "nA": 64,
+      "job_id": "6457169",
+      "receipt_sha256": "00145bb4e312426df3fb956c06624ca6a27c3b81cc7eec92ded172b1b22328ec",
+      "host": "il1348",
+      "cpu": "model name\t: Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz",
+      "paired_repeats": 7,
+      "two_replica_rounds": 12,
+      "direct_median_seconds": 9.577303071,
+      "optimized_median_seconds": 3.346926583,
+      "node_speedup_recomputed": 2.861521707600599,
+      "update_kernel_speedup_recomputed": 2.865214638567749,
+      "cumulative_allocation_reduction_recomputed": 610.1412869332819,
+      "recorded_timing_jitter_interval": [
+        2.7094481132909305,
+        3.007055337610314
+      ],
+      "interpretation": "Full-system thermal-purity node, not pure-state bipartite entanglement",
+      "post_primary_disclosure": "Cut-size exploration designed after observing the original half-chain scaling campaign. Original primary results are retained; this is not part of its preregistered grid.",
+      "status": "PASS_RECORDED_MATCHED_TIMING_CHECKS"
+    }
+  ],
+  "correctness_maxima": {
+    "maximum_Green_absolute_error": 0.0,
+    "maximum_logdet_absolute_error": 0.0,
+    "maximum_measurement_absolute_error": 0.0,
+    "maximum_measurement_relative_error": 0.0,
+    "maximum_reported_deltaG": 1.042502889569974e-12
+  },
+  "scope": "Two additional cuts designed after observing the primary half-chain benchmark; both retained. These are not preregistered primary-grid maxima. Follow-up ratios compare each optimized path to its same-host direct baseline. The follow-up Xeon6348 host differs from the primary Xeon6248R host, so differences across campaigns cannot isolate cut-size effects. Bootstrap intervals are retained, not independently regenerated. Final entropy/full-grid runtime was not measured."
+}

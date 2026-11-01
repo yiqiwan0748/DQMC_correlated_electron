@@ -1,0 +1,22 @@
+{
+  "job_id": "6458826",
+  "dependency": "afterany:6458825",
+  "dependency_note": "CLI override strengthens wrapper afterany:6458711 transitively",
+  "status": "SUBMITTED_ELIGIBILITY_ONLY",
+  "P21_status": "NOT_RUN_AS_DEFINED",
+  "source_freeze": "../source_releases/alf-measurement-proof-v5-submission-freeze.json",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "estimated_minutes_after_start": [
+    2,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 17:30",
+  "output": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/p21_adapter_proof_v5_attempt01",
+  "log": "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/logs/alf_measurement_proof_v5_6458826.log",
+  "prior_versions_preserved": true,
+  "submitted_UTC": "2026-10-22 20:16:03",
+  "admission": "Fresh live queue had one running one-CPU campaign job and zero unrelated running jobs; all new stages serially dependent; unrelated pending jobs unchanged.",
+  "scheduler_verification": "scontrol confirmed PENDING Dependency, specified afterany predecessor, NumCPUs=1, ReqTRES mem=3500M, and 15/22/10-minute respective wall limits; no restart."
+}

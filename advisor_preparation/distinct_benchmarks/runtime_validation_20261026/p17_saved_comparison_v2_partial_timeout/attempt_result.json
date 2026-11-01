@@ -1,0 +1,67 @@
+{
+  "schema": "P17_SAVED_COMPARISON_V2_PARTIAL_PROGRESS_TIMEOUT_PUBLIC_V1",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "status": "UNRESOLVED_RUN_CAP_REACHED_PARTIAL_EVIDENCE_SAVED",
+  "scheduler_state": "FAILED",
+  "scheduler_exit_code": "2:0",
+  "child_status": "TIME_CAP_EXCEEDED",
+  "child_returncode": 130,
+  "child_run_cap_seconds": 420,
+  "child_elapsed_including_cleanup_seconds": 421.39348640851676,
+  "parent_elapsed_seconds": 425.6947427112609,
+  "resources": {
+    "cpus": 1,
+    "memory_mb": 3500,
+    "comparison_seconds": 420,
+    "combined_inner_seconds": 810,
+    "outer_guard_seconds": 870,
+    "allocation_seconds": 900,
+    "timeout_SIGINT_grace_seconds": 30,
+    "timeout_SIGTERM_grace_seconds": 3,
+    "timeout_SIGKILL_wait_seconds": 2,
+    "timeout_cleanup_reserve_seconds": 35,
+    "non_timeout_cleanup_reserve_seconds": 5,
+    "outer_finalization_reserve_seconds": 10
+  },
+  "actual_cleanup": {
+    "timeout_cap_already_reached": true,
+    "signals": [
+      {
+        "signal": "SIGINT",
+        "status": "SENT",
+        "wait_at_most_seconds": 30
+      }
+    ],
+    "cleanup_reserve_seconds": 35,
+    "returncode": 130,
+    "cleanup_elapsed_seconds": 1.3724628016352654
+  },
+  "remaining_live_child_group_count": 0,
+  "raw_child_report_status": "RUNNING",
+  "child_report_interpretation": "PARTIAL_SAVED_ON_INTERRUPTION_NOT_AN_ACTIVE_OR_PASSED_JOB",
+  "partial_report_sha256": "3180e0711e0c1718ca6cc3a392a35443196d3bf36251c7a27ad3f11fc005c1f5",
+  "original_whole_v8_pilot_status_remains": "UNRESOLVED",
+  "prior_saved_comparison_v1_timeout_remains": "UNRESOLVED",
+  "full_production_admission": false,
+  "independent_saved_evidence_audit": {
+    "checks": 239,
+    "failed_checks": 0,
+    "sha256": "24d0b20573185610da63370761a04b8d83af132e1f6d087752b1491441909745",
+    "scope": "Immutable identities, actual saved partial coverage, source-bound traceback/runtime evidence and resource/signal cleanup boundaries. No fresh quantum/certificate computation, provider hashes/restats or new runtime execution."
+  },
+  "diagnostic_source_freeze_sha256": "f5004b0124a10bc04531609077de27db1584163a131f737a33888882754bc66e",
+  "upstream_v8_source_freeze_sha256": "da9af9ad26b0692149e77ddea5088b2b3856a0de8b78da2777fd5cd17b2741f0",
+  "primary_admission_sha256": "68faa9442f272e011f204370e5235981233a1698d6f43cc4ba9e92053f8d12b7",
+  "child_scoped_approval_sha256": "44befd4d8a6802b433d0afa88f7af020878ce29dd3fb03079bd19f5b8eb196c5",
+  "execution_sha256": "c7ee4eef3a5b6d43a6c15f48a57ca59009e856c558f9ea619b1465468d0e5266",
+  "terminal_archive_sha256": "1092daad5926765f475711b179df4a3d1a1ac14b60b59bb469183cff70e3c688",
+  "after_terminal_identity_proof_sha256": "d39ee346a4805ab026771345591edcc4d16640210ab52a5cfdeae7f159302594",
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  }
+}

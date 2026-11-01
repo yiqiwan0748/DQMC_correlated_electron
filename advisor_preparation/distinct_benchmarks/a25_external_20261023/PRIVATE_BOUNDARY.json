@@ -1,0 +1,10 @@
+{
+  "schema": "A25_PUBLIC_PRIVATE_BOUNDARY_V1",
+  "private_controller_submission_receipts_omitted": true,
+  "whole_queue_and_unrelated_scheduler_bodies_omitted": true,
+  "transfer_before_after_and_private_input_containers_omitted": true,
+  "original_scientific_execution_bytes_retained": true,
+  "runtime_metadata_pins_retained_binary_bodies_omitted": true,
+  "CV_contacts_and_credentials_omitted": true,
+  "scope": "Retained audit establishes original pinned compute qualification. Portable replay deliberately evaluates only unchanged saved-data mathematical helpers and never claims to rerun original runtime/admission guards or the comparator."
+}

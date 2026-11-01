@@ -1,0 +1,63 @@
+{
+  "version": "portable_v2",
+  "status": "PASS",
+  "checks": 168,
+  "scientific_completions": 0,
+  "catalogue_status": {
+    "A18": "NOT_RUN",
+    "A19": "NOT_RUN",
+    "A20": "NOT_RUN"
+  },
+  "refined": {
+    "energy_per_site": -0.5585862906819251,
+    "charge_gap": 1.4591125843744628,
+    "double_occupancy": 0.09747777816734199
+  },
+  "coarse_refined_errors": {
+    "energy_per_site": 3.1337021866306713e-10,
+    "charge_gap": 1.870540238257945e-07,
+    "double_occupancy": 4.685307003482464e-10
+  },
+  "next_L32_engineering_eligibility": {
+    "job_elapsed_seconds": 991,
+    "peak_rss_kib": 1484548,
+    "peak_rss_MiB": 1449.75390625,
+    "wall_at_most_30_minutes": true,
+    "peak_at_most_2300_MiB": true,
+    "threshold_scope": "Predeclared engineering continuation criteria; separate from unchanged L24 scientific-quality gates",
+    "preexecution_anchor": {
+      "commit": "66950c791f7f939ca176e5427be62cd8dfca8348",
+      "commit_created_at": "2026-10-22T19:12:58Z",
+      "url": "https://github.com/yiqiwan0748/DQMC_correlated_electron/commit/66950c791f7f939ca176e5427be62cd8dfca8348",
+      "file_url": "https://github.com/yiqiwan0748/DQMC_correlated_electron/blob/66950c791f7f939ca176e5427be62cd8dfca8348/advisor_preparation/distinct_benchmarks/reporting/reports/bethe_pilot_audit_6458253/README.md",
+      "git_blob_sha": "6f09e3c24b16752df0bf6577ae9d9c631dc20af7",
+      "sidecar": "preexecution_L32_engineering_anchor_66950c7.md",
+      "sha256": "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6"
+    }
+  },
+  "remote_transfer_hashes": {
+    "L24_half_coarse.toml": "c5da1a847a7e442c6dcc0edcf85ddba47df7d0167d0fca17ef076860d6398f62",
+    "L24_half_refined.toml": "39c22ac7ff730ae75b6f66d66b87e87b4e1068c8ae9466b882dbb9dcf3397239",
+    "L24_minus_coarse.toml": "afca21522cafb5409e8a74f8010248f6141f819004faa04d03808cdd58417672",
+    "L24_minus_refined.toml": "32330f3f0fd36c595419cd338b444abc6becb669aaddd389c08ddbefb4a57ba6",
+    "L24_plus_coarse.toml": "5df6c5c95f2fa1c62addabeb9f0cc14f8b6d95b677a05576f6a9a9f9aa637a92",
+    "L24_plus_refined.toml": "b497b1a597c960e9e4b84e76d18732bdf3d66eb1d9ef41144fd025fa43ca57e7",
+    "target.toml": "6119e233620fd82697d5ae69d693d53afb03448d6d96646b29fdfcb43d1c5dce",
+    "oracle.json": "5813c4d87afca5c85c3ff09ba512c71c2db1e10ec70c7d5367d45f8a04e5a242",
+    "summary.json": "82fcbce021bcac1be43afbe0d08348dd36a67d064819ae77fdf47cca83c31b58",
+    "oracle.resources.txt": "feefc5c1c25b97be36252be106c033fef5728980df6496afe34774119996716d",
+    "target.resources.txt": "b30e3d3d2ae09a0071c1530879eb3a99deeba7b7dc2ad37eb2520f0d34c80764",
+    "logs/bethe_l24_pilot_6458547.log": "934fc49b743a2996bc48936e5ad9c4810dd3fafd960dab39d8a32a0acedf325b"
+  },
+  "raw_sidecar_hashes": {
+    "remote_sha256_and_scheduler_6458547.txt": "8f13f8927d49e918550360ded36db0840cadeabe2a283994662d210a5edac9e6",
+    "frozen_summary_replay_6458547.json": "82fcbce021bcac1be43afbe0d08348dd36a67d064819ae77fdf47cca83c31b58",
+    "preexecution_L32_engineering_anchor_66950c7.md": "0e88dd7b1f051db016fbca825c2e2191872f93bda9184980c46b261d359dcea6",
+    "preexecution_L32_engineering_anchor_66950c7.json": "e95176d7fbfb061dfab72b0afdc3b0a20313f16531be4a20e2e2fa2aa617563e",
+    "raw_sidecars_provenance_6458547.json": "60dd8447550ff23bd7c12a5702eb7d90cc0a7429f3bc4d42c8accf837af71f69"
+  },
+  "auditor_sha256": "0d4904d6de8004165a8925f69129ff56f99d38999733fc221d44e1d1e4d5d64c",
+  "first_auditor_sha256": "5c6321310db6d21055aa4a421b2987ee58ddee870046418b32e5367b06a95dc1",
+  "frozen_summary_replay_sha256": "82fcbce021bcac1be43afbe0d08348dd36a67d064819ae77fdf47cca83c31b58",
+  "physics_executed": false
+}

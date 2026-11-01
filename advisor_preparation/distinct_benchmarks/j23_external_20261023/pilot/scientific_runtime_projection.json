@@ -1,0 +1,165 @@
+{
+  "schema": "J23_DERIVED_ORIGINAL_SCIENTIFIC_RUNTIME_PINS_V1",
+  "original_transfer_before_sha256": "65be3dca4093da18bc114f02385d5834cd9b82dd27e1250764805dae327bcea8",
+  "original_transfer_after_sha256": "eab11981815d78eabaa855bb69e432c9290896fd505061bdb16797c53cd5e75a",
+  "original_39_file_source_native_RECORD": {
+    "numpy-2.4.6.dist-info/RECORD": {
+      "sha256": "2597ed15adb4749826a56feeabe23f815bbcc5f49061724b3d077b7d176be4e7",
+      "bytes": 127503
+    },
+    "numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0": {
+      "sha256": "c6090048eccc763522c12ef016f81da6b627cb3a044f55cf0479a839c41c0980",
+      "bytes": 2833617
+    },
+    "numpy.libs/libquadmath-96973f99-934c22de.so.0.0.0": {
+      "sha256": "6ed5137f412781ad7863439fb543613f620b43c32b63292a0029246162f5bbc6",
+      "bytes": 250985
+    },
+    "numpy.libs/libscipy_openblas64_-32a4b2a6.so": {
+      "sha256": "05c9f9eb89ee68a4b9d673184fa91c99587e736392c0c2d49180a8aa5303d080",
+      "bytes": 25409073
+    },
+    "numpy/__init__.py": {
+      "sha256": "92a46f791e453926d3292af2582b89995a289475f0eaaea71a949823200b838a",
+      "bytes": 26277
+    },
+    "numpy/_core/_multiarray_umath.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "1535fbed1e9ac6b717e72ad9bd5c20b9f0536a21084fcadc40c00255a8f35d1d",
+      "bytes": 10407681
+    },
+    "numpy/_core/getlimits.py": {
+      "sha256": "46d3015808f29584e67eab482f52542a02fb6f0c95c2ca1bd386dc42b9a9ed72",
+      "bytes": 15003
+    },
+    "numpy/_core/multiarray.py": {
+      "sha256": "ae9b35e60d0150e2ade05d45c1a31dbfeee627dbe668b2b7a1bfc2e3fe53f77f",
+      "bytes": 56786
+    },
+    "numpy/_core/numeric.py": {
+      "sha256": "d75e4d3072e59b477cad20f088d964f6b41c840e7304d3f76fe9f6832d760a9f",
+      "bytes": 83038
+    },
+    "numpy/_core/overrides.py": {
+      "sha256": "2bdc18ac0e766e23be366f0605d0f382ea9272d2500e8baf03821e91395fc555",
+      "bytes": 7480
+    },
+    "numpy/_core/umath.py": {
+      "sha256": "450a42560a838a2260e85f23c8398b7d09e7a8d8dd4170376e0d920463060c0b",
+      "bytes": 2140
+    },
+    "scipy-1.17.1.dist-info/RECORD": {
+      "sha256": "26857d239afeba541141c6006d023d9723db952759425dc3e2ff262c034e9471",
+      "bytes": 198161
+    },
+    "scipy.libs/libgfortran-040039e1-0352e75f.so.5.0.0": {
+      "sha256": "c6090048eccc763522c12ef016f81da6b627cb3a044f55cf0479a839c41c0980",
+      "bytes": 2833617
+    },
+    "scipy.libs/libgfortran-8f1e9814.so.5.0.0": {
+      "sha256": "a95cc4ac4afad889f2d83088f46b5e6fa6cd5efd729db887e1e639147ec55b73",
+      "bytes": 2714697
+    },
+    "scipy.libs/libquadmath-828275a7.so.0.0.0": {
+      "sha256": "71bdc2ec57ab2fc939360597968f73230426b1c6764048e62a2cb6c8d8c3a1fd",
+      "bytes": 272193
+    },
+    "scipy.libs/libquadmath-96973f99-934c22de.so.0.0.0": {
+      "sha256": "6ed5137f412781ad7863439fb543613f620b43c32b63292a0029246162f5bbc6",
+      "bytes": 250985
+    },
+    "scipy.libs/libscipy_openblas-6cdc3b4a.so": {
+      "sha256": "8fb864c29cac4b25f6e2c139491ea96f2724dde42d51394f84e9c4a622e34790",
+      "bytes": 24805561
+    },
+    "scipy/__init__.py": {
+      "sha256": "335bc6e0a9909dc7534f9569a3685a92dc8001cb8c63a6da4c239849ff02d4d0",
+      "bytes": 4063
+    },
+    "scipy/_lib/_array_api.py": {
+      "sha256": "e7b6d08f877456b9d26af808267263f41f2870261951a19d9ff133301d15e1e2",
+      "bytes": 37765
+    },
+    "scipy/_lib/_util.py": {
+      "sha256": "a9fefbc04d605f88abb7b905a72a2e510ad42223fdcfe049a4ea12c9455b89a2",
+      "bytes": 48730
+    },
+    "scipy/integrate/_quadpack.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "396e2f70df5f1c752b2523feb61d26f0484c07826fb667290dbc4ff41ecaf53e",
+      "bytes": 119920
+    },
+    "scipy/integrate/_quadpack_py.py": {
+      "sha256": "8595bd7b1f71f3678017eeaf30be7a164a695d7cf887d2158b87cac80a8ae923",
+      "bytes": 54607
+    },
+    "scipy/optimize/_zeros.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "371debc370e522e1d01142591ae6430dd43b30eb3c5ee7ca4fbe78e05b3646e6",
+      "bytes": 21400
+    },
+    "scipy/optimize/_zeros_py.py": {
+      "sha256": "14f88f1080985eae0af84bb5952da5b994ab2043e7fe5b0c8603839475391161",
+      "bytes": 56659
+    },
+    "scipy/special/__init__.py": {
+      "sha256": "31c74ccca8f9f6d8dce1960d50b9df7eb3acab2e6a5f69327a9823b92200fe56",
+      "bytes": 31817
+    },
+    "scipy/special/_special_ufuncs.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "13bedcf260f072cd3c4c2d4d1c71f9980057c05189da2ec616893969db14edc1",
+      "bytes": 1654984
+    },
+    "scipy/special/_ufuncs.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "d52a02c24e621a04f707ca6020c6f9c6f571d2255188514d80debd265dc59939",
+      "bytes": 1531945
+    },
+    "scipy/special/_ufuncs_cxx.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "d44b99cd9119d1600c8324cb9390bd70dbaa669e2732de46ad0f5461547f637e",
+      "bytes": 1910152
+    },
+    "scipy/stats/_continuous_distns.py": {
+      "sha256": "8bdf1788046aa1bbaad92184494cccfcc9122cc1fd792e27783e82200ac2da44",
+      "bytes": 409353
+    },
+    "scipy/stats/_distn_infrastructure.py": {
+      "sha256": "fb280275b079f4867f6d1ce121ff5dc10c37750b913a228225ec3372f090997a",
+      "bytes": 153570
+    },
+    "scipy/linalg/_cythonized_array_utils.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "18fc439056a75862cef1b78491a314d55ef185c7cc4280e65130d5ce913bf880",
+      "bytes": 321656
+    },
+    "scipy/linalg/_decomp.py": {
+      "sha256": "3c3d1688a87b606757306eb5ed81c8e45e0b6d286792031d4ffaa8b56a773361",
+      "bytes": 62717
+    },
+    "scipy/linalg/_fblas.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "deea2995d0cad9cb44c36bf73bd94218e505bdd00d24d6712eb1383c4cfc0213",
+      "bytes": 1032665
+    },
+    "scipy/linalg/_flapack.cpython-311-x86_64-linux-gnu.so": {
+      "sha256": "39fb8e55d62b49eed79e918d5846c8035999ea85466509ad3dc758da2aed8efd",
+      "bytes": 2560561
+    },
+    "scipy/linalg/lapack.py": {
+      "sha256": "3058ae083f1955c62a502d6fcf8f04a792c69b1b634b0629f4a14df8c6262574",
+      "bytes": 17505
+    },
+    "scipy/special/_orthogonal.py": {
+      "sha256": "620bf24f330e19b7f8aaefb2bf076e3a0e34e2e44d74c97b3642170e983f143b",
+      "bytes": 74770
+    },
+    "scipy/linalg/__init__.py": {
+      "sha256": "8840662d267e8d06503125608c6333e5f50053750f1e2c273b63e5a6c0b79c1c",
+      "bytes": 7426
+    },
+    "scipy/linalg/blas.py": {
+      "sha256": "30769fd85b8b6c98207854b016926d33fb9a23433c0057bd350bc23f0c3ff05f",
+      "bytes": 11833
+    },
+    "scipy/linalg/_misc.py": {
+      "sha256": "b9d86fc467c41f1852dde71006ec10eb95bd7b355021a541c3c24e99fa87fe81",
+      "bytes": 6301
+    }
+  },
+  "transport_body_or_inode_or_controller_included": false,
+  "derived_projection_not_original_receipt": true
+}

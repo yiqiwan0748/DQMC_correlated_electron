@@ -1,0 +1,1866 @@
+{
+  "assembled_date": "2026-10-22",
+  "verification": "source inspection and independent arithmetic; historical simulations not rerun by this record builder",
+  "archives": [
+    {
+      "source_path": "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive - University of Tennessee/backup/HubbardRenyiDQMC_complete_20260828.tar.gz",
+      "sha256": "77a1f0b496a52ada2379a3a3cd743c31a11d83f4d885679bb4fc8156bc250284",
+      "bytes": 16824976
+    },
+    {
+      "source_path": "/mnt/c/Users/\u795e\u901a\u5e7f\u5927/OneDrive - University of Tennessee/backup/HubbardRenyiDQMC_git_20260828.bundle",
+      "sha256": "63424a25d6b6b81fcc28254a80309fb7ace8a04cb504bb269b208cdc0a4f8911",
+      "bytes": 2803166
+    }
+  ],
+  "archive_git_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+  "bundle_advertised_head": "c103a8b226c0f2d441b45a60c7736357b933c42c",
+  "archive_git_remotes": [],
+  "altermagnet_git_remotes": {
+    "github": "https://github.com/yiqiwan0748/DQMC_correlated_electron.git",
+    "backup": "https://github.com/yiqiwan0748/AltermagnetDQMCTrial.git"
+  },
+  "files": [
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/summary.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/summary.toml",
+      "sha256": "c6c7c1feff29e099f37a647c924a563c428bb75bf22b291977e347de581a6a05",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/metadata.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/metadata.toml",
+      "sha256": "b3ccde664679af689e79329cd8132ade0f14e78dc2c54f1d28625463e34d528d",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/stages.csv",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/stages.csv",
+      "sha256": "ece53944e1c4dd1e65ef273dbfa6af5e40050509829008dbc0ea0dc0d4344e45",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/spin_matrices.csv",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/spin_matrices.csv",
+      "sha256": "59c2f1d4f8a212b07aa54ca8e33a466ba3aed2b17d64dd0a5e533cfcdb3c57f0",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/local_observables.csv",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/local_observables.csv",
+      "sha256": "123218af27dccc68900afdfe8947ca6d0a46e6ac2ae2c6244929f7291aa06267",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/initialization_agreement.csv",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/initialization_agreement.csv",
+      "sha256": "550abebedd5aa19305b5300797915d49b7585ddd0ea236ef2431341e5d6d438e",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/preflight.csv",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/preflight.csv",
+      "sha256": "d234e422a3e7c9a3a6ed6603e9982e7739a1a4dbd6ba6f51b3590229f8b68bad",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/preflight_summary.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/preflight_summary.toml",
+      "sha256": "fcd510db0a3a49b6c40ed1a19307496a8c634f118239adcd08c40ef52778f6e6",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/fermion_sign_checks.csv",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/fermion_sign_checks.csv",
+      "sha256": "b7ea9840c4fd6c779e0e6fadc74bcfe7afa9ea6d53dcd597ec7d1c8dd3e68ee7",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/status.txt",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/status.txt",
+      "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/Project.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/Project.toml",
+      "sha256": "38fbee50016b62b5a7ebeeae2c6ef4ae2f2851282b34d161de66c114fb1733b0",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/Manifest.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/Manifest.toml",
+      "sha256": "aaac24004c701d8ddaccfe02ef88efeb1350a1b22b0ccc5278f05e81e5948dd2",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/run_benchmark.jl",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_dmrg_benchmark_20260911/attempt01/run_benchmark.jl",
+      "sha256": "9782ddbb11c2ed658841d28d7f96cd8473b25cc5227f7055a609ad02c7decc59",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/literature_transfer/alm_method_benchmark_20260911/dmrg_return_audit.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/literature_transfer/alm_method_benchmark_20260911/dmrg_return_audit.toml",
+      "sha256": "36bad29841d9189f2b69e3142a2671226d2319f4c07cf5c9fa0b91080984d4e1",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/results/isaac_20261014/moreo_configurations/solve003_terminal_validation_20261015.json",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/results/isaac_20261014/moreo_configurations/solve003_terminal_validation_20261015.json",
+      "sha256": "ffb9d18ee586f83477a95b15bb29138db37d8eee17df682b1136cb8f4193cc86",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/docs/alm_trial_project_note.md",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/docs/alm_trial_project_note.md",
+      "sha256": "bcbfe38e9e134e47a25e87170459a9b4454fa18f6916932c1819b94f3c5f5a82",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/docs/reading/alm_dmrg_implementation_20260911.md",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/docs/reading/alm_dmrg_implementation_20260911.md",
+      "sha256": "76aec8b83ee6dad146d38077409b25be7bf5b1ebc94cb659945b033e9b8dfeb8",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/scripts/literature_transfer/alm_dmrg_return_audit_20260911.jl",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/scripts/literature_transfer/alm_dmrg_return_audit_20260911.jl",
+      "sha256": "ee9960949be02cc0277ddad6c659307037a443afa9294077382432290fdcde01",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/deliverables/ed_hf_band_fs_20260928/data/hf/README.md",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/deliverables/ed_hf_band_fs_20260928/data/hf/README.md",
+      "sha256": "34692278415947312dfcab87ad3bdb8a7aa5d03fa6ddc5ebd6bb5c7293310fae",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/deliverables/ed_hf_band_fs_20260928/data/hf/hf_summary.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/deliverables/ed_hf_band_fs_20260928/data/hf/hf_summary.toml",
+      "sha256": "fd2dd8453af4e783de418ebebfb94bc1b4aa79a4657045c3039c29e3ab384b3d",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "evidence/AltermagnetDQMCTrial/deliverables/ed_hf_band_fs_20260928/data/hf/verification.toml",
+      "source_path": "/home/yiqiwan/code/AltermagnetDQMCTrial/deliverables/ed_hf_band_fs_20260928/data/hf/verification.toml",
+      "sha256": "bbc1a5869d084c97c7f4fddf8fb8ec4c6bb48f0f52bfbc0091cff31fdf6ee180",
+      "source_repository_head": "ff6fd1d05a54533c1ea2d81d5c5e81b1dbe7771c",
+      "source_is_working_tree_file": true
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/.gitignore",
+      "sha256": "3ff2ae731734b74c4f62edd210b177c4d3cf6d935b7d42b4fc10639b9fdb2762",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": ".gitignore",
+      "git_blob_oid": "923f4ab5732748415c75bdfd8a93957738814fe0",
+      "archive_worktree_sha256": "3ff2ae731734b74c4f62edd210b177c4d3cf6d935b7d42b4fc10639b9fdb2762"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/AGENTS.md",
+      "sha256": "2bff5abcc680633096223c78ad9ea13c18bafe5d5dd39236a3c06bf6c0aee998",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "AGENTS.md",
+      "git_blob_oid": "e2e0c70cdb18ed9f2122ee06711314de8bd422aa",
+      "archive_worktree_sha256": "2bff5abcc680633096223c78ad9ea13c18bafe5d5dd39236a3c06bf6c0aee998"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/Manifest.toml",
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "Manifest.toml",
+      "git_blob_oid": "de6683d2c2811d47a614e399588a18767cf70b8b",
+      "archive_worktree_sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/Project.toml",
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "Project.toml",
+      "git_blob_oid": "05a3efef4fd84f991790d229b8b23c833321d9b8",
+      "archive_worktree_sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/README.md",
+      "sha256": "9150e175e839bf7fa8326f51f9a3654c49254300bc7f00322fcdfb5d976dea99",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "README.md",
+      "git_blob_oid": "db9257202ca9fb3a58b94f8f77ae18567c5a6af3",
+      "archive_worktree_sha256": "9150e175e839bf7fa8326f51f9a3654c49254300bc7f00322fcdfb5d976dea99"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/REPRODUCIBILITY.md",
+      "sha256": "5f652851de8ef44b583728cc714efa5d95d01c3e6e1fffde9f22902c1e74af11",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "REPRODUCIBILITY.md",
+      "git_blob_oid": "b63a7c548baa910c60038966bf6c34a60f85e69b",
+      "archive_worktree_sha256": "5f652851de8ef44b583728cc714efa5d95d01c3e6e1fffde9f22902c1e74af11"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/analyze_u4_fss.jl",
+      "sha256": "1ca78a9170d3cbe20ead07144b77c2c2c0c7ffe9bde3fedcccfb27b1f16afee9",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/analyze_u4_fss.jl",
+      "git_blob_oid": "308f89bb85197929a1ad81a80fcbc07788422f7e",
+      "archive_worktree_sha256": "1ca78a9170d3cbe20ead07144b77c2c2c0c7ffe9bde3fedcccfb27b1f16afee9"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/benchmark_jdqmc_hubbard_kernel.jl",
+      "sha256": "b2ccbb3be001af57d017433446903f1933ab101fa5cb0280b261791934448f62",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/benchmark_jdqmc_hubbard_kernel.jl",
+      "git_blob_oid": "c17a3290c785e01a7beb08f1e975d19cd4290bed",
+      "archive_worktree_sha256": "b2ccbb3be001af57d017433446903f1933ab101fa5cb0280b261791934448f62"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/build_oneD_hubbard_fss_L4_to_L22_input.jl",
+      "sha256": "bf30c12308e6c48007c3886310a92045275e57e14c02fd3e5b15e23e87b4196b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/build_oneD_hubbard_fss_L4_to_L22_input.jl",
+      "git_blob_oid": "fd748ec93c5416de78bd2e0761715a071600b87a",
+      "archive_worktree_sha256": "bf30c12308e6c48007c3886310a92045275e57e14c02fd3e5b15e23e87b4196b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/compute_s2_ed.jl",
+      "sha256": "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/compute_s2_ed.jl",
+      "git_blob_oid": "b0cad61605038af218ae6e18d77d761f6b9ed872",
+      "archive_worktree_sha256": "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/compute_s2_itensor_dmrg.jl",
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/compute_s2_itensor_dmrg.jl",
+      "git_blob_oid": "83a6e51b49c594ef723df498da81c53307b460b9",
+      "archive_worktree_sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/fit_fss_branches.jl",
+      "sha256": "b9a7643b27480c9850f7f3a4d54bd41ba0b27badd76e0e0d92cd6801c0305ebc",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/fit_fss_branches.jl",
+      "git_blob_oid": "fc9b7a0ca9e4acf8bd7751f5d45aba6ab5d710de",
+      "archive_worktree_sha256": "1b04217861f8eb82c9dcbe79fbc98abe49c5a7d74ecc8b64edcdd837195a7d9f",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/fit_fss_branches_L4_to_L16.jl",
+      "sha256": "581d2fd50adbcb8a73e5f2b485e4ec7f0f35193bca619b6f5b2c0ac31f05aa1b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/fit_fss_branches_L4_to_L16.jl",
+      "git_blob_oid": "aed25a08262ffd6100343678bc7feeb73cb5ba66",
+      "archive_worktree_sha256": "581d2fd50adbcb8a73e5f2b485e4ec7f0f35193bca619b6f5b2c0ac31f05aa1b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/fit_oneD_hubbard_fss_with_oscillation.jl",
+      "sha256": "467903d212e56c91d23c5afaf3637b5ad5310127e7f42f6e691e27f1a302710b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/fit_oneD_hubbard_fss_with_oscillation.jl",
+      "git_blob_oid": "6102dec616c60bbd1cd65a66252c03edc6376deb",
+      "archive_worktree_sha256": "467903d212e56c91d23c5afaf3637b5ad5310127e7f42f6e691e27f1a302710b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/fss_quick_fit_current.jl",
+      "sha256": "dc361709d84c216fe6b8f46c2b9fee010268592f71b29e980b21a07b1b2325ef",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/fss_quick_fit_current.jl",
+      "git_blob_oid": "7ddabde8be948f61811a2cac6217971526489524",
+      "archive_worktree_sha256": "e73dab17e14fa634514897d34029c86608d921212805bb8bde19e33d131ed812",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/microtime_fused_update.jl",
+      "sha256": "24d4569ca27f3dd7c66bc83fac03442119c39da0f0aeaa781a31c94c93e431d3",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/microtime_fused_update.jl",
+      "git_blob_oid": "a8500beb60e605025f6098c55ea074c3434f00ec",
+      "archive_worktree_sha256": "24d4569ca27f3dd7c66bc83fac03442119c39da0f0aeaa781a31c94c93e431d3"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/plot_L10_U2_beta40_blocksize.jl",
+      "sha256": "6e94b6f0efc2df2ee8543642de1979c87fc2c502ea1372105bf32411151d09bf",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/plot_L10_U2_beta40_blocksize.jl",
+      "git_blob_oid": "1c7826ab4652714ed4ec9aaabe70c5640cf51e62",
+      "archive_worktree_sha256": "6e94b6f0efc2df2ee8543642de1979c87fc2c502ea1372105bf32411151d09bf"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/plot_fss_L4_to_L16.jl",
+      "sha256": "96ff89302a1bbf19878b914bfa8f1f1304dc69ac2625c539c44176a9ce4babde",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/plot_fss_L4_to_L16.jl",
+      "git_blob_oid": "39b68680fcb747f0af9c6d698f7a6b96e56b4bf4",
+      "archive_worktree_sha256": "96ff89302a1bbf19878b914bfa8f1f1304dc69ac2625c539c44176a9ce4babde"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/plot_fss_branches.jl",
+      "sha256": "666499d2bd0278085a7de0b6dabdb9cfb9fad694a12b63d365293f1e7f262a18",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/plot_fss_branches.jl",
+      "git_blob_oid": "17a27628551c8355cf8f4498026a2ef9a5ac3717",
+      "archive_worktree_sha256": "a76b79ef64ac02ffb0c7b5b9b55134e2992c5183dac24f7744676b61c7bfc025",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/plot_fss_errorbars_current.jl",
+      "sha256": "a02708bdeb3277787060e2d5ddf2227dc602a81df7201025150f57c8a1f0ba10",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/plot_fss_errorbars_current.jl",
+      "git_blob_oid": "b20de3d5f782666b5417ad5d016c7f4f91e78a3f",
+      "archive_worktree_sha256": "0c2c1002bc6c61d99cd688333560aac0d19ed1b9660d96963e7e2e04270c797b",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/plot_fss_with_refs.jl",
+      "sha256": "cc5c1b7c9823a7fca1fd8715af42a0e0b4e997c4ec689dd50445171f50e4ea8c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/plot_fss_with_refs.jl",
+      "git_blob_oid": "6e2ba3fc6963218e0e7442d74451edb820764742",
+      "archive_worktree_sha256": "c45cea7feda1212919af6ef1d35e5f0131b98169fe151a223f89bf9e41edec14",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/plot_u2_u4_apbc_mott_crossover.jl",
+      "sha256": "2c3444a0a3f782ac7bcab12fedc9626b36e3b0846d16d470a8d1968e52759f0f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/plot_u2_u4_apbc_mott_crossover.jl",
+      "git_blob_oid": "80e3a8bd7e1ef006fcae014b5cbb10499d5c5cc8",
+      "archive_worktree_sha256": "2c3444a0a3f782ac7bcab12fedc9626b36e3b0846d16d470a8d1968e52759f0f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/profile_current_lambda_node.jl",
+      "sha256": "2cbbcd1d9ee4ba76c86ad22660e84cbc5c9716739847839f2b467deb46e9f5cf",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/profile_current_lambda_node.jl",
+      "git_blob_oid": "c6a1e4d9bda2d4eb9bdaa74499277da98237a33e",
+      "archive_worktree_sha256": "2cbbcd1d9ee4ba76c86ad22660e84cbc5c9716739847839f2b467deb46e9f5cf"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/summarize_grid.jl",
+      "sha256": "dca97064b6b504abc3ba259415a009de4afd8c5b5e985d9ba5a4c492c64cfa23",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/summarize_grid.jl",
+      "git_blob_oid": "2b6d1a5d21f310ea439798be31491b3f0453833c",
+      "archive_worktree_sha256": "dca97064b6b504abc3ba259415a009de4afd8c5b5e985d9ba5a4c492c64cfa23"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/analysis/validate_grover_rank1_update.jl",
+      "sha256": "b3dffb446ed72ac325526ca730ee71ec29685486c3e598fc4a621f8f3321622f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "analysis/validate_grover_rank1_update.jl",
+      "git_blob_oid": "21fab625af40591b27977142f18f4b9083ff9663",
+      "archive_worktree_sha256": "b3dffb446ed72ac325526ca730ee71ec29685486c3e598fc4a621f8f3321622f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/archive/validated_old_pipeline/benchmark_lambda_grid_independent_steps_validated.jl",
+      "sha256": "473ca55ee7123bbffecd7ba3bb9658ca97fd7f84aa32a8f5e908a828f804f5fd",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "archive/validated_old_pipeline/benchmark_lambda_grid_independent_steps_validated.jl",
+      "git_blob_oid": "7f968d2bc2883fcf7abb6797c5d2cd494aa80165",
+      "archive_worktree_sha256": "fe183d3ebc29c06c56c25331b49431b1fad72339bc88f5b8317495d1d822240a",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/archive/validated_old_pipeline/run_lambda_grid_step_validated.jl",
+      "sha256": "f0868a2d015939bbf9569abe4a45a6e5717d7de446e5402335aaba9882b26a51",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "archive/validated_old_pipeline/run_lambda_grid_step_validated.jl",
+      "git_blob_oid": "1a4ca18b03ff824858ccface9a77b503e72590cf",
+      "archive_worktree_sha256": "f0868a2d015939bbf9569abe4a45a6e5717d7de446e5402335aaba9882b26a51"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/apbc_shell_pilot.md",
+      "sha256": "6444336098c978182ef547915323c5ef3132874183c450491120038fb7510d3a",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/apbc_shell_pilot.md",
+      "git_blob_oid": "db09ad4f99eac8424a2c88ea866b1af0ffed9c1b",
+      "archive_worktree_sha256": "6444336098c978182ef547915323c5ef3132874183c450491120038fb7510d3a"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/benchmark_protocol.md",
+      "sha256": "016568e77e82f2ee0ae7dd18bb2b98fa99c3aef3d47b2fe5c6023d3b1241c03e",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/benchmark_protocol.md",
+      "git_blob_oid": "43ed1e4ef6fd2a95993e2b0ef5a6bb3d76938d99",
+      "archive_worktree_sha256": "016568e77e82f2ee0ae7dd18bb2b98fa99c3aef3d47b2fe5c6023d3b1241c03e"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/current_benchmark_status.md",
+      "sha256": "e782243a1fbd4ceba154b48fbbbdd7c6047eaaf4de648c17b39ab5730c95949a",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/current_benchmark_status.md",
+      "git_blob_oid": "9087be469cff5dfae9ccb8a86292310fe694a717",
+      "archive_worktree_sha256": "3368c0dde89da3021b95b98a892ca5b536ec82ad356224d9b58eb7f0992fd1e0",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/dqmc_renyi_ee.md",
+      "sha256": "4f72b6e13db889cdd3ca801a75ca32aafafb86a0fa1f169627a2b8b0aa7f5545",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/dqmc_renyi_ee.md",
+      "git_blob_oid": "1c4a6b6fffff440f45f3f1317d419b2e62dbfdcd",
+      "archive_worktree_sha256": "4f72b6e13db889cdd3ca801a75ca32aafafb86a0fa1f169627a2b8b0aa7f5545"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/grover_rank1_speedup.md",
+      "sha256": "67683376bde12d8953256cd6dcee7f67befa10955c77e9411da627605cca1221",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/grover_rank1_speedup.md",
+      "git_blob_oid": "319a8bcb5db711e2c660f9ce742553270a8840bc",
+      "archive_worktree_sha256": "67683376bde12d8953256cd6dcee7f67befa10955c77e9411da627605cca1221"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/l10_u2_beta40_blocksize_benchmark.md",
+      "sha256": "be5a53d6df03dbbb031c6e3bba8231ae579066ced01d7454a9c5c1f44ceff96e",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/l10_u2_beta40_blocksize_benchmark.md",
+      "git_blob_oid": "81c70abae30f0525a41e7fb58e87bceedd63e85a",
+      "archive_worktree_sha256": "be5a53d6df03dbbb031c6e3bba8231ae579066ced01d7454a9c5c1f44ceff96e"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/one_d_hubbard_u2_fss_L4_to_L22_20260820.md",
+      "sha256": "9e6984665967236547136964796fd9332a371664ba6d508fe312c9e33f73ee29",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/one_d_hubbard_u2_fss_L4_to_L22_20260820.md",
+      "git_blob_oid": "652e073550c7fe177f1b91038ef7cb47a89eb325",
+      "archive_worktree_sha256": "9e6984665967236547136964796fd9332a371664ba6d508fe312c9e33f73ee29"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/one_d_hubbard_u2_fss_diagnostics.md",
+      "sha256": "a2005476ccf6416b09a4f4b185bef63341d77a8bbb0f24faded28b78896dc4b7",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/one_d_hubbard_u2_fss_diagnostics.md",
+      "git_blob_oid": "a0b9d122e26fc388af49ab9b442b6a6f62d01846",
+      "archive_worktree_sha256": "a2005476ccf6416b09a4f4b185bef63341d77a8bbb0f24faded28b78896dc4b7"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/roadmap.md",
+      "sha256": "936ff4fb126e798d290ee2ef5bd281746031243e18073ae917f298f571ee319b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/roadmap.md",
+      "git_blob_oid": "29240b6d69779a67a6b477c510eca8024d67e4ad",
+      "archive_worktree_sha256": "936ff4fb126e798d290ee2ef5bd281746031243e18073ae917f298f571ee319b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/u4_fss_L4_to_L22_campaign.md",
+      "sha256": "636cb2dc9378139cfee2b13f9c103148c0a392e07e9b0777b03c332c8da549b5",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/u4_fss_L4_to_L22_campaign.md",
+      "git_blob_oid": "be3c62d257b7d5cd14faa20d91b15928aba47316",
+      "archive_worktree_sha256": "636cb2dc9378139cfee2b13f9c103148c0a392e07e9b0777b03c332c8da549b5"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/docs/u4_mott_crossover.md",
+      "sha256": "94eb64afee638bb2b9b994eb8d475df298570260bf29467fb0bb0d30076805ec",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "docs/u4_mott_crossover.md",
+      "git_blob_oid": "7aa1be637c26dd4471aa60593f47d387bf89b1da",
+      "archive_worktree_sha256": "94eb64afee638bb2b9b994eb8d475df298570260bf29467fb0bb0d30076805ec"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/environments/fss/Manifest-v1.12.toml",
+      "sha256": "d09a5593637c67beb20218db12e32d078ff1ea818d24aa3cb473138dbc376f5d",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "environments/fss/Manifest-v1.12.toml",
+      "git_blob_oid": "c77302be02899b5bfce15247689a018765bdfde7",
+      "archive_worktree_sha256": "d09a5593637c67beb20218db12e32d078ff1ea818d24aa3cb473138dbc376f5d"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/environments/fss/Project.toml",
+      "sha256": "e4319ccc1893f9a5ecd5e3860166d1a71f06ad97fe92c42f8b1279a206732c71",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "environments/fss/Project.toml",
+      "git_blob_oid": "96b9c12d25de0774adfb165482b5636635d5ef16",
+      "archive_worktree_sha256": "e4319ccc1893f9a5ecd5e3860166d1a71f06ad97fe92c42f8b1279a206732c71"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta20_Ninc16_highstat.toml",
+      "sha256": "e195e48e78bec89b36aa6b059a31deb56b1140545bc028ca30d87e3ae87d136d",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta20_Ninc16_highstat.toml",
+      "git_blob_oid": "a601cb28e159e0d202396a73da08de894b276b42",
+      "archive_worktree_sha256": "7c1141bd63785e6381daa34e46c2843e0e23acf7ee0616373c756c964fe12708",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta30_Ninc16_highstat.toml",
+      "sha256": "79a61eafa03b651f6ea159de92abc25aa16a1f9c662350c263676d2bbaa4c53f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta30_Ninc16_highstat.toml",
+      "git_blob_oid": "ffeaaa156ef381fc9645bf3972b06d142a761f76",
+      "archive_worktree_sha256": "5497becd13046adbb232bb18e76e952a02d31d75fb1c04405ab47af58c24d8b1",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta30_dtau010_Ninc16_highstat.toml",
+      "sha256": "89f2d29a4ad2385c5f7cb41a311da38e13ee90f299b4c874fffbc8506af77117",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta30_dtau010_Ninc16_highstat.toml",
+      "git_blob_oid": "3dbc19358768c5bee22ed963d56054de9613e2ea",
+      "archive_worktree_sha256": "8eca752e274946d99be7bfcb59ff547cb3436de7de336824bb836826acdaeef0",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_Ninc16_highstat.toml",
+      "sha256": "a826b73c423cb8ce3d0b3e5622f9c6cae9b2d4c424c06f9dad9cc15f8f7fbe8f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_Ninc16_highstat.toml",
+      "git_blob_oid": "31a7a6fd50acf47739cb50a6af71ff5f1a63cdd1",
+      "archive_worktree_sha256": "15e6baaf36109add9787145ec74c2888e7a54f4fa12f7e2fc69a8e86b513a338",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_Ninc4_highstat.toml",
+      "sha256": "75b38941de3b49b1c55b2ff34119c5e13ee448e3ce5dd6f1c2d9db0b8e841cfd",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_Ninc4_highstat.toml",
+      "git_blob_oid": "2b023191c32668f35d91ed2c8bee903fe8a0caa6",
+      "archive_worktree_sha256": "32034ee676762abf31a084724346bd56b0ccd3f3c858a88bf648cd24dcc27e7a",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_Ninc8.toml",
+      "sha256": "b3655e149e21ab0bf66f41377ab8b596352cae04b43f785bc591819b63971d91",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_Ninc8.toml",
+      "git_blob_oid": "57ab17bb4c56fbc653810ac34537d6fa235b1cad",
+      "archive_worktree_sha256": "b3655e149e21ab0bf66f41377ab8b596352cae04b43f785bc591819b63971d91"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_Ninc8_highstat.toml",
+      "sha256": "bd757826e12b4606875a5c1c65423febe705c1fa7fcc185f36388dc5016513d4",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_Ninc8_highstat.toml",
+      "git_blob_oid": "f373e647be25f573c464a7ca0ba4fc46da2bd188",
+      "archive_worktree_sha256": "aa5751fd8c49074fe49db24bbfa5f8df10e40b6280919e4f43fbc3f250cd33f4",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_nA1_Ninc16_highstat.toml",
+      "sha256": "daf1a994317f2895e4e9cb269fca4d6e36da5ffc891416b51f4200cf7852dcd9",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_nA1_Ninc16_highstat.toml",
+      "git_blob_oid": "0b932d5f0e84e48305dec66ca961cc198161e466",
+      "archive_worktree_sha256": "8507858b1e2cf5012d4a702baa3c1933fe27b9d11af21b5c5a81d00baab5db50",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_nA2_Ninc16_highstat.toml",
+      "sha256": "4dd80068f7b759152988c384afaf8edd15bea8fc8a764eab3a021557c332b309",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_nA2_Ninc16_highstat.toml",
+      "git_blob_oid": "2086763797c706b6777c5a8f196dd9982cc1f40b",
+      "archive_worktree_sha256": "5eb2610346b5cd04a41930bc4b504b4a171b143f3e562d9e5326ac0d8373ee11",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_nA3_Ninc16_highstat.toml",
+      "sha256": "1ddc76742e9bddfb43fdaa8e455b7b5699ec330c44f5d896e5e26fd2129bd3cc",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_nA3_Ninc16_highstat.toml",
+      "git_blob_oid": "195d121ceac73c806f11b487a7189cf33d4bfb63",
+      "archive_worktree_sha256": "ff592f763cbe8ad86a257a0c3bd803814cc985efdf2e15420e789397d4176c1c",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta40_nA4_Ninc16_highstat.toml",
+      "sha256": "7f7ae6aafa2b97c33643c151ba1e5a5a35ff62c5922fcc9aab6148aae32ca5d8",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta40_nA4_Ninc16_highstat.toml",
+      "git_blob_oid": "5025069e95da2b6ba63e2677f3dad1df8ea01f64",
+      "archive_worktree_sha256": "3261a5fd28c27f3d9aaaf92a09cd23da0bcc4b783a7f0ac4d39a8e6af2c058f1",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta60_Ninc16_highstat.toml",
+      "sha256": "4abb0683242b17c65ffbeb027aa5e5f1af366e0c7dc24f586ef5c4e0c5913ddf",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta60_Ninc16_highstat.toml",
+      "git_blob_oid": "51a42b999f9adabafe532349caec23a5303ceed3",
+      "archive_worktree_sha256": "b4b0c7dc10245b6955e994678de1cda37ab33eb971234a1c36e65e7f593888c4",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U2_beta60_nA5_Ninc16_highstat.toml",
+      "sha256": "672c2fd24c759c2690957d2a4002e9336ec9f3bdd46d8db20831af6bafb694dc",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U2_beta60_nA5_Ninc16_highstat.toml",
+      "git_blob_oid": "b9517f6662f9693cecd60dcabcbc20b45cb19c23",
+      "archive_worktree_sha256": "261ddec156aa9e9532d6b3272ace8727cc379e8fd1c45ec298be3a40cb49492b",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L10_U4_beta40_nA5_Ninc16_burnin8000.toml",
+      "sha256": "0b557c2abc4101fb0b53b5b7c19a51324debea6674f356ca1231bd02c09c2ce1",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L10_U4_beta40_nA5_Ninc16_burnin8000.toml",
+      "git_blob_oid": "864121e0152af76765e2f409070f5576339d095e",
+      "archive_worktree_sha256": "0b557c2abc4101fb0b53b5b7c19a51324debea6674f356ca1231bd02c09c2ce1"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U2_beta24_nA6_Ninc16_quick.toml",
+      "sha256": "29f34a61eb9ce4d132e495d2670128437ff9227d77d616cebe936646c8ee73fe",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U2_beta24_nA6_Ninc16_quick.toml",
+      "git_blob_oid": "f8024a16635cd5ab3eda8bed01369f8ca2589282",
+      "archive_worktree_sha256": "29f34a61eb9ce4d132e495d2670128437ff9227d77d616cebe936646c8ee73fe"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U2_beta48_nA6_APBC_Ninc8_pilot.toml",
+      "sha256": "1e247da17c89fe0a505c8fe9d01b9b345db294d467349aba3b3f4124539545a7",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U2_beta48_nA6_APBC_Ninc8_pilot.toml",
+      "git_blob_oid": "2699ae9c981d5b97b294eb23a59b5dfcbfabb660",
+      "archive_worktree_sha256": "1e247da17c89fe0a505c8fe9d01b9b345db294d467349aba3b3f4124539545a7"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U2_beta48_nA6_Ninc16_highstat.toml",
+      "sha256": "0cb098cd06c04ba3f5b857a4672715b0876f7ed9eb85d3aea899f2b87cc736bc",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U2_beta48_nA6_Ninc16_highstat.toml",
+      "git_blob_oid": "45cbb80bca4a030fee23b83df01d762ef75ddf12",
+      "archive_worktree_sha256": "0cb098cd06c04ba3f5b857a4672715b0876f7ed9eb85d3aea899f2b87cc736bc"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U2_beta72_nA6_Ninc16_burnin8000.toml",
+      "sha256": "804ef96ca1c23f9b39b92137a2643945f0a1afde8cea08d529a94b919efc4bf2",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U2_beta72_nA6_Ninc16_burnin8000.toml",
+      "git_blob_oid": "ad6a38790f3e7d87ab12eaa8f794da8ec32e0451",
+      "archive_worktree_sha256": "682fc4c5f802bcea312b1e9cd71597fc6ca00a66353f6a0b7956c958826f5a38",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U2_beta72_nA6_Ninc16_highstat.toml",
+      "sha256": "d6d484a5a08d03b39be45f53bb95cd1f6b3abc504872561610a11dfdc156eae3",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U2_beta72_nA6_Ninc16_highstat.toml",
+      "git_blob_oid": "b1d9ba666bffa632ab29d24133c0a471282e4c14",
+      "archive_worktree_sha256": "f13cc7fed2ecb68dbcf29d897d0e3111d54c8c849ae4139755dc3529ee8ad979",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U2_beta72_nA6_Ninc16_longburn.toml",
+      "sha256": "4b951c8bbe25bdb60512c56dd85eea0be94db7fb34cee5b4b2b6b6f2f1565f9c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U2_beta72_nA6_Ninc16_longburn.toml",
+      "git_blob_oid": "525d9d47803c1cd8e8dd7682b287e39a0b928163",
+      "archive_worktree_sha256": "9b7baa86a56ae5cb2dfde18bbe3cdd399f13085463c20a18863e374431db6b29",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U4_beta48_nA6_APBC_Ninc8_pilot.toml",
+      "sha256": "048690126e0aff653ff8145651350fbcee298abfdacdd6842dc566d7e400d12c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U4_beta48_nA6_APBC_Ninc8_pilot.toml",
+      "git_blob_oid": "8503932223d4ebcc56485e624bd9ae158f4ea07e",
+      "archive_worktree_sha256": "048690126e0aff653ff8145651350fbcee298abfdacdd6842dc566d7e400d12c"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L12_U4_beta48_nA6_Ninc16_burnin8000.toml",
+      "sha256": "2e23895fbbaa728c9b6cb3c469eb613e7b6258e3176faf5e1a7443d948f8b7ba",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L12_U4_beta48_nA6_Ninc16_burnin8000.toml",
+      "git_blob_oid": "5814d5c93f0e049a8990f3d0c9c30e11bab398c4",
+      "archive_worktree_sha256": "2e23895fbbaa728c9b6cb3c469eb613e7b6258e3176faf5e1a7443d948f8b7ba"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L14_U2_beta56_nA7_Ninc16_highstat.toml",
+      "sha256": "6fb1a767aed0c4e89d67c3aec3de96963fd5542bffb55756250e2fad92f31652",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L14_U2_beta56_nA7_Ninc16_highstat.toml",
+      "git_blob_oid": "3ace815998f30193b818e2c33731e480b5c77953",
+      "archive_worktree_sha256": "1941dac4d99a2eef02cb7209fc50b29ab4c10d19f3fa7feafdecb665f404b80f",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L14_U4_beta56_nA7_Ninc16_burnin8000.toml",
+      "sha256": "a3341cefbeb892d9cf6e3ed0288f95e278c511dbce1c56827342ab179f3e8e62",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L14_U4_beta56_nA7_Ninc16_burnin8000.toml",
+      "git_blob_oid": "e119ff18034225850caf100aa4f1ec1ad1a9705c",
+      "archive_worktree_sha256": "a3341cefbeb892d9cf6e3ed0288f95e278c511dbce1c56827342ab179f3e8e62"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta32_nA8_Ninc16_quick.toml",
+      "sha256": "b15864944d9755068e8f4a5fe2def725424ecb69f61479ecd174ebc01639759e",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta32_nA8_Ninc16_quick.toml",
+      "git_blob_oid": "b1861510747cd586582dae46f99eaf69ad785a05",
+      "archive_worktree_sha256": "b15864944d9755068e8f4a5fe2def725424ecb69f61479ecd174ebc01639759e"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA1_Ninc16_highstat.toml",
+      "sha256": "2944baeb201cfc216c97ec22ce5c96ec0db82e25527bc92fb8c56b33b8acb28d",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA1_Ninc16_highstat.toml",
+      "git_blob_oid": "2a0b9928999c6934b538968756695e613fc359e0",
+      "archive_worktree_sha256": "2944baeb201cfc216c97ec22ce5c96ec0db82e25527bc92fb8c56b33b8acb28d"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA2_Ninc16_highstat.toml",
+      "sha256": "672a573e0ef0b6c88bbfea0405be81ed6b7876aa7127b287037af430d45747e4",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA2_Ninc16_highstat.toml",
+      "git_blob_oid": "8baa2b15bbe202206aaac44476145161208229c8",
+      "archive_worktree_sha256": "672a573e0ef0b6c88bbfea0405be81ed6b7876aa7127b287037af430d45747e4"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA3_Ninc16_highstat.toml",
+      "sha256": "a44b609fd48f93cae7e9b09e98d53d7c1130a9be669ecce5cef037d5f8bad9b1",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA3_Ninc16_highstat.toml",
+      "git_blob_oid": "29752ad9f44e8689119910036ca91840c3764e3a",
+      "archive_worktree_sha256": "a44b609fd48f93cae7e9b09e98d53d7c1130a9be669ecce5cef037d5f8bad9b1"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA4_Ninc16_highstat.toml",
+      "sha256": "3c33e1a1f29b37ba66cb3aa5f7db668e9697d0d3b4acc8d69cb002e3e73b6734",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA4_Ninc16_highstat.toml",
+      "git_blob_oid": "4d60b93adc76c4417019eb1508f27b784889debc",
+      "archive_worktree_sha256": "3c33e1a1f29b37ba66cb3aa5f7db668e9697d0d3b4acc8d69cb002e3e73b6734"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA5_Ninc16_highstat.toml",
+      "sha256": "cf34fa335dc0e88cdf9ca43e54e1250172cd3a909dfbb11e42873d951310b3a9",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA5_Ninc16_highstat.toml",
+      "git_blob_oid": "4ae4aa1cd99c32215150cd87728bc8d996c4720a",
+      "archive_worktree_sha256": "cf34fa335dc0e88cdf9ca43e54e1250172cd3a909dfbb11e42873d951310b3a9"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA6_Ninc16_highstat.toml",
+      "sha256": "2cf41f5a51510eb76de8ee233a89f14492a74ee00a40153a324b1cf8ea7c0097",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA6_Ninc16_highstat.toml",
+      "git_blob_oid": "cbf92e30f2a78c6a89e3f89bd70ea78fdb11a1cc",
+      "archive_worktree_sha256": "2cf41f5a51510eb76de8ee233a89f14492a74ee00a40153a324b1cf8ea7c0097"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA7_Ninc16_highstat.toml",
+      "sha256": "d714ef483f16c0895f62231029acb07d8643e9bbcf524334634bf6e1994aa71f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA7_Ninc16_highstat.toml",
+      "git_blob_oid": "a2f4f50cf5521463ea12a32af9bc7d28f935ae34",
+      "archive_worktree_sha256": "d714ef483f16c0895f62231029acb07d8643e9bbcf524334634bf6e1994aa71f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U2_beta64_nA8_Ninc16_highstat.toml",
+      "sha256": "052ceab1d43c9d73ddb7941d09362658cc083ecfdaae2fa793e8d966df473da5",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U2_beta64_nA8_Ninc16_highstat.toml",
+      "git_blob_oid": "f3afa8790763eec4e07b860647815c06439368c4",
+      "archive_worktree_sha256": "052ceab1d43c9d73ddb7941d09362658cc083ecfdaae2fa793e8d966df473da5"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L16_U4_beta64_nA8_Ninc16_burnin8000.toml",
+      "sha256": "d66e0e925d8489866bc326438891720017a5806af527aedd9342ad536013a4ce",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L16_U4_beta64_nA8_Ninc16_burnin8000.toml",
+      "git_blob_oid": "8cb655389133c3f79d7f995a2fac481c241e59dd",
+      "archive_worktree_sha256": "d66e0e925d8489866bc326438891720017a5806af527aedd9342ad536013a4ce"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L18_U2_beta72_nA9_Ninc16_burnin8000.toml",
+      "sha256": "68f8544b8f44e3e874d135376cbfc583557398ad05cf9682a374c9a77715a9f6",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L18_U2_beta72_nA9_Ninc16_burnin8000.toml",
+      "git_blob_oid": "d0c65fce488b048b97822dbb40fa18a48acbdd52",
+      "archive_worktree_sha256": "a26e2ce1fdd99fcac99cb68197e7ddc0d367895ada4951f3ce6d1e04a31f149d",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L18_U2_beta72_nA9_Ninc16_highstat.toml",
+      "sha256": "6ad5d1382adcd69a0effa72999d6abc5399ac4a64183bfd16ceff0c7353d639b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L18_U2_beta72_nA9_Ninc16_highstat.toml",
+      "git_blob_oid": "3ac81c9f5cf9b836cfc47fe0142c9a9d48ab9902",
+      "archive_worktree_sha256": "fe89038f30b604c3f6df1969ca7ed0b4073d7a69112185bad0a1a36bad0ab97f",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L18_U4_beta72_nA9_Ninc16_burnin8000.toml",
+      "sha256": "5288665ff861d4bd89e6816eba0b1f568493755efb81a8b9ffa3b3ab5e214f28",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L18_U4_beta72_nA9_Ninc16_burnin8000.toml",
+      "git_blob_oid": "2a8451f7ddb90e3c1bb53799a630429f27f7d07e",
+      "archive_worktree_sha256": "5288665ff861d4bd89e6816eba0b1f568493755efb81a8b9ffa3b3ab5e214f28"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L20_U2_beta80_nA10_Ninc16_burnin8000.toml",
+      "sha256": "06c42ecb5f178221fa7448827a865de132ee93d5768838f3a8c9407c5c27152c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L20_U2_beta80_nA10_Ninc16_burnin8000.toml",
+      "git_blob_oid": "0ec60f51d2884cbb4a3848c8cbb9856b8387b86d",
+      "archive_worktree_sha256": "06c42ecb5f178221fa7448827a865de132ee93d5768838f3a8c9407c5c27152c"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L20_U2_beta80_nA10_Ninc16_highstat.toml",
+      "sha256": "3096a974aa7f1325d9ee00b00933964112217605135a26ecdd5cdebcbcdd6803",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L20_U2_beta80_nA10_Ninc16_highstat.toml",
+      "git_blob_oid": "32814c8d6270dcf571ab46c68e62a4d63f0885e6",
+      "archive_worktree_sha256": "4f4e772285feb63b26953688f959a7a326f722719d438cc04d056e9e60a4c009",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L20_U4_beta80_nA10_Ninc16_burnin8000.toml",
+      "sha256": "ef5fe4eaedadf8cf11fe51bbb0e6b15386b392733a143d183240bbb1e855505f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L20_U4_beta80_nA10_Ninc16_burnin8000.toml",
+      "git_blob_oid": "600f62ec71a85a01b9dd97bef0200771d17c7caf",
+      "archive_worktree_sha256": "ef5fe4eaedadf8cf11fe51bbb0e6b15386b392733a143d183240bbb1e855505f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L22_U2_beta88_nA11_Ninc16_burnin8000.toml",
+      "sha256": "7da5c1fc525b4ca7c029b1ba3ceb64ffabf3563e3ca74bd3d2e4a22e321cac59",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L22_U2_beta88_nA11_Ninc16_burnin8000.toml",
+      "git_blob_oid": "e2977185fbac8fd8bbb6fa97cc4f8e6b1c5155ee",
+      "archive_worktree_sha256": "7da5c1fc525b4ca7c029b1ba3ceb64ffabf3563e3ca74bd3d2e4a22e321cac59"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L22_U2_beta88_nA11_Ninc16_highstat.toml",
+      "sha256": "e258e16c021eddbe0ede9473fcfd0cd0aba7eed408d460190b7c8203641dab75",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L22_U2_beta88_nA11_Ninc16_highstat.toml",
+      "git_blob_oid": "bce7e2213a9698da97d5f01511c33e5071806ac9",
+      "archive_worktree_sha256": "e258e16c021eddbe0ede9473fcfd0cd0aba7eed408d460190b7c8203641dab75"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L22_U4_beta88_nA11_Ninc16_burnin8000.toml",
+      "sha256": "a1ce110b8248247bd30605cacac78479223c7fa7875d247069aa34543148d3ad",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L22_U4_beta88_nA11_Ninc16_burnin8000.toml",
+      "git_blob_oid": "18f183c36b2471d724407519daeecda7d14ef8f4",
+      "archive_worktree_sha256": "a1ce110b8248247bd30605cacac78479223c7fa7875d247069aa34543148d3ad"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L4_U2_beta16_nA2_Ninc16_highstat.toml",
+      "sha256": "3b19f9153414e4997d46fc6e12768c2cfd7b7260471167d069d83501da14b7f0",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L4_U2_beta16_nA2_Ninc16_highstat.toml",
+      "git_blob_oid": "1ad551b47d59b491062655f993a96168791a0461",
+      "archive_worktree_sha256": "be093e56ae1cd1b09e9c45fa1362854d221e9b1edbbd87daa3a89d7ccbc421b0",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L4_U4_beta16_nA2_Ninc16_burnin8000.toml",
+      "sha256": "d412a473cc79642caad6fd24fc917d41df72876744140e174b75a32874dc3939",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L4_U4_beta16_nA2_Ninc16_burnin8000.toml",
+      "git_blob_oid": "4ef5f64163638e426943af00f44400ba908e8001",
+      "archive_worktree_sha256": "d412a473cc79642caad6fd24fc917d41df72876744140e174b75a32874dc3939"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L6_U2_beta24_nA3_Ninc16_highstat.toml",
+      "sha256": "f78eee339ae36e185e0efeba9cf7f4499bf75855840df861cd69d46a4324e012",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L6_U2_beta24_nA3_Ninc16_highstat.toml",
+      "git_blob_oid": "8e5245dd27b5ff8a103053edf8fad1598f9b5289",
+      "archive_worktree_sha256": "f78eee339ae36e185e0efeba9cf7f4499bf75855840df861cd69d46a4324e012"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L6_U4_beta24_nA3_Ninc16_burnin8000.toml",
+      "sha256": "55df8e5140fb57a81602ff8d859fc1074576090b90fd262ad42b320b6b7c98ea",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L6_U4_beta24_nA3_Ninc16_burnin8000.toml",
+      "git_blob_oid": "d7cdca47733a26a3b8ca8f05849983eef1626b3e",
+      "archive_worktree_sha256": "55df8e5140fb57a81602ff8d859fc1074576090b90fd262ad42b320b6b7c98ea"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L8_U2_beta16_nA4_Ninc16_quick.toml",
+      "sha256": "91733ca72522375689506949747ca00383f7374d524a07e9ca8a35fab9d1c45f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L8_U2_beta16_nA4_Ninc16_quick.toml",
+      "git_blob_oid": "d92e8fb96445f27b1adfcf9b95611cb8836a5a8a",
+      "archive_worktree_sha256": "91733ca72522375689506949747ca00383f7374d524a07e9ca8a35fab9d1c45f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L8_U2_beta32_nA4_APBC_Ninc8_pilot.toml",
+      "sha256": "f842c8ed5411ecb149f8e3c716715b258b13651ace7e413c4596bd3cf3d40d88",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L8_U2_beta32_nA4_APBC_Ninc8_pilot.toml",
+      "git_blob_oid": "e37ebe3b93142909d636403659cfad8017c89fa1",
+      "archive_worktree_sha256": "f842c8ed5411ecb149f8e3c716715b258b13651ace7e413c4596bd3cf3d40d88"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L8_U2_beta32_nA4_Ninc16_highstat.toml",
+      "sha256": "cb337d58ea46df0a67937752db7b556af8a3ca98c647d6f1ce0698679cdc0256",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L8_U2_beta32_nA4_Ninc16_highstat.toml",
+      "git_blob_oid": "534968b448b23485a9fb7abad2148b41a9707759",
+      "archive_worktree_sha256": "cb337d58ea46df0a67937752db7b556af8a3ca98c647d6f1ce0698679cdc0256"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L8_U2_beta32_nA4_Ninc4_quick.toml",
+      "sha256": "dc339fafd3c16a5c625f99d7c3f91fb56872f954e75a9f13dabfa234ef88a7f8",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L8_U2_beta32_nA4_Ninc4_quick.toml",
+      "git_blob_oid": "41ac0a457a2ee5f6ae95752e6ee039bca11848ca",
+      "archive_worktree_sha256": "dc339fafd3c16a5c625f99d7c3f91fb56872f954e75a9f13dabfa234ef88a7f8"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L8_U4_beta32_nA4_APBC_Ninc8_pilot.toml",
+      "sha256": "e3de00ee4fcd6ea33bd855b8d1704f6b6e89c14f1e0e2c77c14757c12dcee49f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L8_U4_beta32_nA4_APBC_Ninc8_pilot.toml",
+      "git_blob_oid": "724920d0781afe1c76cd7360fc651185800823b7",
+      "archive_worktree_sha256": "e3de00ee4fcd6ea33bd855b8d1704f6b6e89c14f1e0e2c77c14757c12dcee49f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/parameters/L8_U4_beta32_nA4_Ninc16_burnin8000.toml",
+      "sha256": "b5e6a1d1cb030de90bd4d30a0c5720dab7ae78090a04b9d2af27b5a5707049f1",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "parameters/L8_U4_beta32_nA4_Ninc16_burnin8000.toml",
+      "git_blob_oid": "33ac773a6f5a158b545cc7f3202eca4858730eda",
+      "archive_worktree_sha256": "b5e6a1d1cb030de90bd4d30a0c5720dab7ae78090a04b9d2af27b5a5707049f1"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/L10_U2_beta40_blocksize_S2_vs_nA.svg",
+      "sha256": "c7c5f8bcca31d8ab85d4ad5da1a842e196613cf1e155c30f8df66122bad3eae1",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/L10_U2_beta40_blocksize_S2_vs_nA.svg",
+      "git_blob_oid": "2592c5561f2a124ec786d0573ea7c6ffac6c100c",
+      "archive_worktree_sha256": "c7c5f8bcca31d8ab85d4ad5da1a842e196613cf1e155c30f8df66122bad3eae1"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/fss_S2_errorbars_completed_L4_to_L14.png",
+      "sha256": "3ed2c1b1b8bc91d0868fb67537c02fb0cb8bde1da7996cbd9151b36c537d5cb0",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/fss_S2_errorbars_completed_L4_to_L14.png",
+      "git_blob_oid": "c56cc0f419de57711381f5d2d323cbfd6ed9c8f1",
+      "archive_worktree_sha256": "3ed2c1b1b8bc91d0868fb67537c02fb0cb8bde1da7996cbd9151b36c537d5cb0"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/fss_branch_fits_L4_to_L14.png",
+      "sha256": "16697ebcc695d348e6a5067a508b3ab9826d4becbc755b559ee1eef961fcafbb",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/fss_branch_fits_L4_to_L14.png",
+      "git_blob_oid": "4697ca3f744e19e1241e8f549079162debef7965",
+      "archive_worktree_sha256": "16697ebcc695d348e6a5067a508b3ab9826d4becbc755b559ee1eef961fcafbb"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/fss_errorbar_size_completed_L4_to_L14.png",
+      "sha256": "a5a847833996ef2ef50983f304e06302b8eb4de02398d67bed62a3f8458f03a7",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/fss_errorbar_size_completed_L4_to_L14.png",
+      "git_blob_oid": "9983c6c5df00f1b8b0d0b688d9a3361854294b28",
+      "archive_worktree_sha256": "a5a847833996ef2ef50983f304e06302b8eb4de02398d67bed62a3f8458f03a7"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/fss_fits_L4_to_L16.png",
+      "sha256": "ccec52abd99d1e64e32d961a2a16ca2abeb58b13cb4905b961f0cc74995a9e7b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/fss_fits_L4_to_L16.png",
+      "git_blob_oid": "a3da5639c21c8dbcd37bc1e0ca60071341ccdf20",
+      "archive_worktree_sha256": "ccec52abd99d1e64e32d961a2a16ca2abeb58b13cb4905b961f0cc74995a9e7b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/fss_residuals_errorbars_completed_L4_to_L14.png",
+      "sha256": "19dbe631b88e1325a2a6f4dda5c96560e2271a53dbf7b2933c4c6bb1f94069bd",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/fss_residuals_errorbars_completed_L4_to_L14.png",
+      "git_blob_oid": "6c43008e612e023a51297836698b62307c6bdd8e",
+      "archive_worktree_sha256": "19dbe631b88e1325a2a6f4dda5c96560e2271a53dbf7b2933c4c6bb1f94069bd"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/fss_with_ED_DMRG_refs_L4_to_L22.png",
+      "sha256": "9af0797f5b85c9b357b46c4dd208cc92a1efee339d2c723d643ad3706a19b819",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/fss_with_ED_DMRG_refs_L4_to_L22.png",
+      "git_blob_oid": "bd3b2b838681ddefeb9f164c22eb5e897b534b26",
+      "archive_worktree_sha256": "9af0797f5b85c9b357b46c4dd208cc92a1efee339d2c723d643ad3706a19b819"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/fss_with_ED_DMRG_refs_L4_to_L24.png",
+      "sha256": "2df84b9327f0a77c08bd99e7efd09013baac0a89d0abc17d8aa860a548cf1159",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/fss_with_ED_DMRG_refs_L4_to_L24.png",
+      "git_blob_oid": "3613db0cbe636600257623c4b9404ae36b3d1e48",
+      "archive_worktree_sha256": "2df84b9327f0a77c08bd99e7efd09013baac0a89d0abc17d8aa860a548cf1159"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_branch_fit.png",
+      "sha256": "b9bd58e6f1e9c35db29ee72ff4ddb7605d429d30c3e69804ea6f7f531879db2a",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_branch_fit.png",
+      "git_blob_oid": "4e793e5ffa3352d89507ed007d34c9f0343f87c7",
+      "archive_worktree_sha256": "b9bd58e6f1e9c35db29ee72ff4ddb7605d429d30c3e69804ea6f7f531879db2a"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_branch_fit.svg",
+      "sha256": "28f581443d9dd5f1080bdfc2157c2f354278e0c7e8fbeb2dae95f31674c09067",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_branch_fit.svg",
+      "git_blob_oid": "75f35b46c99eb4f9a5bfa1be3d62108bb33debca",
+      "archive_worktree_sha256": "28f581443d9dd5f1080bdfc2157c2f354278e0c7e8fbeb2dae95f31674c09067"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_fit_input.png",
+      "sha256": "1a1870b6020f90e642ef2cda676a56fe59a3c834ea099f79401c4ba62114fe12",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_fit_input.png",
+      "git_blob_oid": "ac57f54dbdf8d6e6cc6e7a9a396d2bca9bf453cf",
+      "archive_worktree_sha256": "1a1870b6020f90e642ef2cda676a56fe59a3c834ea099f79401c4ba62114fe12"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_fit_input.svg",
+      "sha256": "52483a5765b9416fd6c30803b144b83870b5825e5e2a14af6d6084028a2aa2c3",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_fit_input.svg",
+      "git_blob_oid": "211f385508313ae578e1395121695b4f5d8d53e5",
+      "archive_worktree_sha256": "52483a5765b9416fd6c30803b144b83870b5825e5e2a14af6d6084028a2aa2c3"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_oscillation_fit.png",
+      "sha256": "d6fa7b4f54491f510fe141cfea362abfb3ce2f137fb5ec7421a5b0c87143e7ca",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_oscillation_fit.png",
+      "git_blob_oid": "9c6c8ad7a608c4278197a6fbec268f6017ee0e69",
+      "archive_worktree_sha256": "d6fa7b4f54491f510fe141cfea362abfb3ce2f137fb5ec7421a5b0c87143e7ca"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_oscillation_fit.svg",
+      "sha256": "52a9b33a8b94033e1c995b2a01060da8935cf91ea621e289d0726cc885688318",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_oscillation_fit.svg",
+      "git_blob_oid": "47b5dd0a2e00f9c0f5c6ccff8994a8f43d59530c",
+      "archive_worktree_sha256": "52a9b33a8b94033e1c995b2a01060da8935cf91ea621e289d0726cc885688318"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_total_fit.png",
+      "sha256": "2f369760a9dfc073a2a241e5a66be676a802f56bd8899cf1cbca022383f3de30",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_total_fit.png",
+      "git_blob_oid": "100fed00b859c193a2c9ed07498c63c7bce2d66c",
+      "archive_worktree_sha256": "2f369760a9dfc073a2a241e5a66be676a802f56bd8899cf1cbca022383f3de30"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_total_fit.svg",
+      "sha256": "fdffa857e281b62a204632ca6fa37108df6c8c4c3df8efc8dc5c932305ed62ae",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_L4_to_L22_20260820/oneD_hubbard_fss_total_fit.svg",
+      "git_blob_oid": "dbd79bc7ac97f4dfc4dc4d77aaf62f228ea12e30",
+      "archive_worktree_sha256": "fdffa857e281b62a204632ca6fa37108df6c8c4c3df8efc8dc5c932305ed62ae"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_branch_fit.png",
+      "sha256": "ef2f99f7d42258be6302e3b7670beef3a9341192762419913b843f2e25060524",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_branch_fit.png",
+      "git_blob_oid": "495afa2046b45d4fb78f2363e2bd7099f94cca69",
+      "archive_worktree_sha256": "ef2f99f7d42258be6302e3b7670beef3a9341192762419913b843f2e25060524"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_branch_fit.svg",
+      "sha256": "646bfcc88cd6770b140c88473871d8384faadc454d5f40c5b5f195df913515a2",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_branch_fit.svg",
+      "git_blob_oid": "45bd49ebafb1c51cef6333efa9c50f84a76238c3",
+      "archive_worktree_sha256": "646bfcc88cd6770b140c88473871d8384faadc454d5f40c5b5f195df913515a2"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_fit_input.png",
+      "sha256": "606fc38df458e2194bd58d2afee1f9ac060a302ce9dd180f12d8fc1faf68c2a2",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_fit_input.png",
+      "git_blob_oid": "86364f0ff5372d10896e31bf20e7083d9c8d0675",
+      "archive_worktree_sha256": "606fc38df458e2194bd58d2afee1f9ac060a302ce9dd180f12d8fc1faf68c2a2"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_fit_input.svg",
+      "sha256": "a6308b9297202f5210d1bac93a69dbf2720a47d21d95c2ae4fab1feeec4ce24b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_fit_input.svg",
+      "git_blob_oid": "33d1c7ddc68e663673f573d28d50dbb430d31568",
+      "archive_worktree_sha256": "a6308b9297202f5210d1bac93a69dbf2720a47d21d95c2ae4fab1feeec4ce24b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_oscillation_fit.png",
+      "sha256": "383b411cc986ef45ff55a59fee694efc56393ad84068d4448b0f832e238e8708",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_oscillation_fit.png",
+      "git_blob_oid": "5499b76bb2ec0808dd4db4fe69bcf1416ef32bd3",
+      "archive_worktree_sha256": "383b411cc986ef45ff55a59fee694efc56393ad84068d4448b0f832e238e8708"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_oscillation_fit.svg",
+      "sha256": "e460640066dddf0eac6e46840e4f01f7aa11abd0626a217c44f3b6fdc2118c24",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_oscillation_fit.svg",
+      "git_blob_oid": "8235640562013f9a57753ccb5a59c5309e5a3155",
+      "archive_worktree_sha256": "e460640066dddf0eac6e46840e4f01f7aa11abd0626a217c44f3b6fdc2118c24"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_total_fit.png",
+      "sha256": "ba98bdc9a3e95fd52a345a55a873e4fffb2307f51853e488cf90c81fef073c46",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_total_fit.png",
+      "git_blob_oid": "85df146874423ae9fd6a92e009529ca7a68f3047",
+      "archive_worktree_sha256": "ba98bdc9a3e95fd52a345a55a873e4fffb2307f51853e488cf90c81fef073c46"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/oneD_hubbard_fss_total_fit.svg",
+      "sha256": "0cd9a33bc245d7ca2cfc2bd45f98b05b117fa0fd0d3d99566fcd85f93492488c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/oneD_hubbard_fss_total_fit.svg",
+      "git_blob_oid": "96fbb80cbf3d6ada64ea2dd96868dc56bfeede4a",
+      "archive_worktree_sha256": "0cd9a33bc245d7ca2cfc2bd45f98b05b117fa0fd0d3d99566fcd85f93492488c"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/figures/u2_u4_apbc_mott_crossover.svg",
+      "sha256": "89264238d7595c3a7b03c54d63cd564e5584cb81d8e9eb84282c8cd4f2f3b542",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/figures/u2_u4_apbc_mott_crossover.svg",
+      "git_blob_oid": "0adc0c581e62949f6642d32c56d54637d624d28b",
+      "archive_worktree_sha256": "89264238d7595c3a7b03c54d63cd564e5584cb81d8e9eb84282c8cd4f2f3b542"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BETA_CONVERGENCE_beta20_Ninc16.csv",
+      "sha256": "cbdb55e00a68d62612c65dea486ac63e10846154344b5870de747cbdb10d5867",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BETA_CONVERGENCE_beta20_Ninc16.csv",
+      "git_blob_oid": "5dd52d3f502189b815bd1b92649e42cf91bb89f6",
+      "archive_worktree_sha256": "cbdb55e00a68d62612c65dea486ac63e10846154344b5870de747cbdb10d5867"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BETA_CONVERGENCE_beta30_Ninc16.csv",
+      "sha256": "c351c90f284bb1564568402eecfeb03ff2af08b10b5bcffdbeeaea16e7935995",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BETA_CONVERGENCE_beta30_Ninc16.csv",
+      "git_blob_oid": "6b1941dbe77ce78e0864ecc11dcbcaeef7d6ab2b",
+      "archive_worktree_sha256": "c351c90f284bb1564568402eecfeb03ff2af08b10b5bcffdbeeaea16e7935995"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BETA_CONVERGENCE_beta40_Ninc16.csv",
+      "sha256": "bfc12a6e69cbfe2ace065d5818ea76e237e72fa088361aae5ca81c8e6851ae45",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BETA_CONVERGENCE_beta40_Ninc16.csv",
+      "git_blob_oid": "39e90fbce372ebfbc9d88c9a99123b4bc27a05bc",
+      "archive_worktree_sha256": "bfc12a6e69cbfe2ace065d5818ea76e237e72fa088361aae5ca81c8e6851ae45"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BETA_CONVERGENCE_beta60_Ninc16.csv",
+      "sha256": "176206ac32d9a20725576e9be9dd2b2fc947320930faa7cb4e94304ba2da443b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BETA_CONVERGENCE_beta60_Ninc16.csv",
+      "git_blob_oid": "d51de113114ee65d6ee254e08f922af755b6b1dd",
+      "archive_worktree_sha256": "176206ac32d9a20725576e9be9dd2b2fc947320930faa7cb4e94304ba2da443b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_Ninc16_summary.csv",
+      "sha256": "80109e5dd636c2d4d296b6eda159757e99e2927f84bf45fe37e2b26fba6600be",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BLOCKSIZE_U2_beta40_Ninc16_summary.csv",
+      "git_blob_oid": "0cbef65833a9c8fe9796f2c5da0026c4ec9c1e55",
+      "archive_worktree_sha256": "1f799d83d74b6ad31f21122f5bb5a40935846e449603096aa2e08f8e987fc3db",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_nA1_Ninc16.csv",
+      "sha256": "9c223d61c23f0614db2a48f5608a802988d0d617695e1e9633da112be9f0a2ff",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BLOCKSIZE_U2_beta40_nA1_Ninc16.csv",
+      "git_blob_oid": "0a95bc44b46f6026e1541536b7bb0979c5ddbfc2",
+      "archive_worktree_sha256": "9c223d61c23f0614db2a48f5608a802988d0d617695e1e9633da112be9f0a2ff"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_nA2_Ninc16.csv",
+      "sha256": "403074f37edf827a1bfae9efb4594f4fd3f80e159b7603b1ea220ca65db642e3",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BLOCKSIZE_U2_beta40_nA2_Ninc16.csv",
+      "git_blob_oid": "f539255a504a00df6fa744135b0bd5de06801778",
+      "archive_worktree_sha256": "403074f37edf827a1bfae9efb4594f4fd3f80e159b7603b1ea220ca65db642e3"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_nA3_Ninc16.csv",
+      "sha256": "1e97f2820ea363fbdcda84afa2c814b4d27c1a61cec75d0350cc64f370d7e211",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BLOCKSIZE_U2_beta40_nA3_Ninc16.csv",
+      "git_blob_oid": "ec2e5b3b571af68f9716d96c31b9dbaccfae119b",
+      "archive_worktree_sha256": "1e97f2820ea363fbdcda84afa2c814b4d27c1a61cec75d0350cc64f370d7e211"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_nA4_Ninc16.csv",
+      "sha256": "0296ba3d24733cb11dff5c6ad1365d6abc08f11832c849f771576647d8442e6a",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/BLOCKSIZE_U2_beta40_nA4_Ninc16.csv",
+      "git_blob_oid": "d01aa1511ef42fa23c0c3081ec527996a16f3f1a",
+      "archive_worktree_sha256": "0296ba3d24733cb11dff5c6ad1365d6abc08f11832c849f771576647d8442e6a"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/DMRG_S2_U2_periodic.csv",
+      "sha256": "a66bd493e4fadf975061f67c5fa879c99a837e30278291d834360ddaa0acf21c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/DMRG_S2_U2_periodic.csv",
+      "git_blob_oid": "93f8e6bb5d9b734edb03b48bb9eae3fc2810958c",
+      "archive_worktree_sha256": "55c45b21e1dd076b810c1d6e1779e6637a93e9725918a467f0f4f934e1e9fa40",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/ED_L10_U1_U2_U4_betaInf_nA1to9_journal_check.csv",
+      "sha256": "0386905163d79d2690afc2d847cfa45d94d95daf2511dd1dc429f44668bbbb75",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/ED_L10_U1_U2_U4_betaInf_nA1to9_journal_check.csv",
+      "git_blob_oid": "8e5ac6461e38f4227927390d453cf33851c01881",
+      "archive_worktree_sha256": "521f1406d88b8204abaf742544189b5ae34dc3fd6d9f865935e4aacafdc5adb9",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/ED_L10_U2_beta40_nA1to5.csv",
+      "sha256": "ce957e089fdabeff940230cc9d84b40ddda2b3adb99a8a27e39eb1c76dcd01de",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/ED_L10_U2_beta40_nA1to5.csv",
+      "git_blob_oid": "89876199757d49a11dc84daa89237bb8c4d7a6ca",
+      "archive_worktree_sha256": "ce957e089fdabeff940230cc9d84b40ddda2b3adb99a8a27e39eb1c76dcd01de"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/ED_L12_U2_betaInf_nA6.csv",
+      "sha256": "bc80acd92c405e072ebe012e349bdbf38a5d023173efd8a12b3eca50c20b6538",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/ED_L12_U2_betaInf_nA6.csv",
+      "git_blob_oid": "99c6646e6ff83332015e12629a8dbbeb61fcb628",
+      "archive_worktree_sha256": "bc80acd92c405e072ebe012e349bdbf38a5d023173efd8a12b3eca50c20b6538"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/ED_L4_U2_betaInf_nA2.csv",
+      "sha256": "5d2ecb3c86e20b8accc6865a452cd4682e789e1f180462764ca9aec52d885358",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/ED_L4_U2_betaInf_nA2.csv",
+      "git_blob_oid": "498994d2cafd24dc84d796535aa3b3c6b9ef951f",
+      "archive_worktree_sha256": "5d2ecb3c86e20b8accc6865a452cd4682e789e1f180462764ca9aec52d885358"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/ED_L6_U2_betaInf_nA3.csv",
+      "sha256": "d36c5ef9b9e85c2ca0c936e3c9df36460be8c98695990a1b6ee518ef397557eb",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/ED_L6_U2_betaInf_nA3.csv",
+      "git_blob_oid": "62336afb10415a0c0ff23c68861579da40a74857",
+      "archive_worktree_sha256": "d36c5ef9b9e85c2ca0c936e3c9df36460be8c98695990a1b6ee518ef397557eb"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/ED_L8_U2_betaInf_nA4.csv",
+      "sha256": "71ce5879ee0e5d050945b5e39107a5b3be077d158eb80683fb84c84997366992",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/ED_L8_U2_betaInf_nA4.csv",
+      "git_blob_oid": "b2bac7b4ad84485d10724e6c384ccc38f57b2862",
+      "archive_worktree_sha256": "71ce5879ee0e5d050945b5e39107a5b3be077d158eb80683fb84c84997366992"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FRIDAY_BENCHMARK_Ninc16_4rootseed_highstat.csv",
+      "sha256": "bfc12a6e69cbfe2ace065d5818ea76e237e72fa088361aae5ca81c8e6851ae45",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FRIDAY_BENCHMARK_Ninc16_4rootseed_highstat.csv",
+      "git_blob_oid": "39e90fbce372ebfbc9d88c9a99123b4bc27a05bc",
+      "archive_worktree_sha256": "bfc12a6e69cbfe2ace065d5818ea76e237e72fa088361aae5ca81c8e6851ae45"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FRIDAY_BENCHMARK_Ninc8_4rootseed_highstat.csv",
+      "sha256": "f3d8f21896aad5c9378f49ad6a256e2e29222f003a59dc82c57a80b033bdff32",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FRIDAY_BENCHMARK_Ninc8_4rootseed_highstat.csv",
+      "git_blob_oid": "60649f226d8486727e9080feb116e526f2ced050",
+      "archive_worktree_sha256": "f3d8f21896aad5c9378f49ad6a256e2e29222f003a59dc82c57a80b033bdff32"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FRIDAY_BENCHMARK_Ninc8_4rootseed_highstat.toml",
+      "sha256": "bd757826e12b4606875a5c1c65423febe705c1fa7fcc185f36388dc5016513d4",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FRIDAY_BENCHMARK_Ninc8_4rootseed_highstat.toml",
+      "git_blob_oid": "f373e647be25f573c464a7ca0ba4fc46da2bd188",
+      "archive_worktree_sha256": "aa5751fd8c49074fe49db24bbfa5f8df10e40b6280919e4f43fbc3f250cd33f4",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta2L_L12_Ninc16_quick.csv",
+      "sha256": "988be429192acd87e5967f4c19a4b81aaa62a2a7fc8b1dd3bdc860c5ea1744d4",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta2L_L12_Ninc16_quick.csv",
+      "git_blob_oid": "22d9abbe507e856c9d9cfdf9f6472e3486462efa",
+      "archive_worktree_sha256": "988be429192acd87e5967f4c19a4b81aaa62a2a7fc8b1dd3bdc860c5ea1744d4"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta2L_L16_Ninc16_quick.csv",
+      "sha256": "ce5916494ce75d9eb9735acf540c45a992c2dddc5ed9980ca896e05d0596935c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta2L_L16_Ninc16_quick.csv",
+      "git_blob_oid": "60161cfa88dc858d9fe794affb6756aa12a09297",
+      "archive_worktree_sha256": "ce5916494ce75d9eb9735acf540c45a992c2dddc5ed9980ca896e05d0596935c"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta2L_L8_Ninc16_quick.csv",
+      "sha256": "523e7885985611f2e909e17bb87ee7bc1aba882f0dd4e19986060710522b2122",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta2L_L8_Ninc16_quick.csv",
+      "git_blob_oid": "f2d98a9753dc83b6082bda1f3739d402389e903c",
+      "archive_worktree_sha256": "523e7885985611f2e909e17bb87ee7bc1aba882f0dd4e19986060710522b2122"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L12_Ninc16.csv",
+      "sha256": "0b4c458e5fedabdc73832bb7299009be6dc77e5507241cc0ddd7e12771f173d9",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L12_Ninc16.csv",
+      "git_blob_oid": "320c873e635ed684c16e4363f25dd9c8d9d6f461",
+      "archive_worktree_sha256": "0b4c458e5fedabdc73832bb7299009be6dc77e5507241cc0ddd7e12771f173d9"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L14_Ninc16.csv",
+      "sha256": "d918d5e5a910ba8bbe25b49c0b0e7344c00c2c0dbd8bf892c21adc79a7114367",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L14_Ninc16.csv",
+      "git_blob_oid": "7b4545950605bd11b95598c6e8f1c1d875fdc0b1",
+      "archive_worktree_sha256": "d918d5e5a910ba8bbe25b49c0b0e7344c00c2c0dbd8bf892c21adc79a7114367"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L16_Ninc16.csv",
+      "sha256": "3eaf31b01056fb0324d41f2acef1567a2a88a215f4a45ba3703726afe6f69aa5",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L16_Ninc16.csv",
+      "git_blob_oid": "0255aa938e19c681df6b2940c168fb752899571a",
+      "archive_worktree_sha256": "3eaf31b01056fb0324d41f2acef1567a2a88a215f4a45ba3703726afe6f69aa5"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L18_Ninc16_burnin8000.csv",
+      "sha256": "3dd36fc19dcaee0ee4953715e56d6a9543fd394f9a19033dfa1ab28e6a496e15",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L18_Ninc16_burnin8000.csv",
+      "git_blob_oid": "75be36c559038fcad5ca6c6b1cb485a2df136bc0",
+      "archive_worktree_sha256": "3dd36fc19dcaee0ee4953715e56d6a9543fd394f9a19033dfa1ab28e6a496e15"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L20_Ninc16.csv",
+      "sha256": "d6c734257a969f6ccc465972fc7c079fa2772b0c9d9794820538a902db6b048b",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L20_Ninc16.csv",
+      "git_blob_oid": "47cec81f8eae2d5196113b23f54b270671383d7f",
+      "archive_worktree_sha256": "d6c734257a969f6ccc465972fc7c079fa2772b0c9d9794820538a902db6b048b"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L22_Ninc16.csv",
+      "sha256": "bf82b619ae420912ec3795731b34c2791f3e4c37258a9195cadb8179cbe3dafd",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L22_Ninc16.csv",
+      "git_blob_oid": "9cfd7a90cb7962e970937e0f0019f3a38dc7e14b",
+      "archive_worktree_sha256": "bf82b619ae420912ec3795731b34c2791f3e4c37258a9195cadb8179cbe3dafd"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L4_Ninc16.csv",
+      "sha256": "53d4f4652257fee65291028424fb12fae6ef5f7381fff858ecb420367b98cc0c",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L4_Ninc16.csv",
+      "git_blob_oid": "72669936aced067350ab89a0b4ac856be5ef4167",
+      "archive_worktree_sha256": "53d4f4652257fee65291028424fb12fae6ef5f7381fff858ecb420367b98cc0c"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L6_Ninc16.csv",
+      "sha256": "e63160549e65e9ea4c8426d01ef79a328a690ca8da4b3343e236ed689bb852ed",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L6_Ninc16.csv",
+      "git_blob_oid": "07102223e2689ce898261becaf2af2db0e95b437",
+      "archive_worktree_sha256": "e63160549e65e9ea4c8426d01ef79a328a690ca8da4b3343e236ed689bb852ed"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L8_Ninc16.csv",
+      "sha256": "e8476bd0fe885178bdcb22c7c91e70ef65de36be7262bec4e589249ffae82de1",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L8_Ninc16.csv",
+      "git_blob_oid": "887a6ffedc1a37e6d19cb3385761872f8edbd5fd",
+      "archive_worktree_sha256": "e8476bd0fe885178bdcb22c7c91e70ef65de36be7262bec4e589249ffae82de1"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta4L_L8_Ninc4_quick.csv",
+      "sha256": "f8c80a3dc0b501ac832a5388e6d00e33f5da3c1f3457536a8eef33c94937911f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta4L_L8_Ninc4_quick.csv",
+      "git_blob_oid": "5e73ab695595ed8b77afbd32f7bc2f7ec4d92f72",
+      "archive_worktree_sha256": "f8c80a3dc0b501ac832a5388e6d00e33f5da3c1f3457536a8eef33c94937911f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta6L_L10_Ninc16.csv",
+      "sha256": "5d92fe897a070a0f13c1bd61c9f2947efd31041d11d61bc732d1e3cc6b3f03da",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta6L_L10_Ninc16.csv",
+      "git_blob_oid": "65ba5385b05497a07b913a12be0c6eb087c725b6",
+      "archive_worktree_sha256": "5d92fe897a070a0f13c1bd61c9f2947efd31041d11d61bc732d1e3cc6b3f03da"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_1D_U2_beta6L_L12_Ninc16_burnin8000.csv",
+      "sha256": "d621898bccc99623fd111f065be8375aac1a42fdcaea8ac2a8823e5f13f43f0e",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_1D_U2_beta6L_L12_Ninc16_burnin8000.csv",
+      "git_blob_oid": "b81119ec9581e29610386744a38c200d2efe62f7",
+      "archive_worktree_sha256": "d621898bccc99623fd111f065be8375aac1a42fdcaea8ac2a8823e5f13f43f0e"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_beta_convergence_U2_L10_L12_note.txt",
+      "sha256": "bbf0f7fd3d9c38367cbe1d141c0cd7cc12aa6871550a4c4dba8f46fff56906ed",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_beta_convergence_U2_L10_L12_note.txt",
+      "git_blob_oid": "60713931cb761e2ccadd6b1d01eaaa3b62539003",
+      "archive_worktree_sha256": "ff19db3630ff18cd755f41c5d4469d57ae0219f09bf8611028cf84441655e4ff",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_branch_fit_L4_to_L14.txt",
+      "sha256": "728a2ebb89c344ac8172542e08651425ae9b9de6cbdcbcd302da0a9074556ff3",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_branch_fit_L4_to_L14.txt",
+      "git_blob_oid": "c1386706817dfcfea87da283191ef39e0df291e4",
+      "archive_worktree_sha256": "728a2ebb89c344ac8172542e08651425ae9b9de6cbdcbcd302da0a9074556ff3"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/FSS_branch_fit_L4_to_L16.txt",
+      "sha256": "bbf37dee1454a3180739aa02de344c849a208ba9392de7e5e4b3dfc6cd3ded6d",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/FSS_branch_fit_L4_to_L16.txt",
+      "git_blob_oid": "d1eec443355b8c0015f600cce509280a3fdd32ae",
+      "archive_worktree_sha256": "bbf37dee1454a3180739aa02de344c849a208ba9392de7e5e4b3dfc6cd3ded6d"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/TROTTER_CHECK_beta30_dtau010_Ninc16.csv",
+      "sha256": "7ca429eb13fe69375138a2f9775b7edd1de21789a64dc57040b6b3c2ac854613",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/TROTTER_CHECK_beta30_dtau010_Ninc16.csv",
+      "git_blob_oid": "f12443f7bfa10806b48e5af9b87a4c3b72fa3786",
+      "archive_worktree_sha256": "7ca429eb13fe69375138a2f9775b7edd1de21789a64dc57040b6b3c2ac854613"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/lambda_grid_Ninc16_4rootseed_highstat.csv",
+      "sha256": "bfc12a6e69cbfe2ace065d5818ea76e237e72fa088361aae5ca81c8e6851ae45",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/lambda_grid_Ninc16_4rootseed_highstat.csv",
+      "git_blob_oid": "39e90fbce372ebfbc9d88c9a99123b4bc27a05bc",
+      "archive_worktree_sha256": "bfc12a6e69cbfe2ace065d5818ea76e237e72fa088361aae5ca81c8e6851ae45"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/lambda_grid_Ninc4_4rootseed_highstat.csv",
+      "sha256": "a2d6644e783f7bedb5d4dd484fdc0c3558363d7f1022968ac1391cd81751ce8f",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/lambda_grid_Ninc4_4rootseed_highstat.csv",
+      "git_blob_oid": "567501da20ca19456f875826899dbbbcc99a2491",
+      "archive_worktree_sha256": "a2d6644e783f7bedb5d4dd484fdc0c3558363d7f1022968ac1391cd81751ce8f"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/lambda_grid_Ninc8_4rootseed_highstat.csv",
+      "sha256": "f3d8f21896aad5c9378f49ad6a256e2e29222f003a59dc82c57a80b033bdff32",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/lambda_grid_Ninc8_4rootseed_highstat.csv",
+      "git_blob_oid": "60649f226d8486727e9080feb116e526f2ced050",
+      "archive_worktree_sha256": "f3d8f21896aad5c9378f49ad6a256e2e29222f003a59dc82c57a80b033bdff32"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/lambda_grid_Ninc8_4rootseed_smoke.csv",
+      "sha256": "695c18e73cd698b17e7e98468fb32d7a37f16157860140edb3426d03ea8389e1",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/lambda_grid_Ninc8_4rootseed_smoke.csv",
+      "git_blob_oid": "59e22fbae1fa74b59223bb7707f710af29ff29eb",
+      "archive_worktree_sha256": "695c18e73cd698b17e7e98468fb32d7a37f16157860140edb3426d03ea8389e1"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/lambda_grid_beta20_Ninc16_4rootseed_highstat.csv",
+      "sha256": "cbdb55e00a68d62612c65dea486ac63e10846154344b5870de747cbdb10d5867",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/lambda_grid_beta20_Ninc16_4rootseed_highstat.csv",
+      "git_blob_oid": "5dd52d3f502189b815bd1b92649e42cf91bb89f6",
+      "archive_worktree_sha256": "cbdb55e00a68d62612c65dea486ac63e10846154344b5870de747cbdb10d5867"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/lambda_grid_beta30_Ninc16_4rootseed_highstat.csv",
+      "sha256": "c351c90f284bb1564568402eecfeb03ff2af08b10b5bcffdbeeaea16e7935995",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/lambda_grid_beta30_Ninc16_4rootseed_highstat.csv",
+      "git_blob_oid": "6b1941dbe77ce78e0864ecc11dcbcaeef7d6ab2b",
+      "archive_worktree_sha256": "c351c90f284bb1564568402eecfeb03ff2af08b10b5bcffdbeeaea16e7935995"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/lambda_grid_summary.csv",
+      "sha256": "695c18e73cd698b17e7e98468fb32d7a37f16157860140edb3426d03ea8389e1",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/lambda_grid_summary.csv",
+      "git_blob_oid": "59e22fbae1fa74b59223bb7707f710af29ff29eb",
+      "archive_worktree_sha256": "695c18e73cd698b17e7e98468fb32d7a37f16157860140edb3426d03ea8389e1"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/microtime_fused_update_L8_beta32_k2.csv",
+      "sha256": "a21689f0299bc081056172ec927fc32391b59be7815e7bb96a0935e07077cfef",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/microtime_fused_update_L8_beta32_k2.csv",
+      "git_blob_oid": "9623a7398250c822a9b693b49ea219819a6ff30b",
+      "archive_worktree_sha256": "c75b5e8f77ecc380f7e19a9f30147d0a5a66fef2800d784496b00cbfe2de0016",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/oneD_hubbard_fss_fit_input.csv",
+      "sha256": "713cb6de4f5be017debf3d3a39701b47307d333d3908f2ca6106d914b74d1427",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/oneD_hubbard_fss_fit_input.csv",
+      "git_blob_oid": "eb9e715c39aed1eb6ab5aadb4f23be6298ff63fe",
+      "archive_worktree_sha256": "713cb6de4f5be017debf3d3a39701b47307d333d3908f2ca6106d914b74d1427"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/oneD_hubbard_fss_fit_input_L4_to_L22_20260820.csv",
+      "sha256": "755be72882eaf42dd4e382446fb0e56be5e5885a309040b7a3d23a68f8b6eeee",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/oneD_hubbard_fss_fit_input_L4_to_L22_20260820.csv",
+      "git_blob_oid": "25a7f73128a07943183c08396fade16f1bc3cbd8",
+      "archive_worktree_sha256": "755be72882eaf42dd4e382446fb0e56be5e5885a309040b7a3d23a68f8b6eeee"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/oneD_hubbard_fss_fit_summary.csv",
+      "sha256": "a8914f19c8843aeadd1e5c0417ed8ad3b7205b67b8ac639d4db05920b0e7eef4",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/oneD_hubbard_fss_fit_summary.csv",
+      "git_blob_oid": "aa1813c1d0571601cc62257c069dbb5581e9d22f",
+      "archive_worktree_sha256": "a8914f19c8843aeadd1e5c0417ed8ad3b7205b67b8ac639d4db05920b0e7eef4"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/oneD_hubbard_fss_fit_summary_L4_to_L22_20260820.csv",
+      "sha256": "09381d05b0155e1ba28b2b6181d28adbb0090f744f11daddb7b4e79c5127738a",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/oneD_hubbard_fss_fit_summary_L4_to_L22_20260820.csv",
+      "git_blob_oid": "c9d0fbde3681183a81d7dd1debb54d8df9331422",
+      "archive_worktree_sha256": "09381d05b0155e1ba28b2b6181d28adbb0090f744f11daddb7b4e79c5127738a"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/profile_current_lambda_node_L8_beta32_k2_hotspot_extract.txt",
+      "sha256": "46deb9d03c5ecc6bd558b527f20afbf89fa47e777a91df5f27cf3b0932469910",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/profile_current_lambda_node_L8_beta32_k2_hotspot_extract.txt",
+      "git_blob_oid": "ce4b516abbc8cc217d2473a48e9aa5afceee5742",
+      "archive_worktree_sha256": "8495d00c371f477b88ef779fdc679d918b3980e347d82d6d5d9512b602c455b2",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/speed_compare_current_L8_beta32_nA4_Ninc4.csv",
+      "sha256": "90b77247fbd65ce50a19bd2833a1c381829a856f5ea3562d6cac855fe3d388fb",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/speed_compare_current_L8_beta32_nA4_Ninc4.csv",
+      "git_blob_oid": "69ccfb47ea28d6961288b0409e81f15375bfc761",
+      "archive_worktree_sha256": "57f37008b26edef599608d08bd7ae4beca1922a51575f953fb6ac69174d6d595",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/speed_compare_jdqmc_kernel_L8_beta32.csv",
+      "sha256": "4878f40b5065916d9b04cc555987276aee22252f43b5f7950239886dfb1a7200",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/speed_compare_jdqmc_kernel_L8_beta32.csv",
+      "git_blob_oid": "3d31a588f30a9452fe45add4f3a0bda7984c18c3",
+      "archive_worktree_sha256": "4878f40b5065916d9b04cc555987276aee22252f43b5f7950239886dfb1a7200"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/speed_compare_normalized_L8_beta32.csv",
+      "sha256": "c7bb9ebd9d5d42664838082fe958e8f82fedf50572ae27ef3c36200af9086323",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/speed_compare_normalized_L8_beta32.csv",
+      "git_blob_oid": "007bb79f7e7c6a05b1da1c86e60f5730947bfcd2",
+      "archive_worktree_sha256": "3a5ea2c4e74b0e52a6e4c72871227e68579c53d79811e3b863cccf2eaa099b09",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/speed_compare_smoqy_highlevel_L8_beta32.csv",
+      "sha256": "d7846634ad1a8e65e23a62ee8a2d13541b7d49f0e11dccbf91a5a4a30323269a",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/speed_compare_smoqy_highlevel_L8_beta32.csv",
+      "git_blob_oid": "c757b42b0215baa11c921ae9096f55ea1f0c445a",
+      "archive_worktree_sha256": "380df2b5b5774c68234e4f4a10e8957810f9fbd2f32156c1e844e049421a3e75",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/processed/speed_compare_summary_L8_beta32.csv",
+      "sha256": "c8f2ab18911b1147e51577b2b7895f4bd83ea6e0903e3a6891cdb0651ccd8845",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/processed/speed_compare_summary_L8_beta32.csv",
+      "git_blob_oid": "92d8c42003821a69efabdeaaee574993f0ec1bcf",
+      "archive_worktree_sha256": "b9e4e431559ca45b3f781a769c10460cf35ffa70b2cd3b73f3038523bd4e5590",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/results/raw/queue/run_L16_subsystem_scan_U2_beta64_Ninc16.ps1",
+      "sha256": "9348f9a3a96425f79264ea0d23b77a659c1921fcfd6654536ab2df41166207c0",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "results/raw/queue/run_L16_subsystem_scan_U2_beta64_Ninc16.ps1",
+      "git_blob_oid": "c1dfeb944be0e66cda50074d90af6685e4230227",
+      "archive_worktree_sha256": "07e9cfb8869966cc259c21df5ae498565f82564496fc1d3f313f1cea1e94efde",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/run/run_grid_local.jl",
+      "sha256": "3fd4e47bf57581849b97ac4f68ce3cb31974b371533a27a23789fdd23b6580c9",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "run/run_grid_local.jl",
+      "git_blob_oid": "c64c326e5db11790f22e4ff560bb84e803865bf9",
+      "archive_worktree_sha256": "3fd4e47bf57581849b97ac4f68ce3cb31974b371533a27a23789fdd23b6580c9"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/run/run_lambda_node.jl",
+      "sha256": "5d7f7a1ff45a8cf69f061d009ca258d829eb4bbbdd36d5b5acf649d76c246e21",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "run/run_lambda_node.jl",
+      "git_blob_oid": "853c2555458c2d6df51f6812a097c1eb380111c8",
+      "archive_worktree_sha256": "5d7f7a1ff45a8cf69f061d009ca258d829eb4bbbdd36d5b5acf649d76c246e21"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/run/run_u4_fss_campaign.sh",
+      "sha256": "aba922e6fadfb02d20d1288a99da19dc41a592565c8686015a22ac7caaf37bf2",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "run/run_u4_fss_campaign.sh",
+      "git_blob_oid": "59196f0b828019a87622317ee5e4628b8c0fe0b3",
+      "archive_worktree_sha256": "aba922e6fadfb02d20d1288a99da19dc41a592565c8686015a22ac7caaf37bf2"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/run/start_u4_fss_detached.ps1",
+      "sha256": "e08c846bc8aebd0d07c71d0c0d32dd67d00559aad5122a9276e5763ab1266cde",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "run/start_u4_fss_detached.ps1",
+      "git_blob_oid": "40cac458908476e9c61da96f870b7ad4a3fcb40f",
+      "archive_worktree_sha256": "e08c846bc8aebd0d07c71d0c0d32dd67d00559aad5122a9276e5763ab1266cde"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/src/HubbardRenyiDQMC.jl",
+      "sha256": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "src/HubbardRenyiDQMC.jl",
+      "git_blob_oid": "4cede82756bda8437924a80b8a9ac63375cc7bd4",
+      "archive_worktree_sha256": "336f4393cd69b04ffc1b8c42f97207d719a4ab88cbbd1d343a8088234bffc721"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/src/dqmc_kernel.jl",
+      "sha256": "4cd70c95f78a7a1f85e9648a6addbb58242791c2b16093ed6f33012ddbf8ac31",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "src/dqmc_kernel.jl",
+      "git_blob_oid": "af35e42832a6ea19ee10c80b1c63b5fbd1c0ba57",
+      "archive_worktree_sha256": "4cd70c95f78a7a1f85e9648a6addbb58242791c2b16093ed6f33012ddbf8ac31"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/src/grover_rank1_update.jl",
+      "sha256": "e74e95d537333a91f98c68139cc032cf8286beafad55dd242f07ec1c12aeed33",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "src/grover_rank1_update.jl",
+      "git_blob_oid": "86f97d6677a2efd8938781b3cb3d8f45f4dc6493",
+      "archive_worktree_sha256": "e74e95d537333a91f98c68139cc032cf8286beafad55dd242f07ec1c12aeed33"
+    },
+    {
+      "record_path": "source_snapshot/HubbardRenyiDQMC/test/runtests.jl",
+      "sha256": "95243f8cada9b3c71c2b6d0431148bb14d93819579bfe8e11798403ded21fbf4",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "snapshot_method": "git archive HEAD; uncommitted and untracked files excluded",
+      "source_git_path": "test/runtests.jl",
+      "git_blob_oid": "3b3b62f4d13ea13e5b90b95411198f7636776bef",
+      "archive_worktree_sha256": "363f8a82dd2b0ce53c2b13230a79f39667c28ff4e6d4b38205595334616b4ba1",
+      "serialization_note": "Exact Git blob snapshot; archive worktree may have checkout line-ending differences. See distinct SHA-256 values."
+    },
+    {
+      "record_path": "evidence/HubbardRenyiDQMC_archive_worktree/BLOCKSIZE_U2_beta40_Ninc16_summary.csv",
+      "archive_member": "HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_Ninc16_summary.csv",
+      "sha256": "1f799d83d74b6ad31f21122f5bb5a40935846e449603096aa2e08f8e987fc3db",
+      "source_repository_head": "b0adedf042304a72bc1aea618abdcda1962242e9",
+      "serialization_note": "Original archived worktree bytes: one CRLF among otherwise LF line endings. This is the historical documentation hash."
+    }
+  ]
+}

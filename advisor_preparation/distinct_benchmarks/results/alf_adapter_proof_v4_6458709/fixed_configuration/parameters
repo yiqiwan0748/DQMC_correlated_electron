@@ -1,0 +1,60 @@
+! Fixed-configuration adapter proof only; exits before any Monte Carlo sweeps.
+! Requires the additive native observer build and P21_PROOF_ONLY=1.
+&VAR_ham_name
+ham_name = "Hubbard"
+/
+&VAR_lattice
+L1 = 4
+L2 = 1
+Lattice_type = "Square"
+Model = "Hubbard"
+/
+&VAR_Model_Generic
+Checkerboard = .F.
+Symm = .F.
+N_SUN = 2
+N_FL = 2
+Phi_X = 0.d0
+Phi_Y = 0.d0
+Bulk = .T.
+N_Phi = 0
+Dtau = 0.1d0
+Beta = 1.d0
+Projector = .F.
+Theta = 0.d0
+/
+&VAR_Hubbard
+Mz = .T.
+Continuous = .T.
+ham_T = 1.d0
+ham_chem = 0.d0
+ham_U = 2.d0
+ham_h0 = 0.d0
+/
+&VAR_QMC
+Nwrap = 2
+NSweep = 1
+NBin = 1
+Ltau = 1
+LOBS_ST = 0
+LOBS_EN = 0
+CPU_MAX = 0.d0
+Propose_S0 = .F.
+Global_moves = .F.
+N_Global = 0
+Global_tau_moves = .F.
+N_Global_tau = 0
+Sequential = .T.
+Nt_sequential_start = 0
+Nt_sequential_end = -1
+Langevin = .F.
+HMC = .F.
+Amplitude = 1.d0
+/
+&VAR_errors
+n_skip = 2
+N_rebin = 1
+N_Cov = 1
+Extended_Zone = .F.
+N_BZ_Zones = 1
+/

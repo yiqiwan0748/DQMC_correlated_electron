@@ -1,0 +1,27 @@
+{
+  "schema": "A25_EXCLUDED_PILOT_RESOURCE_ASSESSMENT_V1",
+  "source_freeze_sha256": "9ce63aad259c091a40bf2af4668213b7c446df74c0aa93e73a70a16a65216ba7",
+  "input_sha256": {
+    "execution": "c221b9f861866bf79745ac25ead72d3dbb4fb9bd43a6fe93358171660d6c930b",
+    "comparison": "caf5b52bffd21c1e1ba087e9df2158c3fd3e0ee80c89eed34053b266ff40e79e",
+    "native": "4fa6df27e2467ea0f2fe92f6fc23764b4f829854c7a5e6895b0d3b80313c642f"
+  },
+  "formula": "2*(entire cold pilot native wall+980*max of all91 warm sector walls after first complete point)+2*14*(reference wall+comparison wall)+30sec; peak2*(observed peakMiB+64)",
+  "warm_sector_count": 91,
+  "cold_sector_count": 7,
+  "warm_maximum_dimension": 400,
+  "native_forecast_seconds": 490.1642394065857,
+  "full_forecast_seconds": 619.30535364151,
+  "full_forecast_mib": 1286.4140625,
+  "limits": {
+    "seconds": 1500.0,
+    "MiB": 2800.0,
+    "native_seconds": 1410
+  },
+  "eligible_for_root_full_review": true,
+  "full_execution_authorized": false,
+  "independent_audit_and_root_review_still_required": true,
+  "scientific_completions": 0,
+  "catalogue_status": "NOT_RUN",
+  "scope": "Measured excluded pilot supports only an empirical bounded-resource projection; no full scientific result or automatic submission"
+}

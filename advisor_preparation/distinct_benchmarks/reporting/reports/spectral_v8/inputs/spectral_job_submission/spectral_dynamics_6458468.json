@@ -1,0 +1,20 @@
+{
+  "job_id": "6458468",
+  "ids": [
+    "P08",
+    "P09",
+    "P10"
+  ],
+  "source_release": "../source_releases/spectral-dynamics-v1-freeze.json",
+  "status": "SUBMITTED_NOT_YET_A_SCIENTIFIC_PASS",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_cap_minutes": 10,
+  "estimate_minutes_after_start": [
+    1,
+    5
+  ],
+  "checkpoint_EDT": "2026-10-22 15:20",
+  "running_user_jobs_before_submission": 0,
+  "unrelated_jobs_changed": false
+}

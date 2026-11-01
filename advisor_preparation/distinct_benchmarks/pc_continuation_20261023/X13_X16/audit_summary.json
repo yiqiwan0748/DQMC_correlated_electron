@@ -1,0 +1,490 @@
+{
+  "schema": "ROOT_X13_X16_RECONCILIATION_AUDIT_V1",
+  "status": "PASS",
+  "catalogue_ids": [
+    "X13",
+    "X16"
+  ],
+  "auditor_sha256": "06899182ba0fd41bc531f6ec40bc5b91cb7cc23b50de8d8038581e9016997ec2",
+  "source_archive_sha256": {
+    "X13": "794ab0b6dd780be8edb54aa3cc77f7fa1366c086378ffb0ca7d145ab3e5b832e",
+    "X16": "ea2ca47ba8f30f5dabb22a9411b56d0158e5732c64d22d3bea1fa708c69674f3"
+  },
+  "candidate_status": {
+    "X13": "PASS",
+    "X16": "PASS"
+  },
+  "new_distinct_ideas_supported": 2,
+  "pilot_completions": 0,
+  "physics_executed_by_this_audit": false,
+  "runtime": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "numpy": "2.4.6",
+    "blas_threads": 1
+  },
+  "retrieval": {
+    "regular_text_files": 139,
+    "bytes": 36145193,
+    "source_archives": [
+      {
+        "job": "x13_6462017",
+        "freeze_sha256": "894ac44abd92d077d5dcc8fe07b205f78f440dc0cfda78150975e7f712ff7fb2",
+        "archive_sha256": "794ab0b6dd780be8edb54aa3cc77f7fa1366c086378ffb0ca7d145ab3e5b832e",
+        "source_members": 12
+      },
+      {
+        "job": "x16pilot_6462342",
+        "freeze_sha256": "6cc52da858ad8655bac1ca7a4920be280cdd09968b00ba6f34d697a89f042fa6",
+        "archive_sha256": "ea2ca47ba8f30f5dabb22a9411b56d0158e5732c64d22d3bea1fa708c69674f3",
+        "source_members": 14
+      },
+      {
+        "job": "x16prod_6462471",
+        "freeze_sha256": "6cc52da858ad8655bac1ca7a4920be280cdd09968b00ba6f34d697a89f042fa6",
+        "archive_sha256": "ea2ca47ba8f30f5dabb22a9411b56d0158e5732c64d22d3bea1fa708c69674f3",
+        "source_members": 14
+      }
+    ],
+    "remote_sha_before_after_unchanged": true,
+    "pc_raw_chunks_missing": true,
+    "gap_resolved_by_authoritative_remote_retrieval": true
+  },
+  "execution": [
+    {
+      "job_id": "6462017",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:01:06",
+      "timelimit": "00:20:00",
+      "process_wall_seconds": {
+        "target": 9.666280031204224,
+        "reference": 52.45015335083008,
+        "comparator": 1.8733537197113037
+      }
+    },
+    {
+      "job_id": "6462342",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:03:29",
+      "timelimit": "00:05:00",
+      "process_wall_seconds": {
+        "target": 87.22109723091125,
+        "reference": 105.80189561843872,
+        "comparator": 6.965102910995483
+      }
+    },
+    {
+      "job_id": "6462471",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:02:16",
+      "timelimit": "00:20:00",
+      "process_wall_seconds": {
+        "target": 51.85474944114685,
+        "reference": 74.05157732963562,
+        "comparator": 5.934519290924072
+      }
+    }
+  ],
+  "fresh_mathematical_reconstructions": [
+    {
+      "catalogue_id": "X13",
+      "job": "x13_6462017",
+      "status": "PASS",
+      "mode": "production",
+      "pilot_excluded": false,
+      "counts": {
+        "integrity_checks": 5296,
+        "numerical_qualification_checks": 4379,
+        "cross_backend_checks": 6560
+      },
+      "metrics": {
+        "cross_eigenenergy_max_abs": 2.4868995751603507e-14,
+        "cross_ground_projector_max_abs": 3.164135620181696e-15,
+        "cross_weight_max_abs": 3.1086244689504383e-15,
+        "cross_pair_density_max_abs": null
+      },
+      "detailed_audit": {
+        "path": "recorded_details/x13_6462017_fresh_raw_math_audit.json",
+        "sha256": "235244f9a04f46ac0cea6c6c7fb80a7e96ee42eee0f289e75870e1405a4a72de",
+        "bytes": 3873507
+      },
+      "bindings": null,
+      "hidden_lowest_channels": 32
+    },
+    {
+      "catalogue_id": "X16",
+      "job": "x16pilot_6462342",
+      "status": "PASS",
+      "mode": "pilot",
+      "pilot_excluded": true,
+      "counts": {
+        "integrity_checks": 3741,
+        "numerical_qualification_checks": 1799,
+        "cross_backend_checks": 144
+      },
+      "metrics": {
+        "cross_eigenenergy_max_abs": 2.4868995751603507e-14,
+        "cross_ground_projector_max_abs": 6.966649479522857e-15,
+        "cross_weight_max_abs": null,
+        "cross_pair_density_max_abs": 5.995204332975845e-15
+      },
+      "detailed_audit": {
+        "path": "recorded_details/x16pilot_6462342_fresh_raw_math_audit.json",
+        "sha256": "5987505071704d585e30232d2733b39bde9031ba6711433ffdc488f729e58206",
+        "bytes": 959909
+      },
+      "bindings": [
+        {
+          "case_id": "U2_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": 0.037137202067722974,
+          "lower": 0.03713720201226557,
+          "upper": 0.03713720212316972,
+          "halfwidth": 5.545207348855996e-11,
+          "roundoff": 1.8295257658022003e-13,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U2_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": 0.03713720206772653,
+          "lower": 0.03713720201233891,
+          "upper": 0.03713720212307684,
+          "halfwidth": 5.5368966356272864e-11,
+          "roundoff": 7.986098250149587e-14,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U2_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": -0.1551748742989325,
+          "lower": -0.1551748743505912,
+          "upper": -0.15517487424285956,
+          "halfwidth": 5.386582846433896e-11,
+          "roundoff": 1.9410685086069437e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U2_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": -0.1551748742989325,
+          "lower": -0.15517487435052638,
+          "upper": -0.15517487424294837,
+          "halfwidth": 5.37890010310349e-11,
+          "roundoff": 1.1371811697608512e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": 0.016983289181842665,
+          "lower": 0.016983289095733402,
+          "upper": 0.016983289267870214,
+          "halfwidth": 8.606840587455089e-11,
+          "roundoff": 1.566834145519637e-13,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": 0.016983289181853323,
+          "lower": 0.016983289095747197,
+          "upper": 0.016983289267899052,
+          "halfwidth": 8.607592763554273e-11,
+          "roundoff": 1.3045396729345051e-13,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": -0.4468666476910954,
+          "lower": -0.4468666477711946,
+          "upper": -0.4468666476045294,
+          "halfwidth": 8.333261858339824e-11,
+          "roundoff": 1.6406223384484981e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": -0.44686664769109186,
+          "lower": -0.44686664777128043,
+          "upper": -0.4468666476044471,
+          "halfwidth": 8.341666246636237e-11,
+          "roundoff": 1.4063458455121537e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        }
+      ],
+      "hidden_lowest_channels": null
+    },
+    {
+      "catalogue_id": "X16",
+      "job": "x16prod_6462471",
+      "status": "PASS",
+      "mode": "production",
+      "pilot_excluded": false,
+      "counts": {
+        "integrity_checks": 3741,
+        "numerical_qualification_checks": 1799,
+        "cross_backend_checks": 144
+      },
+      "metrics": {
+        "cross_eigenenergy_max_abs": 2.4868995751603507e-14,
+        "cross_ground_projector_max_abs": 6.966649479522857e-15,
+        "cross_weight_max_abs": null,
+        "cross_pair_density_max_abs": 5.995204332975845e-15
+      },
+      "detailed_audit": {
+        "path": "recorded_details/x16prod_6462471_fresh_raw_math_audit.json",
+        "sha256": "def29e59b2305bc2a653381a53b1bdffe6bf860b3584fc0cb02caacfaecaf631",
+        "bytes": 959908
+      },
+      "bindings": [
+        {
+          "case_id": "U2_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": 0.037137202067722974,
+          "lower": 0.03713720201226557,
+          "upper": 0.03713720212316972,
+          "halfwidth": 5.545207348855996e-11,
+          "roundoff": 1.8295257658022003e-13,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U2_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": 0.03713720206772653,
+          "lower": 0.03713720201233891,
+          "upper": 0.03713720212307684,
+          "halfwidth": 5.5368966356272864e-11,
+          "roundoff": 7.986098250149587e-14,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U2_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": -0.1551748742989325,
+          "lower": -0.1551748743505912,
+          "upper": -0.15517487424285956,
+          "halfwidth": 5.386582846433896e-11,
+          "roundoff": 1.9410685086069437e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U2_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": -0.1551748742989325,
+          "lower": -0.15517487435052638,
+          "upper": -0.15517487424294837,
+          "halfwidth": 5.37890010310349e-11,
+          "roundoff": 1.1371811697608512e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": 0.016983289181842665,
+          "lower": 0.016983289095733402,
+          "upper": 0.016983289267870214,
+          "halfwidth": 8.606840587455089e-11,
+          "roundoff": 1.566834145519637e-13,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_pbc",
+          "reference_classification": "BOUND",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": 0.016983289181853323,
+          "lower": 0.016983289095747197,
+          "upper": 0.016983289267899052,
+          "halfwidth": 8.607592763554273e-11,
+          "roundoff": 1.3045396729345051e-13,
+          "classification": "BOUND",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_h",
+          "odd_N": 3,
+          "even_N": [
+            2,
+            4
+          ],
+          "value": -0.4468666476910954,
+          "lower": -0.4468666477711946,
+          "upper": -0.4468666476045294,
+          "halfwidth": 8.333261858339824e-11,
+          "roundoff": 1.6406223384484981e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        },
+        {
+          "case_id": "U4_apbc",
+          "reference_classification": "NONBINDING",
+          "name": "B_e",
+          "odd_N": 5,
+          "even_N": [
+            4,
+            6
+          ],
+          "value": -0.44686664769109186,
+          "lower": -0.44686664777128043,
+          "upper": -0.4468666476044471,
+          "halfwidth": 8.341666246636237e-11,
+          "roundoff": 1.4063458455121537e-13,
+          "classification": "NONBINDING",
+          "conditional_numerical_budget": true
+        }
+      ],
+      "hidden_lowest_channels": null
+    }
+  ],
+  "frozen_comparator_replays": [
+    {
+      "job": "x13_6462017",
+      "saved_sha256": "015d364ce9e53846270e17cdde42adf583d3f748dc3086ab4fd509d85d1941f7",
+      "fresh_replay_sha256": "4b4158045d684defa9b3dd7d0fc97bae7906ca2cedcab3a17059abe2c41ed537",
+      "scientific_status": "PASS",
+      "all_grid_labels_gates_decisions_exact": true,
+      "numeric_diagnostics_changed": 2806,
+      "maximum_numeric_roundoff_difference": 1.7763568394002505e-15
+    },
+    {
+      "job": "x16pilot_6462342",
+      "saved_sha256": "576e1ae17036dacd2f07eac7163421fdd06e55afe5f341f445c24d6eeca2a63c",
+      "fresh_replay_sha256": "ac744c6e855e49aa191e833ffb8828d04c91a96b4d9f026bfd2165b2d0292b7a",
+      "scientific_status": "PASS",
+      "all_grid_labels_gates_decisions_exact": true,
+      "numeric_diagnostics_changed": 104,
+      "maximum_numeric_roundoff_difference": 1.7763568394002505e-15
+    },
+    {
+      "job": "x16prod_6462471",
+      "saved_sha256": "45c4f9e0c1011502be3a637eae6b3c3ec60c7273b54c1d698331d51ebfe81985",
+      "fresh_replay_sha256": "fe15c4f554df694fc715d85fc0a9bdd2171d1930dc248266accbf863b58b5d28",
+      "scientific_status": "PASS",
+      "all_grid_labels_gates_decisions_exact": true,
+      "numeric_diagnostics_changed": 104,
+      "maximum_numeric_roundoff_difference": 1.7763568394002505e-15
+    }
+  ],
+  "check_count": 271,
+  "limits": [
+    "Finite L4 exact-diagonalization cases, not thermodynamic or superconducting-order claims.",
+    "New charged/spectral/pair observable adapters call the actual unchanged user Hamiltonian; no pre-existing native dynamical/pair solver is claimed.",
+    "X16 uncertainty certification assumes the explicitly declared conservative binary64/BLAS roundoff model; it is not directed-rounding interval arithmetic.",
+    "The exported PC ZIP omitted encoded raw chunks; authoritative matching ISAAC retrieval restores these selected raw receipts only.",
+    "Pinned existing independent raw-math implementations were reviewed and freshly rerun; this report does not pretend they were independently reauthored here."
+  ],
+  "original_fresh_full_audit_sha256": "eeef423737b48b1c820d7b2f5a868a8ec7d7a1f1cf2af0583761d3df12a6c12e",
+  "private_import_checks_note": "Original full audit also bound the private import ZIP and PC ledger chain. Those artifacts are excluded. Public replay independently repeats all scientific raw-math/frozen-comparator/source gates from this scientific selection.",
+  "public_scientific_selection": {
+    "manifest": "scientific_selection.json",
+    "original_transferred_files": 139,
+    "selected_original_science_files": 109,
+    "selected_accounting_files": 1,
+    "derived_execution_projections": 3,
+    "excluded_bodies": 33,
+    "public_archive_members": 113,
+    "all_scientific_gates_unchanged": true
+  }
+}

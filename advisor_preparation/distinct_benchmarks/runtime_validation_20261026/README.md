@@ -1,0 +1,11 @@
+# P17 runtime prerequisite: full-width identity defect confirmed
+
+On 26 October 2026, an ISAAC metadata diagnostic confirmed that Julia 1.12.1's Base file-stat accessors discarded high inode bits for all 24 tested shared-storage files. Their inode values required 58 bits; Base returned the lower 32 bits. Independent C, Python and GNU stat readers agreed on the full values for all 62 sampled paths and matched 258 file-segment observations from the same current Julia process. The independent saved-metadata audit passed 694 checks. This adds zero scientific benchmark completions; the campaign's 49 passed scientific questions remain unchanged.
+
+The earlier native v1 PASS was rejected: its reported parsed file-backed mapping count was zero, although its incomplete raw prefix contained 21 file-backed rows. Native v2 retained 235 parsed file-backed segments and remained unresolved on 24 distinct paths with identity mismatches and 31 unregistered provider paths. Its two Python preflight roles passed. These historical statuses and original receipt SHA256/size bindings are preserved.
+
+The new full-width native replacement source is independently reviewed, frozen and staged. At the recorded 03:59:52 UTC resource-hold checkpoint it had not been submitted: two unrelated one-CPU jobs occupied the two allowed running slots. The staged probe remains NOT_RUN at that checkpoint, and its untested replacement helpers are absent from this record. Existing successful Python checks are retained.
+
+The completed metadata diagnostic took 66.342 seconds. GNU time reported 691252 KiB maximum resident memory for the Base process; Slurm recorded a sampled batch maximum of 429564 KiB. These are distinct measurements. The 31 previously unregistered providers were observed without granting runtime approval. A low-32-bit match is diagnostic evidence and is never accepted as file identity.
+
+This record contains exact selected diagnostic source, primary-source references and aggregate projections. Private process captures, file identifiers, environments, queues and launch controls are omitted. The selected comparator reads omitted private raw inputs; this selection does not provide standalone complete runtime replay. Scientific fixtures, solvers and samplers were not run by this metadata diagnostic.

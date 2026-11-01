@@ -1,0 +1,174 @@
+{
+  "purpose": "P16 diagnostic and candidate correction, not an additional catalogue idea",
+  "job_id": "6457709",
+  "source_sha256": "be6d4e0cdca647d2d13359940bbfa923a6c9c1e3483057595920c2e09046d9ea",
+  "formula_permutation_checks": 4096,
+  "ground_energy": -2.1027484834620616,
+  "ground_gap": 0.2963246316389565,
+  "ground_residual": 1.6534765972907128e-14,
+  "all_subset_purities": [
+    {
+      "sites": [],
+      "old_purity": 1.0,
+      "corrected_purity": 1.0,
+      "quspin_purity": 1.0,
+      "corrected_absolute_error": 0.0
+    },
+    {
+      "sites": [
+        0
+      ],
+      "old_purity": 0.3769762811028422,
+      "corrected_purity": 0.3769762811028422,
+      "quspin_purity": 0.3769762811028421,
+      "corrected_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "sites": [
+        1
+      ],
+      "old_purity": 0.3769762811028422,
+      "corrected_purity": 0.3769762811028422,
+      "quspin_purity": 0.37697628110284215,
+      "corrected_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "sites": [
+        0,
+        1
+      ],
+      "old_purity": 0.47136523670021024,
+      "corrected_purity": 0.47136523670021024,
+      "quspin_purity": 0.4713652367002102,
+      "corrected_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "sites": [
+        2
+      ],
+      "old_purity": 0.3769762811028422,
+      "corrected_purity": 0.3769762811028422,
+      "quspin_purity": 0.3769762811028422,
+      "corrected_absolute_error": 0.0
+    },
+    {
+      "sites": [
+        0,
+        2
+      ],
+      "old_purity": 0.18328212068756095,
+      "corrected_purity": 0.19215599964073315,
+      "quspin_purity": 0.19215599964073315,
+      "corrected_absolute_error": 0.0
+    },
+    {
+      "sites": [
+        1,
+        2
+      ],
+      "old_purity": 0.47136523670019836,
+      "corrected_purity": 0.47136523670019836,
+      "quspin_purity": 0.4713652367001985,
+      "corrected_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "sites": [
+        0,
+        1,
+        2
+      ],
+      "old_purity": 0.37697628110284215,
+      "corrected_purity": 0.37697628110284215,
+      "quspin_purity": 0.37697628110284215,
+      "corrected_absolute_error": 0.0
+    },
+    {
+      "sites": [
+        3
+      ],
+      "old_purity": 0.3769762811028422,
+      "corrected_purity": 0.3769762811028422,
+      "quspin_purity": 0.37697628110284215,
+      "corrected_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "sites": [
+        0,
+        3
+      ],
+      "old_purity": 0.47136523670019836,
+      "corrected_purity": 0.47136523670019836,
+      "quspin_purity": 0.4713652367001985,
+      "corrected_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "sites": [
+        1,
+        3
+      ],
+      "old_purity": 0.18328212068756097,
+      "corrected_purity": 0.19215599964073318,
+      "quspin_purity": 0.19215599964073315,
+      "corrected_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "sites": [
+        0,
+        1,
+        3
+      ],
+      "old_purity": 0.37697628110284215,
+      "corrected_purity": 0.37697628110284215,
+      "quspin_purity": 0.3769762811028422,
+      "corrected_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "sites": [
+        2,
+        3
+      ],
+      "old_purity": 0.47136523670021024,
+      "corrected_purity": 0.47136523670021024,
+      "quspin_purity": 0.4713652367002102,
+      "corrected_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "sites": [
+        0,
+        2,
+        3
+      ],
+      "old_purity": 0.3769762811028422,
+      "corrected_purity": 0.3769762811028422,
+      "quspin_purity": 0.3769762811028422,
+      "corrected_absolute_error": 0.0
+    },
+    {
+      "sites": [
+        1,
+        2,
+        3
+      ],
+      "old_purity": 0.3769762811028422,
+      "corrected_purity": 0.3769762811028422,
+      "quspin_purity": 0.3769762811028422,
+      "corrected_absolute_error": 0.0
+    },
+    {
+      "sites": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "old_purity": 0.9999999999999998,
+      "corrected_purity": 0.9999999999999998,
+      "quspin_purity": 1.0,
+      "corrected_absolute_error": 2.220446049250313e-16
+    }
+  ],
+  "maximum_corrected_quspin_error": 2.220446049250313e-16,
+  "elapsed_seconds": 0.34304356575012207,
+  "status": "PASS",
+  "quspin_source": "https://quspin.github.io/QuSpin/modules/quspin/basis/basis_1d/fermion.html"
+}

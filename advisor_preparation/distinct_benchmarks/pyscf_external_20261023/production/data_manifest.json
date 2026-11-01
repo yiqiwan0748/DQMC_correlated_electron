@@ -1,0 +1,84 @@
+{
+  "archive": "data.tar.gz",
+  "archive_bytes": 34911077,
+  "archive_sha256": "9164ede9db58f4286a74b16e43c83183368735ab85f9d142c1b68105a46df65f",
+  "file_count": 15,
+  "files": [
+    {
+      "bytes": 636080,
+      "path": "recorded_independent_replay/comparison.json",
+      "sha256": "c8dd0313c3634e09aea74af5861d346081cfe51a76033a8e86269fe8afe3d5ff"
+    },
+    {
+      "bytes": 1334,
+      "path": "results/comparator.resources.txt",
+      "sha256": "4b937c05b1bddd392092ffe83ebd1d9e3af8ad7cadfa6c7d552b47eb62043713"
+    },
+    {
+      "bytes": 0,
+      "path": "results/comparator.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 239,
+      "path": "results/comparator.stdout.txt",
+      "sha256": "c2938c9788d3cb3c1dc626908315dd45da8534d79a7988d008f3f22687f64fd0"
+    },
+    {
+      "bytes": 635978,
+      "path": "results/comparison.json",
+      "sha256": "08124ba6764ea91ec445c41d8f5cc660627d7e9b82a1f8353915081b6533d715"
+    },
+    {
+      "bytes": 4265,
+      "path": "results/execution.json",
+      "sha256": "96e30e674b6a5e3287a0480f097f1010c1cc6ef923bf07c4ada83a9fc3faea63"
+    },
+    {
+      "bytes": 40478831,
+      "path": "results/reference.json",
+      "sha256": "557efcada71d13b8c1eb60c8347adbc787d0ef598b9b261d0b3c6570eacd596f"
+    },
+    {
+      "bytes": 1082,
+      "path": "results/reference.resources.txt",
+      "sha256": "6dcbbaad63e3a6a85429f431707bcc1ceb5254c520441eb5be0398f68b00a5f5"
+    },
+    {
+      "bytes": 0,
+      "path": "results/reference.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "results/reference.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1083,
+      "path": "results/target.resources.txt",
+      "sha256": "1292d10d1433270c0bc7c7e2ed93ff944c27895eeefbc40628d8022846057229"
+    },
+    {
+      "bytes": 0,
+      "path": "results/target.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "results/target.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 42474358,
+      "path": "results/target.toml",
+      "sha256": "6a1c161abc6443109660b7fc7856d7d610172701689fbc47300856e1d859d2eb"
+    },
+    {
+      "bytes": 281,
+      "path": "scheduler_own_job.txt",
+      "sha256": "a81ed3d5f984b2b0b4e47c57eb5d890812160349b0b0e60beb80a9ed9e2864d2"
+    }
+  ],
+  "schema": "scientific_text_archive_v1"
+}

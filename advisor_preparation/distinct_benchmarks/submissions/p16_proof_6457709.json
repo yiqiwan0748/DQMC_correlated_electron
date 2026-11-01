@@ -1,0 +1,14 @@
+{
+  "job_id": "6457709",
+  "dependency": "afterany:6457686",
+  "archive": "../source_releases/p16-diagnosis-source.tar.gz",
+  "archive_sha256": "9998a60a70155d9c37647135e7e1da3b2031fb488e5fd9330ebe8f62308274da",
+  "purpose": "Isolated sign proof and candidate verification; does not by itself repair canonical production source",
+  "cpus": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 10,
+  "runtime_estimate_minutes_after_start": [
+    1,
+    2
+  ]
+}

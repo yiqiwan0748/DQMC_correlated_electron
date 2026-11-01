@@ -1,0 +1,112 @@
+{
+  "schema": "P17_NATIVE_V3_TIMEOUT_PUBLIC_AGGREGATES_V1",
+  "record_kind": "SELECTIVE_PROJECTION_OF_SAVED_EXECUTION_AND_ACCOUNTING_NOT_ORIGINAL_RECEIPTS",
+  "attempt_version": "native_preflight_v3",
+  "status": "UNRESOLVED",
+  "started_utc": "2026-10-26T04:09:53.829436+00:00",
+  "finished_utc": "2026-10-26T04:12:55.437435+00:00",
+  "native_process": {
+    "role": "native",
+    "cap_seconds": 180,
+    "status": "TIME_CAP_EXCEEDED",
+    "started_utc": "2026-10-26T04:09:55.298826+00:00",
+    "exit_code": -9,
+    "elapsed_seconds": 180.04003213718534
+  },
+  "wrapper_elapsed_seconds": 181.6108216829598,
+  "wrapper_cap_seconds": 240,
+  "allocation": {
+    "terminal_state": "FAILED",
+    "exit_code": "2:0",
+    "elapsed_seconds": 184,
+    "cpus": 1,
+    "requested_memory_MiB": 3500,
+    "walltime_limit_seconds": 300,
+    "Slurm_sampled_batch_MaxRSS_KiB": 405108,
+    "GNU_process_peak_RSS_status": "NOT_RECORDED_EMPTY_RESOURCE_FILE"
+  },
+  "saved_output_observations": {
+    "retrieved_result_file_count": 5,
+    "native_output_directory_created": false,
+    "native_report_present": false,
+    "native_stdout_bytes": 0,
+    "native_stderr_bytes": 0,
+    "native_GNU_resources_bytes": 0
+  },
+  "source_freeze_sha256": "1bef39d501048f3a114904f0e1c17009e9bf8826e1f9fb4a245ade5ac14809b8",
+  "source_after_verified": true,
+  "automatic_retry": false,
+  "qualification": {
+    "native_runtime_qualified": false,
+    "map_identity_provider_dispatch_qualification_established": false,
+    "metadata_fixture_completion_established": false,
+    "scientific_solver_or_fixture_executed": false,
+    "scientific_completions_added": 0,
+    "scientific_failure_added": 0,
+    "P17_pilot_approved": false
+  },
+  "failure_bound": "The native process group reached its watchdog cap before any native output directory or report was created. Initial imports and helper includes precede that directory. No saved stage marker identifies a particular import, compilation stage, environment defect, or out-of-memory event.",
+  "independent_failure_review": {
+    "status": "AUDIT_PASS_ACTUAL_RUNTIME_UNRESOLVED_NO_NATIVE_GUARD_COMPLETION",
+    "check_count": 51,
+    "sha256": "8c1a97ecf035f84883ad995f6fe5683dfa929c1269f66154ced8122f260b3ed9"
+  },
+  "retained_python_v2_actual_evidence": {
+    "status": "PASS_BOTH_RETAINED_PYTHON_ROLES_ACTUAL_METADATA_ONLY",
+    "check_count": 2110,
+    "sha256": "91005f036ebfd9fcbc905c37411af342a719c0f882dba7463d0e1c4d524c991a",
+    "roles": {
+      "quspin": {
+        "status": "PASS_RETAINED_ACTUAL_IMPORT_PREFLIGHT_ONLY",
+        "report_sha256": "467322bc55c2992c723c7950e070a439965a48d05b838ed25b6c4d261e9fae8c",
+        "active_runtime_sha256": "84559a9e3d69e9be070ae16d7bb0f60ead25bae17b057e4531f0326f6e5b2665"
+      },
+      "tenpy": {
+        "status": "PASS_RETAINED_ACTUAL_IMPORT_PREFLIGHT_ONLY",
+        "report_sha256": "0426e1ae3a6b688ba82e34c98117fb55a8136402ee50fb02fd4b96de99cb5d67",
+        "active_runtime_sha256": "4a42acfd1cb902046c1cba29444fd05476c265b89053dd6cef910f5f19c3f992"
+      }
+    },
+    "scope": "Earlier successful import preflights; not rerun by this native-only attempt and not numerical-result validation."
+  },
+  "scientific_ledger_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49,
+    "defined_ideas": 100,
+    "ledger_sha256": "3f5c83a7566aa754dea836b7501de14f157acff25e9945b620c23e03013ee304"
+  },
+  "immutable_private_receipt_bindings": {
+    "execution": {
+      "bytes": 917,
+      "sha256": "285dada1de9d7446df861a8b2b2c65544a59d82eef6209b27ff4f9a969cc7ee8",
+      "body_included": false
+    },
+    "terminal_retrieval": {
+      "bytes": 943,
+      "sha256": "3174ce1d145f668201bc4264dd274e8434b01863ee6fbdab3d4ea22829874a86",
+      "body_included": false
+    },
+    "terminal_accounting": {
+      "bytes": 124,
+      "sha256": "f46b896805e2941bc0815da3502933054a56c48861e4c82afa8d57eca155fc79",
+      "body_included": false
+    },
+    "source_freeze": {
+      "bytes": 5649,
+      "sha256": "1bef39d501048f3a114904f0e1c17009e9bf8826e1f9fb4a245ade5ac14809b8",
+      "body_included": false
+    },
+    "independent_failure_review": {
+      "bytes": 7967,
+      "sha256": "8c1a97ecf035f84883ad995f6fe5683dfa929c1269f66154ced8122f260b3ed9",
+      "body_included": false
+    },
+    "retained_python_actual_review": {
+      "bytes": 204830,
+      "sha256": "91005f036ebfd9fcbc905c37411af342a719c0f882dba7463d0e1c4d524c991a",
+      "body_included": false
+    }
+  }
+}

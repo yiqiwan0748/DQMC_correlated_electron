@@ -1,0 +1,55 @@
+{
+  "schema": "isaac_named_text_transfer_v1",
+  "job_id": "6458711",
+  "files": {
+    "results/bethe_l32_pilot_6458711/target.toml": {
+      "bytes": 18903,
+      "sha256": "c8fffce059493d37332e239cea83f45f03b0de3a38923f1bff12ca4d2b501327"
+    },
+    "results/bethe_l32_pilot_6458711/oracle.json": {
+      "bytes": 2387,
+      "sha256": "190d027743abe2da2a11144f8a52ee808efa7eb78dc74bc6721565ff492cd5b8"
+    },
+    "results/bethe_l32_pilot_6458711/summary.json": {
+      "bytes": 2017,
+      "sha256": "ec29fff7f614eaee16122532ec8061fb549d73e53ad48b4f6cce5f41fde4946b"
+    },
+    "results/bethe_l32_pilot_6458711/oracle.resources.txt": {
+      "bytes": 1154,
+      "sha256": "edd1d891ff32c42a027fd0f5f4a801c2b8eea46bd1b008abd4ec546e72ebb57c"
+    },
+    "results/bethe_l32_pilot_6458711/target.resources.txt": {
+      "bytes": 1299,
+      "sha256": "23eb2b016f4e04577c3b4dd0369753a65bfc3e2c284bceee038d8dd9c5daa042"
+    },
+    "results/bethe_l32_pilot_6458711/L32_half_coarse.toml": {
+      "bytes": 2934,
+      "sha256": "11db54d798a5409990aceeeda6e6c70a298456ed738e88832daddb71a70d212d"
+    },
+    "results/bethe_l32_pilot_6458711/L32_half_refined.toml": {
+      "bytes": 3066,
+      "sha256": "33f7f6229c2370a43492b7a9fef193de96abb1b2b48e6f53f1a0663b0946ee44"
+    },
+    "results/bethe_l32_pilot_6458711/L32_minus_coarse.toml": {
+      "bytes": 2909,
+      "sha256": "60ffc37bfe52fe71ba47cfc26648469d0042655c11a054def1fc0ae178d56b31"
+    },
+    "results/bethe_l32_pilot_6458711/L32_minus_refined.toml": {
+      "bytes": 3074,
+      "sha256": "822cc4b65c160034feac64e0bc5e8790dac22ae0fd54108dd8b7db551e019c29"
+    },
+    "results/bethe_l32_pilot_6458711/L32_plus_coarse.toml": {
+      "bytes": 2920,
+      "sha256": "7e961160df1fb5ef019b4894592839af646fbaf24857fec338934d68a836f863"
+    },
+    "results/bethe_l32_pilot_6458711/L32_plus_refined.toml": {
+      "bytes": 3065,
+      "sha256": "0d0b797b1340fc8d892836cacfa9cfabf6a81150f19c154a1487acc27ad361c3"
+    },
+    "logs/bethe_l32_pilot_6458711.log": {
+      "bytes": 12970,
+      "sha256": "dc079c2b1200d12817cebcf081f17da0be7bd64bf8f83888a5569a46aa51dabb"
+    }
+  },
+  "sacct": "6458711|COMPLETED|0:0|00:21:56|1|3500M|00:45:00|2026-10-22T16:00:52|2026-10-22T16:22:48|\n6458711.batch|COMPLETED|0:0|00:21:56|1|||2026-10-22T16:00:52|2026-10-22T16:22:48|1735276K\n6458711.extern|COMPLETED|0:0|00:21:56|1|||2026-10-22T16:00:52|2026-10-22T16:22:48|\n"
+}

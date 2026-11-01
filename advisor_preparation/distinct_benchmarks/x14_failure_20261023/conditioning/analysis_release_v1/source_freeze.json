@@ -1,0 +1,14 @@
+{
+  "schema": "X14_INDEPENDENT_SAVED_CONTEXT_DIAGNOSTIC_SOURCE_FREEZE_V1",
+  "frozen_utc": "2026-10-23T19:53:27.538530+00:00",
+  "files": {
+    "PROTOCOL.md": "d3833f62e9caf8d87df18c5149743968bd7c4add7b9b5bf8d24b1c6c59ba3142",
+    "analyze_saved_context.py": "a90ea75f54752c5a883ebe8b0e663a34443166e24591067317881b49bc64f9bc",
+    "peer_review.json": "9def67625ade705cabc728ff23e76926fb22785277ee187fc5e8520da38329c1"
+  },
+  "local_stdlib_fraction_only": true,
+  "not_original_runtime_replay": true,
+  "no_original_function_or_probe_calls": true,
+  "scientific_completions": 0,
+  "original_gates_padding_unchanged": true
+}

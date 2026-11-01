@@ -1,0 +1,44 @@
+{
+  "schema": "tenpy_itensor_distinct_v1",
+  "manifest_sha256": "7e5e557648f764ef438cc1092b3d5bb2316c1fac035514b4576b86b7034d9b5e",
+  "rows": [
+    {
+      "id": "P11",
+      "status": "PASS",
+      "metrics": {
+        "probability_abs": 8.924497807427656e-10,
+        "sector_weight_abs": 8.984472610329419e-10,
+        "entanglement_energy_abs": 5.737733843602655e-09
+      },
+      "coarse_refined_max_probability_or_observable_change": 9.046187493533253e-08,
+      "scope": "Frozen finite-size fixture only; parameter arms and gates are not extra ideas."
+    },
+    {
+      "id": "P12",
+      "status": "PASS",
+      "metrics": {
+        "density_abs": 8.738010315312295e-12,
+        "fourier_amplitude_abs": 2.009923043339191e-12,
+        "TeNPy_peak_grid_index": 7,
+        "ITensor_peak_grid_index": 7
+      },
+      "coarse_refined_max_probability_or_observable_change": 6.041758204844427e-10,
+      "scope": "Frozen finite-size fixture only; parameter arms and gates are not extra ideas."
+    },
+    {
+      "id": "P15",
+      "status": "PASS",
+      "metrics": {
+        "parity_string_abs": 5.856135576465249e-10
+      },
+      "coarse_refined_max_probability_or_observable_change": 1.328837220260226e-07,
+      "scope": "Frozen finite-size fixture only; parameter arms and gates are not extra ideas."
+    }
+  ],
+  "distinct_ideas_passed": 3,
+  "catalogue_ids": [
+    "P11",
+    "P12",
+    "P15"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "p21_proof_submission_freeze_v2",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "scientific_completions": 0,
+  "wrapper_sha256": "fb8b5e88de78f0219f9ddbce42aa078fdd0ef2541c8b8b080b7d71065d32d7ce",
+  "body_source": "../alf_preparation/measurement_execution_plan_v2/PLAN.md exact bash block",
+  "observer_archive_sha256": "755ce801cb4b60d08607121f6d1077421dca21c008fdb8b1373c58d99fc569d6",
+  "cpu": 1,
+  "memory_mb": 3500,
+  "wall_limit_minutes": 22,
+  "unmeasured_runtime_estimate_minutes": [
+    2,
+    6
+  ],
+  "checkpoint_EDT": "2026-10-22 15:25"
+}

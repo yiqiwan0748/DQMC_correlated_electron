@@ -1,0 +1,41 @@
+┌ Info: Running independent baseline file
+└   name = "realspace_kinetic_tests.jl"
+┌ Info: Running independent baseline file
+└   name = "free_fermion_tests.jl"
+┌ Info: Running independent baseline file
+└   name = "two_orbital_dqmc_tests.jl"
+┌ Info: Running independent baseline file
+└   name = "unequal_time_greens_tests.jl"
+┌ Info: Running independent baseline file
+└   name = "two_orbital_cluster_ed_tests.jl"
+┌ Info: Running independent baseline file
+└   name = "two_orbital_tilted_cluster_ed_tests.jl"
+┌ Info: Running independent baseline file
+└   name = "prl_101_237004_restarted_lanczos_tests.jl"
+Test Summary:                                     | Pass  Total  Time
+Milestone 3 finite-size real-space kinetic matrix |  388    388  3.7s
+Test Summary:                                | Pass  Total  Time
+Milestone 4 finite-temperature free fermions |  905    905  5.1s
+Test Summary:                | Pass  Total  Time
+Milestone 5 two-orbital DQMC |  230    230  4.1s
+DQMC_METRIC maximum_u0_green_mismatch=1.3322676295501878e-15
+DQMC_METRIC maximum_direct_product_green_mismatch=1.2212453270876722e-15
+DQMC_METRIC maximum_determinant_ratio_mismatch=1.1102230246251565e-15
+DQMC_METRIC maximum_accepted_update_mismatch=4.440892098500626e-16
+DQMC_METRIC maximum_sweep_recompute_error=1.734723475976807e-15
+Test Summary:                           | Pass  Total  Time
+Unequal-time Green measurement boundary |  696    696  3.5s
+Test Summary:                                | Pass  Total  Time
+Sign-reweighted unequal-time channel summary |   90     90  4.7s
+Test Summary:                        | Pass  Total   Time
+Factorized 2x2 exact diagonalization |  880    880  18.1s
+Test Summary:                 | Pass  Total  Time
+General tilted-torus geometry |   39     39  1.0s
+Test Summary:                               | Pass  Total  Time
+Tilted kinetic matrix and Bloch equivalence |   26     26  0.2s
+Test Summary:                             | Pass  Total  Time
+Exact allocation-free resource accounting |   31     31  2.0s
+Test Summary:                         | Pass  Total  Time
+Low-filling matrix-free Lanczos proof |   16     16  0.2s
+Test Summary:                                  | Pass  Total   Time
+Memory-limited restarted Hermitian eigensolver |  110    110  12.6s

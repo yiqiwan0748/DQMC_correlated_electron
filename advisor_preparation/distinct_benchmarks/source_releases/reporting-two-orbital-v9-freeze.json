@@ -1,0 +1,27 @@
+{
+  "schema": "two_orbital_v9_leaf_reporting_freeze_v1",
+  "created_utc": "2026-10-22T19:57:44.614579+00:00",
+  "status": "POSTPROCESSING_COMPLETED_38_PASS",
+  "base35_ledger_sha256": "25b6733504af033cdbb6d0a942f86bcc8eacbe33c48451602c1af7b5b1f22c23",
+  "counts": {
+    "PASS": 38,
+    "FAIL": 0,
+    "UNRESOLVED": 0,
+    "NOT_RUN": 62
+  },
+  "unchanged_other_row_objects": 97,
+  "unchanged_prior_PASS": 35,
+  "base_files_preserved": 128,
+  "input_files_verified": 97,
+  "analysis_receipts_verified": 13,
+  "files": {
+    "reporting/merge_two_orbital_tranche.py": "10c20f8f3435eb39f11803937b85bb3bf92cc089e16c1d5636b9b9c88bcdcfc7",
+    "reporting/leaf_rollup_common_v1.py": "f2211fcb1fc59c811ccda68587d2abea855b1cde933d9abea97119b064278a38",
+    "reporting/TWO_ORBITAL_V9_REPRODUCE.md": "d3fedcf0973806b4db22241134f82795a502c4f60a41cde922acb0f9b9940498",
+    "reporting/reports/two_orbital_v9/ledger_100.json": "ef0ea9e561858941329c28c9f0a78ce9c789d5bc53971b0f1cd7789f24f433d7",
+    "reporting/reports/two_orbital_v9/input_manifest.json": "9da0a99746a2749d06942c13bbc73953eaac85f99dd8ee79864b644eb5761204"
+  },
+  "all_historical_failures_retained": true,
+  "scientific_or_cluster_execution_by_reporter": false,
+  "independent_report_review": "REQUESTED; separate external review receipt will bind this frozen output"
+}

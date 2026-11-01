@@ -1,0 +1,112 @@
+{
+  "job_id": "6465923",
+  "new_observable_adapters_disclosed": true,
+  "omitted_roles": [
+    "Root admission and whole prior_queue/unrelated scheduler bodies",
+    "Transport/inode/controller bodies; original hashes and original independent audit are retained",
+    "Duplicate source directory; all original source files and freeze are in the pinned production source archive",
+    "Verbose scontrol body; exact own-job accounting is retained"
+  ],
+  "original_auditor_sha256": "4b33bd92bbef0a719f47a11d65a0db0a297b0374096efde97ccb62f43d54b0b7",
+  "original_complete_audit_sha256": "0ca893c030f775dd6d912f4a1b89e8a4e3cc3339e7180b23ccb0dba73e068ab6",
+  "original_execution_sha256": "96e30e674b6a5e3287a0480f097f1010c1cc6ef923bf07c4ada83a9fc3faea63",
+  "original_source_archive_sha256": "a92f18307173a500317563ed888ccc5c3d1b44c53ad8d6616a77a52e3558074f",
+  "original_source_freeze_sha256": "469eda04dfaf88287513fdf670871057cb0f4c24a65fd996ce8be9268ba58bc2",
+  "original_transfer_after_sha256": "1b7cbc6ae28652b0e65eb3e1103da1322622f542b8fc5091f5aa668595fcdd81",
+  "original_transfer_before_sha256": "664bcb444e22414b6a5e476a3b1ccb0568d6804e1ad7c5b2600c665202ea0c51",
+  "schema": "PUBLIC_PYSCF_PRODUCTION_SCIENTIFIC_SELECTION_V1",
+  "scientific_bytes_changed": false,
+  "scientific_gates_changed": false,
+  "selected_original_files": [
+    {
+      "bytes": 636080,
+      "original_bytes": true,
+      "path": "recorded_independent_replay/comparison.json",
+      "sha256": "c8dd0313c3634e09aea74af5861d346081cfe51a76033a8e86269fe8afe3d5ff"
+    },
+    {
+      "bytes": 1334,
+      "original_bytes": true,
+      "path": "results/comparator.resources.txt",
+      "sha256": "4b937c05b1bddd392092ffe83ebd1d9e3af8ad7cadfa6c7d552b47eb62043713"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/comparator.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 239,
+      "original_bytes": true,
+      "path": "results/comparator.stdout.txt",
+      "sha256": "c2938c9788d3cb3c1dc626908315dd45da8534d79a7988d008f3f22687f64fd0"
+    },
+    {
+      "bytes": 635978,
+      "original_bytes": true,
+      "path": "results/comparison.json",
+      "sha256": "08124ba6764ea91ec445c41d8f5cc660627d7e9b82a1f8353915081b6533d715"
+    },
+    {
+      "bytes": 4265,
+      "original_bytes": true,
+      "path": "results/execution.json",
+      "sha256": "96e30e674b6a5e3287a0480f097f1010c1cc6ef923bf07c4ada83a9fc3faea63"
+    },
+    {
+      "bytes": 40478831,
+      "original_bytes": true,
+      "path": "results/reference.json",
+      "sha256": "557efcada71d13b8c1eb60c8347adbc787d0ef598b9b261d0b3c6570eacd596f"
+    },
+    {
+      "bytes": 1082,
+      "original_bytes": true,
+      "path": "results/reference.resources.txt",
+      "sha256": "6dcbbaad63e3a6a85429f431707bcc1ceb5254c520441eb5be0398f68b00a5f5"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/reference.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/reference.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1083,
+      "original_bytes": true,
+      "path": "results/target.resources.txt",
+      "sha256": "1292d10d1433270c0bc7c7e2ed93ff944c27895eeefbc40628d8022846057229"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/target.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "original_bytes": true,
+      "path": "results/target.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 42474358,
+      "original_bytes": true,
+      "path": "results/target.toml",
+      "sha256": "6a1c161abc6443109660b7fc7856d7d610172701689fbc47300856e1d859d2eb"
+    },
+    {
+      "bytes": 281,
+      "original_bytes": true,
+      "path": "scheduler_own_job.txt",
+      "sha256": "a81ed3d5f984b2b0b4e47c57eb5d890812160349b0b0e60beb80a9ed9e2864d2"
+    }
+  ]
+}

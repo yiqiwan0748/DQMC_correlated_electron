@@ -1,0 +1,7 @@
+{
+  "status": "CANDIDATE_NOT_RUN",
+  "original_sha256": "558639f897f6950ad5fc057b74a7493f5b6b17f20e2840f8c1565128f7b50ffd",
+  "candidate_sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28",
+  "patch_sha256": "da3fe6cde8c390f7dfb0dede91f8a04ea8e2afc04ae5c9448afe10d2b9c8c34f",
+  "scope": "Sparse groups contraction unchanged; sort/validate site set and apply within-spin occupied-mode permutation signs; frozen original unchanged"
+}

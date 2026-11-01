@@ -1,0 +1,158 @@
+{
+  "catalogue_changes": [],
+  "preflight_v1": {
+    "Python": [
+      {
+        "dispatch_count": 4,
+        "distinct_failure_path_count": 2,
+        "errors_count": 1,
+        "file_backed_segment_count": 870,
+        "loaded_module_count": 1058,
+        "qualification_failure_count": 10,
+        "receipt_bindings": [
+          {
+            "bytes": 2641,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "quspin_report",
+            "sha256": "540a5941f7bd6520c320452b7d379f0d4171cfb1fa3a68b04497dc7d7834cad3"
+          },
+          {
+            "bytes": 886645,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "quspin_active_runtime",
+            "sha256": "ceebc61c332941ed1de16fdec4caa132caf9f18f4c1f13e9ca45dd07d3921de5"
+          }
+        ],
+        "role": "quspin",
+        "scientific_completions": 0,
+        "status": "UNRESOLVED"
+      },
+      {
+        "dispatch_count": 11,
+        "distinct_failure_path_count": 2,
+        "errors_count": 1,
+        "file_backed_segment_count": 817,
+        "loaded_module_count": 1066,
+        "qualification_failure_count": 10,
+        "receipt_bindings": [
+          {
+            "bytes": 4676,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "tenpy_report",
+            "sha256": "6934db449ec37559634377962dd6a2ca4962e56c2cfd097900e7633f622e7c4f"
+          },
+          {
+            "bytes": 848814,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "tenpy_active_runtime",
+            "sha256": "2d6573417536ea165304015fc8cae4d2e46da07b1d16b081128a232493994d93"
+          }
+        ],
+        "role": "tenpy",
+        "scientific_completions": 0,
+        "status": "UNRESOLVED"
+      }
+    ],
+    "native": {
+      "audited_status": "PASS_INVALID_ZERO_PARSED_MAPPINGS",
+      "interpretation": "The empty mapping census was rejected. This earlier claim qualifies no runtime.",
+      "raw_capture_bytes": 4021,
+      "raw_capture_line_count": 22,
+      "raw_prefix_file_backed_row_count": 21,
+      "receipt_bindings": [
+        {
+          "bytes": 596,
+          "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+          "role": "native_v1_report",
+          "sha256": "15efbc23f3416f0530d6ab02cc03f211295652edd6b7d84eb4d4ba27ae185bb9"
+        },
+        {
+          "bytes": 4021,
+          "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+          "role": "native_v1_capture",
+          "sha256": "e5d8e5f5d87b9380a20f67a666baf5466dc9147f8ecd24616774b730dabbdbdd"
+        }
+      ],
+      "reported_parsed_file_backed_segment_count": 0,
+      "reported_status": "PASS"
+    }
+  },
+  "preflight_v2": {
+    "Python": [
+      {
+        "dispatch_count": 4,
+        "distinct_failure_path_count": 0,
+        "errors_count": 0,
+        "file_backed_segment_count": 870,
+        "loaded_module_count": 1064,
+        "qualification_failure_count": 0,
+        "receipt_bindings": [
+          {
+            "bytes": 3293,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "quspin_report",
+            "sha256": "467322bc55c2992c723c7950e070a439965a48d05b838ed25b6c4d261e9fae8c"
+          },
+          {
+            "bytes": 1140661,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "quspin_active_runtime",
+            "sha256": "84559a9e3d69e9be070ae16d7bb0f60ead25bae17b057e4531f0326f6e5b2665"
+          }
+        ],
+        "role": "quspin",
+        "scientific_completions": 0,
+        "status": "PASS"
+      },
+      {
+        "dispatch_count": 11,
+        "distinct_failure_path_count": 0,
+        "errors_count": 0,
+        "file_backed_segment_count": 817,
+        "loaded_module_count": 1072,
+        "qualification_failure_count": 0,
+        "receipt_bindings": [
+          {
+            "bytes": 5329,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "tenpy_report",
+            "sha256": "0426e1ae3a6b688ba82e34c98117fb55a8136402ee50fb02fd4b96de99cb5d67"
+          },
+          {
+            "bytes": 1084544,
+            "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+            "role": "tenpy_active_runtime",
+            "sha256": "4a42acfd1cb902046c1cba29444fd05476c265b89053dd6cef910f5f19c3f992"
+          }
+        ],
+        "role": "tenpy",
+        "scientific_completions": 0,
+        "status": "PASS"
+      }
+    ],
+    "native": {
+      "distinct_file_path_count": 62,
+      "error_class_counts": {
+        "mapped_identity_segment_failures": 101,
+        "other_failures": 1,
+        "unregistered_provider_segment_failures": 106
+      },
+      "interpretation": "Both Python roles passed their later preflight. Native identity and finite-provider gates remained unresolved; no runtime or provider approval is inferred.",
+      "mapped_identity_failure_path_count": 24,
+      "receipt_bindings": [
+        {
+          "bytes": 109790,
+          "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+          "role": "native_v2_report",
+          "sha256": "a75d1a5ccb1536bc46273a7db2c07a3cd63cffcba0327afcd6c475a4d1e96263"
+        }
+      ],
+      "reported_parsed_file_backed_segment_count": 235,
+      "same_PID_file_census_crosscheck": true,
+      "status": "UNRESOLVED",
+      "unregistered_provider_path_count": 31
+    }
+  },
+  "schema": "P17_PUBLIC_PRIOR_RUNTIME_AGGREGATES_V1",
+  "scientific_completions": 0
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "PUBLIC_P17_LEDGER_CLOSURE_AUDIT_V1",
+  "status": "PASS_ROOT_RECONCILED_FINITE_SCOPE",
+  "changed_ids": [
+    "P17"
+  ],
+  "counts": {
+    "PASS": 50,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 48
+  },
+  "preserved_rows": 99,
+  "all49prior_PASS_preserved": true,
+  "both_UNRESOLVED_preserved": true,
+  "base_ledger_sha256": "3f5c83a7566aa754dea836b7501de14f157acff25e9945b620c23e03013ee304",
+  "new_ledger_sha256": "8a7a7e293ef75a9f8f376eacbffd3e6a710647a1729e979abbd9482de59aca9f",
+  "public_packet_manifest_sha256": "d1478c8494076f29a15f6c87840ed92d53c8515845a64a13429f9802946179e9",
+  "packet_accuracy_privacy_independent_review": {
+    "status": "PASS",
+    "checks": 310,
+    "failed": 0,
+    "review_receipt_sha256": "0394bb1abf49e743456a53197deea3992abe39410027358c6e01ff12c30bf033",
+    "scope": "Exact scientific projection and claims, all99preservedrows, count50, publicprivacy and centralREADME scope."
+  }
+}

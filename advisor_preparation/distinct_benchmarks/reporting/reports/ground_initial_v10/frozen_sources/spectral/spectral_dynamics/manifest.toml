@@ -1,0 +1,73 @@
+schema = "spectral_dynamics_v1"
+execution_status = "NOT_RUN"
+catalogue_ids = ["P08", "P09", "P10"]
+L = 4
+t = 1.0
+U = 4.0
+boundary = "pbc"
+quspin_version = "1.0.1"
+numpy_version = "2.4.6"
+scipy_version = "1.17.1"
+julia_version = "1.12.1"
+thermal_source_relative = "../../validated_package/HubbardRenyiDQMC/analysis/audit_u4_l4_thermal_ed.jl"
+ed_source_relative = "../../validated_package/HubbardRenyiDQMC/analysis/compute_s2_ed.jl"
+thermal_source_sha256 = "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+ed_source_sha256 = "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+hamiltonian = "Hphysical=-t sum_nn_sigma(cdag_i*c_j+h.c.)+U sum_i nup_i*ndown_i; no centered shift; physical mu zero unless stated"
+new_scope = "Additive real-time, fermion-operator/Lehmann, and two-particle imaginary-time adapters around actual user ED/thermal APIs; native DQMC dynamics is not tested"
+
+[P08]
+Nup = 2
+Ndown = 2
+initial_doublon_sites_one_based = [2, 4]
+initial_empty_sites_one_based = [1, 3]
+time_start = 0.0
+time_stop = 6.0
+time_count = 25
+minimum_dynamic_range = 1e-5
+imbalance = "(N_even_one_based-N_odd_one_based)/N; initial +1"
+double_occupancy = "total sum_i<nup_i*ndown_i>; initial 2, not density"
+
+[P09]
+Nup = 2
+Ndown = 2
+spin = ["up", "down"]
+momentum_indices = [0, 1, 2, 3]
+cross_spin_momentum_pair = [0, 1]
+physical_mu_frequency = 2.0
+fourier = "c_k=L^-1/2 sum_j exp(-i*k*j)c_j; j zero-based, k=2*pi*m/L"
+addition_frequency = "E_m(N+1)-E0(N)-mu_physical_frequency"
+removal_frequency = "E0(N)-E_m(N-1)-mu_physical_frequency; negative-frequency convention"
+degeneracy_cluster_abs = 1e-8
+cluster_rule = "Sort energies; each cluster spans at most the fixed tolerance from its first energy. Sum all residues in the cluster. Include zero-weight energy groups; never compare individual degenerate eigenvectors."
+broadening = "NONE"
+
+[P10]
+beta = [0.5, 2.0, 6.0]
+physical_mu = 1.3
+momentum_indices = [0, 1, 2, 3]
+tau_fractions = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1.0]
+spin_operator = "S_qz=L^-1/2 sum_j exp(-i*q*j)*(nup_j-ndown_j)/2"
+correlator = "Tr[exp(-(beta-tau)G) S_qz exp(-tau*G) S_-qz]/Z - |<S_qz>|^2, G=Hphysical-physical_mu*N"
+ensemble = "full grand canonical; continuum imaginary time; no Trotter approximation"
+connected = true
+minimum_dynamic_range = 1e-5
+
+[gates]
+cross_observable_abs = 1e-8
+pole_abs = 1e-8
+residue_abs = 1e-8
+normalization_abs = 1e-10
+conservation_abs = 1e-9
+eigen_residual_max = 1e-10
+ground_gap_min = 1e-8
+sum_rule_abs = 1e-8
+exp_action_spectral_abs = 1e-9
+positivity_roundoff = 1e-10
+endpoint_kms_abs = 1e-9
+
+[resources]
+cpus = 1
+memory_mb = 3500
+wall_cap_minutes = 10
+runtime_status = "UNMEASURED; tiny sector dimensions36/24 and full thermal dimension256. Root owns scheduling."

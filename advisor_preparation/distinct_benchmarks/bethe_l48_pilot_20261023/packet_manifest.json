@@ -1,0 +1,64 @@
+{
+  "schema": "L48_PUBLIC_FAILURE_PACKET_V1",
+  "files": {
+    "README.md": {
+      "sha256": "420c864e4b3ee741dabea600f2db808bbe6875d53b778e65249fe5fd8bc2be48",
+      "bytes": 3638
+    },
+    "auditor_change_scope.json": {
+      "sha256": "57951acccd056e9bc516bb38358dfdda88e1be5f531788a687824dd8f4782ed8",
+      "bytes": 626
+    },
+    "observer_semantics.json": {
+      "sha256": "3cd755c29b02209930cf16459a95c7a1e753ca3bfbc527034fb19a7d74acf733",
+      "bytes": 29813
+    },
+    "original_complete_audit.json": {
+      "sha256": "3a5a36ecc454e2a9a8f0118fb3394e061c20de1228b0c1ecec116021a46e03e0",
+      "bytes": 38005
+    },
+    "original_complete_auditor_source.py": {
+      "sha256": "085a17a43f967a5c4c99c251bdfb8d8bcbaa1db37fbd972ad15b2a6082537c40",
+      "bytes": 14014
+    },
+    "original_complete_frozen_summary_replay.json": {
+      "sha256": "70500527781c01054a859b6d8e39ef74621c5d88d360d19b3fda9f679b236c0d",
+      "bytes": 2480
+    },
+    "original_strict_auditor.py": {
+      "sha256": "e46f0bb88d5ef6f3a9f830dc1cc0f6437aa9a31e95802c8b5863010418e926af",
+      "bytes": 13392
+    },
+    "public_auditor_v3.py": {
+      "sha256": "5d6e2e1aa18b53c94380f8605c792e8a39dae5089b93f7577f903ea19b6f044f",
+      "bytes": 15087
+    },
+    "public_input_inventory.json": {
+      "sha256": "0869d9b30b250ba90c07b06238d2cf8e29bd490b49666b638027d1c6ebe1a577",
+      "bytes": 6609
+    },
+    "replay_public.py": {
+      "sha256": "3ae27ed31ad6ab2d59708d53913776ad6f1aa303270e7668073e650c933f443c",
+      "bytes": 2986
+    },
+    "scientific_inputs.tar.gz": {
+      "sha256": "98798d115535829e2d7894edf3d5b897c523f4bbfaa57742d4bd0427ede0b01a",
+      "bytes": 74938
+    },
+    "source_archive.tar.gz": {
+      "sha256": "b1ebb51e6d6daa140e711fa08307d2384cceccdc78fcfa85db72d5ab778444ff",
+      "bytes": 16709
+    },
+    "strict_failure_projection.json": {
+      "sha256": "351acab941369c2b8e32fd601f23dbf2e28b6e81485a8f0a595d03cdccf226e3",
+      "bytes": 23482
+    }
+  },
+  "job_id": "6466266",
+  "scientific_completions": 0,
+  "catalogue_status": {
+    "A18": "NOT_RUN",
+    "A19": "NOT_RUN",
+    "A20": "NOT_RUN"
+  }
+}

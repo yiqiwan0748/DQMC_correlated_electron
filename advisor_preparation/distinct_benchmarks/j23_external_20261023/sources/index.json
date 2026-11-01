@@ -1,0 +1,7 @@
+{
+  "archive": "j23-mean-field-v1-source.tar.gz",
+  "archive_sha256": "5b78ce7ea96a31aedb5ee2c2a27e3f128667ae0121cf410219a13a4ae6ae6bbe",
+  "archive_bytes": 33892,
+  "source_freeze_sha256": "7b763ad944dd745d604957bf25556fdad06b2ff733f09cb6c25230f7db7b4043",
+  "prefix": "j23_mean_field_v1/"
+}

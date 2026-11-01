@@ -1,0 +1,265 @@
+{
+  "schema": "p21_design_seed_list_v1",
+  "namespace": "P21_SAMPLING_20261022_v1",
+  "algorithm": "1+big_endian_uint64(first8_sha256_bytes(input_utf8))%(2^31-2)",
+  "native_seed_format": "one positive default Int32 integer in native serial ALF seeds file",
+  "no_simulation_executed": true,
+  "seeds": [
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 1,
+      "seed": 763132036,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=1",
+      "sha256_digest": "ac024a6afd734ecda7025505572d16bf793e0d8c564b9b2b38314cb1c3ac504d"
+    },
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 2,
+      "seed": 1969587373,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=2",
+      "sha256_digest": "f566df179fca0840e60072ba8c4012158e9cd3f6a8a2887abc3c377f37f9f1a5"
+    },
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 3,
+      "seed": 1678579677,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=3",
+      "sha256_digest": "8bfe7be934132830d01e6cec2bd17ecbabedd7b1ca9fb657223ba82768ccc2b6"
+    },
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 4,
+      "seed": 1609422342,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=4",
+      "sha256_digest": "cf9cd9d1a17a6eb3e46d4145e79da3a7465dbc4e1d5279791b0e483bd14134cd"
+    },
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 5,
+      "seed": 1171311614,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=5",
+      "sha256_digest": "34724238f407c317348d2266035c2bd26930c35e3b1d4eab5a555bf6f973316e"
+    },
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 6,
+      "seed": 1878222428,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=6",
+      "sha256_digest": "ccb801aa3d135fa7a89648641e596ea1df3ca27931803c12230bc91b8a77d1ee"
+    },
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 7,
+      "seed": 59703616,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=7",
+      "sha256_digest": "9374aee9b5bc458f30d36cde126b3ee67f9772f2d3ea00993a9cac0507ea54f6"
+    },
+    {
+      "mode": "pilot",
+      "package": "alf",
+      "chain": 8,
+      "seed": 198957452,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=alf|chain=8",
+      "sha256_digest": "745c1b2eba6b6cc9fca77862a54e1570a35e23721fbe9b37086a3afecf61a172"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 1,
+      "seed": 130910325,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=1",
+      "sha256_digest": "a12661ab833401bc1587760e719caf879e1245ef0b5e91527a159a86e29f9621"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 2,
+      "seed": 1138262658,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=2",
+      "sha256_digest": "df181ca447780fe3c81de2f549e09a58613a490fef57b2e6231814d65182766b"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 3,
+      "seed": 1234834955,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=3",
+      "sha256_digest": "99792052e3b594b6070587793311c73fd1c74643287f08ffbc27b1101b3f83a5"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 4,
+      "seed": 1944283511,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=4",
+      "sha256_digest": "54346a97a311bf14d5c6e2ca08a70c6c6a034c286338872e6c1673c25f29da2d"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 5,
+      "seed": 423917933,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=5",
+      "sha256_digest": "b122db8e54b90b28fd075589eb30ed5fd001069b11f1e53005c68865a99e4bc4"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 6,
+      "seed": 358051426,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=6",
+      "sha256_digest": "f7b8f44636739d39c6adaf6586b1c596962e6338555d400071b0d37d9efdb91c"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 7,
+      "seed": 1028013397,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=7",
+      "sha256_digest": "141433dfecf56dd459a26ad08fb43b2c15b46fb08e462be997d4f47926e45d76"
+    },
+    {
+      "mode": "pilot",
+      "package": "user",
+      "chain": 8,
+      "seed": 1961465248,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=pilot|package=user|chain=8",
+      "sha256_digest": "d4a3ad71a25adfcd39f67ed55ce5caaaa2196b1b16150deb3a8e6a8b073e8a68"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 1,
+      "seed": 699247346,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=1",
+      "sha256_digest": "fb44a4e13c9b175dccaf0f48d482a06cf759aae7fc18f959b846293a426573cc"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 2,
+      "seed": 1295136340,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=2",
+      "sha256_digest": "0534260f38619e17c9722f10492902d4d9c0b9942a645b622b612be07875aef5"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 3,
+      "seed": 1189520391,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=3",
+      "sha256_digest": "87745270a9155a3c8ebc916ed11ec1926d70cc0fcbcccb17f37ecb7f48663237"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 4,
+      "seed": 777100499,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=4",
+      "sha256_digest": "92877ceae433a91ee4b3bec8880ea2f448a8b3daae852f70b7c384a38a68a2ff"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 5,
+      "seed": 468049544,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=5",
+      "sha256_digest": "588b2be5b9b92eeb3d2172e9e23866606109732931ad660e4678f0e176480f0c"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 6,
+      "seed": 1960958762,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=6",
+      "sha256_digest": "4049bcebf3bae7770d55f8891cf04d53419ae916f651aba5c80a1db2b84d8e38"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 7,
+      "seed": 1804498015,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=7",
+      "sha256_digest": "a75220cd4e45f1209209c5d772d5f740f069404336de2119dfb498b6fdfc8156"
+    },
+    {
+      "mode": "final",
+      "package": "alf",
+      "chain": 8,
+      "seed": 793784365,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=alf|chain=8",
+      "sha256_digest": "7f1c8952b2de0ada3d384435e72fcbd6a9868bec98eaaa73c0fe1638fc0f7089"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 1,
+      "seed": 2056937362,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=1",
+      "sha256_digest": "d8cf1506175e0b6d7664ed251fe49446493e027f30d97674ff4d7f490d61301d"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 2,
+      "seed": 993851806,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=2",
+      "sha256_digest": "5a8782ec511eede75e1404205643575c59c66d543657138461b7f334b8a8a796"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 3,
+      "seed": 958882052,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=3",
+      "sha256_digest": "9f2907af3c83423d9ee7d2840a21ffd1cfd173f7ad349d446f8c15f7f65410fc"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 4,
+      "seed": 1268133157,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=4",
+      "sha256_digest": "68e084c8281419feb0445e2f6527693d909a6cb026573e7d8b174b4228a98633"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 5,
+      "seed": 225307626,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=5",
+      "sha256_digest": "7babe7989ebe4d7fc8a03e2df0b262cccc47a96aa6e729562205cd66ee882040"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 6,
+      "seed": 319615105,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=6",
+      "sha256_digest": "8e6e0c4ad954bf4c70852fe75acd9f7692ee61b7eec29b123a0548f3ed9e6fca"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 7,
+      "seed": 40990091,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=7",
+      "sha256_digest": "06bd9756677b18309a00ed3a7508792adac95d40c896dff151e35191e2a7058a"
+    },
+    {
+      "mode": "final",
+      "package": "user",
+      "chain": 8,
+      "seed": 665198666,
+      "sha256_input": "P21_SAMPLING_20261022_v1|mode=final|package=user|chain=8",
+      "sha256_digest": "f2571bef5e49b07d1d823f9cb2d4cee87e25119b244c1b0a1328213829324c0a"
+    }
+  ]
+}

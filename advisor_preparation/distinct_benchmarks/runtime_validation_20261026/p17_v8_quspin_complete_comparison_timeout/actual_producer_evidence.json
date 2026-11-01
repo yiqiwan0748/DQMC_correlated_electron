@@ -1,0 +1,656 @@
+{
+  "schema": "P17_V8_ACTUAL_COMPLETE_PRODUCER_METADATA_PUBLIC_V1",
+  "status": "ACTUAL_SAVED_PRODUCER_EVIDENCE_NOT_COMPARISON_PASS",
+  "scientific_credit": 0,
+  "quspin": {
+    "status": "PRODUCER_COMPLETE_NOT_A_SCIENTIFIC_PASS",
+    "report_sha256": "28fbf8152ef77dea826935f14da3d31f2df561ba8dcc92bd2b0e086f281b5e0b",
+    "complete_eigensystem_count": 21,
+    "sector_dimensions": [
+      {
+        "h": 0.0,
+        "Nup": 0,
+        "Ndown": 6,
+        "occupation_basis_dimension": 1,
+        "eigenvalue_count": 1,
+        "Hamiltonian_shape": [
+          1,
+          1
+        ],
+        "eigenvector_shape": [
+          1,
+          1
+        ]
+      },
+      {
+        "h": 0.0,
+        "Nup": 1,
+        "Ndown": 5,
+        "occupation_basis_dimension": 36,
+        "eigenvalue_count": 36,
+        "Hamiltonian_shape": [
+          36,
+          36
+        ],
+        "eigenvector_shape": [
+          36,
+          36
+        ]
+      },
+      {
+        "h": 0.0,
+        "Nup": 2,
+        "Ndown": 4,
+        "occupation_basis_dimension": 225,
+        "eigenvalue_count": 225,
+        "Hamiltonian_shape": [
+          225,
+          225
+        ],
+        "eigenvector_shape": [
+          225,
+          225
+        ]
+      },
+      {
+        "h": 0.0,
+        "Nup": 3,
+        "Ndown": 3,
+        "occupation_basis_dimension": 400,
+        "eigenvalue_count": 400,
+        "Hamiltonian_shape": [
+          400,
+          400
+        ],
+        "eigenvector_shape": [
+          400,
+          400
+        ]
+      },
+      {
+        "h": 0.0,
+        "Nup": 4,
+        "Ndown": 2,
+        "occupation_basis_dimension": 225,
+        "eigenvalue_count": 225,
+        "Hamiltonian_shape": [
+          225,
+          225
+        ],
+        "eigenvector_shape": [
+          225,
+          225
+        ]
+      },
+      {
+        "h": 0.0,
+        "Nup": 5,
+        "Ndown": 1,
+        "occupation_basis_dimension": 36,
+        "eigenvalue_count": 36,
+        "Hamiltonian_shape": [
+          36,
+          36
+        ],
+        "eigenvector_shape": [
+          36,
+          36
+        ]
+      },
+      {
+        "h": 0.0,
+        "Nup": 6,
+        "Ndown": 0,
+        "occupation_basis_dimension": 1,
+        "eigenvalue_count": 1,
+        "Hamiltonian_shape": [
+          1,
+          1
+        ],
+        "eigenvector_shape": [
+          1,
+          1
+        ]
+      },
+      {
+        "h": -0.01,
+        "Nup": 0,
+        "Ndown": 6,
+        "occupation_basis_dimension": 1,
+        "eigenvalue_count": 1,
+        "Hamiltonian_shape": [
+          1,
+          1
+        ],
+        "eigenvector_shape": [
+          1,
+          1
+        ]
+      },
+      {
+        "h": -0.01,
+        "Nup": 1,
+        "Ndown": 5,
+        "occupation_basis_dimension": 36,
+        "eigenvalue_count": 36,
+        "Hamiltonian_shape": [
+          36,
+          36
+        ],
+        "eigenvector_shape": [
+          36,
+          36
+        ]
+      },
+      {
+        "h": -0.01,
+        "Nup": 2,
+        "Ndown": 4,
+        "occupation_basis_dimension": 225,
+        "eigenvalue_count": 225,
+        "Hamiltonian_shape": [
+          225,
+          225
+        ],
+        "eigenvector_shape": [
+          225,
+          225
+        ]
+      },
+      {
+        "h": -0.01,
+        "Nup": 3,
+        "Ndown": 3,
+        "occupation_basis_dimension": 400,
+        "eigenvalue_count": 400,
+        "Hamiltonian_shape": [
+          400,
+          400
+        ],
+        "eigenvector_shape": [
+          400,
+          400
+        ]
+      },
+      {
+        "h": -0.01,
+        "Nup": 4,
+        "Ndown": 2,
+        "occupation_basis_dimension": 225,
+        "eigenvalue_count": 225,
+        "Hamiltonian_shape": [
+          225,
+          225
+        ],
+        "eigenvector_shape": [
+          225,
+          225
+        ]
+      },
+      {
+        "h": -0.01,
+        "Nup": 5,
+        "Ndown": 1,
+        "occupation_basis_dimension": 36,
+        "eigenvalue_count": 36,
+        "Hamiltonian_shape": [
+          36,
+          36
+        ],
+        "eigenvector_shape": [
+          36,
+          36
+        ]
+      },
+      {
+        "h": -0.01,
+        "Nup": 6,
+        "Ndown": 0,
+        "occupation_basis_dimension": 1,
+        "eigenvalue_count": 1,
+        "Hamiltonian_shape": [
+          1,
+          1
+        ],
+        "eigenvector_shape": [
+          1,
+          1
+        ]
+      },
+      {
+        "h": 0.01,
+        "Nup": 0,
+        "Ndown": 6,
+        "occupation_basis_dimension": 1,
+        "eigenvalue_count": 1,
+        "Hamiltonian_shape": [
+          1,
+          1
+        ],
+        "eigenvector_shape": [
+          1,
+          1
+        ]
+      },
+      {
+        "h": 0.01,
+        "Nup": 1,
+        "Ndown": 5,
+        "occupation_basis_dimension": 36,
+        "eigenvalue_count": 36,
+        "Hamiltonian_shape": [
+          36,
+          36
+        ],
+        "eigenvector_shape": [
+          36,
+          36
+        ]
+      },
+      {
+        "h": 0.01,
+        "Nup": 2,
+        "Ndown": 4,
+        "occupation_basis_dimension": 225,
+        "eigenvalue_count": 225,
+        "Hamiltonian_shape": [
+          225,
+          225
+        ],
+        "eigenvector_shape": [
+          225,
+          225
+        ]
+      },
+      {
+        "h": 0.01,
+        "Nup": 3,
+        "Ndown": 3,
+        "occupation_basis_dimension": 400,
+        "eigenvalue_count": 400,
+        "Hamiltonian_shape": [
+          400,
+          400
+        ],
+        "eigenvector_shape": [
+          400,
+          400
+        ]
+      },
+      {
+        "h": 0.01,
+        "Nup": 4,
+        "Ndown": 2,
+        "occupation_basis_dimension": 225,
+        "eigenvalue_count": 225,
+        "Hamiltonian_shape": [
+          225,
+          225
+        ],
+        "eigenvector_shape": [
+          225,
+          225
+        ]
+      },
+      {
+        "h": 0.01,
+        "Nup": 5,
+        "Ndown": 1,
+        "occupation_basis_dimension": 36,
+        "eigenvalue_count": 36,
+        "Hamiltonian_shape": [
+          36,
+          36
+        ],
+        "eigenvector_shape": [
+          36,
+          36
+        ]
+      },
+      {
+        "h": 0.01,
+        "Nup": 6,
+        "Ndown": 0,
+        "occupation_basis_dimension": 1,
+        "eigenvalue_count": 1,
+        "Hamiltonian_shape": [
+          1,
+          1
+        ],
+        "eigenvector_shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "source_bound_basis_decode_reordering_dimensions_discrete_occupation_operators_and_API_checks": true,
+    "scope": "Saved full metadata and source-bound provider/API evidence; not a fresh eigensystem or Hamiltonian accuracy calculation.",
+    "scientific_package_versions": {
+      "quspin": "1.0.1",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    }
+  },
+  "passive_quspin_timing": {
+    "stage_rows": 198,
+    "stage_file_sha256": "d952b0e8b4e26561e860aed9abfa35a39ab7b47b74b3691bb7e205ad81f97e94",
+    "last_observed_stage": {
+      "stage": "after_final_export"
+    },
+    "last_wall_elapsed_seconds": 127.84659846872091,
+    "completed_sector_exports": 21,
+    "all21sector_exports_complete": true,
+    "unclosed_before_marker_count": 0,
+    "phase_aggregates": [
+      {
+        "stage": "field",
+        "observations": 3,
+        "sum_wall_seconds": 2.8504413422197104,
+        "sum_self_cpu_seconds": 0.9657187820000033,
+        "maximum_wall_seconds": 2.435743907466531
+      },
+      {
+        "stage": "final_export",
+        "observations": 1,
+        "sum_wall_seconds": 2.490384913980961,
+        "sum_self_cpu_seconds": 2.4705936719999997,
+        "maximum_wall_seconds": 2.490384913980961
+      },
+      {
+        "stage": "numpy_import",
+        "observations": 1,
+        "sum_wall_seconds": 2.1980942245572805,
+        "sum_self_cpu_seconds": 0.12151382800000032,
+        "maximum_wall_seconds": 2.1980942245572805
+      },
+      {
+        "stage": "quspin_basis_import",
+        "observations": 1,
+        "sum_wall_seconds": 15.722566666081548,
+        "sum_self_cpu_seconds": 1.118890414,
+        "maximum_wall_seconds": 15.722566666081548
+      },
+      {
+        "stage": "quspin_operators_import",
+        "observations": 1,
+        "sum_wall_seconds": 0.0004019103944301605,
+        "sum_self_cpu_seconds": 0.00022914000000007206,
+        "maximum_wall_seconds": 0.0004019103944301605
+      },
+      {
+        "stage": "runtime_after_qualification",
+        "observations": 1,
+        "sum_wall_seconds": 10.694701554253697,
+        "sum_self_cpu_seconds": 10.387389628000001,
+        "maximum_wall_seconds": 10.694701554253697
+      },
+      {
+        "stage": "runtime_inventory_bulk_hash",
+        "observations": 1,
+        "sum_wall_seconds": 83.00530856102705,
+        "sum_self_cpu_seconds": 4.656009684,
+        "maximum_wall_seconds": 83.00530856102705
+      },
+      {
+        "stage": "runtime_provider_qualification",
+        "observations": 1,
+        "sum_wall_seconds": 10.770351272076368,
+        "sum_self_cpu_seconds": 10.422488166,
+        "maximum_wall_seconds": 10.770351272076368
+      },
+      {
+        "stage": "sector_H_construction",
+        "observations": 21,
+        "sum_wall_seconds": 0.09519991837441921,
+        "sum_self_cpu_seconds": 0.09121361900000124,
+        "maximum_wall_seconds": 0.010242382064461708
+      },
+      {
+        "stage": "sector_basis",
+        "observations": 21,
+        "sum_wall_seconds": 0.010313892737030983,
+        "sum_self_cpu_seconds": 0.006733861999993707,
+        "maximum_wall_seconds": 0.0007015541195869446
+      },
+      {
+        "stage": "sector_eigh",
+        "observations": 21,
+        "sum_wall_seconds": 0.1396336778998375,
+        "sum_self_cpu_seconds": 0.1344968409999936,
+        "maximum_wall_seconds": 0.028381889685988426
+      },
+      {
+        "stage": "sector_export",
+        "observations": 21,
+        "sum_wall_seconds": 2.5446822829544544,
+        "sum_self_cpu_seconds": 0.6900792930000073,
+        "maximum_wall_seconds": 2.243205828592181
+      }
+    ],
+    "limitations": "Stage durations are this attempt's observed intervals; nested field intervals overlap sector intervals. Sums across different stage categories are not a disjoint wall-time decomposition or future runtime bound."
+  },
+  "actual_tenpy_export": {
+    "complete_samples": 6,
+    "checkpoint_sample_payloads_match_final": true,
+    "actual_Config_count": 18,
+    "all_requested_leaves_and_source_added_defaults_retained": true,
+    "numpy_binary64_contract": {
+      "class_module": "numpy",
+      "class_name": "float64",
+      "dtype_string": "<f8",
+      "kind": "f",
+      "itemsize": 8,
+      "is_native": true,
+      "methods": "Exact np.float64.tobytes and float(value), native bytes and strict JSON roundtrips",
+      "scope": "Effective Config metadata only; physical exports remain strict",
+      "runtime_binding": "Actual qualified NumPy imported source and compiled-provider closure",
+      "builtin_method_Python_source_inspection_claimed": false
+    },
+    "normalization_records": [
+      {
+        "sample": 0,
+        "h": 0.0,
+        "start": "Neel",
+        "path": [
+          "lanczos_params",
+          "cutoff"
+        ],
+        "observed_value": 2.220446049250313e-14,
+        "original_dtype": "<f8",
+        "original_native_bytes_hex": "000000000000193d",
+        "canonical_bigendian_hex": "3d19000000000000"
+      },
+      {
+        "sample": 1,
+        "h": 0.0,
+        "start": "doublon_hole_pattern",
+        "path": [
+          "lanczos_params",
+          "cutoff"
+        ],
+        "observed_value": 2.220446049250313e-14,
+        "original_dtype": "<f8",
+        "original_native_bytes_hex": "000000000000193d",
+        "canonical_bigendian_hex": "3d19000000000000"
+      },
+      {
+        "sample": 2,
+        "h": -0.01,
+        "start": "Neel",
+        "path": [
+          "lanczos_params",
+          "cutoff"
+        ],
+        "observed_value": 2.220446049250313e-14,
+        "original_dtype": "<f8",
+        "original_native_bytes_hex": "000000000000193d",
+        "canonical_bigendian_hex": "3d19000000000000"
+      },
+      {
+        "sample": 3,
+        "h": -0.01,
+        "start": "doublon_hole_pattern",
+        "path": [
+          "lanczos_params",
+          "cutoff"
+        ],
+        "observed_value": 2.220446049250313e-14,
+        "original_dtype": "<f8",
+        "original_native_bytes_hex": "000000000000193d",
+        "canonical_bigendian_hex": "3d19000000000000"
+      },
+      {
+        "sample": 4,
+        "h": 0.01,
+        "start": "Neel",
+        "path": [
+          "lanczos_params",
+          "cutoff"
+        ],
+        "observed_value": 2.220446049250313e-14,
+        "original_dtype": "<f8",
+        "original_native_bytes_hex": "000000000000193d",
+        "canonical_bigendian_hex": "3d19000000000000"
+      },
+      {
+        "sample": 5,
+        "h": 0.01,
+        "start": "doublon_hole_pattern",
+        "path": [
+          "lanczos_params",
+          "cutoff"
+        ],
+        "observed_value": 2.220446049250313e-14,
+        "original_dtype": "<f8",
+        "original_native_bytes_hex": "000000000000193d",
+        "canonical_bigendian_hex": "3d19000000000000"
+      }
+    ],
+    "initial_Delta_E_tag_records": [
+      {
+        "sample": 0,
+        "h": 0.0,
+        "start": "Neel",
+        "path": [
+          "sweep_statistics",
+          "Delta_E",
+          0
+        ],
+        "bits": "7ff8000000000000"
+      },
+      {
+        "sample": 1,
+        "h": 0.0,
+        "start": "doublon_hole_pattern",
+        "path": [
+          "sweep_statistics",
+          "Delta_E",
+          0
+        ],
+        "bits": "7ff8000000000000"
+      },
+      {
+        "sample": 2,
+        "h": -0.01,
+        "start": "Neel",
+        "path": [
+          "sweep_statistics",
+          "Delta_E",
+          0
+        ],
+        "bits": "7ff8000000000000"
+      },
+      {
+        "sample": 3,
+        "h": -0.01,
+        "start": "doublon_hole_pattern",
+        "path": [
+          "sweep_statistics",
+          "Delta_E",
+          0
+        ],
+        "bits": "7ff8000000000000"
+      },
+      {
+        "sample": 4,
+        "h": 0.01,
+        "start": "Neel",
+        "path": [
+          "sweep_statistics",
+          "Delta_E",
+          0
+        ],
+        "bits": "7ff8000000000000"
+      },
+      {
+        "sample": 5,
+        "h": 0.01,
+        "start": "doublon_hole_pattern",
+        "path": [
+          "sweep_statistics",
+          "Delta_E",
+          0
+        ],
+        "bits": "7ff8000000000000"
+      }
+    ],
+    "prior_v5_lost_scalar_value_or_bits": "NOT_OBSERVED"
+  },
+  "saved_provider_census": {
+    "tenpy": [
+      {
+        "stage": "before",
+        "reported_status": "PASS",
+        "reported_failure_count": 0,
+        "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+        "mapped_segments": 815,
+        "loaded_modules": 1069,
+        "mapped_unique_files": 152
+      },
+      {
+        "stage": "after",
+        "reported_status": "PASS",
+        "reported_failure_count": 0,
+        "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+        "mapped_segments": 820,
+        "loaded_modules": 1070,
+        "mapped_unique_files": 153
+      }
+    ],
+    "quspin": [
+      {
+        "stage": "before",
+        "reported_status": "PASS",
+        "reported_failure_count": 0,
+        "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+        "mapped_segments": 868,
+        "loaded_modules": 1060,
+        "mapped_unique_files": 156
+      },
+      {
+        "stage": "after",
+        "reported_status": "PASS",
+        "reported_failure_count": 0,
+        "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+        "mapped_segments": 873,
+        "loaded_modules": 1133,
+        "mapped_unique_files": 157
+      }
+    ],
+    "comparison": [
+      {
+        "stage": "before",
+        "reported_status": "PASS",
+        "reported_failure_count": 0,
+        "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+        "mapped_segments": 173,
+        "loaded_modules": 189,
+        "mapped_unique_files": 33
+      }
+    ]
+  },
+  "provider_audit_limitation": "Saved raw maps/module records were reparsed and reported source/provider hashes matched to frozen pins. No fresh remote file hash/restat or runtime execution.",
+  "comparison_gate_status": "NO_PERSISTED_GATES_NO_SCIENTIFIC_VERDICT",
+  "native_report_sha256": "a4cd680cd837480eb7ced99b2bf907a31c044a2a6dca39b45097bab007fc1867",
+  "tenpy_report_sha256": "0ecc11c51ee198241b2b9370fd42c5a77274ee46007857a6a74537431d00f175"
+}

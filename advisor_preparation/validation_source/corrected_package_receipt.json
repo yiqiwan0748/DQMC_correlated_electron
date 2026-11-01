@@ -1,0 +1,6 @@
+{
+  "archive": "corrected-source.tar.gz",
+  "sha256": "ae174444854849faf5ddb604a2b4a3e8dc88ccdb70f4fb0d9b9ff065dc9636e6",
+  "bytes": 231208,
+  "source": "working copy of recovered original plus atomic_local_lazy_fix.patch; original snapshots unmodified"
+}

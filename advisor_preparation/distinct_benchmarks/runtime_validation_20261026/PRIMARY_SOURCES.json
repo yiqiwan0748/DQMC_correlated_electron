@@ -1,0 +1,46 @@
+{
+  "installed_source_matches_official_version": true,
+  "interpretation": "In Julia 1.12.1 these accessors return unsigned int and Base calls UInt32. Widening a Julia return declaration cannot recover high bits already discarded by the C accessor. This source fact alone does not establish the current runtime observations or characterize other Julia releases.",
+  "official_sources": [
+    {
+      "tiny_exact_excerpts": [
+        {
+          "excerpt": "ccall(:jl_stat_dev,     UInt32,  (Ptr{UInt8},), buf)",
+          "line": 95
+        },
+        {
+          "excerpt": "ccall(:jl_stat_ino,     UInt32,  (Ptr{UInt8},), buf)",
+          "line": 96
+        }
+      ],
+      "url": "https://github.com/JuliaLang/julia/blob/v1.12.1/base/stat.jl",
+      "version": "v1.12.1",
+      "whole_file_bytes": 20234,
+      "whole_file_sha256": "e7db2b324667e2b57c82de4d8527894dc35b809e73a85471513ba27cb54498cf"
+    },
+    {
+      "tiny_exact_excerpts": [
+        {
+          "excerpt": "JL_DLLEXPORT unsigned int jl_stat_dev(char *statbuf)",
+          "line": 149
+        },
+        {
+          "excerpt": "JL_DLLEXPORT unsigned int jl_stat_ino(char *statbuf)",
+          "line": 154
+        }
+      ],
+      "url": "https://github.com/JuliaLang/julia/blob/v1.12.1/src/sys.c",
+      "version": "v1.12.1",
+      "whole_file_bytes": 22134,
+      "whole_file_sha256": "25bd82323c5e98f0fecd1c0a67718c1843006d77b8dc83451eb99186cb83935a"
+    }
+  ],
+  "schema": "P17_PUBLIC_PRIMARY_SOURCE_FACTS_V1",
+  "scientific_completions": 0,
+  "source_evidence_binding": {
+    "bytes": 2571,
+    "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+    "role": "independent_primary_source_review",
+    "sha256": "3a7a740ee1b70762fb62835d2b043dedf6db46e35c3538a7f1a9c56ca3706c79"
+  }
+}

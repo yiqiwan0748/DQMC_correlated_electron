@@ -1,0 +1,147 @@
+{
+  "schema": "DERIVED_X14_PRIVATE_TRACEBACK_SELECTION_V1",
+  "projections": [
+    {
+      "schema": "DERIVED_X14_EXCEPTION_PROJECTION_V1",
+      "origin": "original_diagnostic_source::spectral_peak_diagnostic_v1/prior/original_reference.stderr.txt",
+      "original_sha256": "77b511d8e98b164fe4d3ffba420719ed46c743df290feb752cface0a957e62b2",
+      "original_bytes": 1524,
+      "derived_not_original": true,
+      "omitted": "Complete original traceback body, absolute filesystem frame paths, caret/code-line rendering; original immutable private bytes retain this hash.",
+      "frames_basename_only": [
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 109,
+          "function": "<module>"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 107,
+          "function": "main"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 100,
+          "function": "render"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 67,
+          "function": "stationary"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 46,
+          "function": "enclosed_root"
+        }
+      ],
+      "recorded_exception_lines": [
+        "ValueError: Endpoint padding prevents required root precision"
+      ],
+      "new_root_probe_or_mathematical_conclusion": false
+    },
+    {
+      "schema": "DERIVED_X14_EXCEPTION_PROJECTION_V1",
+      "origin": "original_failure::outer_logs/x14_spectral_peak_pilot_6466312.log",
+      "original_sha256": "fb7129dfc38c102dc7ba0fa1b7547250df69bd1035b50ab2e27f86e1f4fadc3d",
+      "original_bytes": 552,
+      "derived_not_original": true,
+      "omitted": "Complete original traceback body, absolute filesystem frame paths, caret/code-line rendering; original immutable private bytes retain this hash.",
+      "frames_basename_only": [
+        {
+          "source_basename": "run_analysis.py",
+          "line": 40,
+          "function": "<module>"
+        },
+        {
+          "source_basename": "run_analysis.py",
+          "line": 39,
+          "function": "main"
+        }
+      ],
+      "recorded_exception_lines": [
+        "RuntimeError: RuntimeError: reference failed; partial original analysis retained, no blind retry"
+      ],
+      "new_root_probe_or_mathematical_conclusion": false
+    },
+    {
+      "schema": "DERIVED_X14_EXCEPTION_PROJECTION_V1",
+      "origin": "original_failure::results/reference.stderr.txt",
+      "original_sha256": "77b511d8e98b164fe4d3ffba420719ed46c743df290feb752cface0a957e62b2",
+      "original_bytes": 1524,
+      "derived_not_original": true,
+      "omitted": "Complete original traceback body, absolute filesystem frame paths, caret/code-line rendering; original immutable private bytes retain this hash.",
+      "frames_basename_only": [
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 109,
+          "function": "<module>"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 107,
+          "function": "main"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 100,
+          "function": "render"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 67,
+          "function": "stationary"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 46,
+          "function": "enclosed_root"
+        }
+      ],
+      "recorded_exception_lines": [
+        "ValueError: Endpoint padding prevents required root precision"
+      ],
+      "new_root_probe_or_mathematical_conclusion": false
+    },
+    {
+      "schema": "DERIVED_X14_EXCEPTION_PROJECTION_V1",
+      "origin": "trace_diagnostic::results/diagnostic/original_reference_traceback.txt",
+      "original_sha256": "1ef61ea5cad40c476d47212541a39587a35fe3e8b8830114ffbc8b8af3e80c0b",
+      "original_bytes": 1546,
+      "derived_not_original": true,
+      "omitted": "Complete original traceback body, absolute filesystem frame paths, caret/code-line rendering; original immutable private bytes retain this hash.",
+      "frames_basename_only": [
+        {
+          "source_basename": "diagnose.py",
+          "line": 106,
+          "function": "main"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 107,
+          "function": "main"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 100,
+          "function": "render"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 67,
+          "function": "stationary"
+        },
+        {
+          "source_basename": "render_quspin_reference.py",
+          "line": 46,
+          "function": "enclosed_root"
+        }
+      ],
+      "recorded_exception_lines": [
+        "ValueError: Endpoint padding prevents required root precision"
+      ],
+      "new_root_probe_or_mathematical_conclusion": false
+    }
+  ],
+  "traceback_bodies_published": false
+}

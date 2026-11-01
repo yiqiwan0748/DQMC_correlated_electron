@@ -1,0 +1,8 @@
+{
+  "schema": "ground_initial_v10_reproduction_guide_receipt_v1",
+  "guide": "../reporting/GROUND_INITIAL_V10_REPRODUCE.md",
+  "guide_sha256": "68bd4cbe0ec6b607973481690e92e8950ccda2a26f7526420b4b4cb7fc58467f",
+  "immutable_output_modified": false,
+  "public_reproduction_source_root": "distinct_benchmarks/reporting/reports/ground_initial_v10/frozen_sources/ground_user",
+  "scientific_or_cluster_execution": false
+}

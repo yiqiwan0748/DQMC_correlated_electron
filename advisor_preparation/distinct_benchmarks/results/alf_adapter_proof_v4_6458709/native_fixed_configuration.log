@@ -1,0 +1,17 @@
+ERROR STOP 2
+
+Error termination. Backtrace:
+#0  0x4d276f in ???
+#1  0x47c28f in ???
+#2  0x497496 in ???
+#3  0x402b3c in ???
+#4  0x7f1888a31864 in ???
+#5  0x402b7d in ???
+#6  0xffffffffffffffff in ???
+ Fields_in: unable to open <seeds>           2
+ Set_random_mod.F90 (95):
+ File not found                                                                                      
+ Terminating program
+ ALF Copyright (C) 2016 - 2022 The ALF project contributors
+ This Program comes with ABSOLUTELY NO WARRANTY; for details see license.GPL
+ This is free software, and you are welcome to redistribute it under certain conditions.

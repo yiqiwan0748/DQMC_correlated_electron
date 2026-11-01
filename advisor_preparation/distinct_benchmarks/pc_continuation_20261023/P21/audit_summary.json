@@ -1,0 +1,140 @@
+{
+  "schema": "p21_scientific_reconciliation_summary_v1",
+  "audit_status": "PASS",
+  "scientific_status": "UNRESOLVED",
+  "catalogue_ids": [
+    "P21"
+  ],
+  "job_id": "6461010",
+  "scientific_completions": 0,
+  "fresh_independent_checks": 2634,
+  "fresh_atomic_checks": 60705,
+  "raw_estimator_roles": 629,
+  "fresh_unique_bound_inputs": 965,
+  "frozen_original_auditor_sha256": "84cb9b2f6ec352382c9285e2acd481044080cda23b9c6aaa53d7fb0cc22e5e76",
+  "full_private_audit_sha256": "147db4a106ed53c33c7f76ec7f9555f59f2fe17b0c17bdf503786e94a81893e2",
+  "original_PC_audit_sha256": "78be405b10c34cbcb1b9da7bd18912f3a57b312c3fe0bf8c39ee1ce98b4eb5db",
+  "original_PC_transfer_sha256": "1c5e33289583a6d39689f8f038318f99d8276867c63a102cb20abc2368f3e3be",
+  "production_source_archive_sha256": "ef35cce4e7670ef3c642946fac345055144c987fc6059887022bfc3be5da12a1",
+  "current_remote_sha_closure": {
+    "files": 958,
+    "all_match_original_PC_transfer": true,
+    "receipt_sha256": "d99e4a26c0a25ea37c692dc4bbb6153d99d4ff13906de2ff081cd9bf7cada539"
+  },
+  "source_root_alias_disclosure": "Fresh local release-dir aliases retrieved source;53duplicate source paths coalesce, giving965unique inputs instead of1018inPCaudit. Every source byte/hash and scientific check remains validated. Public selection additionally omits3controller metadata files.",
+  "component_grid": {
+    "orders": [
+      "GT0",
+      "G0T"
+    ],
+    "tau_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "spins": [
+      "up",
+      "down"
+    ],
+    "spatial_rows": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "spatial_columns": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "real_components": 1408,
+    "complex_entries": 704,
+    "conserved_cross_spin_blocks": "Analytically zero for this spin-conserving real-hopping model; no spin-mixing claim."
+  },
+  "failure_gates": {
+    "real_ineligible": [
+      {
+        "order": "GT0",
+        "part": "real",
+        "tau_index": 1,
+        "spin": "down",
+        "row": 2,
+        "column": 3,
+        "real_component": 59,
+        "backend_failures": {
+          "user": {
+            "rhat": 1.0,
+            "ess_minimum": 15.590770315140956,
+            "ess_total": 503.7106498056771
+          }
+        }
+      },
+      {
+        "order": "G0T",
+        "part": "real",
+        "tau_index": 1,
+        "spin": "up",
+        "row": 3,
+        "column": 2,
+        "real_component": 750,
+        "backend_failures": {
+          "user": {
+            "rhat": 1.0,
+            "ess_minimum": 15.590770315140956,
+            "ess_total": 503.710649805678
+          }
+        }
+      }
+    ],
+    "complex_precision_failures": 376,
+    "complex_rectangles_not_contained": 170,
+    "complex_rectangles_wholly_outside": 0
+  },
+  "frozen_replay": {
+    "all_output_agrees_within_64_epsilon": true,
+    "byte_identical": false,
+    "exit_code": 0,
+    "gates_and_labels_exact": true,
+    "replay_sha256": "1ac083f70d639caef30278dc49479ac9804ede8c59d156bb3bd790fbc99df3f3",
+    "saved_sha256": "2fc17824db79ddff6c18fb7b7e0005dfc6681b6cfe1d475c8cebcd48420e7748"
+  },
+  "original_vs_fresh_independent_statistic_comparison": {
+    "scalar_checks": 161269,
+    "maximum_numeric_difference": 2.220446049250313e-16,
+    "scientific_gates_and_labels_exact": true,
+    "arithmetic_rule": "Existing64epsilon comparison only; scientific thresholds unchanged"
+  },
+  "independent_statistics_gzip_sha256": "3fe18e0b7362e2228f5d7dc28ce349b16e02c3c0adba200ec691533742c74305",
+  "independent_statistics_uncompressed_sha256": "1995892be5fef46e179f40cea58c0e4c36631d3a153db9eda3e5111f1743351f",
+  "protocol_revision": "Actual source-frozen p21_sampled_production_v1 supersedes unexecuted public sampling_protocol_v1. Fixed8pair Student7 instead of candidate Welch; complex disk and zero-imaginary criteria explicit before execution. Same finite fixture/multiplicity, no assertion that all old/new gates coincide.",
+  "scope": "Complete sampled native ALF versus actual maintained user buffers at finite dtau only. Independent audit PASS validates evidence/statistics, not scientific equivalence. Nominal Student/CLT tails remain conditional; finite diagnostics do not prove equilibrium or coverage.",
+  "metadata_selection": {
+    "excluded_production_paths": [
+      "independent_audit_v1.json",
+      "submissions/intent.json",
+      "submissions/receipt.json",
+      "submissions/sbatch_result.json"
+    ],
+    "excluded_pilot_paths": [
+      "independent_audit_v1.json",
+      "submissions/P21.json",
+      "submissions/X01.json"
+    ],
+    "private_import_archive_not_published": true
+  },
+  "archive_members": {
+    "production": 958,
+    "proof": 100,
+    "excluded_pilot": 152
+  },
+  "solver_or_native_binary_executed_by_reconciliation": false
+}

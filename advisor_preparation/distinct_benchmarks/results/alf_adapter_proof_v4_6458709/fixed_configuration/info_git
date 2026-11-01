@@ -1,0 +1,10 @@
+ ==================================
+ HEAD detached at f4c500cc
+ Changes not staged for commit:
+   (use "git add <file>..." to update what will be committed)
+   (use "git restore <file>..." to discard changes in working directory)
+ 	modified:   Hamiltonians/Hamiltonian_Hubbard_smod.F90
+ 	modified:   main.F90
+ 
+ no changes added to commit (use "git add" and/or "git commit -a")
+ ==================================

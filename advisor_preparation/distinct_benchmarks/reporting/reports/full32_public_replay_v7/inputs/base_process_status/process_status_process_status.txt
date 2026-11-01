@@ -1,0 +1,5 @@
+analytic_exit=0
+journal_exit=1
+oracle_exit=0
+target_exit=0
+compare_exit=1

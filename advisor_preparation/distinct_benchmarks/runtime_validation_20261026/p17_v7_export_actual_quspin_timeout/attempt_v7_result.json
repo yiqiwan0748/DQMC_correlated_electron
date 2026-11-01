@@ -1,0 +1,70 @@
+{
+  "schema": "P17_V7_EXCLUDED_PILOT_ACTUAL_EXPORT_AND_TIMEOUT_PUBLIC_V1",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "status": "UNRESOLVED_QUANTUM_REFERENCE_TIMEOUT_NO_COMPARISON",
+  "scheduler_state": "FAILED",
+  "scheduler_exit_code": "2:0",
+  "final_elapsed_seconds": 593.2833587601781,
+  "resources": {
+    "cpus": 1,
+    "memory_mb": 3500,
+    "allocation_seconds": 900,
+    "native_seconds": 360,
+    "tenpy_seconds": 300,
+    "quspin_seconds": 90,
+    "comparison_seconds": 60,
+    "combined_inner_seconds": 810,
+    "outer_guard_seconds": 870
+  },
+  "native": {
+    "status": "PRODUCER_COMPLETE_NOT_A_SCIENTIFIC_PASS",
+    "samples": 6,
+    "elapsed_seconds": 250.2357795573771
+  },
+  "tenpy": {
+    "status": "PRODUCER_COMPLETE_NOT_A_SCIENTIFIC_PASS",
+    "samples": 6,
+    "elapsed_seconds": 121.15533809550107,
+    "partial_checkpoint_samples": 6,
+    "Config_and_NumPy_metadata_export": "ACTUAL_SAVED_EXPORT_VALIDATED_WITH_LIMITED_AUDIT_SCOPE"
+  },
+  "quspin": {
+    "wrapper_role_status_as_saved": "RUNNING",
+    "subprocess_returncode_as_saved": null,
+    "timeout_seconds": 90,
+    "actual_role_elapsed_seconds": 90.00307572446764,
+    "quspin_report": "NOT_PERSISTED",
+    "runtime_before_report": "NOT_PERSISTED",
+    "stdout_bytes": 0,
+    "stderr_bytes": 0,
+    "GNU_resource_bytes": 0,
+    "specific_import_or_numerical_phase": "NOT_OBSERVED",
+    "terminal_job_state": "FAILED",
+    "terminal_exit_code": "2:0",
+    "stale_RUNNING_label_does_not_mean_active_job": true,
+    "status": "LAUNCHED_90_SECOND_TIMEOUT_NO_PERSISTED_REPORT"
+  },
+  "comparison": "NOT_RUN",
+  "full_production_admission": false,
+  "scientific_agreement": "NOT_EVALUATED",
+  "source_members_verified": 68,
+  "result_files_verified": 45,
+  "freeze_sha256": "93febb72683a99e47ac008526385c7a6958411bb60136ef4785ae3e52ba0ef91",
+  "execution_sha256": "880a0bade1dc1278b3eb9c6c3e7b0f0b545cd945ab26f96f9436c79f71ff4589",
+  "terminal_archive_sha256": "677da60cd06c62fa8e87514356368ea55fe9539e1709ae3737f15785db1113d3",
+  "independent_saved_receipt_audit": {
+    "checks": 632,
+    "failed_checks": 0,
+    "sha256": "b340a2c8233d8a1475d912943c14a8eca89ea66fa61b7b17c451d271006cb132",
+    "scope": "Source, archived result integrity, saved Config/binary64/NaN/checkpoint evidence, resources, raw provider metadata reparsing and comparison non-execution; no quantum recalculation or fresh remote provider hash/restat."
+  },
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  },
+  "scope_limit": "Complete native/TeNPy producer exports do not establish scientific accuracy. QuSpin was attempted and timed out; no persisted report identifies its import or numerical phase. No reference comparison ran and no catalogue completion was earned."
+}

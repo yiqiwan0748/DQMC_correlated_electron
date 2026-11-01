@@ -1,0 +1,393 @@
+{
+  "schema": "recovered_ground_precision_root_audit_v1",
+  "status": "PASS",
+  "job_id": "6460656",
+  "checks": [
+    {
+      "name": "Scientific gates identical to original eight-sweep attempt",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: native_source/Project.toml",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: native_source/Manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: native_source/analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: native_source/analysis/audit_u4_l4_thermal_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: native_source/analysis/compute_s2_itensor_dmrg.jl",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: results/oracle.json",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: results/target.toml",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: results/comparison.json",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: results/oracle.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: results/target.resources.txt",
+      "passed": true
+    },
+    {
+      "name": "Recovered original bytes: results/slurm.log",
+      "passed": true
+    },
+    {
+      "name": "Native source closure: Project.toml",
+      "passed": true
+    },
+    {
+      "name": "Native source closure: Manifest.toml",
+      "passed": true
+    },
+    {
+      "name": "Native source closure: analysis/compute_s2_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "Native source closure: analysis/audit_u4_l4_thermal_ed.jl",
+      "passed": true
+    },
+    {
+      "name": "Native source closure: analysis/compute_s2_itensor_dmrg.jl",
+      "passed": true
+    },
+    {
+      "name": "Executed manifest pin",
+      "passed": true
+    },
+    {
+      "name": "Executed manifest pin",
+      "passed": true
+    },
+    {
+      "name": "Native adapter pin",
+      "passed": true
+    },
+    {
+      "name": "Independent oracle pin",
+      "passed": true
+    },
+    {
+      "name": "Complete independent and user sector coordinates",
+      "passed": true
+    },
+    {
+      "name": "Actual matrix agrees with QuSpin: Hamiltonian",
+      "passed": true
+    },
+    {
+      "name": "Actual matrix agrees with QuSpin: MPO_qn_Hamiltonian",
+      "passed": true
+    },
+    {
+      "name": "Actual matrix agrees with QuSpin: MPO_dense_Hamiltonian",
+      "passed": true
+    },
+    {
+      "name": "Independent unique ground and gap",
+      "passed": true
+    },
+    {
+      "name": "Hermitian oracle",
+      "passed": true
+    },
+    {
+      "name": "Declared optimizer parameters and sixteen sweeps",
+      "passed": true
+    },
+    {
+      "name": "Four starts and both manufactured challenges retained",
+      "passed": true
+    },
+    {
+      "name": "Complete complex state: neel",
+      "passed": true
+    },
+    {
+      "name": "Normalized physical sector: neel",
+      "passed": true
+    },
+    {
+      "name": "Stable residual agrees with reported variance: neel",
+      "passed": true
+    },
+    {
+      "name": "Native passes or manufactured excited challenge is rejected: neel",
+      "passed": true
+    },
+    {
+      "name": "Complete complex state: charge_density_wave",
+      "passed": true
+    },
+    {
+      "name": "Normalized physical sector: charge_density_wave",
+      "passed": true
+    },
+    {
+      "name": "Stable residual agrees with reported variance: charge_density_wave",
+      "passed": true
+    },
+    {
+      "name": "Native passes or manufactured excited challenge is rejected: charge_density_wave",
+      "passed": true
+    },
+    {
+      "name": "Complete complex state: spin_domains",
+      "passed": true
+    },
+    {
+      "name": "Normalized physical sector: spin_domains",
+      "passed": true
+    },
+    {
+      "name": "Stable residual agrees with reported variance: spin_domains",
+      "passed": true
+    },
+    {
+      "name": "Native passes or manufactured excited challenge is rejected: spin_domains",
+      "passed": true
+    },
+    {
+      "name": "Complete complex state: shuffled",
+      "passed": true
+    },
+    {
+      "name": "Normalized physical sector: shuffled",
+      "passed": true
+    },
+    {
+      "name": "Stable residual agrees with reported variance: shuffled",
+      "passed": true
+    },
+    {
+      "name": "Native passes or manufactured excited challenge is rejected: shuffled",
+      "passed": true
+    },
+    {
+      "name": "Complete complex state: first_excited_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Normalized physical sector: first_excited_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Stable residual agrees with reported variance: first_excited_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Native passes or manufactured excited challenge is rejected: first_excited_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Complete complex state: highest_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Normalized physical sector: highest_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Stable residual agrees with reported variance: highest_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Native passes or manufactured excited challenge is rejected: highest_eigenvector",
+      "passed": true
+    },
+    {
+      "name": "Fresh frozen-comparator replay exactly reproduces original JSON",
+      "passed": true
+    },
+    {
+      "name": "Both frozen comparison rows pass",
+      "passed": true
+    },
+    {
+      "name": "Base X09 unresolved and X12 already passed",
+      "passed": true
+    }
+  ],
+  "check_count": 56,
+  "scientific_status": {
+    "X09": "PASS",
+    "X12": "PASS"
+  },
+  "new_distinct_passes": 1,
+  "X12_not_double_counted": true,
+  "metrics": [
+    {
+      "label": "neel",
+      "kind": "native_dmrg",
+      "stable_variance": 3.5563425720927015e-30,
+      "energy_excess": -1.3322676295501878e-14,
+      "ground_projector_fidelity": 1.0000000000000002,
+      "certified": true
+    },
+    {
+      "label": "charge_density_wave",
+      "kind": "native_dmrg",
+      "stable_variance": 1.0102599794133694e-29,
+      "energy_excess": -1.2878587085651816e-14,
+      "ground_projector_fidelity": 1.0,
+      "certified": true
+    },
+    {
+      "label": "spin_domains",
+      "kind": "native_dmrg",
+      "stable_variance": 2.0399765621532982e-30,
+      "energy_excess": -1.199040866595169e-14,
+      "ground_projector_fidelity": 0.9999999999999998,
+      "certified": true
+    },
+    {
+      "label": "shuffled",
+      "kind": "native_dmrg",
+      "stable_variance": 3.4973075880524505e-29,
+      "energy_excess": -1.2434497875801753e-14,
+      "ground_projector_fidelity": 1.0,
+      "certified": true
+    },
+    {
+      "label": "first_excited_eigenvector",
+      "kind": "manufactured_excited_mps",
+      "stable_variance": 2.0218088054089127e-29,
+      "energy_excess": 0.2963246316389554,
+      "ground_projector_fidelity": 3.27408752990026e-18,
+      "certified": false
+    },
+    {
+      "label": "highest_eigenvector",
+      "kind": "manufactured_excited_mps",
+      "stable_variance": 2.364293532513777e-28,
+      "energy_excess": 12.205496966924137,
+      "ground_projector_fidelity": 1.1050292098706027e-18,
+      "certified": false
+    }
+  ],
+  "source_and_raw_inputs": [
+    {
+      "path": "advisor_preparation/distinct_benchmarks/ground_certification_precision_v2/manifest.toml",
+      "bytes": 4103,
+      "sha256": "2a543304f53c44842aac75eacd4b8800e3cc7573c6bcc04495fad5fbfc24986a"
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/ground_certification_precision_v2/target.jl",
+      "bytes": 10445,
+      "sha256": "b7f8e424c5487fcef12317f3c9620e39ef34a9941a2639253880dfcd79988841"
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/ground_certification_precision_v2/oracle_quspin.py",
+      "bytes": 6293,
+      "sha256": "77cf51e2915e1741e01a3a00ace6e6b6ff7291eac6b0f0aec405847a9a0d1c58"
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/ground_certification_precision_v2/compare.py",
+      "bytes": 14024,
+      "sha256": "e3d95287e270813ae786566f9bb7dfb8e796052a79ac43a87565bbe906468b88"
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/ground_certification/manifest.toml",
+      "bytes": 3659,
+      "sha256": "96e4d336d4cd82b485d0b4c4796caec26db5ede4688012cee692f2e747d5236a"
+    },
+    {
+      "path": "advisor_preparation/distinct_benchmarks/reporting/reports/ground_initial_v10/ledger_100.json",
+      "bytes": 699324,
+      "sha256": "abee1b7af4263979880d24afc679d1553567e2141caf16c41888c7c46cf2e228"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/pc_transfer.json",
+      "bytes": 3887,
+      "sha256": "27533f527ec5e29093bc11a56b1c3421d1ba555c0888d96f671abe33ffb5d890"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/fresh_remote_transfer.json",
+      "bytes": 4067,
+      "sha256": "731d5ad2e89364a3a5708b4f6ba90827b2c653aeb1867800f6b6e0f55988bd8e"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/fresh_comparison_replay.json",
+      "bytes": 4862,
+      "sha256": "a2fefdcafd4a3834bf6603e18f1993902abf4b4031736b33baa5827a204cec8a"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/native_source/Project.toml",
+      "bytes": 950,
+      "sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/native_source/Manifest.toml",
+      "bytes": 61818,
+      "sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/native_source/analysis/compute_s2_ed.jl",
+      "bytes": 17625,
+      "sha256": "f8f94cfc13e11bb8b5e64e8ac8f4ade5ed3a13b3976c83b5ab5db89d86ba5f28"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/native_source/analysis/audit_u4_l4_thermal_ed.jl",
+      "bytes": 11032,
+      "sha256": "658c7c6bf465c70463450bca093d6e7eff589ac649d1532c98750e694bc1ddb5"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/native_source/analysis/compute_s2_itensor_dmrg.jl",
+      "bytes": 10719,
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/results/oracle.json",
+      "bytes": 76612,
+      "sha256": "041f9b944870f8bb4cc132b59f06ae1f194b94446f58d4c0d4d6a65521218693"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/results/target.toml",
+      "bytes": 45682,
+      "sha256": "bd6890987519e6a8749ba26b04b18bf62851e2eb419ecea3e6ba4f971ba67122"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/results/comparison.json",
+      "bytes": 4862,
+      "sha256": "a2fefdcafd4a3834bf6603e18f1993902abf4b4031736b33baa5827a204cec8a"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/results/oracle.resources.txt",
+      "bytes": 1259,
+      "sha256": "b558d6bfa3e3c83589752927b0f2ec8b4b3589970b102ae524490903878db1dc"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/results/target.resources.txt",
+      "bytes": 1371,
+      "sha256": "e7f72ffa559545ae0379cec0be91eff98290f373ed18a976d1803b7774219710"
+    },
+    {
+      "path": "advisor_preparation/pc_import_20261023/native_raw/X09/results/slurm.log",
+      "bytes": 10383,
+      "sha256": "ed6556bd6924031794ef5854326c86e89ef70b6109fd5aa9fffc375c686cd5a7"
+    }
+  ],
+  "auditor_sha256": "7d68fd5717ed387096b4dfad91bba97a6845bff526d5897dfc638823a1c1f63c",
+  "scientific_solver_executed": false,
+  "scope": "The frozen four-site fixed-spin certification fixture only; original eight-sweep failure and all gates preserved."
+}

@@ -1,0 +1,23 @@
+	Command being timed: "/lustre/isaac24/scratch/ywang287/advisor-validation-20261022/quspin-venv/bin/python -B /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/source/j23_mean_field_v1/compare.py --native /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/j23_mean_field_full_20261023T1942Z/native.toml --reference /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/j23_mean_field_full_20261023T1942Z/reference.json --output /lustre/isaac24/scratch/ywang287/advisor-validation-20261022/results/j23_full_saved_replay_20261023T1955Z/comparison_replay.json"
+	User time (seconds): 29.31
+	System time (seconds): 0.92
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.79
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1410920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 286440
+	Voluntary context switches: 1173
+	Involuntary context switches: 682
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1520
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

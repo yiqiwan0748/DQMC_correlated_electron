@@ -1,0 +1,71 @@
+{
+  "active_ledger_updated_by_packet": false,
+  "catalogue_id": "P13",
+  "complete_standalone_reproduction": false,
+  "distinct_scientific_questions": 1,
+  "files": [
+    {
+      "bytes": 9816,
+      "name": "PROTOCOL.json",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/PROTOCOL.json",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/PROTOCOL.json",
+      "sha256": "a5057c8bcab56564890355a02ec63e0bbc760205d34d12039a00dbb841b7e222"
+    },
+    {
+      "bytes": 1523,
+      "name": "protocol_helpers.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/protocol_helpers.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/protocol_helpers.py",
+      "sha256": "950525ba84b706d9e55824cebfb344484295a44f904ef3f652d364efd98b34a3"
+    },
+    {
+      "bytes": 9710,
+      "name": "native_producer_core.jl",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/native_producer_core.jl",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/native_producer_core.jl",
+      "sha256": "fda7ec19080ef823f6000693fa78c7ca0a8da24ee0f204340fe85ad658515ff9"
+    },
+    {
+      "bytes": 14971,
+      "name": "tenpy_producer_core.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/tenpy_producer_core.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/tenpy_producer_core.py",
+      "sha256": "65835eb811f9f836cbccfc17a0e94d9de83056aadf48aff3baa8aad0f96ba99a"
+    },
+    {
+      "bytes": 49045,
+      "name": "comparator.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/comparator.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/comparator.py",
+      "sha256": "ed2f0172df1fd361fde3cc6951feacc68118308c2f5c1f500c9919f5453a0ff0"
+    },
+    {
+      "bytes": 6662,
+      "name": "evolution_bounds.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/evolution_bounds.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/evolution_bounds.py",
+      "sha256": "dbfae6bcc8e98965160438911230f4cb6fc803583a7c895b052964bbd01fdbe9"
+    },
+    {
+      "bytes": 14086,
+      "name": "inherited_p17_certificate.py",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/inherited_p17_certificate.py",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/inherited_p17_certificate.py",
+      "sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    {
+      "bytes": 10719,
+      "name": "source_snapshot/compute_s2_itensor_dmrg.jl",
+      "relative_path": "../../runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/source_snapshot/compute_s2_itensor_dmrg.jl",
+      "repository_path": "advisor_preparation/distinct_benchmarks/runtime_validation_20261028/p13_quench_pilot_rayleigh_recomparison/source/source_snapshot/compute_s2_itensor_dmrg.jl",
+      "sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f"
+    }
+  ],
+  "proposed_publication_credit": 1,
+  "publication_receipt_scope": "Public commit/readback evidence and the active ledger are maintained separately; this artifact does not itself claim upload completion.",
+  "record_creation_stage": "FINAL_SCIENTIFIC_RECORD",
+  "reference_rule": "All eight files already exist in the research-record branch. Each byte pin matches the original completed-run source member and its published scientific source. Comparator/evolution sources include the Rayleigh-residual initial-ground-ray repair. Protocol approval/resource prose is historical source context, not an execution admission. Raw producer tensors/eigensystems, dependency locks, execution drivers and private runtime qualification are omitted.",
+  "schema": "P13_A03_FULL_CURVE_PUBLIC_NUMERICAL_SOURCE_REFERENCES_V1",
+  "scientific_status": "PASS_ROOT_RECONCILED_FINITE_SCOPE",
+  "status": "EIGHT_EXISTING_PUBLIC_FILES_BYTE_IDENTICAL_TO_ORIGINAL_A03_NUMERICAL_SOURCE"
+}

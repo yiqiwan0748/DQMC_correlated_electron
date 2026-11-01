@@ -1,0 +1,20 @@
+{
+  "release": "thermal-bridges-v1",
+  "distinct_ids": [
+    "P07",
+    "X02",
+    "X03"
+  ],
+  "files": {
+    "thermal_bridges/README.md": "ad39194d6947bbc5f8cfa94690ba17373fb7201f48c141fdf2de417209f3191d",
+    "thermal_bridges/SHA256SUMS": "0f89527af9680416b552efc4df7185ab7ccbb37f9cb29e35cd8a1cf90291cb41",
+    "thermal_bridges/compare.py": "0cd9b5111d4e00ad732e5911caebbb98ced6df92fd0025234069e78a47711ae0",
+    "thermal_bridges/manifest.toml": "efe81aa56cf15f729ff569399c8158b6164ac0182873ece2db0fa334a4d9f772",
+    "thermal_bridges/oracle_quspin.py": "0fffa047063a4e6523d88f3bc701f53f21e00a0248b4f09b416c29694ff21afa",
+    "thermal_bridges/run.sbatch": "1a9620f137c3fa6d7ad81086875363ce81628b0e2f1a0cdc01e9a2514b9a9d04",
+    "thermal_bridges/static_review.json": "a30ed845afe2e0d3a3761c24aa73a24169405efdd6f660f6f158e1ebe3d8ee86",
+    "thermal_bridges/target_thermal.jl": "e5713f18d6df88b9a1f59720594da9f3848b7af73c288ebe56813b162584ad7b"
+  },
+  "archive_sha256": "73e34d1c706f302b79523559bdac0faf7b4c84a62ed9e840f153ad15ac29d826",
+  "status": "FROZEN_NOT_RUN"
+}

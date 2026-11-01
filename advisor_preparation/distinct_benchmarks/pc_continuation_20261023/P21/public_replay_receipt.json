@@ -1,0 +1,13 @@
+{
+  "schema": "published_p21_scientific_replay_v1",
+  "audit_status": "PASS",
+  "scientific_status": "UNRESOLVED",
+  "scientific_completions": 0,
+  "all_1408_real_and_704_complex_statistics_agree": true,
+  "scalar_checks": 161230,
+  "maximum_numeric_difference": 0.0,
+  "gates_and_labels_exact": true,
+  "interval_arithmetic_rule": "Existing64*binary64epsilon*max(1,abs(a),abs(b)); scientific thresholds unchanged",
+  "scientific_selection": "Three controller submission/queue metadata files excluded; scientific source/raw bytes and629estimator roles unchanged. Derived transfer manifest and root mappings are explicit.",
+  "physics_executed": false
+}

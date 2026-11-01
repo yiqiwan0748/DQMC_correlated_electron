@@ -1,0 +1,31 @@
+{
+  "source_archive": "../../validation_source/baseline-source.tar.gz",
+  "archive_sha256": "11c3c33adaa70a78b8ab10437fba04651e3951c040bb289c4a3ce7ec293420aa",
+  "scope": "Verbatim existing user production source; no source edits. New measurement and oracle adapters are separate.",
+  "files": [
+    {
+      "path": "src/noninteracting.jl",
+      "archive_member": "alm/src/noninteracting.jl",
+      "sha256": "19c1e75f0ab9e14bfe04e275ba80299577634f5b51a57a90b24393dfa070c568",
+      "bytes": 16055
+    },
+    {
+      "path": "src/realspace_kinetic.jl",
+      "archive_member": "alm/src/realspace_kinetic.jl",
+      "sha256": "c831408edb45436ea5a319a318976d7c05407c2114df3b397490557ba1fe68c6",
+      "bytes": 6705
+    },
+    {
+      "path": "scripts/two_orbital_open_cluster_ed.jl",
+      "archive_member": "alm/scripts/two_orbital_open_cluster_ed.jl",
+      "sha256": "94fc2106c6f8850653199f6ff497d6045c5342c7616e24ee76c080655f2b1751",
+      "bytes": 28563
+    },
+    {
+      "path": "scripts/two_orbital_atom_ed.jl",
+      "archive_member": "alm/scripts/two_orbital_atom_ed.jl",
+      "sha256": "0771bfdc6c1080a26e682590d6cb664cf649a800c1aab2fe4cb2875ea105334f",
+      "bytes": 7024
+    }
+  ]
+}

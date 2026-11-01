@@ -1,0 +1,436 @@
+{
+  "schema": "P17_V7_ACTUAL_SAVED_CONFIG_BINARY64_EXPORT_EVIDENCE_PUBLIC_V1",
+  "status": "ACTUAL_EXPORT_METADATA_VALIDATED_NOT_PHYSICAL_PASS",
+  "scientific_credit": 0,
+  "tenpy_complete_samples": 6,
+  "actual_numpy_binary64_export_contract": {
+    "class_module": "numpy",
+    "class_name": "float64",
+    "dtype_string": "<f8",
+    "kind": "f",
+    "itemsize": 8,
+    "is_native": true,
+    "methods": "Exact np.float64.tobytes and float(value), native bytes and strict JSON roundtrips",
+    "scope": "Effective Config metadata only; physical exports remain strict",
+    "runtime_binding": "Actual qualified NumPy imported source and compiled-provider closure",
+    "builtin_method_Python_source_inspection_claimed": false
+  },
+  "normalization_record_count": 6,
+  "normalization_records": [
+    {
+      "sample": 0,
+      "h": 0.0,
+      "start": "Neel",
+      "path": [
+        "lanczos_params",
+        "cutoff"
+      ],
+      "observed_value": 2.220446049250313e-14,
+      "original_dtype": "<f8",
+      "original_native_bytes_hex": "000000000000193d",
+      "canonical_bigendian_hex": "3d19000000000000"
+    },
+    {
+      "sample": 1,
+      "h": 0.0,
+      "start": "doublon_hole_pattern",
+      "path": [
+        "lanczos_params",
+        "cutoff"
+      ],
+      "observed_value": 2.220446049250313e-14,
+      "original_dtype": "<f8",
+      "original_native_bytes_hex": "000000000000193d",
+      "canonical_bigendian_hex": "3d19000000000000"
+    },
+    {
+      "sample": 2,
+      "h": -0.01,
+      "start": "Neel",
+      "path": [
+        "lanczos_params",
+        "cutoff"
+      ],
+      "observed_value": 2.220446049250313e-14,
+      "original_dtype": "<f8",
+      "original_native_bytes_hex": "000000000000193d",
+      "canonical_bigendian_hex": "3d19000000000000"
+    },
+    {
+      "sample": 3,
+      "h": -0.01,
+      "start": "doublon_hole_pattern",
+      "path": [
+        "lanczos_params",
+        "cutoff"
+      ],
+      "observed_value": 2.220446049250313e-14,
+      "original_dtype": "<f8",
+      "original_native_bytes_hex": "000000000000193d",
+      "canonical_bigendian_hex": "3d19000000000000"
+    },
+    {
+      "sample": 4,
+      "h": 0.01,
+      "start": "Neel",
+      "path": [
+        "lanczos_params",
+        "cutoff"
+      ],
+      "observed_value": 2.220446049250313e-14,
+      "original_dtype": "<f8",
+      "original_native_bytes_hex": "000000000000193d",
+      "canonical_bigendian_hex": "3d19000000000000"
+    },
+    {
+      "sample": 5,
+      "h": 0.01,
+      "start": "doublon_hole_pattern",
+      "path": [
+        "lanczos_params",
+        "cutoff"
+      ],
+      "observed_value": 2.220446049250313e-14,
+      "original_dtype": "<f8",
+      "original_native_bytes_hex": "000000000000193d",
+      "canonical_bigendian_hex": "3d19000000000000"
+    }
+  ],
+  "Config_records": [
+    {
+      "sample": 0,
+      "h": 0.0,
+      "start": "Neel",
+      "configs": [
+        {
+          "path": [
+            "mixer_params"
+          ],
+          "name": "mixer_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "trunc_params"
+          ],
+          "name": "trunc_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "lanczos_params"
+          ],
+          "name": "lanczos_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        }
+      ],
+      "source_added_truncation_defaults": {
+        "chi_min": null,
+        "degeneracy_tol": null
+      }
+    },
+    {
+      "sample": 1,
+      "h": 0.0,
+      "start": "doublon_hole_pattern",
+      "configs": [
+        {
+          "path": [
+            "mixer_params"
+          ],
+          "name": "mixer_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "trunc_params"
+          ],
+          "name": "trunc_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "lanczos_params"
+          ],
+          "name": "lanczos_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        }
+      ],
+      "source_added_truncation_defaults": {
+        "chi_min": null,
+        "degeneracy_tol": null
+      }
+    },
+    {
+      "sample": 2,
+      "h": -0.01,
+      "start": "Neel",
+      "configs": [
+        {
+          "path": [
+            "mixer_params"
+          ],
+          "name": "mixer_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "trunc_params"
+          ],
+          "name": "trunc_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "lanczos_params"
+          ],
+          "name": "lanczos_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        }
+      ],
+      "source_added_truncation_defaults": {
+        "chi_min": null,
+        "degeneracy_tol": null
+      }
+    },
+    {
+      "sample": 3,
+      "h": -0.01,
+      "start": "doublon_hole_pattern",
+      "configs": [
+        {
+          "path": [
+            "mixer_params"
+          ],
+          "name": "mixer_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "trunc_params"
+          ],
+          "name": "trunc_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "lanczos_params"
+          ],
+          "name": "lanczos_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        }
+      ],
+      "source_added_truncation_defaults": {
+        "chi_min": null,
+        "degeneracy_tol": null
+      }
+    },
+    {
+      "sample": 4,
+      "h": 0.01,
+      "start": "Neel",
+      "configs": [
+        {
+          "path": [
+            "mixer_params"
+          ],
+          "name": "mixer_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "trunc_params"
+          ],
+          "name": "trunc_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "lanczos_params"
+          ],
+          "name": "lanczos_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        }
+      ],
+      "source_added_truncation_defaults": {
+        "chi_min": null,
+        "degeneracy_tol": null
+      }
+    },
+    {
+      "sample": 5,
+      "h": 0.01,
+      "start": "doublon_hole_pattern",
+      "configs": [
+        {
+          "path": [
+            "mixer_params"
+          ],
+          "name": "mixer_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "trunc_params"
+          ],
+          "name": "trunc_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        },
+        {
+          "path": [
+            "lanczos_params"
+          ],
+          "name": "lanczos_params",
+          "unused_keys": [],
+          "source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549"
+        }
+      ],
+      "source_added_truncation_defaults": {
+        "chi_min": null,
+        "degeneracy_tol": null
+      }
+    }
+  ],
+  "actual_initial_Delta_E_tags": [
+    {
+      "sample": 0,
+      "h": 0.0,
+      "start": "Neel",
+      "path": [
+        "sweep_statistics",
+        "Delta_E",
+        0
+      ],
+      "bits": "7ff8000000000000",
+      "kind": "TENPY_INITIAL_UNDEFINED_DELTA_E_BINARY64",
+      "source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32"
+    },
+    {
+      "sample": 1,
+      "h": 0.0,
+      "start": "doublon_hole_pattern",
+      "path": [
+        "sweep_statistics",
+        "Delta_E",
+        0
+      ],
+      "bits": "7ff8000000000000",
+      "kind": "TENPY_INITIAL_UNDEFINED_DELTA_E_BINARY64",
+      "source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32"
+    },
+    {
+      "sample": 2,
+      "h": -0.01,
+      "start": "Neel",
+      "path": [
+        "sweep_statistics",
+        "Delta_E",
+        0
+      ],
+      "bits": "7ff8000000000000",
+      "kind": "TENPY_INITIAL_UNDEFINED_DELTA_E_BINARY64",
+      "source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32"
+    },
+    {
+      "sample": 3,
+      "h": -0.01,
+      "start": "doublon_hole_pattern",
+      "path": [
+        "sweep_statistics",
+        "Delta_E",
+        0
+      ],
+      "bits": "7ff8000000000000",
+      "kind": "TENPY_INITIAL_UNDEFINED_DELTA_E_BINARY64",
+      "source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32"
+    },
+    {
+      "sample": 4,
+      "h": 0.01,
+      "start": "Neel",
+      "path": [
+        "sweep_statistics",
+        "Delta_E",
+        0
+      ],
+      "bits": "7ff8000000000000",
+      "kind": "TENPY_INITIAL_UNDEFINED_DELTA_E_BINARY64",
+      "source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32"
+    },
+    {
+      "sample": 5,
+      "h": 0.01,
+      "start": "doublon_hole_pattern",
+      "path": [
+        "sweep_statistics",
+        "Delta_E",
+        0
+      ],
+      "bits": "7ff8000000000000",
+      "kind": "TENPY_INITIAL_UNDEFINED_DELTA_E_BINARY64",
+      "source_sha256": "b9ec50d49bd49d2e374878d37ce358b805cc48575f64aa5b8f3e9de7b9308e32"
+    }
+  ],
+  "checkpoint_sample_count": 6,
+  "checkpoint_payloads_equal_final_samples": true,
+  "every_requested_call_boundary_leaf_retained_in_effective_values": true,
+  "actual_Config_as_dict_dispatch_source_sha256": "3f2b1e175f6974405b14f919a2e9a7a36edea2d1831f9747c8bb9ead6bf61549",
+  "exact_generic_helper_sha256": "444fa02c33874964e85857788052e8026b9f14f8c5174c9d9eff6f9ecde66ecf",
+  "saved_provider_evidence": {
+    "native": [
+      {
+        "scope": "SAVED_RAW_MAPS_AND_FULLWIDTH_STAT_REPARSED_NOT_FRESH_REMOTE_RESTAT_OR_PROVIDER_HASH",
+        "file_segments": 224,
+        "fullwidth_files": 51
+      },
+      {
+        "scope": "SAVED_RAW_MAPS_AND_FULLWIDTH_STAT_REPARSED_NOT_FRESH_REMOTE_RESTAT_OR_PROVIDER_HASH",
+        "file_segments": 224,
+        "fullwidth_files": 51
+      }
+    ],
+    "tenpy": [
+      {
+        "stage": "before",
+        "reported_status": "PASS",
+        "reported_failure_count": 0,
+        "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+        "mapped_segments": 815,
+        "loaded_modules": 1069,
+        "mapped_unique_files": 152
+      },
+      {
+        "stage": "after",
+        "reported_status": "PASS",
+        "reported_failure_count": 0,
+        "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+        "mapped_segments": 820,
+        "loaded_modules": 1070,
+        "mapped_unique_files": 153
+      }
+    ]
+  },
+  "limitations": [
+    "Saved source-bound dispatch and actual process reports support this particular export; the local audit reparsed saved raw maps/stat records and checked reported hashes against frozen pins. It did not perform new remote file hashes/restats or rerun a runtime.",
+    "V5 scalar value and bits remain NOT_OBSERVED. The value and bits here were observed only in the new V7 execution.",
+    "Metadata normalization applies only to effective Config options. Physical export boundaries and all scientific gates remain unchanged.",
+    "The QuSpin oracle did not persist a result, so no independent quantum comparison or full-production eligibility follows."
+  ]
+}

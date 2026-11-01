@@ -1,0 +1,207 @@
+{
+  "fourth_look": false,
+  "new_scientific_completions": 0,
+  "partial_grid_fits": false,
+  "pooling": false,
+  "rerun_or_retry": false,
+  "scheduler_history": [
+    {
+      "job_label": "x01_cancelled_6460728",
+      "scheduler": {
+        "AllocCPUS": "1",
+        "Elapsed": "00:01:42",
+        "ElapsedRaw": "102",
+        "End": "2026-10-22T20:40:52",
+        "ExitCode": "0:0",
+        "JobIDRaw": "6460728",
+        "JobName": "x01_continuum_pc_v1b",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "2026-10-22T20:39:10",
+        "State": "CANCELLED by 12640",
+        "Timelimit": "01:00:00"
+      },
+      "scheduler_sha256": "51d435edce5a3fca92520859ee1bd637540b54b72b8d66930485ac196dd91cbe"
+    },
+    {
+      "job_label": "x01_6460771",
+      "scheduler": {
+        "AllocCPUS": "1",
+        "Elapsed": "00:17:28",
+        "ElapsedRaw": "1048",
+        "End": "2026-10-22T21:03:23",
+        "ExitCode": "2:0",
+        "JobIDRaw": "6460771",
+        "JobName": "x01_continuum_pc_v1c",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "2026-10-22T20:45:55",
+        "State": "FAILED",
+        "Timelimit": "01:00:00"
+      },
+      "scheduler_sha256": "11e643e11770fcf5b0021b0da5272d6b22fc7341ae5763120d9c4c3dbdf56f47"
+    },
+    {
+      "job_label": "x01s2a_6460996",
+      "scheduler": {
+        "AllocCPUS": "1",
+        "Elapsed": "00:01:31",
+        "ElapsedRaw": "91",
+        "End": "2026-10-23T01:23:59",
+        "ExitCode": "2:0",
+        "JobIDRaw": "6460996",
+        "JobName": "x01_s2_analysis",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "2026-10-23T01:22:28",
+        "State": "FAILED",
+        "Timelimit": "00:10:00"
+      },
+      "scheduler_sha256": "5ef56a1455d4d69e8210969aecb5a607777cbcba3d9c099034cac2a0756abe35"
+    },
+    {
+      "job_label": "x01s3p1_6462170",
+      "scheduler": {
+        "AllocCPUS": "1",
+        "Elapsed": "00:17:19",
+        "ElapsedRaw": "1039",
+        "End": "2026-10-23T02:41:46",
+        "ExitCode": "0:0",
+        "JobIDRaw": "6462170",
+        "JobName": "x01_s3_part1",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "2026-10-23T02:24:27",
+        "State": "COMPLETED",
+        "Timelimit": "00:20:00"
+      },
+      "scheduler_sha256": "da5c13e2fd7a64cca3584c9eb936059d3a7021423db3171149751648edbcc44c"
+    },
+    {
+      "job_label": "x01s3p2_6462171",
+      "scheduler": {
+        "AllocCPUS": "1",
+        "Elapsed": "00:29:44",
+        "ElapsedRaw": "1784",
+        "End": "2026-10-23T03:11:41",
+        "ExitCode": "9:0",
+        "JobIDRaw": "6462171",
+        "JobName": "x01_s3_part2",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "2026-10-23T02:41:57",
+        "State": "FAILED",
+        "Timelimit": "00:30:00"
+      },
+      "scheduler_sha256": "aa7d1570b3e0ba3378749aa0ced341c6e8a4b72149a60c56429dc0cae3b48bc9"
+    },
+    {
+      "job_label": "x01s3p3_6462172",
+      "scheduler": {
+        "AllocCPUS": "0",
+        "Elapsed": "00:00:00",
+        "ElapsedRaw": "0",
+        "End": "2026-10-23T03:12:42",
+        "ExitCode": "0:0",
+        "JobIDRaw": "6462172",
+        "JobName": "x01_s3_part3",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "None",
+        "State": "CANCELLED by 12640",
+        "Timelimit": "01:20:00"
+      },
+      "scheduler_sha256": "4a836cd3f5e8d5cbe33f4470b2d34abb7ff1aa9cc861f09efca66e879aeffa4f"
+    },
+    {
+      "job_label": "x01s3p4_6462173",
+      "scheduler": {
+        "AllocCPUS": "0",
+        "Elapsed": "00:00:00",
+        "ElapsedRaw": "0",
+        "End": "2026-10-23T03:12:45",
+        "ExitCode": "0:0",
+        "JobIDRaw": "6462173",
+        "JobName": "x01_s3_part4",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "None",
+        "State": "CANCELLED by 12640",
+        "Timelimit": "02:40:00"
+      },
+      "scheduler_sha256": "2b0bc28f47f4b067653ef8cc103ec1e4afbd8ab799ad7e331e9369af5fbebab2"
+    },
+    {
+      "job_label": "x01s3a_6462174",
+      "scheduler": {
+        "AllocCPUS": "1",
+        "Elapsed": "00:00:04",
+        "ElapsedRaw": "4",
+        "End": "2026-10-23T03:13:01",
+        "ExitCode": "1:0",
+        "JobIDRaw": "6462174",
+        "JobName": "x01_s3_analysis",
+        "MaxRSS": "",
+        "ReqCPUS": "1",
+        "ReqMem": "3500M",
+        "Start": "2026-10-23T03:12:57",
+        "State": "FAILED",
+        "Timelimit": "00:10:00"
+      },
+      "scheduler_sha256": "41a28ef459ac9cf9f4133e13dd20a68d7504a355467a26fc449f59f8030a7470"
+    }
+  ],
+  "schema": "X01_ALL_RESTORED_ATTEMPTS_HISTORY_V1",
+  "selected_scientific_result": "stage2 UNRESOLVED",
+  "stage3_conclusion": "INCOMPLETE_CLOSED_FINAL_RESERVED_LOOK",
+  "stage3_parts": [
+    {
+      "energy_rows": 8,
+      "entropy_nodes": 32,
+      "job_id": "6462170",
+      "native_exit": 0,
+      "part": 1,
+      "part_receipt_sha256": "32aa0443d3fadc142e93943ed9dd53c2f4071572d4f52c52cff623785ff12575",
+      "side_files": 40,
+      "status": "COMPLETE",
+      "target_sha256": "3df49833ea2c6756fee6731c9c488a4d33d40f610b8e157715bc6eedd25ca85a"
+    },
+    {
+      "energy_rows": 8,
+      "entropy_nodes": 28,
+      "job_id": "6462171",
+      "native_exit": 137,
+      "part": 2,
+      "part_receipt_sha256": "037f1fcc1fab9a914e339e2aed37a3bd0e09ec44a9b0549683d2205f96942342",
+      "side_files": 36,
+      "status": "EXECUTION_INCOMPLETE",
+      "target_sha256": "1238677e76775d44a6b73b39dcd0d401bc3d69297ad1f4512f324a2df6a0af8a"
+    },
+    {
+      "energy_rows": 0,
+      "entropy_nodes": 0,
+      "job_id": "6462172",
+      "native_exit": null,
+      "part": 3,
+      "side_files": 0,
+      "status": "CANCELLED_BEFORE_ALLOCATION"
+    },
+    {
+      "energy_rows": 0,
+      "entropy_nodes": 0,
+      "job_id": "6462173",
+      "native_exit": null,
+      "part": 4,
+      "side_files": 0,
+      "status": "CANCELLED_BEFORE_ALLOCATION"
+    }
+  ],
+  "stage3_terminal_closure_sha256": "aee287fbb68366bd703a6d83debec7bd9f1fe887371058f8fba7f60ea27c6044"
+}

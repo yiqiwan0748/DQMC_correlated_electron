@@ -1,0 +1,113 @@
+{
+  "schema": "P17_SAVED_COMPARISON_V1_420_SECOND_TIMEOUT_PUBLIC_V1",
+  "catalogue_id": "P17",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "status": "UNRESOLVED_ATTEMPTED_SAVED_COMPARISON_TIMEOUT_NO_PERSISTED_GATES",
+  "scheduler_state": "FAILED",
+  "scheduler_exit_code": "2:0",
+  "comparison_attempted": true,
+  "actual_comparison_role": {
+    "name": "unchanged_original_V8_comparison",
+    "status": "TIME_CAP_EXCEEDED",
+    "cap_seconds": 420,
+    "actual_timeout_seconds": 420.0,
+    "returncode": -15,
+    "elapsed_seconds": 420.0377090405673
+  },
+  "final_elapsed_seconds": 424.3202665746212,
+  "resources": {
+    "cpus": 1,
+    "memory_mb": 3500,
+    "comparison_seconds": 420,
+    "combined_inner_seconds": 810,
+    "outer_guard_seconds": 870,
+    "allocation_seconds": 900
+  },
+  "comparison_report": "NOT_PERSISTED",
+  "comparison_after_runtime_report": "NOT_PERSISTED",
+  "comparison_stdout_bytes": 0,
+  "comparison_stderr_bytes": 0,
+  "comparison_GNU_resource_bytes": 0,
+  "comparison_before_runtime": [
+    {
+      "stage": "before",
+      "reported_status": "PASS",
+      "report_sha256": "0c52d4186bdce484663986623bb4e113101976a99fd8a48e176e9e4d82506d36",
+      "scope": "SAVED_RAW_MAPS_REPARSED_REPORTED_HASHES_MATCHED_TO_FROZEN_PINS_NO_FRESH_REMOTE_RESTAT_OR_HASH",
+      "mapped_segments": 173,
+      "loaded_modules": 189,
+      "mapped_unique_files": 33
+    }
+  ],
+  "observed_phase_bound": "NumPy import and precomparison provider qualification completed. Later input parsing, Arithmetic construction, certificate and gate progress are not observed.",
+  "numerical_verdict": "NONE_NO_PERSISTED_GATES",
+  "original_v8_global_pilot_status_remains": "UNRESOLVED",
+  "old_original_60_second_timeout_preserved": true,
+  "no_producer_reruns": true,
+  "saved_producer_census": {
+    "native": 6,
+    "tenpy": 6,
+    "quspin": 21
+  },
+  "exact_same_saved_producer_files": {
+    "native": {
+      "bytes": 2764179,
+      "sha256": "a4cd680cd837480eb7ced99b2bf907a31c044a2a6dca39b45097bab007fc1867"
+    },
+    "tenpy": {
+      "bytes": 5790909,
+      "sha256": "0ecc11c51ee198241b2b9370fd42c5a77274ee46007857a6a74537431d00f175"
+    },
+    "quspin": {
+      "bytes": 78118142,
+      "sha256": "28fbf8152ef77dea826935f14da3d31f2df561ba8dcc92bd2b0e086f281b5e0b"
+    }
+  },
+  "unchanged_original_child_sources": {
+    "compare.py": {
+      "bytes": 32110,
+      "sha256": "6936512b537428a6b8394253f625e126bd82f6c6b340ebbfcd8a2db5723a84e4"
+    },
+    "certificate.py": {
+      "bytes": 14086,
+      "sha256": "0db98952daaec2faff88973921fc43128bb0cca3c4488b9b2287c6605a7c8ba6"
+    },
+    "layout.py": {
+      "bytes": 3596,
+      "sha256": "5e1f09cd95924315d48cde6aabc316adb7b9f428eddd442c8c739f4c8ac419a0"
+    },
+    "source_guard.py": {
+      "bytes": 9906,
+      "sha256": "bdc15a5fe0a04cd2898fd07214ebdcfd12bb48f5347002fbe95e5f55796acbdc"
+    }
+  },
+  "after_terminal_identity_verification": {
+    "diagnostic_source_files": 6,
+    "upstream_source_files": 70,
+    "original_producer_files": 3,
+    "preserved_upstream_runtime_terminal_files": 52,
+    "both_new_approvals_verified": true,
+    "verified_even_on_parent_failure": true,
+    "proof_sha256": "420dc4410e0c8467dad60ce40120c1f41a5017425c3ef5767b32a07465f9761c"
+  },
+  "new_diagnostic_source_freeze_sha256": "d46104f9ddcb187423a6f41736df1a93dec336dd70733c0e7615681b619ed2cd",
+  "upstream_v8_source_freeze_sha256": "da9af9ad26b0692149e77ddea5088b2b3856a0de8b78da2777fd5cd17b2741f0",
+  "new_primary_admission_sha256": "9fa11c5c9cc8e87a17a7fe2c8db17a08500d55fb544c539b48c538b3f1898552",
+  "new_child_scoped_approval_sha256": "7e367dbea649354539b6006cb0dc716e9a1552808edff9b151d9404df7da4f1a",
+  "execution_sha256": "cf2bd30b9203e815c6fe746042488e8eac2a0f13dd9f52254aa92e97590e8b86",
+  "terminal_archive_sha256": "d1c3a0985541b27147d7a496960ead7b7a5298f72984fd417b2006321a6632be",
+  "independent_saved_evidence_audit": {
+    "checks": 191,
+    "failed_checks": 0,
+    "sha256": "17b715baa16906e13607c4a7abcc2e9c8d5426aaa9e9ce3fcdcd3fa8e560f27d",
+    "scope": "Immutable source/input/admission/archive identities, saved runtime-map/module evidence and resource/failure boundaries. No quantum/certificate recomputation, fresh remote provider hashes/restats or runtime execution."
+  },
+  "full_production_admission": false,
+  "counts_unchanged": {
+    "PASS": 49,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 49
+  }
+}

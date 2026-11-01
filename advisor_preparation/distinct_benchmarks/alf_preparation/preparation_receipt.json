@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-22T18:32:13.555857+00:00",
+  "status": "PREPARED_NOT_EXECUTED",
+  "revision": "pre_execution_endpoint_clarification",
+  "change": "Clarify contemporaneous fixed-configuration endpoint identities versus different moving-cut samples;3500MB cap and upstream pins unchanged",
+  "catalogue_id": "P21",
+  "install_attempts": 0,
+  "scientific_runs": 0,
+  "files": {
+    "ADAPTER_PROTOCOL.md": "f76b796603d00e140088a992ddd5c7e4c5265d9088b22a652ff6c1205631098b",
+    "manifest_candidate.toml": "3b2af9ac198b590adc8556f3317bb503c26fe4bd474bbfa10a4fb6a9de3a0080",
+    "parameters_interacting_candidate": "dce7d0834fa775aaf788c40ed5acc83ecba132e3646879696695ea52411d88d2",
+    "primary_source_receipt.json": "0891a2b2a091d154cfb7888554919cdd85ca50c0cf5c084d4eaa184813b945d3",
+    "README.md": "99233809d24958cea7eef136bbbc775ff672c20b32e663b6a490b39c1be9c0f9",
+    "setup_candidate.sbatch": "7fe32ff52e8099623f4f260b110fc03c11d15a0914753aab9b293bbbaf161aac",
+    "setup_candidate.sh": "915bad50ae59d6cbe26ee072e2e92d0c1ec07e087f41e5eff35b7585f24282f3"
+  }
+}

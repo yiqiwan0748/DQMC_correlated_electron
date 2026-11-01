@@ -1,0 +1,18 @@
+{
+  "release": "alf-preparation-v1",
+  "status": "PREPARATION_ONLY_NOT_SCIENTIFIC_BENCHMARK",
+  "catalogue_id": "P21",
+  "files": {
+    "alf_preparation/ADAPTER_PROTOCOL.md": "f76b796603d00e140088a992ddd5c7e4c5265d9088b22a652ff6c1205631098b",
+    "alf_preparation/README.md": "99233809d24958cea7eef136bbbc775ff672c20b32e663b6a490b39c1be9c0f9",
+    "alf_preparation/manifest_candidate.toml": "3b2af9ac198b590adc8556f3317bb503c26fe4bd474bbfa10a4fb6a9de3a0080",
+    "alf_preparation/parameters_interacting_candidate": "dce7d0834fa775aaf788c40ed5acc83ecba132e3646879696695ea52411d88d2",
+    "alf_preparation/preparation_history/before_endpoint_clarification.json": "fe297047500b7577b5e2b3d03a5ce25c36f950db71dd5a6426959813d0ea76a2",
+    "alf_preparation/preparation_history/initial_before_memory_cap_review.json": "642529c0b8568f9c1c0bc6dc46562b6259da7a8067f8c0d68b2cf63e717e40cb",
+    "alf_preparation/preparation_receipt.json": "187dbf89a753927d672f1e66fbb5885e3e706374a153cdbcb4a0a2aa1f030fcb",
+    "alf_preparation/primary_source_receipt.json": "0891a2b2a091d154cfb7888554919cdd85ca50c0cf5c084d4eaa184813b945d3",
+    "alf_preparation/setup_candidate.sbatch": "7fe32ff52e8099623f4f260b110fc03c11d15a0914753aab9b293bbbaf161aac",
+    "alf_preparation/setup_candidate.sh": "915bad50ae59d6cbe26ee072e2e92d0c1ec07e087f41e5eff35b7585f24282f3"
+  },
+  "archive_sha256": "f4b3791456ae583d167bb8411de533ec52ebdd03a4945ad948f1b1ecb60ef9c3"
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "A25_SCIENTIFIC_AND_ANALYSIS_SOURCE_RELEASES_V1",
+  "releases": [
+    {
+      "role": "scientific",
+      "archive": "sources/a25-free-ring-flux-v1-source.tar.gz",
+      "archive_sha256": "76be7b3b22ee26da1ae91dde516ed458446aa6a0c6c2a4ef7e86759d5ec921ec",
+      "freeze": "sources/scientific_freeze.json",
+      "freeze_sha256": "9ce63aad259c091a40bf2af4668213b7c446df74c0aa93e73a70a16a65216ba7",
+      "prefix": "free_ring_flux_v1/",
+      "members": 30
+    },
+    {
+      "role": "pilot_analysis",
+      "archive": "sources/source_archive.tar.gz",
+      "archive_sha256": "33b59a5909ca7c2b7e47d15a1af71c2b5ba03b921532f4023ba2d78a11c338bc",
+      "freeze": "sources/pilot_analysis_freeze.json",
+      "freeze_sha256": "0fda42fcb284d45725902b41f27cec78cee6fe5c789602ce26739c5af555a864",
+      "prefix": "a25_saved_pilot_audit_v2/",
+      "members": 14
+    },
+    {
+      "role": "full_analysis",
+      "archive": "sources/a25-full-saved-audit-v1-source.tar.gz",
+      "archive_sha256": "853bc747612b3954982ef93fcacd416f2398f7e82a0c4667c8653db039fe3936",
+      "freeze": "sources/full_analysis_freeze.json",
+      "freeze_sha256": "3bab40c042047f4fe0b79b7be7ce33008501fa70d48a2cc359d542449341a15c",
+      "prefix": "a25_full_saved_audit_v1/",
+      "members": 7
+    }
+  ],
+  "scientific_source_change": false,
+  "pre_data_revisions_retained_in_original_archives": true,
+  "executable_and_library_binary_bodies_included": false
+}

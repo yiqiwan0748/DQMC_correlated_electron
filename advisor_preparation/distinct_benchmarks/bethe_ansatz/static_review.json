@@ -1,0 +1,24 @@
+{
+  "status": "PILOT_ONLY_FROZEN_NOT_RUN",
+  "scientific_execution_performed": false,
+  "job_submitted": false,
+  "earlier_tranches_modified": false,
+  "python_syntax": "PASS; AST parsing only",
+  "julia_syntax": "PASS; Meta.parseall with Julia 1.12.6 syntax checker, no evaluation; execution pinned to Julia 1.12.1",
+  "shell_syntax": "PASS; bash -n",
+  "TOML_syntax": "PASS",
+  "target_source_closure": {
+    "source_sha256": "ff1a0becd7305420afa097291ea033c4ba1b12222eae078f9eed87d0c5c2838f",
+    "project_sha256": "ea3b7eacfcf9a36e4652654a5e7b573ef27529edfbad2e272da2bafca1a7f58f",
+    "manifest_sha256": "5cefaf1acdb4fa23a456c2c58f20fb1fcebd54b3cd27bc448cb65b0fcfecb90e"
+  },
+  "independent_review": {
+    "reviewer": "validation_design",
+    "status": "No blocking mathematical/API error",
+    "reviewed": "Primary Lieb-Wu Eqs.54 and64-65; restored hopping normalization, full charge gap, analytic U derivative, three tail bounds, odd-particle spin sectors, particle-hole identity, actual user MPO and ITensor APIs, pilot zero-completion policy. No physics executed.",
+    "limitation": "Future polynomial extrapolation gives empirical uncertainty, especially with gapless-spin finite-size corrections; not a rigorous thermodynamic error bound."
+  },
+  "supported_execution": "Bounded L8/L12 pilot only; no full executor supplied",
+  "scientific_completion_policy": "All A18/A19/A20 remain UNRESOLVED after pilot regardless of pilot quality",
+  "full_design_status": "Proposal preserved before pilot; separate resource review, implementation, source release and authorization required"
+}

@@ -1,0 +1,378 @@
+{
+  "input_sha256": "a69af55fb680a1b44eec95cdbae8bdb77439a456e9352031c660ca7ab323e094",
+  "scientific_runs_started": 0,
+  "diagnostic_scope": "64 saved bin means per seed, each averaging64 sweeps. Sweep-level autocorrelation/ESS cannot be reconstructed.",
+  "fixtures": {
+    "ATOM-01": {
+      "chains": [
+        {
+          "seed": 1009,
+          "energy_mean": -0.9198221097337493,
+          "energy_within_seed_SE": 0.0054313909292814065,
+          "early_half_mean": -0.9179096459344102,
+          "late_half_mean": -0.9217345735330886,
+          "min_bin_mean": -1.0040602869576654,
+          "max_bin_mean": -0.83474859639793,
+          "acf_of_saved_bins": {
+            "1": -0.12305409646310783,
+            "2": -0.06345970407471604,
+            "3": 0.00845349689542724,
+            "4": -0.11464457782723075
+          },
+          "contiguous_block_SE": {
+            "1": 0.0054313909292814065,
+            "2": 0.005376622278617788,
+            "4": 0.00432797991762061,
+            "8": 0.0020739622283590204
+          }
+        },
+        {
+          "seed": 2011,
+          "energy_mean": -0.9355655324702832,
+          "energy_within_seed_SE": 0.005210713747830037,
+          "early_half_mean": -0.9282334524160684,
+          "late_half_mean": -0.942897612524498,
+          "min_bin_mean": -1.007794678919499,
+          "max_bin_mean": -0.8383579070338646,
+          "acf_of_saved_bins": {
+            "1": -0.07252738704770557,
+            "2": -0.04873908630522303,
+            "3": 0.07407529288518784,
+            "4": -0.1228621614780168
+          },
+          "contiguous_block_SE": {
+            "1": 0.005210713747830037,
+            "2": 0.004829125768296528,
+            "4": 0.005031532828718091,
+            "8": 0.005153995543293039
+          }
+        },
+        {
+          "seed": 3011,
+          "energy_mean": -0.9207590612584843,
+          "energy_within_seed_SE": 0.005567275189162208,
+          "early_half_mean": -0.9236479344695496,
+          "late_half_mean": -0.917870188047419,
+          "min_bin_mean": -1.0089655275429836,
+          "max_bin_mean": -0.80207502942941,
+          "acf_of_saved_bins": {
+            "1": 0.004033802518550365,
+            "2": -0.08781961218374057,
+            "3": -0.158379341748831,
+            "4": -0.1713785419370245
+          },
+          "contiguous_block_SE": {
+            "1": 0.005567275189162208,
+            "2": 0.00593016747453604,
+            "4": 0.004856506757478737,
+            "8": 0.0035337443558732438
+          }
+        },
+        {
+          "seed": 4001,
+          "energy_mean": -0.9285283474554724,
+          "energy_within_seed_SE": 0.005596592242111823,
+          "early_half_mean": -0.9311198856132978,
+          "late_half_mean": -0.925936809297647,
+          "min_bin_mean": -1.0435137708575315,
+          "max_bin_mean": -0.8205136337976915,
+          "acf_of_saved_bins": {
+            "1": 0.15649642743406786,
+            "2": -0.14847573996970923,
+            "3": 0.032055080141065284,
+            "4": -0.06490518812381187
+          },
+          "contiguous_block_SE": {
+            "1": 0.005596592242111823,
+            "2": 0.005729305220820814,
+            "4": 0.0053109581428112595,
+            "8": 0.006474059814224643
+          }
+        },
+        {
+          "seed": 5003,
+          "energy_mean": -0.9220719703043134,
+          "energy_within_seed_SE": 0.005685785230832258,
+          "early_half_mean": -0.9257969694109139,
+          "late_half_mean": -0.918346971197713,
+          "min_bin_mean": -1.0269289739189482,
+          "max_bin_mean": -0.7997378811937421,
+          "acf_of_saved_bins": {
+            "1": -0.004882737282430896,
+            "2": 0.07819457365128996,
+            "3": 0.15842184081513194,
+            "4": 0.04229618801718213
+          },
+          "contiguous_block_SE": {
+            "1": 0.005685785230832258,
+            "2": 0.005702836076269593,
+            "4": 0.006904782414408628,
+            "8": 0.008363999049860498
+          }
+        },
+        {
+          "seed": 6007,
+          "energy_mean": -0.921786677511271,
+          "energy_within_seed_SE": 0.006021024083282602,
+          "early_half_mean": -0.9324978464508271,
+          "late_half_mean": -0.9110755085717149,
+          "min_bin_mean": -1.0541581763510037,
+          "max_bin_mean": -0.7906341960424982,
+          "acf_of_saved_bins": {
+            "1": 0.0063549600261213314,
+            "2": 0.06358441676978027,
+            "3": 0.19193712954359574,
+            "4": -0.1706379366861562
+          },
+          "contiguous_block_SE": {
+            "1": 0.006021024083282602,
+            "2": 0.006184137920004719,
+            "4": 0.006665036848647249,
+            "8": 0.00636195566871199
+          }
+        },
+        {
+          "seed": 7001,
+          "energy_mean": -0.9184963788652225,
+          "energy_within_seed_SE": 0.005003858933650617,
+          "early_half_mean": -0.9194854307076592,
+          "late_half_mean": -0.9175073270227859,
+          "min_bin_mean": -1.030634004865724,
+          "max_bin_mean": -0.8316728035735265,
+          "acf_of_saved_bins": {
+            "1": -0.12976068620346637,
+            "2": 0.009352204949632839,
+            "3": -0.04701243609847898,
+            "4": -0.04273826257433168
+          },
+          "contiguous_block_SE": {
+            "1": 0.005003858933650616,
+            "2": 0.004559427885939174,
+            "4": 0.005091420336579377,
+            "8": 0.0033454767342255202
+          }
+        },
+        {
+          "seed": 8009,
+          "energy_mean": -0.9277565920750684,
+          "energy_within_seed_SE": 0.005648675137182541,
+          "early_half_mean": -0.9219455025786225,
+          "late_half_mean": -0.9335676815715144,
+          "min_bin_mean": -1.0018221561892726,
+          "max_bin_mean": -0.8058941822977832,
+          "acf_of_saved_bins": {
+            "1": -0.0718382649502259,
+            "2": -0.10225289259349878,
+            "3": -0.024012551243941988,
+            "4": -0.015236989857316106
+          },
+          "contiguous_block_SE": {
+            "1": 0.005648675137182541,
+            "2": 0.0053218079222207325,
+            "4": 0.005140405322604142,
+            "8": 0.004915256552856164
+          }
+        }
+      ],
+      "classic_Rhat_on_saved_bins": 1.0007425114876973,
+      "between_to_within_seed_mean_variance_ratio": 1.0950767551170677,
+      "inverse_variance_heterogeneity_Q": 8.374875844905526,
+      "heterogeneity_df": 7,
+      "reported_effective_bins": 473.81324260303995,
+      "reported_between_seed_SE": 0.002045348191531664,
+      "naive_within_bin_pooled_SE": 0.0019545418368218004,
+      "max_atomic_energy_identity_error": 1.7763568394002505e-15,
+      "max_atomic_density_D_identity_error": 4.440892098500626e-16,
+      "max_spurious_offdiagonal_C": 1.6237139987246492e-17
+    },
+    "ATOM-05": {
+      "chains": [
+        {
+          "seed": 1009,
+          "energy_mean": -1.9062799220317848,
+          "energy_within_seed_SE": 0.011757552991076944,
+          "early_half_mean": -1.9189353276006502,
+          "late_half_mean": -1.8936245164629195,
+          "min_bin_mean": -2.18331750033788,
+          "max_bin_mean": -1.5605415713562332,
+          "acf_of_saved_bins": {
+            "1": -0.03973451766756852,
+            "2": -0.0812940374734496,
+            "3": 0.04669520371623383,
+            "4": 0.12240412863280063
+          },
+          "contiguous_block_SE": {
+            "1": 0.011757552991076944,
+            "2": 0.012036435712004549,
+            "4": 0.010808487216299125,
+            "8": 0.010658656088771474
+          }
+        },
+        {
+          "seed": 2011,
+          "energy_mean": -1.9004178420525109,
+          "energy_within_seed_SE": 0.01084842024168084,
+          "early_half_mean": -1.9061221528882126,
+          "late_half_mean": -1.8947135312168093,
+          "min_bin_mean": -2.116360656754071,
+          "max_bin_mean": -1.7091092802710786,
+          "acf_of_saved_bins": {
+            "1": -0.043292771290682944,
+            "2": -0.08344051407421953,
+            "3": 0.20680703375176732,
+            "4": 0.17704861466455923
+          },
+          "contiguous_block_SE": {
+            "1": 0.010848420241680841,
+            "2": 0.010698097495371412,
+            "4": 0.010586184263169533,
+            "8": 0.012726825585197958
+          }
+        },
+        {
+          "seed": 3011,
+          "energy_mean": -1.9036270166740246,
+          "energy_within_seed_SE": 0.012067662434692704,
+          "early_half_mean": -1.9125690448465016,
+          "late_half_mean": -1.8946849885015475,
+          "min_bin_mean": -2.0787520081978816,
+          "max_bin_mean": -1.6348354636969455,
+          "acf_of_saved_bins": {
+            "1": -0.041791779465483604,
+            "2": 0.14423955339854744,
+            "3": 0.00250802651462454,
+            "4": 0.1355223445073361
+          },
+          "contiguous_block_SE": {
+            "1": 0.012067662434692704,
+            "2": 0.012200509542309832,
+            "4": 0.013490127773236944,
+            "8": 0.015407301418040843
+          }
+        },
+        {
+          "seed": 4001,
+          "energy_mean": -1.5049406555872438,
+          "energy_within_seed_SE": 0.009357390341880444,
+          "early_half_mean": -1.5010993064979565,
+          "late_half_mean": -1.508782004676531,
+          "min_bin_mean": -1.6366722353569934,
+          "max_bin_mean": -1.3211389872769495,
+          "acf_of_saved_bins": {
+            "1": -0.018322315365750096,
+            "2": 0.1076545579899519,
+            "3": 0.02524418124187125,
+            "4": 0.07543366332902046
+          },
+          "contiguous_block_SE": {
+            "1": 0.009357390341880444,
+            "2": 0.009488783387585475,
+            "4": 0.010938087996439989,
+            "8": 0.012629318271281177
+          }
+        },
+        {
+          "seed": 5003,
+          "energy_mean": -1.5121771774730264,
+          "energy_within_seed_SE": 0.009690006711734065,
+          "early_half_mean": -1.5187547074369634,
+          "late_half_mean": -1.5055996475090891,
+          "min_bin_mean": -1.699965573503994,
+          "max_bin_mean": -1.355094168279623,
+          "acf_of_saved_bins": {
+            "1": -0.013820445514702578,
+            "2": 0.012706315926611467,
+            "3": 0.2560860150725516,
+            "4": -0.22246250435840717
+          },
+          "contiguous_block_SE": {
+            "1": 0.009690006711734065,
+            "2": 0.009773722452934579,
+            "4": 0.011090437993280933,
+            "8": 0.009691107201393876
+          }
+        },
+        {
+          "seed": 6007,
+          "energy_mean": -1.8895684696414627,
+          "energy_within_seed_SE": 0.011216156873438451,
+          "early_half_mean": -1.8941100563062239,
+          "late_half_mean": -1.8850268829767014,
+          "min_bin_mean": -2.051250622713602,
+          "max_bin_mean": -1.6907817152037528,
+          "acf_of_saved_bins": {
+            "1": 0.1275337957201795,
+            "2": -0.07640767179519502,
+            "3": -0.14836268005146358,
+            "4": -0.19573027478444546
+          },
+          "contiguous_block_SE": {
+            "1": 0.011216156873438451,
+            "2": 0.010464329561191183,
+            "4": 0.011646422808127124,
+            "8": 0.009033251270229465
+          }
+        },
+        {
+          "seed": 7001,
+          "energy_mean": -1.8894674722445612,
+          "energy_within_seed_SE": 0.009955787489554674,
+          "early_half_mean": -1.8944265356449268,
+          "late_half_mean": -1.884508408844196,
+          "min_bin_mean": -2.066838087115789,
+          "max_bin_mean": -1.6880215387720359,
+          "acf_of_saved_bins": {
+            "1": 0.029362435291093763,
+            "2": 0.06672397723050387,
+            "3": -0.21191803959732358,
+            "4": -0.0366918614277151
+          },
+          "contiguous_block_SE": {
+            "1": 0.009955787489554674,
+            "2": 0.010079650311594092,
+            "4": 0.009304361942408239,
+            "8": 0.008445281462865653
+          }
+        },
+        {
+          "seed": 8009,
+          "energy_mean": -1.9023098170399664,
+          "energy_within_seed_SE": 0.011938158363599878,
+          "early_half_mean": -1.888694779987448,
+          "late_half_mean": -1.9159248540924845,
+          "min_bin_mean": -2.0842723610613163,
+          "max_bin_mean": -1.7008689025090848,
+          "acf_of_saved_bins": {
+            "1": 0.2185575652435156,
+            "2": -0.01684111901967527,
+            "3": -0.1545676476449336,
+            "4": -0.04552419995630372
+          },
+          "contiguous_block_SE": {
+            "1": 0.011938158363599878,
+            "2": 0.01372987892930775,
+            "4": 0.012433583520797958,
+            "8": 0.015460749669391026
+          }
+        }
+      ],
+      "classic_Rhat_on_saved_bins": 2.297285439571227,
+      "between_to_within_seed_mean_variance_ratio": 274.7613050154219,
+      "inverse_variance_heterogeneity_Q": 2290.7738608037903,
+      "heterogeneity_df": 7,
+      "reported_effective_bins": 468.6954738070168,
+      "reported_between_seed_SE": 0.0638782744305504,
+      "naive_within_bin_pooled_SE": 0.003853677706629528,
+      "max_atomic_energy_identity_error": 6.439293542825908e-15,
+      "max_atomic_density_D_identity_error": 3.3584246494910985e-15,
+      "max_spurious_offdiagonal_C": 9.53324479264801e-18
+    }
+  },
+  "interpretation": [
+    "Second fixture has stable between-seed plateaus. Six seeds have energy near-1.90; seeds4001/5003 near-1.51. Blocking within a chain does not reveal the missing between-mode motion.",
+    "The much larger between-seed error is a useful warning; increasing only samples inside the same trapped trajectories is not justified before inspecting transition coverage/initialization/stabilization.",
+    "Atomic energy and density-versus-double-occupancy identities hold, and offdiagonal propagators vanish numerically. This supports internal measurement consistency but does not prove the sampled field distribution is correct.",
+    "Saved bins average64 sweeps, so a high-frequency periodic defect or unsampled component could be invisible. No sweep-level ESS or exact cause is inferred from these bins.",
+    "First fixture is a control with no analogous plateau; differences in time-slice count, stabilization and field dynamics need a fresh targeted diagnostic before declaring a cause."
+  ]
+}

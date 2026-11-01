@@ -1,0 +1,507 @@
+{
+  "status": "PASS_PUBLISHED_INPUTS_AND_REPRODUCTION_LAYOUT",
+  "simulations_or_jobs_started": 0,
+  "archives": [
+    {
+      "path": "validation_source/baseline-source.tar.gz",
+      "sha256": "11c3c33adaa70a78b8ab10437fba04651e3951c040bb289c4a3ce7ec293420aa",
+      "bytes": 1074464,
+      "regular_files": 388,
+      "top_level": [
+        "SHA256SUMS",
+        "SOURCE_PROVENANCE.json",
+        "alm",
+        "isaac",
+        "renyi"
+      ]
+    },
+    {
+      "path": "validation_source/baseline-consumer-20261022.tar.gz",
+      "sha256": "d25375c07acd2aea687d38da84dd506490135e2bfc4d63388a13f7fd1928888f",
+      "bytes": 81710,
+      "regular_files": 14,
+      "top_level": [
+        "validation_design"
+      ]
+    },
+    {
+      "path": "validation_source/corrected-source.tar.gz",
+      "sha256": "ae174444854849faf5ddb604a2b4a3e8dc88ccdb70f4fb0d9b9ff065dc9636e6",
+      "bytes": 231208,
+      "regular_files": 121,
+      "top_level": [
+        "isaac",
+        "renyi_corrected",
+        "validation_design_corrected"
+      ]
+    }
+  ],
+  "baseline_inner_files_verified": 387,
+  "original_consumer_sha256": "a2feffc81b5f202522fce5e8d46f766fd7660ab9f80f2953fc80ee25d892e898",
+  "corrected_consumer_sha256": "e66bdadf1f38767a13542e7fea39c9462d44269f5920e46a0db4fcb4732bfbf1",
+  "consumer_protocols_distinguished": true,
+  "corrected_archive_members_compared": 118,
+  "later_local_helper_differences": [
+    {
+      "archive_member": "renyi_corrected/analysis/atomic_odd_sweep_proof.jl",
+      "current_local_path": "validated_package/HubbardRenyiDQMC/analysis/atomic_odd_sweep_proof.jl",
+      "archive_sha256": "f9b922702ab28b55b7c5a83d01bab3442bdb1342a8cc3b1eed131cbffe4fd7cc",
+      "current_sha256": "f4dfe3b30a9a8a3515f962475caf6186fca5ea9ae5db98a3fb4f84595aea2253"
+    }
+  ],
+  "difference_scope": "Only a later module/world-age loading change in an analysis helper. The frozen source archive is preserved; the guide explicitly stages the versioned v2 ISAAC diagnostic. Physical kernels match the frozen corrected archive.",
+  "later_support_overlays": [
+    {
+      "path": "external_oracles/quspin_export.py",
+      "sha256": "3c469a7004e53c3dc360d503cf2de9bb6d2c4bb51eca1d4baeed8514ddad654c",
+      "bytes": 18380
+    },
+    {
+      "path": "external_oracles/cases.json",
+      "sha256": "2915162073afffc532de40a87439f1d2f3735ffdb92ab663de035bb15362e0d4",
+      "bytes": 51236
+    },
+    {
+      "path": "isaac/diagnostics/diagnose_atomic_odd_sweep_v2.jl",
+      "sha256": "402f3614afd71ddb87f0977fcc778d9a314b40ff4bd7828443f28597d7f04dad",
+      "bytes": 6968
+    },
+    {
+      "path": "isaac/diagnostics/benchmark_matched_lazy_grover.jl",
+      "sha256": "56ce5e3c395df4aeb1fe0b7654e315a81e280c74b2f65bb0b0ab65a010d06c49",
+      "bytes": 11700
+    },
+    {
+      "path": "isaac/atomic_corrected_resume.sbatch",
+      "sha256": "12ab41a5fa44b62f15dfb32d55b6036e7812a86482b7cd100f52e49152b6c889",
+      "bytes": 893
+    },
+    {
+      "path": "isaac/timing_matched.sbatch",
+      "sha256": "9c0e1f51561b0054387e46338fd06f3be633c938c48765f52bce0e3874f2d857",
+      "bytes": 1069
+    },
+    {
+      "path": "isaac/logs/quspin_requirements.txt",
+      "sha256": "e46802dcc749cdda844d97622c8f7ca4824d26485eadc8e1fe3b172c264be27f",
+      "bytes": 229
+    }
+  ],
+  "bash_syntax_files_checked": 13,
+  "relative_links_checked": 82,
+  "missing_relative_links": [],
+  "links": [
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../research_record/REPRODUCE.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../validation_source/baseline-source.tar.gz",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../validation_source/baseline-consumer-20261022.tar.gz",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../validation_source/corrected-source.tar.gz",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../validation_source/baseline-package-receipt.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../validation_source/corrected_package_receipt.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "bootstrap_runtime.sh",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "setup.sbatch",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "oracle.sbatch",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/quspin_attempt02/source_receipt.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../external_oracles/final_oracle_audit.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "baseline.sbatch",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/external_atomic_mc_4096.toml",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../external_oracles/retrospective_split_rhat.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "corrected_monte_carlo_protocol.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "atomic_corrected.sbatch",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "logs/atomic_corrected_6456921.log",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "atomic_corrected_resume.sbatch",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "diagnostics/diagnose_atomic_odd_sweep_v2.jl",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../external_benchmark_roadmap/README.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/external_atomic_corrected_16384.toml",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/external_thermal_corrected_16384.toml",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/summary/summary.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../external_oracles/final_campaign_independent_audit.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "diagnostics/benchmark_matched_lazy_grover.jl",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "timing_matched.sbatch",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "diagnostics/MATCHED_TIMING_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/matched_timing_full_20261022.toml",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/matched_timing_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../external_oracles/independent_primary_timing_audit.json",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "timing_large_cuts.sbatch",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "diagnostics/benchmark_matched_large_cuts.jl",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/matched_timing_cut48_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "results/matched_timing_cut64_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "isaac/ISAAC_REPRODUCE.md",
+      "target": "../external_oracles/independent_large_cut_timing_audit.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/results/external_atomic_mc_4096.toml",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "atomic_bin_diagnostic.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/diagnostics/atomic_odd_sweep_diagnostic.toml",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "exact_atomic_scan_graph.py",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "exact_atomic_scan_graph.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/diagnostics/atomic_local_lazy_fix.patch",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/diagnostics/atomic_local_lazy_fix_receipt.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "retrospective_split_rhat.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/logs/atomic_corrected_6456921.log",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/ISAAC_REPRODUCE.md",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/results/atomic_corrected_kernel_diagnostic_v2.toml",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/results/external_atomic_corrected_4096.toml",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "corrected_atomic_independent_audit.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/results/external_atomic_corrected_16384.toml",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/results/external_thermal_corrected_16384.toml",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "final_campaign_independent_audit.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "target": "../isaac/results/summary/summary.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "BENCHMARK_SOURCES.md",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "../isaac/results/quspin_attempt02/source_receipt.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "../isaac/results/quspin_attempt02/oracle_values.toml",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "../isaac/results/quspin_attempt02/oracle_results.jsonl",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "final_oracle_audit.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "retrospective_split_rhat.json",
+      "exists": true
+    },
+    {
+      "document": "external_oracles/README.md",
+      "target": "final_campaign_independent_audit.json",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "../external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "../external_oracles/final_campaign_independent_audit.json",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "../isaac/results/matched_timing_cut48_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "../isaac/results/matched_timing_cut64_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "../isaac/results/matched_timing_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "source_snapshot/HubbardRenyiDQMC/results/processed/BLOCKSIZE_U2_beta40_Ninc16_summary.csv",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "source_snapshot/HubbardRenyiDQMC/docs/dqmc_renyi_ee.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "REPRODUCE.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/README.md",
+      "target": "EVIDENCE_LEDGER.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../external_oracles/ATOMIC_SAMPLER_DIAGNOSIS.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/results/matched_timing_full_20261022.toml",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/results/matched_timing_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../external_oracles/independent_primary_timing_audit.json",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/ISAAC_REPRODUCE.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/results/matched_timing_cut48_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/results/matched_timing_cut48_20261022.toml",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/results/matched_timing_cut64_report_20261022/README.md",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/results/matched_timing_cut64_20261022.toml",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../external_oracles/independent_large_cut_timing_audit.json",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../isaac/results/summary/summary.json",
+      "exists": true
+    },
+    {
+      "document": "research_record/EVIDENCE_LEDGER.md",
+      "target": "../external_oracles/final_campaign_independent_audit.json",
+      "exists": true
+    }
+  ],
+  "legacy_alias_note": "Existing validation_results links are compatibility aliases managed by publication. New documents use canonical isaac/results paths.",
+  "analysis_script_sha256": "6a0acfecbd5dfb237b698ec322aeab32c0b699977ed48d3340df27fcd736700f"
+}

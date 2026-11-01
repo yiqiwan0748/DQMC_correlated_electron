@@ -1,0 +1,16 @@
+Thu Oct 22 18:34:38 UTC 2026
+Linux clr1450 4.18.0-553.137.1.el8_10.x86_64 #1 SMP Fri Jun 19 18:53:55 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+No Modulefiles Currently Loaded.
+/sw/isaac/applications/anaconda3/2021.05/rhel8_gcc10.2.0/anaconda3-2021.05/bin/git
+git version 2.23.0
+/usr/bin/make
+GNU Make 4.2.1
+Built for x86_64-redhat-linux-gnu
+/sw/isaac/applications/anaconda3/2021.05/rhel8_gcc10.2.0/anaconda3-2021.05/bin/python3
+Python 3.8.8
+/usr/bin/gfortran
+GNU Fortran (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28)
+Copyright (C) 2018 Free Software Foundation, Inc.
+/usr/bin/timeout
+timeout (GNU coreutils) 8.30
+Copyright (C) 2018 Free Software Foundation, Inc.

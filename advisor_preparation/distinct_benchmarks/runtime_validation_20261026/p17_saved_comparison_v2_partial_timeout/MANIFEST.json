@@ -1,0 +1,26 @@
+{
+  "schema": "P17_SAVED_COMPARISON_V2_PUBLIC_PARTIAL_TIMEOUT_SELECTION_MANIFEST_V1",
+  "status": "UNRESOLVED_PARTIAL_REPORT_SAVED_ON_INTERRUPTION",
+  "scientific_credit": 0,
+  "files": {
+    "README.md": {
+      "bytes": 3400,
+      "sha256": "0c0e8a334d2b612caaaed562417f219eee24c7f0409b3588e8e86739b8389d14"
+    },
+    "attempt_result.json": {
+      "bytes": 2890,
+      "sha256": "cb578bba659f68d5d9c5a8865e45964411b365bf002e2be1a5052f62e3d67c5b"
+    },
+    "partial_evidence.json": {
+      "bytes": 6523,
+      "sha256": "792bf87c2e3ef2f49c8e8b07b147f626b467ebd0605ca903b1d098afd1702cef"
+    }
+  },
+  "independent_saved_evidence_audit_sha256": "24d0b20573185610da63370761a04b8d83af132e1f6d087752b1491441909745",
+  "diagnostic_freeze_sha256": "f5004b0124a10bc04531609077de27db1584163a131f737a33888882754bc66e",
+  "upstream_v8_freeze_sha256": "da9af9ad26b0692149e77ddea5088b2b3856a0de8b78da2777fd5cd17b2741f0",
+  "execution_sha256": "c7ee4eef3a5b6d43a6c15f48a57ca59009e856c558f9ea619b1465468d0e5266",
+  "terminal_archive_sha256": "1092daad5926765f475711b179df4a3d1a1ac14b60b59bb469183cff70e3c688",
+  "after_terminal_proof_sha256": "d39ee346a4805ab026771345591edcc4d16640210ab52a5cfdeae7f159302594",
+  "old_V8_and_V1_failed_attempts_unchanged": true
+}

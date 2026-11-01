@@ -1,0 +1,147 @@
+--- v1/manifest.toml
++++ v2/manifest.toml
+@@ -1,5 +1,9 @@
+ schema = "ground_certification_v1"
+ execution_status = "NOT_RUN"
++release = "ground_certification_precision_v2"
++predecessor_archive_sha256 = "45298d46a32e3f2d2d2af273a989cd8c10f7cd850e7aea631e8c1e6725dc2dd4"
++predecessor_job_id = "6458708"
++revision_scope = "Controlled higher-effort precision retest; v1 X12PASS/X09UNRESOLVED retained. Same model, gates, starts, seeds, controls and source."
+ catalogue_ids = ["X09", "X12"]
+ quspin_version = "1.0.1"
+ numpy_version = "2.4.6"
+@@ -23,10 +27,12 @@
+ Ndown = 2
+ seeds = [921001, 921002, 921003, 921004]
+ starts = ["neel", "charge_density_wave", "spin_domains", "shuffled"]
+-maxdim_schedule = [4, 8, 16, 16, 32, 32, 32, 32]
++maxdim_schedule = [4, 8, 16, 16, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+ cutoff = 1e-13
+-eigsolve_tol = 1e-12
+-noise = [1e-8, 1e-9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
++eigsolve_tol = 1e-14
++eigsolve_krylovdim = 10
++eigsolve_maxiter = 4
++noise = [1e-8, 1e-9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+ initial_link_dimension = 4
+ challenge_states = ["first_excited_eigenvector", "highest_eigenvector"]
+ challenge_source = "Full eigensystem materialized through actual user apply_hamiltonian!; MPS constructed without truncation; these are manufactured diagnostic states, not natural DMRG failures"
+@@ -79,4 +85,4 @@
+ cpus = 1
+ memory_mb = 3500
+ wall_cap_minutes = 15
+-runtime_status = "UNMEASURED cap; four L4 eight-sweep DMRG solves plus two tiny manufactured MPS states and L2 exact traces. Root owns any pilot, execution and scheduling."
++runtime_status = "UNMEASURED cap; four L4 sixteen-sweep DMRG solves plus two tiny manufactured MPS states and L2 exact traces. Root owns any pilot, execution and scheduling."
+--- v1/target.jl
++++ v2/target.jl
+@@ -80,6 +80,8 @@
+     sites=siteinds("Electron",L;conserve_qns=true)
+     H=UserDMRG.hubbard_mpo(sites;L,t=s["t"],U=s["U"],mu=0.,boundary=s["boundary"])
+     rows=Dict{String,Any}[]
++    precision=Dict(k=>s[k] for k in ("maxdim_schedule","cutoff","eigsolve_tol","eigsolve_krylovdim","eigsolve_maxiter","noise","initial_link_dimension"))
++    precision["nsweeps"]=length(s["maxdim_schedule"])
+     for (name,seed) in zip(s["starts"],s["seeds"])
+         Random.seed!(seed)
+         state=name=="charge_density_wave" ? ["UpDn","Emp","UpDn","Emp"] : name=="spin_domains" ? ["Up","Up","Dn","Dn"] : ["Up","Dn","Up","Dn"]
+@@ -87,9 +89,10 @@
+         initial=random_mps(sites,state;linkdims=s["initial_link_dimension"])
+         obs=DMRGObserver()
+         reported,psi=dmrg(H,initial;nsweeps=length(s["maxdim_schedule"]),maxdim=s["maxdim_schedule"],cutoff=s["cutoff"],
+-            eigsolve_tol=s["eigsolve_tol"],noise=s["noise"],observer=obs,outputlevel=1)
++            eigsolve_tol=s["eigsolve_tol"],eigsolve_krylovdim=s["eigsolve_krylovdim"],eigsolve_maxiter=s["eigsolve_maxiter"],
++            noise=s["noise"],observer=obs,outputlevel=1)
+         push!(rows,mps_row(name,"native_dmrg",psi,H,sites,indices,signs;extra=Dict("seed"=>seed,
+-            "reported_energy"=>reported,"truncation_errors"=>truncerrors(obs))))
++            "reported_energy"=>reported,"truncation_errors"=>truncerrors(obs),"optimizer_parameters"=>copy(precision))))
+     end
+     dense_sites=siteinds("Electron",L;conserve_qns=false)
+     Hd=UserDMRG.hubbard_mpo(dense_sites;L,t=s["t"],U=s["U"],mu=0.,boundary=s["boundary"])
+@@ -103,7 +106,7 @@
+     end
+     mpo_qn,mpo_qn_imag=mpo_sector(H,sites,indices,signs)
+     mpo_dense,mpo_dense_imag=mpo_sector(Hd,dense_sites,indices,signs)
+-    X09=Dict("coordinates"=>[[Int(u),Int(d)] for u in space.up_masks for d in space.dn_masks],
++    X09=Dict("optimizer_parameters"=>precision,"coordinates"=>[[Int(u),Int(d)] for u in space.up_masks for d in space.dn_masks],
+         "Hamiltonian"=>[collect(HH[i,:]) for i in axes(HH,1)],
+         "MPO_qn_Hamiltonian"=>[collect(mpo_qn[i,:]) for i in axes(HH,1)],
+         "MPO_dense_Hamiltonian"=>[collect(mpo_dense[i,:]) for i in axes(HH,1)],
+@@ -156,7 +159,7 @@
+ end
+ function main()
+     began=time();result=Dict{String,Any}("schema"=>CFG["schema"],"status"=>"COMPLETED","manifest_sha256"=>sha(CONFIG),
+-        "adapter_sha256"=>sha(@__FILE__),"julia_version"=>string(VERSION),"itensors_version"=>string(pkgversion(ITensors)),
++        "precision_release"=>CFG["release"],"adapter_sha256"=>sha(@__FILE__),"julia_version"=>string(VERSION),"itensors_version"=>string(pkgversion(ITensors)),
+         "itensormps_version"=>string(pkgversion(ITensorMPS)),"attribution"=>"Existing user Hubbard MPO, ED Hamiltonian/Lanczos, Gibbs density and RDM routines; ITensorMPS supplies DMRG. New certification and ensemble adapters are explicit.")
+     for k in ("ed_source_sha256","thermal_source_sha256","dmrg_source_sha256","project_sha256","environment_manifest_sha256");result[k]=CFG[k];end
+     merge!(result,compute());result["elapsed_seconds"]=time()-began
+--- v1/compare.py
++++ v2/compare.py
+@@ -20,6 +20,9 @@
+ 
+ def x09(cfg,o,t):
+     s=cfg['X09'];g=cfg['gates'];reasons=[];m={};checks=[]
++    precision={k:s[k] for k in ('maxdim_schedule','cutoff','eigsolve_tol','eigsolve_krylovdim','eigsolve_maxiter','noise','initial_link_dimension')}
++    precision['nsweeps']=len(s['maxdim_schedule'])
++    require(t['optimizer_parameters']==precision,'Actual declared higher-effort precision')
+     expected={(u,d) for u in range(16) for d in range(16) if u.bit_count()==2 and d.bit_count()==2}
+     oq=[tuple(x) for x in o['coordinates']];tq=[tuple(x) for x in t['coordinates']]
+     require(len(oq)==len(tq)==36 and set(oq)==set(tq)==expected,'X09 complete fixed-spin coordinates')
+@@ -55,7 +58,7 @@
+         certificate=low_variance and -g['energy_abs']<=excess<=g['energy_abs'] and fidelity>=g['ground_fidelity_min']
+         if kind=='native_dmrg':
+             pos=s['starts'].index(name)
+-            require(r['seed']==s['seeds'][pos] and len(r['truncation_errors'])==len(s['maxdim_schedule']),'X09 actual seeded sweep record')
++            require(r['seed']==s['seeds'][pos] and len(r['truncation_errors'])==len(s['maxdim_schedule']) and r['optimizer_parameters']==precision,'X09 actual seeded precision/sweep record')
+             different|=abs(r['reported_energy']-r['energy'])>g['energy_abs']
+             if not low_variance:reasons.append(name+': native DMRG variance unresolved')
+             different|=not certificate
+@@ -140,6 +143,7 @@
+     try:
+         o=json.loads(Path(a.oracle).read_text());t=tomllib.loads(Path(a.target).read_text())
+         require(finite(o) and finite(t),'Nonfinite receipt')
++        require(t['precision_release']==cfg['release'],'Precision release receipt')
+         require(o['status']==t['status']=='COMPLETED' and o['schema']==t['schema']==cfg['schema'],'Incomplete execution/schema')
+         require(o['manifest_sha256']==t['manifest_sha256']==sha(a.manifest),'Manifest receipt')
+         require(o['oracle_source_sha256']==sha(OWN/'oracle_quspin.py') and t['adapter_sha256']==sha(OWN/'target.jl'),'Adapter source receipt')
+--- v1/README.md
++++ v2/README.md
+@@ -4,11 +4,19 @@
+ 
+ The targets import the existing, hash-pinned user ED, thermal-ED and Hubbard-MPO source. They add explicit state initialization, matrix/amplitude export, projector certification and prescribed-ensemble adapters. Native DMRG is provided by ITensorMPS. No production kernel or historical result is changed. QuSpin independently constructs the fermion operators and Hamiltonians; analytic dimer formulas supply another reference for X12. This is not a native DQMC benchmark.
+ 
++## Version2 precision retest
++
++This is a new, unexecuted controlled retest of the same X09/X12 questions. ISAAC attempt6458708 is preserved: X12 passed, while X09 remained unresolved because three of four actual native optimizer states missed the unchanged precision gates after eight sweeps. Their independently reconstructed positive residual-norm variances were1.8561e−8,2.8478e−8,3.5563e−8, exceeding1e−8; zero recorded truncation errors after sweep3 did not establish ground-state convergence. Native ED and both MPO Hamiltonians agreed with QuSpin to at most6.6614e−16, and both manufactured excited-state controls were correctly rejected. These observations identify inadequate precision in that adapter run; they do not establish a Hamiltonian/package bug or a natural optimizer trap. The actual production command defaults to14 sweeps, whereas that initial benchmark specified8.
++
++Version2 increases native sweeps8→16, local Krylov dimension(default3)→10, local eigensolver rebuild limit(default1)→4, and tolerance1e−12→1e−14. All four starts/seeds, source/runtime pins, physical model, maximum bond dimension32, cutoff1e−13, initial link dimension4, first-eight-sweep dimension/noise schedules, manufactured controls, X12 prescriptions and every acceptance threshold are unchanged. The extra eight sweeps retain maxdim32 and zero noise. All effective precision parameters are exported globally and for each native row and checked by the new comparator. The pinned [ITensorMPSv0.4.1 implementation](https://raw.githubusercontent.com/ITensor/ITensorMPS.jl/v0.4.1/src/dmrg.jl) declares these exact keyword arguments and forwards them to the local KrylovKit eigensolver; higher effort is not a guarantee of convergence.
++
++No gate is relaxed and no earlier receipt is replaced. X12 remains one already-tested catalogue idea; rerunning it cannot add a completion. Only a successful externally certified X09 result could add one new pass to the current39-PASS checkpoint. Root owns any serial submission, with the same one-CPU3500MB15-minute cap. Runtime remains unmeasured for version2; queue time is separate.
++
+ ## X09: a ground state needs more than small variance
+ 
+ The fixture is the interacting four-site periodic Hubbard ring, hopping1, U4, physical chemical potential0, in exactly Nup=Ndown2. QuSpin diagonalizes the complete36-dimensional sector and supplies its unique ground-state projector and gap. The actual user `build_space` / `apply_hamiltonian!` Hamiltonian and the actual user `hubbard_mpo`, with both QN and dense physical indices, must match that whole matrix after the declared fermionic basis transformation.
+ 
+-The native optimizer runs all eight declared sweeps from four seeded starts: Néel, doublon/hole charge order, spin domains and shuffled spins. Every resulting state must have the right norm and sector, variance in [−1e−9,1e−8], absolute energy error at most1e−8 and fidelity at least0.99999999 to the independent ground projector. Source eigensystem residuals must be at most1e−10. All settings, states and seeds are fixed in `manifest.toml` before execution.
++The native optimizer runs all sixteen declared sweeps from four seeded starts: Néel, doublon/hole charge order, spin domains and shuffled spins. Every resulting state must have the right norm and sector, variance in [−1e−9,1e−8], absolute energy error at most1e−8 and fidelity at least0.99999999 to the independent ground projector. Source eigensystem residuals must be at most1e−10. All settings, states and seeds are fixed in `manifest.toml` before execution.
+ 
+ Two additional states are manufactured from the first excited and highest eigenvectors of the user ED Hamiltonian and converted to dense MPS without truncation. Both must have small variance and be rejected by the external ground certificate. They test the certification logic; they do **not** demonstrate that the native optimizer naturally became trapped. Successful stress cases alone cannot pass X09: all four actual DMRG starts must also pass ground certification.
+ 
+--- v1/run.sbatch
++++ v2/run.sbatch
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env bash
+ # Root owns resource checks and serial dependencies. No nested submissions.
+-#SBATCH --job-name=ground_certify
++#SBATCH --job-name=ground_precision2
+ #SBATCH --account=acf-utk0011
+ #SBATCH --partition=short
+ #SBATCH --qos=short
+@@ -17,7 +17,7 @@
+ export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 JULIA_NUM_THREADS=1
+ export JULIA_DEPOT_PATH="$VALIDATION_ROOT/depot"
+ export RENYI_ROOT="$VALIDATION_ROOT/source/renyi_disjoint_corrected"
+-CERTIFICATION_OUTPUT="$VALIDATION_ROOT/results/ground_certification_${SLURM_JOB_ID}"
++CERTIFICATION_OUTPUT="$VALIDATION_ROOT/results/ground_certification_precision_v2_${SLURM_JOB_ID}"
+ mkdir "$CERTIFICATION_OUTPUT"
+ /usr/bin/time -v -o "$CERTIFICATION_OUTPUT/oracle.resources.txt" \
+  "$VALIDATION_ROOT/quspin-venv/bin/python" "$CERTIFICATION_TRANCHE/oracle_quspin.py" \

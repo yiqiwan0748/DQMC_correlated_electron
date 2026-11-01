@@ -1,0 +1,54 @@
+{
+  "schema": "portable_x13_x16_scientific_replay_v1",
+  "status": "PASS",
+  "rows": [
+    {
+      "job": "x13_6462017",
+      "catalogue_id": "X13",
+      "status": "PASS",
+      "pilot_excluded": false,
+      "counts": {
+        "integrity_checks": 5296,
+        "numerical_qualification_checks": 4379,
+        "cross_backend_checks": 6560
+      },
+      "frozen_comparator_gates_and_labels_exact": true
+    },
+    {
+      "job": "x16pilot_6462342",
+      "catalogue_id": "X16",
+      "status": "PASS",
+      "pilot_excluded": true,
+      "counts": {
+        "integrity_checks": 3741,
+        "numerical_qualification_checks": 1799,
+        "cross_backend_checks": 144
+      },
+      "frozen_comparator_gates_and_labels_exact": true
+    },
+    {
+      "job": "x16prod_6462471",
+      "catalogue_id": "X16",
+      "status": "PASS",
+      "pilot_excluded": false,
+      "counts": {
+        "integrity_checks": 3741,
+        "numerical_qualification_checks": 1799,
+        "cross_backend_checks": 144
+      },
+      "frozen_comparator_gates_and_labels_exact": true
+    }
+  ],
+  "scientific_status": {
+    "X13": "PASS",
+    "X16": "PASS"
+  },
+  "new_distinct_ideas": 2,
+  "pilot_scientific_completions": 0,
+  "private_import_and_controller_checks_replayed": false,
+  "excluded_controller_or_admission_bodies": 33,
+  "derived_scientific_execution_projections": 3,
+  "scientific_selection_manifest_sha256": "78dc4c5b8b91f9d862d5fa18c32f53b431487ce5912a4da871b2fac13e19161d",
+  "scientific_checks": "All original complete-grid independent bit-Fock, CAR, eigen-residual/projector, spectral and pair-density/interval gates rerun unchanged; explicit public path mapping only.",
+  "physics_executed": false
+}

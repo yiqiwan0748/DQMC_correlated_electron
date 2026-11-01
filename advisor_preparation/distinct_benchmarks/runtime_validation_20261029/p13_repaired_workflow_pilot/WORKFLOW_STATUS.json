@@ -1,0 +1,58 @@
+{
+  "schema": "P13_REPAIRED_PILOT_PUBLIC_WORKFLOW_SCOPE_V1",
+  "publication_status": "REPAIRED_WORKFLOW_QUALIFICATION_PILOT",
+  "original_comparison_report_status": "PASS_PILOT_ZERO_CREDIT_PENDING_INDEPENDENT_AUDIT",
+  "original_workflow_status": "PASS_PILOT_ZERO_CREDIT_PENDING_INDEPENDENT_AUDIT",
+  "original_scheduler_state": "COMPLETED",
+  "original_scheduler_exit": "0:0",
+  "pilot_workflow_completed_successfully": true,
+  "original_output_census_completed": true,
+  "workflow_errors": [],
+  "full_curve_status": "NOT_RUN",
+  "catalogue_status": "NOT_RUN",
+  "scientific_credit": 0,
+  "distinct_ideas_added": 0,
+  "ledger_counts": {
+    "PASS": 50,
+    "FAIL": 0,
+    "UNRESOLVED": 2,
+    "NOT_RUN": 48
+  },
+  "scientific_reported_gates": {
+    "total": 8889,
+    "PASS": 8889,
+    "FAIL": 0
+  },
+  "coverage": {
+    "models": 4,
+    "initial_states": 2,
+    "state_records": 20,
+    "growth_records": 0
+  },
+  "saved_association_audit": {
+    "status": "PASS_CURRENT_SAME_SOURCE_THREE_ROLE_PILOT_METADATA_ASSOCIATIONS_ONLY",
+    "checks": 9321,
+    "failed_checks": 0,
+    "stored_scalar_limit_records": 296,
+    "physical_certificate_recomputations": 0
+  },
+  "independent_saved_receipt_review": {
+    "focused_checks": 152,
+    "failed_checks": 0,
+    "physical_certificate_recomputations": 0
+  },
+  "historical_full_curve_failure": {
+    "record": "../p13_full_curve_workflow_unresolved/README.md",
+    "scheduler_state": "FAILED",
+    "scheduler_exit": "2:0",
+    "workflow_status": "UNRESOLVED",
+    "completion_predicates_unmet": 3,
+    "changed_by_this_packet": false
+  },
+  "historical_precision_failures": {
+    "record": "../../runtime_validation_20261028/p13_quench_pilot_precision_unresolved/README.md",
+    "reported_failed_gates": 15,
+    "preserved": true
+  },
+  "full_resource_eligibility_from_packet": false
+}

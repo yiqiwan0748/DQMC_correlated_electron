@@ -1,0 +1,102 @@
+{
+  "GNU_time_Base_process_peak_RSS_KiB": 691252,
+  "NAS_Base_inode_differs_from_full_count": 24,
+  "NAS_Base_inode_equals_full_low32_DIAGNOSTIC_ONLY_count": 24,
+  "NAS_full_inode_bit_length_values": [
+    58
+  ],
+  "Slurm_sampled_batch_MaxRSS_KiB": 429564,
+  "catalogue_changes": [],
+  "comparison_error_path_count": 0,
+  "complete_C_Python_GNU_equal_path_count": 62,
+  "control_Base_inode_equals_full_count": 38,
+  "current_file_segment_observation_count": 258,
+  "diagnostic_elapsed_seconds": 66.34203261323273,
+  "execution_status": "METADATA_DIAGNOSTIC_COMPLETE_ZERO_CREDIT",
+  "helper_source_sha256": "7df6dad2584fc4c58c3ba5cbdcd41e0174b84e3e8767d2c6ef2846b467ee0fe4",
+  "historical_NAS_target_count": 24,
+  "historical_segment_observation_count": 235,
+  "independent_saved_metadata_review": {
+    "check_count": 694,
+    "prospective_provider_pin_approval": false,
+    "receipt_binding": {
+      "bytes": 73831,
+      "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+      "role": "independent_actual_saved_metadata_review",
+      "sha256": "1d5bcf7ac560e97dec9241d784c5781398f555034ba9b3cc3183d9f58756ef64"
+    },
+    "reviewer_executed_Julia_C_or_scientific_code": false,
+    "runtime_qualified": false,
+    "scientific_completions": 0,
+    "status": "PASS_FULL_WIDTH_METADATA_REPLACEMENT_EVIDENCE_ZERO_SCIENTIFIC_CREDIT"
+  },
+  "low32_comparison_used_for_identity_acceptance": false,
+  "previously_unregistered_provider_target_count": 31,
+  "prospective_provider_pin_approval": false,
+  "receipt_bindings": [
+    {
+      "bytes": 671129,
+      "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+      "role": "fullwidth_comparison",
+      "sha256": "40ce2f737b7444661729d3b6cbdee9ae6bdd2c5286f0f748d3912407e36d249e"
+    },
+    {
+      "bytes": 221144,
+      "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+      "role": "Julia_metadata_observation",
+      "sha256": "56a403f098e055b541b5fb8b53d2aabf300d21e926bd5833ac1ff2a8896b3886"
+    },
+    {
+      "bytes": 126856,
+      "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+      "role": "independent_C_Python_GNU_observation",
+      "sha256": "12f074da9d20596426de8f0f2691f81436423f19540f3fa9c0271a004257d395"
+    },
+    {
+      "bytes": 2496,
+      "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+      "role": "diagnostic_execution",
+      "sha256": "46c56ddebe96eb3612d2c2192cb1b9d7c99ec5543f22795221f22e7619a646f3"
+    }
+  ],
+  "registered_path_count": 62,
+  "required_metadata_closure": true,
+  "required_metadata_closure_checks": {
+    "C_helper_before_after_bytes_equal": true,
+    "all_registered_path_full_arms_equal_and_stable": true,
+    "before_after_current_file_census_equal": true,
+    "both_GNU_batches_complete": true,
+    "both_current_segment_phases_nonempty": true,
+    "current_full_identity_checks_agree": true,
+    "every_historical_registered_path_sampled": true,
+    "exact_registered_path_census": true,
+    "observation_sources_complete": true
+  },
+  "resource_receipt_binding": {
+    "bytes": 1278,
+    "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+    "role": "Base_metadata_resources",
+    "sha256": "56f86fc6c2bed756eb32db39eb8e0b047097ad93cc72e019e1b2111f0616d018"
+  },
+  "runtime_qualified": false,
+  "same_current_PID_before_after_file_census_equal": true,
+  "schema": "P17_PUBLIC_FULLWIDTH_DIAGNOSTIC_AGGREGATES_V1",
+  "scientific_completions": 0,
+  "scientific_package_or_model_imported": false,
+  "source_and_tools_after_verified": true,
+  "stable_before_after_path_count": 62,
+  "status": "METADATA_CLOSURE_PASS_ZERO_CREDIT_NO_RUNTIME_QUALIFICATION",
+  "terminal_accounting": {
+    "CPUs": 1,
+    "elapsed_HH_MM_SS": "00:01:07",
+    "exit_code": "0:0",
+    "receipt_binding": {
+      "bytes": 130,
+      "publication": "ORIGINAL_PRIVATE_BODY_EXCLUDED",
+      "role": "private_terminal_accounting",
+      "sha256": "bab6363b80d649e6795a771223536ce4a58ab682d5d0195296ee848e2a96cc0c"
+    },
+    "requested_memory_MB": 3500,
+    "status": "COMPLETED"
+  }
+}

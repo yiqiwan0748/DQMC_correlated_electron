@@ -1,0 +1,13 @@
+completed_stages = 20
+max_final_variance = 4.547473508864641e-13
+finished_utc = "2026-09-11T17:23:16.170Z"
+max_final_spin_matrix_error = 7.346068198188505e-13
+status = "PASS"
+ensemble_sensitive = false
+initialization_agreement_pass = true
+max_final_energy_error = 3.197442310920451e-14
+completed_arms = 4
+claim = "finite-cluster method benchmark only"
+max_final_S2_error = 8.881784197001252e-16
+max_final_fock_variance = 9.027098412035155e-23
+minimum_final_ground_subspace_fidelity = 0.9999999999999989

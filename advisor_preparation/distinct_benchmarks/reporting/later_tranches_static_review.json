@@ -1,0 +1,20 @@
+{
+  "status": "POSTPROCESSING_AUDIT_PASS",
+  "no_physics_executed": true,
+  "tool_sha256": "c3f0b8434510421061fbfc89f89d0320f76bf04160039d9224a79565b47581ba",
+  "report": "reports/thermal_tenpy_v6_attempt02",
+  "ledger_sha256": "183ed99c5ff741a1b9f7043403b3712699b3c6a360aeaa3beaafd781055f4b83",
+  "counts": {
+    "PASS": 31,
+    "FAIL": 0,
+    "UNRESOLVED": 0,
+    "NOT_RUN": 69
+  },
+  "input_files_verified": 49,
+  "unique_ids": 100,
+  "all_original25_pass_rows_including_A11_preserved_exactly": true,
+  "history": "v5 and first v6 retained unchanged; actual TeNPy and X06 pilot receipts copied as history",
+  "fixture_observable_completeness": "P11 sectors only where declared; P15 strings only where declared; density/energy/norm all arms",
+  "roundoff_replay": "single Fourier metric difference8.851379265772331e-18; raw immutable, frozen scientific gates unchanged",
+  "coverage_raw_audit_guard": "INCOMPLETE_RAW_AUDIT cannot set execution_evidence_audited=true"
+}

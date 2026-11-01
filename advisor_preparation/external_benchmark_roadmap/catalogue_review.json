@@ -1,0 +1,38 @@
+{
+  "status": "PASS_CATALOGUE_STRUCTURE_AND_MANUAL_DISTINCTNESS_REVIEW",
+  "idea_count": 100,
+  "categories": {
+    "Analytical": 25,
+    "Independent package": 25,
+    "External-reference error control": 25,
+    "Published journal target": 25
+  },
+  "resource_tiers": {
+    "T0": 13,
+    "T1": 28,
+    "T2": 40,
+    "T3": 19
+  },
+  "duplicate_titles": 0,
+  "required_fields_complete": true,
+  "internal_metadata_unit_tests_counted": 0,
+  "parameter_repeat_rows_counted_as_new_ideas": 0,
+  "scientific_jobs_run_by_builder": 0,
+  "direct_duplicate_replacements": [
+    "A16 generic two-band orbital weights replaced by van-Hove DOS target",
+    "P01 repeated spatial entropy profile replaced by higher-Renyi-index hierarchy",
+    "P13 repeated local spin-charge fronts replaced by global-quench entropy growth",
+    "X18 repeated decoupled-orbital factorization replaced by orbital-selective interaction response"
+  ],
+  "manual_review_note": "Related observables/limits remain explicitly cross-referenced. Unique IDs/titles alone are not proof of scientific distinctness; overlap notes and guide explain the question-level separation. No roadmap completion is certified.",
+  "output_sha256": {
+    "benchmark_ideas_100.csv": "94faeef9e968e0e76b0f0eb9b68229d5609e5c55fdc02fbf3e11a57404a6a1b3",
+    "benchmark_ideas_100.json": "59a780c5994db50a56da260fc51ae639f22b674b3bc24f878cde1a6e7bc31818"
+  },
+  "source_review_notes": [
+    "Analytical references are independently derived or exact published solutions; package citations establish capabilities, not precomputed outcomes.",
+    "Replaced Mermin-Wagner-only citation by Ghosh Hubbard-model nonordering theorem, DOI10.1103/PhysRevLett.27.1584.",
+    "Fixed-mu heat response is a covariance of physical energy with H-mu N, distinguished from grand-energy variance.",
+    "J24 marks a historical partial reproduction with unresolved quantitative discrepancy; current initial batch supplies no coverage."
+  ]
+}
