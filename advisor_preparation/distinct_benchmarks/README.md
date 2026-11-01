@@ -13,9 +13,11 @@ execution, an unresolved convention, a failed receipt or inadequate precision
 cannot PASS. Source, protocols and acceptance gates are frozen before execution.
 Failed attempts remain available beside versioned repairs.
 
-The [latest audited 100-row ledger](reporting/reports/full_boundary_reconciliation_v18/README.md)
-records **50 PASS, 2 UNRESOLVED and 48 NOT_RUN**. The original serialization failure
+The [latest audited 100-row ledger](reporting/reports/full_quench_reconciliation_v19/README.md)
+records **51 PASS, 2 UNRESOLVED and 47 NOT_RUN**. The original serialization failure
 and the original P16 scientific disagreement remain preserved.
+
+The [full P13 interaction-quench entanglement benchmark](runtime_validation_20261101/p13_full_quench_audited/README.md) passes all 11,692 frozen gate occurrences across 132 states at 33 observation times. It compares the user Hubbard Hamiltonian/entropy route with independent TeNPy results. The largest recorded primary entropy discrepancy including conditional uncertainty radii is 5.44e-9, below the fixed 1e-7 gate. The complete raw-state/artifact audit and public data/source packet retain the validation adapters, conditional proof limits and all earlier failures. This adds one finite-cluster question.
 
 The [full P17 boundary spin-response benchmark](runtime_validation_20261026/p17_full_boundary_response_20261027/README.md) now passes all 6,578 frozen gates. It compares the user Hubbard MPO with independent TeNPy DMRG and QuSpin exact references: 56 MPS states and 49 reference sectors. Separate saved metadata, runtime and scientific receipt audits passed. This adds one finite-cluster question, with conditional floating-error limits and all earlier failures preserved.
 
@@ -35,7 +37,7 @@ processes; an excluded physics pilot and the full P17 question remain separate.
 
 ## Small PC measurement checks
 
-The [four-site Hubbard MPS measurement record](runtime_validation_20261028/pc_chain4_engineering/README.md) adds one excluded, deliberately coarse arm. The original execution passed 2,799 exact finite-data checks of saved states and observables; its saved-record audit passed 19,094 checks. The saved-state energy and local optimizer Ritz diagnostic remain separate. This is not a ground-state or convergence result and does not complete X08. The 100-row ledger remains **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**. The public packet contains unchanged numerical data and original/reference source, with its reproduction limits stated explicitly.
+The [four-site Hubbard MPS measurement record](runtime_validation_20261028/pc_chain4_engineering/README.md) adds one excluded, deliberately coarse arm. The original execution passed 2,799 exact finite-data checks of saved states and observables; its saved-record audit passed 19,094 checks. The saved-state energy and local optimizer Ritz diagnostic remain separate. This is not a ground-state or convergence result and does not complete X08. At that checkpoint, the 100-row ledger was **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**; this excluded measurement arm added no credit. The public packet contains unchanged numerical data and original/reference source, with its reproduction limits stated explicitly.
 
 The [four-site record with higher bond capacity](runtime_validation_20261028/pc_chain4_finest_engineering/README.md) preserves a second original parameter arm, with bond cap 64 and cutoff 1e-12. The original execution recorded 2,799 passing exact finite-data checks; its independent saved-record audit passed 23,898 checks. Raw state energies, entropy values, callback diagnostics and the separate local optimizer Ritz scalars are retained. This verifies measurements of represented finite states and adds no ground-state, convergence, speedup or full-X08 qualification. The 100-question ledger is unchanged.
 
@@ -276,6 +278,10 @@ The X14 replay manifest SHA256 is `1c928e25fa732e599ef41acc123ff8566612eecf7cb04
 
 The complete sources, arrays, resource receipts, original pinned audits and byte-identical pinned comparator replay are retained. Public saved-data replay calls the unchanged original mathematical helpers; derived receipt details differ by at most 4.44e-16 (two pilot and 50 full floating-point leaves), with every difference recorded under the explicit receipt-only policy. All original physical gates, literal bounds, decisions and report bytes remain unchanged. The excluded pilot and two saved-data analysis jobs add zero further credit. All 99 other catalogue rows, all 46 earlier PASS rows and both unresolved histories remain exact.
 
+
+## Preserved P13 pilot checkpoints (October 28)
+
+The following pilot paragraphs retain the statuses at their original checkpoints. The later full P13 result is the audited PASS in the current 51-question ledger linked above. Original pilot failures, zero-credit scopes and earlier NOT_RUN decisions remain preserved.
 
 The [six-site interaction-quench pilot](runtime_validation_20261028/p13_quench_pilot_precision_unresolved/README.md) completed its comparison but remains precision-unresolved: 8,887 gates, including all 15 original failures, are preserved. This excluded pilot adds zero catalogue credit; the ledger remains **50 PASS / 0 FAIL / 2 UNRESOLVED / 48 NOT_RUN**, and full P13 is **NOT_RUN**.
 

@@ -1,0 +1,28 @@
+{
+  "all16scientific_files_public_byte_readback": "PASS",
+  "all50prior_PASS_preserved": true,
+  "base_ledger_sha256": "8a7a7e293ef75a9f8f376eacbffd3e6a710647a1729e979abbd9482de59aca9f",
+  "both_UNRESOLVED_preserved": true,
+  "changed_ids": [
+    "P13"
+  ],
+  "counts": {
+    "FAIL": 0,
+    "NOT_RUN": 47,
+    "PASS": 51,
+    "UNRESOLVED": 2
+  },
+  "new_ledger_sha256": "0f84f02a712c556f38725f83145826107f0338cabe89fb956085628f62e43071",
+  "preserved_rows": 99,
+  "public_packet_independent_review": {
+    "checks": 931,
+    "failed": 0,
+    "review_receipt_sha256": "52175fd517715776d6930ca8634118ebf91b3ede5dcaed90fd0fe23eb6f9eb25",
+    "status": "PASS_EXACT_V3_PUBLIC_PACKET_ACCURACY_PRIVACY_AND_COMPLETENESS"
+  },
+  "public_packet_manifest_sha256": "2ed938343108e9612c4855f54a9812c5c55d5f6a1942b8519fe677bee9527de6",
+  "schema": "PUBLIC_P13_LEDGER_CLOSURE_AUDIT_V1",
+  "scientific_packet_publication_commit": "6fe32a2bab815e3793c51df34a94c238a100329a",
+  "scope": "One finite six-site fixed-sector quench benchmark, conditional original physical certificates and complete independent artifact/raw-state audit. No whole-package or user-native real-time solver claim.",
+  "status": "PASS_ROOT_RECONCILED_FINITE_SCOPE"
+}
